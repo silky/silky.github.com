@@ -1,0 +1,3 @@
+[submodule "ap-pg"]
+	path = ap-pg
+	url = git@github.com:silky/ap-pg.git
