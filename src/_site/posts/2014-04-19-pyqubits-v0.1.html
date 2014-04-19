@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Noon Silk - pyqubits v0.1</title>
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <h1><a href="../">Noon Silk</a></h1>
+            </div>
+            <div id="navigation">
+                <a href="../archive.html">Archive</a>
+            </div>
+        </div>
+
+        <div id="content">
+            <h2>pyqubits v0.1</h2>
+
+            <div class="info">
+    Posted on April 19, 2014
+    
+        by Noon Silk
+    
+</div>
+
+<p>So for some research I’m currently doing I wanted to be able to simulate a little quantum enrionment where I could measure particular states in particular bases.</p>
+<p>There are a few quantum simulation environments around:</p>
+<ul>
+<li><a href="https://github.com/davidbkemp/jsqubits">jsqubits</a> (JavaScript),</li>
+<li><a href="http://www.mathstat.dal.ca/~selinger/quipper/">quipper</a> (Haskell),</li>
+<li><a href="http://qutip.org/">QuTiP</a> (Python),</li>
+<li><a href="http://www.stahlke.org/dan/qitensor/">qitensor</a> (Python),</li>
+</ul>
+<p>but I decided to ignore each of these for different reasons. Mostly I didn’t see how to do what I wanted to do immediately, in any of them, and also because I wanted to see what would be involved in doing such a thing.</p>
+<p>So to this end I have published v0.1 of <a href="https://github.com/silky/pyqubits">pyqubits</a>.</p>
+<p>At the moment, everything is very simple. States can be created like so</p>
+<pre class="sourceCode python"><code class="sourceCode python">rom pyqubits.statefuncs <span class="ch">import</span> state
+
+s0 = state(<span class="st">&quot;0&quot;</span>)
+s1 = state(<span class="st">&quot;1&quot;</span>)</code></pre>
+<p>and measurement outcomes can be obtained like so</p>
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> pyqubits.statefuncs <span class="ch">import</span> state, measurePurely
+<span class="ch">from</span> pyqubits.bases <span class="ch">import</span> Computational
+
+s0 = state(<span class="st">&quot;+1&quot;</span>)
+(a, s) = measurePurely(s0, basis=Computational)
+
+<span class="dt">print</span>(<span class="st">&quot;a&quot;</span>, a)
+<span class="dt">print</span>(<span class="st">&quot;s&quot;</span>, s)</code></pre>
+<p>and that’s really all you can do that the moment! If you use it, feel free to email <a href="https://sites.google.com/site/noonsilk">me</a>, and report any issues/feature requests on the github page: <a href="https://github.com/silky/pyqubits/issues">pyqubits issues</a>. With any luck, in later posts I’ll add a bit more, and comment on how I am using it!</p>
+
+        </div>
+        <div id="footer">
+            <small><a href="http://jaspervdj.be/hakyll">Hakyll</a> was involved here (<a href="https://github.com/silky/silky.github.com">source</a>).
+                I have another <a href="https://sites.google.com/site/noonsilk">website</a>. ن
+            </small> 
+        </div>
+        <div id="image_footer">   </div>
+    </body>
+</html>
