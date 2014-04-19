@@ -1,0 +1,50 @@
+---
+title: pyqubits v0.1
+author: Noon Silk
+---
+
+So for some research I'm currently doing I wanted to be able to simulate a
+little quantum enrionment where I could measure particular states in
+particular bases.
+
+There are a few quantum simulation environments around:
+
+  * [jsqubits](https://github.com/davidbkemp/jsqubits) (JavaScript),
+  * [quipper](http://www.mathstat.dal.ca/~selinger/quipper/) (Haskell),
+  * [QuTiP](http://qutip.org/) (Python),
+  * [qitensor](http://www.stahlke.org/dan/qitensor/) (Python),
+
+but I decided to ignore each of these for different reasons. Mostly I didn't
+see how to do what I wanted to do immediately, in any of them, and also
+because I wanted to see what would be involved in doing such a thing.
+
+So to this end I have published v0.1 of
+[pyqubits](https://github.com/silky/pyqubits).
+
+At the moment, everything is very simple. States can be created like so
+
+``` python
+rom pyqubits.statefuncs import state
+
+s0 = state("0")
+s1 = state("1")
+```
+
+and measurement outcomes can be obtained like so
+
+``` python
+from pyqubits.statefuncs import state, measurePurely
+from pyqubits.bases import Computational
+
+s0 = state("+1")
+(a, s) = measurePurely(s0, basis=Computational)
+
+print("a", a)
+print("s", s)
+```
+
+and that's really all you can do that the moment! If you use it, feel free to
+email [me](https://sites.google.com/site/noonsilk), and report any
+issues/feature requests on the github page: [pyqubits
+issues](https://github.com/silky/pyqubits/issues). With any luck, in later
+posts I'll add a bit more, and comment on how I am using it!

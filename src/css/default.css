@@ -5,6 +5,12 @@ body {
     line-height: 2em;
 }
 
+pre {
+    line-height: 1.1em;
+    padding: 5px;
+    background: #eaeaea;
+}
+
 table th, table td { 
     padding: 3px;
     border: solid 1px #eaeaea;
