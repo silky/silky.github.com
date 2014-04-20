@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Noon Silk - Autosave Mathematica files for undo purposes</title>
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <h1><a href="../">Noon Silk</a></h1>
+            </div>
+            <div id="navigation">
+                <a href="../archive.html">Archive</a>
+            </div>
+        </div>
+
+        <div id="content">
+            <h2>Autosave Mathematica files for undo purposes</h2>
+
+            <div class="info">
+    Posted on April 27, 2014
+    
+        by Noon Silk
+    
+</div>
+
+<p>Anyone who has used Mathematica<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> for more than 5 minutes probably knows that the undo functionality will leave you feeling pretty sad. You can very quickly find yourself having deleted something that you wanted to keep, and having Control-Z completely ignore your requests to go back in time.</p>
+<p>I was complaining about this on Google+ a while back when I realised that there is a very easy solution - Autosave copies of your Mathematica files somehow, and then rollback to a different version if you want one!</p>
+<p>“Brilliant”, I thought, I’ll just write a Mathematica plugin to do this! Ah, but infact it turns out I can be even lazier than that, and get this functionality entirely outside of Mathematica, and I can use Haskell and git in the process (you aren’t really having fun until you use Haskell to solve a minor inconvenience.)</p>
+<p>So I happened to have the following programs installed, which are used to monitor a folder for file changes and to run actions upon file changes,</p>
+<ul>
+<li><a href="https://github.com/sordina/commando">Commando</a></li>
+<li><a href="https://github.com/sordina/conscript">Conscript</a></li>
+</ul>
+<p>So step (1) is to install these. Step (2) is to install <a href="http://git-scm.com">git</a> (or some other source control system, it doesn’t matter which).</p>
+<p>Step (3) is to now edit all your Mathematica files in some special directory; I’ve chosen <code>~/mathematica_working</code>. So I’ve turned this into a git repository with <code>git init</code>, and then I have the following two scripts in the folder:</p>
+<pre class="shell"><code># start.sh
+commando -c echo | grep --line-buffered '.nb' | conscript ./autosave.sh</code></pre>
+<pre class="shell"><code># start.sh
+git add . &amp;&amp; git commit -m &quot;Auto-save.&quot;</code></pre>
+<p>and every time I start working on some Mathematica files, I run <code>./start</code>. This begins tracking changes.</p>
+<p>Now, every time I save a document in Mathematica, this setup auto-commits it. The output in this terminal looks something like this, depending on what you change:</p>
+<pre><code>[master eded096] Auto-save.
+ 1 file changed, 1 insertion(+), 1 deletion(-)</code></pre>
+<p>So now I have a nice history of changes to Mathematica files. If I accidentally delete a big chunk of code, or just want to see what I used to have, I can use all the machinery that the source-control system makes available to me! And because the Mathematica files are in a plaintext format, it’s not impossible to review the diffs meaningfully! (It’s not exactly amazingly-pleasant though.)</p>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>This comment based on usage of version 8.<a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
+
+        </div>
+        <div id="footer">
+            <small><a href="http://jaspervdj.be/hakyll">Hakyll</a> was involved here (<a href="https://github.com/silky/silky.github.com">source</a>).
+                I have another <a href="https://sites.google.com/site/noonsilk">website</a>. ن
+            </small> 
+        </div>
+        <div id="image_footer">   </div>
+    </body>
+</html>
