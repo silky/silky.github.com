@@ -10,6 +10,10 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
+    match "js/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match "css/*" $ do
         route   idRoute
         compile compressCssCompiler
@@ -41,6 +45,15 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
+    match "links.html" $ do
+        route idRoute
+        compile $ do
+            let linksCtx = defaultContext
+
+            getResourceBody
+                >>= applyAsTemplate linksCtx
+                >>= loadAndApplyTemplate "templates/default.html" linksCtx
+                >>= relativizeUrls
 
     match "index.html" $ do
         route idRoute
