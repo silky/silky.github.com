@@ -1,1 +1,1 @@
-src/js
+src/_site/js
