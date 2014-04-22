@@ -139,7 +139,7 @@ var VoronoiLinks = {
 		var dataBit = this.dataSrc[cellid];
 		var name  = dataBit["name"];
 		var link = dataBit["link"];
-		$("#voronoiCellid").html(name);
+		$("#voronoiCellid").html(name + " - " + link);
 	},
 	
 	getCellUnderMouse: function(ev) {
@@ -234,6 +234,7 @@ var VoronoiLinks = {
             {"name": "Shtetl-Optimized", "link": "http://www.scottaaronson.com/blog/"},
             {"name": "Chris Done", "link": "http://www.chrisdone.com"},
             {"name": "jehosafet", "link": "http://www.jehosafet.com/"},
+            {"name": "A Neighborhood of Infinity", "link": "http://blog.sigfpe.com/"},
             ]
 
         VoronoiLinks.updateData(links);
