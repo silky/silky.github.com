@@ -233,6 +233,9 @@ var VoronoiLinks = {
         links = [
             {"name": "Shtetl-Optimized", "link": "http://www.scottaaronson.com/blog/"},
             {"name": "Chris Done", "link": "http://www.chrisdone.com"},
+            {"name": "Thomas Viddick", "link": "http://mycqstate.wordpress.com/"},
+            {"name": "Quantum Frontiers", "link": "http://quantumfrontiers.com/"},
+            {"name": "The Quantum Pontiff", "link": "http://dabacon.org/pontiff"},
             {"name": "jehosafet", "link": "http://www.jehosafet.com/"},
             {"name": "Edwin Brady", "link": "http://edwinb.wordpress.com/blog/"},
             {"name": "Tony Morris", "link": "http://tmorris.net/"},
