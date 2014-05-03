@@ -234,6 +234,8 @@ var VoronoiLinks = {
             {"name": "Shtetl-Optimized", "link": "http://www.scottaaronson.com/blog/"},
             {"name": "Chris Done", "link": "http://www.chrisdone.com"},
             {"name": "jehosafet", "link": "http://www.jehosafet.com/"},
+            {"name": "Edwin Brady", "link": "http://edwinb.wordpress.com/blog/"},
+            {"name": "Tony Morris", "link": "http://tmorris.net/"},
             {"name": "A Neighborhood of Infinity", "link": "http://blog.sigfpe.com/"},
             ]
 
