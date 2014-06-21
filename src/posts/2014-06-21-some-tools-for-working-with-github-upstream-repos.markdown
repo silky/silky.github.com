@@ -34,7 +34,7 @@ start was to think about exactly what I wanted to do, and write down a usage
 plan for the tools that I felt I needed.
 
 In the spirit of
-Linxu/[djb](http://cr.yp.to/djb.html)/[sordina](https://github.com/sordina), I
+Linux/[djb](http://cr.yp.to/djb.html)/[sordina](https://github.com/sordina), I
 figured I'd try and have several self-contained programs, and then combine
 them in various ways to get the result I wanted.
 
