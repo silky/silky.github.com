@@ -4,7 +4,7 @@ author: Noon Silk
 ---
 
 So at the last [MFUG](http://www.meetup.com/Melbourne-Functional-User-Group-MFUG/) Hack Night, I 
-was convinced it was time to start hacking on my dream of a Github
+was convinced it was time to start hacking on [my dream](https://github.com/silky/ideas "git console dashboard idea") of a Github
 dashboard-esque thing that would tell me when the various clones I had had
 upstream changes.
 
