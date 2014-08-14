@@ -23,7 +23,8 @@ but another favourite is:
 
 In particular I like just how much detail there is in each painting, and
 everywhere you look you can find something new, if you stare at it for a few
-moments.
+moments. ([This](https://soundcloud.com/pnkslm/goat-mixtape-mastered) is a
+pretty good track to listen to while looking at these paintings, by the way.)
 
 It turns out it's possible to [buy
 prints](http://ayahuasca_visions.imagekind.com/store/) (though seemingly not
