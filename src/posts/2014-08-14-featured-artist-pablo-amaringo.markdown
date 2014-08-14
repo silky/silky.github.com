@@ -17,7 +17,7 @@ The particular work that is featured on the laptop is:
 
 <img src="http://i.imgur.com/UWpxPeo.jpg" width="700" />
 
-but another favourite is:
+but another favourite is (note: monkey magic is hiding in this one; can you find him?):
 
 <img src="http://i.imgur.com/Lz2stkr.jpg" width="700" />
 
