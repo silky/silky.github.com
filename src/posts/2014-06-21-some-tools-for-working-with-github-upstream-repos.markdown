@@ -9,7 +9,7 @@ dashboard-esque thing that would tell me when the various clones I had had
 upstream changes.
 
 So of course, the first thing I tried to do was to pick a programming
-language. At first, we thought of a [Node](nodejs.org)-based local website. But I don't know
+language. At first, we thought of a [Node](http://nodejs.org)-based local website. But I don't know
 Node and I don't like JavaScript. It being a functional hack night, I next
 considered [Elm](http://elm-lang.org) but stopped for two reasons: 
 
