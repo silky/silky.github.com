@@ -6,6 +6,10 @@ author: Noon Silk
 _references: [arXiv:0904.2557](https://scirate.com/arxiv/0904.2557), 
     [arXiv:1208.0928](https://scirate.com/arxiv/1208.0928)_
 
+(This is the content of a talk I gave to other students in our department, most
+of whom have no background in quantum computing; hence the introduction and lightness
+on details of the surface code.)
+
 Before talking about the surface code, I'll introduce the fundamentals of
 quantum computing. 
 
