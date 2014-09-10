@@ -79,18 +79,18 @@ $n$ is the number of terms in the tensor product: the number of qubits.
 
 
 **Operator**
-An _operator_, M, is a $2^n\times 2^n$-dimensional matrix with elements in
-$\mathbb{C}$. We require that the operators be unitary; i.e. that $M M^\dagger
-= M^\dagger M = 1$ (this requirement comes from the fact that any such operator
-should preserve the norm of the states).
+An _operator_ (sometimes called a _gate_), M, is a $2^n\times 2^n$-dimensional
+matrix with elements in $\mathbb{C}$. We require that the operators be unitary;
+i.e. that $M M^\dagger = M^\dagger M = 1$ (this requirement comes from the fact
+that any such operator should preserve the norm of the states).
 
 
 **A note on notation**
 Given a multi-qubit state, $|abcd\rangle$, we can perform a single-qubit
 operator $M$ on each of these qubits by constructing the appropriate tensor
 product of matrices, $M \otimes M \otimes M \otimes M$, and then acting this on
-the state. We will often write this more concisely as $M_a M_b M_c M_d
-|abcd\rangle$.
+the state. We will often write this more concisely as $M_1 M_2 M_3 M_4
+|abcd\rangle$, indicating which qubit the operator acts on.
 
 
 **Pauli Matrices**
