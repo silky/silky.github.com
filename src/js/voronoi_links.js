@@ -238,8 +238,6 @@ var VoronoiLinks = {
             {"name": "The Quantum Pontiff", "link": "http://dabacon.org/pontiff"},
             {"name": "jehosafet", "link": "http://www.jehosafet.com/"},
             {"name": "Edwin Brady", "link": "http://edwinb.wordpress.com/blog/"},
-            {"name": "Tony Morris", "link": "http://tmorris.net/"},
-            {"name": "The *-afire Explosion", "link": "http://a.jehosafet.com/"},
             {"name": "A Neighborhood of Infinity", "link": "http://blog.sigfpe.com/"},
             ]
 
