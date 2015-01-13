@@ -101,20 +101,18 @@
     Circuit
     |0> ---- X ----- | M_Z |
 -->
-
 <div class="figure">
 <img src="../images/qcirc_1.jpg" />
 </div>
 <p>This enacts the operator <span class="math">\(X\)</span> on the state <span class="math">\(|0\rangle\)</span>, and we “measure” this state at the end of the circuit in the <span class="math">\(Z\)</span> basis.</p>
 <p>The outcome of this circuit is the state <span class="math">\(|1\rangle\)</span> with certainity.</p>
-<p>Let <span class="math">\(H = \frac{1}{\sqrt{2}} \left( \begin{array}{cc}      1 &amp; 1 \\     1 &amp; -1 \end{array} \right)\)</span> and <span class="math">\(C_X = \left( \begin{array}{cccc}     1 &amp; 0 &amp; 0 &amp; 0 \\     0 &amp; 1 &amp; 0 &amp; 0 \\     0 &amp; 0 &amp; 0 &amp; 1 \\     0 &amp; 0 &amp; 1 &amp; 0     \end{array} \right) = \left(     \begin{array}{ccc}     1 &amp;   &amp; \\       &amp; 1 &amp; \\       &amp;   &amp; X     \end{array} \right)\)</span>.</p>
+<p>Let <span class="math">\(H = \frac{1}{\sqrt{2}} \left( \begin{array}{cc}  1 &amp; 1 \\  1 &amp; -1 \end{array} \right)\)</span> and <span class="math">\(C_X = \left( \begin{array}{cccc}  1 &amp; 0 &amp; 0 &amp; 0 \\  0 &amp; 1 &amp; 0 &amp; 0 \\  0 &amp; 0 &amp; 0 &amp; 1 \\  0 &amp; 0 &amp; 1 &amp; 0  \end{array} \right) = \left(  \begin{array}{ccc}  1 &amp; &amp; \\  &amp; 1 &amp; \\  &amp; &amp; X  \end{array} \right)\)</span>.</p>
 <p>A more complicated circuit:</p>
 <!--
     |0> --- H -- [ C_X ] ------ 
                  |     |
     |0> -------- [     ] ------
 -->
-
 <div class="figure">
 <img src="../images/qcirc_2.jpg" />
 </div>
@@ -203,7 +201,6 @@ $$ \begin{aligned}
     Z_a Z_b Z_c Z_d |\psi\rangle = \lambda^Z_{a,b,c,d}|\psi\rangle.
 \end{aligned} $$
 -->
-
 <p>Any implementation of the surface code enforces these constraint at every time step.</p>
 <p>In our lattice here, we have <span class="math">\(5\)</span> data qubits, and <span class="math">\(4\)</span> measurement qubits. We showed that there are <span class="math">\(4\)</span> constraints coming from the <span class="math">\(4\)</span> data qubits, and as we claimed earlier each of these halve the state space, so the resulting state space has dimension <span class="math">\(2^5/2^4 = 2\)</span>. In other words, it encodes one qubit.</p>
 <p>Our goal now is to define logical operations on this qubit. In a much larger surface code (and with some modifications to the way logical qubits are encoded on the lattice), it is possible to define all the logical operations necessary to perform universal quantum computation, but here we’ll only look at <span class="math">\(X_L\)</span> and <span class="math">\(Z_L\)</span>.</p>

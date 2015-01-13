@@ -59,6 +59,7 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
+
     match "links.html" $ do
         route idRoute
         compile $ do

@@ -17,7 +17,7 @@ I also found it made me very aware of all the people around me - I was
 constantly on the lookout to see who may be running.
 
 I like this idea because it kind of grows exponentially - if several people
-are doing it, then if just one person runs by, it will set of a chain of
+are doing it, then if just one person runs by, it will set off a chain of
 runners. Then we can identify each other.
 
 Anyway, it's fun. Maybe it will catch on!
