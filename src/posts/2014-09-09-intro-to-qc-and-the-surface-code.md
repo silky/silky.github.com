@@ -387,7 +387,7 @@ So we've exhibited some logical operators.
   - The estimate in 2012 was that ~14,500 phsyical qubits would be necessary
     to build one logical qubit.
 
-  - In order to factor a 2000 bit number we would require 58 million qubits.
+  - In order to factor a 2000 bit number we would require 1 billion qubits.
 
   - I've left out a lot of details regarding how errors are corrected - this is not trivial,
     and it's actually interesting.
