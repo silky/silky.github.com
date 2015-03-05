@@ -246,7 +246,7 @@ $$ \begin{aligned}
     E = \epsilon_1 I + \epsilon_2 X + \epsilon_3 Z + \epsilon_4 Y.
 \end{aligned} $$
 
-(Recall that $Y = ZX$.)
+(Recall that $Y = \text{i}XZ$.)
 
 Of course, we can correct any of these errors by applying $E^\dagger$, but in
 so doing we would in principle need to know the coefficients. It turns out
