@@ -103,7 +103,7 @@ $$ \begin{aligned}
     Z &= \left( \begin{array}{cc}
         1 & 0 \\
         0 & -1 \end{array} \right), \\
-    Y &= ZX.
+    Y &= \text{i}XZ.
 \end{aligned} $$
 
 Note that they all square to $1$. We will only be interested in the action of
