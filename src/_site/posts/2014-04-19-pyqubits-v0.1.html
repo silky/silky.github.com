@@ -28,6 +28,7 @@
     
 </div>
 
+<p><strong>Note, 22-May-2015: I’ve removed this repository/code for now, as it is not useful.</strong></p>
 <p>So for some research I’m currently doing I wanted to be able to simulate a little quantum enrionment where I could measure particular states in particular bases.</p>
 <p>There are a few quantum simulation environments around:</p>
 <ul>
@@ -39,7 +40,7 @@
 <p>but I decided to ignore each of these for different reasons. Mostly I didn’t see how to do what I wanted to do immediately, in any of them, and also because I wanted to see what would be involved in doing such a thing.</p>
 <p>So to this end I have published v0.1 of <a href="https://github.com/silky/pyqubits">pyqubits</a>.</p>
 <p>At the moment, everything is very simple. States can be created like so</p>
-<pre class="sourceCode python"><code class="sourceCode python">rom pyqubits.statefuncs <span class="ch">import</span> state
+<pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> pyqubits.statefuncs <span class="ch">import</span> state
 
 s0 = state(<span class="st">&quot;0&quot;</span>)
 s1 = state(<span class="st">&quot;1&quot;</span>)</code></pre>

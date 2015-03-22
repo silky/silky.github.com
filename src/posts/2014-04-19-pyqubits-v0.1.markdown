@@ -3,6 +3,8 @@ title: pyqubits v0.1
 author: Noon Silk
 ---
 
+**Note, 22-May-2015: I've deprecated this repository/code for now, as it is not useful.**
+
 So for some research I'm currently doing I wanted to be able to simulate a
 little quantum enrionment where I could measure particular states in
 particular bases.
@@ -24,7 +26,7 @@ So to this end I have published v0.1 of
 At the moment, everything is very simple. States can be created like so
 
 ``` python
-rom pyqubits.statefuncs import state
+from pyqubits.statefuncs import state
 
 s0 = state("0")
 s1 = state("1")
