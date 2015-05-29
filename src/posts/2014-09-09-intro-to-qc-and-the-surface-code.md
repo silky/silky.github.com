@@ -400,10 +400,14 @@ There's the recent surface code paper:
 
   - [Surface codes: Towards practical large-scale quantum computation](https://scirate.com/arxiv/1208.0928),
 
+a fantastic recent comprehensive review:
+
+  - [Quantum Computation with Topological codes: from qubit to topological fault-tolerance](https://scirate.com/arxiv/1504.01444),
+
  there's
 a recent video from [John Martinis](http://web.physics.ucsb.edu/~martinisgroup/):
 
-  - [Design of a Superconducting Quantum Computer](https://www.youtube.com/watch?v=HQmFEt6l6Tw)
+  - [Design of a Superconducting Quantum Computer](https://www.youtube.com/watch?v=HQmFEt6l6Tw),
 
 there's even some code to go and calculate your own surface code error rates!
 
