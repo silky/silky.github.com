@@ -13,7 +13,7 @@ Written for my Masters completion talk.
 
 > and i'd like to take a minute, just sit right there
 
-> and i'll tell you how i became the prince, of the state called bell pair.
+> and i'll tell you how i became the prince, of the state called [bell pair](http://en.wikipedia.org/wiki/Bell_state)
 
 > in programming languages, born and raised,
 >    on the computer, was where i spent most of my days
