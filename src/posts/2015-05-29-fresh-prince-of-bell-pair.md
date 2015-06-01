@@ -11,14 +11,14 @@ Written for my Masters completion talk.
 
 > my life got spun, both up and down
 
-![](\images\p1.png)
+![](/images/p1.png)
 
 
 > and i'd like to take a minute, just sit right there
 
 > and i'll tell you how i became the prince, of the state called [bell pair](http://en.wikipedia.org/wiki/Bell_state)
 
-![](\images\p2.png)
+![](/images/p2.png)
 
 
 > in programming languages, born and raised,
@@ -30,14 +30,14 @@ Written for my Masters completion talk.
 > when a couple of guys who seemed kinda fine,
 >    started making trouble in polynomial time!
 
-![](\images\p3.png)
+![](/images/p3.png)
 
 
 > they got in one little fight (BQP vs BPP) and everyone got scared,
 
 
-![](\images\p4.png)
+![](/images/p4.png)
 
 >    someone said: we're going to build a quantum computer, so you better be prepared!
 
-![](\images\p5.png)
+![](/images/p5.png)
