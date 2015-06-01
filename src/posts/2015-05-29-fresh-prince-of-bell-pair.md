@@ -3,7 +3,8 @@ title: Fresh Prince of Bell Pair
 author: Noon Silk
 ---
 
-Written for my Masters completion talk.
+Written for my Masters completion talk. [Video](https://vimeo.com/129394232).
+
 
 ## Lyrics
 
