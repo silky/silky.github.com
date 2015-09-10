@@ -60,7 +60,7 @@ main = hakyll $ do
                 >>= relativizeUrls
 
 
-    match "links.html" $ do
+    match (fromList ["links.html", "about.html"]) $ do
         route idRoute
         compile $ do
             let linksCtx = defaultContext
