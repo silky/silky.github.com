@@ -13,3 +13,5 @@ see [here](https://github.com/silky/ghci-color/blob/master/ghci-color) for the s
 Note in particular the quirk that we must capture any `SIGINT` that gets sent through and discard it, when we are invoking `sed`, otherwise `sed` itself will quit and our GHCi session will break.
 
 You can use it `cabal repl` (being mindful of [this bug](https://github.com/haskell/cabal/issues/1905)) by using `cabal repl --with-ghc=ghci-color`. I've bound an alias `repl` to this.
+
+(Note: original credit for this goes to [rhysd](https://github.com/rhysd/))
