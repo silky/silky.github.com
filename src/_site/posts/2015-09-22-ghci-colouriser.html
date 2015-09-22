@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Noon Silk - GHCi Colouriser</title>
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+        <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <h1><a href="../">Noon van der Silk</a></h1>
+            </div>
+            <div id="navigation">
+                <a href="../about.html">About</a>
+                <a href="../archive.html">Archive</a>
+                <a href="../links.html">Links</a>
+            </div>
+        </div>
+
+        <div id="content">
+            <h2>GHCi Colouriser</h2>
+
+            <div class="info">
+    Posted on September 22, 2015
+    
+        by Noon Silk
+    
+</div>
+
+<p>Behold, a colourful GHCi (<a href="https://github.com/silky/ghci-color">install it for yourself</a>):</p>
+<div class="figure">
+<img src="https://raw.github.com/silky/ghci-color/master/cap2.png" alt />
+
+</div>
+<p>This is done by using a simple little <code>sed</code> wrapper around the ordinary <code>ghci --interactive</code>, see <a href="https://github.com/silky/ghci-color/blob/master/ghci-color">here</a> for the script.</p>
+<p>Note in particular the quirk that we must capture any <code>SIGINT</code> that gets sent through and discard it, when we are invoking <code>sed</code>, otherwise <code>sed</code> itself will quit and our GHCi session will break.</p>
+<p>You can use it <code>cabal repl</code> (being mindful of <a href="https://github.com/haskell/cabal/issues/1905">this bug</a>) by using <code>cabal repl --with-ghc=ghci-color</code>. I’ve bound an alias <code>repl</code> to this.</p>
+
+        </div>
+        <div id="footer">
+            <small><a href="http://jaspervdj.be/hakyll">Hakyll</a> was involved here (<a href="https://github.com/silky/silky.github.com">source</a>).
+                I have another <a href="https://sites.google.com/site/noonsilk">website</a>. ن
+            </small> 
+        </div>
+        <div id="image_footer"> &nbsp; </div>
+    </body>
+</html>
