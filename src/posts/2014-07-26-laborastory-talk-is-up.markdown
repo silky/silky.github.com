@@ -1,6 +1,6 @@
 ---
 title: Laborastory talk is up!
-author: Noon Silk
+author: Noon van der Silk
 ---
 
 The talk I gave at [The Laborastory](http://thelaborastory.com/) is online

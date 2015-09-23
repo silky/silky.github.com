@@ -1,6 +1,6 @@
 ---
 title: You run, I run
-author: Noon Silk
+author: Noon van der Silk
 ---
 
 While walking through the city yesterday I came up with a new way to try and

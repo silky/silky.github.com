@@ -1,6 +1,6 @@
 ---
 title: Feaured Artist - Pablo Amaringo
-author: Noon Silk
+author: Noon van der Silk
 ---
 
 Following the invention of the [laptop art holder](/posts/2014-08-10-laptop-art-holder.html) I've

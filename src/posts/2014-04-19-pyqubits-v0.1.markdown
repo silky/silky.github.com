@@ -1,6 +1,6 @@
 ---
 title: pyqubits v0.1
-author: Noon Silk
+author: Noon van der Silk
 ---
 
 **Note, 22-May-2015: I've deprecated this repository/code for now, as it is not useful.**

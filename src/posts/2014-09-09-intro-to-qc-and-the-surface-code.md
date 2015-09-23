@@ -1,6 +1,6 @@
 ---
 title: Introduction to quantum computing and the surface code
-author: Noon Silk
+author: Noon van der Silk
 ---
 
 _references: [arXiv:0904.2557](https://scirate.com/arxiv/0904.2557), 

@@ -1,6 +1,6 @@
 ---
 title: Open Science Workshop Melbourne - Call for participation!
-author: Noon Silk
+author: Noon van der Silk
 ---
 
 So we're launching the first [Open Science

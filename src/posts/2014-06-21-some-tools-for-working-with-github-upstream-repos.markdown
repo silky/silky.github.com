@@ -1,6 +1,6 @@
 ---
 title: Some tools for working with Github upstream repos
-author: Noon Silk
+author: Noon van der Silk
 ---
 
 So at the last [MFUG](http://www.meetup.com/Melbourne-Functional-User-Group-MFUG/) Hack Night, I 

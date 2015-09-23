@@ -1,6 +1,6 @@
 ---
 title: Fresh Prince of Bell Pair
-author: Noon Silk
+author: Noon van der Silk
 ---
 
 Written for my Masters completion talk. [Video](https://vimeo.com/129394232).

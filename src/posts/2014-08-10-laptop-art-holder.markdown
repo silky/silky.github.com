@@ -1,6 +1,6 @@
 ---
 title: Laptop art holder
-author: Noon Silk
+author: Noon van der Silk
 ---
 
 Following the whiteboard-laptop idea, today I made the 'laptop art holder'. It

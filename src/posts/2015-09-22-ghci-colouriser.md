@@ -1,6 +1,6 @@
 ---
 title: GHCi Colouriser
-author: Noon Silk
+author: Noon van der Silk
 ---
 
 Behold, a colourful GHCi ([install it for yourself](https://github.com/silky/ghci-color)):

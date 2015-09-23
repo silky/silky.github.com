@@ -1,6 +1,6 @@
 ---
 title: Autosave Mathematica files for undo purposes
-author: Noon Silk
+author: Noon van der Silk
 ---
 
 Anyone who has used Mathematica[^1] for more than 5 minutes probably knows
