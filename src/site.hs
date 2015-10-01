@@ -4,6 +4,7 @@ import           Data.Monoid (mappend)
 import           Hakyll
 import qualified Data.Set as S
 import           Text.Pandoc.Options
+import           Control.Monad
 --------------------------------------------------------------------------------
 
 pandocMathCompiler =
@@ -73,7 +74,7 @@ main = hakyll $ do
     match "index.html" $ do
         route idRoute
         compile $ do
-            posts <- recentFirst =<< loadAll "posts/*"
+            posts <- (liftM (take 10)) $ recentFirst =<< loadAll "posts/*"
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Home"                `mappend`

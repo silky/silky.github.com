@@ -239,7 +239,6 @@ var VoronoiLinks = {
             {"name": "jehosafet", "link": "http://www.jehosafet.com/"},
             {"name": "Edwin Brady", "link": "http://edwinb.wordpress.com/blog/"},
             {"name": "A Neighborhood of Infinity", "link": "http://blog.sigfpe.com/"},
-            {"name": "Haskell for all", "link": "http://www.haskellforall.com/"},
             ]
 
         VoronoiLinks.updateData(links);
