@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Noon van der Silk - Versioned LyX documents</title>
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+        <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <h1><a href="../">Noon van der Silk</a></h1>
+            </div>
+            <div id="navigation">
+                <a href="../about.html">About</a>
+                <a href="../archive.html">Archive</a>
+                <a href="../links.html">Links</a>
+            </div>
+        </div>
+
+        <div id="content">
+            <h2>Versioned LyX documents</h2>
+
+            <div class="info">
+    Posted on October  1, 2015
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>Oftentimes one needs to write a document with math symbols in it. The standard tool of choice is some variant of TeX, either writing it online in one of the growing-list of collaborative editors:</p>
+<ul>
+<li><a href="https://www.overleaf.com/">Overleaf</a></li>
+<li><a href="https://www.sharelatex.com/">ShareLaTeX</a></li>
+<li><a href="https://www.authorea.com/">Authorea</a></li>
+</ul>
+<p>But one program, that runs locally, that I can’t stop using is <a href="http://www.lyx.org/">LyX</a>.</p>
+<p>I really like LyX because of the “What-you-see-is-(pretty much)-what-you-get” nature of it.</p>
+<p>One thing I wanted to share was a small technique that I used to get a version number in all of the pdfs that I generated from my LyX documents. The idea was that when I sent my document to obtain feedback from various interested parties, I could easily see which version they had commented on.</p>
+<p>What I wanted as a footer that would be included on every page, that contained the version number.</p>
+<p>The approach is:</p>
+<ol style="list-style-type: decimal">
+<li>In the “LaTeX Preamble” setting of the LyX document, include (something like)</li>
+</ol>
+<pre><code>\usepackage{fancyhdr}
+\pagestyle{fancy}
+\cfoot{\tiny{|VERSION|}}
+\rfoot{\thepage}
+\rhead{}</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Build your LyX documents by the command line with a <code>Makefile</code>. My <code>Makefile</code> looks like so:</li>
+</ol>
+<pre><code>BUILD_NUMBER_FILE := build-number.txt
+BUILD_NUMBER      := $(shell cat $(BUILD_NUMBER_FILE))
+BUILD_DATE        := $(shell date +%d%b%Y)
+VER_STRING        := $(BUILD_DATE)-build$(BUILD_NUMBER)
+LYXFILE           := coolness
+TEMPDIR           := /tmp
+
+all: pdf
+
+# Switch in the new version number, compile with LyX and
+# bring it here.
+pdf: buildnumber
+	sed &quot;s/|VERSION|/$(VER_STRING)/g&quot; $(LYXFILE).lyx &gt;$(TEMPDIR)/$(LYXFILE).lyx
+	lyx -e pdf2 $(TEMPDIR)/$(LYXFILE).lyx
+	cp $(TEMPDIR)/$(LYXFILE).pdf .
+
+# Build number file. Increment each build.
+buildnumber:
+	@if ! test -f $(BUILD_NUMBER_FILE); then echo 0 &gt; $(BUILD_NUMBER_FILE); fi
+	@echo $$(($$(cat $(BUILD_NUMBER_FILE)) + 1)) &gt; $(BUILD_NUMBER_FILE)</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Build with the <code>make</code> command and profit!</li>
+</ol>
+<p>Note that there is a <code>build-number.txt</code> file that is incremented on each build, so you don’t need to do that manually.</p>
+<p>I’ve put together a sample project <a href="https://gist.github.com/silky/9accc6e6a5dbbc029669">here</a>, so you can clone that gist and type <code>make</code> and see it in action!</p>
+
+        </div>
+        <div id="footer">
+            <small><a href="http://jaspervdj.be/hakyll">Hakyll</a> was involved here (<a href="https://github.com/silky/silky.github.com">source</a>).
+                I have another <a href="https://sites.google.com/site/noonsilk">website</a>. ن
+            </small> 
+        </div>
+        <div id="image_footer"> &nbsp; </div>
+    </body>
+</html>
