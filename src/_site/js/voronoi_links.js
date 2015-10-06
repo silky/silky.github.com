@@ -241,6 +241,8 @@ var VoronoiLinks = {
             {"name": "A Neighborhood of Infinity", "link": "http://blog.sigfpe.com/"},
             {"name": "Haskell for all", "link": "http://www.haskellforall.com/"},
             {"name": "thi.ng", "link": "http://thi.ng/"},
+            {"name": "bit-player", "link": "http://bit-player.org/"},
+            {"name": "run hello", "link": "http://msm.runhello.com/"},
             ]
 
         VoronoiLinks.updateData(links);
