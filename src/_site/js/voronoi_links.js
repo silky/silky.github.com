@@ -243,6 +243,7 @@ var VoronoiLinks = {
             {"name": "thi.ng", "link": "http://thi.ng/"},
             {"name": "bit-player", "link": "http://bit-player.org/"},
             {"name": "run hello", "link": "http://msm.runhello.com/"},
+            {"name": "Edward Kmett Tutorials", "link": "https://www.fpcomplete.com/user/edwardk"},
             ]
 
         VoronoiLinks.updateData(links);
