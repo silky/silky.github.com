@@ -13,10 +13,7 @@ Super-reference is a system which:
 
 Here's a screenshot of the main (only) page:
 
-![](https://raw.github.com/silky/super-reference/master/screenshot.png)
-
-About
---
+![](https://raw.github.com/silky/super-reference/master/another_screenshot.png)
 
 Super-reference is built around my workflow for getting the latest papers.
 
@@ -42,7 +39,8 @@ Using super-reference
 
 Let's suppose now you have a *One True* bibtex file called `all.bib`.
 
-Grab yourself down a copy of the repository by following the [instructions](https://github.com/silky/super-reference/README.md).
+Grab yourself down a copy of the repository by following the [instructions](https://github.com/silky/super-reference/#installation) to configure
+it to point to this bibtex file.
 
 Once you have the environment set up you can run a dev server with `yesod devel`. You will then be able to visit the website! Supposing you pointed the config file at your `all.bib` file, you will then be looking at all your interesting papers! If there's a link associated with the entry, a link will be displayed, and if there is a PDF file, clicking on the entry name will open the PDF (with it's location given by the `file` entry in the relevant bibtex entry).
 
