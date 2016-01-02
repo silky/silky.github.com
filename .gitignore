@@ -2,4 +2,4 @@ _cache/
 
 *.o
 *.hi
-site
+.stack-work
