@@ -41,19 +41,19 @@
 <p>but I decided to ignore each of these for different reasons. Mostly I didn’t see how to do what I wanted to do immediately, in any of them, and also because I wanted to see what would be involved in doing such a thing.</p>
 <p>So to this end I have published v0.1 of <a href="https://github.com/silky/pyqubits">pyqubits</a>.</p>
 <p>At the moment, everything is very simple. States can be created like so</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> pyqubits.statefuncs <span class="ch">import</span> state
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">from</span> pyqubits.statefuncs <span class="im">import</span> state
 
-s0 = state(<span class="st">&quot;0&quot;</span>)
-s1 = state(<span class="st">&quot;1&quot;</span>)</code></pre></div>
+s0 <span class="op">=</span> state(<span class="st">&quot;0&quot;</span>)
+s1 <span class="op">=</span> state(<span class="st">&quot;1&quot;</span>)</code></pre></div>
 <p>and measurement outcomes can be obtained like so</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="ch">from</span> pyqubits.statefuncs <span class="ch">import</span> state, measurePurely
-<span class="ch">from</span> pyqubits.bases <span class="ch">import</span> Computational
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">from</span> pyqubits.statefuncs <span class="im">import</span> state, measurePurely
+<span class="im">from</span> pyqubits.bases <span class="im">import</span> Computational
 
-s0 = state(<span class="st">&quot;+1&quot;</span>)
-(a, s) = measurePurely(s0, basis=Computational)
+s0 <span class="op">=</span> state(<span class="st">&quot;+1&quot;</span>)
+(a, s) <span class="op">=</span> measurePurely(s0, basis<span class="op">=</span>Computational)
 
-<span class="dt">print</span>(<span class="st">&quot;a&quot;</span>, a)
-<span class="dt">print</span>(<span class="st">&quot;s&quot;</span>, s)</code></pre></div>
+<span class="bu">print</span>(<span class="st">&quot;a&quot;</span>, a)
+<span class="bu">print</span>(<span class="st">&quot;s&quot;</span>, s)</code></pre></div>
 <p>and that’s really all you can do that the moment! If you use it, feel free to email <a href="https://sites.google.com/site/noonsilk">me</a>, and report any issues/feature requests on the github page: <a href="https://github.com/silky/pyqubits/issues">pyqubits issues</a>. With any luck, in later posts I’ll add a bit more, and comment on how I am using it!</p>
 
         </div>
