@@ -54,7 +54,7 @@ Details:
 - Lines 12-16 perform the typical stack build, and also install the `haskmas.exe` file that we will mark as an artifact
 - Line 18 is a magic command that sets the environmen variable `HASKMAS_VERSION` to the value of the output of the command `stack exec -- haskmas -v`. This is my "hack" to obtain the cabal-version of the `haskmas` library, which I use as part of the tag that gets released on the [GitHub releases page](https://github.com/silky/haskmas/releases)
 - Line 21 simply marks the `haskmas.exe` as an artifact; this means AppVeyor will hang on to it after the build completes.
-- and finally, lines 24-32 specify that, for each build that completes, AppVeyor should push a release with the tag `haskmas-<cabal_version_of_haskmas>` to the GitHub releases page!
+- and finally, lines 24-32 specify that, for each build that completes, AppVeyor should push a release with the tag `haskmas-<cabal_version_of_haskmas>` to the GitHub releases page! (Note: that probably we would want to be a bit more elaborate about when we push to the releases page; making sure that we include proper release notes, etc.)
 
 You can see from the releases on the `haskmas` project istelf that I fumbled around with this setup a bit. Mostly I observed that the manual release process on AppVeyor doesn't quite operate the way I'd've [hoped](https://github.com/appveyor/ci/issues/593); but in any case AppVeyor is a pretty convenient service; it's very nice to see something for Windows in this space.
 
