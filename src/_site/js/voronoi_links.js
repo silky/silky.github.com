@@ -245,6 +245,8 @@ var VoronoiLinks = {
             {"name": "run hello", "link": "http://msm.runhello.com/"},
             {"name": "Edward Kmett Tutorials", "link": "https://www.fpcomplete.com/user/edwardk"},
             {"name": "Rufflewind", "link": "https://rufflewind.com/"},
+            {"name": "Bows and Arrows", "link": "http://sordina.github.io/"},
+            {"name": "Paul Chiusano", "link": "https://pchiusano.github.io/"},
             ]
 
         VoronoiLinks.updateData(links);
