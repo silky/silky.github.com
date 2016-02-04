@@ -247,6 +247,7 @@ var VoronoiLinks = {
             {"name": "Rufflewind", "link": "https://rufflewind.com/"},
             {"name": "Bows and Arrows", "link": "http://sordina.github.io/"},
             {"name": "Paul Chiusano", "link": "https://pchiusano.github.io/"},
+            {"name": "Roman Cheplyaka", "link": "https://ro-che.info/"},
             ]
 
         VoronoiLinks.updateData(links);
