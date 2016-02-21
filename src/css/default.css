@@ -75,3 +75,9 @@ div.info {
 }
 
 p { text-align: justify; }
+
+blockquote {
+    border-left: solid 2px #eaeaea;
+    padding-left: 5px;
+    background: #fafafa;
+}
