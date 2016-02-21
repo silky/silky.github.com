@@ -232,7 +232,7 @@ picked some classics.
 > Exercise: What number is best value?
 
 
-> Q: Why wouldn't the python programmer get into her house?
+> Q: Why couldn't the python programmer get into her house?
 >
 > A: Key error.
 
