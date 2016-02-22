@@ -31,7 +31,7 @@ picked some classics.
 
 > Q: How did the OR programmer solve a MIP while also eating?
 >
-> A: By using a brunch and bounch technique.
+> A: By using a brunch and bound technique.
 
 
 > ["hip", "hip"]
