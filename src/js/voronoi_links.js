@@ -248,6 +248,9 @@ var VoronoiLinks = {
             {"name": "Bows and Arrows", "link": "http://sordina.github.io/"},
             {"name": "Paul Chiusano", "link": "https://pchiusano.github.io/"},
             {"name": "Roman Cheplyaka", "link": "https://ro-che.info/"},
+            {"name": "Spiros Eliopoulos", "link": "http://computationallyendowed.com/"},
+            {"name": "Mike McQuaid", "link": "http://mikemcquaid.com/"},
+            {"name": "Rachel by the Bay", "link": "http://rachelbythebay.com/w/"},
             ]
 
         VoronoiLinks.updateData(links);
