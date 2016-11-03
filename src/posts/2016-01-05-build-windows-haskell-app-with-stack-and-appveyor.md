@@ -52,7 +52,7 @@ Details:
 - Lines 3-8 obtain the stack executable, and also perform a small hack which converts my `ssh`-based git submodules to `https`-based ones, that can be cloned without needing to mess about with ssh keys.
 - Line 10 prevents AppVeyor from building when it sees a new tag (later in the script we end up making a new tag when we push a release)
 - Lines 12-16 perform the typical stack build, and also install the `haskmas.exe` file that we will mark as an artifact
-- Line 18 is a magic command that sets the environmen variable `HASKMAS_VERSION` to the value of the output of the command `stack exec -- haskmas -v`. This is my "hack" to obtain the cabal-version of the `haskmas` library, which I use as part of the tag that gets released on the [GitHub releases page](https://github.com/silky/haskmas/releases)
+- Line 18 is a magic command that sets the environment variable `HASKMAS_VERSION` to the value of the output of the command `stack exec -- haskmas -v`. This is my "hack" to obtain the cabal-version of the `haskmas` library, which I use as part of the tag that gets released on the [GitHub releases page](https://github.com/silky/haskmas/releases)
 - Line 21 simply marks the `haskmas.exe` as an artifact; this means AppVeyor will hang on to it after the build completes.
 - and finally, lines 24-32 specify that, for each build that completes, AppVeyor should push a release with the tag `haskmas-<cabal_version_of_haskmas>` to the GitHub releases page! (Note: probably we would want to be a bit more elaborate about when we push to the releases page; making sure that we include proper release notes, etc.)
 
