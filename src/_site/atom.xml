@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>silky.github.io</title>
+    <link href="https://silky.github.io/atom.xml" rel="self" />
+    <link href="https://silky.github.io" />
+    <id>https://silky.github.io/atom.xml</id>
+    <author>
+        <name>Noon van der Silk</name>
+        <email>noonsilk+-noonsilk@gmail.com</email>
+    </author>
+    <updated>2016-02-22T00:00:00Z</updated>
+    <entry>
+    <title>50 bad maths and programming jokes</title>
+    <link href="https://silky.github.io/posts/2016-02-22-bad-maths-and-programming-jokes.html" />
+    <id>https://silky.github.io/posts/2016-02-22-bad-maths-and-programming-jokes.html</id>
+    <published>2016-02-22T00:00:00Z</published>
+    <updated>2016-02-22T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on February 22, 2016
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>For the past few months at work we’ve been putting up a Chalkboard in front of the office with jokes on it.</p>
+<div class="figure">
+<img src="/images/brunch-and-bound.png" />
+
+</div>
+<p>Today marks the 50th joke, so to celebrate I’m writing up the complete list. Most of the jokes here were ones we made up without looking at the internet; but occasionally, in an effort to have two new jokes every day, we picked some classics.</p>
+<blockquote>
+<p>Q: What kind of parade did the astronauts throw for the computers after the mission?</p>
+<p>A: A Turing tape parade!</p>
+</blockquote>
+<blockquote>
+<p>Q: Why was the maths book sad?</p>
+<p>A: It had too many problems.</p>
+</blockquote>
+<blockquote>
+<p>Q: What did the AI say to the category theorist?</p>
+<p>A: Does not commute!</p>
+<p><small>(from <a href="https://andy.kitchen">Andy Kitchen</a>)</small></p>
+</blockquote>
+<blockquote>
+<p>Q: How did the OR programmer solve a MIP while also eating?</p>
+<p>A: By using a brunch and bound technique.</p>
+</blockquote>
+<blockquote>
+<p>[“hip”, “hip”]</p>
+</blockquote>
+<blockquote>
+<p>Q: What do measure theorists and programmers have in common?</p>
+<p>A: They both enjoy continuous integration.</p>
+</blockquote>
+<blockquote>
+<p>Old mathematicians never die, they just lose some of their functions.</p>
+</blockquote>
+<blockquote>
+<p>Q: Why did the computer keep sneezing?</p>
+<p>A: It had a virus.</p>
+</blockquote>
+<blockquote>
+<p>Q: Why wasn’t the complex beer successful?</p>
+<p>A: People had trouble ordering it!</p>
+</blockquote>
+<blockquote>
+<p>Q: Why did the functional programmer return her TV?</p>
+<p>A: Because it was immutable.</p>
+</blockquote>
+<blockquote>
+<p>Q: What do ruby and librarians have in common?</p>
+<p>A: They both have explicit return policies.</p>
+</blockquote>
+<blockquote>
+<p>A shepherd was out in the field counting her sheep; she counted 96 but when she rounded them up she had 100.</p>
+<p><small>(from <a href="http://www.twolostboys.com.au/">Two Lost Boys</a>)</small></p>
+</blockquote>
+<blockquote>
+<p>Q: Why was the computer owner so successful at sheep husbandry?</p>
+<p>A: She had excellent RAM.</p>
+</blockquote>
+<blockquote>
+<p>Q: Why couldn’t the formal system complete it’s homework?</p>
+<p>A: It was trying to be consistent.</p>
+</blockquote>
+<blockquote>
+<p>404: Joke Not Found.</p>
+</blockquote>
+<blockquote>
+<p>Q: How does a lumberjack mathematician cut down trees?</p>
+<p>A: With her Axiom.</p>
+</blockquote>
+<blockquote>
+<p>Q: Why did the programmer go to her bookshelf before leaving her house?</p>
+<p>A: She needed to get her keys from the dictionary.</p>
+</blockquote>
+<blockquote>
+<p>Q: Why don’t you want to fight an OR consultant?</p>
+<p>A: They are experts at duals.</p>
+</blockquote>
+<blockquote>
+<p>Q: What did the Linux system administer for the programmer’s head cold?</p>
+<p>A: Sudo ephedrine</p>
+</blockquote>
+<blockquote>
+<p>Q: How did the physicist fix her car when it was failing intermittently?</p>
+<p>A: She used statistical mechanics!</p>
+</blockquote>
+<blockquote>
+<p>Q: Why was the bad python programmer so rich?</p>
+<p>A: Because everytime his code failed he got a raise.</p>
+</blockquote>
+<blockquote>
+<p>Q: What do python programmers and event planners have in common?</p>
+<p>A: They both like to decorate functions.</p>
+</blockquote>
+<blockquote>
+<p>Q: Why is 0 the boss?</p>
+<p>A: Because no other number can go above it!</p>
+</blockquote>
+<blockquote>
+<p>Q: What did the mathematician say when they discovered a new prime number?</p>
+<p>A: That’s odd.</p>
+</blockquote>
+<blockquote>
+<p>Q: Why did the low-rank matrix go to the psychologist?</p>
+<p>A: Because it was having an identity crisis!</p>
+</blockquote>
+<blockquote>
+<p>Q: What is a floating point numbers favourite type of tennis?</p>
+<p>A: Doubles!</p>
+</blockquote>
+<blockquote>
+<p>Q: What does a blender and the Kalman filter hav in common?</p>
+<p>A: They both perform a smoothing function!</p>
+</blockquote>
+<blockquote>
+<p>Q: What is the mathematicians favourite kitchen item?</p>
+<p>A: Derivasieve.</p>
+</blockquote>
+<blockquote>
+<p>Q: Why don’t elephants use computers?</p>
+<p>A: Scared of the mouse.</p>
+</blockquote>
+<blockquote>
+<p>Q: Why was the OR consultant unwell?</p>
+<p>A: She want on a benders.</p>
+</blockquote>
+<blockquote>
+<p>Q: What is a statisticians favourite genre of music?</p>
+<p>A: Drum and Bayes.</p>
+</blockquote>
+<blockquote>
+<p>Q: What is a pet store operatores favourite state in a multiplayer game?</p>
+<p>A: The Parrot optimal state.</p>
+</blockquote>
+<blockquote>
+<p>Q: What is the enterprise java programmers favourite business book?</p>
+<p>A: Scalaing up!</p>
+</blockquote>
+<blockquote>
+<p>Q: What function is a tree hugger most concerned by?</p>
+<p>A: <span class="math inline">\(\log(n)\)</span>.</p>
+</blockquote>
+<blockquote>
+<p>Q: What is a garbologists favourite optimisation problem?</p>
+<p>A: Bin packing.</p>
+</blockquote>
+<blockquote>
+<div class="figure">
+<img src="/images/giraph.png" />
+
+</div>
+</blockquote>
+<blockquote>
+<p>Q: What is a choirs favourite design pattern?</p>
+<p>A: The <em>Sing</em>leton pattern!</p>
+</blockquote>
+<blockquote>
+<p>Q: What do you call a mathematician that has lots of statues in her garden?</p>
+<p>A: Polygnomial.</p>
+</blockquote>
+<blockquote>
+<p>Q: What do fashion designers and Haskell programmers have in common?</p>
+<p>A: They love pattern matching!</p>
+</blockquote>
+<blockquote>
+<p>Q: How did the mathematician impress at the dance party?</p>
+<p>A: By showing off her step function!</p>
+</blockquote>
+<blockquote>
+<p>No joke provided; the Curry-Howard isomorphism allows us to generate a programming joke from the maths joke.</p>
+</blockquote>
+<blockquote>
+<p>Q: Why was the mathematician unhappy when she turned 24?</p>
+<p>A: She now had a lot of factors to consider.</p>
+</blockquote>
+<blockquote>
+<p>Q: Why was the programmer so poor?</p>
+<p>A: Syn<em>tax</em>.</p>
+</blockquote>
+<blockquote>
+<p>Q: Why was the ML programmer late to the conference?</p>
+<p>A: She spent too much time in the “train” stage.</p>
+</blockquote>
+<blockquote>
+<p>Q: What number is good value?</p>
+<p>A: 241</p>
+<p>Exercise: What number is best value?</p>
+</blockquote>
+<blockquote>
+<p>Q: Why couldn’t the python programmer get into her house?</p>
+<p>A: Key error.</p>
+</blockquote>
+<blockquote>
+<p>Q: How did the programmer get out of the deep end of the pool?</p>
+<p>A: She made a pull request!</p>
+</blockquote>
+<blockquote>
+<p>Q: Why was the ML researcher tired of shopping?</p>
+<p>A: She was overfitting.</p>
+</blockquote>
+<blockquote>
+<p>Q: How did the programmer get to the bottom of the ocean?</p>
+<p>A: By sub-routine!</p>
+</blockquote>
+<blockquote>
+<p>Q: How do you order citrus?</p>
+<p>A: Use the real number lime.</p>
+</blockquote>
+]]></summary>
+</entry>
+<entry>
+    <title>Building a windows-executable Haskell program with stack and AppVeyor</title>
+    <link href="https://silky.github.io/posts/2016-01-05-build-windows-haskell-app-with-stack-and-appveyor.html" />
+    <id>https://silky.github.io/posts/2016-01-05-build-windows-haskell-app-with-stack-and-appveyor.html</id>
+    <published>2016-01-05T00:00:00Z</published>
+    <updated>2016-01-05T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on January  5, 2016
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>In this post we’ll see how to setup a CI build that generates Windows executables for stack-based Haskell projects.</p>
+<p>So imagine you love Haskell and you have written a Haskell program, you’ve hosted it on <a href="https://github.com">GitHub</a> and you’ve dilligently set up a CI build on <a href="https://travis-ci.org">Travis</a> that uses <a href="https://github.com/commercialhaskell/stack">stack</a> to build/test/etc.</p>
+<p>Now, because stack is great and life is good, people can build your project from the source largely without issue. But suppose now that you’d like to provide Windows binaries for download. It so happens that we live in an age where this is completely automatable! Let’s see how.</p>
+<p>The essence of my approach is to use the CI system <a href="http://www.appveyor.com/">AppVeyor</a> (essentially like a Travis for Windows), and the following <code>appveyor.yml</code> file (full file below, I’ll go through details next):</p>
+<div class="sourceCode"><table class="sourceCode yaml numberLines"><tr class="sourceCode"><td class="lineNumbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+</pre></td><td class="sourceCode"><pre><code class="sourceCode yaml"><span class="fu">build:</span> off
+
+<span class="fu">before_build:</span>
+<span class="kw">-</span> <span class="fu">curl -ostack.zip -L --insecure http:</span>//www.stackage.org/stack/windows-i386
+<span class="kw">-</span> 7z x stack.zip stack.exe
+<span class="kw">-</span> <span class="fu">sed -i &#39;s/git@github.com:</span>/https:\/\/github.com\//&#39; .gitmodules
+<span class="co"># Appveyor doesn&#39;t clone recursively.</span>
+<span class="kw">-</span> git submodule update --init --recursive
+
+<span class="fu">skip_tags:</span> true
+
+<span class="fu">build_script:</span>
+<span class="co"># Suppress output from stack setup, as there is a lot and it&#39;s not necessary.</span>
+<span class="kw">-</span> stack setup --no-terminal &gt; nul
+<span class="kw">-</span> stack build --only-snapshot --no-terminal
+<span class="kw">-</span> stack --local-bin-path . install haskmas
+<span class="co"># Set a magical environment variable</span>
+<span class="kw">-</span> <span class="fu">cmd:</span> for /f %%i in (&#39;stack exec -- haskmas -v&#39;) do set HASKMAS_VERSION=%%i
+
+<span class="fu">artifacts:</span>
+<span class="kw">-</span> <span class="fu">path:</span> haskmas.exe
+
+<span class="co"># Auto-deploy</span>
+<span class="fu">deploy:</span>
+  <span class="kw">-</span> <span class="fu">provider:</span> GitHub
+    <span class="fu">tag:</span> <span class="st">&#39;haskmas-$(HASKMAS_VERSION)&#39;</span>
+    <span class="fu">release:</span> <span class="st">&#39;Release haskmas-$(HASKMAS_VERSION)&#39;</span>
+    <span class="fu">auth_token:</span>
+      <span class="fu">secure:</span> FZXhwa1ucQwyFtswv/XNUJkclAxoz4YGGu69dSOEEkwG7Rlh/Gho66SJtOUJ57kN
+    <span class="fu">artifact:</span> haskmas.exe
+    <span class="fu">on:</span>
+      <span class="fu">branch:</span> master</code></pre></td></tr></table></div>
+<p>Details:</p>
+<ul>
+<li>Line 1 disables the <em>standard</em> build process which would use MSBuild.</li>
+<li>Lines 3-8 obtain the stack executable, and also perform a small hack which converts my <code>ssh</code>-based git submodules to <code>https</code>-based ones, that can be cloned without needing to mess about with ssh keys.</li>
+<li>Line 10 prevents AppVeyor from building when it sees a new tag (later in the script we end up making a new tag when we push a release)</li>
+<li>Lines 12-16 perform the typical stack build, and also install the <code>haskmas.exe</code> file that we will mark as an artifact</li>
+<li>Line 18 is a magic command that sets the environment variable <code>HASKMAS_VERSION</code> to the value of the output of the command <code>stack exec -- haskmas -v</code>. This is my “hack” to obtain the cabal-version of the <code>haskmas</code> library, which I use as part of the tag that gets released on the <a href="https://github.com/silky/haskmas/releases">GitHub releases page</a></li>
+<li>Line 21 simply marks the <code>haskmas.exe</code> as an artifact; this means AppVeyor will hang on to it after the build completes.</li>
+<li>and finally, lines 24-32 specify that, for each build that completes, AppVeyor should push a release with the tag <code>haskmas-&lt;cabal_version_of_haskmas&gt;</code> to the GitHub releases page! (Note: probably we would want to be a bit more elaborate about when we push to the releases page; making sure that we include proper release notes, etc.)</li>
+</ul>
+<p>You can see from the releases on the <code>haskmas</code> project istelf that I fumbled around with this setup a bit. Mostly I observed that the manual release process on AppVeyor doesn’t quite operate the way I’d’ve <a href="https://github.com/appveyor/ci/issues/593">hoped</a>; but in any case AppVeyor is a pretty convenient service; it’s very nice to see something for Windows in this space.</p>
+<p>I based my configuration off of the one for the <a href="https://github.com/commercialhaskell/stack/blob/master/appveyor.yml">stack tool itself</a>. Note that there is some mention of caching in there that might speed up the build (my build takes ~17 minutes on AppVeyor compared to ~2 minutes on travis).</p>
+<p>All-in-all, technical details about automatically pushing releases aside, AppVeyor+stack is a really nice way to build Windows binaries from exactly the same source as your linux binaries. The only outstanding item to do is to combine artifacts from travis and AppVeyor into a single entity that can be released dually; but on the other hand tooling could always be written to perform this semi-manually, from your working computer, when you are ready to release.</p>
+<p>The repo is here: <a href="https://github.com/silky/haskmas">haskmas</a>. As a side benefit, I made the haskmas program take command line arguments to control how it operates! So now you don’t need to compile it to get a tree of arbitrary depth!</p>
+]]></summary>
+</entry>
+<entry>
+    <title>Happy Haskmas!</title>
+    <link href="https://silky.github.io/posts/2015-12-18-happy-haskmas.html" />
+    <id>https://silky.github.io/posts/2015-12-18-happy-haskmas.html</id>
+    <published>2015-12-18T00:00:00Z</published>
+    <updated>2015-12-18T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on December 18, 2015
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>At the last <a href="http://www.meetup.com/Melbourne-Haskell-Users-Group/events/222203592/">Melbourne Haskell Meetup</a> we got into the spirit by making <a href="https://github.com/imccoy/xmast">Christmas trees in Haskell</a>.</p>
+<p>However, I recently have access to a 3D printer, and I’ve long wanted an excuse to try and use <a href="https://github.com/colah/ImplicitCAD">ImplicitCAD</a>, so I set about trying to make a 3D version of <a href="https://github.com/sordina">Lyndon</a>’s <a href="http://www.meetup.com/Melbourne-Haskell-Users-Group/photos/26573949/">logo</a>.</p>
+<p>So of course, I love <a href="https://github.com/commercialhaskell/stack">stack</a> I created a new <code>simple</code> project with <code>stack new</code> and got started.</p>
+<p>It turns out that <code>ImplicitCAD</code> has a pretty nice and reasonably intuitive interface (similar to the code that one would write into <a href="http://www.openscad.org/">OpenSCAD</a>).</p>
+<p>I built the 3D version of the logo by moving around rectangles, and by extruding a hand-drawn shape.</p>
+<p>The cool thing about generating this image in fully-feature programming language is that I can build a tree of any size I like!</p>
+<p>Here’s the (pretty verbose) code that gets me a tree of arbitrary depth:</p>
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">ntree ::</span> <span class="dt">Integer</span> <span class="ot">-&gt;</span> <span class="dt">SymbolicObj3</span>
+ntree n <span class="fu">=</span> finalObj
+  <span class="kw">where</span>
+      dec     <span class="fu">=</span> <span class="fl">0.8</span>
+      ratios  <span class="fu">=</span> <span class="dv">0</span> <span class="fu">:</span> [dec<span class="fu">^</span>j <span class="fu">|</span> j <span class="ot">&lt;-</span> [<span class="dv">0</span><span class="fu">..</span>(n<span class="fu">-</span><span class="dv">2</span>)]]
+      <span class="co">-- build up logo structure</span>
+      ((lx, ly, lz), objs) <span class="fu">=</span> foldl f ((<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>), []) (zip [<span class="dv">0</span><span class="fu">..</span>(n<span class="fu">-</span><span class="dv">1</span>)] ratios)
+      <span class="co">-- position of logos</span>
+      (x,y,z) <span class="fu">=</span> (<span class="dv">40</span>, <span class="dv">4</span>, <span class="dv">0</span>)
+<span class="ot">      f ::</span> ((ℝ, ℝ, ℝ), [<span class="dt">SymbolicObj3</span>]) <span class="ot">-&gt;</span> (<span class="dt">Integer</span>, <span class="dt">Float</span>) <span class="ot">-&gt;</span> ((ℝ, ℝ, ℝ), [<span class="dt">SymbolicObj3</span>])
+      f ((x&#39;, y&#39;, z&#39;), xs) (j, r) <span class="fu">=</span>
+                <span class="kw">let</span> newPos <span class="fu">=</span> (x&#39; <span class="fu">+</span> r<span class="fu">*</span>x, y&#39; <span class="fu">+</span> r<span class="fu">*</span>y, z&#39; <span class="fu">+</span> r<span class="fu">*</span>z)
+                    s      <span class="fu">=</span> dec <span class="fu">^</span> j
+                    loc    <span class="fu">=</span> <span class="kw">if</span> (even j) <span class="kw">then</span> <span class="dt">R</span> <span class="kw">else</span> <span class="dt">L</span>
+                    obj3   <span class="fu">=</span> translate newPos <span class="fu">$</span> scale (s, s, s) (logoBauble loc)
+                 <span class="kw">in</span> (newPos, obj3 <span class="fu">:</span> xs)
+      <span class="co">-- star</span>
+      (a,b,c)   <span class="fu">=</span> (<span class="fl">40.5</span>, <span class="fl">24.5</span>, <span class="dv">0</span>)
+      starScale <span class="fu">=</span> dec <span class="fu">**</span> (fromIntegral (n<span class="fu">-</span><span class="dv">3</span>))
+      posScale  <span class="fu">=</span> dec <span class="fu">**</span> (fromIntegral n)
+      starObj   <span class="fu">=</span> translate (lx <span class="fu">+</span> (posScale <span class="fu">*</span> a), ly <span class="fu">+</span> (posScale <span class="fu">*</span> b), lz <span class="fu">+</span> (posScale <span class="fu">*</span> c))
+                    <span class="fu">$</span> scale (starScale, starScale, starScale) star
+      finalObj <span class="fu">=</span> union (starObj <span class="fu">:</span> objs)</code></pre></div>
+<p>Running this with <span class="math inline">\(n = 5\)</span> gives result in the following render in OpenSCAD:</p>
+<div class="figure">
+<img src="/images/tree-5.png" />
+
+</div>
+<p>So there you have it! You can view the source code here: <a href="https://github.com/silky/haskmas">github.com/silky/haskmas</a> or download a ready-to-print STL from <a href="http://www.thingiverse.com/thing:1187442">Thingiverse</a>.</p>
+<p>Have a happy Haskmas! :)</p>
+]]></summary>
+</entry>
+<entry>
+    <title>Super Reference! Web Haskell-based reference management</title>
+    <link href="https://silky.github.io/posts/2015-10-14-super-reference-haskell-reference-manager.html" />
+    <id>https://silky.github.io/posts/2015-10-14-super-reference-haskell-reference-manager.html</id>
+    <published>2015-10-14T00:00:00Z</published>
+    <updated>2015-10-14T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on October 14, 2015
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>Today I’m announcing a (very) alpha version of my web-based reference management system, <a href="https://github.com/silky/super-reference">super-reference</a>!</p>
+<p>Super-reference is a system which:</p>
+<ol style="list-style-type: decimal">
+<li>Reads a bibtex file and lets you search the bibtex entries in it</li>
+<li>Provides an interface to open associated PDFs or visit associated links</li>
+<li>Maintains a list of ‘currently reading’ PDFs by synching a folder (for me, a dropbox folder)</li>
+</ol>
+<p>Here’s a screenshot of the main (only) page:</p>
+<div class="figure">
+<img src="https://raw.github.com/silky/super-reference/master/another_screenshot.png" />
+
+</div>
+<p>Super-reference is built around my workflow for getting the latest papers.</p>
+<p>A high-level overview of my workflow is:</p>
+<ol style="list-style-type: decimal">
+<li>Find an interesting paper</li>
+<li>Obtain the pdf file for this paper, (preferably from <a href="https://arxiv.org">arXiv</a>)</li>
+<li>Save this pdf on my computer, and get the <code>bibtex</code> data for the file somehow</li>
+<li>At some point in the future, be interested in finding this PDF by searching for the title, or browsing through a list</li>
+</ol>
+<p>All the while I’d like to maintain a list of “papers I’m currently reading” and have them available on my tablet.</p>
+<p>Items 1-3 take place <em>outside</em> of super-reference. My workflow for finding new papers and saving them on my computer is a little specialised, but happily you don’t need to follow this protocol if you want to get utility out of super-reference — you simply need a <code>bibtex</code> file to point it at.</p>
+<p>Here’s my new paper obtaining workflow (yours may be different):</p>
+<ol style="list-style-type: decimal">
+<li>Browse <a href="https://scirate.com">SciRate</a> regularly, and “scite” interesting papers</li>
+<li>Periodically run <a href="https://github.com/silky/scirate3_scraper">scirate3_scaper</a> to bring down all the papers I’ve scited recently, and their bibtex entries</li>
+<li>Combine all these bibtex entries ino my <em>One True</em> bibtex file</li>
+</ol>
+<h2 id="using-super-reference">Using super-reference</h2>
+<p>Let’s suppose now you have a <em>One True</em> bibtex file called <code>all.bib</code>.</p>
+<p>Grab yourself down a copy of the repository by following the <a href="https://github.com/silky/super-reference/#installation">instructions</a> to configure it to point to this bibtex file.</p>
+<p>Once you have the environment set up you can run a dev server with <code>yesod devel</code>. You will then be able to visit the website! Supposing you pointed the config file at your <code>all.bib</code> file, you will then be looking at all your interesting papers! If there’s a link associated with the entry, a link will be displayed, and if there is a PDF file, clicking on the entry name will open the PDF (with it’s location given by the <code>file</code> entry in the relevant bibtex entry).</p>
+<p>You can click the <code>star</code> link to move the PDF up into the “currently reading” section. (Note: At the moment there is no visual indication of this, but it will be shown next time the page loads.)</p>
+<h2 id="improvements">Improvements</h2>
+<p>Currently there is a lot of outstanding work to do on super-reference; but it’s in a working state for me, so I thought I should release it.</p>
+<p>If you have any feature requests/improvements/etc feel free to log an issue (or a pull request) over at the repository: <a href="https://github.com/silky/super-reference">super-reference</a>.</p>
+]]></summary>
+</entry>
+<entry>
+    <title>Versioned LyX documents</title>
+    <link href="https://silky.github.io/posts/2015-10-01-Makefile-for-versioned-lyx.html" />
+    <id>https://silky.github.io/posts/2015-10-01-Makefile-for-versioned-lyx.html</id>
+    <published>2015-10-01T00:00:00Z</published>
+    <updated>2015-10-01T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on October  1, 2015
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>Oftentimes one needs to write a document with math symbols in it. The standard tool of choice is some variant of TeX, either writing it online in one of the growing-list of collaborative editors:</p>
+<ul>
+<li><a href="https://www.overleaf.com/">Overleaf</a></li>
+<li><a href="https://www.sharelatex.com/">ShareLaTeX</a></li>
+<li><a href="https://www.authorea.com/">Authorea</a></li>
+</ul>
+<p>But one program, that runs locally, that I can’t stop using is <a href="http://www.lyx.org/">LyX</a>.</p>
+<p>I really like LyX because of the “What-you-see-is-(pretty much)-what-you-get” nature of it.</p>
+<p>One thing I wanted to share was a small technique that I used to get a version number in all of the pdfs that I generated from my LyX documents. The idea was that when I sent my document to obtain feedback from various interested parties, I could easily see which version they had commented on.</p>
+<p>What I wanted as a footer that would be included on every page, that contained the version number.</p>
+<p>The approach is:</p>
+<ol style="list-style-type: decimal">
+<li>In the “LaTeX Preamble” setting of the LyX document, include (something like)</li>
+</ol>
+<pre><code>\usepackage{fancyhdr}
+\pagestyle{fancy}
+\cfoot{\tiny{|VERSION|}}
+\rfoot{\thepage}
+\rhead{}</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Build your LyX documents by the command line with a <code>Makefile</code>. My <code>Makefile</code> looks like so:</li>
+</ol>
+<pre><code>BUILD_NUMBER_FILE := build-number.txt
+BUILD_NUMBER      := $(shell cat $(BUILD_NUMBER_FILE))
+BUILD_DATE        := $(shell date +%d%b%Y)
+VER_STRING        := $(BUILD_DATE)-build$(BUILD_NUMBER)
+LYXFILE           := coolness
+TEMPDIR           := /tmp
+
+all: pdf
+
+# Switch in the new version number, compile with LyX and
+# bring it here.
+pdf: buildnumber
+	sed &quot;s/|VERSION|/$(VER_STRING)/g&quot; $(LYXFILE).lyx &gt;$(TEMPDIR)/$(LYXFILE).lyx
+	lyx -e pdf2 $(TEMPDIR)/$(LYXFILE).lyx
+	cp $(TEMPDIR)/$(LYXFILE).pdf .
+
+# Build number file. Increment each build.
+buildnumber:
+	@if ! test -f $(BUILD_NUMBER_FILE); then echo 0 &gt; $(BUILD_NUMBER_FILE); fi
+	@echo $$(($$(cat $(BUILD_NUMBER_FILE)) + 1)) &gt; $(BUILD_NUMBER_FILE)</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Build with the <code>make</code> command and profit!</li>
+</ol>
+<p>Note that there is a <code>build-number.txt</code> file that is incremented on each build, so you don’t need to do that manually.</p>
+<p>I’ve put together a sample project <a href="https://gist.github.com/silky/9accc6e6a5dbbc029669">here</a>, so you can clone that gist and type <code>make</code> and see it in action!</p>
+]]></summary>
+</entry>
+<entry>
+    <title>GHCi Colouriser</title>
+    <link href="https://silky.github.io/posts/2015-09-22-ghci-colouriser.html" />
+    <id>https://silky.github.io/posts/2015-09-22-ghci-colouriser.html</id>
+    <published>2015-09-22T00:00:00Z</published>
+    <updated>2015-09-22T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on September 22, 2015
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>Behold, a colourful GHCi (<a href="https://github.com/silky/ghci-color">install it for yourself</a>):</p>
+<div class="figure">
+<img src="https://raw.github.com/silky/ghci-color/master/cap2.png" />
+
+</div>
+<p>This is done by using a simple little <code>sed</code> wrapper around the ordinary <code>ghci --interactive</code>, see <a href="https://github.com/silky/ghci-color/blob/master/ghci-color">here</a> for the script.</p>
+<p>Note in particular the quirk that we must capture any <code>SIGINT</code> that gets sent through and discard it, when we are invoking <code>sed</code>, otherwise <code>sed</code> itself will quit and our GHCi session will break.</p>
+<p>You can use it <code>cabal repl</code> (being mindful of <a href="https://github.com/haskell/cabal/issues/1905">this bug</a>) by using <code>cabal repl --with-ghc=ghci-color</code>. I’ve bound an alias <code>repl</code> to this.</p>
+<p>(Note: original credit for this goes to <a href="https://github.com/rhysd/">rhysd</a>)</p>
+]]></summary>
+</entry>
+<entry>
+    <title>Fresh Prince of Bell Pair</title>
+    <link href="https://silky.github.io/posts/2015-05-29-fresh-prince-of-bell-pair.html" />
+    <id>https://silky.github.io/posts/2015-05-29-fresh-prince-of-bell-pair.html</id>
+    <published>2015-05-29T00:00:00Z</published>
+    <updated>2015-05-29T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on May 29, 2015
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>Written for my Masters completion talk. <a href="https://vimeo.com/129394232">Video</a>.</p>
+<h2 id="lyrics">Lyrics</h2>
+<blockquote>
+<p>now this is a story, all about how</p>
+</blockquote>
+<blockquote>
+<p>my life got spun, both up and down</p>
+</blockquote>
+<div class="figure">
+<img src="/images/p1.png" />
+
+</div>
+<blockquote>
+<p>and i’d like to take a minute, just sit right there</p>
+</blockquote>
+<blockquote>
+<p>and i’ll tell you how i became the prince, of the state called <a href="http://en.wikipedia.org/wiki/Bell_state">bell pair</a></p>
+</blockquote>
+<div class="figure">
+<img src="/images/p2.png" />
+
+</div>
+<blockquote>
+<p>in programming languages, born and raised, on the computer, was where i spent most of my days</p>
+</blockquote>
+<blockquote>
+<p>typing out, compiling, building some tools, and all surfing the internet looking for news</p>
+</blockquote>
+<blockquote>
+<p>when a couple of guys who seemed kinda fine, started making trouble in polynomial time!</p>
+</blockquote>
+<div class="figure">
+<img src="/images/p3.png" />
+
+</div>
+<blockquote>
+<p>they got in one little fight (BQP vs BPP) and everyone got scared,</p>
+</blockquote>
+<div class="figure">
+<img src="/images/p4.png" />
+
+</div>
+<blockquote>
+<p>someone said: we’re going to build a quantum computer, so you better be prepared!</p>
+</blockquote>
+<div class="figure">
+<img src="/images/p5.png" />
+
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>Introduction to quantum computing and the surface code</title>
+    <link href="https://silky.github.io/posts/2014-09-09-intro-to-qc-and-the-surface-code.html" />
+    <id>https://silky.github.io/posts/2014-09-09-intro-to-qc-and-the-surface-code.html</id>
+    <published>2014-09-09T00:00:00Z</published>
+    <updated>2014-09-09T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on September  9, 2014
+    
+        by Noon van der Silk
+    
+</div>
+
+<p><em>references: <a href="https://scirate.com/arxiv/0904.2557">arXiv:0904.2557</a>, <a href="https://scirate.com/arxiv/1208.0928">arXiv:1208.0928</a></em></p>
+<p>(This is the content of a talk I gave to other students in our department, most of whom have no background in quantum computing; hence the introduction and lightness on details of the surface code.)</p>
+<p>Before talking about the surface code, I’ll introduce the fundamentals of quantum computing.</p>
+<p><strong>Quantum computing</strong>: The evaluation of quantum circuits in polynomial time.</p>
+<h2 id="background-on-quantum-computing">Background on quantum computing</h2>
+<p><strong>State</strong> A <em>state</em> is a <span class="math inline">\(d\)</span>-dimensional vector in a complex Hilbert space <span class="math inline">\(\mathcal{H}^d\)</span>. We require that the states are normalised to unity.</p>
+<p><strong>Qubit</strong> A <em>qubit</em> is a “two-level system”. This means it is a state with <span class="math inline">\(d = 2\)</span>.</p>
+<p>We are doing quantum mechanics, so we use bras and kets for vectors, and we distinguish some particular bases,</p>
+<p><span class="math display">\[ \begin{aligned}
+    |0\rangle &amp;= \left( \begin{array}{c}
+        1 \\ 0
+    \end{array} \right), \\
+    |1\rangle &amp;= \left( \begin{array}{c}
+        0 \\ 1
+    \end{array} \right).
+\end{aligned} \]</span></p>
+<p>Note that these two vectors form a basis for <span class="math inline">\(\mathcal{H}^2\)</span>. We call this basis the <em>standard</em> basis. All bases here will are assumed to be orthonormal.</p>
+<p>Written in the standard basis an arbitrary qubit is then given by</p>
+<p><span class="math display">\[ \begin{aligned}
+    |\psi\rangle = \alpha |0\rangle + \beta |1\rangle.
+\end{aligned} \]</span></p>
+<p>For a ket <span class="math inline">\(|\psi\rangle\)</span> the bra is given by <span class="math inline">\(\langle\psi| = (|\psi\rangle)^\dagger\)</span>, where <span class="math inline">\(\dagger\)</span> means take the conjugate tranpose. So we write the inner product as <span class="math inline">\(\langle \psi|\varphi\rangle\)</span> and the outer product as <span class="math inline">\(|\psi\rangle\langle\varphi|\)</span>.</p>
+<p>We will also refer to the so-called <em>Hadamard basis</em>, which is</p>
+<p><span class="math display">\[ \begin{aligned}
+    |+\rangle &amp;= \frac{1}{\sqrt{2}}\left(|0\rangle + |1\rangle\right), \\
+    |-\rangle &amp;= \frac{1}{\sqrt{2}}\left(|0\rangle - |1\rangle\right).
+\end{aligned} \]</span></p>
+<p><strong>Qubits</strong> We can form a state containing multiple qubits using the tensor product. Verbosely, one may write:</p>
+<p><span class="math display">\[ \begin{aligned}
+    |0\rangle \otimes |0\rangle \otimes \cdots
+\end{aligned} \]</span></p>
+<p>but we will shorten this to:</p>
+<p><span class="math display">\[ \begin{aligned}
+    |00\cdots\rangle &amp;= |0\rangle \otimes |0\rangle \otimes \cdots.
+\end{aligned} \]</span></p>
+<p>The dimension of the Hilbert space of this state is <span class="math inline">\(\mathcal{H}^{2^n}\)</span>, where <span class="math inline">\(n\)</span> is the number of terms in the tensor product: the number of qubits.</p>
+<p><strong>Operator</strong> An <em>operator</em> (sometimes called a <em>gate</em>), M, is a <span class="math inline">\(2^n\times 2^n\)</span>-dimensional matrix with elements in <span class="math inline">\(\mathbb{C}\)</span>. We require that the operators be unitary; i.e. that <span class="math inline">\(M M^\dagger = M^\dagger M = 1\)</span> (this requirement comes from the fact that any such operator should preserve the norm of the states).</p>
+<p><strong>A note on notation</strong> Given a multi-qubit state, <span class="math inline">\(|abcd\rangle\)</span>, we can perform a single-qubit operator <span class="math inline">\(M\)</span> on each of these qubits by constructing the appropriate tensor product of matrices, <span class="math inline">\(M \otimes M \otimes M \otimes M\)</span>, and then acting this on the state. We will often write this more concisely as <span class="math inline">\(M_1 M_2 M_3 M_4 |abcd\rangle\)</span>, indicating which qubit the operator acts on.</p>
+<p><strong>Pauli Matrices</strong> These play a key role in the surface code. We will define them as</p>
+<p><span class="math display">\[ \begin{aligned}
+    X &amp;= \left( \begin{array}{cc}
+        0 &amp; 1 \\
+        1 &amp; 0 \end{array} \right), \\
+    Z &amp;= \left( \begin{array}{cc}
+        1 &amp; 0 \\
+        0 &amp; -1 \end{array} \right), \\
+    Y &amp;= \text{i}XZ.
+\end{aligned} \]</span></p>
+<p>Note that they all square to <span class="math inline">\(1\)</span>. We will only be interested in the action of <span class="math inline">\(X\)</span> and <span class="math inline">\(Z\)</span>, so note:</p>
+<p><span class="math display">\[ \begin{aligned}
+    X|0\rangle &amp;= |1\rangle, \\
+    X|1\rangle &amp;= |0\rangle, \\
+    Z|+\rangle &amp;= |-\rangle, \\
+    Z|-\rangle &amp;= |+\rangle.
+\end{aligned} \]</span></p>
+<p>And furthermore, we have <span class="math inline">\(XZ = -ZX\)</span> (these operators anticommute).</p>
+<p><strong>Measurement</strong> Quantum mechanics prescribes that for an arbitrary qubit (written in the standard basis),</p>
+<p><span class="math display">\[ \begin{aligned}
+    |\psi\rangle &amp;= \alpha|0\rangle + \beta|1\rangle,
+\end{aligned} \]</span></p>
+<p>then <em>measuring</em> this qubit gives the state <span class="math inline">\(|0\rangle\)</span> with probability <span class="math inline">\(|\alpha|^2\)</span> and state <span class="math inline">\(|1\rangle\)</span> with probability <span class="math inline">\(|\beta|^2\)</span>.</p>
+<p>More generally we can make projective measurements, wherein we project a state <span class="math inline">\(|\psi\rangle\)</span> into a particular basis. It is common to observe that, in terms of eigenvalues and eigenvectors (by the spectral decomposition theorem),</p>
+<p><span class="math display">\[ \begin{aligned}
+    X &amp;= |+\rangle\langle +| - |-\rangle\langle -|, \\
+    Z &amp;= |0\rangle\langle 0| - |1\rangle\langle 1|,
+\end{aligned} \]</span></p>
+<p>and therefore make statements such as “measure in the <span class="math inline">\(X\)</span> basis”, where this means to project the qubit into the basis <span class="math inline">\(\{|+\rangle, |-\rangle\}\)</span>.</p>
+<p><strong>Quantum circuits</strong></p>
+<p>An example quantum circuit:</p>
+<!--
+    Circuit
+    |0> ---- X ----- | M_Z |
+-->
+<div class="figure">
+<img src="/images/qcirc_1.jpg" />
+
+</div>
+<p>This enacts the operator <span class="math inline">\(X\)</span> on the state <span class="math inline">\(|0\rangle\)</span>, and we “measure” this state at the end of the circuit in the <span class="math inline">\(Z\)</span> basis.</p>
+<p>The outcome of this circuit is the state <span class="math inline">\(|1\rangle\)</span> with certainity.</p>
+<p>Let <span class="math inline">\(H = \frac{1}{\sqrt{2}} \left( \begin{array}{cc}  1 &amp; 1 \\  1 &amp; -1 \end{array} \right)\)</span> and <span class="math inline">\(C_X = \left( \begin{array}{cccc}  1 &amp; 0 &amp; 0 &amp; 0 \\  0 &amp; 1 &amp; 0 &amp; 0 \\  0 &amp; 0 &amp; 0 &amp; 1 \\  0 &amp; 0 &amp; 1 &amp; 0  \end{array} \right) = \left(  \begin{array}{ccc}  1 &amp; &amp; \\  &amp; 1 &amp; \\  &amp; &amp; X  \end{array} \right)\)</span>.</p>
+<p>A more complicated circuit:</p>
+<!--
+    |0> --- H -- [ C_X ] ------ 
+                 |     |
+    |0> -------- [     ] ------
+-->
+<div class="figure">
+<img src="/images/qcirc_2.jpg" />
+
+</div>
+<p>The outcome of this circuit is the state <span class="math inline">\(|00\rangle + |11\rangle\)</span>. This is infact an <em>entangled</em> state.</p>
+<p><strong>Universal quantum computation</strong></p>
+<p>Previously I described quantum computation as the evaluation of any circuit in polynomial time i.e. we could choose any unitary operations we like.</p>
+<p>Infact, it turns out that, due to a standard theorem (Solovay-Kitaev theorem), that if we can perform the gates <span class="math inline">\(\{H, S, T, C_X\}\)</span>, then we can approximate any unitary matrix (acting on the qubits involved), and hence perform any computation. (It’s not particularly important what the <span class="math inline">\(S\)</span> and <span class="math inline">\(T\)</span> gates are, for our purposes.)</p>
+<h2 id="error-correction">Error correction</h2>
+<p>A natural question is - “Do we have quantum computers?”, and the answer is, “not yet”. The reason is that quantum states are decliate; they need to be well isolated from the environment; otherwise errors occur.</p>
+<h3 id="classical-errors">Classical errors</h3>
+<p><em>Idea of encoding</em></p>
+<p>Suppose we wanted to worry about errors in bits. We could used the repitition code,</p>
+<p><span class="math display">\[ \begin{aligned}
+    0 &amp;\mapsto 000, \\
+    1 &amp;\mapsto 111.
+\end{aligned} \]</span></p>
+<p>This exact procedure - copying an arbitrary state - can’t be applied in quantum computing due to the No-Cloning Theorem: There is no matrix <span class="math inline">\(U\)</span> such that for any arbitrary <span class="math inline">\(|\psi\rangle\)</span></p>
+<p><span class="math display">\[ \begin{aligned}
+    U(|\psi\rangle \otimes |0\rangle) = |\psi\rangle \otimes |\psi\rangle.
+\end{aligned} \]</span></p>
+<p><em>Proof</em>. Let <span class="math inline">\(|\psi\rangle = \alpha|0\rangle + \beta|1\rangle\)</span> then apply <span class="math inline">\(U\)</span> before and after enacting the tensor product, and note contradiction.</p>
+<h3 id="quantum-errors">Quantum errors</h3>
+<p>For the moment, we will consider only errors that may occur on a single qubit, i.e. an erroneous unitary operation.</p>
+<p>Any <span class="math inline">\(2^n \times 2^n\)</span> unitary matrix can infact be expressed as a sum of (tensor products of) Pauli operators, with appropriate coefficients, so we consider the general single-qubit error operator</p>
+<p><span class="math display">\[ \begin{aligned}
+    E = \epsilon_1 I + \epsilon_2 X + \epsilon_3 Z + \epsilon_4 Y.
+\end{aligned} \]</span></p>
+<p>(Recall that <span class="math inline">\(Y = \text{i}XZ\)</span>.)</p>
+<p>Of course, we can correct any of these errors by applying <span class="math inline">\(E^\dagger\)</span>, but in so doing we would in principle need to know the coefficients. It turns out there is a better way.</p>
+<p>The first step is to think completely differently about how we would encode a logical qubit.</p>
+<p>Consider the operators <span class="math inline">\(X_1, X_2\)</span> and <span class="math inline">\(Z_1, Z_2\)</span>, acting on two qubits. These operators commute, as <span class="math inline">\(XZ = -XZ\)</span> (and operators acting on different qubits always commute.) The (un-normalised) eigenspace is</p>
+<p><span class="math display">\[ \begin{aligned}
+    \begin{array}{ccc}
+        Z_1 Z_2 &amp; X_1 X_2 &amp; \text{Eigenvectors} \\ \hline
+          +1 &amp; +1 &amp; |e_1\rangle = |00\rangle + |11\rangle \\
+          +1 &amp; -1 &amp; |e_2\rangle = |00\rangle - |11\rangle \\
+          -1 &amp; +1 &amp; |e_3\rangle = |01\rangle + |10\rangle \\
+          -1 &amp; -1 &amp; |e_4\rangle = |01\rangle - |10\rangle
+    \end{array}
+\end{aligned} \]</span></p>
+<p>They key is this. Consider an arbitrary two-qubit system expressed in this basis</p>
+<p><span class="math display">\[ \begin{aligned}
+    |\psi\rangle = \alpha |e_1\rangle + \beta|e_2\rangle + \gamma|e_3\rangle + \delta|e_4\rangle.
+\end{aligned} \]</span></p>
+<p>If we impose the following constraint on this system,</p>
+<p><span class="math display">\[ \begin{aligned}
+    X_1 X_2 |\psi\rangle = \lambda_X |\psi\rangle
+\end{aligned} \]</span></p>
+<p>then we cut out two of the possible basis states that the system could be in. For example, say <span class="math inline">\(\lambda_X = +1\)</span>.</p>
+<p>Then this rules out the state <span class="math inline">\(|00\rangle - |11\rangle\)</span> and <span class="math inline">\(|01\rangle - |10\rangle\)</span>, leaving us with:</p>
+<p><span class="math display">\[ \begin{aligned}
+    |\psi\rangle = \alpha|e_1\rangle + \gamma|e_3\rangle.
+\end{aligned} \]</span></p>
+<p>Observations:</p>
+<ul>
+<li><p>In general we rule out half the eigenvectors when specifying a stabilizer constraint.</p></li>
+<li><p>Suppose we enact <span class="math inline">\(X_1 X_2\)</span> on this new constrained state; it will remain the same, so we can measure in this basis as often as we like, and we will continue to obtain the same eigenvalue when there are no errors.</p></li>
+<li><p>If either qubit undergoes say a <span class="math inline">\(Z\)</span> error, the eigenvalue <span class="math inline">\(\lambda_X\)</span> will change. So we can <em>detect</em> this error. We can also correct it, by applying <span class="math inline">\(Z\)</span> again (if we wished), as <span class="math inline">\(Z^2 = 1\)</span>.</p></li>
+<li><p>If either qubit undergoes a <span class="math inline">\(X\)</span> error, this is <em>not detectable</em>. We will still be in the <span class="math inline">\(+1\)</span> eigenstate of <span class="math inline">\(X_1 X_2\)</span>, but the coefficients will have switched.</p></li>
+</ul>
+<p>This is a toy model.</p>
+<p>The surface code is a system by which we can detect <em>any</em> single qubit error, <span class="math inline">\(E\)</span> as before, along with several other kinds.</p>
+<h2 id="the-surface-code">The surface code</h2>
+<p>We define the surface code on a <span class="math inline">\(k \times k\)</span> lattice. At each lattice site we place a qubit. For example, suppose <span class="math inline">\(k = 3\)</span>, then we have</p>
+<div class="figure">
+<img src="/images/surface_code_1.jpg" />
+
+</div>
+<p>Now, we let there be two types of black cricles. Those associated with <span class="math inline">\(X\)</span> operators, and those associated with <span class="math inline">\(Z\)</span>s. We also label the white qubits, as these will form the <em>quiescent</em> state - the stable state of the surface code, and the state which we will manipulate in order to perform computation,</p>
+<div class="figure">
+<img src="/images/surface_code_3.jpg" />
+
+</div>
+<p>In the <span class="math inline">\(k = 3\)</span> system, the implementation of the surface code will enforce the following constraints (with the white qubits labelled as in the above image in red),</p>
+<p><span class="math display">\[ \begin{aligned}
+    Z_1 Z_2 Z_3 |\psi\rangle = \lambda^{(Z)}_{1,2,3}|\psi\rangle, \\
+    Z_3 Z_4 Z_5 |\psi\rangle = \lambda^{(Z)}_{3,4,5}|\psi\rangle, \\
+    X_1 X_3 X_4 |\psi\rangle = \lambda^{(X)}_{1,3,4}|\psi\rangle, \\
+    X_3 X_4 X_5 |\psi\rangle = \lambda^{(X)}_{3,4,5}|\psi\rangle.
+\end{aligned} \]</span></p>
+<!--
+In general, in the bulk of a surface code lattice, the following two
+constraints are enforced, one for each type of measurement qubit, on the state
+of all the data qubits:
+
+$$ \begin{aligned}
+    X_a X_b X_c X_d |\psi\rangle = \lambda^X_{a,b,c,d}|\psi\rangle, \\
+    Z_a Z_b Z_c Z_d |\psi\rangle = \lambda^Z_{a,b,c,d}|\psi\rangle.
+\end{aligned} $$
+-->
+<p>Any implementation of the surface code enforces these constraint at every time step.</p>
+<p>In our lattice here, we have <span class="math inline">\(5\)</span> data qubits, and <span class="math inline">\(4\)</span> measurement qubits. We showed that there are <span class="math inline">\(4\)</span> constraints coming from the <span class="math inline">\(4\)</span> data qubits, and as we claimed earlier each of these halve the state space, so the resulting state space has dimension <span class="math inline">\(2^5/2^4 = 2\)</span>. In other words, it encodes one qubit.</p>
+<p>Our goal now is to define logical operations on this qubit. In a much larger surface code (and with some modifications to the way logical qubits are encoded on the lattice), it is possible to define all the logical operations necessary to perform universal quantum computation, but here we’ll only look at <span class="math inline">\(X_L\)</span> and <span class="math inline">\(Z_L\)</span>.</p>
+<p>Consider an <span class="math inline">\(X\)</span> on data qubit <span class="math inline">\(4\)</span>. This operation commutes with the <span class="math inline">\(X\)</span> stabilizers, but will be detected by the <span class="math inline">\(Z\)</span> stabilier to the right. Consider then the operation <span class="math inline">\(X_L = X_4 X_5\)</span>. This operation commutes with all the stabilizers, and cannot be written in terms of any of them.</p>
+<p>So by performing these operators we have obtained <span class="math inline">\(|\psi_X\rangle = X_L|\psi\rangle\)</span> - we’ve manipulated one of the degrees of freedom.</p>
+<p>Similarly, we can define <span class="math inline">\(Z_L = Z_2 Z_5\)</span>. Note that this anticommutes with <span class="math inline">\(X_L\)</span>.</p>
+<p>So we’ve exhibited some logical operators.</p>
+<h3 id="surface-code-facts-and-final-comments">Surface code facts and final comments</h3>
+<ul>
+<li><p>Tolerant to a 1% error rate in the physical qubit operations,</p></li>
+<li><p>Logical qubits in the code look a bit different; they are defined with respect to “defects” in a much larger lattice.</p></li>
+<li><p>The estimate in 2012 was that ~14,500 phsyical qubits would be necessary to build one logical qubit.</p></li>
+<li><p>In order to factor a 2000 bit number we would require 1 billion qubits.</p></li>
+<li><p>I’ve left out a lot of details regarding how errors are corrected - this is not trivial, and it’s actually interesting.</p></li>
+<li><p>I’ve not commented on all the types of errors that the surface code corrects against.</p></li>
+</ul>
+<h2 id="more-information">More information</h2>
+<p>There’s the recent surface code paper:</p>
+<ul>
+<li><a href="https://scirate.com/arxiv/1208.0928">Surface codes: Towards practical large-scale quantum computation</a>,</li>
+</ul>
+<p>a fantastic recent comprehensive review:</p>
+<ul>
+<li><a href="https://scirate.com/arxiv/1504.01444">Quantum Computation with Topological codes: from qubit to topological fault-tolerance</a>,</li>
+</ul>
+<p>there’s a recent video from <a href="http://web.physics.ucsb.edu/~martinisgroup/">John Martinis</a>:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=HQmFEt6l6Tw">Design of a Superconducting Quantum Computer</a>,</li>
+</ul>
+<p>there’s even some code to go and calculate your own surface code error rates!</p>
+<ul>
+<li><a href="https://scirate.com/arxiv/1307.0689">Polyestimate: instantaneous open source surface code analysis</a> (<a href="https://github.com/adamcw/autotune">Source code</a>).</li>
+</ul>
+]]></summary>
+</entry>
+<entry>
+    <title>Feaured Artist - Pablo Amaringo</title>
+    <link href="https://silky.github.io/posts/2014-08-14-featured-artist-pablo-amaringo.html" />
+    <id>https://silky.github.io/posts/2014-08-14-featured-artist-pablo-amaringo.html</id>
+    <published>2014-08-14T00:00:00Z</published>
+    <updated>2014-08-14T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on August 14, 2014
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>Following the invention of the <a href="/posts/2014-08-10-laptop-art-holder.html">laptop art holder</a> I’ve realised I can now feature a particular artist on my laptop every so often. The first of these is <a href="http://en.wikipedia.org/wiki/Pablo_Amaringo">Pablo Amaringo (wiki)</a>, a Peruvian artist whose work is apparently based on the visions he saw while under the influence of <a href="http://en.wikipedia.org/wiki/Ayahuasca">ayahuasca</a>.</p>
+<p>His work is featured in a book - <a href="http://www.ayahuascavisions.com/index.html">The Ayahuasca Visions of Pablo Amaringo</a>.</p>
+<p>The particular work that is featured on the laptop is:</p>
+<p><img src="http://i.imgur.com/UWpxPeo.jpg" width="700" /></p>
+<p>but another favourite is (note: monkey magic is hiding in this one; can you find him?):</p>
+<p><img src="http://i.imgur.com/Lz2stkr.jpg" width="700" /></p>
+<p>In particular I like just how much detail there is in each painting, and everywhere you look you can find something new, if you stare at it for a few moments. (<a href="https://soundcloud.com/pnkslm/goat-mixtape-mastered">This</a> is a pretty good track to listen to while looking at these paintings, by the way.)</p>
+<p>It turns out it’s possible to <a href="http://ayahuasca_visions.imagekind.com/store/">buy prints</a> (though seemingly not of the paintings I’ve linked to, which I found by an image search.)</p>
+]]></summary>
+</entry>
+<entry>
+    <title>Laptop art holder</title>
+    <link href="https://silky.github.io/posts/2014-08-10-laptop-art-holder.html" />
+    <id>https://silky.github.io/posts/2014-08-10-laptop-art-holder.html</id>
+    <published>2014-08-10T00:00:00Z</published>
+    <updated>2014-08-10T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on August 10, 2014
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>Following the whiteboard-laptop idea, today I made the ‘laptop art holder’. It looks as follows.</p>
+<div class="figure">
+<img src="/images/laptop-art-holder-2.JPG" />
+
+</div>
+<div class="figure">
+<img src="/images/laptop-art-holder-4.JPG" />
+
+</div>
+<p>I used the following material:</p>
+<ul>
+<li>1 A3-sized plastic pocket for the front,</li>
+<li>1 A3-sized cardboard backing for the back,</li>
+<li>A little bit of black electric tape to create the border, (note that the top of the thing is open, so you can change the contents),</li>
+<li>4 velcro dots attached to the laptop, and the corresponding velcro to the back of the holder itself, and,</li>
+<li>1 art.</li>
+</ul>
+<p>A hobby knife comes in handy, as does a pair of scissors.</p>
+<p>The reason I like this is because it’s possible to change in whatever piece of paper you like - of course, it needs to be of the appropriate size.</p>
+]]></summary>
+</entry>
+
+</feed>

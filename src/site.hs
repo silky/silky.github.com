@@ -47,6 +47,7 @@ main = hakyll $ do
         route $ setExtension "html"
         compile $ pandocMathCompiler
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
+            >>= saveSnapshot "content"
             >>= loadAndApplyTemplate "templates/default.html" postCtx
             >>= relativizeUrls
 
@@ -91,6 +92,23 @@ main = hakyll $ do
 
     match "templates/*" $ compile templateCompiler
 
+    create ["atom.xml"] $ do
+        route idRoute
+        compile $ do
+            let feedCtx = postCtx `mappend` bodyField "description"
+            posts <- fmap (take 10) . recentFirst =<<
+                loadAllSnapshots "posts/*" "content"
+            renderAtom feedConf feedCtx posts
+
+
+feedConf :: FeedConfiguration
+feedConf = FeedConfiguration
+    { feedTitle         = "silky.github.io"
+    , feedDescription   = "Website of Noon van der Silk"
+    , feedAuthorName    = "Noon van der Silk"
+    , feedAuthorEmail   = "noonsilk+-noonsilk@gmail.com"
+    , feedRoot          = "https://silky.github.io"
+    }
 
 --------------------------------------------------------------------------------
 postCtx :: Context String
