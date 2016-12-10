@@ -8,8 +8,78 @@
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
     </author>
-    <updated>2016-02-22T00:00:00Z</updated>
+    <updated>2016-12-09T00:00:00Z</updated>
     <entry>
+    <title>Quantum neural networks</title>
+    <link href="https://silky.github.io/posts/2016-12-09-quantum-neural-networks.html" />
+    <id>https://silky.github.io/posts/2016-12-09-quantum-neural-networks.html</id>
+    <published>2016-12-09T00:00:00Z</published>
+    <updated>2016-12-09T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on December  9, 2016
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>Recently, I’ve been spending a lot of time thinking about machine learning, and in particular deep learning. But before that, I was mostly concerning myself with quantum computing, and specifically the algorithmic/theory side of quantum computing.</p>
+<p>In the last few days there’s been a flurry of papers on quantum machine learning/quantum neural networks, and related topics. Infact, there’s been a fair bit of research in the last few years (see the <a href="#appendix">Appendix</a> at the end for a few links), and I thought I’d take this opportunity to have a look at what people are up to.</p>
+<p>The papers we’ll be discussing are:</p>
+<ul>
+<li><a href="https://scirate.com/arxiv/1612.01789">arXiv:1612.01789 - Quantum gradient descent and Newton’s method for constrained polynomial optimization</a> by Rebentrost, Schuld, Petruccione and Lloyd,</li>
+<li><a href="https://scirate.com/arxiv/1612.01045">arXiv:1612.01045 - Quantum generalisation of feedforward neural networks</a> by Wan, Dahlsten, Kristjánsson, Gardner and Kim.</li>
+<li><a href="https://scirate.com/arxiv/1612.02806">arXiv:1612.02806 - Quantum autoencoders for efficient compression of quantum data</a> by Romero, Olson and Aspuru-Guzik,</li>
+</ul>
+<p>But first, let’s take a look at the paper that got me interested in machine learning in the first place!</p>
+<h2 id="arxiv1307.0411---quantum-algorithms-for-supervised-and-unsupervised-machine-learning">arXiv:1307.0411 - Quantum algorithms for supervised and unsupervised machine learning</h2>
+<p>The paper, <a href="https://scirate.com/arxiv/1307.0411">Quantum algorithms for supervised and unsupervised machine learning</a> by Lloyd, Mohseni and Rebentrost in 2013, was one of my first technical exposures to machine learning. It’s an interesting one because it demonstrates that for certain types of clustering algorithms there is a quantum algorithm that exhibits an exponential speed-up over the classical counterpart.</p>
+<p><strong>Aside</strong>: Gaining complexity-theoretic speed-ups is the central task of (quantum) complexity theory. The speedup in this paper is interested, but it “only” demonstrates a speed-up on a problem that is already known to be <em>efficient</em><a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> for classical computers, so it <em>doesn’t</em> provide evidence that quantum computers are fundamentally more powerful than classical ones, by the standard notions in computer science.</p>
+<p>The <code>Supervised clustering</code> problem that is tackled in the paper is as follows:</p>
+<blockquote>
+<p>Given some vector <span class="math inline">\(\vec{u} \in \mathbb{R}^N\)</span>, and two sets of vectors <span class="math inline">\(V\)</span> and <span class="math inline">\(W\)</span>, then given <span class="math inline">\(M\)</span> representative samples from <span class="math inline">\(V\)</span>: <span class="math inline">\(\vec{v}_j \in V\)</span> and <span class="math inline">\(\vec{w}_k \in W\)</span>, figure out which set <span class="math inline">\(\vec{u}\)</span> should go in to, by comparing the distances to these vectors.</p>
+</blockquote>
+<p>In pictures it looks like so:</p>
+<div style="text-align: center">
+<div class="figure">
+<img src="../images/supervised-clustering.png" alt="Figure 1. An example of the supervised clustering problem with \vec{u} \in \mathbb{R}^2 and M=3. We’ve drawn 3 points from V, the (unknown) dashed purple region, and 3 points from W, the dashed pink region." />
+<p class="caption">Figure 1. An example of the supervised clustering problem with <span class="math inline">\(\vec{u} \in \mathbb{R}^2\)</span> and <span class="math inline">\(M=3\)</span>. We’ve drawn 3 points from <span class="math inline">\(V\)</span>, the (unknown) dashed purple region, and 3 points from <span class="math inline">\(W\)</span>, the dashed pink region.</p>
+</div>
+</div>
+<p>Classically, if we think about where we’d like to put <span class="math inline">\(\vec{u}\)</span>, we could compare the distance to all the points <span class="math inline">\(\vec{v_1}, \vec{v_2}, \vec{v_3}\)</span> and to all the points <span class="math inline">\(\vec{w_1}, \vec{w_2},\vec{w_3}\)</span>. In the specific example I’ve drawn, doing so will show that, out of the two sets, <span class="math inline">\(\vec{u}\)</span> belongs in <span class="math inline">\(V\)</span>.</p>
+<p>In general, we can see that, using this approach, we would need to look at all <span class="math inline">\(M\)</span> data points, and we’d need to compare each dimension of the <span class="math inline">\(N\)</span> dimensions of each vector <span class="math inline">\(\vec{v_j}, \vec{w_k}, \vec{u}\)</span>; i.e. we’d need to look at at least <span class="math inline">\(M\times N\)</span> pieces of information. In other words, we’d compute the distance</p>
+\begin{align*}
+    d(\vec{u}, V) = \left| \vec{u} - \frac{1}{M}\sum_{j=1}^{M} \vec{v_j} \right|
+\end{align*}
+<p>By looking at the problem slightly more formally, we find that classically the best known algorithm takes “something like”<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> <span class="math inline">\(\texttt{pol}y(M\times N)\)</span> steps, where “<span class="math inline">\(\texttt{poly}\)</span>” means that the true running time is a polynomial of <span class="math inline">\(M\times N\)</span>.</p>
+<p>Quantumly, the paper demonstrates an algorithm that lets us solve this problem in “something like” <span class="math inline">\(\log(M\times N)\)</span> time steps. This is a significant improvement, in a practical sense. To get an idea, if we took <span class="math inline">\(100\)</span> samples from a <span class="math inline">\(N = 350\)</span>-dimensional space, then <span class="math inline">\(M\times N = 35,000\)</span> and <span class="math inline">\(\log(M \times N) \approx 10\)</span>.</p>
+<p>The quantum algorithm works by constructing a state in a certain state so that, when measured, the distance that we wanted, <span class="math inline">\(d(\vec{u}, V)\)</span>, is the probability that we achieve a certain measurement outcome. In this way, we can build this certain state, and measure it, several times, and use this information to approximate the distances <span class="math inline">\(d\)</span>. And, the paper shows that this whole process can be done in “something like” a running time of <span class="math inline">\(\log(M\times N)\)</span>.</p>
+<p>There’s more contirbutions in the paper than just this; so it’s worth a look if you’re interested.</p>
+<h2 id="arxiv1612.01789---quantum-gradient-descent-and-newtons-method-for-constrained-polynomial-optimization">arXiv:1612.01789 - Quantum gradient descent and Newton’s method for constrained polynomial optimization</h2>
+<h2 id="appendix">Appendix <a id="appendix"></a></h2>
+<p>More interesting quantum machine learning papers:</p>
+<ul>
+<li><a href="https://scirate.com/arxiv/1611.09347">1611.09347 - Quantum Machine Learning</a> (most recent review)</li>
+<li><a href="https://scirate.com/arxiv/1610.08251">1610.08251 - Quantum-enhanced machine learning</a></li>
+<li><a href="https://scirate.com/arxiv/1605.05370">1605.05370 - Training A Quantum Optimizer</a></li>
+<li><a href="https://scirate.com/arxiv/1603.08675">1603.08675 - Quantum Recommender Systems</a></li>
+<li><a href="https://scirate.com/arxiv/1512.06069">1512.06069 - Demonstration of quantum advantage in machine learning</a></li>
+<li><a href="https://scirate.com/arxiv/1512.02900">1512.02900 - Advances in quantum machine learning</a></li>
+<li><a href="https://scirate.com/arxiv/1611.08104">1611.08104 - Quantum Enhanced Inference in Markov Logic Networks</a></li>
+<li><a href="https://scirate.com/arxiv/1609.02542">1609.02542 - Quantum-assisted learning of graphical models with arbitrary pairwise connectivity</a></li>
+<li><a href="https://scirate.com/arxiv/1609.06935">1609.06935 - Quantum Neural Machine Learning - Backpropagation and Dynamics</a></li>
+<li><a href="https://scirate.com/arxiv/1606.02318">1606.02318 - Solving the Quantum Many-Body Problem with Artificial Neural Networks</a></li>
+<li>even more: <a href="https://scirate.com/search?utf8=%E2%9C%93&amp;q=quantum+machine+learning">SciRate - quantum machine learning</a>!</li>
+</ul>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Here <em>efficient</em> means that the problem is in the complexity class caled <span class="math inline">\(\textbf{P}\)</span>. Problems that are efficient for quantum computers are in the complexity class <span class="math inline">\(\textbf{BQP}\)</span>. One of the main outstanding questions in the field is “Are quantum computers more powerful than classical ones?” and this can be phrased as comparing the class <span class="math inline">\(\textbf{P}\)</span> and <span class="math inline">\(\textbf{BQP}\)</span>.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p><em>“Something like” x</em> here is a very informal term for the more formal statement that the running time is <span class="math inline">\(O(x)\)</span>. See <a href="https://en.wikipedia.org/wiki/Big_O_notation">Big O Notation</a> for more.<a href="#fnref2">↩</a></p></li>
+</ol>
+</div>
+]]></summary>
+</entry>
+<entry>
     <title>50 bad maths and programming jokes</title>
     <link href="https://silky.github.io/posts/2016-02-22-bad-maths-and-programming-jokes.html" />
     <id>https://silky.github.io/posts/2016-02-22-bad-maths-and-programming-jokes.html</id>
@@ -826,40 +896,6 @@ $$ \begin{aligned}
 <p><img src="http://i.imgur.com/Lz2stkr.jpg" width="700" /></p>
 <p>In particular I like just how much detail there is in each painting, and everywhere you look you can find something new, if you stare at it for a few moments. (<a href="https://soundcloud.com/pnkslm/goat-mixtape-mastered">This</a> is a pretty good track to listen to while looking at these paintings, by the way.)</p>
 <p>It turns out it’s possible to <a href="http://ayahuasca_visions.imagekind.com/store/">buy prints</a> (though seemingly not of the paintings I’ve linked to, which I found by an image search.)</p>
-]]></summary>
-</entry>
-<entry>
-    <title>Laptop art holder</title>
-    <link href="https://silky.github.io/posts/2014-08-10-laptop-art-holder.html" />
-    <id>https://silky.github.io/posts/2014-08-10-laptop-art-holder.html</id>
-    <published>2014-08-10T00:00:00Z</published>
-    <updated>2014-08-10T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div class="info">
-    Posted on August 10, 2014
-    
-        by Noon van der Silk
-    
-</div>
-
-<p>Following the whiteboard-laptop idea, today I made the ‘laptop art holder’. It looks as follows.</p>
-<div class="figure">
-<img src="/images/laptop-art-holder-2.JPG" />
-
-</div>
-<div class="figure">
-<img src="/images/laptop-art-holder-4.JPG" />
-
-</div>
-<p>I used the following material:</p>
-<ul>
-<li>1 A3-sized plastic pocket for the front,</li>
-<li>1 A3-sized cardboard backing for the back,</li>
-<li>A little bit of black electric tape to create the border, (note that the top of the thing is open, so you can change the contents),</li>
-<li>4 velcro dots attached to the laptop, and the corresponding velcro to the back of the holder itself, and,</li>
-<li>1 art.</li>
-</ul>
-<p>A hobby knife comes in handy, as does a pair of scissors.</p>
-<p>The reason I like this is because it’s possible to change in whatever piece of paper you like - of course, it needs to be of the appropriate size.</p>
 ]]></summary>
 </entry>
 
