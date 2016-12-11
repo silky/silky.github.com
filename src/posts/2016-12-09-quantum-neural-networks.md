@@ -187,11 +187,80 @@ Overall it's a promising technique that would be fun to try out.
 
 ## arXiv:1612.01789 - Quantum gradient descent and Newton's method for constrained polynomial optimization
 
-Those of you familiar with neural networks will
-know that the central idea used to train them is [Gradient
-Descent](https://en.wikipedia.org/wiki/Gradient_descent).
+Those of you familiar with neural networks will know that the central idea
+used to train them is [Gradient
+Descent](https://en.wikipedia.org/wiki/Gradient_descent). We recall that
+gradient descent lets us known how to modify some vector $x$ so that it does
+"better" when evaluated with some cost function $C(x, y)$ where $y$ is some
+known good answer. I.e. $x$ might be a probability of liking some object, and
+$y$ might be the true probability, and $C(x,y) = |x-y|^2$.
+
+The paper supposes we have some quantum state $|x\rangle = \sum_{j=1}^N x_j
+|j\rangle$ (where $|j\rangle$ is the $j$'th computational-basis state), and
+some cost function $C(|x\rangle, |y\rangle)$ that tells us how good
+$|x\rangle$ is.  The question is, given we can evaluate $C(|x\rangle,
+|y\rangle)$, how can we best work out to modify $|x\rangle$ to do better?
+
+If this was entirely classical, we could just calculate the gradient of $C$
+with respect to the variables $\x_j$, and then propose a new set of $x_j$'s.
+However, we can't inspect all these values quantumly, so we need to do
+something else.
+
+In the paper, they demonstrate an approach that requires a few copies of the
+current state $|x^{(t)}\rangle$, but will produce a new state
+$|x^{(t+1)}\rangle$ such that:
+
+\begin{align*}
+    |x^{(t+1)}\rangle = |x^{(t)}\rangle - \eta |\nabla
+    f\left(x^{(t)}\right)\rangle
+\end{align*}
+
+for some step size $\eta$. That is, it's a step in the (hopefully) right
+direction, as per normal gradient descent!
+
+So one direction to take this paper would be to build a "fully quantum" neural
+network like so:
+
+<div style='text-align: center'>
+![Figure 5. Fully-quantum neural network. The inputs and the weights are
+quantum states; and the activation function $U$ is unitary.](../images/fully-quantum-nn.png)
+</div>
+
+where we make the weights quantum states, and the weights are multiplied onto
+the inputs as a dot-product. This would require that the weight state is the
+same size as the input state; but that should be possible because we're the
+ones building the network structure.
+
+Overall I think that the quantum gradient descent algorithm should be useful
+for training neural networks, and maybe some cool things will come from it.
+There are some natural direct extensions of this work; namely to extend the
+implementation to [the more practical
+variations](http://sebastianruder.com/optimizing-gradient-descent/index.html).
 
 
+## 1612.02806 - Quantum autoencoders for efficient compression of quantum data
+
+This paper came out only a few days after the Wan et al paper that we covered
+above, that also discussed autoencoders, so I thought it was worth a glance to
+see if this team did things differently.
+
+
+
+
+## Final thoughts
+
+It appears that the building blocks are being put together to start doing some
+serious work on quantum machine learning/quantum deep networks.
+[Google](http://web.physics.ucsb.edu/~martinisgroup/) and
+[Microsoft](http://blogs.microsoft.com/next/2016/11/20/microsoft-doubles-quantum-computing-bet/#sm.001umo7pp17ozfkwvl81eu0szc8pf)
+are already heavily investing in quantum computers, Google in particular has
+something it calls the ["Quantum A.I.
+Lab"](https://plus.google.com/+QuantumAILab), and there are even independent
+[quantum computer manufacturing groups](http://rigetti.com/).
+
+It seems like there are lots of options on which way to direct efforts in the
+quantum ML world, and with these recent developments on quantum ML techniques,
+the time appears to be right to be getting into quantum deep learning!
 
 
 ## Appendix <a id="appendix"></a>
