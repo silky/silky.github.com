@@ -3,6 +3,14 @@ title: Quantum neural networks
 author: Noon van der Silk
 ---
  
+(This post requires a background in the basics of quantum computing (and
+neural networks). Please have a read of the first part of [Introduction to
+quantum computing and the surface
+code](/posts/2014-09-09-intro-to-qc-and-the-surface-code.html) if you'd like
+to get up to speed on the quantum parts, [Neural networks and Deep
+Learning](http://neuralnetworksanddeeplearning.com/) is a good introduction to
+the other part.)
+
 Recently, I've been spending a lot of time thinking about machine learning,
 and in particular deep learning. But before that, I was mostly concerning
 myself with quantum computing, and specifically the algorithmic/theory side of
@@ -129,8 +137,8 @@ The problems are:
 
 - Quantum operations need to be reversible; $f$ as written is not (at the
   very least, it takes two inputs and squashes them down to one output).
-- Quantum states need to be normalised; so multiplying them by arbitrary
-  weights won't be productive.
+- Quantum states need to be normalised; so multiplying them by a
+  single arbitrary weight won't be productive.
 - You can't copy arbitrary quantum states due to the [No-Cloning
   theorem](https://en.wikipedia.org/wiki/No-cloning_theorem), so this
   restricts the type of networks that can be written down.
@@ -182,7 +190,13 @@ to demonstrate that this idea works to build a quantum autoencoder, and to
 make a neural network discover unitary matricies that perform the quantum
 teleportation protocol.
 
-Overall it's a promising technique that would be fun to try out.
+One view is that trying to learn arbitrary unitary matrices that perform a
+task really well will become too hard as the number neurons grows. If we had a
+large network, with potentially millions of internal, neurons (and hence
+unitaries) to learn, then it might be more effective to fix unitaries and
+instead focus on learning the weights.
+
+However, it's a promising technique that would be fun to try out.
 
 
 ## arXiv:1612.01789 - Quantum gradient descent and Newton's method for constrained polynomial optimization
@@ -202,13 +216,13 @@ $|x\rangle$ is.  The question is, given we can evaluate $C(|x\rangle,
 |y\rangle)$, how can we best work out to modify $|x\rangle$ to do better?
 
 If this was entirely classical, we could just calculate the gradient of $C$
-with respect to the variables $\x_j$, and then propose a new set of $x_j$'s.
+with respect to the variables $x_j$, and then propose a new set of $x_j$'s.
 However, we can't inspect all these values quantumly, so we need to do
 something else.
 
 In the paper, they demonstrate an approach that requires a few copies of the
 current state $|x^{(t)}\rangle$, but will produce a new state
-$|x^{(t+1)}\rangle$ such that:
+$|x^{(t+1)}\rangle$ such that (with objective/loss function $f$):
 
 \begin{align*}
     |x^{(t+1)}\rangle = |x^{(t)}\rangle - \eta |\nabla
@@ -231,6 +245,13 @@ the inputs as a dot-product. This would require that the weight state is the
 same size as the input state; but that should be possible because we're the
 ones building the network structure.
 
+We could then not worry about learning unitary matrices, and analogously to
+standard neural networks, just pick some unitary $U$ that "works well" in
+practice, maybe by just defining quantum analogues of some common activation
+functions, perhaps say the
+[ReLU](https://en.wikipedia.org/wiki/Rectifier_(neural_networks)) or
+[ELU](https://arxiv.org/abs/1511.07289).
+
 Overall I think that the quantum gradient descent algorithm should be useful
 for training neural networks, and maybe some cool things will come from it.
 There are some natural direct extensions of this work; namely to extend the
@@ -244,8 +265,15 @@ This paper came out only a few days after the Wan et al paper that we covered
 above, that also discussed autoencoders, so I thought it was worth a glance to
 see if this team did things differently.
 
+This paper again takes the approach of not concerning itself with weights and
+instead focuses on learning a good unitary matrix $U$ with a specific cost
+function.
 
-
+They take a different approach in how they build their unitaries. Here they
+have a "programmable" quantum circuit, where they consider the parameters
+defining this circuit as the ones that can be trained. Given that these
+parameters are classical, and loss function they calculate is classical,
+no special optimisation techniques are needed.
 
 ## Final thoughts
 
