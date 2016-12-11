@@ -26,8 +26,8 @@
 <p>In the last few days there’s been a flurry of papers on quantum machine learning/quantum neural networks, and related topics. Infact, there’s been a fair bit of research in the last few years (see the <a href="#appendix">Appendix</a> at the end for a few links), and I thought I’d take this opportunity to have a look at what people are up to.</p>
 <p>The papers we’ll be discussing are:</p>
 <ul>
-<li><a href="https://scirate.com/arxiv/1612.01789">arXiv:1612.01789 - Quantum gradient descent and Newton’s method for constrained polynomial optimization</a> by Rebentrost, Schuld, Petruccione and Lloyd,</li>
 <li><a href="https://scirate.com/arxiv/1612.01045">arXiv:1612.01045 - Quantum generalisation of feedforward neural networks</a> by Wan, Dahlsten, Kristjánsson, Gardner and Kim.</li>
+<li><a href="https://scirate.com/arxiv/1612.01789">arXiv:1612.01789 - Quantum gradient descent and Newton’s method for constrained polynomial optimization</a> by Rebentrost, Schuld, Petruccione and Lloyd,</li>
 <li><a href="https://scirate.com/arxiv/1612.02806">arXiv:1612.02806 - Quantum autoencoders for efficient compression of quantum data</a> by Romero, Olson and Aspuru-Guzik,</li>
 </ul>
 <p>But first, let’s take a look at the paper that got me interested in machine learning in the first place!</p>
@@ -52,9 +52,45 @@
 \end{align*}
 <p>By looking at the problem slightly more formally, we find that classically the best known algorithm takes “something like”<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> <span class="math inline">\(\texttt{pol}y(M\times N)\)</span> steps, where “<span class="math inline">\(\texttt{poly}\)</span>” means that the true running time is a polynomial of <span class="math inline">\(M\times N\)</span>.</p>
 <p>Quantumly, the paper demonstrates an algorithm that lets us solve this problem in “something like” <span class="math inline">\(\log(M\times N)\)</span> time steps. This is a significant improvement, in a practical sense. To get an idea, if we took <span class="math inline">\(100\)</span> samples from a <span class="math inline">\(N = 350\)</span>-dimensional space, then <span class="math inline">\(M\times N = 35,000\)</span> and <span class="math inline">\(\log(M \times N) \approx 10\)</span>.</p>
-<p>The quantum algorithm works by constructing a state in a certain state so that, when measured, the distance that we wanted, <span class="math inline">\(d(\vec{u}, V)\)</span>, is the probability that we achieve a certain measurement outcome. In this way, we can build this certain state, and measure it, several times, and use this information to approximate the distances <span class="math inline">\(d\)</span>. And, the paper shows that this whole process can be done in “something like” a running time of <span class="math inline">\(\log(M\times N)\)</span>.</p>
+<p>The quantum algorithm works by constructing a state in a certain state so that, when measured, the distance that we wanted, <span class="math inline">\(d(\vec{u}, V)\)</span>, is the probability that we achieve a certain measurement outcome. In this way, we can build this certain state, and measure it, several times, and use this information to approximate the required distances. And, the paper shows that this whole process can be done in “something like” a running time of <span class="math inline">\(\log(M\times N)\)</span>.</p>
 <p>There’s more contirbutions in the paper than just this; so it’s worth a look if you’re interested.</p>
+<h2 id="arxiv16.12.01045---quantum-generalisation-of-feedforward-neural-networks">arXiv:16.12.01045 - Quantum generalisation of feedforward neural networks</h2>
+<p>So this paper is pretty cool. We can get a feel for what it’s doing by first considering the following network:</p>
+<div style="text-align: center">
+<div class="figure">
+<img src="../images/basic-nn.png" alt="Figure 2. A simple classical neural network" />
+<p class="caption">Figure 2. A simple classical neural network</p>
+</div>
+</div>
+<p>This network has two inputs, <span class="math inline">\(x_1, x_2\)</span>, three learnable weights, <span class="math inline">\(w_1, w_2, w_3\)</span>, one output value <span class="math inline">\(y\)</span>, and an activation function <span class="math inline">\(f\)</span>.</p>
+<p>Classically one would feed in a series of training examples <span class="math inline">\((x_1, x_2, y)\)</span> and update the weights according to some loss function to achieve the best result for the given data.</p>
+<p>Quantumly, there are some immediate problems with doing this, if we switch the inputs <span class="math inline">\(x\)</span> to be quantum states, instead of classical real variables.</p>
+<p>The problems are:</p>
+<ul>
+<li>Quantum operations need to be reversible; <span class="math inline">\(f\)</span> as written is not (at the very least, it takes two inputs and squashes them down to one output).</li>
+<li>Quantum states need to be normalised; so multiplying them by arbitrary weights won’t be productive.</li>
+<li>You can’t copy arbitrary quantum states due to the <a href="https://en.wikipedia.org/wiki/No-cloning_theorem">No-Cloning theorem</a>, so this restricts the type of networks that can be written down.</li>
+</ul>
+<p>The way this paper solves these problems is to transition Figure 2 from a classical non-reversible network to a reversible quantum one:</p>
+<div style="text-align: center">
+<div class="figure">
+<img src="../images/transition-to-quantum-nn.png" alt="Figure 3. The transition from classical, to reversible classical, to quantum." />
+<p class="caption">Figure 3. The transition from classical, to reversible classical, to quantum.</p>
+</div>
+</div>
+<p>The final network takes in an arbitrary quantum state of two qubits, <span class="math inline">\(x_1, x_2\)</span>, and then adjoins an ancilla state <span class="math inline">\(|0\rangle\)</span>, applies some unitary operation <span class="math inline">\(U\)</span>, and emits a combined final state <span class="math inline">\(|\psi\rangle^{\text{Out}}_{x_1,x_2,y}\)</span> where the final qubit <span class="math inline">\(y\)</span> contains the result we’re interested in.</p>
+<p>At this point, one might reasonably ask: How is this different to a quantum circuit? It appears to me that the only difference is that <span class="math inline">\(U\)</span> is actually unknown, and <em>it</em> is trainable! Note that this is also a somewhat radical difference from classical neural networks: there, we don’t normally think of the activation functions (defined as <span class="math inline">\(f\)</span> above) as trainable parameters; but quantumly, in this paper, that’s exactly how we think of them!</p>
+<p>It turns out that unitary matrices can be parameterised by a collection of real variables <span class="math inline">\(\alpha\)</span>. Consider an arbitrary unitary matrix operating on two qubits, then <span class="math inline">\(U\)</span> can be written as:</p>
+\begin{align*}
+    U = \exp\left[ i \left(
+             \sum_{j_1,j_2=0,0}^{3,3} \alpha_{j_1, j_2} \times \left(\sigma_{j_1}
+             \otimes \sigma_{j_2}\right) \right) \right]
+\end{align*}
+<p>where <span class="math inline">\(\sigma_i, i \in {1,2,3}\)</span> are the usual <a href="https://en.wikipedia.org/wiki/Pauli_matrices">Pauli matrices</a> and <span class="math inline">\(\sigma_0\)</span> is the <span class="math inline">\(2\times 2\)</span> identity matrix. So one can then make these parameters <span class="math inline">\(\alpha_{j_1, j_2}\)</span> the <em>trainable</em> parameters! It turns out that in the paper they don’t train these parameters explicitly, instead they pick a less general way of writing down unitary matricies, and they construct, by hand, a unitary for two qubits. It’s not clear why they’ve done this, and it would not be fun to have to build a special trainable unitary matrix for each node/neuron of your architecture depending on its input.</p>
+<p>In any case, the main contribution of this paper seems to me to be the idea that we can <em>learn</em> unitary matricies for our particular problem. They go on to demonstrate that this idea works to build a quantum autoencoder, and to make a neural network discover unitary matricies that perform the quantum teleportation protocol.</p>
+<p>Overall it’s a promising technique that would be fun to try out.</p>
 <h2 id="arxiv1612.01789---quantum-gradient-descent-and-newtons-method-for-constrained-polynomial-optimization">arXiv:1612.01789 - Quantum gradient descent and Newton’s method for constrained polynomial optimization</h2>
+<p>Those of you familiar with neural networks will know that the central idea used to train them is <a href="https://en.wikipedia.org/wiki/Gradient_descent">Gradient Descent</a>.</p>
 <h2 id="appendix">Appendix <a id="appendix"></a></h2>
 <p>More interesting quantum machine learning papers:</p>
 <ul>

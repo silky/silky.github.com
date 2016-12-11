@@ -16,8 +16,8 @@ people are up to.
 
 The papers we'll be discussing are:
 
-- [arXiv:1612.01789 - Quantum gradient descent and Newton's method for constrained polynomial optimization](https://scirate.com/arxiv/1612.01789) by Rebentrost, Schuld, Petruccione and Lloyd,
 - [arXiv:1612.01045 - Quantum generalisation of feedforward neural networks](https://scirate.com/arxiv/1612.01045) by Wan, Dahlsten, Kristjánsson, Gardner and Kim.
+- [arXiv:1612.01789 - Quantum gradient descent and Newton's method for constrained polynomial optimization](https://scirate.com/arxiv/1612.01789) by Rebentrost, Schuld, Petruccione and Lloyd,
 - [arXiv:1612.02806 - Quantum autoencoders for efficient compression of quantum data](https://scirate.com/arxiv/1612.02806) by Romero, Olson and Aspuru-Guzik,
 
 But first, let's take a look at the paper that got me interested in machine
@@ -97,7 +97,7 @@ The quantum algorithm works by constructing a state in a certain state so
 that, when measured, the distance that we wanted, $d(\vec{u}, V)$, is the
 probability that we achieve a certain measurement outcome. In this way, we can
 build this certain state, and measure it, several times, and use this
-information to approximate the distances $d$. And, the paper shows that this
+information to approximate the required distances. And, the paper shows that this
 whole process can be done in "something like" a running time of $\log(M\times
 N)$.
 
@@ -105,7 +105,94 @@ There's more contirbutions in the paper than just this; so it's worth a look
 if you're interested.
 
 
+
+## arXiv:16.12.01045 - Quantum generalisation of feedforward neural networks
+
+So this paper is pretty cool. We can get a feel for what it's doing by first
+considering the following network:
+
+<div style='text-align: center'>
+![Figure 2. A simple classical neural network](../images/basic-nn.png)
+</div>
+
+This network has two inputs, $x_1, x_2$, three learnable weights, $w_1, w_2,
+w_3$, one output value $y$, and an activation function $f$.
+
+Classically one would feed in a series of training examples $(x_1, x_2, y)$
+and update the weights according to some loss function to achieve the best
+result for the given data.
+
+Quantumly, there are some immediate problems with doing this, if we switch
+the inputs $x$ to be quantum states, instead of classical real variables.
+
+The problems are:
+
+- Quantum operations need to be reversible; $f$ as written is not (at the
+  very least, it takes two inputs and squashes them down to one output).
+- Quantum states need to be normalised; so multiplying them by arbitrary
+  weights won't be productive.
+- You can't copy arbitrary quantum states due to the [No-Cloning
+  theorem](https://en.wikipedia.org/wiki/No-cloning_theorem), so this
+  restricts the type of networks that can be written down.
+
+The way this paper solves these problems is to transition Figure 2 from a
+classical non-reversible network to a reversible quantum one:
+
+<div style='text-align: center'>
+![Figure 3. The transition from classical, to reversible classical, to
+quantum.](../images/transition-to-quantum-nn.png)
+</div>
+
+The final network takes in an arbitrary quantum state of two qubits, $x_1,
+x_2$, and then adjoins an ancilla state $|0\rangle$, applies some unitary
+operation $U$, and emits a combined final state
+$|\psi\rangle^{\text{Out}}_{x_1,x_2,y}$ where the final qubit $y$ contains the
+result we're interested in.
+
+At this point, one might reasonably ask: How is this different to a quantum
+circuit? It appears to me that the only difference is that $U$ is actually
+unknown, and *it* is trainable! Note that this is also a somewhat radical
+difference from classical neural networks: there, we don't normally think of
+the activation functions (defined as $f$ above) as trainable parameters; but
+quantumly, in this paper, that's exactly how we think of them!
+
+It turns out that unitary matrices can be parameterised by a collection of
+real variables $\alpha$. Consider an arbitrary unitary matrix operating on
+two qubits, then $U$ can be written as:
+
+\begin{align*}
+    U = \exp\left[ i \left(
+             \sum_{j_1,j_2=0,0}^{3,3} \alpha_{j_1, j_2} \times \left(\sigma_{j_1}
+             \otimes \sigma_{j_2}\right) \right) \right]
+\end{align*}
+
+where $\sigma_i, i \in {1,2,3}$ are the usual [Pauli
+matrices](https://en.wikipedia.org/wiki/Pauli_matrices) and $\sigma_0$ is the
+$2\times 2$ identity matrix. So one can then make these parameters
+$\alpha_{j_1, j_2}$ the *trainable* parameters! It turns out that in the paper
+they don't train these parameters explicitly, instead they pick a less general
+way of writing down unitary matricies, and they construct, by hand, a unitary
+for two qubits. It's not clear why they've done this, and it would not be fun
+to have to build a special trainable unitary matrix for each node/neuron of
+your architecture depending on its input.
+
+In any case, the main contribution of this paper seems to me to be the idea
+that we can *learn* unitary matricies for our particular problem. They go on
+to demonstrate that this idea works to build a quantum autoencoder, and to
+make a neural network discover unitary matricies that perform the quantum
+teleportation protocol.
+
+Overall it's a promising technique that would be fun to try out.
+
+
 ## arXiv:1612.01789 - Quantum gradient descent and Newton's method for constrained polynomial optimization
+
+Those of you familiar with neural networks will
+know that the central idea used to train them is [Gradient
+Descent](https://en.wikipedia.org/wiki/Gradient_descent).
+
+
+
 
 ## Appendix <a id="appendix"></a>
 
