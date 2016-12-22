@@ -177,12 +177,16 @@ two qubits, then $U$ can be written as:
 where $\sigma_i, i \in {1,2,3}$ are the usual [Pauli
 matrices](https://en.wikipedia.org/wiki/Pauli_matrices) and $\sigma_0$ is the
 $2\times 2$ identity matrix. So one can then make these parameters
-$\alpha_{j_1, j_2}$ the *trainable* parameters! It turns out that in the paper
+$\alpha_{j_1, j_2}$ the *trainable* parameters! <s>It turns out that in the paper
 they don't train these parameters explicitly, instead they pick a less general
 way of writing down unitary matricies, and they construct, by hand, a unitary
 for two qubits. It's not clear why they've done this, and it would not be fun
 to have to build a special trainable unitary matrix for each node/neuron of
-your architecture depending on its input.
+your architecture depending on its input.</s>
+
+**Update:** Kwok-Ho kindly corrected me that they *do* indeed train directly
+on this form of unitary matricies, and that the simplification they do in the
+paper is used to investigate the loss surface.
 
 In any case, the main contribution of this paper seems to me to be the idea
 that we can *learn* unitary matricies for our particular problem. They go on
