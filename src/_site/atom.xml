@@ -59,7 +59,7 @@
 <li>and, A modification of Wiesner’s scheme that resists this attack.</li>
 </ol>
 <h1 id="wiesners-scheme">Wiesner’s scheme</h1>
-<p>Wiesner’s Quantum Money scheme is one of the earliest ideas in quantum computing. The fundamental idea is that (unknown) quantum states <a href="https://en.wikipedia.org/wiki/No-cloning_theorem">cannot be copied arbitrariy</a> and hence make an “unforgable” form of money: it shouldn’t be possible to duplicate a “quantum” bill.</p>
+<p>Wiesner’s Quantum Money scheme is one of the earliest ideas in quantum computing. The fundamental idea is that (unknown) quantum states <a href="https://en.wikipedia.org/wiki/No-cloning_theorem">cannot be copied arbitrarily</a> and hence make an “unforgable” form of money: it shouldn’t be possible to duplicate a “quantum” bill.</p>
 <p>Money, in Wiesner’s scheme, is created by the bank. The bank holds a serial number and a secret “key” that the bank uses to verify each note that it hands out. When given a note, the bank can determine if it is valid by referring back to this secret key.</p>
 <p>The important steps are:</p>
 <ol style="list-style-type: decimal">

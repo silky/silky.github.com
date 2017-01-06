@@ -23,7 +23,7 @@ learn about:
 
 Wiesner's Quantum Money scheme is one of the earliest ideas in quantum
 computing. The fundamental idea is that (unknown) quantum states [cannot
-be copied arbitrariy](https://en.wikipedia.org/wiki/No-cloning_theorem) and
+be copied arbitrarily](https://en.wikipedia.org/wiki/No-cloning_theorem) and
 hence make an "unforgable" form of money: it shouldn't be possible to
 duplicate a "quantum" bill.
 
