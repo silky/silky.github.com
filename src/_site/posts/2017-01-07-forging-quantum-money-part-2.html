@@ -108,9 +108,42 @@ Suppose I give you 10 bombs, some of which might be duds, and some which are liv
 <p>We then recall the operation of a <a href="https://en.wikipedia.org/wiki/Mach%E2%80%93Zehnder_interferometer">Mach-Zender Interferometer</a>.</p>
 <center>
 <svg id="table" width="400" height="400">
-<path d="M 300,300 H 0" stroke="#ff80ff"></path> <path d="M 300,100 H 400" stroke="#ff80ff"></path> <path d="M 300,100 V 0" stroke="#ff80ff"></path> <path d="M 100,300 H 300 V 100 H 100 V 300" stroke="#ff80ff" fill="none"></path> <image xlink:href="../images/detector-b.png" width="60" height="30" x="270" y="0"></image> <image xlink:href="../images/detector-a.png" width="30" height="60" x="370" y="70"></image> <image xlink:href="../images/mirror.png" width="60" height="60" x="70" y="70"></image> <image xlink:href="../images/mirror.png" width="60" height="60" x="270" y="270"></image> <image xlink:href="../images/half-mirror.png" width="60" height="60" x="80" y="270"></image> <image xlink:href="../images/half-mirror.png" width="60" height="60" x="270" y="80"></image> <!-- single-photon source --> <image xlink:href="../images/photon-source.png" width="30" height="60" y="270"> </image> <!-- 
+<path d="M 300,300 H 0" stroke="#ff80ff"></path> <path d="M 300,100 H 400" stroke="#ff80ff"></path> <path d="M 300,100 V 0" stroke="#ff80ff"></path> <path d="M 100,300 H 300 V 100 H 100 V 300" stroke="#ff80ff" fill="none"></path> <image xlink:href="../images/mirror.png" width="60" height="60" x="70" y="70"></image> <image xlink:href="../images/mirror.png" width="60" height="60" x="270" y="270"></image> <image xlink:href="../images/half-mirror-b.png" width="60" height="60" x="80" y="270"></image> <image xlink:href="../images/half-mirror.png" width="60" height="60" x="270" y="80"></image> <!-- single-photon source --> <image xlink:href="../images/photon-source.png" width="30" height="60" y="270"> </image> <!-- 
 <path d="M -15,15 C -5 -25, 5 -25, 15 15" stroke="blue" stroke-width="2" fill="white">
---> <!-- --> <path d="M 25,298 H 275 V 98 H 400" stroke="none" fill="none" id="lowerPath"></path> <image xlink:href="../images/wave-down.png" width="50" height="30"> <animateMotion dur="5s" repeatCount="indefinite"> <mpath xlink:href="#lowerPath"></mpath> </animateMotion> </image> <path d="M 25,298 H 75 V 75 H 400" stroke="none" fill="none" id="upperPath"></path> <image xlink:href="../images/wave-up.png" width="50" height="30"> <animateMotion dur="5s" repeatCount="indefinite"> <mpath xlink:href="#upperPath"></mpath> </animateMotion> </image> <!--
+--> <!-- --> <path d="M 25,298 H 275 V 98 H 400" stroke="none" fill="none" id="lowerPath"></path> <image xlink:href="../images/wave-down.png" width="50" height="30"> <animateMotion dur="5s" repeatCount="indefinite"> <mpath xlink:href="#lowerPath"></mpath> </animateMotion> </image> <path d="M 25,298 H 75 V 75 H 400" stroke="none" fill="none" id="upperPath"></path> <image xlink:href="../images/wave-up.png" width="50" height="30"> <animateMotion dur="5s" repeatCount="indefinite"> <mpath xlink:href="#upperPath"></mpath> </animateMotion> </image> <image xlink:href="../images/detector-a.png" width="30" height="60" x="370" y="70"></image> <!--
+Detector A:
+==========
+
+Up Path:
+
+    Up          : +1/2
+    Upper-Left  : +1/2
+    Through     : +c
+
+Down Path:
+    Through     : +c
+    Lower-Left  : +1/2
+    Right       : +1/2
+
+Total : Constructive
+--> <image xlink:href="../images/detector-b.png" width="60" height="30" x="270" y="0"></image> <!--
+Detector B:
+==========
+
+Up Path:
+
+    Up          : +1/2
+    Upper-Left  : +1/2
+    Up          : +c
+
+Down Path:
+
+    Through     : +c
+    Lower-Left  : +1/2
+    Right       : +c
+
+Total : Destructive
+--> <!--
 https://developer.mozilla.org/en/docs/Web/SVG/Tutorial/Paths
 <circle r="15" fill='pink'>
 <animateMotion dur="5s" repeatCount="indefinite">

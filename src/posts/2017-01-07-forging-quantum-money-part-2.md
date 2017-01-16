@@ -101,11 +101,9 @@ We then recall the operation of a [Mach-Zender Interferometer](https://en.wikipe
 <path d="M 300,100 H 400" stroke="#ff80ff" />
 <path d="M 300,100 V 0" stroke="#ff80ff" />
 <path d="M 100,300 H 300 V 100 H 100 V 300" stroke="#ff80ff" fill="none" />
-<image xlink:href="../images/detector-b.png" width="60" height="30" x="270" y="0" />
-<image xlink:href="../images/detector-a.png" width="30" height="60" x="370" y="70" />
 <image xlink:href="../images/mirror.png" width="60" height="60" x="70" y="70" />
 <image xlink:href="../images/mirror.png" width="60" height="60" x="270" y="270" />
-<image xlink:href="../images/half-mirror.png" width="60" height="60" x="80" y="270" />
+<image xlink:href="../images/half-mirror-b.png" width="60" height="60" x="80" y="270" />
 <image xlink:href="../images/half-mirror.png" width="60" height="60" x="270" y="80" />
 <!-- single-photon source -->
 <image xlink:href="../images/photon-source.png" width="30" height="60" y="270">
@@ -126,6 +124,43 @@ We then recall the operation of a [Mach-Zender Interferometer](https://en.wikipe
         <mpath xlink:href="#upperPath"/>
     </animateMotion>
 </image>
+<image xlink:href="../images/detector-a.png" width="30" height="60" x="370" y="70" />
+<!--
+Detector A:
+==========
+
+Up Path:
+
+    Up          : +1/2
+    Upper-Left  : +1/2
+    Through     : +c
+
+Down Path:
+    Through     : +c
+    Lower-Left  : +1/2
+    Right       : +1/2
+
+Total : Constructive
+-->
+<image xlink:href="../images/detector-b.png" width="60" height="30" x="270" y="0" />
+<!--
+Detector B:
+==========
+
+Up Path:
+
+    Up          : +1/2
+    Upper-Left  : +1/2
+    Up          : +c
+
+Down Path:
+
+    Through     : +c
+    Lower-Left  : +1/2
+    Right       : +c
+
+Total : Destructive
+-->
 <!--
 https://developer.mozilla.org/en/docs/Web/SVG/Tutorial/Paths
 <circle r="15" fill='pink'>
