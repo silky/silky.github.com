@@ -18,6 +18,7 @@ learn about:
    aside into quantum bomb testing!),
 3. and, A modification of Wiesner's scheme that resists this attack.
 
+<hr />
 
 # Wiesner's scheme
 
