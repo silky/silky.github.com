@@ -244,10 +244,15 @@ network like so:
 quantum states; and the activation function $U$ is unitary.](../images/fully-quantum-nn.png)
 </div>
 
-where we make the weights quantum states, and the weights are multiplied onto
-the inputs as a dot-product. This would require that the weight state is the
+where we make the weights quantum states, <s>and the weights are multiplied onto
+the inputs as a dot-product</s>. This would require that the weight state is the
 same size as the input state; but that should be possible because we're the
 ones building the network structure.
+
+**Update**: The idea about multiplying weights in didn't make any sense; a much
+more sensible idea would be to prepare something like $|w_i\rangle\langle
+w_i|$ and enact this on the input $|x_k$ and *then* apply the fixed unitary.
+
 
 We could then not worry about learning unitary matrices, and analogously to
 standard neural networks, just pick some unitary $U$ that "works well" in
