@@ -6,7 +6,7 @@ author: Noon van der Silk
 In my job I'm almost entirely surrounded by men. 
 
 <center>
-![](/images/silverponders.png?1=1)
+![](/images/silverponders.png?2=2)
 </center>
 
 I work as a Machine Learning Engineer at
