@@ -1,16 +1,25 @@
 ---
-draft: True
 title: Forging quantum money (part 2 of 3)
 author: Noon van der Silk
+draft: True
 ---
 
 <style>
-svg {
-  border: 3px solid #eee;
-  display: block;
-  margin: 1em auto;
+table.bombs {
+    border: solid 1px #f3c9ff;
+}
+
+table.bombs td { 
+    background: white; 
+    border: 0;
+}
+
+table.bombs td img {
+    cursor: pointer;
 }
 </style>
+<script type="text/javascript" 
+    src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 
 This post is the second of a three-part series on the paper [An adaptive
 attack on Wiesner's quantum money](https://arxiv.org/abs/1404.1507). The other
@@ -37,31 +46,60 @@ because it's very cool.
 
 ## Bomb testing
 
+
 Suppose I give you 10 bombs, some of which might be duds, and some which are
 live. 
-<table width='100%'>
+<table width='100%' border="0" class="bombs"> 
 <tr> <td width='10%' style='text-align: center'>
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b1" src="../images/bomb-unknown.png" width='100%'/>
 </td> <td width='10%' style='text-align: center'>
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b2" src="../images/bomb-unknown.png" width='100%'/>
 </td> <td width='10%' style='text-align: center'>
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b3" src="../images/bomb-unknown.png" width='100%'/>
 </td> <td width='10%' style='text-align: center'>
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b4" src="../images/bomb-unknown.png" width='100%'/>
 </td> <td width='10%' style='text-align: center'>
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b5" src="../images/bomb-unknown.png" width='100%'/>
 </td> <td width='10%' style='text-align: center'>
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b6" src="../images/bomb-unknown.png" width='100%'/>
 </td> <td width='10%' style='text-align: center'>
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b7" src="../images/bomb-unknown.png" width='100%'/>
 </td> <td width='10%' style='text-align: center'>
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b8" src="../images/bomb-unknown.png" width='100%'/>
 </td> <td width='10%' style='text-align: center'>
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b9" src="../images/bomb-unknown.png" width='100%'/>
 </td> <td width='10%' style='text-align: center'>
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b10" src="../images/bomb-unknown.png" width='100%'/>
+</td> </tr>
+<tr> <td colspan="10" class="instructions">
+Click on a bomb will attempt to detonate it. In this way you can see if a bomb
+is a dud or not.
+</td> </tr>
+<tr> <td colspan="10" class="instructions" style='text-align: right;'>
+<button onclick="resetBombs();">Reset</button>
 </td> </tr>
 </table>
+
+<script language="javascript">
+var a = new Object();
+function resetBombs () {
+    $(".bombs td img").attr("src", "../images/bomb-unknown.png");
+    $(".bombs td img").click(function (obj){
+        var id = $(obj.target).attr("id");
+        if ( !a[id] ) {
+            if( Math.random() < 0.3 ){
+                $(obj.target).attr("src", "../images/bomb-boom.png");
+            } else {
+                $(obj.target).attr("src", "../images/bomb-dud.png");
+            }
+        } else {
+            console.log("skipping");
+        }
+        a[id] = true;
+    });
+}
+resetBombs();
+</script>
 
 The task is:
 *Can you determine a test that separates the live bombs from the dud ones?*
@@ -97,9 +135,6 @@ We then recall the operation of a [Mach-Zender Interferometer](https://en.wikipe
 
 
 
-
-<style type="text/css">
-</style>
 
 
 

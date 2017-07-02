@@ -193,12 +193,21 @@ document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#x6
 </div>
 
 <style>
-svg {
-  border: 3px solid #eee;
-  display: block;
-  margin: 1em auto;
+table.bombs {
+    border: solid 1px #f3c9ff;
+}
+
+table.bombs td { 
+    background: white; 
+    border: 0;
+}
+
+table.bombs td img {
+    cursor: pointer;
 }
 </style>
+<script type="text/javascript" 
+    src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 <p>This post is the second of a three-part series on the paper <a href="https://arxiv.org/abs/1404.1507">An adaptive attack on Wiesner’s quantum money</a>. The other parts are:</p>
 <ol style="list-style-type: decimal">
 <li><a href="/posts/2017-01-06-forging-quantum-money-part-1.html">Wiesner’s scheme for quantum money, and why it was considered secure</a>,</li>
@@ -210,40 +219,72 @@ svg {
 <p>But before we see how it’s applied, let’s take a look at <a href="https://en.wikipedia.org/wiki/Elitzur%E2%80%93Vaidman_bomb_tester">the bomb testing idea</a>, because it’s very cool.</p>
 <h2 id="bomb-testing">Bomb testing</h2>
 Suppose I give you 10 bombs, some of which might be duds, and some which are live.
-<table width="100%">
+<table width="100%" border="0" class="bombs">
 <tr>
 <td width="10%" style="text-align: center">
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b1" src="../images/bomb-unknown.png" width='100%'/>
 </td>
 <td width="10%" style="text-align: center">
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b2" src="../images/bomb-unknown.png" width='100%'/>
 </td>
 <td width="10%" style="text-align: center">
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b3" src="../images/bomb-unknown.png" width='100%'/>
 </td>
 <td width="10%" style="text-align: center">
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b4" src="../images/bomb-unknown.png" width='100%'/>
 </td>
 <td width="10%" style="text-align: center">
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b5" src="../images/bomb-unknown.png" width='100%'/>
 </td>
 <td width="10%" style="text-align: center">
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b6" src="../images/bomb-unknown.png" width='100%'/>
 </td>
 <td width="10%" style="text-align: center">
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b7" src="../images/bomb-unknown.png" width='100%'/>
 </td>
 <td width="10%" style="text-align: center">
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b8" src="../images/bomb-unknown.png" width='100%'/>
 </td>
 <td width="10%" style="text-align: center">
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b9" src="../images/bomb-unknown.png" width='100%'/>
 </td>
 <td width="10%" style="text-align: center">
-<img src="../images/bomb-unknown.png" width='100%'/>
+<img id="b10" src="../images/bomb-unknown.png" width='100%'/>
+</td>
+</tr>
+<tr>
+<td colspan="10" class="instructions">
+Click on a bomb will attempt to detonate it. In this way you can see if a bomb is a dud or not.
+</td>
+</tr>
+<tr>
+<td colspan="10" class="instructions" style="text-align: right;">
+<button onclick="resetBombs();">
+Reset
+</button>
 </td>
 </tr>
 </table>
+<script language="javascript">
+var a = new Object();
+function resetBombs () {
+    $(".bombs td img").attr("src", "../images/bomb-unknown.png");
+    $(".bombs td img").click(function (obj){
+        var id = $(obj.target).attr("id");
+        if ( !a[id] ) {
+            if( Math.random() < 0.3 ){
+                $(obj.target).attr("src", "../images/bomb-boom.png");
+            } else {
+                $(obj.target).attr("src", "../images/bomb-dud.png");
+            }
+        } else {
+            console.log("skipping");
+        }
+        a[id] = true;
+    });
+}
+resetBombs();
+</script>
 <p>The task is: <em>Can you determine a test that separates the live bombs from the dud ones?</em></p>
 <p>Classically, one approach would be to simply attempt to detonate each bomb. If the bomb goes off, then it was a live bomb, and if it doesn’t, it wasn’t! Simple enough, but it leaves us with no good bombs to actually use.</p>
 <p>Quantumly, it turns out there <em>is</em> something we can do that actually lets us know if the bomb is live or not, <em>and</em> keeps the bomb un-detonated!</p>
@@ -268,8 +309,6 @@ Suppose I give you 10 bombs, some of which might be duds, and some which are liv
 </tr>
 </table>
 <p>We then recall the operation of a <a href="https://en.wikipedia.org/wiki/Mach%E2%80%93Zehnder_interferometer">Mach-Zender Interferometer</a>.</p>
-<style type="text/css">
-</style>
 <center>
 <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="554.50085" height="480.94122" viewBox="0 0 554.50088 480.94119" id="svg2" version="1.1" inkscape:version="0.91 r13725" inkscape:export-filename="/home/noon/dev/silky.github.com/src/images/wave-up.png" inkscape:export-xdpi="48.0396" inkscape:export-ydpi="48.0396" sodipodi:docname="mm-setup.svg">
 <defs
