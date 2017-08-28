@@ -8,8 +8,72 @@
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
     </author>
-    <updated>2017-05-16T00:00:00Z</updated>
+    <updated>2017-08-28T00:00:00Z</updated>
     <entry>
+    <title>Deep Learning Dance Smackdown!</title>
+    <link href="https://silky.github.io/posts/2017-08-28-deep-learning-dance-smackdown.html" />
+    <id>https://silky.github.io/posts/2017-08-28-deep-learning-dance-smackdown.html</id>
+    <published>2017-08-28T00:00:00Z</published>
+    <updated>2017-08-28T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on August 28, 2017
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>For the final event of the Melbourne Creative AI meetup this year I thought we’d run a small, fun, competition - a <em>deep learning dance <strong>smackdown</strong></em>.</p>
+<div style="text-align: center">
+<div class="figure">
+<img src="../images/dance-smackdown.png" />
+
+</div>
+</div>
+<p>The event details are on <a href="https://www.meetup.com/Melbourne-Creative-AI-Meetup/events/242805964/">Meetup</a>.</p>
+<h3 id="idea">Idea</h3>
+<p>The basic idea is, build a program that (does something like):</p>
+<ol style="list-style-type: decimal">
+<li>Watches a dance,</li>
+<li><em>and then</em>, Responds with a dance.</li>
+</ol>
+<p>The exact format is flexible; some options would be:</p>
+<ol style="list-style-type: decimal">
+<li>Watch a video, learn the poses, respond with a dance,</li>
+<li>Listen to audio, learn how to dance to the beat,</li>
+<li>Watch a bunch of dances in joint/pose format, and then respond with dances in this same format,</li>
+<li>Something else!</li>
+</ol>
+<p>You may like to use:</p>
+<ul>
+<li>GANs (See <a href="https://github.com/hwalsuklee/tensorflow-generative-model-collections">this</a> great list for a recent collection of GANs),</li>
+<li>Sequence models (<a href="https://github.com/tensorflow/tensor2tensor">tensor2tensor</a>, <a href="https://www.tensorflow.org/tutorials/seq2seq">seq2seq</a>, …)</li>
+<li>Ready-made model (<a href="https://github.com/una-dinosauria/human-motion-prediction">human-motion-prediction</a>, …)</li>
+<li>Something crazy!</li>
+</ul>
+<p>The format on the night will simply be to show how your particular idea works. It could be interactive, it could be online, it could be a presentation, it could be embodied in an robot! I leave it to your imagination.</p>
+<h3 id="prize">Prize!</h3>
+<p>The prize on the night will be one of the Evolution of Dance T-Shirts:</p>
+<p><a href="https://paom.com/products/evolution-of-dance-tee0034"> <img src="../images/evolution-of-dance-t-shirt.png" width="200" /> </a></p>
+<h3 id="pre-existing-and-related-work">Pre-existing and related work</h3>
+<ul>
+<li><a href="https://scirate.com/arxiv/1707.01732">Nonlinear dance motion analysis and motion editing using Hilbert-Huang transform</a></li>
+<li><a href="https://scirate.com/arxiv/1707.01489">Creative Robot Dance with Variational Encoder</a></li>
+<li><a href="https://scirate.com/arxiv/1703.06891">Dance Dance Convolution</a></li>
+<li><a href="https://scirate.com/arxiv/1606.02485">Exploring Implicit Human Responses to Robot Mistakes in a Learning from Demonstration Task</a></li>
+<li><a href="https://scirate.com/arxiv/1605.06921">Generative Choreography using Deep Learning</a></li>
+<li><a href="https://scirate.com/arxiv/1605.01459">Movement Coordination in Human-Robot Teams: A Dynamical Systems Approach</a></li>
+<li><a href="https://scirate.com/arxiv/1509.04751">Free-body Gesture Tracking and Augmented Reality Improvisation for Floor and Aerial Dance</a></li>
+<li><a href="https://scirate.com/arxiv/1109.6037">The Control Theory of Motion-Based Communication: Problems in Teaching Robots to Dance</a></li>
+<li><a href="https://scirate.com/arxiv/1102.5225">Let Us Dance Just a Little Bit More — On the Information Capacity of the Human Motor System</a></li>
+<li><a href="https://scirate.com/arxiv/1001.0441">Semantic Modeling and Retrieval of Dance Video Annotations</a></li>
+<li><a href="https://scirate.com/arxiv/1001.0442">Modeling and Annotating the Expressive Semantics of Dance Videos</a></li>
+<li><a href="https://scirate.com/arxiv/1001.0440">Tutoring System for Dance Learning</a></li>
+</ul>
+<h3 id="how-to-join">How To Join … !</h3>
+<p>If you want to participate, then just send me an <a href="/about.html">email</a>, or just come along on the night with something to show!</p>
+]]></summary>
+</entry>
+<entry>
     <title>The Internet High 5 Machine Launched!</title>
     <link href="https://silky.github.io/posts/2017-05-16-the-internet-high-5-machine-launched.html" />
     <id>https://silky.github.io/posts/2017-05-16-the-internet-high-5-machine-launched.html</id>
@@ -1276,68 +1340,6 @@ ntree n <span class="fu">=</span> finalObj
 <h2 id="improvements">Improvements</h2>
 <p>Currently there is a lot of outstanding work to do on super-reference; but it’s in a working state for me, so I thought I should release it.</p>
 <p>If you have any feature requests/improvements/etc feel free to log an issue (or a pull request) over at the repository: <a href="https://github.com/silky/super-reference">super-reference</a>.</p>
-]]></summary>
-</entry>
-<entry>
-    <title>Versioned LyX documents</title>
-    <link href="https://silky.github.io/posts/2015-10-01-Makefile-for-versioned-lyx.html" />
-    <id>https://silky.github.io/posts/2015-10-01-Makefile-for-versioned-lyx.html</id>
-    <published>2015-10-01T00:00:00Z</published>
-    <updated>2015-10-01T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div class="info">
-    Posted on October  1, 2015
-    
-        by Noon van der Silk
-    
-</div>
-
-<p>Oftentimes one needs to write a document with math symbols in it. The standard tool of choice is some variant of TeX, either writing it online in one of the growing-list of collaborative editors:</p>
-<ul>
-<li><a href="https://www.overleaf.com/">Overleaf</a></li>
-<li><a href="https://www.sharelatex.com/">ShareLaTeX</a></li>
-<li><a href="https://www.authorea.com/">Authorea</a></li>
-</ul>
-<p>But one program, that runs locally, that I can’t stop using is <a href="http://www.lyx.org/">LyX</a>.</p>
-<p>I really like LyX because of the “What-you-see-is-(pretty much)-what-you-get” nature of it.</p>
-<p>One thing I wanted to share was a small technique that I used to get a version number in all of the pdfs that I generated from my LyX documents. The idea was that when I sent my document to obtain feedback from various interested parties, I could easily see which version they had commented on.</p>
-<p>What I wanted as a footer that would be included on every page, that contained the version number.</p>
-<p>The approach is:</p>
-<ol style="list-style-type: decimal">
-<li>In the “LaTeX Preamble” setting of the LyX document, include (something like)</li>
-</ol>
-<pre><code>\usepackage{fancyhdr}
-\pagestyle{fancy}
-\cfoot{\tiny{|VERSION|}}
-\rfoot{\thepage}
-\rhead{}</code></pre>
-<ol start="2" style="list-style-type: decimal">
-<li>Build your LyX documents by the command line with a <code>Makefile</code>. My <code>Makefile</code> looks like so:</li>
-</ol>
-<pre><code>BUILD_NUMBER_FILE := build-number.txt
-BUILD_NUMBER      := $(shell cat $(BUILD_NUMBER_FILE))
-BUILD_DATE        := $(shell date +%d%b%Y)
-VER_STRING        := $(BUILD_DATE)-build$(BUILD_NUMBER)
-LYXFILE           := coolness
-TEMPDIR           := /tmp
-
-all: pdf
-
-# Switch in the new version number, compile with LyX and
-# bring it here.
-pdf: buildnumber
-	sed &quot;s/|VERSION|/$(VER_STRING)/g&quot; $(LYXFILE).lyx &gt;$(TEMPDIR)/$(LYXFILE).lyx
-	lyx -e pdf2 $(TEMPDIR)/$(LYXFILE).lyx
-	cp $(TEMPDIR)/$(LYXFILE).pdf .
-
-# Build number file. Increment each build.
-buildnumber:
-	@if ! test -f $(BUILD_NUMBER_FILE); then echo 0 &gt; $(BUILD_NUMBER_FILE); fi
-	@echo $$(($$(cat $(BUILD_NUMBER_FILE)) + 1)) &gt; $(BUILD_NUMBER_FILE)</code></pre>
-<ol start="3" style="list-style-type: decimal">
-<li>Build with the <code>make</code> command and profit!</li>
-</ol>
-<p>Note that there is a <code>build-number.txt</code> file that is incremented on each build, so you don’t need to do that manually.</p>
-<p>I’ve put together a sample project <a href="https://gist.github.com/silky/9accc6e6a5dbbc029669">here</a>, so you can clone that gist and type <code>make</code> and see it in action!</p>
 ]]></summary>
 </entry>
 
