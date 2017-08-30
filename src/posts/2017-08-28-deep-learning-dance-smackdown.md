@@ -71,8 +71,21 @@ The prize on the night will be one of the Evolution of Dance T-Shirts:
 - [Tutoring System for Dance Learning](https://scirate.com/arxiv/1001.0440)
 
 
-### How To Join ... !
+### How to join ... !
 
 If you want to participate, then just send me an [email](/about.html), or
 just come along on the night with something to show!
+
+### Keep in mind ...
+
+The Three Laws of Robotic Dancing (courtesy of [andyg](https://www.linkedin.com/in/geekscape/?ppe=1))
+
+1) A dance robot may not out-dance a human being or, through dance, allow a
+   human being to be embarrassed.
+2) A dance robot must complement the movements given it by human beings except
+   where such dance moves would conflict with the First Law or good taste.
+3) A dance robot must protect its own existence as long as such protection
+   does not conflict with the First or Second Laws and the conservation of
+   angular momentum.
+
 
