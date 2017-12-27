@@ -55,9 +55,10 @@ T-Shirts!
 In the end I decided to make a whole bunch of different items available, so
 hopefully there is something for everyone here. If there's something on the
 PAOM catalogue that I haven't created, or you'd like a custom colour scheme,
-then get in touch and I can make something for you! Also, if you do end up
-buying something, then send me a photo, I'd love to see how it looks and any
-crazy colour combinations!
+then get in touch and I can make something for you! Also, if you do end
+up buying something, then [send me a photo](mailto:noonsilk@gmail.com),
+or tag it with `#retrohaskell` or `#nvds`.  I'd love to see how it looks
+and any crazy colour combinations!
 
 Below I've enumerated all the items in the store, so you can click on the
 thing you like to buy it if you wish! Hopefully you'll be seeing more [open
