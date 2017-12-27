@@ -1122,7 +1122,7 @@ Retro Haskell <br/> Christmas
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>It was a ‘simple’ matter of <code># jq '[.[] | select (.created_at &gt;=&quot;2016-01-01&quot;)]' all.json&gt;this-year.json</code> where I got <code>all.json</code> by combing the pages.json <code>curl  &quot;https://api.github.com/repos/silky/ideas/issues?state=all&amp;per_page=100&amp;page=1&quot; p1.json</code> with <code>jq -s '[.[][]]' p*.json &gt; all.json</code> (jq is just <em>so</em> easy!)<a href="#fnref1">↩</a></p></li>
+<li id="fn1"><p>It was a ‘simple’ matter of <code>jq '[.[] | select (.created_at &gt;=&quot;2016-01-01&quot;)]' all.json&gt;this-year.json</code> where I got <code>all.json</code> by combing the pages.json <code>curl  &quot;https://api.github.com/repos/silky/ideas/issues?state=all&amp;per_page=100&amp;page=1&quot; p1.json</code> with <code>jq -s '[.[][]]' p*.json &gt; all.json</code> (jq is just <em>so</em> easy! …)<a href="#fnref1">↩</a></p></li>
 </ol>
 </div>
 ]]></summary>
