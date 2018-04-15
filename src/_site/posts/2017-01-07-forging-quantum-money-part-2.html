@@ -52,10 +52,10 @@ table.bombs td img {
 <li>and, A modification of Wiesner’s scheme that resists this attack.</li>
 </ol>
 <hr />
-<p>Now that we’re familiar with the Wiesner’s original scheme for quantum money, we can take a look at the “bomb testing” attack presented in the paper. The paper actually introduce two attacks, one more general than the other, but I’ll focus on the less general one; the <em>bomb testing</em> attack, because it’s more fun.</p>
+<p>Now that we’re familiar with the Wiesner’s original scheme for quantum money, we can take a look at the “bomb testing” attack presented in the paper. The paper actually introduces two attacks, one more general than the other, but I’ll focus on the less general one; the <em>bomb testing</em> attack, because it’s more fun.</p>
 <p>But before we see how it’s applied, let’s take a look at <a href="https://en.wikipedia.org/wiki/Elitzur%E2%80%93Vaidman_bomb_tester">the bomb testing idea</a>, because it’s very cool.</p>
 <h2 id="bomb-testing">Bomb testing</h2>
-Suppose I give you 10 bombs, some of which might be duds, and some which are live.
+Suppose I give you 10 bombs, some of which might be duds, and some which are live. Below is an interactive example of such a scheme:
 <table width="100%" border="0" class="bombs">
 <tr>
 <td width="10%" style="text-align: center">
@@ -91,7 +91,7 @@ Suppose I give you 10 bombs, some of which might be duds, and some which are liv
 </tr>
 <tr>
 <td colspan="10" class="instructions">
-Click on a bomb will attempt to detonate it. In this way you can see if a bomb is a dud or not.
+Clicking on a bomb will attempt to detonate it. In this way you can see if a bomb is a dud or not.
 </td>
 </tr>
 <tr>
@@ -106,6 +106,8 @@ Reset
 var a = new Object();
 function resetBombs () {
     $(".bombs td img").attr("src", "../images/bomb-unknown.png");
+    a = new Object();
+
     $(".bombs td img").click(function (obj){
         var id = $(obj.target).attr("id");
         if ( !a[id] ) {
@@ -123,7 +125,7 @@ function resetBombs () {
 resetBombs();
 </script>
 <p>The task is: <em>Can you determine a test that separates the live bombs from the dud ones?</em></p>
-<p>Classically, one approach would be to simply attempt to detonate each bomb. If the bomb goes off, then it was a live bomb, and if it doesn’t, it wasn’t! Simple enough, but it leaves us with no good bombs to actually use.</p>
+<p>Classically, one approach would be to simply attempt to detonate each bomb. If the bomb goes off, then it was a live bomb, and if it doesn’t, it wasn’t! Simple enough, but it leaves us with no good bombs to actually use, and is reasonably fraught with danger.</p>
 <p>Quantumly, it turns out there <em>is</em> something we can do that actually lets us know if the bomb is live or not, <em>and</em> keeps the bomb un-detonated!</p>
 <h2 id="elitzur-vaidman-bomb-tester">Elitzur-Vaidman bomb tester</h2>
 <p>In this model, we suppose that our bombs are configured like so:</p>

@@ -35,7 +35,7 @@ parts are:
 
 Now that we're familiar with the Wiesner's original scheme for quantum money,
 we can take a look at the "bomb testing" attack presented in the paper.  The
-paper actually introduce two attacks, one more general than the other, but
+paper actually introduces two attacks, one more general than the other, but
 I'll focus on the less general one; the _bomb testing_ attack, because it's
 more fun.
 
@@ -48,7 +48,7 @@ because it's very cool.
 
 
 Suppose I give you 10 bombs, some of which might be duds, and some which are
-live. 
+live. Below is an interactive example of such a scheme:
 <table width='100%' border="0" class="bombs"> 
 <tr> <td width='10%' style='text-align: center'>
 <img id="b1" src="../images/bomb-unknown.png" width='100%'/>
@@ -72,8 +72,8 @@ live.
 <img id="b10" src="../images/bomb-unknown.png" width='100%'/>
 </td> </tr>
 <tr> <td colspan="10" class="instructions">
-Click on a bomb will attempt to detonate it. In this way you can see if a bomb
-is a dud or not.
+Clicking on a bomb will attempt to detonate it. In this way you can see if a
+bomb is a dud or not.
 </td> </tr>
 <tr> <td colspan="10" class="instructions" style='text-align: right;'>
 <button onclick="resetBombs();">Reset</button>
@@ -84,6 +84,8 @@ is a dud or not.
 var a = new Object();
 function resetBombs () {
     $(".bombs td img").attr("src", "../images/bomb-unknown.png");
+    a = new Object();
+
     $(".bombs td img").click(function (obj){
         var id = $(obj.target).attr("id");
         if ( !a[id] ) {
@@ -106,7 +108,8 @@ The task is:
 
 Classically, one approach would be to simply attempt to detonate each bomb. If
 the bomb goes off, then it was a live bomb, and if it doesn't, it wasn't!
-Simple enough, but it leaves us with no good bombs to actually use.
+Simple enough, but it leaves us with no good bombs to actually use, and is
+reasonably fraught with danger.
 
 Quantumly, it turns out there _is_ something we can do that actually lets us
 know if the bomb is live or not, _and_ keeps the bomb un-detonated!
