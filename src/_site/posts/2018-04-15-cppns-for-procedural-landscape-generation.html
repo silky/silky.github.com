@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Noon van der Silk - CPPNs for Procedural Landscape Generation!</title>
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <h1><a href="../">Noon van der Silk</a></h1>
+            </div>
+            <div id="navigation">
+                <a href="../about.html">About</a>
+                <a href="../archive.html">Archive</a>
+                <a href="../links.html">Links</a>
+                <small><a href="../atom.xml">Atom Feed</a></small>
+            </div>
+        </div>
+
+        <div id="content">
+            <h2>CPPNs for Procedural Landscape Generation!</h2>
+
+            <div class="info">
+    Posted on April 15, 2018
+    
+        by Noon van der Silk
+    
+</div>
+
+<center>
+<i>(Code related to this post: <a href="https://github.com/silky/cppn-3d/">cppn-3d</a>.)</i>
+</center>
+<p><br /></p>
+<center>
+<img src="../images/cppn/funky.png" /> <img src="../images/cppn/funky-3d-sized.png" />
+</center>
+<p>So I’ve been obsessed with <a href="https://en.wikipedia.org/wiki/Compositional_pattern-producing_network">CPPN’s</a> ever since I saw this series of blogposts by <a href="https://github.com/hardmaru">Hardmaru</a>:</p>
+<ul>
+<li><a href="http://blog.otoro.net/2015/06/19/neural-network-generative-art/">Neural Network Generative Art in Javascript</a></li>
+<li><a href="http://blog.otoro.net/2016/03/25/generating-abstract-patterns-with-tensorflow/">Generating Abstract Patterns with TensorFlow</a></li>
+<li><a href="http://blog.otoro.net/2016/04/01/generating-large-images-from-latent-vectors/">Generating Large Images from Latent Vectors</a></li>
+<li><a href="http://blog.otoro.net/2016/06/02/generating-large-images-from-latent-vectors-part-two/">Generating Large Images from Latent Vectors - Part Two</a></li>
+<li><a href="http://blog.otoro.net/2016/04/06/the-frog-of-cifar-10/">The Frog of CIFAR 10</a></li>
+</ul>
+<p>One of the main reasons I loved this idea so much is that almost all machine learning that you see concerns itself with fixed output dimensions; at least for images. The cool thing about the CPPN is that it maps <em>pixel coordinates</em>, along with some configurably latent-vector <span class="math inline">\(\vec{z}\)</span>, to <em>rgb values</em>:</p>
+<p><span class="math display">\[
+\text{cppn}(x, y, \vec{z}) = (r,g,b)
+\]</span></p>
+<p>This is cool because, there is a value defined for every point! So you can use these things to create arbitrarily-large pictures! Furthermore, for a given <span class="math inline">\(\vec{z}\)</span> we can make higher-resolution images by evaluating the network over different widths.</p>
+<p>At Silverpond we’ve put this idea to good use in our upcoming event at <a href="https://mkw.melbourne.vic.gov.au/events/ai-fashion-designer/">Melbourne Knowledge Week</a>.</p>
+<p>In any case, here I’d like to document my playing-around with the idea of using CPPNs to generate 3d landscapes.</p>
+<p>I’ve put together some pieces of code here: <a href="https://github.com/silky/cppn-3d">cppn-3d</a>.</p>
+<p>To use the Python code, say, take a look at the <a href="https://github.com/silky/cppn-3d/blob/master/python/Generate%20Maps.ipynb">notebook</a> and you’ll see something like this (after imports):</p>
+<pre><code>latent_dim = 9
+TAXICAB    = ft.partial(np.linalg.norm, axis=0, ord=1)
+EUCLIDEAN  = ft.partial(np.linalg.norm, axis=0, ord=2)
+INF        = ft.partial(np.linalg.norm, axis=0, ord=np.inf)
+
+norms = []
+
+c = Config( net_size   = 20
+          , num_dense  = 5
+          , latent_dim = latent_dim
+          , colours    = 3
+          , input_size = 1 + 1 + len(norms) + latent_dim
+          , norms      = norms
+          , activation_function = tf.nn.tanh
+          )
+
+size   = 512
+width  = size
+height = size
+
+m = build_model(c)
+z = np.random.normal(0, 1, size=c.latent_dim)
+
+sess.run(tf.global_variables_initializer())
+
+yss = forward(sess, c, m, z, width, height)
+ys  = stitch_together(yss)</code></pre>
+<p>The magic here is that we can get quite different pictures by mucking around with the params: <code>net_size</code>, <code>num_dense</code>, <code>norms</code>, <code>activation_function</code> and basically just about anything!</p>
+<p>The very simplistic idea I had was that we can generate images with nice smooth colours, then just map those colours to heights, and that’s the end of it! I did this in <a href="https://threejs.org/">three.js</a> and <a href="https://js.tensorflow.org/">TensorFlow.js</a> at first, with some terrible code:</p>
+<center>
+<img src="../images/cppn/ex1.png" />
+</center>
+<p>It worked! You can also <a href="https://silky.github.io/cppn-3d/javascript/index.html">play with this live</a> if you wish; it does a kind of cool animation, albeit kinda slowly.</p>
+<p>Of course, what I really wanted was to get a feel for how “walkable” or “playable” the resulting map would be. So I found my way to Unity3D, and half-wrote half-googled a tiny script to load in the image as a height map:</p>
+<pre class="c#"><code>using System.IO;
+using UnityEngine;
+
+public class TerrainHeight : MonoBehaviour {
+    public int height  = 400;
+    public int width   = 400;
+    public int depth   = 200;
+    public string cppnImage = &quot;/home/noon/dev/cppn-3d/python/multi-2.png&quot;;
+
+
+	void Start () {
+        Terrain terrain     = GetComponent&lt;Terrain&gt;();
+        terrain.terrainData = GenerateTerrain(terrain.terrainData);
+	}
+	
+
+	TerrainData GenerateTerrain (TerrainData data) {
+        data.size = new Vector3(width, depth, height);
+		data.SetHeights(0, 0, GenerateHeights());
+        return data;
+	}
+
+
+    public static Texture2D LoadPng (string filePath) {
+        byte[] data       = File.ReadAllBytes(filePath);
+        Texture2D texture = new Texture2D(2, 2);
+        texture.LoadImage(data);
+        return texture;
+    }
+
+
+    float[,] GenerateHeights () {
+        float[,] heights = new float[width, height];
+        Texture2D image = LoadPng(cppnImage);
+        for (int x = 0; x &lt; width; x++) {
+            for (int y = 0; y &lt; height; y++) {
+                Color colour = image.GetPixel(x, y);
+
+                float height = colour.r
+                             + colour.g
+                             + colour.b;
+
+                heights[x, y] = height / 3;
+            }
+        }
+
+        return heights;
+    }
+}</code></pre>
+<p>In Unity3D, you attach this script to a terrain, then when you run it, it will set that piece of terrain to have the given heights you want!</p>
+<center>
+<img src="../images/cppn/viewpoint.png" />
+</center>
+<p>Looks alright! Obviously my general Unity skills need work, but at least it looks something like a landscape! Here’s a few more of the top view generate by a bunch of similarly produced images:</p>
+<center>
+<img src="../images/cppn/a.png" /> <img src="../images/cppn/b.png" /> <img src="../images/cppn/c.png" /> <img src="../images/cppn/d.png" /> <img src="../images/cppn/e.png" /> <img src="../images/cppn/f.png" /> <img src="../images/cppn/g.png" />
+</center>
+<p>The images that generated these (not in order) are in the <a href="https://github.com/silky/cppn-3d/tree/master/python/maps">maps</a> folder:</p>
+<center>
+<img width="250" src="../images/cppn/night-pond.png" /> <img width="250" src="../images/cppn/egg.png" /> <img width="250" src="../images/cppn/purple-rain.png" /> <img width="250" src="../images/cppn/raddish.png" /> <img width="250" src="../images/cppn/rose.png" /> <img width="250" src="../images/cppn/sharp-purple.png" /> <img width="250" src="../images/cppn/smooth-sand.png" />
+</center>
+<p>Anyway, I hope someone finds this useful! I hope I can play with this idea a bit more! I think thee’s a lot of juice to squeeze here, in terms of using CPPNs to generate different levels of detail; to add much more detail to the Unity terrain by making decisions based on height (such as where water goes, where snow starts, etc). Furthermore, it would also be neat to auto-generate town locations, and just about everything!</p>
+<p>Hope this demonstrates how fun CPPNs can be!</p>
+<h3 id="aside">Aside</h3>
+<p>As an aside, early in the day I was experimenting with producing large tiled images.</p>
+<p>The basic idea is conveyed here:</p>
+<center>
+<img src="../images/cppn/next-tile.png" />
+</center>
+<p>On the left I have a particular image that I’ve generated. I want to continue this image downwards by one tile. On the right is the same image with the next tile.</p>
+<p>This idea was due to <a href="https://www.linkedin.com/in/galacamacho/">Gala</a> (who works for <a href="https://www.neighbourlytics.com/">Neighbourlytics</a>): basically, given that we have the optimisation machinery at hand, why not just attempt to find a new image, from the network, whose border matches at the point we’re interested in.</p>
+<p>Initially, my idea was that I could do this by optimising over the z vector <span class="math inline">\(\vec{z}\)</span> only; i.e. leave all the other parameters of the network alone. This turned out not to work at all. I’m actually not quite sure why, because my experience with CPPNs is that if <span class="math inline">\(\vec{z}\)</span> is large, then you can get a whole bunch of variation by modifying it. In any case, I tried it, and while it did manage to make <em>some</em> progress, it was never really particularly good.</p>
+<p>When that approach didn’t work, I used the one that generated the tile connections from above: I just optimised with respect to the entire CPPN network.</p>
+<p>There were a few problems with this approach, unfortunately:</p>
+<ol style="list-style-type: decimal">
+<li><p>The tiles it generated were less “interesting”: In the image above, the one of the left is made of 3 tiles. The top one is the starting one; note it’s complexity. The following two tiles are very low in interesting-ness, but the final one is actually not bad. This perhaps makes sense, as when the optimiser only has to match one colour, it can allow itself some richness in the other region.</p></li>
+<li><p>It didn’t work when I tried to match up <em>two</em> boundaries:</p></li>
+</ol>
+<center>
+<img width="250" src="../images/cppn/multi-1.png" /> <img width="250" src="../images/cppn/multi-2.png" /> <img width="250" src="../images/cppn/multi-3.png" /> <img width="250" src="../images/cppn/multi-4.png" /> <img width="250" src="../images/cppn/multi-6.png" /> <img width="250" src="../images/cppn/multi-7.png" />
+</center>
+<p>In all these piectures, the bottom-right tile is very out of sync with it’s two neighbours. This could definitely be fixed “in post”, by simplying blending it, but it’s still slightly unsatisfying that I couldn’t solve this within the CPPN framework.</p>
+<p>In the end, my realisation was that I can produce very large maps simply by increasing the richness in the CPPN: increasing the numbers of dense layers, and “net size” (units in the dense layers), and then just simply making a high-resolution version of the resulting image:</p>
+<center>
+<img src="../images/cppn/rich-big.png" /> <a href="../images/cppn/rich-map.png"><img height="512" src="../images/cppn/rich-map.png" /></a>
+</center>
+<p>In many ways I think I’m still a bit unsatisfied by this approach. I think ultimately it would be nice to have a grid-layout map:</p>
+<center>
+<img src="../images/cppn/cppn-map-dream.png" />
+</center>
+<p>Where each block is controlled by some vector <span class="math inline">\(\vec{z_i}\)</span>, and those can be modified at will. This would definately be possible just by blending in some standard way between the particular <span class="math inline">\(\vec{z_i}\)</span>-values, but I do still think there should be a CPPN-based solution. One idea <a href="http://sordina.github.io/">Lyndon</a> had was by directly constructing the image from the grid, and then encoding that back into the CPPN, then decoding it, to get the “closest match” that is still smooth between the borders. I think this might work, but here we don’t have an encoding network.</p>
+<p>If you have any ideas along these lines, or find any of this useful, then <a href="../about.html">I’d love to hear from you</a>!</p>
+
+        </div>
+        <div id="footer">
+            <small><a href="http://jaspervdj.be/hakyll">Hakyll</a> was involved here (<a href="https://github.com/silky/silky.github.com">source</a>).
+                I have another <a href="https://sites.google.com/site/noonsilk">website</a>. ن
+            </small> 
+        </div>
+        <div id="image_footer"> &nbsp; </div>
+    </body>
+</html>

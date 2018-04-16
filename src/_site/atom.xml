@@ -8,8 +8,173 @@
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
     </author>
-    <updated>2017-12-27T00:00:00Z</updated>
+    <updated>2018-04-15T00:00:00Z</updated>
     <entry>
+    <title>CPPNs for Procedural Landscape Generation!</title>
+    <link href="https://silky.github.io/posts/2018-04-15-cppns-for-procedural-landscape-generation.html" />
+    <id>https://silky.github.io/posts/2018-04-15-cppns-for-procedural-landscape-generation.html</id>
+    <published>2018-04-15T00:00:00Z</published>
+    <updated>2018-04-15T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on April 15, 2018
+    
+        by Noon van der Silk
+    
+</div>
+
+<center>
+<i>(Code related to this post: <a href="https://github.com/silky/cppn-3d/">cppn-3d</a>.)</i>
+</center>
+<p><br /></p>
+<center>
+<img src="/images/cppn/funky.png" /> <img src="/images/cppn/funky-3d-sized.png" />
+</center>
+<p>So I’ve been obsessed with <a href="https://en.wikipedia.org/wiki/Compositional_pattern-producing_network">CPPN’s</a> ever since I saw this series of blogposts by <a href="https://github.com/hardmaru">Hardmaru</a>:</p>
+<ul>
+<li><a href="http://blog.otoro.net/2015/06/19/neural-network-generative-art/">Neural Network Generative Art in Javascript</a></li>
+<li><a href="http://blog.otoro.net/2016/03/25/generating-abstract-patterns-with-tensorflow/">Generating Abstract Patterns with TensorFlow</a></li>
+<li><a href="http://blog.otoro.net/2016/04/01/generating-large-images-from-latent-vectors/">Generating Large Images from Latent Vectors</a></li>
+<li><a href="http://blog.otoro.net/2016/06/02/generating-large-images-from-latent-vectors-part-two/">Generating Large Images from Latent Vectors - Part Two</a></li>
+<li><a href="http://blog.otoro.net/2016/04/06/the-frog-of-cifar-10/">The Frog of CIFAR 10</a></li>
+</ul>
+<p>One of the main reasons I loved this idea so much is that almost all machine learning that you see concerns itself with fixed output dimensions; at least for images. The cool thing about the CPPN is that it maps <em>pixel coordinates</em>, along with some configurably latent-vector <span class="math inline">\(\vec{z}\)</span>, to <em>rgb values</em>:</p>
+<p><span class="math display">\[
+\text{cppn}(x, y, \vec{z}) = (r,g,b)
+\]</span></p>
+<p>This is cool because, there is a value defined for every point! So you can use these things to create arbitrarily-large pictures! Furthermore, for a given <span class="math inline">\(\vec{z}\)</span> we can make higher-resolution images by evaluating the network over different widths.</p>
+<p>At Silverpond we’ve put this idea to good use in our upcoming event at <a href="https://mkw.melbourne.vic.gov.au/events/ai-fashion-designer/">Melbourne Knowledge Week</a>.</p>
+<p>In any case, here I’d like to document my playing-around with the idea of using CPPNs to generate 3d landscapes.</p>
+<p>I’ve put together some pieces of code here: <a href="https://github.com/silky/cppn-3d">cppn-3d</a>.</p>
+<p>To use the Python code, say, take a look at the <a href="https://github.com/silky/cppn-3d/blob/master/python/Generate%20Maps.ipynb">notebook</a> and you’ll see something like this (after imports):</p>
+<pre><code>latent_dim = 9
+TAXICAB    = ft.partial(np.linalg.norm, axis=0, ord=1)
+EUCLIDEAN  = ft.partial(np.linalg.norm, axis=0, ord=2)
+INF        = ft.partial(np.linalg.norm, axis=0, ord=np.inf)
+
+norms = []
+
+c = Config( net_size   = 20
+          , num_dense  = 5
+          , latent_dim = latent_dim
+          , colours    = 3
+          , input_size = 1 + 1 + len(norms) + latent_dim
+          , norms      = norms
+          , activation_function = tf.nn.tanh
+          )
+
+size   = 512
+width  = size
+height = size
+
+m = build_model(c)
+z = np.random.normal(0, 1, size=c.latent_dim)
+
+sess.run(tf.global_variables_initializer())
+
+yss = forward(sess, c, m, z, width, height)
+ys  = stitch_together(yss)</code></pre>
+<p>The magic here is that we can get quite different pictures by mucking around with the params: <code>net_size</code>, <code>num_dense</code>, <code>norms</code>, <code>activation_function</code> and basically just about anything!</p>
+<p>The very simplistic idea I had was that we can generate images with nice smooth colours, then just map those colours to heights, and that’s the end of it! I did this in <a href="https://threejs.org/">three.js</a> and <a href="https://js.tensorflow.org/">TensorFlow.js</a> at first, with some terrible code:</p>
+<center>
+<img src="/images/cppn/ex1.png" />
+</center>
+<p>It worked! You can also <a href="https://silky.github.io/cppn-3d/javascript/index.html">play with this live</a> if you wish; it does a kind of cool animation, albeit kinda slowly.</p>
+<p>Of course, what I really wanted was to get a feel for how “walkable” or “playable” the resulting map would be. So I found my way to Unity3D, and half-wrote half-googled a tiny script to load in the image as a height map:</p>
+<pre class="c#"><code>using System.IO;
+using UnityEngine;
+
+public class TerrainHeight : MonoBehaviour {
+    public int height  = 400;
+    public int width   = 400;
+    public int depth   = 200;
+    public string cppnImage = &quot;/home/noon/dev/cppn-3d/python/multi-2.png&quot;;
+
+
+	void Start () {
+        Terrain terrain     = GetComponent&lt;Terrain&gt;();
+        terrain.terrainData = GenerateTerrain(terrain.terrainData);
+	}
+	
+
+	TerrainData GenerateTerrain (TerrainData data) {
+        data.size = new Vector3(width, depth, height);
+		data.SetHeights(0, 0, GenerateHeights());
+        return data;
+	}
+
+
+    public static Texture2D LoadPng (string filePath) {
+        byte[] data       = File.ReadAllBytes(filePath);
+        Texture2D texture = new Texture2D(2, 2);
+        texture.LoadImage(data);
+        return texture;
+    }
+
+
+    float[,] GenerateHeights () {
+        float[,] heights = new float[width, height];
+        Texture2D image = LoadPng(cppnImage);
+        for (int x = 0; x &lt; width; x++) {
+            for (int y = 0; y &lt; height; y++) {
+                Color colour = image.GetPixel(x, y);
+
+                float height = colour.r
+                             + colour.g
+                             + colour.b;
+
+                heights[x, y] = height / 3;
+            }
+        }
+
+        return heights;
+    }
+}</code></pre>
+<p>In Unity3D, you attach this script to a terrain, then when you run it, it will set that piece of terrain to have the given heights you want!</p>
+<center>
+<img src="/images/cppn/viewpoint.png" />
+</center>
+<p>Looks alright! Obviously my general Unity skills need work, but at least it looks something like a landscape! Here’s a few more of the top view generate by a bunch of similarly produced images:</p>
+<center>
+<img src="/images/cppn/a.png" /> <img src="/images/cppn/b.png" /> <img src="/images/cppn/c.png" /> <img src="/images/cppn/d.png" /> <img src="/images/cppn/e.png" /> <img src="/images/cppn/f.png" /> <img src="/images/cppn/g.png" />
+</center>
+<p>The images that generated these (not in order) are in the <a href="https://github.com/silky/cppn-3d/tree/master/python/maps">maps</a> folder:</p>
+<center>
+<img width="250" src="/images/cppn/night-pond.png" /> <img width="250" src="/images/cppn/egg.png" /> <img width="250" src="/images/cppn/purple-rain.png" /> <img width="250" src="/images/cppn/raddish.png" /> <img width="250" src="/images/cppn/rose.png" /> <img width="250" src="/images/cppn/sharp-purple.png" /> <img width="250" src="/images/cppn/smooth-sand.png" />
+</center>
+<p>Anyway, I hope someone finds this useful! I hope I can play with this idea a bit more! I think thee’s a lot of juice to squeeze here, in terms of using CPPNs to generate different levels of detail; to add much more detail to the Unity terrain by making decisions based on height (such as where water goes, where snow starts, etc). Furthermore, it would also be neat to auto-generate town locations, and just about everything!</p>
+<p>Hope this demonstrates how fun CPPNs can be!</p>
+<h3 id="aside">Aside</h3>
+<p>As an aside, early in the day I was experimenting with producing large tiled images.</p>
+<p>The basic idea is conveyed here:</p>
+<center>
+<img src="/images/cppn/next-tile.png" />
+</center>
+<p>On the left I have a particular image that I’ve generated. I want to continue this image downwards by one tile. On the right is the same image with the next tile.</p>
+<p>This idea was due to <a href="https://www.linkedin.com/in/galacamacho/">Gala</a> (who works for <a href="https://www.neighbourlytics.com/">Neighbourlytics</a>): basically, given that we have the optimisation machinery at hand, why not just attempt to find a new image, from the network, whose border matches at the point we’re interested in.</p>
+<p>Initially, my idea was that I could do this by optimising over the z vector <span class="math inline">\(\vec{z}\)</span> only; i.e. leave all the other parameters of the network alone. This turned out not to work at all. I’m actually not quite sure why, because my experience with CPPNs is that if <span class="math inline">\(\vec{z}\)</span> is large, then you can get a whole bunch of variation by modifying it. In any case, I tried it, and while it did manage to make <em>some</em> progress, it was never really particularly good.</p>
+<p>When that approach didn’t work, I used the one that generated the tile connections from above: I just optimised with respect to the entire CPPN network.</p>
+<p>There were a few problems with this approach, unfortunately:</p>
+<ol style="list-style-type: decimal">
+<li><p>The tiles it generated were less “interesting”: In the image above, the one of the left is made of 3 tiles. The top one is the starting one; note it’s complexity. The following two tiles are very low in interesting-ness, but the final one is actually not bad. This perhaps makes sense, as when the optimiser only has to match one colour, it can allow itself some richness in the other region.</p></li>
+<li><p>It didn’t work when I tried to match up <em>two</em> boundaries:</p></li>
+</ol>
+<center>
+<img width="250" src="/images/cppn/multi-1.png" /> <img width="250" src="/images/cppn/multi-2.png" /> <img width="250" src="/images/cppn/multi-3.png" /> <img width="250" src="/images/cppn/multi-4.png" /> <img width="250" src="/images/cppn/multi-6.png" /> <img width="250" src="/images/cppn/multi-7.png" />
+</center>
+<p>In all these piectures, the bottom-right tile is very out of sync with it’s two neighbours. This could definitely be fixed “in post”, by simplying blending it, but it’s still slightly unsatisfying that I couldn’t solve this within the CPPN framework.</p>
+<p>In the end, my realisation was that I can produce very large maps simply by increasing the richness in the CPPN: increasing the numbers of dense layers, and “net size” (units in the dense layers), and then just simply making a high-resolution version of the resulting image:</p>
+<center>
+<img src="/images/cppn/rich-big.png" /> <a href="/images/cppn/rich-map.png"><img height="512" src="/images/cppn/rich-map.png" /></a>
+</center>
+<p>In many ways I think I’m still a bit unsatisfied by this approach. I think ultimately it would be nice to have a grid-layout map:</p>
+<center>
+<img src="/images/cppn/cppn-map-dream.png" />
+</center>
+<p>Where each block is controlled by some vector <span class="math inline">\(\vec{z_i}\)</span>, and those can be modified at will. This would definately be possible just by blending in some standard way between the particular <span class="math inline">\(\vec{z_i}\)</span>-values, but I do still think there should be a CPPN-based solution. One idea <a href="http://sordina.github.io/">Lyndon</a> had was by directly constructing the image from the grid, and then encoding that back into the CPPN, then decoding it, to get the “closest match” that is still smooth between the borders. I think this might work, but here we don’t have an encoding network.</p>
+<p>If you have any ideas along these lines, or find any of this useful, then <a href="/about.html">I’d love to hear from you</a>!</p>
+]]></summary>
+</entry>
+<entry>
     <title>Retro Haskell Clothing, and More! ... My PAOM Store!</title>
     <link href="https://silky.github.io/posts/2017-12-27-retro-haskell-clothing.html" />
     <id>https://silky.github.io/posts/2017-12-27-retro-haskell-clothing.html</id>
@@ -2845,103 +3010,6 @@ http://www.rle.mit.edu/qem/documents/kwiat-prl-74-4763.pdf
 <p>Q: How do you order citrus?</p>
 <p>A: Use the real number lime.</p>
 </blockquote>
-]]></summary>
-</entry>
-<entry>
-    <title>Building a windows-executable Haskell program with stack and AppVeyor</title>
-    <link href="https://silky.github.io/posts/2016-01-05-build-windows-haskell-app-with-stack-and-appveyor.html" />
-    <id>https://silky.github.io/posts/2016-01-05-build-windows-haskell-app-with-stack-and-appveyor.html</id>
-    <published>2016-01-05T00:00:00Z</published>
-    <updated>2016-01-05T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div class="info">
-    Posted on January  5, 2016
-    
-        by Noon van der Silk
-    
-</div>
-
-<p>In this post we’ll see how to setup a CI build that generates Windows executables for stack-based Haskell projects.</p>
-<p>So imagine you love Haskell and you have written a Haskell program, you’ve hosted it on <a href="https://github.com">GitHub</a> and you’ve dilligently set up a CI build on <a href="https://travis-ci.org">Travis</a> that uses <a href="https://github.com/commercialhaskell/stack">stack</a> to build/test/etc.</p>
-<p>Now, because stack is great and life is good, people can build your project from the source largely without issue. But suppose now that you’d like to provide Windows binaries for download. It so happens that we live in an age where this is completely automatable! Let’s see how.</p>
-<p>The essence of my approach is to use the CI system <a href="http://www.appveyor.com/">AppVeyor</a> (essentially like a Travis for Windows), and the following <code>appveyor.yml</code> file (full file below, I’ll go through details next):</p>
-<div class="sourceCode"><table class="sourceCode yaml numberLines"><tr class="sourceCode"><td class="lineNumbers"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-</pre></td><td class="sourceCode"><pre><code class="sourceCode yaml"><span class="fu">build:</span> off
-
-<span class="fu">before_build:</span>
-<span class="kw">-</span> <span class="fu">curl -ostack.zip -L --insecure http:</span>//www.stackage.org/stack/windows-i386
-<span class="kw">-</span> 7z x stack.zip stack.exe
-<span class="kw">-</span> <span class="fu">sed -i &#39;s/git@github.com:</span>/https:\/\/github.com\//&#39; .gitmodules
-<span class="co"># Appveyor doesn&#39;t clone recursively.</span>
-<span class="kw">-</span> git submodule update --init --recursive
-
-<span class="fu">skip_tags:</span> true
-
-<span class="fu">build_script:</span>
-<span class="co"># Suppress output from stack setup, as there is a lot and it&#39;s not necessary.</span>
-<span class="kw">-</span> stack setup --no-terminal &gt; nul
-<span class="kw">-</span> stack build --only-snapshot --no-terminal
-<span class="kw">-</span> stack --local-bin-path . install haskmas
-<span class="co"># Set a magical environment variable</span>
-<span class="kw">-</span> <span class="fu">cmd:</span> for /f %%i in (&#39;stack exec -- haskmas -v&#39;) do set HASKMAS_VERSION=%%i
-
-<span class="fu">artifacts:</span>
-<span class="kw">-</span> <span class="fu">path:</span> haskmas.exe
-
-<span class="co"># Auto-deploy</span>
-<span class="fu">deploy:</span>
-  <span class="kw">-</span> <span class="fu">provider:</span> GitHub
-    <span class="fu">tag:</span> <span class="st">&#39;haskmas-$(HASKMAS_VERSION)&#39;</span>
-    <span class="fu">release:</span> <span class="st">&#39;Release haskmas-$(HASKMAS_VERSION)&#39;</span>
-    <span class="fu">auth_token:</span>
-      <span class="fu">secure:</span> FZXhwa1ucQwyFtswv/XNUJkclAxoz4YGGu69dSOEEkwG7Rlh/Gho66SJtOUJ57kN
-    <span class="fu">artifact:</span> haskmas.exe
-    <span class="fu">on:</span>
-      <span class="fu">branch:</span> master</code></pre></td></tr></table></div>
-<p>Details:</p>
-<ul>
-<li>Line 1 disables the <em>standard</em> build process which would use MSBuild.</li>
-<li>Lines 3-8 obtain the stack executable, and also perform a small hack which converts my <code>ssh</code>-based git submodules to <code>https</code>-based ones, that can be cloned without needing to mess about with ssh keys.</li>
-<li>Line 10 prevents AppVeyor from building when it sees a new tag (later in the script we end up making a new tag when we push a release)</li>
-<li>Lines 12-16 perform the typical stack build, and also install the <code>haskmas.exe</code> file that we will mark as an artifact</li>
-<li>Line 18 is a magic command that sets the environment variable <code>HASKMAS_VERSION</code> to the value of the output of the command <code>stack exec -- haskmas -v</code>. This is my “hack” to obtain the cabal-version of the <code>haskmas</code> library, which I use as part of the tag that gets released on the <a href="https://github.com/silky/haskmas/releases">GitHub releases page</a></li>
-<li>Line 21 simply marks the <code>haskmas.exe</code> as an artifact; this means AppVeyor will hang on to it after the build completes.</li>
-<li>and finally, lines 24-32 specify that, for each build that completes, AppVeyor should push a release with the tag <code>haskmas-&lt;cabal_version_of_haskmas&gt;</code> to the GitHub releases page! (Note: probably we would want to be a bit more elaborate about when we push to the releases page; making sure that we include proper release notes, etc.)</li>
-</ul>
-<p>You can see from the releases on the <code>haskmas</code> project istelf that I fumbled around with this setup a bit. Mostly I observed that the manual release process on AppVeyor doesn’t quite operate the way I’d’ve <a href="https://github.com/appveyor/ci/issues/593">hoped</a>; but in any case AppVeyor is a pretty convenient service; it’s very nice to see something for Windows in this space.</p>
-<p>I based my configuration off of the one for the <a href="https://github.com/commercialhaskell/stack/blob/master/appveyor.yml">stack tool itself</a>. Note that there is some mention of caching in there that might speed up the build (my build takes ~17 minutes on AppVeyor compared to ~2 minutes on travis).</p>
-<p>All-in-all, technical details about automatically pushing releases aside, AppVeyor+stack is a really nice way to build Windows binaries from exactly the same source as your linux binaries. The only outstanding item to do is to combine artifacts from travis and AppVeyor into a single entity that can be released dually; but on the other hand tooling could always be written to perform this semi-manually, from your working computer, when you are ready to release.</p>
-<p>The repo is here: <a href="https://github.com/silky/haskmas">haskmas</a>. As a side benefit, I made the haskmas program take command line arguments to control how it operates! So now you don’t need to compile it to get a tree of arbitrary depth!</p>
 ]]></summary>
 </entry>
 
