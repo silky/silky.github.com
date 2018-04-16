@@ -76,7 +76,7 @@ ys  = stitch_together(yss)</code></pre>
 <p>The magic here is that we can get quite different pictures by mucking around with the params: <code>net_size</code>, <code>num_dense</code>, <code>norms</code>, <code>activation_function</code> and basically just about anything!</p>
 <p>The very simplistic idea I had was that we can generate images with nice smooth colours, then just map those colours to heights, and that’s the end of it! I did this in <a href="https://threejs.org/">three.js</a> and <a href="https://js.tensorflow.org/">TensorFlow.js</a> at first, with some terrible code:</p>
 <center>
-<img src="/images/cppn/ex1.png" />
+<img width="512" src="/images/cppn/ex1.png" />
 </center>
 <p>It worked! You can also <a href="https://silky.github.io/cppn-3d/javascript/index.html">play with this live</a> if you wish; it does a kind of cool animation, albeit kinda slowly.</p>
 <p>Of course, what I really wanted was to get a feel for how “walkable” or “playable” the resulting map would be. So I found my way to Unity3D, and half-wrote half-googled a tiny script to load in the image as a height map:</p>

@@ -95,7 +95,7 @@ it! I did this in [three.js](https://threejs.org/) and
 [TensorFlow.js](https://js.tensorflow.org/) at first, with some terrible code:
 
 <center>
-<img src="/images/cppn/ex1.png" />
+<img width="512" src="/images/cppn/ex1.png" />
 </center>
 
 It worked! You can also [play with this
