@@ -190,13 +190,16 @@ The images that generated these (not in order) are in the
 </center>
 
 Anyway, I hope someone finds this useful! I hope I can play with this idea a
-bit more! I think thee's a lot of juice to squeeze here, in terms of using
+bit more! I think there's a lot of juice to squeeze here, in terms of using
 CPPNs to generate different levels of detail; to add much more detail to the
 Unity terrain by making decisions based on height (such as where water goes,
 where snow starts, etc). Furthermore, it would also be neat to auto-generate
-town locations, and just about everything!
+town locations, and just about everything! Then of course there's all the
+details of the CPPN itself to play with; the layer structure, adding more
+variables, using different norms to highlight different regions of the
+resulting image; the mind boggles at the options!
 
-Hope this demonstrates how fun CPPNs can be!
+I hope this demonstrates how fun CPPNs can be!
 
 
 ### Aside
@@ -251,10 +254,18 @@ There were a few problems with this approach, unfortunately:
 <img width="250" src="/images/cppn/multi-7.png" />
 </center>
 
-In all these piectures, the bottom-right tile is very out of sync with it's
-two neighbours. This could definitely be fixed "in post", by simplying
-blending it, but it's still slightly unsatisfying that I couldn't solve this
-within the CPPN framework.
+In all these pictures, the bottom-right tile is very out of sync with it's two
+neighbours. This could definitely be fixed "in post", by simplying blending
+it, but it's still slightly unsatisfying that I couldn't solve this within the
+CPPN framework. One original idea I had was to solve it by using
+(something-like) the interpolation process you see in the [live JS
+example](https://silky.github.io/cppn-3d/javascript/index.html). Namely, we
+can pick two vectors $\vec{z_1}$ and $\vec{z_2}$ and move smoothly between
+them. When you watch this animate, you can feel like there should be some
+smoothing operation that would let us draw out a long line in this fashion. I
+think the approach would be to take, slice-by-slice, new images from vectors
+$\vec{z_{n+1}}$, and use the slices from them to produce a landscape. This
+feels slightly odd to me, but perhaps would be nice.
 
 In the end, my realisation was that I can produce very large maps simply by
 increasing the richness in the CPPN: increasing the numbers of dense layers,

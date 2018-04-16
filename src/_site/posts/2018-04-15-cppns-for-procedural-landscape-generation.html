@@ -149,8 +149,8 @@ public class TerrainHeight : MonoBehaviour {
 <center>
 <img width="250" src="../images/cppn/night-pond.png" /> <img width="250" src="../images/cppn/egg.png" /> <img width="250" src="../images/cppn/purple-rain.png" /> <img width="250" src="../images/cppn/raddish.png" /> <img width="250" src="../images/cppn/rose.png" /> <img width="250" src="../images/cppn/sharp-purple.png" /> <img width="250" src="../images/cppn/smooth-sand.png" />
 </center>
-<p>Anyway, I hope someone finds this useful! I hope I can play with this idea a bit more! I think thee’s a lot of juice to squeeze here, in terms of using CPPNs to generate different levels of detail; to add much more detail to the Unity terrain by making decisions based on height (such as where water goes, where snow starts, etc). Furthermore, it would also be neat to auto-generate town locations, and just about everything!</p>
-<p>Hope this demonstrates how fun CPPNs can be!</p>
+<p>Anyway, I hope someone finds this useful! I hope I can play with this idea a bit more! I think there’s a lot of juice to squeeze here, in terms of using CPPNs to generate different levels of detail; to add much more detail to the Unity terrain by making decisions based on height (such as where water goes, where snow starts, etc). Furthermore, it would also be neat to auto-generate town locations, and just about everything! Then of course there’s all the details of the CPPN itself to play with; the layer structure, adding more variables, using different norms to highlight different regions of the resulting image; the mind boggles at the options!</p>
+<p>I hope this demonstrates how fun CPPNs can be!</p>
 <h3 id="aside">Aside</h3>
 <p>As an aside, early in the day I was experimenting with producing large tiled images.</p>
 <p>The basic idea is conveyed here:</p>
@@ -169,7 +169,7 @@ public class TerrainHeight : MonoBehaviour {
 <center>
 <img width="250" src="../images/cppn/multi-1.png" /> <img width="250" src="../images/cppn/multi-2.png" /> <img width="250" src="../images/cppn/multi-3.png" /> <img width="250" src="../images/cppn/multi-4.png" /> <img width="250" src="../images/cppn/multi-6.png" /> <img width="250" src="../images/cppn/multi-7.png" />
 </center>
-<p>In all these piectures, the bottom-right tile is very out of sync with it’s two neighbours. This could definitely be fixed “in post”, by simplying blending it, but it’s still slightly unsatisfying that I couldn’t solve this within the CPPN framework.</p>
+<p>In all these pictures, the bottom-right tile is very out of sync with it’s two neighbours. This could definitely be fixed “in post”, by simplying blending it, but it’s still slightly unsatisfying that I couldn’t solve this within the CPPN framework. One original idea I had was to solve it by using (something-like) the interpolation process you see in the <a href="https://silky.github.io/cppn-3d/javascript/index.html">live JS example</a>. Namely, we can pick two vectors <span class="math inline">\(\vec{z_1}\)</span> and <span class="math inline">\(\vec{z_2}\)</span> and move smoothly between them. When you watch this animate, you can feel like there should be some smoothing operation that would let us draw out a long line in this fashion. I think the approach would be to take, slice-by-slice, new images from vectors <span class="math inline">\(\vec{z_{n+1}}\)</span>, and use the slices from them to produce a landscape. This feels slightly odd to me, but perhaps would be nice.</p>
 <p>In the end, my realisation was that I can produce very large maps simply by increasing the richness in the CPPN: increasing the numbers of dense layers, and “net size” (units in the dense layers), and then just simply making a high-resolution version of the resulting image:</p>
 <center>
 <img src="../images/cppn/rich-big.png" /> <a href="../images/cppn/rich-map.png"><img height="512" src="../images/cppn/rich-map.png" /></a>
