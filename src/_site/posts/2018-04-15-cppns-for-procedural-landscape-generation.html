@@ -180,6 +180,12 @@ public class TerrainHeight : MonoBehaviour {
 </center>
 <p>Where each block is controlled by some vector <span class="math inline">\(\vec{z_i}\)</span>, and those can be modified at will. This would definately be possible just by blending in some standard way between the particular <span class="math inline">\(\vec{z_i}\)</span>-values, but I do still think there should be a CPPN-based solution. One idea <a href="http://sordina.github.io/">Lyndon</a> had was by directly constructing the image from the grid, and then encoding that back into the CPPN, then decoding it, to get the “closest match” that is still smooth between the borders. I think this might work, but here we don’t have an encoding network.</p>
 <p>If you have any ideas along these lines, or find any of this useful, then <a href="../about.html">I’d love to hear from you</a>!</p>
+<h2 id="bonus-content-17-apr-2018">Bonus Content <small>(17-Apr-2018)</small></h2>
+<p>I found a cool plugin in Unity — <a href="https://assetstore.unity.com/packages/tools/terrain/terrain-toolkit-2017-83490">The Terrain Toolkit</a> — that lets me easily add textures, and I worked out how to add a water plane (you just find it in the standard assets, and drag on the “Prefab”, and resize it), so we can give the maps a more earthly look and feel:</p>
+<center>
+<a href="../images/cppn/texture-1.png"><img height="300" src="../images/cppn/texture-1.png" /></a> <a href="../images/cppn/texture-2.png"><img height="300" src="../images/cppn/texture-2.png" /></a> <a href="../images/cppn/texture-3.png"><img height="300" src="../images/cppn/texture-3.png" /></a> <a href="../images/cppn/texture-4.png"><img height="300" src="../images/cppn/texture-4.png" /></a>
+</center>
+<p>So cool! (I also updated the code so you can more easily express richer layers in the CPPN, check out the Jupyter Notebook <a href="https://github.com/silky/cppn-3d/blob/master/python/Generate%20Maps.ipynb">Generate Maps</a> for more deets.)</p>
 
         </div>
         <div id="footer">

@@ -295,3 +295,25 @@ might work, but here we don't have an encoding network.
 
 If you have any ideas along these lines, or find any of this useful, then 
 [I'd love to hear from you](/about.html)!
+
+
+## Bonus Content <small>(17-Apr-2018)</small>
+
+I found a cool plugin in Unity --- [The Terrain
+Toolkit](https://assetstore.unity.com/packages/tools/terrain/terrain-toolkit-2017-83490)
+--- that lets me easily add textures, and I worked out how to add a water
+plane (you just find it in the standard assets, and drag on the "Prefab", and
+resize it), so we can give the maps a more earthly look and feel:
+
+<center>
+<a href="/images/cppn/texture-1.png"><img height="300" src="/images/cppn/texture-1.png" /></a>
+<a href="/images/cppn/texture-2.png"><img height="300" src="/images/cppn/texture-2.png" /></a>
+<a href="/images/cppn/texture-3.png"><img height="300" src="/images/cppn/texture-3.png" /></a>
+<a href="/images/cppn/texture-4.png"><img height="300" src="/images/cppn/texture-4.png" /></a>
+</center>
+
+So cool! (I also updated the code so you can more easily express richer layers
+in the CPPN, check out the Jupyter Notebook [Generate
+Maps](https://github.com/silky/cppn-3d/blob/master/python/Generate%20Maps.ipynb)
+for more deets.)
+ 
