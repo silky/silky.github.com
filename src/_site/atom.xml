@@ -44,7 +44,7 @@
 <p>This is cool because, there is a value defined for every point! So you can use these things to create arbitrarily-large pictures! Furthermore, for a given <span class="math inline">\(\vec{z}\)</span> we can make higher-resolution images by evaluating the network over different widths.</p>
 <p>At Silverpond we’ve put this idea to good use in our upcoming event at <a href="https://mkw.melbourne.vic.gov.au/events/ai-fashion-designer/">Melbourne Knowledge Week</a>.</p>
 <p>In any case, here I’d like to document my playing-around with the idea of using CPPNs to generate 3d landscapes.</p>
-<p>I’ve put together some pieces of code here: <a href="https://github.com/silky/cppn-3d">cppn-3d</a>.</p>
+<p>I’ve put together some pieces of code here: <a href="https://github.com/silky/cppn-3d">cppn-3d</a>. Thanks to the amazing <a href="mybinder.org">MyBinder</a> you can even <a href="https://mybinder.org/v2/gh/silky/cppn-3d/master?filepath=python%2FGenerate%20Maps.ipynb">run the notebook online, right now,</a> and start generating your own cool images!</p>
 <p>To use the Python code, say, take a look at the <a href="https://github.com/silky/cppn-3d/blob/master/python/Generate%20Maps.ipynb">notebook</a> and you’ll see something like this (after imports):</p>
 <pre><code>latent_dim = 9
 TAXICAB    = ft.partial(np.linalg.norm, axis=0, ord=1)
