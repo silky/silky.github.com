@@ -8,8 +8,49 @@
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
     </author>
-    <updated>2018-04-15T00:00:00Z</updated>
+    <updated>2018-06-06T00:00:00Z</updated>
     <entry>
+    <title><tt>fugu</tt>, the generalised <tt>relu</tt> activation function</title>
+    <link href="https://silky.github.io/posts/2018-06-06-fugu-the-generalised-relu-activation-function.html" />
+    <id>https://silky.github.io/posts/2018-06-06-fugu-the-generalised-relu-activation-function.html</id>
+    <published>2018-06-06T00:00:00Z</published>
+    <updated>2018-06-06T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on June  6, 2018
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>Recall the standard <code>ReLU</code> function from neural networks:</p>
+<p><span class="math display">\[
+\texttt{ReLU}(x) = \max(0, x) = \begin{cases}
+    x &amp; x &gt; 0 \\
+    0 &amp; \text{otherwise}
+    \end{cases}
+\]</span></p>
+<p>All well-and-good. But what if I want to apply a function to the lower-half of this function, instead of setting it to <span class="math inline">\(0\)</span>? Infact, what if I want to apply a function to the top-half as well! And while we’re at it, why should the inflexion point be <span class="math inline">\(0\)</span> always?</p>
+<p>So, here’s the <code>fugu</code> function:</p>
+<p><span class="math display">\[
+\texttt{fugu}(x, f, g, p) = \begin{cases}
+    g(x) &amp; x &gt; p \\
+    f(x) &amp; \text{otherwise}
+    \end{cases}
+\]</span></p>
+<p>Then, <span class="math inline">\(\texttt{ReLU}(x) = \texttt{fugu}(x, 0, \text{id}, 0)\)</span>, if you wish.</p>
+<p>Here’s the <code>fugu</code> function in Python TensorFlow:</p>
+<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> fugu (x, f, g<span class="op">=</span><span class="kw">lambda</span> x: x, point<span class="op">=</span><span class="dv">0</span>):
+    cond   <span class="op">=</span> tf.less(x, point)
+    <span class="cf">return</span> tf.where(cond, f(x), g(x))</code></pre></div>
+<p>There, <code>tf.nn.relu(x) = fugu(x, tf.zeros_like)</code>.</p>
+<p>What kinds of cool/useful functions can you build with this?</p>
+<p>Exercise: Can you use the <code>fugu</code> function to build a kind of “stairway-to-relu” function?</p>
+<center>
+<img src="/images/stairway-to-relu.png" />
+</center>
+]]></summary>
+</entry>
+<entry>
     <title>CPPNs for Procedural Landscape Generation!</title>
     <link href="https://silky.github.io/posts/2018-04-15-cppns-for-procedural-landscape-generation.html" />
     <id>https://silky.github.io/posts/2018-04-15-cppns-for-procedural-landscape-generation.html</id>
@@ -2795,227 +2836,6 @@ http://www.rle.mit.edu/qem/documents/kwiat-prl-74-4763.pdf
 <li id="fn2"><p><em>“Something like” x</em> here is a very informal term for the more formal statement that the running time is <span class="math inline">\(O(x)\)</span>. See <a href="https://en.wikipedia.org/wiki/Big_O_notation">Big O Notation</a> for more.<a href="#fnref2">↩</a></p></li>
 </ol>
 </div>
-]]></summary>
-</entry>
-<entry>
-    <title>50 bad maths and programming jokes</title>
-    <link href="https://silky.github.io/posts/2016-02-22-bad-maths-and-programming-jokes.html" />
-    <id>https://silky.github.io/posts/2016-02-22-bad-maths-and-programming-jokes.html</id>
-    <published>2016-02-22T00:00:00Z</published>
-    <updated>2016-02-22T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div class="info">
-    Posted on February 22, 2016
-    
-        by Noon van der Silk
-    
-</div>
-
-<p>For the past few months at work we’ve been putting up a Chalkboard in front of the office with jokes on it.</p>
-<div class="figure">
-<img src="/images/brunch-and-bound.png" />
-
-</div>
-<p>Today marks the 50th joke, so to celebrate I’m writing up the complete list. Most of the jokes here were ones we made up without looking at the internet; but occasionally, in an effort to have two new jokes every day, we picked some classics.</p>
-<blockquote>
-<p>Q: What kind of parade did the astronauts throw for the computers after the mission?</p>
-<p>A: A Turing tape parade!</p>
-</blockquote>
-<blockquote>
-<p>Q: Why was the maths book sad?</p>
-<p>A: It had too many problems.</p>
-</blockquote>
-<blockquote>
-<p>Q: What did the AI say to the category theorist?</p>
-<p>A: Does not commute!</p>
-<p><small>(from <a href="https://andy.kitchen">Andy Kitchen</a>)</small></p>
-</blockquote>
-<blockquote>
-<p>Q: How did the OR programmer solve a MIP while also eating?</p>
-<p>A: By using a brunch and bound technique.</p>
-</blockquote>
-<blockquote>
-<p>[“hip”, “hip”]</p>
-</blockquote>
-<blockquote>
-<p>Q: What do measure theorists and programmers have in common?</p>
-<p>A: They both enjoy continuous integration.</p>
-</blockquote>
-<blockquote>
-<p>Old mathematicians never die, they just lose some of their functions.</p>
-</blockquote>
-<blockquote>
-<p>Q: Why did the computer keep sneezing?</p>
-<p>A: It had a virus.</p>
-</blockquote>
-<blockquote>
-<p>Q: Why wasn’t the complex beer successful?</p>
-<p>A: People had trouble ordering it!</p>
-</blockquote>
-<blockquote>
-<p>Q: Why did the functional programmer return her TV?</p>
-<p>A: Because it was immutable.</p>
-</blockquote>
-<blockquote>
-<p>Q: What do ruby and librarians have in common?</p>
-<p>A: They both have explicit return policies.</p>
-</blockquote>
-<blockquote>
-<p>A shepherd was out in the field counting her sheep; she counted 96 but when she rounded them up she had 100.</p>
-<p><small>(from <a href="http://www.twolostboys.com.au/">Two Lost Boys</a>)</small></p>
-</blockquote>
-<blockquote>
-<p>Q: Why was the computer owner so successful at sheep husbandry?</p>
-<p>A: She had excellent RAM.</p>
-</blockquote>
-<blockquote>
-<p>Q: Why couldn’t the formal system complete it’s homework?</p>
-<p>A: It was trying to be consistent.</p>
-</blockquote>
-<blockquote>
-<p>404: Joke Not Found.</p>
-</blockquote>
-<blockquote>
-<p>Q: How does a lumberjack mathematician cut down trees?</p>
-<p>A: With her Axiom.</p>
-</blockquote>
-<blockquote>
-<p>Q: Why did the programmer go to her bookshelf before leaving her house?</p>
-<p>A: She needed to get her keys from the dictionary.</p>
-</blockquote>
-<blockquote>
-<p>Q: Why don’t you want to fight an OR consultant?</p>
-<p>A: They are experts at duals.</p>
-</blockquote>
-<blockquote>
-<p>Q: What did the Linux system administer for the programmer’s head cold?</p>
-<p>A: Sudo ephedrine</p>
-</blockquote>
-<blockquote>
-<p>Q: How did the physicist fix her car when it was failing intermittently?</p>
-<p>A: She used statistical mechanics!</p>
-</blockquote>
-<blockquote>
-<p>Q: Why was the bad python programmer so rich?</p>
-<p>A: Because everytime his code failed he got a raise.</p>
-</blockquote>
-<blockquote>
-<p>Q: What do python programmers and event planners have in common?</p>
-<p>A: They both like to decorate functions.</p>
-</blockquote>
-<blockquote>
-<p>Q: Why is 0 the boss?</p>
-<p>A: Because no other number can go above it!</p>
-</blockquote>
-<blockquote>
-<p>Q: What did the mathematician say when they discovered a new prime number?</p>
-<p>A: That’s odd.</p>
-</blockquote>
-<blockquote>
-<p>Q: Why did the low-rank matrix go to the psychologist?</p>
-<p>A: Because it was having an identity crisis!</p>
-</blockquote>
-<blockquote>
-<p>Q: What is a floating point numbers favourite type of tennis?</p>
-<p>A: Doubles!</p>
-</blockquote>
-<blockquote>
-<p>Q: What does a blender and the Kalman filter hav in common?</p>
-<p>A: They both perform a smoothing function!</p>
-</blockquote>
-<blockquote>
-<p>Q: What is the mathematicians favourite kitchen item?</p>
-<p>A: Derivasieve.</p>
-</blockquote>
-<blockquote>
-<p>Q: Why don’t elephants use computers?</p>
-<p>A: Scared of the mouse.</p>
-</blockquote>
-<blockquote>
-<p>Q: Why was the OR consultant unwell?</p>
-<p>A: She want on a benders.</p>
-</blockquote>
-<blockquote>
-<p>Q: What is a statisticians favourite genre of music?</p>
-<p>A: Drum and Bayes.</p>
-</blockquote>
-<blockquote>
-<p>Q: What is a pet store operatores favourite state in a multiplayer game?</p>
-<p>A: The Parrot optimal state.</p>
-</blockquote>
-<blockquote>
-<p>Q: What is the enterprise java programmers favourite business book?</p>
-<p>A: Scalaing up!</p>
-</blockquote>
-<blockquote>
-<p>Q: What function is a tree hugger most concerned by?</p>
-<p>A: <span class="math inline">\(\log(n)\)</span>.</p>
-</blockquote>
-<blockquote>
-<p>Q: What is a garbologists favourite optimisation problem?</p>
-<p>A: Bin packing.</p>
-</blockquote>
-<blockquote>
-<div class="figure">
-<img src="/images/giraph.png" />
-
-</div>
-</blockquote>
-<blockquote>
-<p>Q: What is a choirs favourite design pattern?</p>
-<p>A: The <em>Sing</em>leton pattern!</p>
-</blockquote>
-<blockquote>
-<p>Q: What do you call a mathematician that has lots of statues in her garden?</p>
-<p>A: Polygnomial.</p>
-</blockquote>
-<blockquote>
-<p>Q: What do fashion designers and Haskell programmers have in common?</p>
-<p>A: They love pattern matching!</p>
-</blockquote>
-<blockquote>
-<p>Q: How did the mathematician impress at the dance party?</p>
-<p>A: By showing off her step function!</p>
-</blockquote>
-<blockquote>
-<p>No joke provided; the Curry-Howard isomorphism allows us to generate a programming joke from the maths joke.</p>
-</blockquote>
-<blockquote>
-<p>Q: Why was the mathematician unhappy when she turned 24?</p>
-<p>A: She now had a lot of factors to consider.</p>
-</blockquote>
-<blockquote>
-<p>Q: Why was the programmer so poor?</p>
-<p>A: Syn<em>tax</em>.</p>
-</blockquote>
-<blockquote>
-<p>Q: Why was the ML programmer late to the conference?</p>
-<p>A: She spent too much time in the “train” stage.</p>
-</blockquote>
-<blockquote>
-<p>Q: What number is good value?</p>
-<p>A: 241</p>
-<p>Exercise: What number is best value?</p>
-</blockquote>
-<blockquote>
-<p>Q: Why couldn’t the python programmer get into her house?</p>
-<p>A: Key error.</p>
-</blockquote>
-<blockquote>
-<p>Q: How did the programmer get out of the deep end of the pool?</p>
-<p>A: She made a pull request!</p>
-</blockquote>
-<blockquote>
-<p>Q: Why was the ML researcher tired of shopping?</p>
-<p>A: She was overfitting.</p>
-</blockquote>
-<blockquote>
-<p>Q: How did the programmer get to the bottom of the ocean?</p>
-<p>A: By sub-routine!</p>
-</blockquote>
-<blockquote>
-<p>Q: How do you order citrus?</p>
-<p>A: Use the real number lime.</p>
-</blockquote>
 ]]></summary>
 </entry>
 
