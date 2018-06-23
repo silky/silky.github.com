@@ -75,34 +75,34 @@
 <p>Cool!</p>
 </div>
 <div>
-<p>To celebrate, let’s draw the Fibonacci diagram:</p>
+<p>To celebrate, let’s draw the Sierpinksi triangle:</p>
 </div>
 <div>
 <p>The basic building block:</p>
 </div>
 <div>
-<img src="/images/diagrams/67505a2009c2e5bb.png" />
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">fib d    <span class="fu">=</span> d <span class="fu">===</span> (d <span class="fu">|||</span> d) <span class="fu">#</span> centerXY
-example <span class="fu">=</span> fib (triangle <span class="dv">1</span>)</code></pre></div>
+<img src="/images/diagrams/173ff52710458947.png" />
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">sierp d <span class="fu">=</span> d <span class="fu">===</span> (d <span class="fu">|||</span> d) <span class="fu">#</span> centerXY
+example <span class="fu">=</span> sierp (triangle <span class="dv">1</span>)</code></pre></div>
 </div>
 <div>
 <p>Let’s go!</p>
 </div>
 <div>
-<img src="/images/diagrams/b0fbe05b90a30bf3.png" />
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">fib d    <span class="fu">=</span> d <span class="fu">===</span> (d <span class="fu">|||</span> d) <span class="fu">#</span> centerXY
-example <span class="fu">=</span> foldl (\d _ <span class="ot">-&gt;</span> fib d) (triangle <span class="dv">1</span>) [<span class="dv">1</span><span class="fu">..</span><span class="dv">3</span>]</code></pre></div>
+<img src="/images/diagrams/ddbe64a73b5cee43.png" />
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">sierp d <span class="fu">=</span> d <span class="fu">===</span> (d <span class="fu">|||</span> d) <span class="fu">#</span> centerXY
+example <span class="fu">=</span> foldl (\d _ <span class="ot">-&gt;</span> sierp d) (triangle <span class="dv">1</span>) [<span class="dv">1</span><span class="fu">..</span><span class="dv">3</span>]</code></pre></div>
 </div>
 <div>
 <p>Colours!</p>
 </div>
 <div>
-<img src="/images/diagrams/94e56c3b46a91b5c.png" />
+<img src="/images/diagrams/3d45411fafd7d24c.png" />
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Data.Colour.Palette.ColorSet</span>
 
 color n <span class="fu">=</span> rybColor (n<span class="fu">*</span><span class="dv">2</span>)
  
-fib d n <span class="fu">=</span> d1 <span class="fu">===</span> (d2 <span class="fu">|||</span> d2) <span class="fu">#</span> centerX
+sierp d n <span class="fu">=</span> d1 <span class="fu">===</span> (d2 <span class="fu">|||</span> d2) <span class="fu">#</span> centerX
     <span class="kw">where</span>
         d1 <span class="fu">=</span> d <span class="fu">#</span> bg (color n)
         d2 <span class="fu">=</span> d <span class="fu">#</span> bg (color (n<span class="fu">+</span><span class="dv">1</span>))
@@ -110,7 +110,7 @@ fib d n <span class="fu">=</span> d1 <span class="fu">===</span> (d2 <span class
 example <span class="fu">=</span> foldl step d0 [<span class="dv">0</span><span class="fu">..</span><span class="dv">5</span>]
     <span class="kw">where</span>
         d0       <span class="fu">=</span> triangle <span class="dv">1</span> <span class="fu">#</span> lw <span class="dv">0</span>
-        step d n <span class="fu">=</span> fib d (n<span class="fu">*</span><span class="dv">2</span>)</code></pre></div>
+        step d n <span class="fu">=</span> sierp d (n<span class="fu">*</span><span class="dv">2</span>)</code></pre></div>
 </div>
 <div>
 <p>Happy days!</p>

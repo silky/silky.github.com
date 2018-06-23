@@ -50,19 +50,19 @@ example = hcat (take 5 $ repeat (circle 1))
 
 Cool!
 
-To celebrate, let's draw the Fibonacci diagram:
+To celebrate, let's draw the Sierpinksi triangle:
 
 The basic building block:
 ``` {.diagram-haskell}
-fib d    = d === (d ||| d) # centerXY
-example = fib (triangle 1)
+sierp d = d === (d ||| d) # centerXY
+example = sierp (triangle 1)
 ```
 
 Let's go!
 
 ``` {.diagram-haskell}
-fib d    = d === (d ||| d) # centerXY
-example = foldl (\d _ -> fib d) (triangle 1) [1..3]
+sierp d = d === (d ||| d) # centerXY
+example = foldl (\d _ -> sierp d) (triangle 1) [1..3]
 ```
 
 Colours!
@@ -72,7 +72,7 @@ import Data.Colour.Palette.ColorSet
 
 color n = rybColor (n*2)
  
-fib d n = d1 === (d2 ||| d2) # centerX
+sierp d n = d1 === (d2 ||| d2) # centerX
     where
         d1 = d # bg (color n)
         d2 = d # bg (color (n+1))
@@ -80,7 +80,7 @@ fib d n = d1 === (d2 ||| d2) # centerX
 example = foldl step d0 [0..5]
     where
         d0       = triangle 1 # lw 0
-        step d n = fib d (n*2)
+        step d n = sierp d (n*2)
 ```
 
 Happy days!
