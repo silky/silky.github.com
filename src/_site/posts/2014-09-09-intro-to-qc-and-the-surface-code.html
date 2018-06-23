@@ -30,46 +30,93 @@
     
 </div>
 
+<div>
 <p><em>references: <a href="https://scirate.com/arxiv/0904.2557">arXiv:0904.2557</a>, <a href="https://scirate.com/arxiv/1208.0928">arXiv:1208.0928</a></em></p>
+</div>
+<div>
 <p>(This is the content of a talk I gave to other students in our department, most of whom have no background in quantum computing; hence the introduction and lightness on details of the surface code.)</p>
+</div>
+<div>
 <p>Before talking about the surface code, I’ll introduce the fundamentals of quantum computing.</p>
+</div>
+<div>
 <p><strong>Quantum computing</strong>: The evaluation of quantum circuits in polynomial time.</p>
+</div>
+<div>
 <h2 id="background-on-quantum-computing">Background on quantum computing</h2>
-<p><strong>State</strong> A <em>state</em> is a <span class="math inline">\(d\)</span>-dimensional vector in a complex Hilbert space <span class="math inline">\(\mathcal{H}^d\)</span>. We require that the states are normalised to unity.</p>
-<p><strong>Qubit</strong> A <em>qubit</em> is a “two-level system”. This means it is a state with <span class="math inline">\(d = 2\)</span>.</p>
+</div>
+<div>
+<p><strong>State</strong> A <em>state</em> is a <span class="math inline"><em>d</em></span>-dimensional vector in a complex Hilbert space <span class="math inline">ℋ<sup><em>d</em></sup></span>. We require that the states are normalised to unity.</p>
+</div>
+<div>
+<p><strong>Qubit</strong> A <em>qubit</em> is a “two-level system”. This means it is a state with <span class="math inline"><em>d</em> = 2</span>.</p>
+</div>
+<div>
 <p>We are doing quantum mechanics, so we use bras and kets for vectors, and we distinguish some particular bases,</p>
-<p><span class="math display">\[ \begin{aligned}
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     |0\rangle &amp;= \left( \begin{array}{c}
         1 \\ 0
     \end{array} \right), \\
     |1\rangle &amp;= \left( \begin{array}{c}
         0 \\ 1
     \end{array} \right).
-\end{aligned} \]</span></p>
-<p>Note that these two vectors form a basis for <span class="math inline">\(\mathcal{H}^2\)</span>. We call this basis the <em>standard</em> basis. All bases here will are assumed to be orthonormal.</p>
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
+<p>Note that these two vectors form a basis for <span class="math inline">ℋ<sup>2</sup></span>. We call this basis the <em>standard</em> basis. All bases here will are assumed to be orthonormal.</p>
+</div>
+<div>
 <p>Written in the standard basis an arbitrary qubit is then given by</p>
-<p><span class="math display">\[ \begin{aligned}
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     |\psi\rangle = \alpha |0\rangle + \beta |1\rangle.
-\end{aligned} \]</span></p>
-<p>For a ket <span class="math inline">\(|\psi\rangle\)</span> the bra is given by <span class="math inline">\(\langle\psi| = (|\psi\rangle)^\dagger\)</span>, where <span class="math inline">\(\dagger\)</span> means take the conjugate tranpose. So we write the inner product as <span class="math inline">\(\langle \psi|\varphi\rangle\)</span> and the outer product as <span class="math inline">\(|\psi\rangle\langle\varphi|\)</span>.</p>
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
+<p>For a ket <span class="math inline">|<em>ψ</em>⟩</span> the bra is given by <span class="math inline">⟨<em>ψ</em>|=(|<em>ψ</em>⟩)<sup>†</sup></span>, where <span class="math inline">†</span> means take the conjugate tranpose. So we write the inner product as <span class="math inline">⟨<em>ψ</em>|<em>φ</em>⟩</span> and the outer product as <span class="math inline">|<em>ψ</em>⟩⟨<em>φ</em>|</span>.</p>
+</div>
+<div>
 <p>We will also refer to the so-called <em>Hadamard basis</em>, which is</p>
-<p><span class="math display">\[ \begin{aligned}
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     |+\rangle &amp;= \frac{1}{\sqrt{2}}\left(|0\rangle + |1\rangle\right), \\
     |-\rangle &amp;= \frac{1}{\sqrt{2}}\left(|0\rangle - |1\rangle\right).
-\end{aligned} \]</span></p>
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
 <p><strong>Qubits</strong> We can form a state containing multiple qubits using the tensor product. Verbosely, one may write:</p>
-<p><span class="math display">\[ \begin{aligned}
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     |0\rangle \otimes |0\rangle \otimes \cdots
-\end{aligned} \]</span></p>
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
 <p>but we will shorten this to:</p>
-<p><span class="math display">\[ \begin{aligned}
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     |00\cdots\rangle &amp;= |0\rangle \otimes |0\rangle \otimes \cdots.
-\end{aligned} \]</span></p>
-<p>The dimension of the Hilbert space of this state is <span class="math inline">\(\mathcal{H}^{2^n}\)</span>, where <span class="math inline">\(n\)</span> is the number of terms in the tensor product: the number of qubits.</p>
-<p><strong>Operator</strong> An <em>operator</em> (sometimes called a <em>gate</em>), M, is a <span class="math inline">\(2^n\times 2^n\)</span>-dimensional matrix with elements in <span class="math inline">\(\mathbb{C}\)</span>. We require that the operators be unitary; i.e. that <span class="math inline">\(M M^\dagger = M^\dagger M = 1\)</span> (this requirement comes from the fact that any such operator should preserve the norm of the states).</p>
-<p><strong>A note on notation</strong> Given a multi-qubit state, <span class="math inline">\(|abcd\rangle\)</span>, we can perform a single-qubit operator <span class="math inline">\(M\)</span> on each of these qubits by constructing the appropriate tensor product of matrices, <span class="math inline">\(M \otimes M \otimes M \otimes M\)</span>, and then acting this on the state. We will often write this more concisely as <span class="math inline">\(M_1 M_2 M_3 M_4 |abcd\rangle\)</span>, indicating which qubit the operator acts on.</p>
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
+<p>The dimension of the Hilbert space of this state is <span class="math inline">ℋ<sup>2<sup><em>n</em></sup></sup></span>, where <span class="math inline"><em>n</em></span> is the number of terms in the tensor product: the number of qubits.</p>
+</div>
+<div>
+<p><strong>Operator</strong> An <em>operator</em> (sometimes called a <em>gate</em>), M, is a <span class="math inline">2<sup><em>n</em></sup> × 2<sup><em>n</em></sup></span>-dimensional matrix with elements in <span class="math inline">ℂ</span>. We require that the operators be unitary; i.e. that <span class="math inline"><em>M</em><em>M</em><sup>†</sup> = <em>M</em><sup>†</sup><em>M</em> = 1</span> (this requirement comes from the fact that any such operator should preserve the norm of the states).</p>
+</div>
+<div>
+<p><strong>A note on notation</strong> Given a multi-qubit state, <span class="math inline">|<em>a</em><em>b</em><em>c</em><em>d</em>⟩</span>, we can perform a single-qubit operator <span class="math inline"><em>M</em></span> on each of these qubits by constructing the appropriate tensor product of matrices, <span class="math inline"><em>M</em> ⊗ <em>M</em> ⊗ <em>M</em> ⊗ <em>M</em></span>, and then acting this on the state. We will often write this more concisely as <span class="math inline"><em>M</em><sub>1</sub><em>M</em><sub>2</sub><em>M</em><sub>3</sub><em>M</em><sub>4</sub>|<em>a</em><em>b</em><em>c</em><em>d</em>⟩</span>, indicating which qubit the operator acts on.</p>
+</div>
+<div>
 <p><strong>Pauli Matrices</strong> These play a key role in the surface code. We will define them as</p>
-<p><span class="math display">\[ \begin{aligned}
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     X &amp;= \left( \begin{array}{cc}
         0 &amp; 1 \\
         1 &amp; 0 \end{array} \right), \\
@@ -77,78 +124,160 @@
         1 &amp; 0 \\
         0 &amp; -1 \end{array} \right), \\
     Y &amp;= \text{i}XZ.
-\end{aligned} \]</span></p>
-<p>Note that they all square to <span class="math inline">\(1\)</span>. We will only be interested in the action of <span class="math inline">\(X\)</span> and <span class="math inline">\(Z\)</span>, so note:</p>
-<p><span class="math display">\[ \begin{aligned}
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
+<p>Note that they all square to <span class="math inline">1</span>. We will only be interested in the action of <span class="math inline"><em>X</em></span> and <span class="math inline"><em>Z</em></span>, so note:</p>
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     X|0\rangle &amp;= |1\rangle, \\
     X|1\rangle &amp;= |0\rangle, \\
     Z|+\rangle &amp;= |-\rangle, \\
     Z|-\rangle &amp;= |+\rangle.
-\end{aligned} \]</span></p>
-<p>And furthermore, we have <span class="math inline">\(XZ = -ZX\)</span> (these operators anticommute).</p>
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
+<p>And furthermore, we have <span class="math inline"><em>X</em><em>Z</em> = −<em>Z</em><em>X</em></span> (these operators anticommute).</p>
+</div>
+<div>
 <p><strong>Measurement</strong> Quantum mechanics prescribes that for an arbitrary qubit (written in the standard basis),</p>
-<p><span class="math display">\[ \begin{aligned}
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     |\psi\rangle &amp;= \alpha|0\rangle + \beta|1\rangle,
-\end{aligned} \]</span></p>
-<p>then <em>measuring</em> this qubit gives the state <span class="math inline">\(|0\rangle\)</span> with probability <span class="math inline">\(|\alpha|^2\)</span> and state <span class="math inline">\(|1\rangle\)</span> with probability <span class="math inline">\(|\beta|^2\)</span>.</p>
-<p>More generally we can make projective measurements, wherein we project a state <span class="math inline">\(|\psi\rangle\)</span> into a particular basis. It is common to observe that, in terms of eigenvalues and eigenvectors (by the spectral decomposition theorem),</p>
-<p><span class="math display">\[ \begin{aligned}
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
+<p>then <em>measuring</em> this qubit gives the state <span class="math inline">|0⟩</span> with probability <span class="math inline">|<em>α</em>|<sup>2</sup></span> and state <span class="math inline">|1⟩</span> with probability <span class="math inline">|<em>β</em>|<sup>2</sup></span>.</p>
+</div>
+<div>
+<p>More generally we can make projective measurements, wherein we project a state <span class="math inline">|<em>ψ</em>⟩</span> into a particular basis. It is common to observe that, in terms of eigenvalues and eigenvectors (by the spectral decomposition theorem),</p>
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     X &amp;= |+\rangle\langle +| - |-\rangle\langle -|, \\
     Z &amp;= |0\rangle\langle 0| - |1\rangle\langle 1|,
-\end{aligned} \]</span></p>
-<p>and therefore make statements such as “measure in the <span class="math inline">\(X\)</span> basis”, where this means to project the qubit into the basis <span class="math inline">\(\{|+\rangle, |-\rangle\}\)</span>.</p>
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
+<p>and therefore make statements such as “measure in the <span class="math inline"><em>X</em></span> basis”, where this means to project the qubit into the basis <span class="math inline">{|+⟩,|−⟩}</span>.</p>
+</div>
+<div>
 <p><strong>Quantum circuits</strong></p>
+</div>
+<div>
 <p>An example quantum circuit:</p>
+</div>
+<div>
 <!--
     Circuit
     |0> ---- X ----- | M_Z |
 -->
+</div>
+<div>
 <div class="figure">
 <img src="../images/qcirc_1.jpg" />
 
 </div>
-<p>This enacts the operator <span class="math inline">\(X\)</span> on the state <span class="math inline">\(|0\rangle\)</span>, and we “measure” this state at the end of the circuit in the <span class="math inline">\(Z\)</span> basis.</p>
-<p>The outcome of this circuit is the state <span class="math inline">\(|1\rangle\)</span> with certainity.</p>
-<p>Let <span class="math inline">\(H = \frac{1}{\sqrt{2}} \left( \begin{array}{cc}  1 &amp; 1 \\  1 &amp; -1 \end{array} \right)\)</span> and <span class="math inline">\(C_X = \left( \begin{array}{cccc}  1 &amp; 0 &amp; 0 &amp; 0 \\  0 &amp; 1 &amp; 0 &amp; 0 \\  0 &amp; 0 &amp; 0 &amp; 1 \\  0 &amp; 0 &amp; 1 &amp; 0  \end{array} \right) = \left(  \begin{array}{ccc}  1 &amp; &amp; \\  &amp; 1 &amp; \\  &amp; &amp; X  \end{array} \right)\)</span>.</p>
+</div>
+<div>
+<p>This enacts the operator <span class="math inline"><em>X</em></span> on the state <span class="math inline">|0⟩</span>, and we “measure” this state at the end of the circuit in the <span class="math inline"><em>Z</em></span> basis.</p>
+</div>
+<div>
+<p>The outcome of this circuit is the state <span class="math inline">|1⟩</span> with certainity.</p>
+</div>
+<div>
+<p>Let <span class="math inline">$H = \frac{1}{\sqrt{2}} \left( \begin{array}{cc}  1 &amp; 1 \\  1 &amp; -1 \end{array} \right)$</span> and <span class="math inline">$C_X = \left( \begin{array}{cccc}  1 &amp; 0 &amp; 0 &amp; 0 \\  0 &amp; 1 &amp; 0 &amp; 0 \\  0 &amp; 0 &amp; 0 &amp; 1 \\  0 &amp; 0 &amp; 1 &amp; 0  \end{array} \right) = \left(  \begin{array}{ccc}  1 &amp; &amp; \\  &amp; 1 &amp; \\  &amp; &amp; X  \end{array} \right)$</span>.</p>
+</div>
+<div>
 <p>A more complicated circuit:</p>
+</div>
+<div>
 <!--
     |0> --- H -- [ C_X ] ------ 
                  |     |
     |0> -------- [     ] ------
 -->
+</div>
+<div>
 <div class="figure">
 <img src="../images/qcirc_2.jpg" />
 
 </div>
-<p>The outcome of this circuit is the state <span class="math inline">\(|00\rangle + |11\rangle\)</span>. This is infact an <em>entangled</em> state.</p>
+</div>
+<div>
+<p>The outcome of this circuit is the state <span class="math inline">|00⟩+|11⟩</span>. This is infact an <em>entangled</em> state.</p>
+</div>
+<div>
 <p><strong>Universal quantum computation</strong></p>
+</div>
+<div>
 <p>Previously I described quantum computation as the evaluation of any circuit in polynomial time i.e. we could choose any unitary operations we like.</p>
-<p>Infact, it turns out that, due to a standard theorem (Solovay-Kitaev theorem), that if we can perform the gates <span class="math inline">\(\{H, S, T, C_X\}\)</span>, then we can approximate any unitary matrix (acting on the qubits involved), and hence perform any computation. (It’s not particularly important what the <span class="math inline">\(S\)</span> and <span class="math inline">\(T\)</span> gates are, for our purposes.)</p>
+</div>
+<div>
+<p>Infact, it turns out that, due to a standard theorem (Solovay-Kitaev theorem), that if we can perform the gates <span class="math inline">{<em>H</em>, <em>S</em>, <em>T</em>, <em>C</em><sub><em>X</em></sub>}</span>, then we can approximate any unitary matrix (acting on the qubits involved), and hence perform any computation. (It’s not particularly important what the <span class="math inline"><em>S</em></span> and <span class="math inline"><em>T</em></span> gates are, for our purposes.)</p>
+</div>
+<div>
 <h2 id="error-correction">Error correction</h2>
+</div>
+<div>
 <p>A natural question is - “Do we have quantum computers?”, and the answer is, “not yet”. The reason is that quantum states are decliate; they need to be well isolated from the environment; otherwise errors occur.</p>
+</div>
+<div>
 <h3 id="classical-errors">Classical errors</h3>
+</div>
+<div>
 <p><em>Idea of encoding</em></p>
+</div>
+<div>
 <p>Suppose we wanted to worry about errors in bits. We could used the repitition code,</p>
-<p><span class="math display">\[ \begin{aligned}
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     0 &amp;\mapsto 000, \\
     1 &amp;\mapsto 111.
-\end{aligned} \]</span></p>
-<p>This exact procedure - copying an arbitrary state - can’t be applied in quantum computing due to the No-Cloning Theorem: There is no matrix <span class="math inline">\(U\)</span> such that for any arbitrary <span class="math inline">\(|\psi\rangle\)</span></p>
-<p><span class="math display">\[ \begin{aligned}
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
+<p>This exact procedure - copying an arbitrary state - can’t be applied in quantum computing due to the No-Cloning Theorem: There is no matrix <span class="math inline"><em>U</em></span> such that for any arbitrary <span class="math inline">|<em>ψ</em>⟩</span></p>
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     U(|\psi\rangle \otimes |0\rangle) = |\psi\rangle \otimes |\psi\rangle.
-\end{aligned} \]</span></p>
-<p><em>Proof</em>. Let <span class="math inline">\(|\psi\rangle = \alpha|0\rangle + \beta|1\rangle\)</span> then apply <span class="math inline">\(U\)</span> before and after enacting the tensor product, and note contradiction.</p>
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
+<p><em>Proof</em>. Let <span class="math inline">|<em>ψ</em>⟩=<em>α</em>|0⟩+<em>β</em>|1⟩</span> then apply <span class="math inline"><em>U</em></span> before and after enacting the tensor product, and note contradiction.</p>
+</div>
+<div>
 <h3 id="quantum-errors">Quantum errors</h3>
+</div>
+<div>
 <p>For the moment, we will consider only errors that may occur on a single qubit, i.e. an erroneous unitary operation.</p>
-<p>Any <span class="math inline">\(2^n \times 2^n\)</span> unitary matrix can infact be expressed as a sum of (tensor products of) Pauli operators, with appropriate coefficients, so we consider the general single-qubit error operator</p>
-<p><span class="math display">\[ \begin{aligned}
+</div>
+<div>
+<p>Any <span class="math inline">2<sup><em>n</em></sup> × 2<sup><em>n</em></sup></span> unitary matrix can infact be expressed as a sum of (tensor products of) Pauli operators, with appropriate coefficients, so we consider the general single-qubit error operator</p>
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     E = \epsilon_1 I + \epsilon_2 X + \epsilon_3 Z + \epsilon_4 Y.
-\end{aligned} \]</span></p>
-<p>(Recall that <span class="math inline">\(Y = \text{i}XZ\)</span>.)</p>
-<p>Of course, we can correct any of these errors by applying <span class="math inline">\(E^\dagger\)</span>, but in so doing we would in principle need to know the coefficients. It turns out there is a better way.</p>
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
+<p>(Recall that <span class="math inline"><em>Y</em> = i<em>X</em><em>Z</em></span>.)</p>
+</div>
+<div>
+<p>Of course, we can correct any of these errors by applying <span class="math inline"><em>E</em><sup>†</sup></span>, but in so doing we would in principle need to know the coefficients. It turns out there is a better way.</p>
+</div>
+<div>
 <p>The first step is to think completely differently about how we would encode a logical qubit.</p>
-<p>Consider the operators <span class="math inline">\(X_1, X_2\)</span> and <span class="math inline">\(Z_1, Z_2\)</span>, acting on two qubits. These operators commute, as <span class="math inline">\(XZ = -XZ\)</span> (and operators acting on different qubits always commute.) The (un-normalised) eigenspace is</p>
-<p><span class="math display">\[ \begin{aligned}
+</div>
+<div>
+<p>Consider the operators <span class="math inline"><em>X</em><sub>1</sub>, <em>X</em><sub>2</sub></span> and <span class="math inline"><em>Z</em><sub>1</sub>, <em>Z</em><sub>2</sub></span>, acting on two qubits. These operators commute, as <span class="math inline"><em>X</em><em>Z</em> = −<em>X</em><em>Z</em></span> (and operators acting on different qubits always commute.) The (un-normalised) eigenspace is</p>
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     \begin{array}{ccc}
         Z_1 Z_2 &amp; X_1 X_2 &amp; \text{Eigenvectors} \\ \hline
           +1 &amp; +1 &amp; |e_1\rangle = |00\rangle + |11\rangle \\
@@ -156,47 +285,93 @@
           -1 &amp; +1 &amp; |e_3\rangle = |01\rangle + |10\rangle \\
           -1 &amp; -1 &amp; |e_4\rangle = |01\rangle - |10\rangle
     \end{array}
-\end{aligned} \]</span></p>
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
 <p>They key is this. Consider an arbitrary two-qubit system expressed in this basis</p>
-<p><span class="math display">\[ \begin{aligned}
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     |\psi\rangle = \alpha |e_1\rangle + \beta|e_2\rangle + \gamma|e_3\rangle + \delta|e_4\rangle.
-\end{aligned} \]</span></p>
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
 <p>If we impose the following constraint on this system,</p>
-<p><span class="math display">\[ \begin{aligned}
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     X_1 X_2 |\psi\rangle = \lambda_X |\psi\rangle
-\end{aligned} \]</span></p>
-<p>then we cut out two of the possible basis states that the system could be in. For example, say <span class="math inline">\(\lambda_X = +1\)</span>.</p>
-<p>Then this rules out the state <span class="math inline">\(|00\rangle - |11\rangle\)</span> and <span class="math inline">\(|01\rangle - |10\rangle\)</span>, leaving us with:</p>
-<p><span class="math display">\[ \begin{aligned}
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
+<p>then we cut out two of the possible basis states that the system could be in. For example, say <span class="math inline"><em>λ</em><sub><em>X</em></sub> = +1</span>.</p>
+</div>
+<div>
+<p>Then this rules out the state <span class="math inline">|00⟩−|11⟩</span> and <span class="math inline">|01⟩−|10⟩</span>, leaving us with:</p>
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     |\psi\rangle = \alpha|e_1\rangle + \gamma|e_3\rangle.
-\end{aligned} \]</span></p>
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
 <p>Observations:</p>
+</div>
+<div>
 <ul>
-<li><p>In general we rule out half the eigenvectors when specifying a stabilizer constraint.</p></li>
-<li><p>Suppose we enact <span class="math inline">\(X_1 X_2\)</span> on this new constrained state; it will remain the same, so we can measure in this basis as often as we like, and we will continue to obtain the same eigenvalue when there are no errors.</p></li>
-<li><p>If either qubit undergoes say a <span class="math inline">\(Z\)</span> error, the eigenvalue <span class="math inline">\(\lambda_X\)</span> will change. So we can <em>detect</em> this error. We can also correct it, by applying <span class="math inline">\(Z\)</span> again (if we wished), as <span class="math inline">\(Z^2 = 1\)</span>.</p></li>
-<li><p>If either qubit undergoes a <span class="math inline">\(X\)</span> error, this is <em>not detectable</em>. We will still be in the <span class="math inline">\(+1\)</span> eigenstate of <span class="math inline">\(X_1 X_2\)</span>, but the coefficients will have switched.</p></li>
+<li><div>
+<p>In general we rule out half the eigenvectors when specifying a stabilizer constraint.</p>
+</div></li>
+<li><div>
+<p>Suppose we enact <span class="math inline"><em>X</em><sub>1</sub><em>X</em><sub>2</sub></span> on this new constrained state; it will remain the same, so we can measure in this basis as often as we like, and we will continue to obtain the same eigenvalue when there are no errors.</p>
+</div></li>
+<li><div>
+<p>If either qubit undergoes say a <span class="math inline"><em>Z</em></span> error, the eigenvalue <span class="math inline"><em>λ</em><sub><em>X</em></sub></span> will change. So we can <em>detect</em> this error. We can also correct it, by applying <span class="math inline"><em>Z</em></span> again (if we wished), as <span class="math inline"><em>Z</em><sup>2</sup> = 1</span>.</p>
+</div></li>
+<li><div>
+<p>If either qubit undergoes a <span class="math inline"><em>X</em></span> error, this is <em>not detectable</em>. We will still be in the <span class="math inline">+1</span> eigenstate of <span class="math inline"><em>X</em><sub>1</sub><em>X</em><sub>2</sub></span>, but the coefficients will have switched.</p>
+</div></li>
 </ul>
+</div>
+<div>
 <p>This is a toy model.</p>
-<p>The surface code is a system by which we can detect <em>any</em> single qubit error, <span class="math inline">\(E\)</span> as before, along with several other kinds.</p>
+</div>
+<div>
+<p>The surface code is a system by which we can detect <em>any</em> single qubit error, <span class="math inline"><em>E</em></span> as before, along with several other kinds.</p>
+</div>
+<div>
 <h2 id="the-surface-code">The surface code</h2>
-<p>We define the surface code on a <span class="math inline">\(k \times k\)</span> lattice. At each lattice site we place a qubit. For example, suppose <span class="math inline">\(k = 3\)</span>, then we have</p>
+</div>
+<div>
+<p>We define the surface code on a <span class="math inline"><em>k</em> × <em>k</em></span> lattice. At each lattice site we place a qubit. For example, suppose <span class="math inline"><em>k</em> = 3</span>, then we have</p>
+</div>
+<div>
 <div class="figure">
 <img src="../images/surface_code_1.jpg" />
 
 </div>
-<p>Now, we let there be two types of black cricles. Those associated with <span class="math inline">\(X\)</span> operators, and those associated with <span class="math inline">\(Z\)</span>s. We also label the white qubits, as these will form the <em>quiescent</em> state - the stable state of the surface code, and the state which we will manipulate in order to perform computation,</p>
+</div>
+<div>
+<p>Now, we let there be two types of black cricles. Those associated with <span class="math inline"><em>X</em></span> operators, and those associated with <span class="math inline"><em>Z</em></span>s. We also label the white qubits, as these will form the <em>quiescent</em> state - the stable state of the surface code, and the state which we will manipulate in order to perform computation,</p>
+</div>
+<div>
 <div class="figure">
 <img src="../images/surface_code_3.jpg" />
 
 </div>
-<p>In the <span class="math inline">\(k = 3\)</span> system, the implementation of the surface code will enforce the following constraints (with the white qubits labelled as in the above image in red),</p>
-<p><span class="math display">\[ \begin{aligned}
+</div>
+<div>
+<p>In the <span class="math inline"><em>k</em> = 3</span> system, the implementation of the surface code will enforce the following constraints (with the white qubits labelled as in the above image in red),</p>
+</div>
+<div>
+<p><br /><span class="math display">$$ \begin{aligned}
     Z_1 Z_2 Z_3 |\psi\rangle = \lambda^{(Z)}_{1,2,3}|\psi\rangle, \\
     Z_3 Z_4 Z_5 |\psi\rangle = \lambda^{(Z)}_{3,4,5}|\psi\rangle, \\
     X_1 X_3 X_4 |\psi\rangle = \lambda^{(X)}_{1,3,4}|\psi\rangle, \\
     X_3 X_4 X_5 |\psi\rangle = \lambda^{(X)}_{3,4,5}|\psi\rangle.
-\end{aligned} \]</span></p>
+\end{aligned} $$</span><br /></p>
+</div>
+<div>
 <!--
 In general, in the bulk of a surface code lattice, the following two
 constraints are enforced, one for each type of measurement qubit, on the state
@@ -207,39 +382,96 @@ $$ \begin{aligned}
     Z_a Z_b Z_c Z_d |\psi\rangle = \lambda^Z_{a,b,c,d}|\psi\rangle.
 \end{aligned} $$
 -->
+</div>
+<div>
 <p>Any implementation of the surface code enforces these constraint at every time step.</p>
-<p>In our lattice here, we have <span class="math inline">\(5\)</span> data qubits, and <span class="math inline">\(4\)</span> measurement qubits. We showed that there are <span class="math inline">\(4\)</span> constraints coming from the <span class="math inline">\(4\)</span> data qubits, and as we claimed earlier each of these halve the state space, so the resulting state space has dimension <span class="math inline">\(2^5/2^4 = 2\)</span>. In other words, it encodes one qubit.</p>
-<p>Our goal now is to define logical operations on this qubit. In a much larger surface code (and with some modifications to the way logical qubits are encoded on the lattice), it is possible to define all the logical operations necessary to perform universal quantum computation, but here we’ll only look at <span class="math inline">\(X_L\)</span> and <span class="math inline">\(Z_L\)</span>.</p>
-<p>Consider an <span class="math inline">\(X\)</span> on data qubit <span class="math inline">\(4\)</span>. This operation commutes with the <span class="math inline">\(X\)</span> stabilizers, but will be detected by the <span class="math inline">\(Z\)</span> stabilier to the right. Consider then the operation <span class="math inline">\(X_L = X_4 X_5\)</span>. This operation commutes with all the stabilizers, and cannot be written in terms of any of them.</p>
-<p>So by performing these operators we have obtained <span class="math inline">\(|\psi_X\rangle = X_L|\psi\rangle\)</span> - we’ve manipulated one of the degrees of freedom.</p>
-<p>Similarly, we can define <span class="math inline">\(Z_L = Z_2 Z_5\)</span>. Note that this anticommutes with <span class="math inline">\(X_L\)</span>.</p>
+</div>
+<div>
+<p>In our lattice here, we have <span class="math inline">5</span> data qubits, and <span class="math inline">4</span> measurement qubits. We showed that there are <span class="math inline">4</span> constraints coming from the <span class="math inline">4</span> data qubits, and as we claimed earlier each of these halve the state space, so the resulting state space has dimension <span class="math inline">2<sup>5</sup>/2<sup>4</sup> = 2</span>. In other words, it encodes one qubit.</p>
+</div>
+<div>
+<p>Our goal now is to define logical operations on this qubit. In a much larger surface code (and with some modifications to the way logical qubits are encoded on the lattice), it is possible to define all the logical operations necessary to perform universal quantum computation, but here we’ll only look at <span class="math inline"><em>X</em><sub><em>L</em></sub></span> and <span class="math inline"><em>Z</em><sub><em>L</em></sub></span>.</p>
+</div>
+<div>
+<p>Consider an <span class="math inline"><em>X</em></span> on data qubit <span class="math inline">4</span>. This operation commutes with the <span class="math inline"><em>X</em></span> stabilizers, but will be detected by the <span class="math inline"><em>Z</em></span> stabilier to the right. Consider then the operation <span class="math inline"><em>X</em><sub><em>L</em></sub> = <em>X</em><sub>4</sub><em>X</em><sub>5</sub></span>. This operation commutes with all the stabilizers, and cannot be written in terms of any of them.</p>
+</div>
+<div>
+<p>So by performing these operators we have obtained <span class="math inline">|<em>ψ</em><sub><em>X</em></sub>⟩=<em>X</em><sub><em>L</em></sub>|<em>ψ</em>⟩</span> - we’ve manipulated one of the degrees of freedom.</p>
+</div>
+<div>
+<p>Similarly, we can define <span class="math inline"><em>Z</em><sub><em>L</em></sub> = <em>Z</em><sub>2</sub><em>Z</em><sub>5</sub></span>. Note that this anticommutes with <span class="math inline"><em>X</em><sub><em>L</em></sub></span>.</p>
+</div>
+<div>
 <p>So we’ve exhibited some logical operators.</p>
+</div>
+<div>
 <h3 id="surface-code-facts-and-final-comments">Surface code facts and final comments</h3>
+</div>
+<div>
 <ul>
-<li><p>Tolerant to a 1% error rate in the physical qubit operations,</p></li>
-<li><p>Logical qubits in the code look a bit different; they are defined with respect to “defects” in a much larger lattice.</p></li>
-<li><p>The estimate in 2012 was that ~14,500 phsyical qubits would be necessary to build one logical qubit.</p></li>
-<li><p>In order to factor a 2000 bit number we would require 1 billion qubits.</p></li>
-<li><p>I’ve left out a lot of details regarding how errors are corrected - this is not trivial, and it’s actually interesting.</p></li>
-<li><p>I’ve not commented on all the types of errors that the surface code corrects against.</p></li>
+<li><div>
+<p>Tolerant to a 1% error rate in the physical qubit operations,</p>
+</div></li>
+<li><div>
+<p>Logical qubits in the code look a bit different; they are defined with respect to “defects” in a much larger lattice.</p>
+</div></li>
+<li><div>
+<p>The estimate in 2012 was that ~14,500 phsyical qubits would be necessary to build one logical qubit.</p>
+</div></li>
+<li><div>
+<p>In order to factor a 2000 bit number we would require 1 billion qubits.</p>
+</div></li>
+<li><div>
+<p>I’ve left out a lot of details regarding how errors are corrected - this is not trivial, and it’s actually interesting.</p>
+</div></li>
+<li><div>
+<p>I’ve not commented on all the types of errors that the surface code corrects against.</p>
+</div></li>
 </ul>
+</div>
+<div>
 <h2 id="more-information">More information</h2>
+</div>
+<div>
 <p>There’s the recent surface code paper:</p>
+</div>
+<div>
 <ul>
-<li><a href="https://scirate.com/arxiv/1208.0928">Surface codes: Towards practical large-scale quantum computation</a>,</li>
+<li><div>
+<a href="https://scirate.com/arxiv/1208.0928">Surface codes: Towards practical large-scale quantum computation</a>,
+</div></li>
 </ul>
+</div>
+<div>
 <p>a fantastic recent comprehensive review:</p>
+</div>
+<div>
 <ul>
-<li><a href="https://scirate.com/arxiv/1504.01444">Quantum Computation with Topological codes: from qubit to topological fault-tolerance</a>,</li>
+<li><div>
+<a href="https://scirate.com/arxiv/1504.01444">Quantum Computation with Topological codes: from qubit to topological fault-tolerance</a>,
+</div></li>
 </ul>
+</div>
+<div>
 <p>there’s a recent video from <a href="http://web.physics.ucsb.edu/~martinisgroup/">John Martinis</a>:</p>
+</div>
+<div>
 <ul>
-<li><a href="https://www.youtube.com/watch?v=HQmFEt6l6Tw">Design of a Superconducting Quantum Computer</a>,</li>
+<li><div>
+<a href="https://www.youtube.com/watch?v=HQmFEt6l6Tw">Design of a Superconducting Quantum Computer</a>,
+</div></li>
 </ul>
+</div>
+<div>
 <p>there’s even some code to go and calculate your own surface code error rates!</p>
+</div>
+<div>
 <ul>
-<li><a href="https://scirate.com/arxiv/1307.0689">Polyestimate: instantaneous open source surface code analysis</a> (<a href="https://github.com/adamcw/autotune">Source code</a>).</li>
+<li><div>
+<a href="https://scirate.com/arxiv/1307.0689">Polyestimate: instantaneous open source surface code analysis</a> (<a href="https://github.com/adamcw/autotune">Source code</a>).
+</div></li>
 </ul>
+</div>
 
         </div>
         <div id="footer">

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Noon van der Silk - Diagrams In Hakyll!</title>
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <h1><a href="../">Noon van der Silk</a></h1>
+            </div>
+            <div id="navigation">
+                <a href="../about.html">About</a>
+                <a href="../archive.html">Archive</a>
+                <a href="../links.html">Links</a>
+                <small><a href="../atom.xml">Atom Feed</a></small>
+            </div>
+        </div>
+
+        <div id="content">
+            <h2>Diagrams In Hakyll!</h2>
+
+            <div class="info">
+    Posted on June 23, 2018
+    
+        by Noon van der Silk
+    
+</div>
+
+<div>
+<p>I stumbled across this blogpost of <a href="http://www.corentindupont.info/blog/posts/Programming/2015-09-14-diagrams.html">Corentin Dupont</a> where he put together a library that allows you to modify your hakyll blog so that you can have inline diagrams! As anyone knows, this was amazingly exciting to me, because I love <a href="https://archives.haskell.org/projects.haskell.org/diagrams/"><code>diagrams</code></a>.</p>
+</div>
+<div>
+<p>So I quickly tried to set it up; but, much to my sadness it didn’t immediately work.</p>
+</div>
+<div>
+<p>Luckily, however, I was able to make it worked by hacking around in the two relevant repos:</p>
+</div>
+<div>
+<ul>
+<li><div>
+<a href="https://github.com/silky/diagrams-pandoc">diagrams-pandoc</a>
+</div></li>
+<li><div>
+<a href="https://github.com/silky/hakyll-diagrams">hakyll-diagrams</a>
+</div></li>
+</ul>
+</div>
+<div>
+<p>The main result is a function, <code>pandocCompilerDiagrams</code>, that I included into my hakyll site file like so:</p>
+</div>
+<div>
+<pre><code>match &quot;posts/*&quot; $ do
+    route $ setExtension &quot;html&quot;
+    compile $ 
+            (pandocCompilerDiagrams &quot;images/diagrams&quot; &lt;|&gt; pandocMathCompiler)
+        &gt;&gt;= loadAndApplyTemplate &quot;templates/post.html&quot;    postCtx
+        &gt;&gt;= saveSnapshot &quot;content&quot;
+        &gt;&gt;= loadAndApplyTemplate &quot;templates/default.html&quot; postCtx
+        &gt;&gt;= relativizeUrls</code></pre>
+</div>
+<div>
+<p>And so now, I can have inline diagrams! Check it out:</p>
+</div>
+<div>
+<p>Imagine we had a circle:</p>
+</div>
+<div>
+<img src="../images/diagrams/374a326c0114a031.png" />
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">example <span class="fu">=</span> circle <span class="dv">1</span></code></pre></div>
+</div>
+<div>
+<p>But now, what if the circle was repeated 5 times</p>
+</div>
+<div>
+<img src="../images/diagrams/08c4ef90376ce8a9.png" />
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">example <span class="fu">=</span> hcat (take <span class="dv">5</span> <span class="fu">$</span> repeat (circle <span class="dv">1</span>))</code></pre></div>
+</div>
+<div>
+<p>Cool!</p>
+</div>
+<div>
+<p>To celebrate, let’s draw the Fibonacci diagram:</p>
+</div>
+<div>
+<p>The basic building block:</p>
+</div>
+<div>
+<img src="../images/diagrams/67505a2009c2e5bb.png" />
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">fib d    <span class="fu">=</span> d <span class="fu">===</span> (d <span class="fu">|||</span> d) <span class="fu">#</span> centerXY
+example <span class="fu">=</span> fib (triangle <span class="dv">1</span>)</code></pre></div>
+</div>
+<div>
+<p>Let’s go!</p>
+</div>
+<div>
+<img src="../images/diagrams/b0fbe05b90a30bf3.png" />
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">fib d    <span class="fu">=</span> d <span class="fu">===</span> (d <span class="fu">|||</span> d) <span class="fu">#</span> centerXY
+example <span class="fu">=</span> foldl (\d _ <span class="ot">-&gt;</span> fib d) (triangle <span class="dv">1</span>) [<span class="dv">1</span><span class="fu">..</span><span class="dv">3</span>]</code></pre></div>
+</div>
+<div>
+<p>Colours!</p>
+</div>
+<div>
+<img src="../images/diagrams/94e56c3b46a91b5c.png" />
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Data.Colour.Palette.ColorSet</span>
+
+color n <span class="fu">=</span> rybColor (n<span class="fu">*</span><span class="dv">2</span>)
+ 
+fib d n <span class="fu">=</span> d1 <span class="fu">===</span> (d2 <span class="fu">|||</span> d2) <span class="fu">#</span> centerX
+    <span class="kw">where</span>
+        d1 <span class="fu">=</span> d <span class="fu">#</span> bg (color n)
+        d2 <span class="fu">=</span> d <span class="fu">#</span> bg (color (n<span class="fu">+</span><span class="dv">1</span>))
+
+example <span class="fu">=</span> foldl step d0 [<span class="dv">0</span><span class="fu">..</span><span class="dv">5</span>]
+    <span class="kw">where</span>
+        d0       <span class="fu">=</span> triangle <span class="dv">1</span> <span class="fu">#</span> lw <span class="dv">0</span>
+        step d n <span class="fu">=</span> fib d (n<span class="fu">*</span><span class="dv">2</span>)</code></pre></div>
+</div>
+<div>
+<p>Happy days!</p>
+</div>
+
+        </div>
+        <div id="footer">
+            <small><a href="http://jaspervdj.be/hakyll">Hakyll</a> was involved here (<a href="https://github.com/silky/silky.github.com">source</a>).
+                I have another <a href="https://sites.google.com/site/noonsilk">website</a>. ن
+            </small> 
+        </div>
+        <div id="image_footer"> &nbsp; </div>
+    </body>
+</html>

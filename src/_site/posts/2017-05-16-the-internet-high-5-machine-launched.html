@@ -30,15 +30,34 @@
     
 </div>
 
+<div>
 <p>So a few days ago I put <a href="https://high5.cool">The Internet High 5 Machine!</a> live, finally!</p>
+</div>
+<div>
 <p>It’s been a few years in the making (it turns out the first commit I made was in 2015.)</p>
+</div>
+<div>
 <p>It started as a fun idea I had, for a way to share successes with friends overseas. The idea would be that you both have a machine, and then you somehow control their machine to give them a High 5, physically.</p>
+</div>
+<div>
 <p>I let the idea sit for a while, and picked it up again as I was near the end of my recent degree.</p>
+</div>
+<div>
 <p>My approach was to build the website and necessary tools in Haskell, so that I had a concrete project with which to learn. I didn’t know Haskell very well at the time, so it seemed like a good opportunity.</p>
+</div>
+<div>
 <p>I looked around at a few web frameworks, but I had previously played with <a href="https://www.yesodweb.com/">Yesod</a> to build <a href="https://github.com/silky/super-reference">super-reference</a>, so I opted to go with that. I actually still quite like Yesod, even though there are some more innovative things (<a href="https://haskell-servant.github.io/">servant</a>) that I think I will explore in the future.</p>
+</div>
+<div>
 <p>I would say I generally quite enjoyed the Haskell/Yesod experience, but I did have to make a somewhat-inappropriate number of PRs to random projects to get it all pulled together. In any case, it at least demonstrated to me that Yesod is a stable foundation on which to build, and that the Haskell ecosystem is very friendly and quite good to work with.</p>
+</div>
+<div>
 <p>One of the main ways I made progress initially was to look at other well-written Yesod projects, and for this purpose I found <a href="https://github.com/jamesdabbs/pi-base.hs">pi-base</a> completely invaluable. Interestingly, their in the process of shifting to servant :)</p>
+</div>
+<div>
 <p>I put together the core bit of “client-side” high5 code in Haskell as well, and that’s open source <a href="https://github.com/internet-high-five-machine/high5-driver">here</a>. This serves as a reference implementation of what I’m referring to as the “High 5 Protocol”:</p>
+</div>
+<div>
 <!--
 https://knsv.github.io/mermaid/live_editor/
 sequenceDiagram
@@ -54,22 +73,32 @@ sequenceDiagram
         Client->>-high5.cool: high5-success | high5-failure
     end
 -->
+</div>
+<div>
 <div style="text-align: center">
+<div>
 <div class="figure">
 <img src="../images/high5-protocol-1.png" alt="Figure 1. A view of the High 5 protocol. The Healthcheck step only happens when you’ve got the receive page open on the high5.cool website." />
 <p class="caption">Figure 1. A view of the High 5 protocol. The “Healthcheck” step only happens when you’ve got the “receive” page open on the high5.cool website.</p>
 </div>
 </div>
+</div>
+</div>
+<div>
 <p>This is a simply a list of expected conversations that you can have over a websocket connection with the <a href="https://high5.cool">high5.cool</a> website. If you integrate anything with this protocol, you can activate it via the High 5’ing action <em>on</em> the website.</p>
+</div>
+<div>
 <p>One of the ideas that I can now completely check-off is that anyone can place a “High 5 Me” button on their website (as I’ve now done on mine). I made a setting in the website so that you can allow “anonymous” high 5s (those from people not yet registered with the site). In this way, anyone who appreciates anything you’ve done can give you feedback in a fun way!</p>
+</div>
+<div>
 <p>There’s some badges and other such things in the “<a href="https://high5.cool/profile/">profile</a>” section of the High 5 website.</p>
-<p>If you have any feedback on the website, then send me an <script type="text/javascript">
-<!--
-h='&#x67;&#x6d;&#x61;&#x69;&#108;&#46;&#x63;&#x6f;&#x6d;';a='&#64;';n='&#110;&#x6f;&#x6f;&#110;&#x73;&#x69;&#108;&#x6b;';e=n+a+h;
-document.write('<a h'+'ref'+'="ma'+'ilto'+':'+e+'" clas'+'s="em' + 'ail">'+'&#x65;&#x6d;&#x61;&#x69;&#108;'+'<\/'+'a'+'>');
-// -->
-</script><noscript>email (noonsilk at gmail dot com)</noscript>; I’d love to hear from you! (Alternatively, just send me a <a href="https://high5.cool/high5/754d8358-fe0b-5e5c-8407-beec85b1a603">High 5!</a>)</p>
+</div>
+<div>
+<p>If you have any feedback on the website, then send me an <a href="mailto:noonsilk@gmail.com">email</a>; I’d love to hear from you! (Alternatively, just send me a <a href="https://high5.cool/high5/754d8358-fe0b-5e5c-8407-beec85b1a603">High 5!</a>)</p>
+</div>
+<div>
 <p>For the time being, I’ll let the website site for a while and add a few features that are missing; and hopefully we’ll have some more things to announce in a few months!</p>
+</div>
 
         </div>
         <div id="footer">

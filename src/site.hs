@@ -2,9 +2,11 @@
 {-# LANGUAGE OverloadedStrings #-}
 import           Data.Monoid (mappend)
 import           Hakyll
+import           Control.Applicative
 import qualified Data.Set as S
 import           Text.Pandoc.Options
 import           Control.Monad
+import           Hakyll.Web.Diagrams (pandocCompilerDiagrams)
 --------------------------------------------------------------------------------
 
 pandocMathCompiler =
@@ -49,7 +51,8 @@ main = hakyll $ do
 
     match "posts/*" $ do
         route $ setExtension "html"
-        compile $ pandocMathCompiler
+        compile $ 
+                (pandocCompilerDiagrams "images/diagrams" <|> pandocMathCompiler)
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= saveSnapshot "content"
             >>= loadAndApplyTemplate "templates/default.html" postCtx

@@ -1,3 +1,2 @@
 #!/bin/sh
-stack run -- -- clean
-stack run -- -- watch
+stack run -- -- clean && stack run -- -- watch

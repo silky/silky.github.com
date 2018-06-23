@@ -1,5 +1,5 @@
 ---
-title: The Ethics of AI: A Scenario-Based Approach
+title: The Ethics of AI - A Scenario-Based Approach
 author: Noon van der Silk
 draft: True
 ---

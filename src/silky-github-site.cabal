@@ -18,3 +18,5 @@ executable silky-github-site
     , pandoc
     , hakyll
     , containers
+    , diagrams-lib
+    , hakyll-diagrams

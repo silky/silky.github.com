@@ -30,13 +30,28 @@
     
 </div>
 
+<div>
 <p>At the last <a href="http://www.meetup.com/Melbourne-Haskell-Users-Group/events/222203592/">Melbourne Haskell Meetup</a> we got into the spirit by making <a href="https://github.com/imccoy/xmast">Christmas trees in Haskell</a>.</p>
+</div>
+<div>
 <p>However, I recently have access to a 3D printer, and I’ve long wanted an excuse to try and use <a href="https://github.com/colah/ImplicitCAD">ImplicitCAD</a>, so I set about trying to make a 3D version of <a href="https://github.com/sordina">Lyndon</a>’s <a href="http://www.meetup.com/Melbourne-Haskell-Users-Group/photos/26573949/">logo</a>.</p>
+</div>
+<div>
 <p>So of course, I love <a href="https://github.com/commercialhaskell/stack">stack</a> I created a new <code>simple</code> project with <code>stack new</code> and got started.</p>
+</div>
+<div>
 <p>It turns out that <code>ImplicitCAD</code> has a pretty nice and reasonably intuitive interface (similar to the code that one would write into <a href="http://www.openscad.org/">OpenSCAD</a>).</p>
+</div>
+<div>
 <p>I built the 3D version of the logo by moving around rectangles, and by extruding a hand-drawn shape.</p>
+</div>
+<div>
 <p>The cool thing about generating this image in fully-feature programming language is that I can build a tree of any size I like!</p>
+</div>
+<div>
 <p>Here’s the (pretty verbose) code that gets me a tree of arbitrary depth:</p>
+</div>
+<div>
 <div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">ntree ::</span> <span class="dt">Integer</span> <span class="ot">-&gt;</span> <span class="dt">SymbolicObj3</span>
 ntree n <span class="fu">=</span> finalObj
   <span class="kw">where</span>
@@ -60,13 +75,22 @@ ntree n <span class="fu">=</span> finalObj
       starObj   <span class="fu">=</span> translate (lx <span class="fu">+</span> (posScale <span class="fu">*</span> a), ly <span class="fu">+</span> (posScale <span class="fu">*</span> b), lz <span class="fu">+</span> (posScale <span class="fu">*</span> c))
                     <span class="fu">$</span> scale (starScale, starScale, starScale) star
       finalObj <span class="fu">=</span> union (starObj <span class="fu">:</span> objs)</code></pre></div>
-<p>Running this with <span class="math inline">\(n = 5\)</span> gives result in the following render in OpenSCAD:</p>
+</div>
+<div>
+<p>Running this with <span class="math inline"><em>n</em> = 5</span> gives result in the following render in OpenSCAD:</p>
+</div>
+<div>
 <div class="figure">
 <img src="../images/tree-5.png" />
 
 </div>
+</div>
+<div>
 <p>So there you have it! You can view the source code here: <a href="https://github.com/silky/haskmas">github.com/silky/haskmas</a> or download a ready-to-print STL from <a href="http://www.thingiverse.com/thing:1187442">Thingiverse</a>.</p>
+</div>
+<div>
 <p>Have a happy Haskmas! :)</p>
+</div>
 
         </div>
         <div id="footer">

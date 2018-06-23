@@ -30,32 +30,60 @@
     
 </div>
 
+<div>
 <p>Recall the standard <code>ReLU</code> function from neural networks:</p>
-<p><span class="math display">\[
+</div>
+<div>
+<p><br /><span class="math display">$$
 \texttt{ReLU}(x) = \max(0, x) = \begin{cases}
     x &amp; x &gt; 0 \\
     0 &amp; \text{otherwise}
     \end{cases}
-\]</span></p>
-<p>All well-and-good. But what if I want to apply a function to the lower-half of this function, instead of setting it to <span class="math inline">\(0\)</span>? Infact, what if I want to apply a function to the top-half as well! And while we’re at it, why should the inflexion point be <span class="math inline">\(0\)</span> always?</p>
+$$</span><br /></p>
+</div>
+<div>
+<p>All well-and-good. But what if I want to apply a function to the lower-half of this function, instead of setting it to <span class="math inline">0</span>? Infact, what if I want to apply a function to the top-half as well! And while we’re at it, why should the inflexion point be <span class="math inline">0</span> always?</p>
+</div>
+<div>
 <p>So, here’s the <code>fugu</code> function:</p>
-<p><span class="math display">\[
+</div>
+<div>
+<p><br /><span class="math display">$$
 \texttt{fugu}(x, f, g, p) = \begin{cases}
     g(x) &amp; x &gt; p \\
     f(x) &amp; \text{otherwise}
     \end{cases}
-\]</span></p>
-<p>Then, <span class="math inline">\(\texttt{ReLU}(x) = \texttt{fugu}(x, 0, \text{id}, 0)\)</span>, if you wish.</p>
+$$</span><br /></p>
+</div>
+<div>
+<p>Then, <span class="math inline"><code>ReLU</code>(<em>x</em>)=<code>fugu</code>(<em>x</em>, 0, id, 0)</span>, if you wish.</p>
+</div>
+<div>
 <p>Here’s the <code>fugu</code> function in Python TensorFlow:</p>
+</div>
+<div>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="kw">def</span> fugu (x, f, g<span class="op">=</span><span class="kw">lambda</span> x: x, point<span class="op">=</span><span class="dv">0</span>):
     cond   <span class="op">=</span> tf.less(x, point)
     <span class="cf">return</span> tf.where(cond, f(x), g(x))</code></pre></div>
+</div>
+<div>
 <p>There, <code>tf.nn.relu(x) = fugu(x, tf.zeros_like)</code>.</p>
+</div>
+<div>
 <p>What kinds of cool/useful functions can you build with this?</p>
+</div>
+<div>
 <p>Exercise: Can you use the <code>fugu</code> function to build a kind of “stairway-to-relu” function?</p>
+</div>
+<div>
 <center>
+</div>
+<div>
 <img src="../images/stairway-to-relu.png" />
+</div>
+<div>
 </center>
+</div>
 
         </div>
         <div id="footer">

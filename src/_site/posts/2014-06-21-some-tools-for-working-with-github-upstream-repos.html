@@ -30,32 +30,79 @@
     
 </div>
 
+<div>
 <p>So at the last <a href="http://www.meetup.com/Melbourne-Functional-User-Group-MFUG/">MFUG</a> Hack Night, I was convinced it was time to start hacking on <a href="https://github.com/silky/ideas" title="git console dashboard idea">my dream</a> of a Github dashboard-esque thing that would tell me when the various clones I had had upstream changes.</p>
+</div>
+<div>
 <p>So of course, the first thing I tried to do was to pick a programming language. At first, we thought of a <a href="http://nodejs.org">Node</a>-based local website. But I don’t know Node and I don’t like JavaScript. It being a functional hack night, I next considered <a href="http://elm-lang.org">Elm</a> but stopped for two reasons:</p>
+</div>
+<div>
 <ol style="list-style-type: decimal">
-<li>The elm-lang website examples currently crash,</li>
-<li>I don’t know Elm well enough (or at all, really.)</li>
+<li><div>
+The elm-lang website examples currently crash,
+</div></li>
+<li><div>
+I don’t know Elm well enough (or at all, really.)
+</div></li>
 </ol>
+</div>
+<div>
 <p>So I was stuck. I felt like the only way forward was a local-website dashboard-like interface. I could do it in python, but I’d prefer to do it in a functional language. But I didn’t know any functional language well enough. And the ideas for what the dashboard could do were getting numerous, making me feel overwhelmed at the idea of actually implementing it (I really can only afford to allocate a few short hours to this project.)</p>
+</div>
+<div>
 <p>So in the end, I didn’t get started, and left the evening having accomplished nothing but having a good time talking to people - a pretty nice way to spend the night, but disheartening because I came out of it with the same number of programs that I went in with.</p>
+</div>
+<div>
 <p>On the way home, on the tram, though, I thought perhaps a better place to start was to think about exactly what I wanted to do, and write down a usage plan for the tools that I felt I needed.</p>
+</div>
+<div>
 <p>In the spirit of Linux/<a href="http://cr.yp.to/djb.html">djb</a>/<a href="https://github.com/sordina">sordina</a>, I figured I’d try and have several self-contained programs, and then combine them in various ways to get the result I wanted.</p>
+</div>
+<div>
 <p>What I wanted was:</p>
+</div>
+<div>
 <ol style="list-style-type: decimal">
-<li>A way to see if a repo I have forked has upstream changes,</li>
-<li>Merging these changes in, if I so wish.</li>
+<li><div>
+A way to see if a repo I have forked has upstream changes,
+</div></li>
+<li><div>
+Merging these changes in, if I so wish.
+</div></li>
 </ol>
+</div>
+<div>
 <p>It turns out in order to do this I thought I wanted a tool to clone all the repositories I had on Github (I’ve forked a lot of things.) But in fact, after I’d actually written the tool, <code>clone-all</code>, and used it, I realised I didn’t want a copy of all those repos locally, simply because there are too many. Nevertheless, I’ve kept that one around incase someone else finds it useful.</p>
+</div>
+<div>
 <p>The other tool, <code>infer-upstream</code>, turns out to be useful to derive the upstream remote, and then I wrote a few bash scripts around it, to automate the parts I wanted to automate.</p>
+</div>
+<div>
 <p>So the tools turned out to be:</p>
+</div>
+<div>
 <ul>
-<li><a href="https://github.com/silky/clone-all">clone-all</a> - Clones all the Github repos of a specific user,</li>
-<li><a href="https://github.com/silky/infer-upstream">infer-upstream</a> - Determins the source repo of a fork,</li>
-<li><a href="https://github.com/silky/infer-upstream/blob/master/fetch_upstreams.sh">fetch_upstreams</a> - Fetches upstreams of a series of directories, shows a short diff.</li>
+<li><div>
+<a href="https://github.com/silky/clone-all">clone-all</a> - Clones all the Github repos of a specific user,
+</div></li>
+<li><div>
+<a href="https://github.com/silky/infer-upstream">infer-upstream</a> - Determins the source repo of a fork,
+</div></li>
+<li><div>
+<a href="https://github.com/silky/infer-upstream/blob/master/fetch_upstreams.sh">fetch_upstreams</a> - Fetches upstreams of a series of directories, shows a short diff.
+</div></li>
 </ul>
+</div>
+<div>
 <p>Happily, these three things turned out to be remarkably trivial to write, and require almost no work on my part, aside from having to understand a bit of Haskell. And I’m pretty happy about that, because I <em>do</em> have a little bit of time to learn Haskell insofaras I think it’ll be useful in the future.</p>
+</div>
+<div>
 <h2 id="clone-all">clone-all</h2>
+</div>
+<div>
 <p>Let’s have a look at what <code>clone-all</code> does:</p>
+</div>
+<div>
 <pre><code>noon@tmp&gt;clone-all --help 
 Usage: clone-all [DIRECTORY] (-u|--user ARG)
 
@@ -75,9 +122,17 @@ remote: Total 21 (delta 5), reused 21 (delta 5)
 Receiving objects: 100% (21/21), 14.07 KiB, done.
 Resolving deltas: 100% (5/5), done.
 </code></pre>
+</div>
+<div>
 <p>Unsurprising. Good.</p>
+</div>
+<div>
 <h2 id="infer-upstream">infer-upstream</h2>
+</div>
+<div>
 <p>Consider</p>
+</div>
+<div>
 <pre><code>04:14 PM noon@tmp&gt;infer-upstream --help 
 Usage: infer-upstream (-r|--repo ARG) (-u|--user ARG)
 
@@ -85,21 +140,49 @@ Available options:
   -h,--help                Show this help text
   -r,--repo ARG            Name of the repository that we will look up.
   -u,--user ARG            Name of the user that we will look this repo up on.</code></pre>
+</div>
+<div>
 <p>So for example:</p>
+</div>
+<div>
 <pre><code>noon@tmp&gt;infer-upstream -r scirate3 -u silky
 git@github.com:draftable/scirate3.git</code></pre>
+</div>
+<div>
 <p>So it writes the upstream ssh url to stdout.</p>
+</div>
+<div>
 <h2 id="putting-them-together">Putting them together</h2>
+</div>
+<div>
 <p>These two were the only Haskell programs I had to write. And infact, they are heavily based on sordina’s <a href="https://github.com/sordina/Commando">Commando</a> program, in terms of how they deal with parameters, etc, so not much work at all was involved.</p>
+</div>
+<div>
 <p>In order to accomplish my goal of having correct <em>upstream</em> remotes set, for all my existing repositories, and then being able to get a nice status, it remains only to write some bash scripts that loop around in my <code>dev</code> directory, doing the appropriate things.</p>
+</div>
+<div>
 <p>Indeed, this is what I have done in</p>
+</div>
+<div>
 <ul>
-<li><a href="https://github.com/silky/infer-upstream/blob/master/upstream_everything.sh">upstream_everything</a></li>
-<li><a href="https://github.com/silky/infer-upstream/blob/master/fetch_upstreams.sh">fetch_upstreams</a></li>
+<li><div>
+<a href="https://github.com/silky/infer-upstream/blob/master/upstream_everything.sh">upstream_everything</a>
+</div></li>
+<li><div>
+<a href="https://github.com/silky/infer-upstream/blob/master/fetch_upstreams.sh">fetch_upstreams</a>
+</div></li>
 </ul>
+</div>
+<div>
 <p>The first script - <code>upstream_everything</code> - takes a directory, looks for those folders which are git repositories, then assumes they are Github repositories and tries to find a source for it, under the assumption it is a fork. Supposing it finds a source, it creates a new <code>upstream</code> remote and moves on. Supposing it doesn’t, it does nothing.</p>
+</div>
+<div>
 <p>The second script - <code>fetch_upstreams</code> - does the thing that I actually wanted: It looks in the current folder, for a bunch of git repos, and fetches the changes from the <code>upstream</code> remote, and tells you about the differences.</p>
+</div>
+<div>
 <p>Example of it in action:</p>
+</div>
+<div>
 <pre><code>noon@dev&gt;infer-upstream/fetch_upstreams.sh
 fetching upstream for Javascript-Voronoi ...
  1 file changed, 2 insertions(+), 2 deletions(-)
@@ -132,9 +215,16 @@ fetching upstream for scirate3 ...
  321 files changed, 9141 insertions(+), 4436 deletions(-)
 fetching upstream for Life ...
  1 file changed, 10 insertions(+), 3 deletions(-)</code></pre>
+</div>
+<div>
 <p>Again, it’s completely unsurprising, and ridiculously simple. But importantly, it’s <em>useful</em> to me, and does exactly what I want! For the moment I’ve decided not to attempt to merge and push these changes automatically, but it’s clear that it would not be hard to add.</p>
+</div>
+<div>
 <p>In the end, I’m very happy that I’ve actually finished this, and didn’t end up wasting weeks (or even a weekend!) on writing a big feature-full dashboard that I would probably stop using.</p>
+</div>
+<div>
 <p>Maybe you find these tools useful, maybe you don’t! But at least I learned some Haskell and had some fun!</p>
+</div>
 
         </div>
         <div id="footer">

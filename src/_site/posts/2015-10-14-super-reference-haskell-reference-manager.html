@@ -30,42 +30,102 @@
     
 </div>
 
+<div>
 <p>Today I’m announcing a (very) alpha version of my web-based reference management system, <a href="https://github.com/silky/super-reference">super-reference</a>!</p>
+</div>
+<div>
 <p>Super-reference is a system which:</p>
+</div>
+<div>
 <ol style="list-style-type: decimal">
-<li>Reads a bibtex file and lets you search the bibtex entries in it</li>
-<li>Provides an interface to open associated PDFs or visit associated links</li>
-<li>Maintains a list of ‘currently reading’ PDFs by synching a folder (for me, a dropbox folder)</li>
+<li><div>
+Reads a bibtex file and lets you search the bibtex entries in it
+</div></li>
+<li><div>
+Provides an interface to open associated PDFs or visit associated links
+</div></li>
+<li><div>
+Maintains a list of ‘currently reading’ PDFs by synching a folder (for me, a dropbox folder)
+</div></li>
 </ol>
+</div>
+<div>
 <p>Here’s a screenshot of the main (only) page:</p>
+</div>
+<div>
 <div class="figure">
 <img src="https://raw.github.com/silky/super-reference/master/another_screenshot.png" />
 
 </div>
+</div>
+<div>
 <p>Super-reference is built around my workflow for getting the latest papers.</p>
+</div>
+<div>
 <p>A high-level overview of my workflow is:</p>
+</div>
+<div>
 <ol style="list-style-type: decimal">
-<li>Find an interesting paper</li>
-<li>Obtain the pdf file for this paper, (preferably from <a href="https://arxiv.org">arXiv</a>)</li>
-<li>Save this pdf on my computer, and get the <code>bibtex</code> data for the file somehow</li>
-<li>At some point in the future, be interested in finding this PDF by searching for the title, or browsing through a list</li>
+<li><div>
+Find an interesting paper
+</div></li>
+<li><div>
+Obtain the pdf file for this paper, (preferably from <a href="https://arxiv.org">arXiv</a>)
+</div></li>
+<li><div>
+Save this pdf on my computer, and get the <code>bibtex</code> data for the file somehow
+</div></li>
+<li><div>
+At some point in the future, be interested in finding this PDF by searching for the title, or browsing through a list
+</div></li>
 </ol>
+</div>
+<div>
 <p>All the while I’d like to maintain a list of “papers I’m currently reading” and have them available on my tablet.</p>
+</div>
+<div>
 <p>Items 1-3 take place <em>outside</em> of super-reference. My workflow for finding new papers and saving them on my computer is a little specialised, but happily you don’t need to follow this protocol if you want to get utility out of super-reference — you simply need a <code>bibtex</code> file to point it at.</p>
+</div>
+<div>
 <p>Here’s my new paper obtaining workflow (yours may be different):</p>
+</div>
+<div>
 <ol style="list-style-type: decimal">
-<li>Browse <a href="https://scirate.com">SciRate</a> regularly, and “scite” interesting papers</li>
-<li>Periodically run <a href="https://github.com/silky/scirate3_scraper">scirate3_scaper</a> to bring down all the papers I’ve scited recently, and their bibtex entries</li>
-<li>Combine all these bibtex entries ino my <em>One True</em> bibtex file</li>
+<li><div>
+Browse <a href="https://scirate.com">SciRate</a> regularly, and “scite” interesting papers
+</div></li>
+<li><div>
+Periodically run <a href="https://github.com/silky/scirate3_scraper">scirate3_scaper</a> to bring down all the papers I’ve scited recently, and their bibtex entries
+</div></li>
+<li><div>
+Combine all these bibtex entries ino my <em>One True</em> bibtex file
+</div></li>
 </ol>
+</div>
+<div>
 <h2 id="using-super-reference">Using super-reference</h2>
+</div>
+<div>
 <p>Let’s suppose now you have a <em>One True</em> bibtex file called <code>all.bib</code>.</p>
+</div>
+<div>
 <p>Grab yourself down a copy of the repository by following the <a href="https://github.com/silky/super-reference/#installation">instructions</a> to configure it to point to this bibtex file.</p>
+</div>
+<div>
 <p>Once you have the environment set up you can run a dev server with <code>yesod devel</code>. You will then be able to visit the website! Supposing you pointed the config file at your <code>all.bib</code> file, you will then be looking at all your interesting papers! If there’s a link associated with the entry, a link will be displayed, and if there is a PDF file, clicking on the entry name will open the PDF (with it’s location given by the <code>file</code> entry in the relevant bibtex entry).</p>
+</div>
+<div>
 <p>You can click the <code>star</code> link to move the PDF up into the “currently reading” section. (Note: At the moment there is no visual indication of this, but it will be shown next time the page loads.)</p>
+</div>
+<div>
 <h2 id="improvements">Improvements</h2>
+</div>
+<div>
 <p>Currently there is a lot of outstanding work to do on super-reference; but it’s in a working state for me, so I thought I should release it.</p>
+</div>
+<div>
 <p>If you have any feature requests/improvements/etc feel free to log an issue (or a pull request) over at the repository: <a href="https://github.com/silky/super-reference">super-reference</a>.</p>
+</div>
 
         </div>
         <div id="footer">
