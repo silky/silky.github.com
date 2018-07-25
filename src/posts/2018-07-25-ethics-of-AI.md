@@ -1,7 +1,6 @@
 ---
-title: The Ethics of AI - A Scenario-Based Approach
+title: The Ethics of AI - An Empathy-Based Approach?
 author: Noon van der Silk
-draft: True
 ---
 
 There's lots of talk about the Ethics of AI at the moment. As with any
@@ -41,8 +40,10 @@ One thing I wanted to think about is, speaking as someone working in this
 field and interested in making changes in my day-to-day life, what kind of
 tools or ideas would be useful for me? What should I do?
 
-Alongside this thought, another thought I had is that I don't really like big
-lists of rules. Here's a few: 
+Alongside this thought, another thought I had is that somehow the big lists
+of rules feel very impersonal and disconnected from my experiences. I also feel
+a little bit unsatisfied about opt-in rules.  Here's a few from the around the
+place, that I've seen:
 
 - [Future of Life](https://futureoflife.org/ai-principles/) (June 2018, relevant items)
     - 5 - Race Avoidance: Teams developing AI systems should actively cooperate to
@@ -115,7 +116,7 @@ I have a few problems with these rules:
 - I don't feel a lot of ownership of them, as I wasn't involved in their construction,
 - No-one is enforcing them on me,
 - They're often highly impractical or contain colloquial/regional/policital concerns ("Boost French Research ..."),
-- They're also very overwhelming and demanding,
+- They're also very overwhelming and demanding, how can I ensure that we do _all_ of them?
 - Even if I _say_ I'm doing these things, how does any non-technical person know? How can I prove it?
 
 The positive aspects of them are:
@@ -125,28 +126,31 @@ The positive aspects of them are:
 - It might help to lobby governments/organisations to get funding to make progress on certain aspects?
 - It provides a framework that might be useful for discussing with colleagues/other people
 
+So, what should any given engineer working in this area do? One thought I've
+had recently is a simple one: Let's just aim at building empathy for the
+people that will be affected by our software.
 
-So, how to make progress here? Would it be useful to establish yet another set
-of rules, based on and maybe including all existing ones, and then force
-companies in my local area to obey them? I don't know. But one thing that I'm
-starting to think is useful, having been heavily inspired by [Surfaces and
-Essences](https://www.amazon.com/Surfaces-Essences-Analogy-Fuel-Thinking/dp/0465018475/),
-is to have a large resource of scenarios that allow any person to
-explore different ways of resolving them. The scenarios will allow one to draw
-their own analogies to their current/future/imagined situations, and could
-form a useful thinking tool.
+This is reasonably actionable, say, with local groups by organising meetings
+between technical people and the people that may be affected. I.e. in the
+medical-AI setting, let's organise regular catch-ups between the engineers,
+the doctors, nursing staff, and hospital adminstration types, along with
+perhaps patient representatives.
 
-Specifically, rules are produced by thinking about a bunch of scenarios and
-abstracting over them:
+In the setting, of, say, law software, again we just set up regular events for
+the two groups to chat through issues, work together on small projects, and
+build a mutual understanding of difficulties.
 
-<center>
-<img src="/images/ethics-rules-from-scenarios.png" />
-</center>
+I think this approach is a bit nicer than, say, creating a new set of rules
+that make sense for us locally, and then forcing people to follow them. One
+idea I like about the empathy-based/collaborative approach (or "human-centered
+design"; another term for this kind thing), is that it allos people to _adapt
+to local circumstances_, which I think is really crucial in allowing any one
+person to feel like they have some control over the application of any rules
+they come up with, and thus getting them to actually take an interest in
+enforcing them in their organisation.
 
-So why let's try just looking at the scenarios themselves, and allowing people
-to come up with their own rules. In this way, it'll be more clear when the
-rules should apply, and it should be more lear how to adjust and add scenarios
-so-as to continually improve how we handle new situations in life.
+So, my new rule of thumb for this ethics-related AI stuff will be: Can I meet
+with some of the people that will be affected? What are there thoughts? What
+problems are they working through and what are they interested in?
 
-# Scenarios
-
+As always, I'm interested in your thoughts on the matter!

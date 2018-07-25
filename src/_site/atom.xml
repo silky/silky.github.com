@@ -8,123 +8,15 @@
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
     </author>
-    <updated>2018-06-23T00:00:00Z</updated>
+    <updated>2018-07-25T00:00:00Z</updated>
     <entry>
-    <title>Diagrams In Hakyll!</title>
-    <link href="https://silky.github.io/posts/2018-06-23-Diagrams-In-Hakyll.html" />
-    <id>https://silky.github.io/posts/2018-06-23-Diagrams-In-Hakyll.html</id>
-    <published>2018-06-23T00:00:00Z</published>
-    <updated>2018-06-23T00:00:00Z</updated>
+    <title>The Ethics of AI - An Empathy-Based Approach?</title>
+    <link href="https://silky.github.io/posts/2018-07-25-ethics-of-AI.html" />
+    <id>https://silky.github.io/posts/2018-07-25-ethics-of-AI.html</id>
+    <published>2018-07-25T00:00:00Z</published>
+    <updated>2018-07-25T00:00:00Z</updated>
     <summary type="html"><![CDATA[<div class="info">
-    Posted on June 23, 2018
-    
-        by Noon van der Silk
-    
-</div>
-
-<div>
-<p>I stumbled across this blogpost of <a href="http://www.corentindupont.info/blog/posts/Programming/2015-09-14-diagrams.html">Corentin Dupont</a> where he put together a library that allows you to modify your hakyll blog so that you can have inline diagrams! As anyone knows, this was amazingly exciting to me, because I love <a href="https://archives.haskell.org/projects.haskell.org/diagrams/"><code>diagrams</code></a>.</p>
-</div>
-<div>
-<p>So I quickly tried to set it up; but, much to my sadness it didn’t immediately work.</p>
-</div>
-<div>
-<p>Luckily, however, I was able to make it worked by hacking around in the two relevant repos:</p>
-</div>
-<div>
-<ul>
-<li><div>
-<a href="https://github.com/silky/diagrams-pandoc">diagrams-pandoc</a>
-</div></li>
-<li><div>
-<a href="https://github.com/silky/hakyll-diagrams">hakyll-diagrams</a>
-</div></li>
-</ul>
-</div>
-<div>
-<p>The main result is a function, <code>pandocCompilerDiagrams</code>, that I included into my hakyll site file like so:</p>
-</div>
-<div>
-<pre><code>match &quot;posts/*&quot; $ do
-    route $ setExtension &quot;html&quot;
-    compile $ 
-            (pandocCompilerDiagrams &quot;images/diagrams&quot; &lt;|&gt; pandocMathCompiler)
-        &gt;&gt;= loadAndApplyTemplate &quot;templates/post.html&quot;    postCtx
-        &gt;&gt;= saveSnapshot &quot;content&quot;
-        &gt;&gt;= loadAndApplyTemplate &quot;templates/default.html&quot; postCtx
-        &gt;&gt;= relativizeUrls</code></pre>
-</div>
-<div>
-<p>And so now, I can have inline diagrams! Check it out:</p>
-</div>
-<div>
-<p>Imagine we had a circle:</p>
-</div>
-<div>
-<img src="/images/diagrams/374a326c0114a031.png" />
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">example <span class="fu">=</span> circle <span class="dv">1</span></code></pre></div>
-</div>
-<div>
-<p>But now, what if the circle was repeated 5 times</p>
-</div>
-<div>
-<img src="/images/diagrams/08c4ef90376ce8a9.png" />
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">example <span class="fu">=</span> hcat (take <span class="dv">5</span> <span class="fu">$</span> repeat (circle <span class="dv">1</span>))</code></pre></div>
-</div>
-<div>
-<p>Cool!</p>
-</div>
-<div>
-<p>To celebrate, let’s draw the Sierpinksi triangle:</p>
-</div>
-<div>
-<p>The basic building block:</p>
-</div>
-<div>
-<img src="/images/diagrams/173ff52710458947.png" />
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">sierp d <span class="fu">=</span> d <span class="fu">===</span> (d <span class="fu">|||</span> d) <span class="fu">#</span> centerXY
-example <span class="fu">=</span> sierp (triangle <span class="dv">1</span>)</code></pre></div>
-</div>
-<div>
-<p>Let’s go!</p>
-</div>
-<div>
-<img src="/images/diagrams/ddbe64a73b5cee43.png" />
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">sierp d <span class="fu">=</span> d <span class="fu">===</span> (d <span class="fu">|||</span> d) <span class="fu">#</span> centerXY
-example <span class="fu">=</span> foldl (\d _ <span class="ot">-&gt;</span> sierp d) (triangle <span class="dv">1</span>) [<span class="dv">1</span><span class="fu">..</span><span class="dv">3</span>]</code></pre></div>
-</div>
-<div>
-<p>Colours!</p>
-</div>
-<div>
-<img src="/images/diagrams/3d45411fafd7d24c.png" />
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Data.Colour.Palette.ColorSet</span>
-
-color n <span class="fu">=</span> rybColor (n<span class="fu">*</span><span class="dv">2</span>)
- 
-sierp d n <span class="fu">=</span> d1 <span class="fu">===</span> (d2 <span class="fu">|||</span> d2) <span class="fu">#</span> centerX
-    <span class="kw">where</span>
-        d1 <span class="fu">=</span> d <span class="fu">#</span> bg (color n)
-        d2 <span class="fu">=</span> d <span class="fu">#</span> bg (color (n<span class="fu">+</span><span class="dv">1</span>))
-
-example <span class="fu">=</span> foldl step d0 [<span class="dv">0</span><span class="fu">..</span><span class="dv">5</span>]
-    <span class="kw">where</span>
-        d0       <span class="fu">=</span> triangle <span class="dv">1</span> <span class="fu">#</span> lw <span class="dv">0</span>
-        step d n <span class="fu">=</span> sierp d (n<span class="fu">*</span><span class="dv">2</span>)</code></pre></div>
-</div>
-<div>
-<p>Happy days!</p>
-</div>
-]]></summary>
-</entry>
-<entry>
-    <title>The Ethics of AI - A Scenario-Based Approach</title>
-    <link href="https://silky.github.io/posts/2018-06-21-ethics-of-AI.html" />
-    <id>https://silky.github.io/posts/2018-06-21-ethics-of-AI.html</id>
-    <published>2018-06-21T00:00:00Z</published>
-    <updated>2018-06-21T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div class="info">
-    Posted on June 21, 2018
+    Posted on July 25, 2018
     
         by Noon van der Silk
     
@@ -225,7 +117,7 @@ example <span class="fu">=</span> foldl step d0 [<span class="dv">0</span><span 
 <p>One thing I wanted to think about is, speaking as someone working in this field and interested in making changes in my day-to-day life, what kind of tools or ideas would be useful for me? What should I do?</p>
 </div>
 <div>
-<p>Alongside this thought, another thought I had is that I don’t really like big lists of rules. Here’s a few:</p>
+<p>Alongside this thought, another thought I had is that somehow the big lists of rules feel very impersonal and disconnected from my experiences. I also feel a little bit unsatisfied about opt-in rules. Here’s a few from the around the place, that I’ve seen:</p>
 </div>
 <div>
 <ul>
@@ -367,7 +259,7 @@ No-one is enforcing them on me,
 They’re often highly impractical or contain colloquial/regional/policital concerns (“Boost French Research …”),
 </div></li>
 <li><div>
-They’re also very overwhelming and demanding,
+They’re also very overwhelming and demanding, how can I ensure that we do <em>all</em> of them?
 </div></li>
 <li><div>
 Even if I <em>say</em> I’m doing these things, how does any non-technical person know? How can I prove it?
@@ -394,25 +286,130 @@ It provides a framework that might be useful for discussing with colleagues/othe
 </ul>
 </div>
 <div>
-<p>So, how to make progress here? Would it be useful to establish yet another set of rules, based on and maybe including all existing ones, and then force companies in my local area to obey them? I don’t know. But one thing that I’m starting to think is useful, having been heavily inspired by <a href="https://www.amazon.com/Surfaces-Essences-Analogy-Fuel-Thinking/dp/0465018475/">Surfaces and Essences</a>, is to have a large resource of scenarios that allow any person to explore different ways of resolving them. The scenarios will allow one to draw their own analogies to their current/future/imagined situations, and could form a useful thinking tool.</p>
+<p>So, what should any given engineer working in this area do? One thought I’ve had recently is a simple one: Let’s just aim at building empathy for the people that will be affected by our software.</p>
 </div>
 <div>
-<p>Specifically, rules are produced by thinking about a bunch of scenarios and abstracting over them:</p>
+<p>This is reasonably actionable, say, with local groups by organising meetings between technical people and the people that may be affected. I.e. in the medical-AI setting, let’s organise regular catch-ups between the engineers, the doctors, nursing staff, and hospital adminstration types, along with perhaps patient representatives.</p>
 </div>
 <div>
-<center>
+<p>In the setting, of, say, law software, again we just set up regular events for the two groups to chat through issues, work together on small projects, and build a mutual understanding of difficulties.</p>
 </div>
 <div>
-<img src="/images/ethics-rules-from-scenarios.png" />
+<p>I think this approach is a bit nicer than, say, creating a new set of rules that make sense for us locally, and then forcing people to follow them. One idea I like about the empathy-based/collaborative approach (or “human-centered design”; another term for this kind thing), is that it allos people to <em>adapt to local circumstances</em>, which I think is really crucial in allowing any one person to feel like they have some control over the application of any rules they come up with, and thus getting them to actually take an interest in enforcing them in their organisation.</p>
 </div>
 <div>
-</center>
+<p>So, my new rule of thumb for this ethics-related AI stuff will be: Can I meet with some of the people that will be affected? What are there thoughts? What problems are they working through and what are they interested in?</p>
 </div>
 <div>
-<p>So why let’s try just looking at the scenarios themselves, and allowing people to come up with their own rules. In this way, it’ll be more clear when the rules should apply, and it should be more lear how to adjust and add scenarios so-as to continually improve how we handle new situations in life.</p>
+<p>As always, I’m interested in your thoughts on the matter!</p>
+</div>
+]]></summary>
+</entry>
+<entry>
+    <title>Diagrams In Hakyll!</title>
+    <link href="https://silky.github.io/posts/2018-06-23-Diagrams-In-Hakyll.html" />
+    <id>https://silky.github.io/posts/2018-06-23-Diagrams-In-Hakyll.html</id>
+    <published>2018-06-23T00:00:00Z</published>
+    <updated>2018-06-23T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on June 23, 2018
+    
+        by Noon van der Silk
+    
+</div>
+
+<div>
+<p>I stumbled across this blogpost of <a href="http://www.corentindupont.info/blog/posts/Programming/2015-09-14-diagrams.html">Corentin Dupont</a> where he put together a library that allows you to modify your hakyll blog so that you can have inline diagrams! As anyone knows, this was amazingly exciting to me, because I love <a href="https://archives.haskell.org/projects.haskell.org/diagrams/"><code>diagrams</code></a>.</p>
 </div>
 <div>
-<h1 id="scenarios">Scenarios</h1>
+<p>So I quickly tried to set it up; but, much to my sadness it didn’t immediately work.</p>
+</div>
+<div>
+<p>Luckily, however, I was able to make it worked by hacking around in the two relevant repos:</p>
+</div>
+<div>
+<ul>
+<li><div>
+<a href="https://github.com/silky/diagrams-pandoc">diagrams-pandoc</a>
+</div></li>
+<li><div>
+<a href="https://github.com/silky/hakyll-diagrams">hakyll-diagrams</a>
+</div></li>
+</ul>
+</div>
+<div>
+<p>The main result is a function, <code>pandocCompilerDiagrams</code>, that I included into my hakyll site file like so:</p>
+</div>
+<div>
+<pre><code>match &quot;posts/*&quot; $ do
+    route $ setExtension &quot;html&quot;
+    compile $ 
+            (pandocCompilerDiagrams &quot;images/diagrams&quot; &lt;|&gt; pandocMathCompiler)
+        &gt;&gt;= loadAndApplyTemplate &quot;templates/post.html&quot;    postCtx
+        &gt;&gt;= saveSnapshot &quot;content&quot;
+        &gt;&gt;= loadAndApplyTemplate &quot;templates/default.html&quot; postCtx
+        &gt;&gt;= relativizeUrls</code></pre>
+</div>
+<div>
+<p>And so now, I can have inline diagrams! Check it out:</p>
+</div>
+<div>
+<p>Imagine we had a circle:</p>
+</div>
+<div>
+<img src="/images/diagrams/374a326c0114a031.png" />
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">example <span class="fu">=</span> circle <span class="dv">1</span></code></pre></div>
+</div>
+<div>
+<p>But now, what if the circle was repeated 5 times</p>
+</div>
+<div>
+<img src="/images/diagrams/08c4ef90376ce8a9.png" />
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">example <span class="fu">=</span> hcat (take <span class="dv">5</span> <span class="fu">$</span> repeat (circle <span class="dv">1</span>))</code></pre></div>
+</div>
+<div>
+<p>Cool!</p>
+</div>
+<div>
+<p>To celebrate, let’s draw the Sierpinksi triangle:</p>
+</div>
+<div>
+<p>The basic building block:</p>
+</div>
+<div>
+<img src="/images/diagrams/173ff52710458947.png" />
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">sierp d <span class="fu">=</span> d <span class="fu">===</span> (d <span class="fu">|||</span> d) <span class="fu">#</span> centerXY
+example <span class="fu">=</span> sierp (triangle <span class="dv">1</span>)</code></pre></div>
+</div>
+<div>
+<p>Let’s go!</p>
+</div>
+<div>
+<img src="/images/diagrams/ddbe64a73b5cee43.png" />
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">sierp d <span class="fu">=</span> d <span class="fu">===</span> (d <span class="fu">|||</span> d) <span class="fu">#</span> centerXY
+example <span class="fu">=</span> foldl (\d _ <span class="ot">-&gt;</span> sierp d) (triangle <span class="dv">1</span>) [<span class="dv">1</span><span class="fu">..</span><span class="dv">3</span>]</code></pre></div>
+</div>
+<div>
+<p>Colours!</p>
+</div>
+<div>
+<img src="/images/diagrams/3d45411fafd7d24c.png" />
+<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Data.Colour.Palette.ColorSet</span>
+
+color n <span class="fu">=</span> rybColor (n<span class="fu">*</span><span class="dv">2</span>)
+ 
+sierp d n <span class="fu">=</span> d1 <span class="fu">===</span> (d2 <span class="fu">|||</span> d2) <span class="fu">#</span> centerX
+    <span class="kw">where</span>
+        d1 <span class="fu">=</span> d <span class="fu">#</span> bg (color n)
+        d2 <span class="fu">=</span> d <span class="fu">#</span> bg (color (n<span class="fu">+</span><span class="dv">1</span>))
+
+example <span class="fu">=</span> foldl step d0 [<span class="dv">0</span><span class="fu">..</span><span class="dv">5</span>]
+    <span class="kw">where</span>
+        d0       <span class="fu">=</span> triangle <span class="dv">1</span> <span class="fu">#</span> lw <span class="dv">0</span>
+        step d n <span class="fu">=</span> sierp d (n<span class="fu">*</span><span class="dv">2</span>)</code></pre></div>
+</div>
+<div>
+<p>Happy days!</p>
 </div>
 ]]></summary>
 </entry>
