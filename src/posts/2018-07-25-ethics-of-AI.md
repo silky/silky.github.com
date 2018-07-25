@@ -150,7 +150,7 @@ they come up with, and thus getting them to actually take an interest in
 enforcing them in their organisation.
 
 So, my new rule of thumb for this ethics-related AI stuff will be: Can I meet
-with some of the people that will be affected? What are there thoughts? What
+with some of the people that will be affected? What are their thoughts? What
 problems are they working through and what are they interested in?
 
 As always, I'm interested in your thoughts on the matter!
