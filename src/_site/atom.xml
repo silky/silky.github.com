@@ -8,8 +8,62 @@
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
     </author>
-    <updated>2018-07-25T00:00:00Z</updated>
+    <updated>2018-08-03T00:00:00Z</updated>
     <entry>
+    <title>How To Program</title>
+    <link href="https://silky.github.io/posts/2018-08-03-how-to-program.html" />
+    <id>https://silky.github.io/posts/2018-08-03-how-to-program.html</id>
+    <published>2018-08-03T00:00:00Z</published>
+    <updated>2018-08-03T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on August  3, 2018
+    
+        by Thich Nhat Hanh (aka Noon van der Silk)
+    
+</div>
+
+<div>
+<style type="text/css">
+p {
+  margin: 10px;
+  padding: 50px;
+  background: #eaeaea;
+  text-align: center;
+}
+
+div { text-align: center; }
+
+center { margin-top: 30px; margin-bottom: 30px; }
+</style>
+</div>
+<div>
+<p>The first thing to do is to stop whatever else you are doing.</p>
+</div>
+<div>
+<center>
+</div>
+<div>
+<img src="/images/how-to-program/blank.png" />
+</div>
+<div>
+</center>
+</div>
+<div>
+<p>Now stand or sit in a comfortable position. <br /><br />However you wish.</p>
+</div>
+<div>
+<p>Notice your breathing.</p>
+</div>
+<div>
+<p>As you breathe in, <br />be aware <br />that you are <br />breathing in. <br
+/><br /> As you breathe out, <br />notice that you are <br />breathing out.</p>
+</div>
+<div>
+<p><strong>Notes on Programming</strong><br /><br />Many of us spend a lot of time programming. We program at our jobs, we program at cafes, we program at home. To <em>program</em>, in this blog, means to program in such a way that you enjoy programming, to program in a relaxed way, with your mind awake, calm, and clear. This is what we call <em>programming</em>, and it takes some training and practice.</p>
+</div>
+]]></summary>
+</entry>
+<entry>
     <title>The Ethics of AI - An Empathy-Based Approach?</title>
     <link href="https://silky.github.io/posts/2018-07-25-ethics-of-AI.html" />
     <id>https://silky.github.io/posts/2018-07-25-ethics-of-AI.html</id>
@@ -6164,275 +6218,6 @@ sequenceDiagram
 </div>
 <div>
 <p>For the time being, I’ll let the website site for a while and add a few features that are missing; and hopefully we’ll have some more things to announce in a few months!</p>
-</div>
-]]></summary>
-</entry>
-<entry>
-    <title>Ideas and actions for getting, and keeping, women in technology</title>
-    <link href="https://silky.github.io/posts/2017-03-29-ideas-and-actions-for-getting-and-keeping-women-in-technology.html" />
-    <id>https://silky.github.io/posts/2017-03-29-ideas-and-actions-for-getting-and-keeping-women-in-technology.html</id>
-    <published>2017-03-29T00:00:00Z</published>
-    <updated>2017-03-29T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div class="info">
-    Posted on March 29, 2017
-    
-        by Noon van der Silk
-    
-</div>
-
-<div>
-<p>In my job I’m almost entirely surrounded by men.</p>
-</div>
-<div>
-<center>
-</div>
-<div>
-<img src="/images/silverponders.png?2=2" />
-</div>
-<div>
-</center>
-</div>
-<div>
-<p>I work as a Machine Learning Engineer at <a href="http://silverpond.com.au">Silverpond</a>. It’s definitely the best place I’ve ever worked, but there’s one area that we’re actively trying to improve: recruiting women into roles as software engineers and machine learning engineers.</p>
-</div>
-<div>
-<p>In this post I’ll cover some ideas I’ve had along these lines.</p>
-</div>
-<div>
-<h2 id="the-recruiting-side">The Recruiting Side</h2>
-</div>
-<div>
-<p>When I’ve been involved in recruiting people, in recent history, it’s tended to be almost entirely by word of mouth. My process is:</p>
-</div>
-<div>
-<ol style="list-style-type: decimal">
-<li><div>
-I find out there’s a job available,
-</div></li>
-<li><div>
-I think about the people I know who might be good,
-</div></li>
-<li><div>
-I approach them.
-</div></li>
-</ol>
-</div>
-<div>
-<p>This actually works very well, but only because I tend to go to a lot of events, and I meet a lot of people. The one key problem with this approach is: I mostly end up recommending men.</p>
-</div>
-<div>
-<p>I think that the reason for this can be somewhat explain by various <a href="https://en.wikipedia.org/wiki/List_of_cognitive_biases">cognitive biases</a> (notably, “<a href="https://en.wikipedia.org/wiki/In-group_favoritism">Ingroup bias</a>”), and so I’ve been thinking about how to address it.</p>
-</div>
-<div>
-<p>I was pointed at the few articles along these lines, and I’ll summarise them here:</p>
-</div>
-<div>
-<p><strong><a href="http://malechampionsofchange.com/take-practical-action/avoiding-the-merit-trap/">Avoiding the ‘merit trap’</a></strong> - Chief Executive Women and Male Champions of Change</p>
-</div>
-<div>
-<ul>
-<li><div>
-<strong>Summary</strong>: “Merit-based” hiring is correlated with under-representation for diverse teams.
-</div></li>
-<li><div>
-Thoughts:
-</div>
-<div>
-<ul>
-<li><div>
-Be aware that any definition of “merit” is somewhat subjective and current-circumstances dependant.
-</div></li>
-<li><div>
-Deciding which qualities are meritable isn’t particularly easy.
-</div></li>
-<li><div>
-This might mean that “puzzle”-based hiring; i.e. “complete this puzzle which when solved gives an email address that you can email for a job” is potentially not a good approach.
-</div></li>
-</ul>
-</div></li>
-<li><div>
-Actions:
-</div>
-<div>
-<ul>
-<li><div>
-As much as you can, don’t pre-suppose a list of skills and qualities, because your selection is biased to the intersection of skills that your current team has, or that you’ve seen before.
-</div></li>
-<li><div>
-Allow the candidates to express their own individuality in the interviewing process.
-</div></li>
-<li><div>
-Prefer the person that adds something new to the team.
-</div></li>
-</ul>
-</div></li>
-</ul>
-</div>
-<div>
-<p><strong><a href="http://nerds.airbnb.com/beginning-with-ourselves/">Beginning with Ourselves</a></strong> - Airbnb</p>
-</div>
-<div>
-<ul>
-<li><div>
-<strong>Summary</strong>: Airbnb was didn’t have many women in their data science team; they adjusted their interview process and grew the community, both of which had an impact.
-</div></li>
-<li><div>
-Thoughts:
-</div>
-<div>
-<ul>
-<li><div>
-Your interview process can be biased, and it’s probably hard to figure out when that is. If someone tells you, take it seriously.
-</div></li>
-</ul>
-</div></li>
-<li><div>
-Actions:
-</div>
-<div>
-<ul>
-<li><div>
-Build the community you want to see.
-</div></li>
-<li><div>
-Make your interview process friendly and welcoming to all.
-</div></li>
-<li><div>
-If possible, have a balance of male/female involvement in the interview.
-</div></li>
-</ul>
-</div></li>
-</ul>
-</div>
-<div>
-<p><strong><a href="https://www.theguardian.com/women-in-leadership/2013/oct/14/blind-auditions-orchestras-gender-bias">How blind auditions help orchestras to eliminate gender bias</a></strong> - The Guardian, and <strong><a href="https://business.linkedin.com/talent-solutions/blog/diversity/2017/how-companies-are-taking-unconscious-bias-out-of-the-hiring-equation">How Companies Are Taking Unconscious Bias Out of the Hiring Equation</a></strong> - LinkedIn Talent Blog</p>
-</div>
-<div>
-<ul>
-<li><div>
-<strong>Summary</strong>: If you want to not be biased towards a certain gender, then just keep the gender hidden until they’re employed!
-</div></li>
-<li><div>
-Thoughts:
-</div>
-<div>
-<ul>
-<li><div>
-It’s interesting, but ultimately unsatisfying. It wouldn’t help for internal promotions, say. But maybe it’s a useful hack to bootstrap the process.
-</div></li>
-<li><div>
-It’s not practical for me at Silverpond.
-</div></li>
-</ul>
-</div></li>
-<li><div>
-Actions:
-</div>
-<div>
-<ul>
-<li><div>
-When thinking about a candidate, and making some subjective assesment, think if you would make this same assesment if the gender of the candidate was unknown or switched.
-</div></li>
-</ul>
-</div></li>
-</ul>
-</div>
-<div>
-<p><strong><a href="http://malechampionsofchange.com/wp-content/uploads/2015/02/31.-2011-MCC-report.pdf">Our experiences in elevating the representation of women in leadership</a></strong> - Male Champions of Change</p>
-</div>
-<div>
-<ul>
-<li><div>
-<strong>Summary</strong>: Diversity in leadership can be achived by small concrete steps: getting the CEO interested, setting up metrics, building communities and support networks, and reporting on growth and successes achieved as a result of these actions.
-</div></li>
-<li><div>
-Thoughts:
-</div>
-<div>
-<ul>
-<li><div>
-This is a very “corporate” article, but contains some good points.
-</div></li>
-</ul>
-</div></li>
-<li><div>
-Actions:
-</div>
-<div>
-<ul>
-<li><div>
-Convince or demonstrate to the people in charge of hiring that they should become very interested in diversifying the team; without this you will struggle.
-</div></li>
-<li><div>
-Set up mechanisms to track progress numerically.
-</div></li>
-<li><div>
-Set quantitive targets.
-</div></li>
-<li><div>
-Build and support the community you want to see.
-</div></li>
-</ul>
-</div></li>
-</ul>
-</div>
-<div>
-<hr />
-</div>
-<div>
-<p>Concretely, what I’m going to do in this regard — getting more diverse applicants into the top of our “hiring funnel” — is:</p>
-</div>
-<div>
-<ol style="list-style-type: decimal">
-<li><div>
-Network with a more diverse group; head to events I’ve not been to before,
-</div></li>
-<li><div>
-Improve the messaging on our website around hiring, and write down some statistics that we can start tracking,
-</div></li>
-<li><div>
-Build and support the community.
-</div></li>
-<li><div>
-When thinking about a candidate, and making some subjective assesment, think if I would make this same assesment if the gender of the candidate was unknown or switched.
-</div></li>
-<li><div>
-Don’t pre-suppose an overly-specific list of skills and qualities.
-</div></li>
-</ol>
-</div>
-<div>
-<p>and during the interview process, I think the following ideas are useful to keep in mind:</p>
-</div>
-<div>
-<ol style="list-style-type: decimal">
-<li><div>
-Make sure everyone has an opportunity to feel comfortable,
-</div></li>
-<li><div>
-Allow the candidates to express their own individuality,
-</div></li>
-<li><div>
-Does this person add something new to the team?
-</div></li>
-<li><div>
-Is the job a <a href="http://jvns.ca/blog/2017/02/16/hiring---opportunity/">cool opportunity</a> for this person?
-</div></li>
-</ol>
-</div>
-<div>
-<p>This is kind of a Part-1 of my thoughts on this topic. I’ve had this post sitting in <em>drafts</em> for a while, so I thought I’d publish it. I expressed some related ideas in our <a href="http://silverpond.com.au/2017/03/27/silverponds-diversity-report.html">blog</a>. Let’s see how it progresses over the next few months.</p>
-</div>
-<div>
-<!--
-    - Encouragement
-    - Internal/Exerternal actions
-    - community building/support
-    - differing interests? maybe don't expect pages of github repos
-    - passion vs side projects ...
-    - changing requirements on men too?
-    - ?
--->
 </div>
 ]]></summary>
 </entry>

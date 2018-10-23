@@ -11,6 +11,6 @@ extra-deps:
 
 
 flags: {}
-allow-newer: True
+allow-newer: False
 extra-package-dbs: []
 system-ghc: True
