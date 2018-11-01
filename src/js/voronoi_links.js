@@ -254,6 +254,12 @@ var VoronoiLinks = {
             {"name": "Simon Marlow", "link": "http://simonmar.github.io/"},
             {"name": "Brad Knox", "link": "http://www.bradknox.net/"},
             {"name": "Polyfractal", "link": "https://polyfractal.com/"},
+            {"name": "Be Like Water", "link": "https://belikewater.blog"},
+            {"name": "Deborah Schmidt", "link": "http://frauzufall.de/en/"},
+            {"name": "Algorithmic Assertions", "link": "http://algorithmicassertions.com"},
+            {"name": "Matt Fraser", "link": "https://mattfraser.co.nz/"},
+            {"name": "Galaxy Kate", "link": "http://www.galaxykate.com/"},
+            {"name": "Jeni's Musing", "link": "http://www.jenitennison.com/archive/index.html"},
             ]
 
         VoronoiLinks.updateData(links);
