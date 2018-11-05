@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Noon van der Silk - Simple Dance Booth Open-Sourced (based on TensorFlow.js demo)</title>
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <h1><a href="../">Noon van der Silk</a></h1>
+            </div>
+            <div id="navigation">
+                <a href="../about.html">About</a>
+                <a href="../archive.html">Archive</a>
+                <a href="../links.html">Links</a>
+                <small><a href="../atom.xml">Atom Feed</a></small>
+            </div>
+        </div>
+
+        <div id="content">
+            <h2>Simple Dance Booth Open-Sourced (based on TensorFlow.js demo)</h2>
+
+            <div class="info">
+    Posted on November  5, 2018
+    
+        by Noon van der Silk
+    
+</div>
+
+<div>
+<p>Over on the <a href="https://github.com/silverpond">Silverpond</a> GitHub account we recently open-sourced the little <a href="https://github.com/silverpond/dance-booth">dance-booth</a> project that we’ve been playing with for a while now.</p>
+</div>
+<div>
+<p><img src="../images/dance-booth.jpg" width="600" /></p>
+</div>
+<div>
+<p>It’s a very simple little wrapper around their <a href="https://github.com/tensorflow/tfjs-models/tree/master/posenet">PoseNet</a> demo.</p>
+</div>
+<div>
+<p>It’s a neat little repo, that runs entirely offline, and, from a webcam or anything that can be accessed via the browser, can be used to capture dances in three forms:</p>
+</div>
+<div>
+<ul>
+<li><div>
+The raw video from the webcam,
+</div></li>
+<li><div>
+JSON data of the poses per frame,
+</div></li>
+<li><div>
+Video of the skeleton dancing on the dance floor.
+</div></li>
+</ul>
+</div>
+<div>
+<p>You’ll find all of these saved under the date-and-time in the <code>./saved-videos</code> folder. The JSON can be used to recreate the entire dance in any form you wish; it gives the coords of the various joints.</p>
+</div>
+<div>
+<p>At the present moment it the dance capture only starts when the people in frame all raise their hands above their heads.</p>
+</div>
+<div>
+<p>Feel free to change and play with as you wish!</p>
+</div>
+
+        </div>
+        <div id="footer">
+            <small><a href="http://jaspervdj.be/hakyll">Hakyll</a> was involved here (<a href="https://github.com/silky/silky.github.com">source</a>).
+                I have another <a href="https://sites.google.com/site/noonsilk">website</a>. ن
+            </small> 
+        </div>
+        <div id="image_footer"> &nbsp; </div>
+    </body>
+</html>

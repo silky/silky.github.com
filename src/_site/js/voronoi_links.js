@@ -236,7 +236,6 @@ var VoronoiLinks = {
             {"name": "Thomas Vidick", "link": "http://mycqstate.wordpress.com/"},
             {"name": "Quantum Frontiers", "link": "http://quantumfrontiers.com/"},
             {"name": "The Quantum Pontiff", "link": "http://dabacon.org/pontiff"},
-            {"name": "jehosafet", "link": "http://www.jehosafet.com/"},
             {"name": "Edwin Brady", "link": "http://edwinb.wordpress.com/blog/"},
             {"name": "A Neighborhood of Infinity", "link": "http://blog.sigfpe.com/"},
             {"name": "Haskell for all", "link": "http://www.haskellforall.com/"},
@@ -260,6 +259,7 @@ var VoronoiLinks = {
             {"name": "Matt Fraser", "link": "https://mattfraser.co.nz/"},
             {"name": "Galaxy Kate", "link": "http://www.galaxykate.com/"},
             {"name": "Jeni's Musing", "link": "http://www.jenitennison.com/archive/index.html"},
+            {"name": "Fashioning-Tech", "link": "https://fashioningtech.com/"},
             ]
 
         VoronoiLinks.updateData(links);
