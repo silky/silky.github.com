@@ -8,8 +8,831 @@
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
     </author>
-    <updated>2018-11-05T00:00:00Z</updated>
+    <updated>2018-11-09T00:00:00Z</updated>
     <entry>
+    <title>A quick note on budgeting ...</title>
+    <link href="https://silky.github.io/posts/2018-11-09-quick-note-on-budgeting.html" />
+    <id>https://silky.github.io/posts/2018-11-09-quick-note-on-budgeting.html</id>
+    <published>2018-11-09T00:00:00Z</published>
+    <updated>2018-11-09T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on November  9, 2018
+    
+        by Noon van der Silk
+    
+</div>
+
+<div>
+<p>In “<a href="https://www.goodreads.com/book/show/616875.The_Oregon_Experiment">The Oregon Experiment</a>”, the authors consider the following budgeting scenario.</p>
+</div>
+<div>
+<p>Suppose you’re in the following situation: You have ~$2,500,000 that you’d like to allocate to construction projects in your community.</p>
+</div>
+<div>
+<p>There are many ways you can allocate this money to projects of varying sizes. Consider the following options:</p>
+</div>
+<div>
+<style type="text/css">
+table.budget {
+margin: 10px;
+background: #eaeaea;
+}
+table.budget th {
+border: 0;
+margin: 0;
+border-bottom: solid 1px gray;
+}
+table.budget td {
+border: 0;
+padding: 5px;
+}
+table.budget td.r {
+text-align: right;
+}
+td.m, th.m { width: 100px; }
+td.r, th.r { width: 150px; }
+table.budget td.m {
+text-align: center;
+}
+table.budget tr.total td {
+border-top: solid 1px gray;
+}
+div.tables {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+div.tables div {
+display: flex;
+flex-direction: column;
+}
+</style>
+</div>
+<div>
+<div class="tables">
+<div>
+<div>
+<div>
+<h3 id="option-1---all-projects-considered-equally">Option 1 - All projects considered equally</h3>
+</div>
+<div>
+<table class="budget">
+</div>
+<div>
+<tr>
+</div>
+<div>
+<th>
+</div>
+<div>
+category
+</div>
+<div>
+</th>
+</div>
+<div>
+<th class="m">
+</div>
+<div>
+number of projects
+</div>
+<div>
+</th>
+</div>
+<div>
+<th class="r">
+</div>
+<div>
+rough total cost based on averages
+</div>
+<div>
+</th>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+A &lt; $1000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+1
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$500
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+B $1000-$10,000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+1
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$5,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+C $10,000-$100,000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+1
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$50,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+D $100,000-$1,000,000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+1
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$500,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+E &gt; $1,000,000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+1
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$2,000,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr class="total">
+</div>
+<div>
+<td>
+</div>
+<div>
+<b>totals</b>
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+5
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+~$2,600,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<h3 id="option-2---projects-considered-unequally">Option 2 - Projects considered unequally</h3>
+</div>
+<div>
+<table class="budget">
+</div>
+<div>
+<tr>
+</div>
+<div>
+<th>
+</div>
+<div>
+category
+</div>
+<div>
+</th>
+</div>
+<div>
+<th class="m">
+</div>
+<div>
+number of projects
+</div>
+<div>
+</th>
+</div>
+<div>
+<th class="r">
+</div>
+<div>
+rough total cost based on averages
+</div>
+<div>
+</th>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+A &lt; $1000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+1000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$500,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+B $1000-$10,000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+100
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$500,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+C $10,000-$100,000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+10
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$500,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+D $100,000-$1,000,000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+1
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$500,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+E &gt; $1,000,000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+⅒ th of a project
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$500,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr class="total">
+</div>
+<div>
+<td>
+</div>
+<div>
+<b>totals</b>
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+~1100
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$2,500,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+</table>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<h3 id="option-3---a-middle-ground">Option 3 - A middle ground</h3>
+</div>
+<div>
+<table class="budget">
+</div>
+<div>
+<tr>
+</div>
+<div>
+<th>
+</div>
+<div>
+category
+</div>
+<div>
+</th>
+</div>
+<div>
+<th class="m">
+</div>
+<div>
+number of projects
+</div>
+<div>
+</th>
+</div>
+<div>
+<th class="r">
+</div>
+<div>
+rough total cost based on averages
+</div>
+<div>
+</th>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+A &lt; $1000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+500
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$250,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+B $1000-$10,000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+50
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$250,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+C $10,000-$100,000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+10
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$500,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+D $100,000-$1,000,000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+1
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$500,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr>
+</div>
+<div>
+<td>
+</div>
+<div>
+E &gt; $1,000,000
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+1
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$1,000,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+<tr class="total">
+</div>
+<div>
+<td>
+</div>
+<div>
+<b>totals</b>
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="m">
+</div>
+<div>
+~550
+</div>
+<div>
+</td>
+</div>
+<div>
+<td class="r">
+</div>
+<div>
+$2,500,000
+</div>
+<div>
+</td>
+</div>
+<div>
+</tr>
+</div>
+<div>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<p>The main conclusion is that, for the same amount of money, we can chose to either support lots of small projects, or few total projects.</p>
+</div>
+<div>
+<p>One of the main premises of the book, is that good change is made locally, by locals. In this way, schemes 2 and 3 are a <em>significant</em> improvement over Option 1.</p>
+</div>
+<div>
+<p>One of the best initiatives that Victoria is doing along these lines is the “<a href="https://pickmyproject.vic.gov.au/">Pick My Project</a>” program.</p>
+</div>
+<div>
+<p>However, I think it’s also interesting to think about this in relation to other areas:</p>
+</div>
+<div>
+<ul>
+<li><div>
+Health: Should you make one big change? Or many small ones?
+</div></li>
+<li><div>
+Programming: Should you write one big program? Or many little ones?
+</div></li>
+<li><div>
+Management: Should you set big goals from the top? Or should you empower the people below you to set their own goals?
+</div></li>
+</ul>
+</div>
+]]></summary>
+</entry>
+<entry>
     <title>Simple Dance Booth Open-Sourced (based on TensorFlow.js demo)</title>
     <link href="https://silky.github.io/posts/2018-11-05-dance-booth-open-source.html" />
     <id>https://silky.github.io/posts/2018-11-05-dance-booth-open-source.html</id>
@@ -3959,2799 +4782,6 @@ Retro Haskell <br/> Christmas
 </div>
 <div>
 </center>
-</div>
-]]></summary>
-</entry>
-<entry>
-    <title>2017s Crazy Ideas</title>
-    <link href="https://silky.github.io/posts/2017-12-27-2017s-crazy-ideas.html" />
-    <id>https://silky.github.io/posts/2017-12-27-2017s-crazy-ideas.html</id>
-    <published>2017-12-27T00:00:00Z</published>
-    <updated>2017-12-27T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div class="info">
-    Posted on December 27, 2017
-    
-        by Noon van der Silk
-    
-</div>
-
-<div>
-<p>Given that it’s the end of the year, I thought it would be nice to generate<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> a list of all the <a href="https://github.com/silky/ideas/issues">ideas that we came up with in 2017</a>:</p>
-</div>
-<div>
-<h1 id="the-ideas">The Ideas</h1>
-</div>
-<div>
-<ol>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/304'>pillow backpack/bag</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/303'>arm-and-legs attachment via usb for a phone so-as to make the phone dance physically</a>: “dance phone”
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/302'>3d visualisation of website analytics</a>: “left shopping cart” -&gt; heaps of carts in physical space
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/301'>exponential graph paper drawing</a>: instead of y = c for some constant moved up and down, plot different functions as graph and make ‘graph paper’ out of them.  fabion’s idea  <span class="citation">@fhk</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/300'>“2-category”/homotopy idea for latent space interpolation</a>: i can move between points via paths  but maybe i could move between paths via higher-level things? what?  <span class="citation">@martiningram</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/299'>google street view + ai curator landscape</a>: auto-generated musuem  <span class="citation">@martiningram</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/298'>an alarm clock that will only stop making noise when you tell it a joke that it finds funny</a>: deep learning, etc
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/297'>“remixes” for websites, and other things</a>: songs have remixes; like the original song but better, and incorporating cool parts of other songs  why not websites?  and other things?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/296'>gaze colour picker</a>: a bar on the screen, you look at it, and it picks the colour you look at  <span class="citation">@icp-jesus</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/295'>deep learning dancing with the stars smart tv intergration</a>: you dance infront of your smart tv camera to build a large global dance
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/294'>walk-in toaster</a>: you need the super fire-resistant clothing  but you can see things toasting
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/293'>deep learning for anti-glare</a>: it observes where the sun is and it adjusts the pixels on the screen in the relevant area to prevent glare
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/292'>christmas tree that naturally glows</a>: via some weird bio-hacking thing?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/291'>deep learning instagram</a>: have a thing that constantly generates stuff, posts it to instagram  it takes likes/reposts as evidence that it should do more things like that.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/290'>deep-learning-generated haircuts</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/289'>giant toasted grill that makes giant sandwiches but is also a statue</a>: could be an installation at mona  every sunday at 8am it gets turned on and cooks a giant toasty that everyone can eat at around 11am
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/288'>vr cooking show based on the contents of your fridge</a>: it walks you through a recipe based on what you have in the fridge  it then helps you set the scene; maybe you’re in downtown japan and serving sushi to customers on the street; you need to make the sushi  or you’re in the mexican jungle making nachos  or whatever  the environment is fully emmersive and transforms your kitchen, but is based on foods you have so that by playing you are actually <em>making</em> dinner
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/287'>Hair Dressing Mannequin With Crank to Grow More Hair</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/286'>make a stand-up desk out of milk-crates and keep it in the office for sunny days</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/285'>everyone must wear a mirror </a>: as their output
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/284'>phone head</a>: instead of a phone, you get a balloon-like 3d rendering of the person your talking to’s head next to you while you talk
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/283'>imagine if comedians had to <em>hire</em> jokes</a>: “yeah, you’ve been funny in your last 4 jobs, but what about now?”
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/282'>customised clothing booth</a>: you walk in and participate in the design of future clothes by, say, dancing or whatever.  later on, the shop tells you if your dance was picked for a certain design.  likewise with many other things.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/281'>fashion-drawing light-table</a>: project stencils through fabric onto a t-shirt via a light-table hooked up to a computer
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/280'>self-amusing joke network</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/279'>deep surface equation generator</a>: http://exploratoria.github.io/exhibits/mathematics/parametric-surfaces/index.html http://www.3d-meier.de/tut3/Seite181.html
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/278'>try an image learning thing where we don’t bother with RGB we just bundle it into one number</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/277'>gibberish-net</a>: come up with funny gibberish
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/276'>train weights, then activation functions</a>: i.e. train with some weights  then parameterise the activation functions and switch them slightly  maybe can do better?  i.e. to do something instead of just “hey here’s a new non-linear function that seems to do well”
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/275'>gesture-based mouse control</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/274'>weirdly-orientated shops</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/273'>dj feedback</a>: a deep learning thing that watches the boiler room and learns when the crowd is really enjoying the music; this can be used to provide feedback to people  idea courtesy of ryan at streat.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/272'>throw orb</a>: transforms any physical object into an object you can throw with no disastrous effects.  i.e. put this coffee in my throw-orb and throw it to me,
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/271'>keyboard battleships</a>: like battleships, but set on your keyboard  you buy a set  maybe you also have a ‘battle’ keyboard, and when someone calls a key, if shoots up into the air
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/270'>instead of a password as a string password should be the activations of a neural network; i.e. a “memory”</a>: or something.  like, your password is “that feeling you felt when you went into the water in hawaii just before you went surfing”
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/269'>pass-face/face-pass</a>: an ML network that maps people’s faces to their passwords, or people’s password’s to their face
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/268'>alternative escape rooms</a>: - the “get stuck room”: you need to trap yourself in a room that is well constructed and, at a surface level, very easy to exit - “the find room”: it’s a room somewhere in the city, really hard to find, but once you get in, someone charges you $50 - “the haystack room”: you get a million smarties and need to find the single m&amp;m
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/267'>bouncy-ball sports</a>: tennis, but with super bouncy tennis balls  the court would need to be 10x as big, say  likewise, baseball, squash, basketball, soccer, ….
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/266'>cppn of dance</a>: instead of generating steps, generate a function of time.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/265'>hey google, find my stuff</a>: it’s a camera always watching, always tracking, and you can ask it where things are and it tells you.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/264'>learn a function that yields a pixel value</a>: instead of learning the pixel value itself  so can get arb-resolution gans
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/263'>an office is a maze</a>: or somehow lots of little connected offices
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/262'>white board beach ball</a>: like a whiteboard, but a beach ball with a couple of non-whiteboard parts where you can grip it and throw it to people
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/261'>data augmentation is related to this analogy-formation thing</a>: i think that people doing data-augmentation are really kind of providing evidence like “this thing is like this other thing, and not like this particular thing”  so there’s a way of framing data-augmentation as a kind of re-shuffling of categories of knowledge  i.e. heres a person, and they’re the same if we rotate them, and so on, so all those images of rotated people are still people  c.f. i just learned that this person is a man, that means all these other people that i didn’t know about are men, and that rules out these people being men, etc …  there’s some kind of strong relation here
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/260'>code style transfer</a>: what would this code from noon look like if edward kmett wrote it?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/259'>when doing RL things, allow for the agent to “try” things; i.e. try A, bad try B, bad try C bad, okay, take negative reward and don’t do those again</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/258'>general explaining machine</a>: it explains things to you
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/257'>Ikea Judgement Bot</a>: it watches you assembling things, and based on what you’ve done, it tells you what you should’ve been able to assemble in that time
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/256'>signature sound generator</a>: windows startup sound  netflix sound  star trek door opening sound
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/255'>visual/audio illusion</a>: create a picture that causes someone to <em>hear</em> sound, just because the brain is all connected.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/254'>RevengeNet</a>: suffers from catastrophic remembering
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/253'>Learn &amp; Burn</a>: exercises classes where the content is delivered with rhythm
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/252'>DeepDetectGanReplace</a>: detect cat in photo, so therefore cut out cat, and replace it with a GAN’d cat.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/251'>RosettaConf</a>: All talks must feature examples in multiple languages to compare and illustrate!
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/250'>DeepBlockly</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/249'>DeepDance</a>: dance videos  pose estimation  auto encoder  dancing.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/248'>zeno’s html page</a>: write a document where each letter is half the size of the previous letter, and in that fashion we can write an arbitrary amount of information in a fixed space.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/247'>DeepCoin</a>: make some kind of deep-coin thing in ethereum?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/246'>waterproof wireless keyboard and mouse</a>: so you can do programming from a pool/bath  – edit: there’s heaps of these
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/245'>Roving webcam</a>: Webcam that moves around your monitor so that it looks to observers of the feed that you’re moving your eyes around.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/244'>spiral whiteboard</a>: heaps of whiteboard space  but in a spiral  so you can draw out as much as you want
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/243'>Moodboard to Jewellery</a>: Creates bespoke jewellery for you based on a moodboard.  Could be trained on existing moodboards that contain jewellery.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/242'>DeepLuck</a>: a network that can learn to be lucky.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/241'>robotic olympic games</a>: <span class="citation">@sordina</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/240'>novelty laptop cases</a>: - piano - espresso machine - pizza box - teddybear - pineapple - watermelon - obama  <span class="citation">@sordina</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/239'>neural net that classifies objects in many categories</a>: like in the intro to ‘surfaces and essences’  i.e.  “cat”,“dog” “happy”,“angry”  whatever.  something around this
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/238'>FidgetControl</a>: A fidget-spinner that can send events, and like, control your email or something.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/237'>DeepLarp</a>: <span class="citation">@sordina</span>  an AR + AI cominbation app that looks at people, sees what books they are reading, and them dresses them up (via AR) in outfits from the books  the dress would be remembered, so next time we see them, they look like their character  in the app it’ll be configurable to change which character you see someone as
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/236'>“DeepEmployee”</a>: it watches your computer activity for a month and then learns to do things much like you do  could almost be an word-rnn like-thing on your bash/zsh history or whatever  <span class="citation">@sordina</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/235'>AI to create tileable backgrounds</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/234'>SimCity for Legal Contracts</a>: you write legal contracts  you put them out in the world  people sue you or whatever and you make money
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/233'>a projection-pyramid that sits on the wall and lets you use multiple images to project at various angles to people in your office</a>: could use upstairs at silverpond so that people from anywhere can see the projector  would need two projectors
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/232'>DeepHtmlRendering</a>: html + css -&gt; screenshot of website
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/231'>DeepLike</a>: spruces up messages so that they get more likes  <span class="citation">@gacafe</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/230'>“streaming scp”</a>: like scp, but copies a bunch of files as one big stream; so that it’s no-longer faster to group all the files together in a zip to be faster
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/229'>“server grilles”</a>: like bear grilles, but for servers.  you log on, have minimal tools, and it’s a battle for survival
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/228'>auto generate a video of code/process flow from the code itself</a>: use an AST or whatever to kind of describe the thing you’re doing, have one thing that implements and does it, and then another that generates the gif/video of that process
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/227'>DeepHighlander</a>: it looks at people out on the street, then tells them a time to come back, then all the people that come back at that time are picked so that they look the same.  then … ?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/226'>DeepComedyFinder</a>: “i want jokes about chairs”  then it gives you a video with 50 hours of char-related jokes that it has sourced by watching youtube videos
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/225'>velcro-on-the-outside laptop case</a>: then you can style it how you wish with the cool velcro things
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/224'>start a girls-only datascience internship program with someone</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/223'>recreate different houses in sketchup to get an idea for doing architecture</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/222'>DeepAGI</a>: for any deep learning system, always have it <em>be able</em> to output an arbitrary amount of text, and for this action it should also listen for text input, and then it should just map that directly back into its own networks  this will mean that they can learn to interact with us  hahahaha
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/221'>DeepOnion</a>: generate onion articles  train on (current events) -&gt; (onion article)
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/220'>HumanGAN</a>: a gan, but where part of the discriminator is human, so we can easily do things like say “this joke is funny”, “this joke is not funny”.  <span class="citation">@sordina</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/219'>“another plate” - meetup + bonus food -&gt; feed homeless peeps</a>: name came from dave downstairs at streat  idea would be to somehow gather up food at meetups and feed local people that are in need  how to deliver it?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/218'>“deep -how-many-people-have-heard-of-deep-learning”</a>: point it at audience, counts the number of arms that are up.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/217'>“the worlds first musical”</a>: it’s a story out how the worlds first musical was made  it’s a love story about people who are happy and so they sing, then they decide to make a singing show, and it’s a bit dramatic, but it ends happily.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/216'>“SuperStory”</a>: fills in the details of a story, just like superresolution  <span class="citation">@sordina</span>  1. “i went to the store and bought a cat” 2. expand on “went to the store and bought a cat” 3. “the shop was in doncaster, and i went there at about 6pm, just as it was closing …”
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/215'>a chrome extension that watches videos and when it sees an object it replaces with another object</a>: can be used to hide things you don’t care about
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/214'>use different AIs to make every part of a new made-up website</a>: tensorflow-rnn to make up the content  GANs to make up the images  something else?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/213'>DeepPlot</a>: watches movies, summarises them, tells you the plot.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/212'>“if only” - shows how much money you would’ve made had you done that thing</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/211'>“retro” theme for reveal.js things</a>: - Retro javascript presentation framework - Filters that make static things into gifs - Things that kind of “degrade” slides so that they look cool - D3 filters or something on top of that JS presentation thing. - Instagram filters for JavaScript. Someone will have done that.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/210'>deep office layouts</a>: make office layouts.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/209'>vr neural network model zoo that only works in the melbourne zoo</a>: in the lion’s area, they have the “untrained” models; only trained for a few hours, they make incredibly wild predictions
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/208'>themed office setups - “cos-working”</a>: an office themed like the star trek enterprise  all the programmers work on a tiled big screen, ceo sits on the captains chair, “noon, open a communications channel to bob” … etc
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/207'>paint by numbers app</a>: an program that converts any picture into a colour-less picture (with borders) that you can “paint by numbers” on
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/206'>sustainable deep learning</a>: every time a deep model is trained, trees get planted.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/205'>make batch size a trainable thing and see what happens</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/204'>tennis-like stats for movie stars</a>: use a nn to watch movies and look at:  - time on camera - # number times person looks left - …  etc
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/203'>use dl to identify locations of interest in videos and only send those in HD</a>: then could maybe compress better?  maybe in general using ML to help compression is interesting  <span class="citation">@gacafe</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/202'>disposable clothes</a>: you can print them on demand, where them once, and throw them away  they’re fully recyclable; maybe even biodegradable.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/201'>“underhanded machine learning competition”</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/200'>self-packing box</a>: it’s a box, but with wheels and arms  it drives around the house, packing itself, then delivering the stuff where it needs to go
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/199'>text-based “GAN”</a>: GAN, for texts
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/198'>remake the series ‘wheel of time’ in skyrim</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/197'>english2rap - like translation, but translate from english to rap</a>: <span class="citation">@mobeets</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/196'>poam + style transfer = monies</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/195'>zelda hotel</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/194'>if rnns are folds and nns are traversals then: lenses for rnns</a>: i have no idea what this would be.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/193'>“roundabouts there”</a>: a website that shows traffic simulations if every intersection in some given region was replaced with roundabouts  it would just be fun to do some traffic flow simulation things
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/192'>give out subscriptions to news websites when readers find typos</a>: i.e. have them kind of act like editors  10 found typos gets you a years membership?  makes them keep reading too.
-</div>
-<div>
-</li>
-</div>
-<div>
-</ol>
-</div>
-<div>
-<hr />
-</div>
-<div>
-<p>Unsurprisingly, given my current job, most of the ideas center around deep learning in some capacity. At a glance, I’d say that at least half of the deep learning ideas I’ve had have already been completed (in almost all cases not by me!) so that’s kinda cool. Seems like the next most popular thing to have an idea about is fashion, which also probably won’t shock you.</p>
-</div>
-<div>
-<p><strong>Bonus!</strong></p>
-</div>
-<div>
-<p>Because this is the first time I’ve done this post, here are <em>all</em> the ideas since the beginning of time:</p>
-</div>
-<div>
-<h1 id="all-ideas-since-the-beginning-of-time-until-the-start-of-2017">All ideas since the beginning of time until the start of 2017</h1>
-</div>
-<div>
-<ol>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/191'>“the timeless way of machine learning”</a>: generate something using a hierarchy of concepts like in the timeless way of building.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/190'>make the red light on the think pad blink, maybe doing morse code or something</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/189'>“unboxing people”</a>: following this - https://www.youtube.com/watch?v=IGHhCmdIvuI maybe we could have a list where we write down what we think people are then we also have a way to see all the other boxes that they are in, and look at different slices of the people in this way.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/188'>n-colouring problem in one dimension code</a>: should be easy to program up relate it to ordering decks of coloured cards because it looks cool.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/187'>plush selfie photo ball</a>: you put your phone in it you throw it in the air it takes heaps of photos of you, and they look cool
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/186'>point of sale trivia</a>: so now customer service people at the counter can ask you trivia questions if you get it right, 10% off?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/185'>“network learning network”</a>: a CNN is kind of like a big network will billions of connections but some of the connections set to zero could we “learn” that a CNN is a good structure somehow, by just switching the other edges on and off?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/184'>“ad restaurant”</a>: you go to a restaurant, get free food, but have to listen to an ad or two.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/183'>“gradient scavenger hunt”</a>: like gradient descent, but it’s on your mobile phones, and you need to take steps to get towards the goal; you don’t decide how to get there, you can “level up” in some ways to more advanced gradient descent algorithms to win faster. <span class="citation">@sordina</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/182'>eye tracking to build current file in vim</a>: look to the right, build the file. look to the left, do nothing.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/181'>the worlds most satisfying installation progress thing</a>: it does nothing but write things that look like installation steps “Compiling KERNAL.C ……………… [OK]” etc.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/180'>build quantum neural networks into tensorflow</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/179'>live audio translation</a>: say thing, translate thing, as an app.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/178'>be able to have a stream of papers that i like, with notes, visible on my homepage somehow?</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/177'>run a GAN on graffiti; might work out nicely</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/176'>mariah carey christmas cards</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/175'>“DeepStyle” - style recommendation engine</a>: given a set of photos of people who dress cool; show me other photos of people dressed like that, and then show me where i can buy them same with houses?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/174'>re-make old movies in modern video games</a>: “beverly hills cop in skyrim” and so on
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/173'>christopherNet</a>: “does or does not this building represent the essence of the timeless way of building?”
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/172'>arrange-o-bot</a>: arranges things probammable arranges magazines cupboards groceries
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/171'>crushed sea-shells in home design in some fashion</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/170'>property website for tourists wanting to buy in other countries</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/169'>communicate to other people via waves in the ocean</a>: i.e. a ship moves so-as to make a wave pattern that can be understood by someone
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/168'>“swap job”</a>: swap jobs with someone for a day
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/167'>painting turns into a tv and then back into a painting</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/166'>stickers for books we like</a>: - the timeless way of building
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/165'>a ci system called “christopher alexander”</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/164'>a filesystem plugin that lets to filter folder paths</a>: suppose i consult for company A and company B i don’t want A to see the data for B so before heading over to A, i configure my filesystem to only show those directory paths that contain information for “A”, maybe by a string filter, or a tag or something <span class="citation">@sordina</span> says maybe think of it like a traversal in the lens sense; we only keep the paths that match some condition. not sure at what level to implement this. maybe useful related things: - https://github.com/libfuse/libfuse
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/163'>a “paint your own furniture” shop</a>: like the “paint your pottery” thing, but furniture
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/162'>“literate readmes”</a>: make it so that in order to build the project, you need to run the readme i.e. maybe the <code>stack.yaml</code> for haskell should be parsed as a readme and run by jenkins directly?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/161'>photography zoom length calculator</a>: say i have a 500mm zoom lens, and i am taking a photo from 200 feet away of a cat how large will the cat be in the resulting photo?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/160'>office layout simulator</a>: a webpage where you go, you say the dimensions of your office and the sizes of desks and number of people, and it places the desks in locations and simulates office behaviour to see how that desk setup works.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/159'>an ide that shows you the time complexity of your function as you write code</a>: it’d somehow figure out the time complexity of the function you’re writing, as a function of the input size. somehow.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/158'>shareable linked music stations on pandora and other services</a>: much like regular radio, then we could listen to internet radio together <span class="citation">@gacafe</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/157'>a restaurant where you dance at your table and they bring over food</a>: <span class="citation">@gacafe</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/156'>math fact finder</a>: machine learning to find math facts - i.e. - what can you tell me a periodic equations?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/155'>random handshake generator</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/154'>interactive coy fish pond</a>: https://www.team-lab.net/ https://www.team-lab.net/works/koi_and_people/
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/153'>todo app that displays pictures instead of text</a>: like “picture of person backflipping” for “go to gym”
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/152'>a thing that maps deep learning papers to deep learning networks</a>: i.e. paper in -&gt; graphviz of the network they describe out
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/151'>method to compress a trained neural network as far as possible</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/150'>neural network to generate a font</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/149'>a vr headset that filters the world based on your object selection criteria</a>: for example, you could decide to not show products with high sugar content
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/148'>restaurant where you have to order for other people; you can’t order for yourself</a>: <span class="citation">@andykitchen</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/147'>bike that delivers coffee locally from local cafes</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/146'>“what does fox say” neural network</a>: train it on - “duck souds” -&gt; quack - “cat sounds” -&gt; meow then run it on fox sounds.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/145'>need a word for when you look for your coffee that you thought you had but you don’t have coffee anymore</a>: deja-fee “fugache” (pronounced “foo-gache” like “foo-cache”)
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/144'>website easter eggs where the site acts like a movie</a>: examples: - godfather: profile photos seperate into two sections; one gets a matress, the other throws fish - escape from new york: everyone is dressed up as snake plissken <span class="citation">@arcarson</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/143'>“mega-golf”</a>: you are out in a field with a ball that is about 10ft in diameter; you need to kick it into a above-ground pool.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/142'>AlwaysAttend - take money for people to attend meetups but goes to charity</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/141'>char-rnn to generate business cards</a>: maybe combine it with a generative picture thing
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/140'>design a couch</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/139'>“key orb” - keyboard on a flat-based basketball in front of the computer</a>: it has maybe 200 keys. you can do all kinds of chords and so on. has different ways of knowing where your hands are <span class="citation">@sordina</span>: “Key Orb - Ultimate Ergonomy”
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/138'>musical style transfer</a>: like image style transfer; “draw this photo in the style of picasso” this should answer questions like “play this lynnard skynnard song in a calypso style”
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/137'>school of gym</a>: you have to do exercise; like play squash or run, and then you also get to learn something, like painting, or architecture, or drawing, or maths.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/136'>ML to predict which hashes will have leading zeros</a>: this is a terrible idea
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/135'>html-based terminal</a>: so it can be rich; display images and click around and whatnot but works nicely as a terminal environment as well is that possible?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/134'>multilayered animated website</a>: like the opening scene in this video - https://www.youtube.com/watch?v=u00CdD_fgek
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/133'>make a vim plugin that sets the background colour of the “current” block</a>: a bit like - https://github.com/nathanaelkane/vim-indent-guides - but colour in the background of the currently block only see - http://stackoverflow.com/questions/3722112/full-width-background-color-highlighting-of-codeblock-in-vim for the <code>sign</code> functionality that will help here.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/132'>3d print this vase</a>: http://arxiv.org/pdf/1604.08236.pdf
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/131'>put quipper under <code>stack</code></a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/130'>shows that you can put on/take off with electronic magnets</a>: you push a button and they come undone and you can just step in, then push a button again, and they join up.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/129'>ack-grep -&gt; css colour tokens -&gt; colours rendered in terminal</a>: should be easy
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/128'>make a 2d animation of the tensegrity object i have</a>: could do it in openscad or more better a javascript thing or something
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/127'>realtime path prediction of live cars/bikes in google maps</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/126'>“word scale”</a>: finds things like synonyms in: “angry”, out: “outraged”
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/125'>ipynb github tools</a>: make a tool that commits jupyter notebooks really well i.e. it separates out data from code
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/124'>computer image diffing tools</a>: take two virtual machines and compute their difference shows you programs one has installed that the other does not; new files one may have, different configurations of notepad++ really high level
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/123'>make a “recurse” center in melbourne</a>: like this - https://www.recurse.com/about
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/122'>“quantum stan”</a>: make a version of <a href="http://mc-stan.org">stan</a> that allows for the nice expression of problems in quantum mechanics uses amplitudes instead of probabilities; has some sense of measurement, etc.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/121'>interactive wikipedia project</a>: build an interactive learning layer on top of wikipedia examples 1. go to pages on economics, run simulations of various rational agent configurations and auctions 2. go to pages on ML, look at interactive examples like on colah’s blog - https://colah.github.io 3. all of physics and mathematics with interactive examples <span class="citation">@fhk</span> and noon to submit proposal to https://shuttleworthfoundation.org/
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/120'>generate specific houses by machine learning</a>: trivially, we could estimate quantities of things but more interesting would be to design the actual house layout this way. there’s many options here; think about how.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/119'>wall that physically writes the words that it’s hearing on the walls</a>: a bit like the room in maxwell smart where the words appear as text floating in the air in this one, they get written on the walls, until eventually the wall gets thicker and thicker
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/118'>model passenger flow in train stations in elm</a>: http://www.theguardian.com/uk-news/2016/jan/16/the-tube-at-a-standstill-why-tfl-stopped-people-walking-up-the-escalators
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/117'>“i could do that” or “job swap”</a>: “i could do that”.com; where you vote on jobs you think you could do and then someone offers their job up for a daily swap, or something similar.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/116'>try going out and about with different accents</a>: 1 per month or something
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/115'>some kind of “verbal” cryptography/diffe-hellman key exchange thing</a>: i.e. where i just want to <em>say</em> something securely to someone can i have them generate a “short” private/public key that they can say; then i can say something to them encoding it with their key, and, then we’re done? maybe just a short word. should be able to do it on paper
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/114'>make some thing in piet</a>: - http://www.theorangeduck.com/page/making-poetry-piet - http://www.dangermouse.net/esoteric/piet/samples.html
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/113'>dolphin -&gt; english -&gt; dolphin translation system</a>: word2vec style by say mapping (dolphinSound, action) -&gt; some space, (englishSound, action) -&gt; some space
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/112'>machine learning university</a>: where machines go to machine learn it teaches them: - recognising digits - having conversations - generating art (can all these things be combined in one network? does it even make sense?)
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/111'>shirt that gives you a physical sensation when you walk through a wireless network</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/110'>tensorflow + haskell project</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/109'>a venue where you can throw things down a steep incline for fun</a>: like throwing a desk off of stairs, or similar likewise, people could run up the incline for exercise
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/108'>the architecture game</a>: a game where the fun part is designing houses and interiors and maybe even entire towns you can collaborate with people and build cool villages mainly i’d like it to be able to design houses. then the fun bit would be putting them in cool crazy worlds, and exploring them in 3d environments; walking around, interacting with stuff.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/107'>beercaso</a>: a pub where you get to do art while you drink perhaps you can do art on the walls, and the wallpaper can be changed weekly or perhaps you get pieces of paper when you walk in
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/106'>waterproof laptops that float in a swimming pool so you can surf while you swim</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/105'>format arbitrary text as haskell logo of a particular size in ascii</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/104'>machine learning thing that takes images and changes them subtly</a>: maybe turning them into animated gifs; i.e. if it can learn how to change a person so that they are “talking” vs “not talking” and then do that i think there’s some work in this area
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/103'>repercussive environment for maths/physics</a>: a VR environment for learning maths/physics where whenever you make a mistake the world treats this as a truth and the repercussions of its truth get propogated into the world so you are VR sitting at a desk doing maths, and you set 2 = 1 and the world implodes ending your homework session.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/102'>hip-hop furniture</a>: we have hip-hop clothes; why not furniture? tables? etc
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/101'>make a 3d model of lyndon’s haskmass logo</a>: the logo: i’m going to try doing this in implicitCAD - http://www.implicitcad.org/ <span class="citation">@sordina</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/100'>homomorphic encryption in haskell</a>: see: - http://blogs.teamb.com/craigstuntz/2010/03/18/38566/ - http://blogs.teamb.com/craigstuntz/2010/04/08/38577/ among others.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/99'>make some kind of ‘analogy inventor’</a>: people love analogies for example, people like “small strike forces”, because the army used them is it possible to invent new fields, like strike forces in armies, or the cream on the cake in cooking, which then are used in new analogies? invent new <em>analogy sources</em>.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/98'>air keyboard and mouse</a>: so you can stand and still type maybe could be implemented using the keyboard gloves and also i guess some kind of mouse glove
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/97'>‘maths’ card game?</a>: build up things out of conjectures; occasionally prove things true or false that may collapse your stack of conjectures win if you have the most proofs. i guess it’s a card game.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/96'>coffee table made from books</a>: consider then imagine that this is hollowed out into segments, and books are placed in the little segments. then the table is mostly books, and can often be changing.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/95'>webcamphoto -&gt; dropbox -&gt; semi-live “last photo” of self</a>: use the git commit thing that takes webcam photos to publish a dropbox photo that i can link on the website
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/94'>some kind of homomorphic source control thing</a>: like git + encryption + homomorphic encryption so-as to allow diffs and whatnot.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/93'>street dance battle app, like “getrumblr”; find people in your area who want to dance?</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/92'>sound collage</a>: take a bunch of ‘primary’ sounds; conversations at various tables in a restaurant, then build up a sentence by “simple” manipulation of raw sounds. much like how an image is made by building it from many smaller images.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/91'>write childrens book with a bunch of questions of the type that i ask andy/carol</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/90'>robots that exist just to be entertainment for people</a>: - fighting robots that just fight; straight out of the “factory” (3d printed then immediately fight) - fun-having robots that just have fun
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/89'>try and work different jobs for a week every month, or something</a>: potential jobs: - architect - waiter - hairdresser - builder - carpenter - radio host - bartender
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/88'>shirts/jumpers that are collages of aspirations</a>: like pictures of kitesurfing, moving to the south of france, and eating cupcakes things of this nature.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/87'>matrixify - takes the output out any program and pipes it into a matrix-style thing</a>: so it basically flips the orientation of lines
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/86'>glasswear that looks like/is inspired by flowers</a>: roses, tulips, etc
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/85'>3d modelling app that is like playdough</a>: so you could draw a 2d cross-section, let’s say then you could fill sections of that with playdough. then you could apply ‘squeezing’ (by mouse) to regions to get the kind of shape you want? the idea would be to have it be as playdough-like as possible.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/84'>is there a problem with OAuth2 if two providers authenticate the same ident?</a>: say i have an ident on google with foo@gmail.com, then i sign up to another oauth2 provider with that as my username (if allowed). then i could authenticate with either provider. this would be a problem; i.e. idents need to be unique across *every single oauth2 implementor’. i guess this is why you should only allow people to authenticate with a small number of providers, or alternatively identify users in your database by their identifier <em>and</em> the provider, not just the id.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/83'>put velcro on a t-shirt and then print letters with velcro to write on the shirts</a>: i call it “velcro shirt” on the shirt is the soft fluffy side. the letters are the sticky bit.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/82'>trees that are on roomba-like devices that roam the cities providing shade and oxygen</a>: they could get around in groups, hanging out, charging up in the sun, relaxing down by the rivers, etc. they provide shade to people walking when it’s sunny, and help them when it rains, etc.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/81'>3d-printed “twizzlers” for business cards</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/80'>git-live</a>: live editing of files in git
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/79'>an ergonomic co-working space</a>: with stand up desks, treadmill desks, meditation rooms, etc?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/78'>do something with labanotation</a>: https://en.wikipedia.org/wiki/Labanotation
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/77'>slap-band that can hold a key</a>: or a wrist band or something for running/etc
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/76'>make a fashion hackerspace</a>: a place you can go to work on making clothes. is there such a place?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/75'>make a ravioli-bar like dumpling bars</a>: all different types of ravioli that you can get and combine with salads and sauces and chillis and whatnot.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/74'>do something combining yesod and elm</a>: i.e. make it use elm instead of the javascript shakespeare thing?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/73'>xmonad art wall layout</a>: place pictures in regions as kind of permanent fixtures that can’t be moved will need to make a custom layout, or something useful things - https://hackage.haskell.org/package/xmonad-contrib-0.11.4/docs/XMonad-Hooks-ManageDocks.html - https://hackage.haskell.org/package/xmonad-contrib-0.11.4/docs/XMonad-Layout-DecorationMadness.html - https://hackage.haskell.org/package/xmonad-contrib-0.11.4/docs/XMonad-Layout-Decoration.html - https://hackage.haskell.org/package/xmonad-contrib-0.11.4/docs/XMonad-Layout-Combo.html
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/72'>create some sort of “science parliament”</a>: as suggested in “lost at sea” by jon ronson (the ides is paul davies, from the post-detection event task force for SETI) they could decide on science matters?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/71'>a “type” system for book writing</a>: as an exmaple: declare some character, then it’s a type error if they behave inconsistently with their traits, say. <code>bob is friendly  bob attacks susie type error: bob attacks susie is not consistent with bob is friendly</code>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/70'>build a set of “rationality tools”</a>: to help make predictions like: - what should we estimate for this project plan? - where should i eat? etc. in the spirit of PAC learning and the “thinking fast and slow” and “less wrong” stuff.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/69'>scrape combinatorics videos into a markdown for github</a>: http://www.math.ucla.edu/~pak/lectures/Math-Videos/comb-videos.htm
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/68'>go to the maze at longleat england</a>: http://imgur.com/a/5iLzn
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/67'>make a large world map</a>: see - http://www.dominik-schwarz.net/potpourri/worldmap/ he used google maps data for this, and printed the map on matte on to a board for a total cost of about $500 or so.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/66'>programmatically generate a colouring book</a>: based on various algorithms to tile planes in interesting ways. <span class="citation">@mobeets</span>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/65'>device that can convey a tv show or complicated story while dreaming</a>: we normally watch a tv show in a coherent way, because we are awake and can follow a story this way. but when in deep sleep, maybe there is some “fragmented” way of presenting a typical story (linearly). i.e. we prompt bird sounds and we dream of birds. is it possible, then, to present an entire story this way? over a period of several hours?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/64'>think about a way to use the idea of a “repo per paper” and SciRate to help report paper issues, feature requests, etc</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/63'>an interactive 3d paper of the tcs</a>: imagine a simulation that let’s us walk around inside certain computations
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/62'>embed animated gif in printed paper by printing the frames of the gif in separate page margins</a>: james says the “captain underpants” cartoon has done this already
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/61'>convert github issues into “task” tasks, and vice versa</a>: based on tags. could ‘sync’ them somehow.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/60'>website to track status of theories</a>: as discussed with andy will need a way to encode theories
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/59'>“review article” finder</a>: maybe there is a semi-universal way to find review articles i.e. search for “review article”, but also know something about how the references talk about the particular articles (i.e. do sentiment analysis on the surrounding sentences? madness probably.)
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/58'>plot out path of all nasa satellites, and other ones</a>: somehow. probably need to get 3d stuff working on my computer
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/57'>“things i can do with x”</a>: in a typed language, you could suppose you have a thing of some type; then you could search your entire codebase for the things you can do with that. sort of a local hoogle/hayoo, coming from haskell. this is probably quite possible in haskell.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/56'>haskell scirate scraper</a>
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/55'>ls alias to colour folders by inferred source type</a>: similar to githubs colouring thingy. (maybe <code>lsft</code> or something. whatever, as probs won’t want it everytime ls runs.)
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/54'>model a room on the lunar lander</a>: or at least buy a model of a lunar lander.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/53'>dance driven development</a>: suppose at the end of each sprint the software had to be deployed with a group dance. https://vimeo.com/53845256
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/52'>history books from the future</a>: reading history books is fun but what if it were possible to read history books from the distant future? i guess books like this already exist.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/51'>infer-whatever</a>: suppose you have a set of data; say of funding outcomes for research grants. and then you want some way of looking at it; like, “i’d like to see that women get more funding than men”. the program would then look for a way to achieve this by a certain categorisation of funding classes, i.e. “women win more grants with the word ‘toast’ in them than men”. could rule out trivial ones like “women win more grants when the PI’s title is”mrs“”. it’d be fun to see how possible all the cominbations are to achieve. could it just actually list every possible way of making inferences on the data?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/50'>browser plugin to save/load current open pages to json</a>: or some other plain text file format, so it can be pasted somewhere.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/49'>day-script</a>: have a script that you write before your day starts. say only these things for the entire day. see what happens; will you be able to get through the day following only the script? you can only use the phrases you wrote down, the number of times you wrote them down. let’s be generous and say that the order doesn’t matter.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/48'>running scenery</a>: with google glass or similar, have scenery that you can change, and run to, and it would incorporate the real life obstacles it sees.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/47'>categorise researchers by their scirate profiles</a>: i.e. infer what fields they are interested in, who they are likely to work with, other researchers they may be similar to, etc.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/46'>pull request exercises</a>: similar to my old test-driven gym - https://github.com/silky/tdg - maybe a service like travis, or an extension, which comments on failed pull reqs with exercises.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/45'>ipython interoperator</a>: let any cell be in any backend language. (say haskell python or r). then make it so that you can share variables between the languages; perhaps with out[k] a-la mathematica. can we learn from sage here? has it done this kind of thing for math packages?
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/44'>may bean of interest</a>: a coffee shop where you get given a link to something you might find interesting, when you buy the coffee. for example, you would ask for a cappuccino and ‘haskell’, and then you’d get a link to a github repo for some haskell project. related to - https://github.com/silky/ideas/issues/6
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/43'>programming hype man</a>: comes into your office, and spends the day just playing music and yelling “test, test”, and other programming related things.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/42'>quadmule</a>: suppose you have something to take somewhere but don’t want to carry it. you could use a qaudcopter to fly it along with you. for example, i want to run home but don’t want to carry my bag. i guess a robot would also work, but you’d have to walk with it. the quadcopter could just follow you in the air.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/41'>tested-by</a>: finds the unit tests that a given file is tested by. can be used to run the tests automatically when the file changes.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/40'>program to generate dance moves</a>: further to the above; could display them to the public and let them vote, etc.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/39'>a robot whose goal is to be happy and have fun</a>: instead of doing something “useful” it could just aim to have the most fun possible. - see for example dancing japanese robot: https://www.youtube.com/watch?v=3g-yrjh58ms - keepon beatbots: http://beatbots.net/
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/38'>rich hickey talk generator</a>: find words used in programming, define them, note disparity with common usage, comment. - value of values - simple made easy
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/37'>a reasoning layer</a>: for programming languages. in reference to being able to deduce how computers decided on a particular course of action. in python this could be implemented with decorations on functions which categorise the function, and then take this coarse-grained categorisations and map them into functional sections somehow. i.e. group them in some meaningful way. output as a graph or something.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/36'>programming language heatmap</a>: a plugin for vim/emacs that tracks the time spent programming in particular languages. could match this to physical location (gps?) and then generate a heatmap that way. maybe some of this information is already on github.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/35'>a file-system rpg</a>: it should lay out a particular directory structure as a big rpg land that you must explore. files that you want to delete become enemies.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/34'>calculate number of mistakes one can make</a>: none is bad. two is also a bit arbitrary. it’s probably a function of the ‘class’ of mistake, and whether or not you claim to know how to not make that mistake again, etc. try and calculate what this is.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/33'>some sort of self-organised university thing</a>: where you could declare a set of subjects you will run, and layout some course plan, and then teach yourself those things. the idea would be to just have some structure and way of remembering what you should be doing, and accountability. for some reason it seems fun to perhaps use gitit for this.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/32'>post-quantum-cryptography in idris</a>: see http://pqcrypto.org/.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/31'>a program that splits any given file into ones and zeroes*</a>: and you can send them seperately, then recreate the original file this way.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/30'>a reusable printing system</a>: i want to be able to print pdfs and so on on paper. but i’d also like to re-use that paper. naive idea: imagine if we could print in “pencil” instead of ink. then i could just rub it out and print again. suppose this erasing was handled by the printer though. are there ideas like this out there? can i build this myself? review and comment.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/29'>show py.test unit test numbers next to output of tree</a>: would prefer to do this with appropriate usage of awk, but i don’t know it will enough to do that.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/28'>a nice local bibtex browser/editor</a>: to say replace my current usage of JabRef with. what I’m missing is: - ???
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/27'>console chat</a>: have a box on a personal website where it says if you’re online or not (where “online” means “recently used the linux terminal on some computer”). if so, people can type a short message to you, which appears as say a notify-send. you can then respond to them.)
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/26'>interactive thesis</a>: write it in a mathematica notebook or an IPython thing; then I can read and interact wtih it. I might do this for part of Belovs thesis, say. this, of course, could also be applied to ‘interactive papers’ at large. maybe just as a supplement to any actual paper. http://authorea.com/ - is doing something like this.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/25'>a computer proof system that explains WHY things are true</a>: in a human-readable way.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/24'>some machine learning thing for paper discovery in scirate</a>: maybe drafatable are already doing this? if not, consider it.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/23'>encouragement bot</a>: every time you press enter in your terminal there could be a small chance that encouragement bot would say something encouraging.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/22'>LaTeX typo finder</a>: try and find mistakes and whatnot in LaTeX documents by showing only one paragraph or sentence at a time. could work with the idea of trying to find definitions for all terms, etc.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/21'>author hash function</a>: calculate a useful hash function that can be queried for closeness when related authors publish stuff together. If it funtions like f(A+B) = f(B+A) then first-authorship no-longer matters. a suggestion is a hash function on a metric space that is also a metric. then the idea is to look at the p-adic’s and some homomorphism.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/20'>futuristic restaurant</a>: futuristic-themed restaurant, instead of a classic one.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/19'>encryptoboard</a>: a USB device that sits inbetween the keyboard and the computer that outputs everything pressed on the keyboard passed through some encryption function. Could be a OTP, or something where there are keys involved.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/18'>meeting/discussion emulator</a>: a system into which you could place people, and list their standard opinions and responses, and then model how they will interact with another group of people. it could be used to emulate meetings. supposing it emulates meetings well, it could then be used to randomly replace meetings in a given company, thus allowing more time for whatever people normally do.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/17'>agree-o-tron</a>: plugin for skype calls, or similar, that instead of videos just captures “agreement”, and indicates as much with a pointer. it determines agreement by processing video, locally, and then sending only what it infers as nodding or disagreeing over the server. would need to be a program that runs independently, perhaps, of skype on the local machine. then sets itself up as a server for the video stream that it is watching; then other people could browse that to get a general idea of the “agreement” in that room.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/16'>programming gallery</a>: like an art gallery; but would have particularly nice code examples in it.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/15'>invalid premise detector</a>: imagine if it were possible to look at natural language statements and determine an incorrect premise, and have it pointed out. currently it’s not feasible least-of-all because it isn’t possible to programmatically review all statements. but suppose it were (whether or not this is a good idea, it’s becoming more feasible), then it would be possible to consider the existence of such a program. it would look at each statement, and decide whether or not it is justified. for example: s1: “it doesn’t hurt to let people know about standard thing when something new comes along” could be analysed as invalid, because perhaps it is bad, if say the standard things are bad, or similar. i.e. the above statement is only valid with certain assumptions. perhaps alternatively this project could be something like ‘assumptions identifier’; and for each statement it is able to work out the assumptions under which it is valid.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/14'>programmers keyboard</a>: there are many ideas like this, but i’m not sure which one i like best. a custom key layout? an actual physical keyboard? a supplemental keyboard to the typical one? a modal keyboard? one idea is to add a new row of keys. This new row would feature specific keys for characters such as: ! ? * &lt; &gt; ( ) { } . &quot; : + &amp; | . This list could possible be configured for different languages, as some wouldn’t require those characters, and may want different ones (for example Python, or some form of assembly). But at least it may save us from constantly pressing shift, and it may be interesting to see if it can lead to other possible benefits; i.e. what other buttons could be implemented and considered. It may be interesting to consider a ‘build’ button, or attach some macros to ‘programmable’ buttons. It is already known that <a href="http://www.artlebedev.com/everything/optimus/">programmable keyboards</a> exist, so maybe they are the answer; but they are very expensive. maybe this can all be solved by vim configurations, though (as with many of lifes problems).
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/13'>creative idea generator</a>: it should be possible to have a program that generates creative ideas on a given topic. as a first pass it should be able to generate other ‘random-combination’ based ideas that i’ve thought of; much like the ‘lift reading/writing’ above.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/12'>lift reading/writing</a>: all lifts could contain fixed whiteboard markers; then you could write on them if you wanted.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/11'>note from self</a>: a thing which reads your comments for ‘note to self’ and then randomly tells you about these things. by ‘comments’ i mean any comment anywhere. for example, this app could exist as a skype bot, that joins in on your skype conversations; or alternatively it might go through all your source code, or wherever you write these things. i think it might be best if it responds back in a few ways; i was thinking that it could randomly send a message to your terminal, or again with the skype thing, it could randomly send you a message.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/10'>stay up to date with specific authors</a>: There are a couple of things to do this already. - scirate - google scholar alerts I also wrote arxiv-checker (since gone.). I’m not sure if any of these is perfect, though. arxiv-checker is limited in only checking arxiv, and also in the number of people and at the moment only does a month back in time. google scholar occasionally gets it wrong (i get sent alerts when the author didn’t actually publish the paper), and scirate requires you see the paper pop up.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/9'>ambient sound interpreter</a>: takes input from the local radio waves, converts them into sound via some pattern matching radom strategy. it should be possible to modify, based on mood, but it should also sound sufficiently unique as to be interesting.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/8'>mathematical property browser</a>: suppose you have some object; you’d like to find out what you can do with it. for example, you might have a ‘simple function’. then it could be measureable, say, in the context of measure theory, and so on. can generalise to finding various theorems (and lemmas, etc) that could be used in certain scenarios. should be easy to use; not at the level of proof assistants. things like this: - http://slugmath.ucsc.edu/mediawiki/index.php/Main_Page - http://www.dougengelbart.org/about/dke.html - http://us.metamath.org/mpegif/mmset.html
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/7'>do-calculus in networkx</a>: implement Judea Pearls do-calculus in networkx.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/6'>programming art workshopy thing</a>: a place where you can go and sit and program or do art or whatever. like a library. would be a large open space. this is related to https://github.com/hahayes/hahayes-projects/issues/9
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/5'>the inequaliser</a>: takes some given equation and considers all the possible inequalities they could be used on it.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/4'>rotated vim screen based on head position</a>: it could adjust text heights to make it appear as if you were always staring at it head-on.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/3'>movie plot characterisation by graphs</a>: this could tell you how complicated the plot is by how many nodes in the graph, and so on.
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/2'>have a bedroom as a standalone bed set into a wall inside the main bedroom, or something.</a>: inspiration: (from my the movie <a href="http://www.imdb.com/title/tt0088083/?ref_=nv_sr_3">Seksmisja</a>)
-</div>
-<div>
-</li>
-</div>
-<div>
-<li>
-</div>
-<div>
-<a href='https://github.com/silky/ideas/issues/1'>open art/programming cafe space?</a>: art gallery-themed, but a cafe where you can sit and mingle amongst the art, and maybe incorporate the programming space idea? https://github.com/hahayes/hahayes-projects/issues/9
-</div>
-<div>
-</li>
-</div>
-<div>
-</ol>
-</div>
-<div class="footnotes">
-<hr />
-<ol>
-<li id="fn1"><div>
-<p>It was a ‘simple’ matter of <code>jq '[.[] | select (.created_at &gt;=&quot;2016-01-01&quot;)]' all.json&gt;this-year.json</code> where I got <code>all.json</code> by combing the pages.json <code>curl  &quot;https://api.github.com/repos/silky/ideas/issues?state=all&amp;per_page=100&amp;page=1&quot; p1.json</code> with <code>jq -s '[.[][]]' p*.json &gt; all.json</code> (jq is just <em>so</em> easy! …)</p>
-</div>
-<a href="#fnref1">↩</a></li>
-</ol>
 </div>
 ]]></summary>
 </entry>
