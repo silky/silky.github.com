@@ -35,7 +35,7 @@
 <p>On the weekend, I wanted to train a few <a href="https://github.com/tensorflow/magenta/tree/master/magenta/models/sketch_rnn">sketch-rnn models</a> on the <a href="https://quickdraw.withgoogle.com/data">quickdraw data</a>.</p>
 </div>
 <div>
-<p>Naively, I figured this would be really easy with Google colab. While it was straightforward to start training, what I noticed is that getting data on to and off of the instance was frustrating, and the timeouts blocked me from getting a good amoutn of training time.</p>
+<p>Naively, I figured this would be really easy with Google colab. While it was straightforward to start training, what I noticed is that getting data on to and off of the instance was frustrating, and the timeouts blocked me from getting a good amount of training time.</p>
 </div>
 <div>
 <h3 id="solution">Solution</h3>

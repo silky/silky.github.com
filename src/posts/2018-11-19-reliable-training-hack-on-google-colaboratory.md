@@ -20,7 +20,7 @@ on the [quickdraw data](https://quickdraw.withgoogle.com/data).
 Naively, I figured this would be really easy with Google colab. While it was
 straightforward to start training, what I noticed is that getting data on to
 and off of the instance was frustrating, and the timeouts blocked me from
-getting a good amoutn of training time.
+getting a good amount of training time.
 
 ### Solution
 
