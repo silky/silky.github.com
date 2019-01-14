@@ -260,6 +260,7 @@ var VoronoiLinks = {
             {"name": "Galaxy Kate", "link": "http://www.galaxykate.com/"},
             {"name": "Jeni's Musing", "link": "http://www.jenitennison.com/archive/index.html"},
             {"name": "Fashioning-Tech", "link": "https://fashioningtech.com/"},
+            {"name": "David Wakeham", "link": "https://hapax.github.io/"},
             ]
 
         VoronoiLinks.updateData(links);
