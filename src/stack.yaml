@@ -7,10 +7,9 @@ extra-deps:
       commit: 4dd69ad9ce81949b872295ac475453d808399aba
 
     - git: https://github.com/silky/diagrams-pandoc.git
-      commit: d1b122b
+      commit: d1b122b84b93907f8db27eee84e9575fd317225f
 
 
 flags: {}
 allow-newer: False
 extra-package-dbs: []
-system-ghc: True
