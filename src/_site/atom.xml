@@ -8,8 +8,63 @@
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
     </author>
-    <updated>2019-01-04T00:00:00Z</updated>
+    <updated>2019-01-27T00:00:00Z</updated>
     <entry>
+    <title>Designing Functional Clothes with Haskell!</title>
+    <link href="https://silky.github.io/posts/2019-01-27-Designing-Functional-Cloths-with-Haskell.html" />
+    <id>https://silky.github.io/posts/2019-01-27-Designing-Functional-Cloths-with-Haskell.html</id>
+    <published>2019-01-27T00:00:00Z</published>
+    <updated>2019-01-27T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on January 27, 2019
+    
+        by Noon van der Silk
+    
+</div>
+
+<div>
+<p>So I gave my talk at the Art-and-Tech miniconf at Linux Conf AU earlier this week.</p>
+</div>
+<div>
+<p>The video of my talk is here:</p>
+</div>
+<div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UvkKf8ME564" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</div>
+<div>
+</iframe>
+</div>
+<div>
+<p>Other materials are here:</p>
+</div>
+<div>
+<ul>
+<li><div>
+<a href="https://vandersilk.github.io">Van der Silk Fashion Website</a>
+</div></li>
+<li><div>
+<a href="https://docs.google.com/presentation/d/18olpV_GvpLbUR6z043cYIZ0yDVInJDuKN1xWnGQv-5k/edit?usp=sharing">Slides</a>
+</div></li>
+<li><div>
+<a href="https://www.youtube.com/watch?v=UvkKf8ME564">Video on YouTube</a>, or on <a href="https://archive.org/details/lca2019-Designing_functional_clothes_with_Haskell">archive.org</a>
+</div></li>
+<li><div>
+<a href="https://lobste.rs/s/ggk6oq/designing_functional_clothes_with">Discussion on Lobste.rs</a>
+</div></li>
+</ul>
+</div>
+<div>
+<p>Thanks to <a href="https://maetl.net">Mark</a> for having me at the miniconf!</p>
+</div>
+<div>
+<h4 id="errata">Errata</h4>
+</div>
+<div>
+<p>Note that there’s a typo on the types of the <code>somethingFun</code> function that has since been corrected in the slides.</p>
+</div>
+]]></summary>
+</entry>
+<entry>
     <title>Van der Silk Fashion at Linux Conf 2019 - New Zealand</title>
     <link href="https://silky.github.io/posts/2019-01-04-fashion-design-at-linux-conf-nz.html" />
     <id>https://silky.github.io/posts/2019-01-04-fashion-design-at-linux-conf-nz.html</id>
@@ -2953,114 +3008,6 @@ It provides a framework that might be useful for discussing with colleagues/othe
 </div>
 <div>
 <p>As always, I’m interested in your thoughts on the matter!</p>
-</div>
-]]></summary>
-</entry>
-<entry>
-    <title>Diagrams In Hakyll!</title>
-    <link href="https://silky.github.io/posts/2018-06-23-Diagrams-In-Hakyll.html" />
-    <id>https://silky.github.io/posts/2018-06-23-Diagrams-In-Hakyll.html</id>
-    <published>2018-06-23T00:00:00Z</published>
-    <updated>2018-06-23T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div class="info">
-    Posted on June 23, 2018
-    
-        by Noon van der Silk
-    
-</div>
-
-<div>
-<p>I stumbled across this blogpost of <a href="http://www.corentindupont.info/blog/posts/Programming/2015-09-14-diagrams.html">Corentin Dupont</a> where he put together a library that allows you to modify your hakyll blog so that you can have inline diagrams! As anyone knows, this was amazingly exciting to me, because I love <a href="https://archives.haskell.org/projects.haskell.org/diagrams/"><code>diagrams</code></a>.</p>
-</div>
-<div>
-<p>So I quickly tried to set it up; but, much to my sadness it didn’t immediately work.</p>
-</div>
-<div>
-<p>Luckily, however, I was able to make it worked by hacking around in the two relevant repos:</p>
-</div>
-<div>
-<ul>
-<li><div>
-<a href="https://github.com/silky/diagrams-pandoc">diagrams-pandoc</a>
-</div></li>
-<li><div>
-<a href="https://github.com/silky/hakyll-diagrams">hakyll-diagrams</a>
-</div></li>
-</ul>
-</div>
-<div>
-<p>The main result is a function, <code>pandocCompilerDiagrams</code>, that I included into my hakyll site file like so:</p>
-</div>
-<div>
-<pre><code>match &quot;posts/*&quot; $ do
-    route $ setExtension &quot;html&quot;
-    compile $ 
-            (pandocCompilerDiagrams &quot;images/diagrams&quot; &lt;|&gt; pandocMathCompiler)
-        &gt;&gt;= loadAndApplyTemplate &quot;templates/post.html&quot;    postCtx
-        &gt;&gt;= saveSnapshot &quot;content&quot;
-        &gt;&gt;= loadAndApplyTemplate &quot;templates/default.html&quot; postCtx
-        &gt;&gt;= relativizeUrls</code></pre>
-</div>
-<div>
-<p>And so now, I can have inline diagrams! Check it out:</p>
-</div>
-<div>
-<p>Imagine we had a circle:</p>
-</div>
-<div>
-<img src="/images/diagrams/374a326c0114a031.png" />
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">example <span class="fu">=</span> circle <span class="dv">1</span></code></pre></div>
-</div>
-<div>
-<p>But now, what if the circle was repeated 5 times</p>
-</div>
-<div>
-<img src="/images/diagrams/08c4ef90376ce8a9.png" />
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">example <span class="fu">=</span> hcat (take <span class="dv">5</span> <span class="fu">$</span> repeat (circle <span class="dv">1</span>))</code></pre></div>
-</div>
-<div>
-<p>Cool!</p>
-</div>
-<div>
-<p>To celebrate, let’s draw the Sierpinksi triangle:</p>
-</div>
-<div>
-<p>The basic building block:</p>
-</div>
-<div>
-<img src="/images/diagrams/173ff52710458947.png" />
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">sierp d <span class="fu">=</span> d <span class="fu">===</span> (d <span class="fu">|||</span> d) <span class="fu">#</span> centerXY
-example <span class="fu">=</span> sierp (triangle <span class="dv">1</span>)</code></pre></div>
-</div>
-<div>
-<p>Let’s go!</p>
-</div>
-<div>
-<img src="/images/diagrams/ddbe64a73b5cee43.png" />
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell">sierp d <span class="fu">=</span> d <span class="fu">===</span> (d <span class="fu">|||</span> d) <span class="fu">#</span> centerXY
-example <span class="fu">=</span> foldl (\d _ <span class="ot">-&gt;</span> sierp d) (triangle <span class="dv">1</span>) [<span class="dv">1</span><span class="fu">..</span><span class="dv">3</span>]</code></pre></div>
-</div>
-<div>
-<p>Colours!</p>
-</div>
-<div>
-<img src="/images/diagrams/3d45411fafd7d24c.png" />
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="kw">import </span><span class="dt">Data.Colour.Palette.ColorSet</span>
-
-color n <span class="fu">=</span> rybColor (n<span class="fu">*</span><span class="dv">2</span>)
- 
-sierp d n <span class="fu">=</span> d1 <span class="fu">===</span> (d2 <span class="fu">|||</span> d2) <span class="fu">#</span> centerX
-    <span class="kw">where</span>
-        d1 <span class="fu">=</span> d <span class="fu">#</span> bg (color n)
-        d2 <span class="fu">=</span> d <span class="fu">#</span> bg (color (n<span class="fu">+</span><span class="dv">1</span>))
-
-example <span class="fu">=</span> foldl step d0 [<span class="dv">0</span><span class="fu">..</span><span class="dv">5</span>]
-    <span class="kw">where</span>
-        d0       <span class="fu">=</span> triangle <span class="dv">1</span> <span class="fu">#</span> lw <span class="dv">0</span>
-        step d n <span class="fu">=</span> sierp d (n<span class="fu">*</span><span class="dv">2</span>)</code></pre></div>
-</div>
-<div>
-<p>Happy days!</p>
 </div>
 ]]></summary>
 </entry>
