@@ -37,19 +37,10 @@
     
 </div>
 
-<div>
 <p>In this post we’ll see how to setup a CI build that generates Windows executables for stack-based Haskell projects.</p>
-</div>
-<div>
 <p>So imagine you love Haskell and you have written a Haskell program, you’ve hosted it on <a href="https://github.com">GitHub</a> and you’ve dilligently set up a CI build on <a href="https://travis-ci.org">Travis</a> that uses <a href="https://github.com/commercialhaskell/stack">stack</a> to build/test/etc.</p>
-</div>
-<div>
 <p>Now, because stack is great and life is good, people can build your project from the source largely without issue. But suppose now that you’d like to provide Windows binaries for download. It so happens that we live in an age where this is completely automatable! Let’s see how.</p>
-</div>
-<div>
 <p>The essence of my approach is to use the CI system <a href="http://www.appveyor.com/">AppVeyor</a> (essentially like a Travis for Windows), and the following <code>appveyor.yml</code> file (full file below, I’ll go through details next):</p>
-</div>
-<div>
 <div class="sourceCode"><table class="sourceCode yaml numberLines"><tr class="sourceCode"><td class="lineNumbers"><pre>1
 2
 3
@@ -114,47 +105,20 @@
     <span class="fu">artifact:</span><span class="at"> haskmas.exe</span>
     <span class="fu">on:</span>
       <span class="fu">branch:</span><span class="at"> master</span></code></pre></td></tr></table></div>
-</div>
-<div>
 <p>Details:</p>
-</div>
-<div>
 <ul>
-<li><div>
-Line 1 disables the <em>standard</em> build process which would use MSBuild.
-</div></li>
-<li><div>
-Lines 3-8 obtain the stack executable, and also perform a small hack which converts my <code>ssh</code>-based git submodules to <code>https</code>-based ones, that can be cloned without needing to mess about with ssh keys.
-</div></li>
-<li><div>
-Line 10 prevents AppVeyor from building when it sees a new tag (later in the script we end up making a new tag when we push a release)
-</div></li>
-<li><div>
-Lines 12-16 perform the typical stack build, and also install the <code>haskmas.exe</code> file that we will mark as an artifact
-</div></li>
-<li><div>
-Line 18 is a magic command that sets the environment variable <code>HASKMAS_VERSION</code> to the value of the output of the command <code>stack exec -- haskmas -v</code>. This is my “hack” to obtain the cabal-version of the <code>haskmas</code> library, which I use as part of the tag that gets released on the <a href="https://github.com/silky/haskmas/releases">GitHub releases page</a>
-</div></li>
-<li><div>
-Line 21 simply marks the <code>haskmas.exe</code> as an artifact; this means AppVeyor will hang on to it after the build completes.
-</div></li>
-<li><div>
-and finally, lines 24-32 specify that, for each build that completes, AppVeyor should push a release with the tag <code>haskmas-&lt;cabal_version_of_haskmas&gt;</code> to the GitHub releases page! (Note: probably we would want to be a bit more elaborate about when we push to the releases page; making sure that we include proper release notes, etc.)
-</div></li>
+<li>Line 1 disables the <em>standard</em> build process which would use MSBuild.</li>
+<li>Lines 3-8 obtain the stack executable, and also perform a small hack which converts my <code>ssh</code>-based git submodules to <code>https</code>-based ones, that can be cloned without needing to mess about with ssh keys.</li>
+<li>Line 10 prevents AppVeyor from building when it sees a new tag (later in the script we end up making a new tag when we push a release)</li>
+<li>Lines 12-16 perform the typical stack build, and also install the <code>haskmas.exe</code> file that we will mark as an artifact</li>
+<li>Line 18 is a magic command that sets the environment variable <code>HASKMAS_VERSION</code> to the value of the output of the command <code>stack exec -- haskmas -v</code>. This is my “hack” to obtain the cabal-version of the <code>haskmas</code> library, which I use as part of the tag that gets released on the <a href="https://github.com/silky/haskmas/releases">GitHub releases page</a></li>
+<li>Line 21 simply marks the <code>haskmas.exe</code> as an artifact; this means AppVeyor will hang on to it after the build completes.</li>
+<li>and finally, lines 24-32 specify that, for each build that completes, AppVeyor should push a release with the tag <code>haskmas-&lt;cabal_version_of_haskmas&gt;</code> to the GitHub releases page! (Note: probably we would want to be a bit more elaborate about when we push to the releases page; making sure that we include proper release notes, etc.)</li>
 </ul>
-</div>
-<div>
 <p>You can see from the releases on the <code>haskmas</code> project istelf that I fumbled around with this setup a bit. Mostly I observed that the manual release process on AppVeyor doesn’t quite operate the way I’d’ve <a href="https://github.com/appveyor/ci/issues/593">hoped</a>; but in any case AppVeyor is a pretty convenient service; it’s very nice to see something for Windows in this space.</p>
-</div>
-<div>
 <p>I based my configuration off of the one for the <a href="https://github.com/commercialhaskell/stack/blob/master/appveyor.yml">stack tool itself</a>. Note that there is some mention of caching in there that might speed up the build (my build takes ~17 minutes on AppVeyor compared to ~2 minutes on travis).</p>
-</div>
-<div>
 <p>All-in-all, technical details about automatically pushing releases aside, AppVeyor+stack is a really nice way to build Windows binaries from exactly the same source as your linux binaries. The only outstanding item to do is to combine artifacts from travis and AppVeyor into a single entity that can be released dually; but on the other hand tooling could always be written to perform this semi-manually, from your working computer, when you are ready to release.</p>
-</div>
-<div>
 <p>The repo is here: <a href="https://github.com/silky/haskmas">haskmas</a>. As a side benefit, I made the haskmas program take command line arguments to control how it operates! So now you don’t need to compile it to get a tree of arbitrary depth!</p>
-</div>
 
         </div>
         <div id="footer">

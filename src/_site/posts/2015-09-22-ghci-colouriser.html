@@ -37,27 +37,15 @@
     
 </div>
 
-<div>
 <p>Behold, a colourful GHCi (<a href="https://github.com/silky/ghci-color">install it for yourself</a>):</p>
-</div>
-<div>
 <div class="figure">
 <img src="https://raw.github.com/silky/ghci-color/master/cap2.png" />
 
 </div>
-</div>
-<div>
 <p>This is done by using a simple little <code>sed</code> wrapper around the ordinary <code>ghci --interactive</code>, see <a href="https://github.com/silky/ghci-color/blob/master/ghci-color">here</a> for the script.</p>
-</div>
-<div>
 <p>Note in particular the quirk that we must capture any <code>SIGINT</code> that gets sent through and discard it, when we are invoking <code>sed</code>, otherwise <code>sed</code> itself will quit and our GHCi session will break.</p>
-</div>
-<div>
 <p>You can use it <code>cabal repl</code> (being mindful of <a href="https://github.com/haskell/cabal/issues/1905">this bug</a>) by using <code>cabal repl --with-ghc=ghci-color</code>. I’ve bound an alias <code>repl</code> to this.</p>
-</div>
-<div>
 <p>(Note: original credit for this goes to <a href="https://github.com/rhysd/">rhysd</a>)</p>
-</div>
 
         </div>
         <div id="footer">

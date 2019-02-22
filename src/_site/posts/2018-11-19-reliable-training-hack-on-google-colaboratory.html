@@ -37,94 +37,37 @@
     
 </div>
 
-<div>
 <p>Google’s <a href="https://colab.research.google.com/notebooks/welcome.ipynb#recent=true">Colaboratory</a> is a hosted notebook environment, with access to GPUs, and even TPUs!</p>
-</div>
-<div>
 <p>It’s really quite handy, but by far the biggest downside is that the sessions time out. It makes sense; I’m sure even Google can’t give out an unlimited amount of compute-resources for free to every person.</p>
-</div>
-<div>
 <h3 id="backgroundproblem">Background/Problem</h3>
-</div>
-<div>
 <p>On the weekend, I wanted to train a few <a href="https://github.com/tensorflow/magenta/tree/master/magenta/models/sketch_rnn">sketch-rnn models</a> on the <a href="https://quickdraw.withgoogle.com/data">quickdraw data</a>.</p>
-</div>
-<div>
 <p>Naively, I figured this would be really easy with Google colab. While it was straightforward to start training, what I noticed is that getting data on to and off of the instance was frustrating, and the timeouts blocked me from getting a good amount of training time.</p>
-</div>
-<div>
 <h3 id="solution">Solution</h3>
-</div>
-<div>
 <p>Happily, colab supports very nice integration with Google services, so my plan was:</p>
-</div>
-<div>
 <ol style="list-style-type: decimal">
-<li><div>
-Download data from Google Cloud Platform (GCP),
-</div></li>
-<li><div>
-Train, or continue training,
-</div></li>
-<li><div>
-Push a checkpoint to Google Drive occasionally,
-</div></li>
-<li><div>
-Repeat until happy.
-</div></li>
+<li>Download data from Google Cloud Platform (GCP),</li>
+<li>Train, or continue training,</li>
+<li>Push a checkpoint to Google Drive occasionally,</li>
+<li>Repeat until happy.</li>
 </ol>
-</div>
-<div>
 <p>Here’s how it looks, in code:</p>
-</div>
-<div>
 <p><strong>Download data from GCP</strong></p>
-</div>
-<div>
 <p>As I’m working with the quickdraw data, it’s already on the Google Cloud Platform, so this was very easy. In a cell, I simply ran the following to get the “eye” quickdraw data:</p>
-</div>
-<div>
 <pre><code>!gsutil cp gs://quickdraw_dataset/sketchrnn/eye.npz .</code></pre>
-</div>
-<div>
 <p>(Note that the <code>gsutil</code> command is already installed on the instance.)</p>
-</div>
-<div>
 <p><strong>Train, or continue training, and save to Drive</strong></p>
-</div>
-<div>
 <p>As I’m using the <code>sketch_rnn</code> model, I first simply install <code>magenta</code> (and I have to pick a Python 2 environment.)</p>
-</div>
-<div>
 <pre><code>!pip install magenta</code></pre>
-</div>
-<div>
 <p>Now, there’s some considerations. Recalling that I’m going to be pushing my checkpoints to Google Drive, I need to authenticate with Google Drive. This is how that looks:</p>
-</div>
-<div>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">from</span> google.colab <span class="im">import</span> auth
 auth.authenticate_user()</code></pre></div>
-</div>
-<div>
 <p>Then you’ll be prompted to copy in a code. Once that’s done, you can connect to Google Drive like so:</p>
-</div>
-<div>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">from</span> googleapiclient.discovery <span class="im">import</span> build
 drive_service <span class="op">=</span> build(<span class="st">'drive'</span>, <span class="st">'v3'</span>)</code></pre></div>
-</div>
-<div>
 <p>Now, if I’m training from scratch, I’ll run something like this:</p>
-</div>
-<div>
 <pre><code>!sketch_rnn_train --log_root=logs --data_dir=./ --hparams=&quot;data_set=[eye.npz],num_steps=501&quot;</code></pre>
-</div>
-<div>
 <p>This will run for however long, and utlimately produce checkpoints in the <code>./logs</code> folder, supposing that <code>eye.npz</code> exists in the present directory.</p>
-</div>
-<div>
 <p>Once that’s completed, I start my main training-pushing loop. Firstly, there’s a bit of busywork to zip files, get the latest checkpoint number, and upload it to Google Drive:</p>
-</div>
-<div>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> os
 <span class="im">import</span> zipfile
 <span class="im">from</span> googleapiclient.http <span class="im">import</span> MediaFileUpload
@@ -173,11 +116,7 @@ drive_service <span class="op">=</span> build(<span class="st">'drive'</span>, <
                                          fields<span class="op">=</span><span class="st">&quot;id&quot;</span>).execute()
   file_id <span class="op">=</span> created.get(<span class="st">&quot;id&quot;</span>)
   <span class="cf">return</span> file_id</code></pre></div>
-</div>
-<div>
 <p>Then, the main loop:</p>
-</div>
-<div>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">iterations <span class="op">=</span> <span class="dv">200</span>
 <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(iterations):
   <span class="bu">print</span>(<span class="st">&quot;Iteration &quot;</span> <span class="op">+</span> <span class="bu">str</span>(k))
@@ -186,40 +125,19 @@ drive_service <span class="op">=</span> build(<span class="st">'drive'</span>, <
   x <span class="op">=</span> os.system(cmd)
   zip_model(<span class="st">&quot;model&quot;</span>, get_largest_num())
   upload_to_drive()</code></pre></div>
-</div>
-<div>
 <p>So, all that does is run the main training command, to reload the model from the latest checkpoint and continue training, then zips and uploads!</p>
-</div>
-<div>
 <p>Set the iterations to whatever you wish; chances are your instance will never run for that long anyway; the main point is to push up the checkpoints every-so-often (for me, every 1000 steps of the sketch_rnn model; which takes about 1 hour or so, depending on params.)</p>
-</div>
-<div>
 <p><strong>Brining down the most recent Drive checkpoint</strong></p>
-</div>
-<div>
 <p>Now, when your instance goes away, you’ll need to bring down the most recent checkpoint <em>from</em> Drive. I did this somewhat manually, but it works well enough:</p>
-</div>
-<div>
 <pre><code># Mount Google Drive as a folder
 from google.colab import drive
 drive.mount('/content/gdrive')</code></pre>
-</div>
-<div>
 <pre><code># Extract latest model zip file
 !cp /content/gdrive/My\ Drive/model\ \(3\).zip logs/model.zip &amp;&amp; cd logs &amp;&amp; unzip model.zip</code></pre>
-</div>
-<div>
 <p>Note that Google Drive numbers all the files as copies, like “model (4).zip”, “model (5).zip”, when you upload the same name. On the web interface, it only shows one file, but gives you history. Do as you wish here; I was a bit lazy.</p>
-</div>
-<div>
 <h3 id="thats-it">That’s it!</h3>
-</div>
-<div>
 <p>Hope this helps you do some training!</p>
-</div>
-<div>
 <p>You can read more about other ways to access data from Google Colaboratory <a href="https://colab.research.google.com/notebooks/io.ipynb">here</a>.</p>
-</div>
 
         </div>
         <div id="footer">

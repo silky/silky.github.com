@@ -37,289 +37,115 @@
     
 </div>
 
-<div>
 <p>(This post requires a background in the basics of quantum computing (and neural networks). Please have a read of the first part of <a href="../posts/2014-09-09-intro-to-qc-and-the-surface-code.html">Introduction to quantum computing and the surface code</a> if you’d like to get up to speed on the quantum parts, <a href="http://neuralnetworksanddeeplearning.com/">Neural networks and Deep Learning</a> is a good introduction to the other part.)</p>
-</div>
-<div>
 <p>Recently, I’ve been spending a lot of time thinking about machine learning, and in particular deep learning. But before that, I was mostly concerning myself with quantum computing, and specifically the algorithmic/theory side of quantum computing.</p>
-</div>
-<div>
 <p>In the last few days there’s been a flurry of papers on quantum machine learning/quantum neural networks, and related topics. Infact, there’s been a fair bit of research in the last few years (see the <a href="#appendix">Appendix</a> at the end for a few links), and I thought I’d take this opportunity to have a look at what people are up to.</p>
-</div>
-<div>
 <p>The papers we’ll be discussing are:</p>
-</div>
-<div>
 <ul>
-<li><div>
-<a href="https://scirate.com/arxiv/1612.01045">arXiv:1612.01045 - Quantum generalisation of feedforward neural networks</a> by Wan, Dahlsten, Kristjánsson, Gardner and Kim.
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1612.01789">arXiv:1612.01789 - Quantum gradient descent and Newton’s method for constrained polynomial optimization</a> by Rebentrost, Schuld, Petruccione and Lloyd,
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1612.02806">arXiv:1612.02806 - Quantum autoencoders for efficient compression of quantum data</a> by Romero, Olson and Aspuru-Guzik,
-</div></li>
+<li><a href="https://scirate.com/arxiv/1612.01045">arXiv:1612.01045 - Quantum generalisation of feedforward neural networks</a> by Wan, Dahlsten, Kristjánsson, Gardner and Kim.</li>
+<li><a href="https://scirate.com/arxiv/1612.01789">arXiv:1612.01789 - Quantum gradient descent and Newton’s method for constrained polynomial optimization</a> by Rebentrost, Schuld, Petruccione and Lloyd,</li>
+<li><a href="https://scirate.com/arxiv/1612.02806">arXiv:1612.02806 - Quantum autoencoders for efficient compression of quantum data</a> by Romero, Olson and Aspuru-Guzik,</li>
 </ul>
-</div>
-<div>
 <p>But first, let’s take a look at the paper that got me interested in machine learning in the first place!</p>
-</div>
-<div>
 <h2 id="arxiv1307.0411---quantum-algorithms-for-supervised-and-unsupervised-machine-learning">arXiv:1307.0411 - Quantum algorithms for supervised and unsupervised machine learning</h2>
-</div>
-<div>
 <p>The paper, <a href="https://scirate.com/arxiv/1307.0411">Quantum algorithms for supervised and unsupervised machine learning</a> by Lloyd, Mohseni and Rebentrost in 2013, was one of my first technical exposures to machine learning. It’s an interesting one because it demonstrates that for certain types of clustering algorithms there is a quantum algorithm that exhibits an exponential speed-up over the classical counterpart.</p>
-</div>
-<div>
 <p><strong>Aside</strong>: Gaining complexity-theoretic speed-ups is the central task of (quantum) complexity theory. The speedup in this paper is interested, but it “only” demonstrates a speed-up on a problem that is already known to be <em>efficient</em><a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> for classical computers, so it <em>doesn’t</em> provide evidence that quantum computers are fundamentally more powerful than classical ones, by the standard notions in computer science.</p>
-</div>
-<div>
 <p>The <code>Supervised clustering</code> problem that is tackled in the paper is as follows:</p>
-</div>
-<div>
 <blockquote>
-<div>
 <p>Given some vector <span class="math inline">$\vec{u} \in \mathbb{R}^N$</span>, and two sets of vectors <span class="math inline"><em>V</em></span> and <span class="math inline"><em>W</em></span>, then given <span class="math inline"><em>M</em></span> representative samples from <span class="math inline"><em>V</em></span>: <span class="math inline">$\vec{v}_j \in V$</span> and <span class="math inline">$\vec{w}_k \in W$</span>, figure out which set <span class="math inline">$\vec{u}$</span> should go in to, by comparing the distances to these vectors.</p>
-</div>
 </blockquote>
-</div>
-<div>
 <p>In pictures it looks like so:</p>
-</div>
-<div>
 <div style="text-align: center">
-<div>
 <div class="figure">
 <img src="../images/supervised-clustering.png" alt="Figure 1. An example of the supervised clustering problem with \vec{u} \in \mathbb{R}^2 and M=3. We’ve drawn 3 points from V, the (unknown) dashed purple region, and 3 points from W, the dashed pink region." />
 <p class="caption">Figure 1. An example of the supervised clustering problem with <span class="math inline">$\vec{u} \in \mathbb{R}^2$</span> and <span class="math inline"><em>M</em> = 3</span>. We’ve drawn 3 points from <span class="math inline"><em>V</em></span>, the (unknown) dashed purple region, and 3 points from <span class="math inline"><em>W</em></span>, the dashed pink region.</p>
 </div>
 </div>
-</div>
-</div>
-<div>
 <p>Classically, if we think about where we’d like to put <span class="math inline">$\vec{u}$</span>, we could compare the distance to all the points <span class="math inline">$\vec{v_1}, \vec{v_2}, \vec{v_3}$</span> and to all the points <span class="math inline">$\vec{w_1}, \vec{w_2},\vec{w_3}$</span>. In the specific example I’ve drawn, doing so will show that, out of the two sets, <span class="math inline">$\vec{u}$</span> belongs in <span class="math inline"><em>V</em></span>.</p>
-</div>
-<div>
 <p>In general, we can see that, using this approach, we would need to look at all <span class="math inline"><em>M</em></span> data points, and we’d need to compare each dimension of the <span class="math inline"><em>N</em></span> dimensions of each vector <span class="math inline">$\vec{v_j}, \vec{w_k}, \vec{u}$</span>; i.e. we’d need to look at at least <span class="math inline"><em>M</em> × <em>N</em></span> pieces of information. In other words, we’d compute the distance</p>
-</div>
-<div>
 
-</div>
-<div>
 <p>By looking at the problem slightly more formally, we find that classically the best known algorithm takes “something like”<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a> <span class="math inline"><code>pol</code><em>y</em>(<em>M</em> × <em>N</em>)</span> steps, where “<span class="math inline"><code>poly</code></span>” means that the true running time is a polynomial of <span class="math inline"><em>M</em> × <em>N</em></span>.</p>
-</div>
-<div>
 <p>Quantumly, the paper demonstrates an algorithm that lets us solve this problem in “something like” <span class="math inline">log(<em>M</em> × <em>N</em>)</span> time steps. This is a significant improvement, in a practical sense. To get an idea, if we took <span class="math inline">100</span> samples from a <span class="math inline"><em>N</em> = 350</span>-dimensional space, then <span class="math inline"><em>M</em> × <em>N</em> = 35, 000</span> and <span class="math inline">log(<em>M</em> × <em>N</em>)≈10</span>.</p>
-</div>
-<div>
 <p>The quantum algorithm works by constructing a state in a certain state so that, when measured, the distance that we wanted, <span class="math inline">$d(\vec{u}, V)$</span>, is the probability that we achieve a certain measurement outcome. In this way, we can build this certain state, and measure it, several times, and use this information to approximate the required distances. And, the paper shows that this whole process can be done in “something like” a running time of <span class="math inline">log(<em>M</em> × <em>N</em>)</span>.</p>
-</div>
-<div>
 <p>There’s more contirbutions in the paper than just this; so it’s worth a look if you’re interested.</p>
-</div>
-<div>
 <h2 id="arxiv16.12.01045---quantum-generalisation-of-feedforward-neural-networks">arXiv:16.12.01045 - Quantum generalisation of feedforward neural networks</h2>
-</div>
-<div>
 <p>So this paper is pretty cool. We can get a feel for what it’s doing by first considering the following network:</p>
-</div>
-<div>
 <div style="text-align: center">
-<div>
 <div class="figure">
 <img src="../images/basic-nn.png" alt="Figure 2. A simple classical neural network" />
 <p class="caption">Figure 2. A simple classical neural network</p>
 </div>
 </div>
-</div>
-</div>
-<div>
 <p>This network has two inputs, <span class="math inline"><em>x</em><sub>1</sub>, <em>x</em><sub>2</sub></span>, three learnable weights, <span class="math inline"><em>w</em><sub>1</sub>, <em>w</em><sub>2</sub>, <em>w</em><sub>3</sub></span>, one output value <span class="math inline"><em>y</em></span>, and an activation function <span class="math inline"><em>f</em></span>.</p>
-</div>
-<div>
 <p>Classically one would feed in a series of training examples <span class="math inline">(<em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, <em>y</em>)</span> and update the weights according to some loss function to achieve the best result for the given data.</p>
-</div>
-<div>
 <p>Quantumly, there are some immediate problems with doing this, if we switch the inputs <span class="math inline"><em>x</em></span> to be quantum states, instead of classical real variables.</p>
-</div>
-<div>
 <p>The problems are:</p>
-</div>
-<div>
 <ul>
-<li><div>
-Quantum operations need to be reversible; <span class="math inline"><em>f</em></span> as written is not (at the very least, it takes two inputs and squashes them down to one output).
-</div></li>
-<li><div>
-Quantum states need to be normalised; so multiplying them by a single arbitrary weight won’t be productive.
-</div></li>
-<li><div>
-You can’t copy arbitrary quantum states due to the <a href="https://en.wikipedia.org/wiki/No-cloning_theorem">No-Cloning theorem</a>, so this restricts the type of networks that can be written down.
-</div></li>
+<li>Quantum operations need to be reversible; <span class="math inline"><em>f</em></span> as written is not (at the very least, it takes two inputs and squashes them down to one output).</li>
+<li>Quantum states need to be normalised; so multiplying them by a single arbitrary weight won’t be productive.</li>
+<li>You can’t copy arbitrary quantum states due to the <a href="https://en.wikipedia.org/wiki/No-cloning_theorem">No-Cloning theorem</a>, so this restricts the type of networks that can be written down.</li>
 </ul>
-</div>
-<div>
 <p>The way this paper solves these problems is to transition Figure 2 from a classical non-reversible network to a reversible quantum one:</p>
-</div>
-<div>
 <div style="text-align: center">
-<div>
 <div class="figure">
 <img src="../images/transition-to-quantum-nn.png" alt="Figure 3. The transition from classical, to reversible classical, to quantum." />
 <p class="caption">Figure 3. The transition from classical, to reversible classical, to quantum.</p>
 </div>
 </div>
-</div>
-</div>
-<div>
 <p>The final network takes in an arbitrary quantum state of two qubits, <span class="math inline"><em>x</em><sub>1</sub>, <em>x</em><sub>2</sub></span>, and then adjoins an ancilla state <span class="math inline">|0⟩</span>, applies some unitary operation <span class="math inline"><em>U</em></span>, and emits a combined final state <span class="math inline">|<em>ψ</em>⟩<sub><em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, <em>y</em></sub><sup>Out</sup></span> where the final qubit <span class="math inline"><em>y</em></span> contains the result we’re interested in.</p>
-</div>
-<div>
 <p>At this point, one might reasonably ask: How is this different to a quantum circuit? It appears to me that the only difference is that <span class="math inline"><em>U</em></span> is actually unknown, and <em>it</em> is trainable! Note that this is also a somewhat radical difference from classical neural networks: there, we don’t normally think of the activation functions (defined as <span class="math inline"><em>f</em></span> above) as trainable parameters; but quantumly, in this paper, that’s exactly how we think of them!</p>
-</div>
-<div>
 <p>It turns out that unitary matrices can be parameterised by a collection of real variables <span class="math inline"><em>α</em></span>. Consider an arbitrary unitary matrix operating on two qubits, then <span class="math inline"><em>U</em></span> can be written as:</p>
-</div>
-<div>
 
-</div>
-<div>
 <p>where <span class="math inline"><em>σ</em><sub><em>i</em></sub>, <em>i</em> ∈ 1, 2, 3</span> are the usual <a href="https://en.wikipedia.org/wiki/Pauli_matrices">Pauli matrices</a> and <span class="math inline"><em>σ</em><sub>0</sub></span> is the <span class="math inline">2 × 2</span> identity matrix. So one can then make these parameters <span class="math inline"><em>α</em><sub><em>j</em><sub>1</sub>, <em>j</em><sub>2</sub></sub></span> the <em>trainable</em> parameters! <s>It turns out that in the paper they don’t train these parameters explicitly, instead they pick a less general way of writing down unitary matricies, and they construct, by hand, a unitary for two qubits. It’s not clear why they’ve done this, and it would not be fun to have to build a special trainable unitary matrix for each node/neuron of your architecture depending on its input.</s></p>
-</div>
-<div>
 <p><strong>Update:</strong> Kwok-Ho kindly corrected me that they <em>do</em> indeed train directly on this form of unitary matricies, and that the simplification they do in the paper is used to investigate the loss surface.</p>
-</div>
-<div>
 <p>In any case, the main contribution of this paper seems to me to be the idea that we can <em>learn</em> unitary matricies for our particular problem. They go on to demonstrate that this idea works to build a quantum autoencoder, and to make a neural network discover unitary matricies that perform the quantum teleportation protocol.</p>
-</div>
-<div>
 <p>One view is that trying to learn arbitrary unitary matrices that perform a task really well will become too hard as the number neurons grows. If we had a large network, with potentially millions of internal, neurons (and hence unitaries) to learn, then it might be more effective to fix unitaries and instead focus on learning the weights.</p>
-</div>
-<div>
 <p>However, it’s a promising technique that would be fun to try out.</p>
-</div>
-<div>
 <h2 id="arxiv1612.01789---quantum-gradient-descent-and-newtons-method-for-constrained-polynomial-optimization">arXiv:1612.01789 - Quantum gradient descent and Newton’s method for constrained polynomial optimization</h2>
-</div>
-<div>
 <p>Those of you familiar with neural networks will know that the central idea used to train them is <a href="https://en.wikipedia.org/wiki/Gradient_descent">Gradient Descent</a>. We recall that gradient descent lets us known how to modify some vector <span class="math inline"><em>x</em></span> so that it does “better” when evaluated with some cost function <span class="math inline"><em>C</em>(<em>x</em>, <em>y</em>)</span> where <span class="math inline"><em>y</em></span> is some known good answer. I.e. <span class="math inline"><em>x</em></span> might be a probability of liking some object, and <span class="math inline"><em>y</em></span> might be the true probability, and <span class="math inline"><em>C</em>(<em>x</em>, <em>y</em>)=|<em>x</em> − <em>y</em>|<sup>2</sup></span>.</p>
-</div>
-<div>
 <p>The paper supposes we have some quantum state <span class="math inline">$|x\rangle = \sum_{j=1}^N x_j |j\rangle$</span> (where <span class="math inline">|<em>j</em>⟩</span> is the <span class="math inline"><em>j</em></span>’th computational-basis state), and some cost function <span class="math inline"><em>C</em>(|<em>x</em>⟩,|<em>y</em>⟩)</span> that tells us how good <span class="math inline">|<em>x</em>⟩</span> is. The question is, given we can evaluate <span class="math inline"><em>C</em>(|<em>x</em>⟩,|<em>y</em>⟩)</span>, how can we best work out to modify <span class="math inline">|<em>x</em>⟩</span> to do better?</p>
-</div>
-<div>
 <p>If this was entirely classical, we could just calculate the gradient of <span class="math inline"><em>C</em></span> with respect to the variables <span class="math inline"><em>x</em><sub><em>j</em></sub></span>, and then propose a new set of <span class="math inline"><em>x</em><sub><em>j</em></sub></span>’s. However, we can’t inspect all these values quantumly, so we need to do something else.</p>
-</div>
-<div>
 <p>In the paper, they demonstrate an approach that requires a few copies of the current state <span class="math inline">|<em>x</em><sup>(<em>t</em>)</sup>⟩</span>, but will produce a new state <span class="math inline">|<em>x</em><sup>(<em>t</em> + 1)</sup>⟩</span> such that (with objective/loss function <span class="math inline"><em>f</em></span>):</p>
-</div>
-<div>
 
-</div>
-<div>
 <p>for some step size <span class="math inline"><em>η</em></span>. That is, it’s a step in the (hopefully) right direction, as per normal gradient descent!</p>
-</div>
-<div>
 <p>So one direction to take this paper would be to build a “fully quantum” neural network like so:</p>
-</div>
-<div>
 <div style="text-align: center">
-<div>
 <div class="figure">
 <img src="../images/fully-quantum-nn.png" alt="Figure 5. Fully-quantum neural network. The inputs and the weights are quantum states; and the activation function U is unitary." />
 <p class="caption">Figure 5. Fully-quantum neural network. The inputs and the weights are quantum states; and the activation function <span class="math inline"><em>U</em></span> is unitary.</p>
 </div>
 </div>
-</div>
-</div>
-<div>
 <p>where we make the weights quantum states, <s>and the weights are multiplied onto the inputs as a dot-product</s>. This would require that the weight state is the same size as the input state; but that should be possible because we’re the ones building the network structure.</p>
-</div>
-<div>
 <p><strong>Update</strong>: The idea about multiplying weights in didn’t make any sense; a much more sensible idea would be to prepare something like <span class="math inline">|<em>w</em><sub><em>i</em></sub>⟩⟨<em>w</em><sub><em>i</em></sub>|</span> and enact this on the input <span class="math inline">|<em>x</em><sub><em>k</em></sub></span> and <em>then</em> apply the fixed unitary.</p>
-</div>
-<div>
 <p>We could then not worry about learning unitary matrices, and analogously to standard neural networks, just pick some unitary <span class="math inline"><em>U</em></span> that “works well” in practice, maybe by just defining quantum analogues of some common activation functions, perhaps say the <a href="https://en.wikipedia.org/wiki/Rectifier_(neural_networks)">ReLU</a> or <a href="https://arxiv.org/abs/1511.07289">ELU</a>.</p>
-</div>
-<div>
 <p>Overall I think that the quantum gradient descent algorithm should be useful for training neural networks, and maybe some cool things will come from it. There are some natural direct extensions of this work; namely to extend the implementation to <a href="http://sebastianruder.com/optimizing-gradient-descent/index.html">the more practical variations</a>.</p>
-</div>
-<div>
 <h2 id="quantum-autoencoders-for-efficient-compression-of-quantum-data">1612.02806 - Quantum autoencoders for efficient compression of quantum data</h2>
-</div>
-<div>
 <p>This paper came out only a few days after the Wan et al paper that we covered above, that also discussed autoencoders, so I thought it was worth a glance to see if this team did things differently.</p>
-</div>
-<div>
 <p>This paper again takes the approach of not concerning itself with weights and instead focuses on learning a good unitary matrix <span class="math inline"><em>U</em></span> with a specific cost function.</p>
-</div>
-<div>
 <p>They take a different approach in how they build their unitaries. Here they have a “programmable” quantum circuit, where they consider the parameters defining this circuit as the ones that can be trained. Given that these parameters are classical, and loss function they calculate is classical, no special optimisation techniques are needed.</p>
-</div>
-<div>
 <h2 id="final-thoughts">Final thoughts</h2>
-</div>
-<div>
 <p>It appears that the building blocks are being put together to start doing some serious work on quantum machine learning/quantum deep networks. <a href="http://web.physics.ucsb.edu/~martinisgroup/">Google</a> and <a href="http://blogs.microsoft.com/next/2016/11/20/microsoft-doubles-quantum-computing-bet/#sm.001umo7pp17ozfkwvl81eu0szc8pf">Microsoft</a> are already heavily investing in quantum computers, Google in particular has something it calls the <a href="https://plus.google.com/+QuantumAILab">“Quantum A.I. Lab”</a>, and there are even independent <a href="http://rigetti.com/">quantum computer manufacturing groups</a>.</p>
-</div>
-<div>
 <p>It seems like there are lots of options on which way to direct efforts in the quantum ML world, and with these recent developments on quantum ML techniques, the time appears to be right to be getting into quantum deep learning!</p>
-</div>
-<div>
 <h2 id="appendix">Appendix <a id="appendix"></a></h2>
-</div>
-<div>
 <p>More interesting quantum machine learning papers:</p>
-</div>
-<div>
 <ul>
-<li><div>
-<a href="https://scirate.com/arxiv/1611.09347">1611.09347 - Quantum Machine Learning</a> (most recent review)
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1610.08251">1610.08251 - Quantum-enhanced machine learning</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1605.05370">1605.05370 - Training A Quantum Optimizer</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1603.08675">1603.08675 - Quantum Recommender Systems</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1512.06069">1512.06069 - Demonstration of quantum advantage in machine learning</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1512.02900">1512.02900 - Advances in quantum machine learning</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1611.08104">1611.08104 - Quantum Enhanced Inference in Markov Logic Networks</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1609.02542">1609.02542 - Quantum-assisted learning of graphical models with arbitrary pairwise connectivity</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1609.06935">1609.06935 - Quantum Neural Machine Learning - Backpropagation and Dynamics</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1606.02318">1606.02318 - Solving the Quantum Many-Body Problem with Artificial Neural Networks</a>
-</div></li>
-<li><div>
-even more: <a href="https://scirate.com/search?utf8=%E2%9C%93&amp;q=quantum+machine+learning">SciRate - quantum machine learning</a>!
-</div></li>
+<li><a href="https://scirate.com/arxiv/1611.09347">1611.09347 - Quantum Machine Learning</a> (most recent review)</li>
+<li><a href="https://scirate.com/arxiv/1610.08251">1610.08251 - Quantum-enhanced machine learning</a></li>
+<li><a href="https://scirate.com/arxiv/1605.05370">1605.05370 - Training A Quantum Optimizer</a></li>
+<li><a href="https://scirate.com/arxiv/1603.08675">1603.08675 - Quantum Recommender Systems</a></li>
+<li><a href="https://scirate.com/arxiv/1512.06069">1512.06069 - Demonstration of quantum advantage in machine learning</a></li>
+<li><a href="https://scirate.com/arxiv/1512.02900">1512.02900 - Advances in quantum machine learning</a></li>
+<li><a href="https://scirate.com/arxiv/1611.08104">1611.08104 - Quantum Enhanced Inference in Markov Logic Networks</a></li>
+<li><a href="https://scirate.com/arxiv/1609.02542">1609.02542 - Quantum-assisted learning of graphical models with arbitrary pairwise connectivity</a></li>
+<li><a href="https://scirate.com/arxiv/1609.06935">1609.06935 - Quantum Neural Machine Learning - Backpropagation and Dynamics</a></li>
+<li><a href="https://scirate.com/arxiv/1606.02318">1606.02318 - Solving the Quantum Many-Body Problem with Artificial Neural Networks</a></li>
+<li>even more: <a href="https://scirate.com/search?utf8=%E2%9C%93&amp;q=quantum+machine+learning">SciRate - quantum machine learning</a>!</li>
 </ul>
-</div>
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><div>
-<p>Here <em>efficient</em> means that the problem is in the complexity class caled <span class="math inline"><strong>P</strong></span>. Problems that are efficient for quantum computers are in the complexity class <span class="math inline"><strong>BQP</strong></span>. One of the main outstanding questions in the field is “Are quantum computers more powerful than classical ones?” and this can be phrased as comparing the class <span class="math inline"><strong>P</strong></span> and <span class="math inline"><strong>BQP</strong></span>.</p>
-</div>
-<a href="#fnref1">↩</a></li>
-<li id="fn2"><div>
-<p><em>“Something like” x</em> here is a very informal term for the more formal statement that the running time is <span class="math inline"><em>O</em>(<em>x</em>)</span>. See <a href="https://en.wikipedia.org/wiki/Big_O_notation">Big O Notation</a> for more.</p>
-</div>
-<a href="#fnref2">↩</a></li>
+<li id="fn1"><p>Here <em>efficient</em> means that the problem is in the complexity class caled <span class="math inline"><strong>P</strong></span>. Problems that are efficient for quantum computers are in the complexity class <span class="math inline"><strong>BQP</strong></span>. One of the main outstanding questions in the field is “Are quantum computers more powerful than classical ones?” and this can be phrased as comparing the class <span class="math inline"><strong>P</strong></span> and <span class="math inline"><strong>BQP</strong></span>.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p><em>“Something like” x</em> here is a very informal term for the more formal statement that the running time is <span class="math inline"><em>O</em>(<em>x</em>)</span>. See <a href="https://en.wikipedia.org/wiki/Big_O_notation">Big O Notation</a> for more.<a href="#fnref2">↩</a></p></li>
 </ol>
 </div>
 

@@ -37,59 +37,28 @@
     
 </div>
 
-<div>
 <p>Oftentimes one needs to write a document with math symbols in it. The standard tool of choice is some variant of TeX, either writing it online in one of the growing-list of collaborative editors:</p>
-</div>
-<div>
 <ul>
-<li><div>
-<a href="https://www.overleaf.com/">Overleaf</a>
-</div></li>
-<li><div>
-<a href="https://www.sharelatex.com/">ShareLaTeX</a>
-</div></li>
-<li><div>
-<a href="https://www.authorea.com/">Authorea</a>
-</div></li>
+<li><a href="https://www.overleaf.com/">Overleaf</a></li>
+<li><a href="https://www.sharelatex.com/">ShareLaTeX</a></li>
+<li><a href="https://www.authorea.com/">Authorea</a></li>
 </ul>
-</div>
-<div>
 <p>But one program, that runs locally, that I can’t stop using is <a href="http://www.lyx.org/">LyX</a>.</p>
-</div>
-<div>
 <p>I really like LyX because of the “What-you-see-is-(pretty much)-what-you-get” nature of it.</p>
-</div>
-<div>
 <p>One thing I wanted to share was a small technique that I used to get a version number in all of the pdfs that I generated from my LyX documents. The idea was that when I sent my document to obtain feedback from various interested parties, I could easily see which version they had commented on.</p>
-</div>
-<div>
 <p>What I wanted as a footer that would be included on every page, that contained the version number.</p>
-</div>
-<div>
 <p>The approach is:</p>
-</div>
-<div>
 <ol style="list-style-type: decimal">
-<li><div>
-In the “LaTeX Preamble” setting of the LyX document, include (something like)
-</div></li>
+<li>In the “LaTeX Preamble” setting of the LyX document, include (something like)</li>
 </ol>
-</div>
-<div>
 <pre><code>\usepackage{fancyhdr}
 \pagestyle{fancy}
 \cfoot{\tiny{|VERSION|}}
 \rfoot{\thepage}
 \rhead{}</code></pre>
-</div>
-<div>
 <ol start="2" style="list-style-type: decimal">
-<li><div>
-Build your LyX documents by the command line with a <code>Makefile</code>. My <code>Makefile</code> looks like so:
-</div></li>
+<li>Build your LyX documents by the command line with a <code>Makefile</code>. My <code>Makefile</code> looks like so:</li>
 </ol>
-</div>
-<div>
 <pre><code>BUILD_NUMBER_FILE := build-number.txt
 BUILD_NUMBER      := $(shell cat $(BUILD_NUMBER_FILE))
 BUILD_DATE        := $(shell date +%d%b%Y)
@@ -110,20 +79,11 @@ pdf: buildnumber
 buildnumber:
 	@if ! test -f $(BUILD_NUMBER_FILE); then echo 0 &gt; $(BUILD_NUMBER_FILE); fi
 	@echo $$(($$(cat $(BUILD_NUMBER_FILE)) + 1)) &gt; $(BUILD_NUMBER_FILE)</code></pre>
-</div>
-<div>
 <ol start="3" style="list-style-type: decimal">
-<li><div>
-Build with the <code>make</code> command and profit!
-</div></li>
+<li>Build with the <code>make</code> command and profit!</li>
 </ol>
-</div>
-<div>
 <p>Note that there is a <code>build-number.txt</code> file that is incremented on each build, so you don’t need to do that manually.</p>
-</div>
-<div>
 <p>I’ve put together a sample project <a href="https://gist.github.com/silky/9accc6e6a5dbbc029669">here</a>, so you can clone that gist and type <code>make</code> and see it in action!</p>
-</div>
 
         </div>
         <div id="footer">

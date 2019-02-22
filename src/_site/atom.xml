@@ -8,8 +8,514 @@
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
     </author>
-    <updated>2019-01-27T00:00:00Z</updated>
+    <updated>2019-02-22T00:00:00Z</updated>
     <entry>
+    <title>2018s Crazy Ideas</title>
+    <link href="https://silky.github.io/posts/2019-02-22-2018s-crazy-ideas.html" />
+    <id>https://silky.github.io/posts/2019-02-22-2018s-crazy-ideas.html</id>
+    <published>2019-02-22T00:00:00Z</published>
+    <updated>2019-02-22T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on February 22, 2019
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>I can’t believe I forgot to do this at the start of the year!</p>
+<p>Let’s look back over 2018’s ideas:</p>
+<h1 id="the-ideas">The Ideas</h1>
+<ol>
+<li>
+<a href='https://github.com/silky/ideas/issues/470'>using ai to reduce medical dosages</a>: i.e. imagine you need such-and-such amount of radiation in order for certain whatever to be seen in some scan can you lower the dosage and then use some ai technique to enhance the quality of the image?
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/469'>something about shape-based reasoning</a>: i.e. the fact that some grammar-parsing problem teems like a good fit for tensor-network works because they both have the “shape” of a tree another example would be thinking of solving a problem of identifying different types of plants as it fits in the “shape” of a classifier but these things could potentially have <em>other</em> shapes? and therefore fit into <em>other</em> kinds of problems?
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/468'>a q&amp;a bot that can answer tests on the citizenship test</a>: Q: What is our home girt by? A: ..
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/467'>buddhist neural network</a>: it features significant self-attention and self-awareness it performs classification, but predicts the same class for every input as it has a nondual mind it’s loss function features a single term for each of the 6 <a href="https://en.wikipedia.org/wiki/P%C4%81ramit%C4%81">paramitas</a>: - Generosity: to cultivate the attitude of generosity. - Discipline: refraining from harm. - Patience: the ability not to be perturbed by anything. - Diligence: to find joy in what is virtuous, positive or wholesome. - Meditative concentration: not to be distracted. - Wisdom: the perfect discrimination of phenomena, all knowable things.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/466'>music-to-image</a>: say you’re listening to greek music you want to generate an image of a singer singing on some clifftop on greece under an olive tree near a vineyard surely a simple matter of deep learning
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/465'>code story by word frequency</a>: take all the words in a code repo, order them by frequency, then match that up to some standard book, then remap the code according to the frequency
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/464'>generalisation of deutch-jozsa’s problem</a>: here - https://en.wikipedia.org/wiki/Deutsch%E2%80%93Jozsa_algorithm generalise it so that we have multiple f’s that have different promises; i.e. i’m constant “50% of the time”. what now?
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/463'>analogy-lang</a>: reading https://maetl.net/membrane-oriented-programming by <span class="citation">@maetl</span> i had an idea for a programming language consider two types, “person” and “frog”, let’s say there are at least two problems; one is the one in the article - it’s hard to come up with a complete list of methods/properties that should exactly define one of these things. in surfaces and essences they argue that in reality no categorisation has perfectly defined boundaries; so how to define the types? another problem is what happens if i want to build a thing that is both “person-like” and “frog-like”? you can’t. especially not if the differences are far away (i.e. is frog hopping like “walking”? should it be the implementation of a “walk” method? probably not; but a “move” method? probably? but what about less-clear things? and doesn’t it depend on what your merging with) in this way it seems like it’s impossible to come up with strict types for anything so here’s an idea: analogy-lang: let’s you define types in a much more relaxed way; “this thing is like that thing in these ways, but different in these ways”
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/462'>multi-layered network</a>: train some network f to produce y_1 from x_1 f(x_1) = y_1 then, wrap that in a new network, g, that produces y_1 and y_2 from x_1 and x_2 g(x_1, x_2) = ( f(x_1,), g’(x_1, x_2) ) and so on. interesting
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/461'>psychadelics for ai</a>: ideas: - locate some kind of “default-mode network” in your model and inhibit it - after training; allow many more connections - have two modes of network; one this “high-entropy” learning one, which prunes down to a more efficient one that can’t learn but can decide quickly
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/460'>ultimate notification page</a>: it’s just a page with a bunch of iframes to all your different websites where you get the little notification things and then it just tiles them; showing in-which places you have notifications.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/459'>use deep learning to replace a movie character with yourself and your own acting</a>: 1. semantic segmentation to remove an actor 2. film yourself saying their lines 3. plug yourself back into the missing spot 4. dress yourself in the appropriate clothes 5. adjust the lighting 6. ??? 7. profit!
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/458'>paramterised papers</a>: “specifically, this model first generates an aligned position p_t for each target word at time t” show me this sentence with t = whatever and p = some dimension
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/457'>on a slide-deck, have a little small game that plays out in a tiny section of each slide</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/456'>use autocomplete and random phrases to guess things about people</a>: “i love you …” find out who they love “give me …” find out what they want and so on
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/455'>visualise the difference between streaming and shuffling sampling algorithms</a>: streaming -&gt; for low numbers, misses items shuffling -&gt; for low numbers, bad distribution across indices that are shuffled. <span class="citation">@dseuss</span> <span class="citation">@martiningram</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/454'>symbolic tensorflow</a>: so i can do convs and explain them really easily
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/453'>the “lentictocular”</a>: uses lenticular technology on a sphere with AI so that it watches your gaze and moves itself accordingly so that it always displays the appropriate time
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/452'>ai email judgement front</a>: intercepts all your emails for every email, it decides the optimal time that someone will respond it sends it at that time so that they respond
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/451'>“growth maps” for determining affected areas of projects w.r.t. a pattern language</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/450'>friend tee</a>: lights up when other friends are nearby
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/449'>lenticular business cards</a>: this is already done by many people
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/448'>innovative holiday inventor</a>: thinks up cool holidays
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/447'>buddhist twitter</a>: there’s only one account, and no password
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/446'>programming ombudsman</a>: <span class="citation">@sordina</span> <span class="citation">@kirillrdy</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/445'>the computational complexity of religion</a>: given various religious abilities, what computational problems can you solve? what are the implications on computational complexity by buddhism? and so on.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/444'>spacetime calendar</a>: we have calendars for dates but they don’t often contain space constraints so why not a space-time calendar, defined in some kind of light cone?
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/443'>app to check consistency of items before you leave</a>: it’s an app you configure it to be aware of your keys, laptop, wallet, glasses then, as you leave your house, it can inform you of the status of those items: - “hey, your computer is at home” - “all g, your glasses are at work” etc <span class="citation">@gacafe</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/442'>gradient tug-of-war demonstration</a>: given a function f(x,y) = x + y then if we have competing loss functions then it would be nice to visualise the gradient flow as a tug of war
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/441'>a website that is entirely defined in the scroll bars/url link bar, whatever</a>: you can move pages by moving your mouse to different parts of the scroll bars and so on in that fashion
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/440'>quantum calendar</a>: it’s a calendar where on any given day in the future, items can be scheduled at the same time. but up to some limit (say 1 week) the items get collapsed and locked in <span class="citation">@silky</span> <span class="citation">@dseuss</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/439'>streaming terminal graph receiving updates over mqtt</a>: then, can use it to plot tensorboard logs to the terminal instead of tensorboard using blessed + blessed-contrib seems to be the easiest way - https://github.com/yaronn/blessed-contrib/blob/master/examples/line-random-colors.js just need to put in the mqtt part and update the data that way.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/438'>ai escape room</a>: this is an idea of dave build an escape room controlled entirely by ai the only way out is by interacting with the machine it can control everything: heating, doors, whatever
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/437'>programmable themepark</a>: here’s a ride; how you interact with it is defined via your own programs you play minigolf, but instead of a club you use programming <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/436'>graph+weights to neuronal net rendering</a>: https://github.com/BlueBrain/NeuroMorphoVis
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/435'>Arbitrary-Task Programming</a>: given that programming is just arranging symbols, <em>and</em> we can use deep learning to interpret the real world into symbols, <em>then</em> it’s possible to do programming by performing arbitrary tasks i.e. <em>any</em> job can be programming, if we can build the deep-learning system that converts actions in that job into symbols in a programming language
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/434'>Sitcom-Lang</a>: it’s a pre-processor, or something, for an arbtrariy language whenever a symbol is defined, that symbol is embued with a soul and a “nature”. it starts to have wants and needs; and those must be satisfied in order for it to stay in it’s present form (i.e. as a “for loop”), otherwise it might change (i.e. to be a “while” loop, or maybe even a string instead). all the symbols will interact with each other, and in that way a program will be made <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/433'>brain2object2teeshirt</a>: this - https://scirate.com/arxiv/1810.02223 - but once it’s decided on the object, it gets rendered on your LED tee-shirt <span class="citation">@geekscape</span> <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/432'>pix2pix sourcecode2cat</a>: generate pictures of source code convert to pictures of cat instant machine for generating cat pictures from code what cat does your code look like? <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/431'>physical xmonad</a>: use the uarm to be a “physical” xmonad you want to write on some piece of paper? no worries, the uarm will re-arrange your physical desk so that everything is conveniently arranged to do that <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/430'>collaborative painting in the style of christopher alexander</a>: it has 3 parts done by 3 artists i draw the left part; you draw the middle, and it has to interact coherently with whatever i’ve drawn; then another person draws the right side, again, it must interact that’s it.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/429'>lego laptops</a>: laptops that plug together in a lego-like way
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/428'>business version of 30 kids vs 2 professional soccer players</a>: 30 grads vs 2 ceos 30 ceos vs 2 grads etc.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/427'>shops in parks</a>: would make the parks safer/nicer, because people would be in them more could limit the type of shops, and their size, but would be a nice way to build a bit more of a community feeling in them
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/426'>an icon next to your public email address that indicates how many unread emails you have</a>: then people can gauge what will happen if they email you
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/425'>ml for configuring linux</a>: “what file should i look at to change default font sizes?” “how can i set up my new gpu? what settings should i set?”
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/424'>water-t-shirt</a>: the essence of a water-bed, in t-shirt form!
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/423'>deep antiques roadshow</a>: the idea explains itself
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/422'>a being that is by-default inherently abstract, instead of inherently practical like us</a>: for them, being practical would be really hard by default they live at the other end of the abstraction spectrum
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/421'>business card bowl</a>: through all the business cards into a bowl; each day, call them, if they don’t want to do business, throw the card out
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/420'>“live blog”</a>: whenever someone visits your blog, instead of reading articles, they get to open a chat window with you in your terminal then you tell them what you’ve been up to; and they can ask you questions
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/419'>software art</a>: take all the source code; stack them up as if the line count is one slice, that’s the structure
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/418'>t-shirt whiteboard</a>: in essence i.e. you can draw on the t-shirt, and the writing just washes out the next time then you can design whatever you want would this just work?
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/417'>physics simulation + diagrams</a>: would be great to define things such as “two pieces of rope inter-twined”, and then “drop” them, but then let that resulting expression become a haskell diagrams Diagram, so that you can then do diagram stuff with it
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/416'>git version flattener</a>: clone a git repo at every revision, into some folder.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/415'>see-through jacket that is also warm</a>: optionally also magnetic <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/414'>magnetic glass</a>: <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/413'>heated keyboard</a>: keeps your fingers warm
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/412'>run an experiment where monkeys/dogs/whatever are encouraged to learn some kind of programming to solve a task</a>: i.e. a monkey gets 1 food package per day but if learns to program, using the tools provided to it, ( something like a giant physical version of scratch ) then it gets 3 food packages in some sense people have tried this, with them solving problems, but has anyone tried it where the tool they use to solve the problem is general, and can be applied to other areas of their life?
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/411'>tree to code</a>: physical trees 1. order trees by the number of leaves 2. order code by the number of statements train a deeplearning network to map between these things then, trees can write computer programs <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/410'>ethical algorithms testing ground</a>: related to the last two #409 #408 basically, people can sign up to be ethical tester algorithms can join to provide games for people to play how would it work?
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/409'>ethical testers</a>: beta testers game testers ethics testers
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/408'>simulation for ethical machine learning problems</a>: consider the situation: “how do i know if this algorithm X is unethical?” well, instead of waiting for the salespeople to tell you, you could just have it run in a simulated environment and <em><strong>see</strong></em> if it’s unethical by the way that it acts.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/407'>minecraft file browser</a>: walk around your filesystem in 3d
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/406'>ocr clipboard copy and paste</a>: select an image region, send it to some text api thing, get the text back in the clipboard
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/405'>low-powered de-colourisation network</a>: learns to convert colour -&gt; black and white if it doesn’t do a good job, it’ll look awesome
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/404'>physical quine</a>: a robot that can type on the computer and write code that writes the program that writes itself
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/403'>deep learning “do” networks</a>: can you include the “do calculus” into neural networks somehow? to make it do some causal things?
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/402'>plot websites on cesium map, browse the internet that way.</a>: web-world
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/401'>animated colour schemes for vim</a>: the colour scheme rotates as you code
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/400'>a tale of three dickens: the movie</a>: it’s an auto-generated movie from locally-coherent slices instead of the book, we make a movie, where all the scenes in the movie are interspersed based on “local coherence” i.e. from two movies select two people having a conversation with someone named bill or, flick between scenes at the beach <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/399'>revolutionary walls</a>: the floor is fixed; but the walls are a tube you pull on some part of the wall to rotate it <span class="citation">@tall-josh</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/398'>activation function composer</a>: or more generally, a function composer 1. what does the graph of <code>relu</code> look like? 2. what about the graph of <code>relu . tanh</code> ? and so on, indefinitely and arbitrarily. some features: - what points should be push through? maybe could add certain kinds of initialisations and ranges - add things like drop-out and whatnot.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/397'>record videos of people doing interviews but have their voice replaced by obama and their image replaced by obama</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/396'>hair cut &amp; deep learning deal with the hair-dresser across the road</a>: sit down for a hair cut, get an hour of deep learning consulting as well
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/395'>live action star wars playing out across many websites in the background of cesium js windows</a>: on my website, a death-star is driving around on it’s way somewhere eventually it reachers your website, and destroy’s it’s logo, or something
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/394'>deep learning tcp or upd</a>: find something inbetween
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/393'>meta-search in google</a>: “i want to see all the alternatives to cloud-ranger” it’s impossible to do this search.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/392'>umbrella-scarf / fresh-scarf</a>: it’s a scarf but also, it has a hood that you can pull up, maybe even a clear hood, that let’s you see out front of it, but keeps you under cover could also keep smoke out of your face
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/391'>meme-net</a>: watch video, extract meme i.e. and the rollsafe guy
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/390'>ultimate computer setup person</a>: someone who just has the worlds best computer set up everything works no data is duplicated whole operating system exists in 1.5 gig; they’ve got 510 gig free no conda/ruby/stack issues
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/389'>codebase -&gt; readme</a>: looks at an entire codebase; learns to predict the readme
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/388'>divangulation theorem for websites</a>: <span class="citation">@sordina</span> surfaces can be triangulated websites can be divangulated what are the associated theorems?
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/387'>tasting plates for saas, *aas</a>: instead of just saying “sign up now for 6 months free”; just auto-sign people up for x free things, then let them use it up. easy way to get a billion more dollars for your saas business. <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/386'>self-skating skateboard</a>: it drives down to the skate park; skates around on the pipes, does flips, 180s, griding, whatever. <span class="citation">@sordina</span> <span class="citation">@tall-josh</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/385'>different password entry forms</a>: 1. any password you type logs you in, but they all take you to a different computer. only your password takes to you yours. “honeypassword” 2. you password consists of the actual letters, but also the timing between the letters <span class="citation">@sordina</span> 3. any key you press is irrelevant, all that matters is the spacing; everything is done via morse-code (<span class="citation">@geekscape</span>)
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/384'>congratulations!!!</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/383'>meeting chaos monkey</a>: every time a meeting is scheduled, a random attendee is replaced by some other random staff member
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/382'>consulto the consulting teddybear</a>: <span class="citation">@sordina</span> “that sounds good in theory” “have you tried kan-ban’ing that” “moving forward that sounds good, but right now i think we should be pragmatic”
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/381'>small magnets in fabric that can attach to other magnets so-as to create customisable clothing</a>: just put a diff design on by switching out the magnets i just need some small magnets. jaycar sells them
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/380'>“collaboration card”</a>: some way of listing and engaging with people in various projects you’re interested in
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/379'>nlp self-defending thesis</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/378'>rent factor charged in the city based on how innovative your store is</a>: hairdresser: f = 0.85 funky clothing store: f = 0.6 some weird shop that only sells whatever: 0.2 cafe: 1 or some kind of scheme like so
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/377'>e-fabric</a>: like e-ink, but for fabric
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/376'>clothes that change colour with respect to the magnetic fields that are around it</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/375'>grand designs: of computer programs</a>: follow the development of some kind of app, over a few years. hahahaha would be terrible.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/374'>giant magnet that aligns all the spins of the atoms of objects (people?!) so that they can pass through each other with different polarisations</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/373'>dance-curve net</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/372'>shoes that look like little cars</a>: volvo shoes monster-truck shoes lamboghini shoes fi-car shoes etc.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/371'>augmentation reality glasses that convert what people are saying into words that float in front of you that you can read</a>: so you can “hear” what people say to you when you’re wearing headphones
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/370'>“html/css layout searcher”, like visual image search, but for how to lay things out with flex/css/react/whatever</a>: input: some scribble about how you want your content laid out in boxes: output: the css/html that achieves this. there’s some networks that do this already, where they convert the drawings to code. but maybe that can be augmented by thinking of it like a search across already-existing content?
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/369'>“relax ai” or “mindful story ai”</a>: it makes up nice stories, like “you are walking on the beach, you see a small turtle; you follow the turtle for a swim in the water …” could also use cool accents of people, and make sure the story is consistent with another NLP after the first generative run
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/368'>comedy audience that instead of laughing they just say the things people say when they think something is funny</a>: instead of “ahahaha” audience (in unison): “that’s funny” audience (in unison): “good one” audience (in unison): “great joke”
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/367'>Adversial NLP</a>: a sentence so similar to another sentence as to be humanly-indistinguishable, but makes the AI think it’s something wildly different
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/366'>Inflatable Whiteboard Room</a>: it’s a large room, inflatable like a balloon or whatever, but you can walk into it and use the internals of it as a whiteboard useful for offices
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/365'>Collaborative Password Manager</a>: say i want to make a password for a system you will control, but we both need access to maybe i can have my program generate part of it; you’re program generate part, then combine them both on our independent computers, without the entire password leaving either of them could build this on top of the public keys on github somehow; so i just pick the github user i’m going to share a password with could clearly do this immediately by encrypting it with their public key, or something. but maybe something richer can be done
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/364'>Video Issues</a>: <a href="https://vimeo.com/265518095" class="uri">https://vimeo.com/265518095</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/363'>Faux Project Management Generator Thing</a>: it’s an RNN that generates hundreds of tickets in trello or jira or whatever; with arbitrary due dates makes you feel stressed <span class="citation">@sordina</span> could be used for project-management training scenarios
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/362'>quantum cppn</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/361'>AIWS</a>: ai for aws you: “hey, i need to computer with whatever to be up at whichever.com and to have some database, blah blah” aiws: “no worries, that’s set up for you!” alt. “talky-form for AWS” <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/360'>deep haircut mirror</a>: a mirror infront of hair-dressers that lets you look at potential haircuts on your own head
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/359'>train a network to learn when to laugh in response to jokes</a>: deep-audience
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/358'>dance led prompt device</a>: it’s a little led board that sits at the front of a dance thing, like a teleprompter, but for dance it puts out the next dance moves a dance-prompter move-prompter
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/357'>Easter Egg Evangelist for Enterprises (E^4)</a>: A floating employee who embeds on teams to consult on how to best add easter-eggs to the features they build.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/356'>self-driving food truck</a>: <span class="citation">@martiningram</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/355'>Stabbucks</a>: Starbucks for knives. * https://i.imgur.com/1ZCIQnh.jpg * Order venti, grande, etc knives
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/354'>BrainRank</a>: A leaderboard of brain-shaped logos.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/353'>DeliveryNet</a>: Reads prose with impeccable timing.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/352'>Rant Meetup</a>: Rant about stuff that sucks. * No solutions allowed * Surely james has something to say
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/351'>submit an AI-entry to every large festival in melbourne in a single year</a>: https://whatson.melbourne.vic.gov.au/Whatson/Festivals/Pages/festival_calendar.aspx
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/350'>Stochasm</a>: Metal band that plays random notes. * Easy to swap out band members!
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/349'>Seinfreinds</a>: Have the cast of one sitcom act out an episode of another and see if anyone notices.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/348'>hire a comedian to come along to your meetings</a>: they can provide background entertainment me: “hey nice to meet you, this is my associate jerry seinfeld, let’s get started” jerry: “what’s the deal with peanuts?” …
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/347'>stacked double-coffee-cup holder</a>: it’s just a handle, that holds on to two cups, one above the other useful for carrying multiple cups
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/346'>Auto-generating face detection camouflage</a>: Aka, auto-generating styles from https://cvdazzle.com/
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/345'>use the technology of marina (ShapeTex) to make little movable people in jackets</a>: https://www.linkedin.com/in/marina-toeters-a55a685/
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/344'>“studio gan”</a>: it just makes up every single thing, much like #341 , but in more depth and for everything could use for #343 for example.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/343'>the journey of your parcel</a>: imagine you’re waiting for a parcel from auspost you put on your VR headset and you get a real-time view into it’s life; maybe it’s sitting on a boat, on it’s way here, or it’s in an airplane, or it’s driving etc. you’d get a full HD video-style image of the thing moving, that would be completely imagined by a gan or something.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/342'>menu democracy</a>: buy a coffee, earn 1 voting right to change the menu in some way buy more coffees, proceed in this fashion other food yields you more votes
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/341'>dynamic videos built on the fly to answer standard google queries</a>: i.e “use python requests to do post request” a video could be made on the fly using the celeb-generating stuff of stack-gan, then the voice-simulation stuff of lyrebird or whoever, then the lip-moving stuff, the text-to-speech of wavenet or whatever, and some other random backing scene gans and music production networks it would get the content by reading the first answer it finds on google, in some summarised way. <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/340'>fully-automated fashion design</a>: 1. Fashion-MNIST CPPN - At random, pick a random item of clothing, figure out what it is, and generate a large version. 2. Pick a random (creative-commons) photo from Flickr, train a style transfer network on it. 3. Apply the style transfer to a bunch of different clothing items? To make a theme? 4. Pick a name from an RNN? 5. Upload to PAOM? Run-time should be several hours for one collection? Not so bad.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/339'>remote-controlled magnet</a>: a perfectly spherical magnet that can be rolled around by remote.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/338'>use cppn to generate a 3d landscape by determining the height by the colour</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/337'>lunch formation yaml specification</a>: example: <code>lunch:   - sandwhich:     - bread     - butter     - lettuce     - cucumber     - butter     - bread region: cbd</code> elements are ordered by height on the plate. <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/336'>a tale of 3 dickens</a>: combine: 1. a christmas carol 2. a tale of two cities 3. great expectations in order page-by-page. <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/335'>instead of colouring in the retro-haskell tee with colours, print the source code for the program itself in the previous colour</a>: easy!
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/334'>reverse twospace - use offices for other purposes out of hours</a>: silverpond -&gt; t-shirt business on the weekends
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/333'>dance karaoke</a>: like karaoke, but instead of singing you need to dance uses some pose-recognition thing
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/332'>build a markov chain thing and then run all the words through some “smoothing” operation by way of a word embedding</a>: i.e. somehow pick a few lines within embedding space, and move all of the words closer to those lines maybe something would happen
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/331'>naive nn visualisation</a>: just reshape all the weights to be in the shape of an image, normalise the values, and output it.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/330'>map sentences to “the gist”; just a few words</a>: “an embedding that compresses a piece of text to its core concepts” “like if i can compress an image” “then i should be able to compress a book” “and if i can do that that means that i can also write a compressed book” “and have the neural network write my book” <span class="citation">@gacafe</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/329'>version number which, in ascii, eventually approaches the source code itself</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/328'>personal world map</a>: it’s one of those scaled world maps, where the scaling is determined by say your gps coordinates over a given year, so that it only enlarges the places you go. <span class="citation">@mobeets</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/327'>water doughnut</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/326'>Deep-Can-I-Do-Deep-Learning-Here?</a>: it’s a network for which you input a situation and it tells you if you can use deep learning to help.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/325'>haskell type journey challenge</a>: get from package x to package y using only the following types once ….
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/324'>make the 3d wall art that we saw at the house of sonya</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/323'>novels in binder-form so that you can take out small sections of the pages and read them</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/322'>multi-agent learning where the agents also watch each other locally and learn from each other</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/321'>ml for learning the life/centers function from christopher alexander</a>: two pictures which one has more life? alt. something about centers?
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/320'>bureaucratic-net</a>: instead of a network that is really good at explanationing it’s decisions, this network is really bad at it. nothing it says makes sense, or alternatively it’s really long-winded in it’s responses. or maybe it’s always right, but it never has any idea why.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/319'>artistic-arxiv</a>: instead of papers, each day take a random few images from every paper and show that. maybe it’d be cool.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/318'>DeepWiki</a>: on normal wikipedia, humans edit pages about concepts in the form of words on deepwiki AIs edit concepts in the form of embeddings by way of adjusting the vectors (or something) they’d need to think about how to manage edits and revisions and so on. but that’s the general idea. <span class="citation">@sordina</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/317'>secret walls: wear the streets (or: graffiti on a wall of clothes; and wear them)</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/316'>a network that is given the punchline and has to work out the setup</a>: <span class="citation">@icp-jesus</span>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/315'>reverse website or inverse website</a>: normally, you visit a site and see the website and you can view source to see the source what about if you could visit a site and see the source, then view the source to see the site
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/314'>endless pasta hat</a>: has a self-pesto’ing tube that pushed out a long piece of spaghetti that you can munch on.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/313'>in the gan setting, the discriminator isn’t needed when generating, maybe there’s another setting where the discriminator is still useful at the generative stage?</a>
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/312'>a jacket that makes amazon’s automated shopping thing think you’re a packet of chips</a>: or something similar
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/311'>CompromiseApp</a>: two people need to agree on something they both have the app person 1 rates the estimated compromise, on a scale, of person 2 person 2 likewise both people record their own <em>true</em> compromise values then, over time, there’s a bunch of things that can be done, such as comparing predicted compromises, total compromises made, etc.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/310'>DerivativeNet</a>: it watches all seinfield episodes and sees if it can generate curb your enthusiasm episodes it reads all smbc comics and sees if it can generate xkcd ones etc.
+</li>
+<li>
+<a href='https://github.com/silky/ideas/issues/309'>Cap-Gun mechanical keyboard</a>: You pull back a bunch of hammers then as you type it fires the caps.
+</li>
+</ol>
+]]></summary>
+</entry>
+<entry>
     <title>Designing Functional Clothes with Haskell!</title>
     <link href="https://silky.github.io/posts/2019-01-27-Designing-Functional-Cloths-with-Haskell.html" />
     <id>https://silky.github.io/posts/2019-01-27-Designing-Functional-Cloths-with-Haskell.html</id>
@@ -22,46 +528,20 @@
     
 </div>
 
-<div>
 <p>So I gave my talk at the Art-and-Tech miniconf at Linux Conf AU earlier this week.</p>
-</div>
-<div>
 <p>The video of my talk is here:</p>
-</div>
-<div>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UvkKf8ME564" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</div>
-<div>
 </iframe>
-</div>
-<div>
 <p>Other materials are here:</p>
-</div>
-<div>
 <ul>
-<li><div>
-<a href="https://vandersilk.github.io">Van der Silk Fashion Website</a>
-</div></li>
-<li><div>
-<a href="https://docs.google.com/presentation/d/18olpV_GvpLbUR6z043cYIZ0yDVInJDuKN1xWnGQv-5k/edit?usp=sharing">Slides</a>
-</div></li>
-<li><div>
-<a href="https://www.youtube.com/watch?v=UvkKf8ME564">Video on YouTube</a>, or on <a href="https://archive.org/details/lca2019-Designing_functional_clothes_with_Haskell">archive.org</a>
-</div></li>
-<li><div>
-<a href="https://lobste.rs/s/ggk6oq/designing_functional_clothes_with">Discussion on Lobste.rs</a>
-</div></li>
+<li><a href="https://vandersilk.github.io">Van der Silk Fashion Website</a></li>
+<li><a href="https://docs.google.com/presentation/d/18olpV_GvpLbUR6z043cYIZ0yDVInJDuKN1xWnGQv-5k/edit?usp=sharing">Slides</a></li>
+<li><a href="https://www.youtube.com/watch?v=UvkKf8ME564">Video on YouTube</a>, or on <a href="https://archive.org/details/lca2019-Designing_functional_clothes_with_Haskell">archive.org</a></li>
+<li><a href="https://lobste.rs/s/ggk6oq/designing_functional_clothes_with">Discussion on Lobste.rs</a></li>
 </ul>
-</div>
-<div>
 <p>Thanks to <a href="https://maetl.net">Mark</a> for having me at the miniconf!</p>
-</div>
-<div>
 <h4 id="errata">Errata</h4>
-</div>
-<div>
 <p>Note that there’s a typo on the types of the <code>somethingFun</code> function that has since been corrected in the slides.</p>
-</div>
 ]]></summary>
 </entry>
 <entry>
@@ -77,27 +557,13 @@
     
 </div>
 
-<div>
 <p>Excitingly, this year I’m going to <a href="https://linux.conf.au/">Linux Conference</a>, and giving a talk at the <a href="https://linux.conf.au/schedule/">Art+Tech MiniConf</a>!</p>
-</div>
-<div>
 <p>To celebrate, I redesigned the <a href="https://vandersilk.github.io">Van der Silk</a> website:</p>
-</div>
-<div>
 <center>
-</div>
-<div>
 <img src="/images/vandersilk-fashion.jpg" width="600" />
-</div>
-<div>
 </center>
-</div>
-<div>
 <p>Also, very coincidentally, PAOM re-designed their website for the new year, so it’s much easier to find all my designs: <a href="https://paom.com/search?type=product&amp;q=*noonvandersilk*+tag:public">noonvandersilk on PAOM</a>.</p>
-</div>
-<div>
 <p>Hope to see you there!</p>
-</div>
 ]]></summary>
 </entry>
 <entry>
@@ -113,7 +579,6 @@
     
 </div>
 
-<div>
 <style type="text/css">
 div.book {
  display:        flex;
@@ -125,709 +590,304 @@ div.book img { margin-right: 10px; }
 
 div.alt { background: #eaeaea; }
 </style>
-</div>
-<div>
 <p>I’ve seen a few people post the books that they’ve read over the last year; so I thought I’d also get in on the action. Here are the books that I read (or partially read), in no particular order, last year:</p>
-</div>
-<div>
 <h3 id="non-fiction">Non-Fiction</h3>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/oregon.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/616875.The_Oregon_Experiment">The Oregon Experiment</a></strong> by Christopher W. Alexander, Murray Silverstein, Shlomo Angel, Sara Ishikawa, Denny Abrams</p>
-</div>
-<div>
 <p>Anyone that knows me, knows that Christopher Alexander is basically my personal Jesus. This book is amazing, to me in it’s demonstration of Alexander’s (and collaborators) standard approach to architecture; i.e building via small local activities in an endless cycle according to a specific and developing pattern language. It also contains very important insights, in my mind, in terms of project management and <a href="/posts/2018-11-09-quick-note-on-budgeting.html">budgeting</a>.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/educated.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/35133922-educated">Educated</a></strong> by Tara Westover</p>
-</div>
-<div>
 <p>I learned about this one from <a href="https://www.gatesnotes.com/Books/Educated">Bill Gates</a>. It’s amazing. I found it really fascinating to read about Tara’s life, and how she understood her upbringing. It makes you think quite a lot about the things you tell yourself to make sense of the situations you’re in.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/darkemu.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/21401526-dark-emu">Dark Emu</a></strong> by Bruce Pascoe</p>
-</div>
-<div>
 <p>Soon to be (if not already) an Australian classic; it’s very interesting to learn an entirely different history about our country and the Aboriginal people. I found it to be reasonably hard reading because there are some solid descriptions of various items and processes that it would’ve been amazing to have pictures of. In any case, necessary reading.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/candor.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/29939161-radical-candor">Radical Candor</a></strong> by Kim Malone Scott</p>
-</div>
-<div>
 <p>I basically hated this book. I think, on the one hand, it <em>does</em> have useful information in it; but for me it came across too much like standard Silicon Valley propoganda. I do think there is good stuff in here, for leaders that struggle with feedback.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/citiesforpeople.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/8556291-cities-for-people">Cities for People</a></strong> by Jan Gehl</p>
-</div>
-<div>
 <p>Recommended to me by Ryan, who was working as a Barista at from <a href="https://www.streat.com.au/">Streat</a>, this book is, apparently, a classic of urban planning. It’s amazing. It has a incredibly readable style; with lots of pictures and summaries of each paragraph. Jan has had a lot of impact in designing Melbourne, so it’s really interesting to read this book and see and understand the impact he and his team have had.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/factfulness.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/34890015-factfulness">Factfulness</a></strong> by Hans Rosling, Ola Rosling, Anna Rosling Rönnlund</p>
-</div>
-<div>
 <p>Quite good. From this book I learned about the website <a href="https://www.gapminder.org/dollar-street/">Dollar Street</a>, which is incredible and well worth a visit. Hans has many questions in the book; almost all of which I answered wrong, much like most of his audience that he’s asked the questions to. I learned a lot about how to think about world-wide progress, and that there are interesting organisations out there doing interesting work. I also learned, much to my surprise, that the World Bank isn’t a bank in the sense that I would’ve assumed; it’s main goal is to end poverty!</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/enlightenment.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/35696171-enlightenment-now">Enlightenment Now</a></strong> by Steven Pinker</p>
-</div>
-<div>
 <p>Not bad. This is the first book of Steven Pinker I’ve read. I’m unlikely to read more, after learning about some sexist views he’s had from <a href="https://www.goodreads.com/book/show/8031168-delusions-of-gender">Delusions of Gender</a> (not a book I’ve read yet; but heard thoughts from my partner).</p>
-</div>
-<div>
 <p>I found this book to be reasonably good, and make some solid arguments for continuing to fight against people that don’t think progress is real. Unfortunately, to paraphrase a joke from the Simposns, Steven seems like the kind of person that can use graphs to prove anything that is even remotely true. It contains too many anecdotes and cherry-picked examples.</p>
-</div>
-<div>
 <p>I’d recommend Factfulness over this one.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/trees.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/28256439-the-hidden-life-of-trees">The Hidden Life of Trees</a></strong> by Peter Wohlleben</p>
-</div>
-<div>
 <p>Really great. I’ve always been a bit of a hippie, and am mostly vegetarian, so when my partner found out I’d be reading this one, she started to get a bit concerned that I’d soon not even eat greens! Now, I haven’t quite gone that far, but I do really love the ideas and science in this book; and I think it’s really interesting to think of trees and their root-systems as being some giant entity. The one downside to this book is that it occasionally lacks pictures of the concepts that are being described.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/surfaces.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/7711871-surfaces-and-essences">Surfaces and Essences</a></strong> by Douglas R. Hofstadter, Emmanuel Sander</p>
-</div>
-<div>
 <p>Amazing. Probably not for people feeling a bit impatient. The book goes into many examples of the ideas; and makes a strong argument for the idea that all thinking is based on analogies. I’ve always loved analogies, so I’m naturally a big fan.</p>
-</div>
-<div>
 <p>As someone presently working in AI, I found this book full of many incredibly interesting and relevant ideas; one of which we discussed <a href="/posts/2018-06-16-when-will-google-translate-be-great.html">previously</a>.</p>
-</div>
-<div>
 <p>If you’re at all interested in when computers might be able to get to think like humans, definitely have a read!</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/buddhism.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/32895535-why-buddhism-is-true">Why Buddhism is True</a></strong> by Robert Wright</p>
-</div>
-<div>
 <p>Amazing. Recommended to me by my friend Julia. Probably one of the best books I’ve ever read, really; right up there with Christopher Alexander’s “<a href="https://www.goodreads.com/book/show/3131171-the-nature-of-order">Nature of Order</a>” and “<a href="https://www.goodreads.com/book/show/106728.The_Timeless_Way_of_Building">The Timeless Way of Building</a>”. This book is particularly neat, of course, because it takes a scientific approach to making sense of buddhist ideas. Overall, I find lots of agreement between this book, and the ideas of Christopher Alexander, and Surfaces and Essences.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/inferior.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/31869108-inferior">Inferior</a></strong> by Angela Saini</p>
-</div>
-<div>
 <p>Pretty interesting. In this book Angela debunks many myths about the supposed biological differences between men and women. This is the first book of this kind that I’ve read; it won’t be the last.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/adam-smith.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/20821053-how-adam-smith-can-change-your-life">How Adam Smith Can Change Your Life</a></strong> by Russ Roberts</p>
-</div>
-<div>
 <p>I read this because my partners dad had it in the house. It’s pretty good; it’s really interesting to see the thoughts from someone from so far back in history. For me, this book resonated with the ideas I read in “Why Buddhism is True”. Worth reading if you happen upon it.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/siddartha.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/11510916-siddartha">Siddartha</a></strong> by Hermann Hesse</p>
-</div>
-<div>
 <p>I was not a fan of this. Recommended to me by my partner; I found it to be way too “on the nose” about enlightenment. I felt like I was being dragged around to understand certain things, in an obliquely mystical way. Maybe it’s because I read it after I read Why Buddhism is True; which is much more direct and scientific.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/last-lecture.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/40611510-the-last-lecture">The Last Lecture</a></strong> by Randy Pausch</p>
-</div>
-<div>
 <p>Quite good; but quite “American”. If you don’t like too much american-style dreams of success and culture, you might not like this. There’s also the <a href="https://www.youtube.com/watch?v=ji5_MqicxSo">video of the talk that inspired it</a> that is well worth watching.</p>
-</div>
-<div>
 <p>I watched the video way back in the day; and thought I’d finally read the book. I wasn’t disappointed, but I’m not sure I got much new out of the book that I didn’t get out of the talk. Still, worth grabbing if you got something out of the talk.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/big-picture.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/26150770-the-big-picture">The Big Picture</a></strong> by Sean Carroll</p>
-</div>
-<div>
 <p>Not great. Before I’d read this, I really had thought I liked Sean Carroll. But, this book comes across to me as very arrogant. As someone who’s read way too many popular physics books, it contained a fair amount that wasn’t new to me (but that’s okay), but also a fair amount of just plain arrogance about what is known, where we can expect progress and what areas are accessible to science.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/lost-connections.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/34921573-lost-connections">Lost Connections</a></strong> by Johann Hari</p>
-</div>
-<div>
 <p>I really enjoyed this. I’ve also suffered (mild, I think) depression, and can really relate to the ideas in this book; namely making connections with people. Probably not the solution for everyone, but interesting reading.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/made-by-humans.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/40626257-made-by-humans">Made by Humans</a></strong> by Ellen Broad</p>
-</div>
-<div>
 <p>Not bad. Fairly introductory thoughts on the topic, but from someone working in policy on this area. Nice to see an Australian view on these issues. Worth reading it you want a broad overview.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/reality.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/29767627-reality-is-not-what-it-seems">Reality is Not What it Seems</a></strong> by Carlo Rovelli</p>
-</div>
-<div>
 <p>This is okay. I get very frustrated these days by books that are implicitly sexist; using language like “when man discovered this”, etc, and this book does that a fair bit. I think I was hoping for this to answer more questions than it did; or to be a bit more detailed. I think I probably just misjudged the intended audience.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/brain-time.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/35187183-your-brain-is-a-time-machine">Your Brain Is a Time Machine</a></strong> by Dean Buonomano</p>
-</div>
-<div>
 <p>Pretty good. I haven’t read much about neuroscience, and I am really mostly confused about the physics of time, and problems like the so-called “<a href="https://en.wikipedia.org/wiki/Arrow_of_time">arrow of time</a>”, and such. So I found this to be pretty interesting, and have some good ideas in it that I hadn’t thought about, such as different “clocks” in the body for different purposes.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <p><img src="/images/books-2018/i-feel-you.jpg" /></p>
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/36808161-i-feel-you">I Feel You</a></strong> by Cris Beam</p>
-</div>
-<div>
 <p>Interesting, but odd. I found this book to be worthwhile reading; in particular because it lead me to some interesting ideas around the <a href="/posts/2018-07-25-ethics-of-AI.html">ethics of AI</a>. Cris goes into weird details of empathy in use in businesses, and life. Overall, worth taking a look at.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <p><img src="/images/books-2018/psychadelics.jpg" /></p>
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/36613747-how-to-change-your-mind">How to Change Your Mind</a></strong> by Michael Pollan</p>
-</div>
-<div>
 <p>Great. Never having taken psychadelics myself, and basically having the view that they are a bit dangerous, this book totally changed my mind. I found it totally fascinating, alongside Why Buddhism is True, in terms of a potential path towards enlightenment. It’s certainly interesting to learn about the history of psychadelic drugs, and think about the connection to mindful meditation.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/nature-of-order.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/3131171-the-nature-of-order">The Nature of Order - Book 1 - The Phenomenon of Life</a></strong> by Christopher Alexander</p>
-</div>
-<div>
 <p>Incredible. As we learned at the start, Christopher Alexander is my personal Jesus and this set of books is essentially his bible. As a result, this is amazing reading for me. He describes what it means for something to “have life”; he goes into detail by way of examples, a mathematical model, and a practical, hands-on theory. He breaks it down into what he refers to as “centers”; things that build on each other.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/value.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/29502362-the-value-of-everything">The Value of Everything</a></strong> by Mariana Mazzucato</p>
-</div>
-<div>
 <p>Amazing. I’m only part of the way through this book, but I love it. We saw Mariana talk at some event a few weeks ago; and she’s an amazing speaker with a incredibly ability to talk with enthusiasm about complicated ideas.</p>
-</div>
-<div>
 <p>This book is all about “value” vs “price”; and what industries should be considered “productive” in how they contributed to the economoy. In particular it’s really opened my eyes about the finance industry. Amazing reading.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <p><img src="/images/books-2018/how-to-sit.jpg" /></p>
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/18342486-how-to-sit">How To Sit</a></strong>, <strong><a href="https://www.goodreads.com/book/show/22928976-how-to-walk">How To Walk</a></strong> by Thich Nhat Hanh</p>
-</div>
-<div>
 <p>Amazing, and useful. I’ve found these two (small) books really good to read when I’m feeling stressed or overwhelmed. They contain many little thoughts that help ground and relax you.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <h3 id="fiction">Fiction</h3>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/the-power.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/29751398-the-power">The Power</a></strong> by Naomi Alderman</p>
-</div>
-<div>
 <p>Pretty good. Best read without too much knowledge of what it’s about. Worth reading.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/the-martian.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/18007564-the-martian">The Martian</a></strong> by Andy Weir</p>
-</div>
-<div>
 <p>Awesome. Instant classic. Great fun.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/all-the-birds.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/25372801-all-the-birds-in-the-sky">All the Birds in the Sky</a></strong> by Charlie Jane Anders</p>
-</div>
-<div>
 <p>Pretty fun. A nice and simple read. I enjoyed it.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/fifth-season.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p>The Broken Earth Series: <strong><a href="https://www.goodreads.com/book/show/19161852-the-fifth-season">The Fifth Season</a></strong>, <strong><a href="https://www.goodreads.com/book/show/26228034-the-obelisk-gate">The Obselisk Gate</a></strong>, <strong><a href="https://www.goodreads.com/book/show/31817749-the-stone-sky">The Stone Sky</a></strong>, by N. K. Jemisin</p>
-</div>
-<div>
 <p>Incredible. The first series of books I read by N. K. Jemisin. I couldn’t put these down, and as soon as I’d finished the first one I bought the remaining two and couldn’t wait to read them.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/inheritance.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/21481566-the-inheritance-trilogy">The Inheritance Trilogy</a></strong> by N. K. Jemisin</p>
-</div>
-<div>
 <p>Really great. N. K. Jemisin is easily my favourite Sci-Fi author at the moment and I’ll probably read anything she writes. So interesting, unique, and innovative.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/dreamblood.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/29775367-the-dreamblood-duology">The Dreamblood Duology</a></strong> by N. K. Jemisin</p>
-</div>
-<div>
 <p>Really great. Quite different, really, from The Inheritance Trilogy, but still amazing.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/less.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p><strong><a href="https://www.goodreads.com/book/show/39927096-less">Less</a></strong> by Andrew Sean Greer</p>
-</div>
-<div>
 <p>Not bad. I picked it up off the table in the bookshop because it had won the Pulitzer Prize, and I figured it might be good. I found it to be pretty good; but utlimately not quite my style.</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <div class="book alt">
-<div>
 <div class="img">
-<div>
 <img src="/images/books-2018/kings.jpg" />
 </div>
-</div>
-</div>
-<div>
 <div class="text">
-<div>
 <p>The Stormlight Archive <strong><a href="https://www.goodreads.com/book/show/7235533-the-way-of-kings">The Way of Kings</a></strong>, <strong><a href="https://www.goodreads.com/book/show/17332218-words-of-radiance">Words of Radiance</a></strong>, <strong><a href="https://www.goodreads.com/book/show/34002132-oathbringer">Oathbringer</a></strong>, by Brandon Sanderson</p>
-</div>
-<div>
 <p>Awesome. I discovered Brandon after looking for something new after finishing <a href="https://www.goodreads.com/series/41526-the-wheel-of-time">The Wheel of Time</a>. I’m really enjoying this series, and can’t wait for the next one!</p>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <p>Hope you enjoyed this list! If you have any suggestions of books, I’d be really interested!</p>
-</div>
 ]]></summary>
 </entry>
 <entry>
@@ -843,18 +903,10 @@ div.alt { background: #eaeaea; }
     
 </div>
 
-<div>
 <p>Just a quick note to introduce the quantum computing slack channel: <a href="http://quantum-computing.slack.com">Quantum Computing on Slack</a>.</p>
-</div>
-<div>
 <p>You can join by requesting an invite at this link: <a href="https://quantum-computing.herokuapp.com">Quantum Computing Slack Invite</a>.</p>
-</div>
-<div>
 <p>Hope to see you there!</p>
-</div>
-<div>
 <p>We’ll follow the <a href="https://scirate.com/conduct">Code of Conduct</a> from <a href="https://scirate.com/">SciRate</a>.</p>
-</div>
 ]]></summary>
 </entry>
 <entry>
@@ -870,94 +922,37 @@ div.alt { background: #eaeaea; }
     
 </div>
 
-<div>
 <p>Google’s <a href="https://colab.research.google.com/notebooks/welcome.ipynb#recent=true">Colaboratory</a> is a hosted notebook environment, with access to GPUs, and even TPUs!</p>
-</div>
-<div>
 <p>It’s really quite handy, but by far the biggest downside is that the sessions time out. It makes sense; I’m sure even Google can’t give out an unlimited amount of compute-resources for free to every person.</p>
-</div>
-<div>
 <h3 id="backgroundproblem">Background/Problem</h3>
-</div>
-<div>
 <p>On the weekend, I wanted to train a few <a href="https://github.com/tensorflow/magenta/tree/master/magenta/models/sketch_rnn">sketch-rnn models</a> on the <a href="https://quickdraw.withgoogle.com/data">quickdraw data</a>.</p>
-</div>
-<div>
 <p>Naively, I figured this would be really easy with Google colab. While it was straightforward to start training, what I noticed is that getting data on to and off of the instance was frustrating, and the timeouts blocked me from getting a good amount of training time.</p>
-</div>
-<div>
 <h3 id="solution">Solution</h3>
-</div>
-<div>
 <p>Happily, colab supports very nice integration with Google services, so my plan was:</p>
-</div>
-<div>
 <ol style="list-style-type: decimal">
-<li><div>
-Download data from Google Cloud Platform (GCP),
-</div></li>
-<li><div>
-Train, or continue training,
-</div></li>
-<li><div>
-Push a checkpoint to Google Drive occasionally,
-</div></li>
-<li><div>
-Repeat until happy.
-</div></li>
+<li>Download data from Google Cloud Platform (GCP),</li>
+<li>Train, or continue training,</li>
+<li>Push a checkpoint to Google Drive occasionally,</li>
+<li>Repeat until happy.</li>
 </ol>
-</div>
-<div>
 <p>Here’s how it looks, in code:</p>
-</div>
-<div>
 <p><strong>Download data from GCP</strong></p>
-</div>
-<div>
 <p>As I’m working with the quickdraw data, it’s already on the Google Cloud Platform, so this was very easy. In a cell, I simply ran the following to get the “eye” quickdraw data:</p>
-</div>
-<div>
 <pre><code>!gsutil cp gs://quickdraw_dataset/sketchrnn/eye.npz .</code></pre>
-</div>
-<div>
 <p>(Note that the <code>gsutil</code> command is already installed on the instance.)</p>
-</div>
-<div>
 <p><strong>Train, or continue training, and save to Drive</strong></p>
-</div>
-<div>
 <p>As I’m using the <code>sketch_rnn</code> model, I first simply install <code>magenta</code> (and I have to pick a Python 2 environment.)</p>
-</div>
-<div>
 <pre><code>!pip install magenta</code></pre>
-</div>
-<div>
 <p>Now, there’s some considerations. Recalling that I’m going to be pushing my checkpoints to Google Drive, I need to authenticate with Google Drive. This is how that looks:</p>
-</div>
-<div>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">from</span> google.colab <span class="im">import</span> auth
 auth.authenticate_user()</code></pre></div>
-</div>
-<div>
 <p>Then you’ll be prompted to copy in a code. Once that’s done, you can connect to Google Drive like so:</p>
-</div>
-<div>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">from</span> googleapiclient.discovery <span class="im">import</span> build
 drive_service <span class="op">=</span> build(<span class="st">&#39;drive&#39;</span>, <span class="st">&#39;v3&#39;</span>)</code></pre></div>
-</div>
-<div>
 <p>Now, if I’m training from scratch, I’ll run something like this:</p>
-</div>
-<div>
 <pre><code>!sketch_rnn_train --log_root=logs --data_dir=./ --hparams=&quot;data_set=[eye.npz],num_steps=501&quot;</code></pre>
-</div>
-<div>
 <p>This will run for however long, and utlimately produce checkpoints in the <code>./logs</code> folder, supposing that <code>eye.npz</code> exists in the present directory.</p>
-</div>
-<div>
 <p>Once that’s completed, I start my main training-pushing loop. Firstly, there’s a bit of busywork to zip files, get the latest checkpoint number, and upload it to Google Drive:</p>
-</div>
-<div>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> os
 <span class="im">import</span> zipfile
 <span class="im">from</span> googleapiclient.http <span class="im">import</span> MediaFileUpload
@@ -1006,11 +1001,7 @@ drive_service <span class="op">=</span> build(<span class="st">&#39;drive&#39;</
                                          fields<span class="op">=</span><span class="st">&quot;id&quot;</span>).execute()
   file_id <span class="op">=</span> created.get(<span class="st">&quot;id&quot;</span>)
   <span class="cf">return</span> file_id</code></pre></div>
-</div>
-<div>
 <p>Then, the main loop:</p>
-</div>
-<div>
 <div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">iterations <span class="op">=</span> <span class="dv">200</span>
 <span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(iterations):
   <span class="bu">print</span>(<span class="st">&quot;Iteration &quot;</span> <span class="op">+</span> <span class="bu">str</span>(k))
@@ -1019,40 +1010,19 @@ drive_service <span class="op">=</span> build(<span class="st">&#39;drive&#39;</
   x <span class="op">=</span> os.system(cmd)
   zip_model(<span class="st">&quot;model&quot;</span>, get_largest_num())
   upload_to_drive()</code></pre></div>
-</div>
-<div>
 <p>So, all that does is run the main training command, to reload the model from the latest checkpoint and continue training, then zips and uploads!</p>
-</div>
-<div>
 <p>Set the iterations to whatever you wish; chances are your instance will never run for that long anyway; the main point is to push up the checkpoints every-so-often (for me, every 1000 steps of the sketch_rnn model; which takes about 1 hour or so, depending on params.)</p>
-</div>
-<div>
 <p><strong>Brining down the most recent Drive checkpoint</strong></p>
-</div>
-<div>
 <p>Now, when your instance goes away, you’ll need to bring down the most recent checkpoint <em>from</em> Drive. I did this somewhat manually, but it works well enough:</p>
-</div>
-<div>
 <pre><code># Mount Google Drive as a folder
 from google.colab import drive
 drive.mount(&#39;/content/gdrive&#39;)</code></pre>
-</div>
-<div>
 <pre><code># Extract latest model zip file
 !cp /content/gdrive/My\ Drive/model\ \(3\).zip logs/model.zip &amp;&amp; cd logs &amp;&amp; unzip model.zip</code></pre>
-</div>
-<div>
 <p>Note that Google Drive numbers all the files as copies, like “model (4).zip”, “model (5).zip”, when you upload the same name. On the web interface, it only shows one file, but gives you history. Do as you wish here; I was a bit lazy.</p>
-</div>
-<div>
 <h3 id="thats-it">That’s it!</h3>
-</div>
-<div>
 <p>Hope this helps you do some training!</p>
-</div>
-<div>
 <p>You can read more about other ways to access data from Google Colaboratory <a href="https://colab.research.google.com/notebooks/io.ipynb">here</a>.</p>
-</div>
 ]]></summary>
 </entry>
 <entry>
@@ -1068,16 +1038,9 @@ drive.mount(&#39;/content/gdrive&#39;)</code></pre>
     
 </div>
 
-<div>
 <p>In “<a href="https://www.goodreads.com/book/show/616875.The_Oregon_Experiment">The Oregon Experiment</a>”, the authors consider the following budgeting scenario.</p>
-</div>
-<div>
 <p>Suppose you’re in the following situation: You have ~$2,500,000 that you’d like to allocate to construction projects in your community.</p>
-</div>
-<div>
 <p>There are many ways you can allocate this money to projects of varying sizes. Consider the following options:</p>
-</div>
-<div>
 <style type="text/css">
 table.budget {
 margin: 10px;
@@ -1114,768 +1077,263 @@ display: flex;
 flex-direction: column;
 }
 </style>
-</div>
-<div>
 <div class="tables">
 <div>
-<div>
-<div>
 <h3 id="option-1---all-projects-considered-equally">Option 1 - All projects considered equally</h3>
-</div>
-<div>
 <table class="budget">
-</div>
-<div>
 <tr>
-</div>
-<div>
 <th>
-</div>
-<div>
 category
-</div>
-<div>
 </th>
-</div>
-<div>
 <th class="m">
-</div>
-<div>
 number of projects
-</div>
-<div>
 </th>
-</div>
-<div>
 <th class="r">
-</div>
-<div>
 rough total cost based on averages
-</div>
-<div>
 </th>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 A &lt; $1000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 1
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $500
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 B $1000-$10,000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 1
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $5,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 C $10,000-$100,000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 1
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $50,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 D $100,000-$1,000,000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 1
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $500,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 E &gt; $1,000,000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 1
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $2,000,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr class="total">
-</div>
-<div>
 <td>
-</div>
-<div>
 <b>totals</b>
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 5
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 ~$2,600,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 </table>
 </div>
-</div>
-</div>
-<div>
-<div>
 <div>
 <h3 id="option-2---projects-considered-unequally">Option 2 - Projects considered unequally</h3>
-</div>
-<div>
 <table class="budget">
-</div>
-<div>
 <tr>
-</div>
-<div>
 <th>
-</div>
-<div>
 category
-</div>
-<div>
 </th>
-</div>
-<div>
 <th class="m">
-</div>
-<div>
 number of projects
-</div>
-<div>
 </th>
-</div>
-<div>
 <th class="r">
-</div>
-<div>
 rough total cost based on averages
-</div>
-<div>
 </th>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 A &lt; $1000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 1000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $500,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 B $1000-$10,000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 100
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $500,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 C $10,000-$100,000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 10
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $500,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 D $100,000-$1,000,000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 1
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $500,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 E &gt; $1,000,000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 ⅒ th of a project
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $500,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr class="total">
-</div>
-<div>
 <td>
-</div>
-<div>
 <b>totals</b>
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 ~1100
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $2,500,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 </table>
 </div>
-</div>
-</div>
-<div>
-<div>
 <div>
 <h3 id="option-3---a-middle-ground">Option 3 - A middle ground</h3>
-</div>
-<div>
 <table class="budget">
-</div>
-<div>
 <tr>
-</div>
-<div>
 <th>
-</div>
-<div>
 category
-</div>
-<div>
 </th>
-</div>
-<div>
 <th class="m">
-</div>
-<div>
 number of projects
-</div>
-<div>
 </th>
-</div>
-<div>
 <th class="r">
-</div>
-<div>
 rough total cost based on averages
-</div>
-<div>
 </th>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 A &lt; $1000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 500
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $250,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 B $1000-$10,000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 50
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $250,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 C $10,000-$100,000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 10
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $500,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 D $100,000-$1,000,000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 1
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $500,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr>
-</div>
-<div>
 <td>
-</div>
-<div>
 E &gt; $1,000,000
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 1
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $1,000,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 <tr class="total">
-</div>
-<div>
 <td>
-</div>
-<div>
 <b>totals</b>
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="m">
-</div>
-<div>
 ~550
-</div>
-<div>
 </td>
-</div>
-<div>
 <td class="r">
-</div>
-<div>
 $2,500,000
-</div>
-<div>
 </td>
-</div>
-<div>
 </tr>
-</div>
-<div>
 </table>
 </div>
 </div>
-</div>
-</div>
-</div>
-<div>
 <p>The main conclusion is that, for the same amount of money, we can chose to either support lots of small projects, or few total projects.</p>
-</div>
-<div>
 <p>One of the main premises of the book, is that good change is made locally, by locals. In this way, schemes 2 and 3 are a <em>significant</em> improvement over Option 1.</p>
-</div>
-<div>
 <p>One of the best initiatives that Victoria is doing along these lines is the “<a href="https://pickmyproject.vic.gov.au/">Pick My Project</a>” program.</p>
-</div>
-<div>
 <p>However, I think it’s also interesting to think about this in relation to other areas:</p>
-</div>
-<div>
 <ul>
-<li><div>
-Health: Should you make one big change? Or many small ones?
-</div></li>
-<li><div>
-Programming: Should you write one big program? Or many little ones?
-</div></li>
-<li><div>
-Management: Should you set big goals from the top? Or should you empower the people below you to set their own goals?
-</div></li>
+<li>Health: Should you make one big change? Or many small ones?</li>
+<li>Programming: Should you write one big program? Or many little ones?</li>
+<li>Management: Should you set big goals from the top? Or should you empower the people below you to set their own goals?</li>
 </ul>
-</div>
 ]]></summary>
 </entry>
 <entry>
@@ -1891,40 +1349,18 @@ Management: Should you set big goals from the top? Or should you empower the peo
     
 </div>
 
-<div>
 <p>Over on the <a href="https://github.com/silverpond">Silverpond</a> GitHub account we recently open-sourced the little <a href="https://github.com/silverpond/dance-booth">dance-booth</a> project that we’ve been playing with for a while now.</p>
-</div>
-<div>
 <p><img src="/images/dance-booth.jpg" width="600" /></p>
-</div>
-<div>
 <p>It’s a very simple little wrapper around their <a href="https://github.com/tensorflow/tfjs-models/tree/master/posenet">PoseNet</a> demo.</p>
-</div>
-<div>
 <p>It’s a neat little repo, that runs entirely offline, and, from a webcam or anything that can be accessed via the browser, can be used to capture dances in three forms:</p>
-</div>
-<div>
 <ul>
-<li><div>
-The raw video from the webcam,
-</div></li>
-<li><div>
-JSON data of the poses per frame,
-</div></li>
-<li><div>
-Video of the skeleton dancing on the dance floor.
-</div></li>
+<li>The raw video from the webcam,</li>
+<li>JSON data of the poses per frame,</li>
+<li>Video of the skeleton dancing on the dance floor.</li>
 </ul>
-</div>
-<div>
 <p>You’ll find all of these saved under the date-and-time in the <code>./saved-videos</code> folder. The JSON can be used to recreate the entire dance in any form you wish; it gives the coords of the various joints.</p>
-</div>
-<div>
 <p>At the present moment it the dance capture only starts when the people in frame all raise their hands above their heads.</p>
-</div>
-<div>
 <p>Feel free to change and play with as you wish!</p>
-</div>
 ]]></summary>
 </entry>
 <entry>
@@ -1940,725 +1376,257 @@ Video of the skeleton dancing on the dance floor.
     
 </div>
 
-<div>
 <p><small>(This series of posts originally appeared on the <a href="https://silverpond.com.au/2018/09/17/qml-plus-2018-day-1/">Silverpond blog</a>)</small></p>
-</div>
-<div>
 <h2 id="day-1">Day 1</h2>
-</div>
-<div>
 <center>
-</div>
-<div>
 <img src="/images/innsbruck.jpg" width="800" />
-</div>
-<div>
 </center>
-</div>
-<div>
 <p>Well, we made it to Innsbruck, Austria!</p>
-</div>
-<div>
 <p>It was a huge journey to get here, and I have to tell you, Austria in general, and Innsbruck in particular, is absolutely beautiful.</p>
-</div>
-<div>
 <p>On the train ride from Vienna to Salzburg, we spent most of the time looking out of the window taking photos. The weather is amazing; it’s perfectly warm and sunny, and it’s amazing to walk around the town and just see mountains everywhere.</p>
-</div>
-<div>
 <p>But, I’m here, of course, on business, and in particular, primarily to attend the QML+ – <em><a href="https://www.uibk.ac.at/congress/quantum-machine-learning-plus/index.html.en">Quantum Machine Learning … Plus</a></em> – conference.</p>
-</div>
-<div>
 <p>It’s the night of Day 1, so here’s a review of what happened:</p>
-</div>
-<div>
 <h3 id="opening-talk-why-qml">Opening Talk: Why QML+?</h3>
-</div>
-<div>
 <p><em>by Hans Briegel</em></p>
-</div>
-<div>
 <p>Hans Briegel, famous partly for his involvement measurement-based quantum computation (and of particular relevance to me, because this was part of what my Masters work was about) gave an overview talk about why we might care to think about how quantum computing could play a role in machine learning.</p>
-</div>
-<div>
 <p>I quite enjoyed one of his ideas, which is thinking about how “Embodied AI” relates to the ideas of “information is physical” insofaras both imply that in order to think about the primary subject, we need to involve physics. This has been particularly fruitful in physics and information theory, and relates to some very far-reaching ideas, such as <a href="https://en.wikipedia.org/wiki/Firewall_(physics)">black holes</a>.</p>
-</div>
-<div>
 <p>He used this as motivation to study a “Artificial Agent” (or in standard lingo, <em>Reinforcement learning</em>) in the quantum setting:</p>
-</div>
-<div>
 <p><img src="/images/agent-env-qc.png" width="600" /></p>
-</div>
-<div>
 <p>His observation is: What is quantum? There are four options:</p>
-</div>
-<div>
 <ul>
-<li><div>
-<em>CC</em>: Classical Agent, Classical Environment
-</div></li>
-<li><div>
-<em>CQ</em>: Classical Agent, Quantum Environment
-</div></li>
-<li><div>
-<em>QC</em>: Quantum Agent, Classical Environment
-</div></li>
-<li><div>
-<em>QQ</em>: Quantum Agent, Quantum Environment
-</div></li>
+<li><em>CC</em>: Classical Agent, Classical Environment</li>
+<li><em>CQ</em>: Classical Agent, Quantum Environment</li>
+<li><em>QC</em>: Quantum Agent, Classical Environment</li>
+<li><em>QQ</em>: Quantum Agent, Quantum Environment</li>
 </ul>
-</div>
-<div>
 <p>He noted that in the Quantum-Quantum setting, there are some foundational open problems:</p>
-</div>
-<div>
 <ul>
-<li><div>
-How do you measure that you’re learning?
-</div></li>
-<li><div>
-What does it mean to “act” in a fully quantum setting?
-</div></li>
-<li><div>
-What role does decoherence play?
-</div></li>
+<li>How do you measure that you’re learning?</li>
+<li>What does it mean to “act” in a fully quantum setting?</li>
+<li>What role does decoherence play?</li>
 </ul>
-</div>
-<div>
 <p>I don’t think even these questions are quite clear to me, let alone the answers; but still interesting to think about.</p>
-</div>
-<div>
 <p>One idea/question I had is: What is the simplest truly quantum reinforcement learning problem?</p>
-</div>
-<div>
 <h3 id="quantum-algorithms-for-the-hopfield-network-quantum-gradient-descent-and-monte-carlo">Quantum algorithms for the Hopfield network, quantum gradient descent, and Monte Carlo</h3>
-</div>
-<div>
 <p><em>by Patrick Rebentrost</em></p>
-</div>
-<div>
 <p>Next up was Patrick, who gave a far-reaching talk on a variety of topics that he and his colleagues have been researching over the last few years.</p>
-</div>
-<div>
 <p>He started off by reminding us of a bunch of challenges that he posed in a prior paper:</p>
-</div>
-<div>
 <ol style="list-style-type: decimal">
-<li><div>
-The “input” challenge - How to get data in to a quantum network? It turns out this is very subtle.
-</div></li>
-<li><div>
-The “costing” challenge - Just how many qubits are required to implement these algorithms? How practical is it to build?
-</div></li>
-<li><div>
-The “output” challenge - Even if we build an efficient quantum machine learning algorithm that produces a final state that encodes the answer; how do we read out the answer efficiently? It takes many measurements to extract the known state, so is it efficient to do so?
-</div></li>
-<li><div>
-The “benchmarking” challenge - <em>even if</em> we solve all the above, how does it compare to classical algorithms? It can be very hard to prove that the quantum algorithm is better than any possible classical one.
-</div></li>
+<li>The “input” challenge - How to get data in to a quantum network? It turns out this is very subtle.</li>
+<li>The “costing” challenge - Just how many qubits are required to implement these algorithms? How practical is it to build?</li>
+<li>The “output” challenge - Even if we build an efficient quantum machine learning algorithm that produces a final state that encodes the answer; how do we read out the answer efficiently? It takes many measurements to extract the known state, so is it efficient to do so?</li>
+<li>The “benchmarking” challenge - <em>even if</em> we solve all the above, how does it compare to classical algorithms? It can be very hard to prove that the quantum algorithm is better than any possible classical one.</li>
 </ol>
-</div>
-<div>
 <p>Next, he talked about a quantum algorithm for training a so-called “Hopfield” neural network via the Hebbian learning procedure.</p>
-</div>
-<div>
 <p>The Hopfield network is simply one in each every node is connected to every other node; and there is only one layer, and every node is both input and output (there are no layers, essentially). This may seem odd, and you should rightly wonder how you could train such a thing. One way to train it turns out to be the so-called “Hebbian” learning, which is inspired by the Human brain. The idea is captured by the phrase: “Neurons that fire together wire together”. With this idea in hand, it’s possible to develop a scheme to encode all this into a quantum computer, and perform all the updates and training. You can find more <a href="https://arxiv.org/pdf/1710.03599.pdf">here</a>.</p>
-</div>
-<div>
 <p>For the everyday deep learning person, these ideas may sound a bit odd. Rightly so, because it’s not standard practice. Essentially the only reason to focus on these for in the quantum machine learning setting is that this is a network for which we <em>can</em> come up with a scheme to implement it on a quantum computer. A natural question is: Can we adapt the Hopefield-network techniques to work with multiple layers? I tentatively feel like the answer could be “yes”, but I haven’t thought a lot about it.</p>
-</div>
-<div>
 <p>The next paper he talked about is this one: <a href="https://scirate.com/arxiv/1612.01789">Quantum gradient descent and Newton’s method for constrained polynomial optimization</a>.</p>
-</div>
-<div>
 <p>I happened to read this one when it came out, because it was quite a big step. Previously, we had no idea how to even compute a quantum gradient, so this contribution was huge.</p>
-</div>
-<div>
 <p>Unfortunately, the main problem of this paper is that the algorithm gets exponentially slower as the number of training steps increases. This is, at least naively, incredibly problematic for typical machine learning, where the number of steps is in the hundreds of thousands. In the paper they make the argument that oftentimes good results can be achieved after a very small number of steps, but it’s not clear to me how practical this is.</p>
-</div>
-<div>
 <p>His final topic was <a href="https://scirate.com/arxiv/1805.00109">Quantum computational finance</a>; he was basically out of time, so didn’t go in to much detail, but the main idea is that again, using a standard technique in quantum computing called “amplitude amplification”, one can achieve a quadratic speedup in a certain kind of derivative-pricing. It turns out that banks and genuinely interested in these techniques, because being able to price something in say ~2 days, instead of 7 days, is a significant advantage market-wise.</p>
-</div>
-<div>
 <p>Partick ended with a funny remark along these lines, which is that, the beauty of working in the finance world is that you don’t need to <em>prove</em> anything, you just simply build it, and let it go around making trades in the market; if it doesn’t work, you simply lose money!</p>
-</div>
-<div>
 <h2 id="lunch">Lunch</h2>
-</div>
-<div>
 <p>Over lunch, I had a really nice chat with <a href="https://github.com/pooya-git">Pooya Ronagh</a> from <a href="https://1qbit.com/">1Qbit</a> and <a href="https://homepages.cwi.nl/~rdewolf/">Ronald de Wolf</a>. We chatted largely about how the practical every-day machine learning could be aided by quantum techniques. Ronald pushed hard to understand what areas quantum researchers should focus on, and Pooya and I were trying to come up with ideas. Pooya had an interesting comment that, in many ways, faster machine learning isn’t super useful, because for the physical cost of a quantum computer, you can already buy significant hardware and get great results. So bad results faster doesn’t really help, in a foundational way.</p>
-</div>
-<div>
 <p>Some thoughts we had is that maybe just flat-out alternatives to gradient descent would be interesting; i.e. we know there are areas where gradient-descent style optimisation is not great: <a href="http://silky.github.io/posts/2018-06-16-when-will-google-translate-be-great.html">translation</a>, program synthesis, neural architecture search, etc.</p>
-</div>
-<div>
 <p>In any case, it was a very inspiring chat, and I was really glad to have met them!</p>
-</div>
-<div>
 <h2 id="programmable-superpositions-with-hebbian-un-learning">Programmable Superpositions with Hebbian (un)-Learning</h2>
-</div>
-<div>
 <p><em>by Wolfgang Lechner</em></p>
-</div>
-<div>
 <p>This, I must say, was quite technical, and I didn’t quite follow most of it. But I did get the general idea.</p>
-</div>
-<div>
 <p>The main tool of quantum machine learning is the so-called <a href="https://scirate.com/arxiv/0811.3171">HHL algorithm</a> (see also: <a href="https://scirate.com/arxiv/1802.08227">Quantum linear systems: a primer</a>). One thing it requires is efficient loading of the training data. It turns out that typically, if you want to load the training data into a quantum algorithm, in general you’ll need to do an exponential amount of work in the number of training samples. Which is hugely problematic. I think I need to understand this a bit more, but at least the basic idea was clear: the data-loading needs to be sped up.</p>
-</div>
-<div>
 <p>The main contribution of this work is that, through a rather elaborate procedure, partially described here: <a href="https://arxiv.org/pdf/1708.02533.pdf">Programmable superpositions of Ising configurations</a> (but more in upcoming publications), it’s possible to prepare the required state by encoding it into a Hamiltonian, and then letting the Hamiltonian evolve via adiabatic evolution. How? Hebbian Learning, evidentally! I admit that I didn’t follow most of this talk, but I do think this kind of thing is quite interesting, and there’s definitely a need to solve this general, and reasonably embarassing problem.</p>
-</div>
-<div>
 <hr />
-</div>
-<div>
 <h2 id="day-2">Day 2</h2>
-</div>
-<div>
 <p><img src="/images/innsbruck-2.jpg" width="800" /></p>
-</div>
-<div>
 <p>We’re back. There first two talks were quite great, and there was another that was interesting and is worth a mention.</p>
-</div>
-<div>
 <h3 id="opening-talk-artificial-intelligence-quantum-computing">Opening Talk: Artificial Intelligence &amp; Quantum Computing</h3>
-</div>
-<div>
 <p>by Aske Plaat</p>
-</div>
-<div>
 <p>Even though it had a reasonably uninspiring title, this talk was actually excellent, and should’ve, in fact, been the opening talk of the conference.</p>
-</div>
-<div>
 <p>Aske introduced some motivation, and introduced some simplifying assumptions about AI to try and cut off typical arguments about what it means to be “intelligent”. He defined his working notion, which is “to <em>be</em> intelligent is to <em>act</em> intelligently”, which later was quite controversial to a number of people.</p>
-</div>
-<div>
 <p>He had a unifying way of explaining why we’ve seen such a boom of AI recently, which is:</p>
-</div>
-<div>
 <ol style="list-style-type: decimal">
-<li><div>
-Algorithms
-</div></li>
-<li><div>
-Data
-</div></li>
-<li><div>
-Speed
-</div></li>
+<li>Algorithms</li>
+<li>Data</li>
+<li>Speed</li>
 </ol>
-</div>
-<div>
 <p>I think this is a nice way of phrasing it. He then dove into the various parts in more detail, starting with <em>algorithms</em>.</p>
-</div>
-<div>
 <p>He introduced what he sees as two main camps of machine learning:</p>
-</div>
-<div>
 <ul>
-<li><div>
-Connectionist AI, and,
-</div></li>
-<li><div>
-Symbolic AI.
-</div></li>
+<li>Connectionist AI, and,</li>
+<li>Symbolic AI.</li>
 </ul>
-</div>
-<div>
 <p>Connectionist AI, as he sees it, is the kind that we all know and love: Deep learning, neural networks, “bottom-up” reasoning, function approximation, etc.</p>
-</div>
-<div>
 <p>Symbolic AI, as he sees it, is more related to philosophy, logics, ontologies, expert systems, planning, Q-Learning, and other kind of pre-defined “slow-thinking/high-level reasoning” ideas.</p>
-</div>
-<div>
 <p>The main point he makes with the distinction is that maybe more merging between the two schools of thought needs to take place. He gives the example of AlphaGo as being a case where the two ideas merged. Another one I thought of is the idea of <a href="https://scirate.com/arxiv/1803.05252">Algebraic Machine Learning</a> which certainly has some grand claims, but is at least mildly interesting for it’s ideas.</p>
-</div>
-<div>
 <p>He then made some comments about how speed is also relevant, and without it we wouldn’t see such a boom. Again this is of interest to quantum-computing types, because being faster than classical computers is fundamentally what the field is all about, and that’s where there’s been a lot of focus recently (i.e. quantum speedups over classical algorithms).</p>
-</div>
-<div>
 <p>Aske also noted the abundance of benchmarks for classical machine learning, which became a theme for a few of the questions during question time. In particular we discussed who, if anyone, and how, if possible, to come up with some good benchmark datasets and problems for quantum machine learning. Presently, no-one has anything good along those lines.</p>
-</div>
-<div>
 <p>He then noted some challenges in classical ML, and made the observation that <em>simply</em> achieving a speedup won’t solve these problems (for example, the adversial attacks, or the delayed credit assignment problem). The claim is that we need to put some effort into what truly <em>quantum</em> algorithms might look like.</p>
-</div>
-<div>
 <p>The main thing I got out of the talk was the idea that we should be thinking about making new benchmarks for quantum machine learning.</p>
-</div>
-<div>
 <h3 id="quantum-assisted-machine-learnnig-in-near-term-quantum-devices">Quantum-Assisted Machine Learnnig in Near-Term Quantum Devices</h3>
-</div>
-<div>
 <p>by Alejandro Perdomo-Ortiz</p>
-</div>
-<div>
 <p>Alejandro is very experienced in this field, it turns out. He’s been leading a team at NASA working on QML for the last 5 years, and now has moved to Rigetti, where he’s conducting research on the frontiers of quantum machine learning (also, Rigetti has a <a href="https://www.rigetti.com/qcs">quantum cloud service</a> coming …)</p>
-</div>
-<div>
 <p>At NASA his drive was to drive interest in the practical usage of the quantum devices that NASA had purchased (in particular the D-Wave).</p>
-</div>
-<div>
 <p>He noted that quantum chemistry, and the simulation of quantum systems, was the most natural idea, and everyone should be looking at it. But furthermore, he was tasked with thinking of other problems that could be mapped to these particular optimisation devices. Naturally, one idea is just straightforwad discrete optimisation; finding some satisfying assignment of variables for the minimisation of some particular cost function. And he conducted some early work here mapping protein folding to a certain kind of optimisation problem.</p>
-</div>
-<div>
 <p>He echo’d Aske’s thoughts and said that we should be focusing on designing new algorithms, over just simply speed.</p>
-</div>
-<div>
 <p>One of the most memorably quotes from his talk was “Look for the intractable, the more intractable the better, for me”.</p>
-</div>
-<div>
 <p>One thing he spent a bit of time on was using the D-Wave to again implement one of these Hopfield networks (he called it here a “fully-visible model”), on a simplified digit dataset. Turned out it worked! Which essentially demonstrated that it was indeed possible to map a ML problem onto the device, and then have the device learn it’s own weights (couplings, here) which would allow it to do well at generating new digits!</p>
-</div>
-<div>
 <p>Following this work, they then observed that infact they could train an autoencoder entirely classically, and then use the embedding vectors for all the training data as-in the setup above to <a href="https://arxiv.org/pdf/1801.07686.pdf">train a kind of hybrid generative</a> system:</p>
-</div>
-<div>
 <p><img src="/images/auto-enc-qc-classical.png" /></p>
-</div>
-<div>
 <p>I must say that I found this both interesting and confusing. It’s interesting because it’s a great way to use the complicated device to do “real” work, even when it has alone a very small amount of input nodes (it was something like 46, here, for this device). But it’s also confusing because most of the “juice” in the network is in the classical weights, not in the embedding vector itself. When I asked Alejandro about this, he said that it was mainly a way to demonstrate the hybrid set up, and that over time the idea is to make more regions quantum, and see how that changes things. I find it <em>very</em> interesting to think about how one would even go about jointly training a hybrid quantum-classical system.</p>
-</div>
-<div>
 <p>The next idea he covered was the <a href="https://arxiv.org/pdf/1803.00745.pdf">learning of quantum circuits</a> see also <a href="https://arxiv.org/pdf/1804.04168.pdf">Differentiable Learning of Quantum Circuit Born Machine</a>.</p>
-</div>
-<div>
 <p>This I think is a particularly great idea, and his approach was to focus on generate certain kinds of entangled states, with great results. They managed to find a state that has more entanglement, compared to the standard one, with this scheme. They also made some interesting observations about the expressive power of the depth of the circuits and what kind of states they can possible prepare.</p>
-</div>
-<div>
 <p>His final insights were:</p>
-</div>
-<div>
 <ol style="list-style-type: decimal">
-<li><div>
-Focus on the hardest problems of interest to ML exports, as this will be the quickest path to demonstrating a quantum advantage in the near-term.
-</div></li>
-<li><div>
-Focus on novel hybrid quantum-classical approaches.
-</div></li>
+<li>Focus on the hardest problems of interest to ML exports, as this will be the quickest path to demonstrating a quantum advantage in the near-term.</li>
+<li>Focus on novel hybrid quantum-classical approaches.</li>
 </ol>
-</div>
-<div>
 <h3 id="lunch-1">Lunch</h3>
-</div>
-<div>
 <p>For lunch, Gala and I decided to enjoy the beautiful park right next to the venue! By chance, there was a beer garden inside!</p>
-</div>
-<div>
 <h3 id="machine-learning-for-designing-new-quantum-experiments">Machine learning for designing new quantum experiments</h3>
-</div>
-<div>
 <p>by Alexey Melnikov</p>
-</div>
-<div>
 <p>This talk was essentially another kind of program-synthesis problem, but this time in the language of optical elements. The idea is that, given some set of optical elements, and some number of qubits, how can we find all the possible sets of operations that make entangled states?</p>
-</div>
-<div>
 <p>There new idea is to use a Reinforcement-Learning-inspired framework called “<a href="http://projectivesimulation.org">Projective Simulation</a>”. I must say that I found the framework a little odd, but they did get good results, and it’s available as a python library for you to experiment with!</p>
-</div>
-<div>
 <h3 id="the-quantum-way-of-doing-computations-new-technologies-for-the-quantum-age">The Quantum Way of Doing Computations: New Technologies for the Quantum Age</h3>
-</div>
-<div>
 <p>by Rainer Blatt</p>
-</div>
-<div>
 <p>This talk was a bit oddly-placed. It was an overview of how quantum computing works, and an introduction to the trapped-ion style of quantum computing.</p>
-</div>
-<div>
 <h3 id="panel">Panel</h3>
-</div>
-<div>
 <p>The last event of the day was a very large panel of most of the speakers (~10 people) with a bunch of questions prepared by the organisers that were aimed to be thought-provoking. The best comment that came out of the entire discussion was from Matthias Troyer:</p>
-</div>
-<div>
 <p>“That’s how you get a quantum advantage with zero qubits”</p>
-</div>
-<div>
 <p>He was describing the recent work by Ewin Tang: <a href="https://scirate.com/arxiv/1807.04271">A quantum-inspired classical algorithm for recommendation systems</a> (which we actually already covered <a href="http://silverpond.com.au/2018/07/22/interesting-reads-in-quantum-computing-machine-learning-and-ethics.html">here</a>).</p>
-</div>
-<div>
 <h3 id="open-areas-of-investigation">Open areas of investigation</h3>
-</div>
-<div>
 <p>Here’s the list of open/interesting topics from today:</p>
-</div>
-<div>
 <ol style="list-style-type: decimal">
-<li><div>
-Quantum datasets; benchmark problems,
-</div></li>
+<li>Quantum datasets; benchmark problems,</li>
 </ol>
-</div>
-<div>
 <ul>
-<li><div>
-Detecting entanglement?
-</div></li>
-<li><div>
-Creation of states?
-</div></li>
-<li><div>
-Classifying entangled vs. non-entangled?
-</div></li>
-<li><div>
-How to generalise across qubit sizes?
-</div></li>
-<li><div>
-Reinforcement learning problems? Quantum games? Quantum chess? Communication games?
-</div></li>
+<li>Detecting entanglement?</li>
+<li>Creation of states?</li>
+<li>Classifying entangled vs. non-entangled?</li>
+<li>How to generalise across qubit sizes?</li>
+<li>Reinforcement learning problems? Quantum games? Quantum chess? Communication games?</li>
 </ul>
-</div>
-<div>
 <ol start="2" style="list-style-type: decimal">
-<li><div>
-<p>What does truly quantum ML look like? Let’s stop trying to map classical algorithms to quantum ones, and just make up new ones</p>
-</div></li>
-<li><div>
-This hybrid idea of linking parts of a network to qubits and parts being classical
-</div></li>
+<li><p>What does truly quantum ML look like? Let’s stop trying to map classical algorithms to quantum ones, and just make up new ones</p></li>
+<li>This hybrid idea of linking parts of a network to qubits and parts being classical</li>
 </ol>
-</div>
-<div>
 <ul>
-<li><div>
-How do you train these things?
-</div></li>
+<li>How do you train these things?</li>
 </ul>
-</div>
-<div>
 <ol start="4" style="list-style-type: decimal">
-<li><div>
-Near-term, if we want to do quantum ML, we should focus on what actual hardware will be used, and target our approaches to those models.
-</div></li>
+<li>Near-term, if we want to do quantum ML, we should focus on what actual hardware will be used, and target our approaches to those models.</li>
 </ol>
-</div>
-<div>
 <hr />
-</div>
-<div>
 <h2 id="day-3">Day 3</h2>
-</div>
-<div>
 <p><img src="/images/innsbruck-day-3.png" width="800" /></p>
-</div>
-<div>
 <p>Today, there were only 3 talks; and we had a free afternoon! So we climbed* the big mountain!</p>
-</div>
-<div>
 <p>*: Okay okay, by “climbed” I mean “took the lifts”. But there were 3 lifts!</p>
-</div>
-<div>
 <h3 id="opening-talk-learning-from-quantum-data-strengths-and-weaknesses">Opening Talk: Learning from Quantum Data: Strengths and Weaknesses</h3>
-</div>
-<div>
 <p>by Ronald de Wolf</p>
-</div>
-<div>
 <p>This was a great and classic talk in the same vein as many talks in the theory of quantum computation.</p>
-</div>
-<div>
 <p>Ronald addressed the natural problem of what you could do if you your data was given you to as a quantum state (thereby ignoring all the problems that have been brought up with QRAM in the past few days; let’s just suppose we have the state!).</p>
-</div>
-<div>
 <p>The proposal is to consider supervised learning in a very formal sense; imagine we have a function: <span class="math inline"><em>f</em> : {0, 1}<sup><em>n</em></sup> → {0, 1}</span>.</p>
-</div>
-<div>
 <p>Then, we can think of it as a supervised learning problem where we have <span class="math inline"><em>n</em></span> binary features, producing a single binary output, and we have our examples in the form: <span class="math inline">(<em>x</em>, <em>f</em>(<em>x</em>))</span>.</p>
-</div>
-<div>
 <p>Ronald wanted us to consider the so-called <em>sample</em> complexity, i.e. how many times do we have to evaluate <span class="math inline"><em>f</em></span>, instead of the more standard <span class="math inline"><em>t</em><em>i</em><em>m</em><em>e</em></span> complexity. In this sense here, the ideas are at least related, because fewer samples will take less time.</p>
-</div>
-<div>
 <p>In general we’d need <span class="math inline">2<sup><em>n</em></sup></span> examples to learn <span class="math inline"><em>f</em></span> fully, but we’ll want to do <em>efficient</em> learning, so we’d like to learn from far fewer queries than that.</p>
-</div>
-<div>
 <p>Ronald preferred to work in the framework of PAC-learnability, which was introduced by Leslie Valiant in 1984. Leslie has a nice readable book on the topic (I’ve unfortunately lost my copy a while ago) which is well worth a read.</p>
-</div>
-<div>
 <p>It turns out that in 1995, Bshouty and Jackson introduced a <a href="http://www.mathcs.duq.edu/~jackson/quantex.pdf">quantum version of this notion</a> (see also <a href="https://arxiv.org/pdf/quant-ph/0202066.pdf">Quantum DNF Learnability Revisited</a>).</p>
-</div>
-<div>
 <p>Their idea is to consider the state of training data: <br /><span class="math display">$$ \sum_{x \in \{0,1\}^n } \sqrt{D(x)} |x, f(x)\rangle $$</span><br /> To demonstrate a speedup, suppose that we have the uniform distribution over the samples; so then our state becomes <br /><span class="math display">$$ \frac{1}{2^n} \sum_{x \in \{0,1\}^n } |x, f(x)\rangle $$</span><br /> The main idea is to hit this with the Fourier sampling tool, that is a classic trick in quantum algorithms. The essential idea is, firstly support that <span class="math inline">(<em>x</em>)= ± 1</span>, then we can do another standard trick, the Hadamard transformation, and obtain the state <br /><span class="math display">$$ \frac{1}{2^n} \sum_{x \in \{0,1\}^n } \hat{f}(s)|s\rangle $$</span><br /></p>
-</div>
-<div>
 <p>where <br /><span class="math display">$$\hat{f}(s) = \frac{1}{2^n} \sum_{x} f(x) (-1)^{s \cdot x}$$</span><br />.</p>
-</div>
-<div>
 <p>The point here is that when you measure this final state, the state you see is <span class="math inline"><em>s</em></span> with probability <span class="math inline">$\hat{f}(s)^2$</span>. For a certain choice of <span class="math inline"><em>f</em></span>, namely when <span class="math inline"><em>f</em></span> is linear mod 2, then you can learn the function perfectly in exactly one query. Classically you would require at least <span class="math inline"><em>n</em></span> queries. Great reduction!</p>
-</div>
-<div>
 <p>He then went into a few more examples, getting a little bit more technical each time; one was for the so-called “Coupon collector” problem, which is simply: imagine you get a random baseball card from a store, how many times do you need to visit the store before you have the entire set of cards?</p>
-</div>
-<div>
 <p>Again, because this is a uniform problem, we can use similar techniques to improve on it. Classical, one can find that the expected number of store visits (samples) is approximately <span class="math inline"><em>N</em>log <em>N</em></span> (where <span class="math inline"><em>N</em></span> is the number of cards in total), but quantumly it can be done with <span class="math inline"><em>O</em>(<em>N</em>)</span> samples.</p>
-</div>
-<div>
 <p>Perhaps of interest, was some conclusions that they were able to show that <em>no</em> quantum speedup can be obtained when for <em>all</em> distributions; i.e. there are some bad distributions that we will just struggle with. I don’t think anyone finds this particularly surprising, and shouldn’t have a big impact on real-world problems, because typically, most data isn’t, shall we say, adversially prepared; the distributions tend to be wildly different (a natural example being the set of all images of mountains as a subset of all possible images).</p>
-</div>
-<div>
 <p>The main idea here is that by utilising standard tricks from quantum algorithms we can get significant speedups when we know something about the distribution that we are learning from.</p>
-</div>
-<div>
 <h3 id="limitations-on-learning-of-quantum-processes">Limitations on learning of quantum processes</h3>
-</div>
-<div>
 <p>by Mario Ziman</p>
-</div>
-<div>
 <p>This one was a little bit technical, but it had some interesting ideas.</p>
-</div>
-<div>
 <p>Mario phrased the problem of quantum machine learning as follows:</p>
-</div>
-<div>
 <p><img src="/images/mario-qml.png" /></p>
-</div>
-<div>
 <p>The point being that in typical ML we want to modify the function <span class="math inline"><em>f</em></span>, and in quantum ML then we wish to modify the unitary <span class="math inline"><em>U</em><sub><em>f</em></sub></span>. This turns out to be quite problematic, because this function is truly quantum, and we know that quantum states suffer from the no-cloning principle: you cannot copy an unknown quantum state; so you can only use it once. Mario mentioned that this results in a <em>No-programming</em> theorem, which means that we cannot perfectly store an unknown quantum transformation (i.e., <em>even if</em> we find a <span class="math inline"><em>U</em><sub><em>f</em></sub></span> that works well; we can’t save it! We have to know how many times we want to use it <em>in advance!</em>).</p>
-</div>
-<div>
 <p>However, it turns out we can still make some progress by, instead of requiring some kind of exact copy, we aim for probabilistic performance. The only remaining thing I got from this talk was that probabilistic learning, in their sense involving some kind of “probabilistic Q learning” is related to quantum teleportation. You can read about this work more <a href="https://scirate.com/arxiv/1809.04552">here</a>.</p>
-</div>
-<div>
 <h3 id="discovering-physical-concepts-with-neural-networks">Discovering physical concepts with neural networks</h3>
-</div>
-<div>
 <p>by Renato Renner</p>
-</div>
-<div>
 <p>This was a talk I was quite excited about. The paper for it is <a href="https://scirate.com/arxiv/1807.10300">here</a>. They’ve also made <a href="https://github.com/eth-nn-physics/nn_physical_concepts">the code available</a>, in TensorFlow.</p>
-</div>
-<div>
 <p>The fundamental idea is really nice: Maybe we can build a neural network to act exactly as a standard human physicist would: they shall observe data, try and form theories, ask questions of their theories, and then check the answers.</p>
-</div>
-<div>
 <p>This is very nicely expressed by the picture from the paper:</p>
-</div>
-<div>
 <p><img src="/images/physical-concepts.png" width="800" /></p>
-</div>
-<div>
 <p>The point is that they train an autoencoder on the data, but the put constraints on the latent vector so that the entries by adding the mutual information between them on to the loss so-as to require independence; i.e. the parameters that the network learns should be independent.</p>
-</div>
-<div>
 <p>They then introduce this idea of questions and answers. Unfortunately, I think the way this idea doesn’t go far enough is by, it seems to me, treating the answers as the input data itself; so that truly this network only functions as a special kind of autoencoder (at least, this is how it is in the code, and as far as I can see in the paper).</p>
-</div>
-<div>
 <p>In any case, they’re able to show several problems where it is able to look at experimental data and where the latent variables are correlated to the terms that they expected to see in the equations that model these phenomena. I think that’s pretty cool.</p>
-</div>
-<div>
 <p>One thing Renato noted quite strongly was that perhaps this isn’t super surprising, and maybe the network received a lot of help by the way the data was sent to it. I think that this could be mitigated, maybe, by thinking a bit more about the quesiton/answer set up, and more generally thinking about how we can allow the network to reject data samples.</p>
-</div>
-<div>
 <p>Some ideas I had during this talk related to the kind of “falsifiability” ideas; namely that if this system is forced to come up with theories for data, then how can we also ensure that the theories it has can be proven wrong?</p>
-</div>
-<div>
 <p>My other idea was, what if instead of just having a latent variable, i..e an independent variable, have an entire neural network in there, that could perhaps serve as an “independent explanation”.</p>
-</div>
-<div>
 <p>Overall, I quite enjoyed this talk and idea.</p>
-</div>
-<div>
 <h3 id="open-areas-of-investigation-1">Open areas of investigation</h3>
-</div>
-<div>
 <p>The interesting things that came to me regarding today were:</p>
-</div>
-<div>
 <ul>
-<li><div>
-What other cool quantum algorithm tricks should we be using?
-</div>
-<div>
+<li>What other cool quantum algorithm tricks should we be using?
 <ul>
-<li><div>
-Bomb testing?
-</div></li>
-<li><div>
-The bomb-testing thing is a kind of learning anyway. Probably interesting?
-</div></li>
+<li>Bomb testing?</li>
+<li>The bomb-testing thing is a kind of learning anyway. Probably interesting?</li>
+</ul></li>
+<li>If we do really want to learn truly quantum unitaries, then what’s the deal with having to know how many times we want to use it!? That’s crazy!</li>
+<li>How can we make a better machine for generating theories?</li>
 </ul>
-</div></li>
-<li><div>
-If we do really want to learn truly quantum unitaries, then what’s the deal with having to know how many times we want to use it!? That’s crazy!
-</div></li>
-<li><div>
-How can we make a better machine for generating theories?
-</div></li>
-</ul>
-</div>
-<div>
 <hr />
-</div>
-<div>
 <h2 id="day-4">Day 4</h2>
-</div>
-<div>
 <p><img src="/images/innsbruck-day-4.png" width="800" /></p>
-</div>
-<div>
 <p>Well, it’s Thursday night, and I’ve just finished up my last day at the conference. Tomorrow, we’ll be heading on our (short) holiday! While QML+ formally has two more talks tomrorrow, they are less relevant to me personally, plus we need to get a head start to make it to some waterfalls!</p>
-</div>
-<div>
 <p>Here’s my summary of the talks I attended today!</p>
-</div>
-<div>
 <h3 id="opening-talk-mlq">Opening Talk: ML+Q</h3>
-</div>
-<div>
 <p>by Matthias Troyer</p>
-</div>
-<div>
 <p>With an amusingly-titled talk, Matthias is the master of classical simulation algorithms for quantum processes. He spends most of his time working on the software side, trying to demonstrate practical quantum speedups for optimisation problems.</p>
-</div>
-<div>
 <p>As with most of the other talks, he described several pieces of work. The first was a <a href="https://arxiv.org/pdf/1606.02318.pdf">neural network that could be used to learn a quantum wave function</a>, and then used to find phases and amplitudes of given states, and compute other properties.</p>
-</div>
-<div>
 <p>Their setup was the (seemingly-standard) Restricted Boltzmann Machine, where the input was whether-or-not there is a z-rotation on the given qubit, and the output being the inner product with some state <span class="math inline">|<em>s</em>⟩</span>.</p>
-</div>
-<div>
 <p><img src="/images/nqs.png" /></p>
-</div>
-<div>
 <p>But, non-standardly, the weights of this network are actually found using what they refer to as “reinforcement learning”, but is actually something called “<a href="https://scirate.com/arxiv/cond-mat/0702349">Stochastic Reconfiguration</a>”. Once they find initial values for the weights, by looking at the Hamiltonian of the particular system, they then fine-tuned, if they want to compute properties that depend on time. It’s a little bit involved, to say the least.</p>
-</div>
-<div>
 <p>Anyway, having done this, they do acheieve some nice results. They are able to use their neural network to compute various properties quite well.</p>
-</div>
-<div>
 <p>Later, they applied an RBM again, but without the weird “Stochastic Reconfiguration”, and were able to get very good results in <a href="https://scirate.com/arxiv/1703.05334">learning quantum states</a>.</p>
-</div>
-<div>
 <p>He then spent a bit of time covering his work on <a href="https://scirate.com/arxiv/1806.06081">quantum annealing</a>. In particular, in that worked they observe that quantum annealers seem to be fated to always produce unfair samples of the potential states; i.e. not every state has equal probability to appear. Ingeniously, they came up with a classical simulation of quantum annealing that is actually faster and more accurate. Even more ingeniously, they show that infact they can implement the classical simulation as a quantum process, and <em>again</em> get a speedup, for a total of a quartic (2 times quadratic) speedup!</p>
-</div>
-<div>
 <p>All this resulted in the numerical comment that if there is any quantum annealing problem you’re running classically for more than 1 day, you’ll go faster if you use a quantum annealer.</p>
-</div>
-<div>
 <p>One of the interesting conclusions for this part of the work was, when you’re simulating adiabatically evolving something classically, sometimes it’s better, if you want tunneling, to evolve very fast (<a href="https://en.wikipedia.org/wiki/Adiabatic_theorem">the adiabatic theorem</a> would tell us we need to evolve slowly). He demonstrated this in an amusing way by saying that he could tunnel through the wall in room if we would just close our eyes for 30 seconds, instead of 30 microseconds.</p>
-</div>
-<div>
 <p>His other summaries were:</p>
-</div>
-<div>
 <ul>
-<li><div>
-Neural nets are great for learning efficient representations of wave functions; and probably more
-</div></li>
-<li><div>
-Stoquastic quantum annealing can be well mimicked by a classical laptop
-</div></li>
-<li><div>
-Sampling bias makes quantum annealers bad for this task
-</div></li>
-<li><div>
-Gate-model quantum computers <em>will</em> accelerate quantum-inspired algorithms
-</div></li>
+<li>Neural nets are great for learning efficient representations of wave functions; and probably more</li>
+<li>Stoquastic quantum annealing can be well mimicked by a classical laptop</li>
+<li>Sampling bias makes quantum annealers bad for this task</li>
+<li>Gate-model quantum computers <em>will</em> accelerate quantum-inspired algorithms</li>
 </ul>
-</div>
-<div>
 <h3 id="early-lunchhike">Early Lunch/Hike</h3>
-</div>
-<div>
 <p>Unfortunately, a talk I was looking forward to, by Franceso Petruccione, probably related to <a href="https://scirate.com/arxiv/1704.02146">this work</a> was cancalled, so Gala and I went for a long hike instead. We almost got lost, found beautiful forests, found a beautiful field that reminded me of Jurassic Park, lost faith in ever seeing the bottom of the mountain again and eventually made it back to the lifts alive.</p>
-</div>
-<div>
 <p>This impromptu adventure meant we just got back in time for the last talk of the day.</p>
-</div>
-<div>
 <h3 id="quantum-speedup-in-testing-causal-hypotheses">Quantum speedup in testing causal hypotheses</h3>
-</div>
-<div>
 <p>by Giulio Chiribella</p>
-</div>
-<div>
 <p>This talk was essentially based around <a href="https://arxiv.org/pdf/1806.06459.pdf">this paper</a>.</p>
-</div>
-<div>
 <p>The main point is to think about a framework for causal hypotheses, and then see how classical and quantum approaches compare. The setup as like so:</p>
-</div>
-<div>
 <p><img src="/images/causal.png" /></p>
-</div>
-<div>
 <p>We think of curly-C as some kind of unknown process (for example, <code>node.js</code>, ha ha ha), and then ask ourselves: What is the causal relationship between B and A? And between C and A?</p>
-</div>
-<div>
 <p>The setting Giulio proposes is that we want to be able to determine exactly, from a given set of hypotheses, which one is correct. Here, imagine the following:</p>
-</div>
-<div>
 <ul>
-<li><div>
-<strong>Hypothesis 1</strong>: B is dependent on A, and C is uniformly random.
-</div></li>
-<li><div>
-<strong>Hypothesis 2</strong>: C is dependent on A, and B is uniformly random.
-</div></li>
+<li><strong>Hypothesis 1</strong>: B is dependent on A, and C is uniformly random.</li>
+<li><strong>Hypothesis 2</strong>: C is dependent on A, and B is uniformly random.</li>
 </ul>
-</div>
-<div>
 <p>The question is: Who can do better, as a function of the number of trials, to determine which hypothesis is right? In order to be able to make progress, we allow ourselves <em>interventions</em>; i.e. that we can feed data into <span class="math inline"><em>A</em></span>, and then use that to make subsequent queries to curly-C.</p>
-</div>
-<div>
 <p>For reasons I don’t really understand, in the paper they claim that classically, if the dimension of all variables is finite and fixed to <span class="math inline"><em>d</em></span>, then, if B (or C) is dependent on A, then that means that the function mapping A to B is invertible. With such a constraint, it’s easy to see that it’s possible to determine the difference between the two hypothesis. The value of interest to them is the “discrimination rate”, as the number of experiments is performed. They find that it is <span class="math inline">log <em>d</em></span>. Quantumly, they find that they are able to differentiate the two hypothesis with discriminatio rate <span class="math inline">2log <em>d</em></span>. This, in the theory they’ve developed, is exponentially better than the classical case. Great!</p>
-</div>
-<div>
 <p>I left this talk a little bit confused, but at least vaugely interested in the idea of quantum causal modelling.</p>
-</div>
-<div>
 <h3 id="open-areas-of-investigation-2">Open areas of investigation</h3>
-</div>
-<div>
 <p>The interesting things that came to me regarding today were:</p>
-</div>
-<div>
 <ul>
-<li><div>
-How to combine SciNet with the neural-nets for determining wave functions?
-</div></li>
-<li><div>
-What’s the relationship between tensor networks and these neural nets? and Conv nets?
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1710.01437">Duality of Graphical Models and Tensor Networks</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1710.04045">Neural-Network Quantum States, String-Bond States, and Chiral Topological States</a>
-</div></li>
+<li>How to combine SciNet with the neural-nets for determining wave functions?</li>
+<li>What’s the relationship between tensor networks and these neural nets? and Conv nets?</li>
+<li><a href="https://scirate.com/arxiv/1710.01437">Duality of Graphical Models and Tensor Networks</a></li>
+<li><a href="https://scirate.com/arxiv/1710.04045">Neural-Network Quantum States, String-Bond States, and Chiral Topological States</a></li>
 </ul>
-</div>
-<div>
 <h3 id="final-thoughts-on-the-conference">Final thoughts on the conference</h3>
-</div>
-<div>
 <p>Overall, I’m inspired by quantum machine learning. I feel like there’s heaps of cool things to do.</p>
-</div>
-<div>
 <p>Unfortunately, I’m disappointed by some things about this conference. Having come from so far away, and wanting to maximise my time the best way, I found it frustrating that even the <em>titles</em> for most of the talks weren’t known in advance.</p>
-</div>
-<div>
 <p>I found the conference events and overall feeling to be very non-inclusive. There was lots of mention of people working in ML/QC as “guys”; there were lots of in-crowds and, while there was lots of talk of wanting to mix with the “machine learning crowd”, people were somewhat skeptical of me not being associated with any university, and attempts to organise people as either “machine learning/classical” and “quantum”. Further, there was also no mention of a code of conduct.</p>
-</div>
-<div>
 <p>Sarah Moran, of <a href="https://girlgeekacademy.com/">Girl Geek Academy</a> once gave a talk about “micro positive-actions” (or something, I can’t remember the name) but the ones that stuck out to me were:</p>
-</div>
-<div>
 <ul>
-<li><div>
-Name tags, always (this conference did well at this),
-</div></li>
-<li><div>
-Always leave a spot open in a talking circle,
-</div></li>
+<li>Name tags, always (this conference did well at this),</li>
+<li>Always leave a spot open in a talking circle,</li>
 </ul>
-</div>
-<div>
 <p>These are great rules of thumb for any organisers to keep in mind. If you have more, please let me know!</p>
-</div>
-<div>
 <p>Overall, it would be great to see these academic conferences put significant effort into making their conferences feel much more welcoming to all types of people.</p>
-</div>
 ]]></summary>
 </entry>
 <entry>
@@ -2674,7 +1642,6 @@ Always leave a spot open in a talking circle,
     
 </div>
 
-<div>
 <style type="text/css">
 p {
   margin: 10px;
@@ -2687,328 +1654,15 @@ div { text-align: center; }
 
 center { margin-top: 30px; margin-bottom: 30px; }
 </style>
-</div>
-<div>
 <p>The first thing to do is to stop whatever else you are doing.</p>
-</div>
-<div>
 <center>
-</div>
-<div>
 <img src="/images/how-to-program/blank.png" />
-</div>
-<div>
 </center>
-</div>
-<div>
 <p>Now stand or sit in a comfortable position. <br /><br />However you wish.</p>
-</div>
-<div>
 <p>Notice your breathing.</p>
-</div>
-<div>
 <p>As you breathe in, <br />be aware <br />that you are <br />breathing in. <br
 /><br /> As you breathe out, <br />notice that you are <br />breathing out.</p>
-</div>
-<div>
 <p><strong>Notes on Programming</strong><br /><br />Many of us spend a lot of time programming. We program at our jobs, we program at cafes, we program at home. To <em>program</em>, in this blog, means to program in such a way that you enjoy programming, to program in a relaxed way, with your mind awake, calm, and clear. This is what we call <em>programming</em>, and it takes some training and practice.</p>
-</div>
-]]></summary>
-</entry>
-<entry>
-    <title>The Ethics of AI - An Empathy-Based Approach?</title>
-    <link href="https://silky.github.io/posts/2018-07-25-ethics-of-AI.html" />
-    <id>https://silky.github.io/posts/2018-07-25-ethics-of-AI.html</id>
-    <published>2018-07-25T00:00:00Z</published>
-    <updated>2018-07-25T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div class="info">
-    Posted on July 25, 2018
-    
-        by Noon van der Silk
-    
-</div>
-
-<div>
-<p>There’s lots of talk about the Ethics of AI at the moment. As with any research, there’s too much for any one person to read. Here’s a bunch of papers that I’ve collected haphazardly in the early part of this year:</p>
-</div>
-<div>
-<ul>
-<li><div>
-<a href="https://scirate.com/arxiv/1711.03846">“Dave…I can assure you…that it’s going to be all right…” – A definition, case for, and survey of algorithmic assurances in human-autonomy trust relationships</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1709.06692">A Voting-Based System for Ethical Decision Making</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1511.06578">Actually, It’s About Ethics in Computational Social Science: A Multi-party Risk-Benefit Framework for Online Community Research</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1711.07373">Attentive Explanations: Justifying Decisions and Pointing to the Evidence (Extended Abstract)</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1502.05838">Automated Reasoning for Robot Ethics</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1702.00137">Blue Sky Ideas in Artificial Intelligence Education from the EAAI 2017 New and Future AI Educator Program</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1710.06881">Children and the Data Cycle: Rights and Ethics in a Big Data World</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1606.06565">Concrete Problems in AI Safety</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1711.07076">Does mitigating ML’s impact disparity require treatment disparity?</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1706.03021">Ethical Artificial Intelligence - An Open Question</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1701.07769">Ethical Considerations in Artificial Intelligence Courses</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1707.05259">Ethics of autonomous information systems towards an artificial thinking</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1504.05603">Formalizing Preference Utilitarianism in Physical World Models</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1703.06354">Goal Conflict in Designing an Autonomous Artificial System</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1610.03229">In The Wild Residual Data Research and Privacy</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1709.05929">Institutionally Distributed Deep Learning Networks</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1711.05791">Maintaining The Humanity of Our Models</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1607.08289">Mammalian Value Systems</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1710.06882">Mapping for accessibility: A case study of ethics in data science for social good</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1711.07111">Modeling Epistemological Principles for Bias Mitigation in AI Systems: An Illustration in Hiring Decisions</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1711.06664">Predict Responsibly: Increasing Fairness by Learning To Defer</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1609.03266">Recovering the History of Informed Consent for Data Science and Internet Industry Research Ethics</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1706.02513">Responsible Autonomy</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1701.02388">Stoic Ethics for Artificial Agents</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1606.02583">The Dark Side of Ethical Robots</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1711.00561">This robot stinks! Differences between perceived mistreatment of robot and computer partners</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1703.04741">Towards Moral Autonomous Systems</a>
-</div></li>
-<li><div>
-<a href="https://scirate.com/arxiv/1711.05905">Using experimental game theory to transit human values to ethical AI</a>
-</div></li>
-</ul>
-</div>
-<div>
-<p>One thing I wanted to think about is, speaking as someone working in this field and interested in making changes in my day-to-day life, what kind of tools or ideas would be useful for me? What should I do?</p>
-</div>
-<div>
-<p>Alongside this thought, another thought I had is that somehow the big lists of rules feel very impersonal and disconnected from my experiences. I also feel a little bit unsatisfied about opt-in rules. Here’s a few from the around the place, that I’ve seen:</p>
-</div>
-<div>
-<ul>
-<li><div>
-<a href="https://futureoflife.org/ai-principles/">Future of Life</a> (June 2018, relevant items)
-</div>
-<div>
-<ul>
-<li><div>
-5 - Race Avoidance: Teams developing AI systems should actively cooperate to avoid corner-cutting on safety standards.
-</div></li>
-<li><div>
-6 - Safety: AI systems should be safe and secure throughout their operational lifetime, and verifably so where applicable and feasible
-</div></li>
-<li><div>
-7 - Failure Transparency: If an AI system causes harm, it should be possible to ascertain why.
-</div></li>
-<li><div>
-8 - Judical Transparency: Any involvement by an autonomous system in judicial decision-making should provide a satisfactory explanation auditable by a competent human authority.
-</div></li>
-<li><div>
-9 - Responsibility: Designers and building of advanced AI systems are stakeholders in the moral implications of their use, misuse, and actions, with a responsibility and opportunity to shape those implications.
-</div></li>
-<li><div>
-10 - Value Alignment: Highly autonomous AI systems should be designed so that their goals and behviours
-</div></li>
-<li><div>
-11 - Human Values: AI Systems should be designed and operated so as to be compatible with ideals of human dignift, rights, freedoms, and cultural diversity.
-</div></li>
-<li><div>
-12 - Personal Privacy: People should have the right to access, manage and control the data they generate, given AI systems’ power to analyze and utilize that data.
-</div></li>
-<li><div>
-13 - Liberty and Privacy: The application of AI to personal data must not unreasonably curtail people’s real or perceived liberty.
-</div></li>
-<li><div>
-14 - Shared Benefit: AI technologies should benefit and empower as many people as possible.
-</div></li>
-<li><div>
-15 - Shared Prosperity: The economic prosperity created by AI should be shared broadly, to benefit all of humanity.
-</div></li>
-<li><div>
-16 - Human Control: Humans should choose how and whether to delegate decisions to AI systems, to accomplish human chose objectives.
-</div></li>
-<li><div>
-17 - Non-subversion: The power conferred by control of highly advanced AI systems should respect and improve, rather an subvert, the social and civic processes on which the health of society depends.
-</div></li>
-<li><div>
-18 - AI Arms Race: An arms race in lethal autonomous weapons should be avoided.
-</div></li>
-</ul>
-</div></li>
-<li><div>
-<a href="https://www.aiforhumanity.fr/en/">AI For Humanity</a> (June 2018)
-</div>
-<div>
-<ul>
-<li><div>
-01 - Develop an aggressive data policy
-</div></li>
-<li><div>
-02 - Targeting four strategic sectors
-</div></li>
-<li><div>
-03 - Boosting the potential of French research
-</div></li>
-<li><div>
-04 - Planning for the impact of AI on labour
-</div></li>
-<li><div>
-05 - Making AI more environmentally friendly
-</div></li>
-<li><div>
-06 - Opening up the black boxes of AI
-</div></li>
-<li><div>
-07 - Ensuring that AI supports inclusivity and diversity
-</div></li>
-</ul>
-</div></li>
-<li><div>
-<a href="http://humansforai.com/">Humans for AI</a> (June 2018)
-</div>
-<div>
-<ul>
-<li><div>
-Broaden the pipeline of minorities currently in tech careers, seeking to move to careers in AI by being the go to destination for all things AI because we believe that diversity of thought and opinion ultimately builds better products.
-</div></li>
-<li><div>
-Open and inclusive community of people interested in AI by facilitating interactions with experts, practitioners and thought leaders in the field.
-</div></li>
-<li><div>
-Leverage AI to release a set of free products built by this community to further our mission of bringing diversity to AI.
-</div></li>
-<li><div>
-Demystify AI by providing a basic understanding of the concepts, thinking and events in AI for novices and non-technical people interested in how AI will impact their lives and their jobs.
-</div></li>
-</ul>
-</div></li>
-<li><div>
-<a href="https://arxiv.org/pdf/1606.06565.pdf">Concrete Problems in AI Safety</a> (2016)
-</div>
-<div>
-<ul>
-<li><div>
-Avoid Negative Side Effects
-</div></li>
-<li><div>
-Avoid Reward Hacking
-</div></li>
-<li><div>
-Scalable Oversight
-</div></li>
-<li><div>
-Safe Exploration
-</div></li>
-<li><div>
-Robustness to Distributional Shift
-</div></li>
-</ul>
-</div></li>
-</ul>
-</div>
-<div>
-<p>I have a few problems with these rules:</p>
-</div>
-<div>
-<ul>
-<li><div>
-It’s easy to imagine situations in which they are counter-productive,
-</div></li>
-<li><div>
-I don’t feel a lot of ownership of them, as I wasn’t involved in their construction,
-</div></li>
-<li><div>
-No-one is enforcing them on me,
-</div></li>
-<li><div>
-They’re often highly impractical or contain colloquial/regional/policital concerns (“Boost French Research …”),
-</div></li>
-<li><div>
-They’re also very overwhelming and demanding, how can I ensure that we do <em>all</em> of them?
-</div></li>
-<li><div>
-Even if I <em>say</em> I’m doing these things, how does any non-technical person know? How can I prove it?
-</div></li>
-</ul>
-</div>
-<div>
-<p>The positive aspects of them are:</p>
-</div>
-<div>
-<ul>
-<li><div>
-It’s sometimes easy to think about how to apply them to day-to-day work,
-</div></li>
-<li><div>
-They help me think of things that I might not care about day-to-day (i.e. the environmental concerns?),
-</div></li>
-<li><div>
-It might help to lobby governments/organisations to get funding to make progress on certain aspects?
-</div></li>
-<li><div>
-It provides a framework that might be useful for discussing with colleagues/other people
-</div></li>
-</ul>
-</div>
-<div>
-<p>So, what should any given engineer working in this area do? One thought I’ve had recently is a simple one: Let’s just aim at building empathy for the people that will be affected by our software.</p>
-</div>
-<div>
-<p>This is reasonably actionable, say, with local groups by organising meetings between technical people and the people that may be affected. I.e. in the medical-AI setting, let’s organise regular catch-ups between the engineers, the doctors, nursing staff, and hospital adminstration types, along with perhaps patient representatives.</p>
-</div>
-<div>
-<p>In the setting, of, say, law software, again we just set up regular events for the two groups to chat through issues, work together on small projects, and build a mutual understanding of difficulties.</p>
-</div>
-<div>
-<p>I think this approach is a bit nicer than, say, creating a new set of rules that make sense for us locally, and then forcing people to follow them. One idea I like about the empathy-based/collaborative approach (or “human-centered design”; another term for this kind thing), is that it allos people to <em>adapt to local circumstances</em>, which I think is really crucial in allowing any one person to feel like they have some control over the application of any rules they come up with, and thus getting them to actually take an interest in enforcing them in their organisation.</p>
-</div>
-<div>
-<p>So, my new rule of thumb for this ethics-related AI stuff will be: Can I meet with some of the people that will be affected? What are their thoughts? What problems are they working through and what are they interested in?</p>
-</div>
-<div>
-<p>As always, I’m interested in your thoughts on the matter!</p>
-</div>
 ]]></summary>
 </entry>
 
