@@ -49,6 +49,15 @@ main = hakyll $ do
             >>= loadAndApplyTemplate "templates/default.html" defaultContext
             >>= relativizeUrls
 
+    match "talks/*" $ do
+        route $ setExtension "html"
+        compile $ 
+                (pandocCompilerDiagrams "images/diagrams" <|> pandocMathCompiler)
+            >>= loadAndApplyTemplate "templates/talk.html"    postCtx
+            >>= saveSnapshot "content"
+            >>= loadAndApplyTemplate "templates/default.html" postCtx
+            >>= relativizeUrls
+
     match "posts/*" $ do
         route $ setExtension "html"
         compile $ 
@@ -72,6 +81,19 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
+    create ["talks.html"] $ do
+        route idRoute
+        compile $ do
+            talks <- recentFirst =<< loadAll "talks/*"
+            let archiveCtx =
+                    listField "talks" postCtx (return talks) `mappend`
+                    constField "title" "Talks"               `mappend`
+                    defaultContext
+
+            makeItem ""
+                >>= loadAndApplyTemplate "templates/talks.html" archiveCtx
+                >>= loadAndApplyTemplate "templates/default.html" archiveCtx
+                >>= relativizeUrls
 
     match (fromList ["links.html", "about.html"]) $ do
         route idRoute

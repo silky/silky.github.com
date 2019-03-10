@@ -1,0 +1,27 @@
+Here's a list of the talks/events that I've done over the years:
+
+<ul>
+$for(talks)$
+<li>
+		$if(link)$
+			<a href="$link$">$title$</a>,
+		$else$
+			$title$,
+		$endif$
+
+  $date$,
+  $event$,
+    <small class="talks">
+      $if(code)$ <a href="$code$">code</a> $endif$
+      $if(video)$ <a href="$video$">video</a> $endif$
+      $if(slides)$ <a href="$slides$">slides</a> $endif$
+      $if(post)$ <a href="$post$">post</a> $endif$
+      $if(website)$ <a href="$website$">website</a> $endif$
+    </small>
+
+	$if(summary)$ 
+		<p> $summary$ </p>
+	$endif$
+</li>
+$endfor$
+</ul>
