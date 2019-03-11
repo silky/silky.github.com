@@ -93,3 +93,10 @@ small.talks a { padding-left: 5px; padding-right: 5px; }
 table.talks, table.talks td, table.talks th  {
 	border: 0;
 }
+
+ul.talks {
+}
+
+ul.talks li p { 
+  font-size: 0.9em;
+}
