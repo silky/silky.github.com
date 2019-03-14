@@ -48,7 +48,7 @@ using CPPNs to generate 3d landscapes.
 
 I've put together some pieces of code here:
 [cppn-3d](https://github.com/silky/cppn-3d). Thanks to the amazing
-[MyBinder](mybinder.org) you can even [run the notebook online, right
+[MyBinder](https://mybinder.org) you can even [run the notebook online, right
 now,](https://mybinder.org/v2/gh/silky/cppn-3d/master?filepath=python%2FGenerate%20Maps.ipynb)
 and start generating your own cool images!
 
