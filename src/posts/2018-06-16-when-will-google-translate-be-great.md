@@ -46,7 +46,7 @@ English:
 
 **Human-translation by Doug and Emmanuel**
 
-> Sometimes things just didn't work out right; no matter how har she wished for
+> Sometimes things just didn't work out right; no matter how hard she wished for
 > it, the dice simply wouldn't come up her way. But Sagan always took her
 > failures as a playwright much as she took her gambling losses, acknowledging
 > the arbitrary whims of the house and of divine fate. After all, everyone has
