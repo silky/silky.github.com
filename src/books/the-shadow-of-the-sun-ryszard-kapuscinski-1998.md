@@ -15,6 +15,5 @@ pages: 336
 publisher: Vintage
 yearPublished: 1998
 summary:
-  A polish journalists experience of africa in the 60s and 70s. Really
-  enjoyable.
+  A polish journalists experience of africa in the 60s and 70s.
 ---
