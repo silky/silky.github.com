@@ -1,0 +1,3040 @@
+{
+  "2001-arthur-c-clarke-1968": {
+    "id": "2001-arthur-c-clarke-1968",
+    "title": "2001: A Space Odyssey (Space Odyssey, #1)",
+    "simpleTitle": "2001",
+    "authors": [
+      "Arthur C. Clarke"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/7725f0019954465999150047927f7618.jpg",
+    "link": "https://www.goodreads.com/book/show/70535",
+    "lists": [
+      "read"
+    ],
+    "pages": 297,
+    "publisher": "Roc",
+    "yearPublished": 1968,
+    "basename": "2001-arthur-c-clarke-1968"
+  },
+  "2010-arthur-c-clarke-1982": {
+    "id": "2010-arthur-c-clarke-1982",
+    "title": "2010: Odyssey Two (Space Odyssey, #2)",
+    "simpleTitle": "2010",
+    "authors": [
+      "Arthur C. Clarke"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/0bdce6157895ce7eebbf6b5b4b91057d.jpg",
+    "link": "https://www.goodreads.com/book/show/70539",
+    "lists": [
+      "read"
+    ],
+    "pages": 320,
+    "publisher": "Del Rey",
+    "yearPublished": 1982,
+    "basename": "2010-arthur-c-clarke-1982"
+  },
+  "2061-arthur-c-clarke-1987": {
+    "id": "2061-arthur-c-clarke-1987",
+    "title": "2061: Odyssey Three (Space Odyssey, #3)",
+    "simpleTitle": "2061",
+    "authors": [
+      "Arthur C. Clarke"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/200e8140051d6250a01d591e06840d92.jpg",
+    "link": "https://www.goodreads.com/book/show/35816",
+    "lists": [
+      "read"
+    ],
+    "pages": 302,
+    "publisher": "Voyager",
+    "yearPublished": 1987,
+    "basename": "2061-arthur-c-clarke-1987"
+  },
+  "3001-arthur-c-clarke-1997": {
+    "id": "3001-arthur-c-clarke-1997",
+    "title": "3001: The Final Odyssey (Space Odyssey, #4)",
+    "simpleTitle": "3001",
+    "authors": [
+      "Arthur C. Clarke"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/4027eb37de79a761cc0135c640a23761.jpg",
+    "link": "https://www.goodreads.com/book/show/63432",
+    "lists": [
+      "read"
+    ],
+    "pages": 272,
+    "publisher": "Del Rey",
+    "yearPublished": 1997,
+    "basename": "3001-arthur-c-clarke-1997"
+  },
+  "a-brief-history-of-time-stephen-hawking-1988": {
+    "id": "a-brief-history-of-time-stephen-hawking-1988",
+    "title": "A Brief History of Time",
+    "simpleTitle": "A Brief History of Time",
+    "authors": [
+      "Stephen Hawking"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/a513f68baa46afd47436d61ea5a89adf.jpg",
+    "link": "https://www.goodreads.com/book/show/3869",
+    "lists": [
+      "read"
+    ],
+    "pages": 212,
+    "publisher": "Bantam Books",
+    "yearPublished": 1988,
+    "basename": "a-brief-history-of-time-stephen-hawking-1988"
+  },
+  "a-city-is-not-a-tree-christopher-w-alexander-1965": {
+    "id": "a-city-is-not-a-tree-christopher-w-alexander-1965",
+    "title": "A City is Not a Tree",
+    "simpleTitle": "A City is Not a Tree",
+    "authors": [
+      "Christopher W. Alexander"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/366424f7741687920a24523060500460.jpg",
+    "link": "https://www.goodreads.com/book/show/32950884",
+    "lists": [
+      "read"
+    ],
+    "pages": 200,
+    "publisher": "Sustasis Press",
+    "yearPublished": 1965,
+    "basename": "a-city-is-not-a-tree-christopher-w-alexander-1965"
+  },
+  "affluence-without-abundance-james-suzman-2017": {
+    "id": "affluence-without-abundance-james-suzman-2017",
+    "title": "Affluence Without Abundance: The Disappearing World of the Bushmen",
+    "simpleTitle": "Affluence Without Abundance",
+    "authors": [
+      "James Suzman"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/be3ce14211e3c96547cd76028baeff3f.jpg",
+    "link": "https://www.goodreads.com/book/show/31451192",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2020-04-06",
+    "pages": 288,
+    "publisher": "Bloomsbury USA",
+    "yearPublished": 2017,
+    "basename": "affluence-without-abundance-james-suzman-2017"
+  },
+  "after-piketty-heather-boushey": {
+    "id": "after-piketty-heather-boushey",
+    "title": "After Piketty: The Agenda for Economics and Inequality",
+    "simpleTitle": "After Piketty",
+    "authors": [
+      "Heather Boushey",
+      "J. Bradford DeLong",
+      "Marshall Steinbaum"
+    ],
+    "rating": 3,
+    "imageUrl": "/images/book-images/c676f75acd4fe14b5c825ed1764c1e4c.jpg",
+    "link": "https://www.goodreads.com/book/show/32571298",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-12-16",
+    "pages": 678,
+    "publisher": "Harvard University Press",
+    "basename": "after-piketty-heather-boushey"
+  },
+  "all-the-birds-in-the-sky-charlie-jane-anders-2016": {
+    "id": "all-the-birds-in-the-sky-charlie-jane-anders-2016",
+    "title": "All the Birds in the Sky",
+    "simpleTitle": "All the Birds in the Sky",
+    "authors": [
+      "Charlie Jane Anders"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/84b56c4ce4f757ee007c0f9e5d678bbb.jpg",
+    "link": "https://www.goodreads.com/book/show/25372801",
+    "lists": [
+      "read"
+    ],
+    "pages": 313,
+    "publisher": "Tor Books",
+    "yearPublished": 2016,
+    "basename": "all-the-birds-in-the-sky-charlie-jane-anders-2016"
+  },
+  "annapurna-arlene-blum-1980": {
+    "id": "annapurna-arlene-blum-1980",
+    "title": "Annapurna: A Woman's Place",
+    "simpleTitle": "Annapurna",
+    "authors": [
+      "Arlene Blum",
+      "Maurice Herzog"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/fe5b902df80787215c6af750acc4b337.jpg",
+    "link": "https://www.goodreads.com/book/show/306659",
+    "lists": [
+      "read"
+    ],
+    "pages": 272,
+    "publisher": "Counterpoint",
+    "yearPublished": 1980,
+    "basename": "annapurna-arlene-blum-1980"
+  },
+  "arctic-dreams-barry-lopez-1986": {
+    "id": "arctic-dreams-barry-lopez-1986",
+    "title": "Arctic Dreams",
+    "simpleTitle": "Arctic Dreams",
+    "authors": [
+      "Barry Lopez"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/0ca5b4df2456ecc2d049603fc2d3a3db.jpg",
+    "link": "https://www.goodreads.com/book/show/16878",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-10-15",
+    "pages": 496,
+    "publisher": "Vintage",
+    "yearPublished": 1986,
+    "basename": "arctic-dreams-barry-lopez-1986"
+  },
+  "asterix-and-cleopatra-rene-goscinny-1965": {
+    "id": "asterix-and-cleopatra-rene-goscinny-1965",
+    "title": "Asterix and Cleopatra (Asterix, #6)",
+    "simpleTitle": "Asterix and Cleopatra",
+    "authors": [
+      "René Goscinny",
+      "Albert Uderzo"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/79c003db7325a837d86ea234c4c4e42f.jpg",
+    "link": "https://www.goodreads.com/book/show/122410",
+    "lists": [
+      "read"
+    ],
+    "pages": 48,
+    "publisher": "Asterix",
+    "yearPublished": 1965,
+    "basename": "asterix-and-cleopatra-rene-goscinny-1965"
+  },
+  "asterix-the-gaul-rene-goscinny-1960": {
+    "id": "asterix-the-gaul-rene-goscinny-1960",
+    "title": "Asterix the Gaul (Asterix, #1)",
+    "simpleTitle": "Asterix the Gaul",
+    "authors": [
+      "René Goscinny",
+      "Albert Uderzo",
+      "Anthea Bell",
+      "Derek Hockridge"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/88879d4ff16b6f5ecb2eeff064ff9f00.jpg",
+    "link": "https://www.goodreads.com/book/show/71292",
+    "lists": [
+      "read"
+    ],
+    "pages": 48,
+    "publisher": "Orion Books Ltd., London",
+    "yearPublished": 1960,
+    "basename": "asterix-the-gaul-rene-goscinny-1960"
+  },
+  "a-woman-in-the-polar-night-christiane-ritter-1938": {
+    "id": "a-woman-in-the-polar-night-christiane-ritter-1938",
+    "title": "A Woman in the Polar Night",
+    "simpleTitle": "A Woman in the Polar Night",
+    "authors": [
+      "Christiane Ritter"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/a60280fae837b8547b83e04e5fdeac03.jpg",
+    "link": "https://www.goodreads.com/book/show/8266887",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2020-03-23",
+    "pages": 215,
+    "publisher": "University of Alaska Press",
+    "yearPublished": 1938,
+    "basename": "a-woman-in-the-polar-night-christiane-ritter-1938"
+  },
+  "bad-blood-john-carreyrou-2018": {
+    "id": "bad-blood-john-carreyrou-2018",
+    "title": "Bad Blood: Secrets and Lies in a Silicon Valley Startup",
+    "simpleTitle": "Bad Blood",
+    "authors": [
+      "John Carreyrou"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/cbd82019aa0ff2819a2c4bb1232c5127.jpg",
+    "link": "https://www.goodreads.com/book/show/37976541",
+    "lists": [
+      "read"
+    ],
+    "pages": 339,
+    "publisher": "Knopf Publishing Group",
+    "yearPublished": 2018,
+    "basename": "bad-blood-john-carreyrou-2018"
+  },
+  "barbarian-days-william-finnegan-2015": {
+    "id": "barbarian-days-william-finnegan-2015",
+    "title": "Barbarian Days: A Surfing Life",
+    "simpleTitle": "Barbarian Days",
+    "authors": [
+      "William Finnegan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/86100944a5987e19218a7b9b4ea32c69.jpg",
+    "link": "https://www.goodreads.com/book/show/18693910",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2020-03-19",
+    "pages": 447,
+    "publisher": "Penguin Press",
+    "yearPublished": 2015,
+    "basename": "barbarian-days-william-finnegan-2015"
+  },
+  "becoming-bodhisattvas-pema-chodron-2018": {
+    "id": "becoming-bodhisattvas-pema-chodron-2018",
+    "title": "Becoming Bodhisattvas",
+    "simpleTitle": "Becoming Bodhisattvas",
+    "authors": [
+      "Pema Chödrön"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/e4061d74c45fa1ddee3124d40f11ceed.jpg",
+    "link": "https://www.goodreads.com/book/show/40669652",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2020-02-23",
+    "pages": 408,
+    "publisher": "Shambhala Publications, Inc.",
+    "yearPublished": 2018,
+    "basename": "becoming-bodhisattvas-pema-chodron-2018"
+  },
+  "brave-rose-mcgowan-2018": {
+    "id": "brave-rose-mcgowan-2018",
+    "title": "Brave",
+    "simpleTitle": "Brave",
+    "authors": [
+      "Rose McGowan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/8d091597127cc044520e13fae3a3af59.jpg",
+    "link": "https://www.goodreads.com/book/show/35068683",
+    "lists": [
+      "read"
+    ],
+    "pages": 272,
+    "publisher": "HarperOne",
+    "yearPublished": 2018,
+    "basename": "brave-rose-mcgowan-2018"
+  },
+  "catch-and-kill-ronan-farrow-2019": {
+    "id": "catch-and-kill-ronan-farrow-2019",
+    "title": "Catch and Kill: Lies, Spies, and a Conspiracy to Protect Predators",
+    "simpleTitle": "Catch and Kill",
+    "authors": [
+      "Ronan Farrow"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/f6f8519dd99ea4fff8fbdc0d434d8a03.jpg",
+    "link": "https://www.goodreads.com/book/show/53011908",
+    "lists": [
+      "read"
+    ],
+    "pages": 448,
+    "publisher": "Little, Brown and Company",
+    "yearPublished": 2019,
+    "basename": "catch-and-kill-ronan-farrow-2019"
+  },
+  "causality-judea-pearl-2000": {
+    "id": "causality-judea-pearl-2000",
+    "title": "Causality: Models, Reasoning, and Inference",
+    "simpleTitle": "Causality",
+    "authors": [
+      "Judea Pearl"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/d4865a1e1518bdcb37c3c7a18ecf6a2e.jpg",
+    "link": "https://www.goodreads.com/book/show/174276",
+    "lists": [
+      "read"
+    ],
+    "pages": 400,
+    "publisher": "Cambridge University Press",
+    "yearPublished": 2000,
+    "basename": "causality-judea-pearl-2000"
+  },
+  "cities-for-people-jan-gehl-2010": {
+    "id": "cities-for-people-jan-gehl-2010",
+    "title": "Cities for People",
+    "simpleTitle": "Cities for People",
+    "authors": [
+      "Jan Gehl"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/9959e4676360592489697edd00f38561.jpg",
+    "link": "https://www.goodreads.com/book/show/8556291",
+    "lists": [
+      "read"
+    ],
+    "pages": 285,
+    "publisher": "Island Press",
+    "yearPublished": 2010,
+    "basename": "cities-for-people-jan-gehl-2010"
+  },
+  "community-and-privacy-serge-chermayeff-1963": {
+    "id": "community-and-privacy-serge-chermayeff-1963",
+    "title": "Community and Privacy: Toward a New Architecture of Humanism",
+    "simpleTitle": "Community and Privacy",
+    "authors": [
+      "Serge Chermayeff",
+      "Christopher W. Alexander"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/0e19af4402dec6d108d6ae349adde2cb.jpg",
+    "link": "https://www.goodreads.com/book/show/79788",
+    "lists": [
+      "read"
+    ],
+    "pages": 255,
+    "publisher": "Anchor Books",
+    "yearPublished": 1963,
+    "basename": "community-and-privacy-serge-chermayeff-1963"
+  },
+  "computational-complexity-sanjeev-arora-2007": {
+    "id": "computational-complexity-sanjeev-arora-2007",
+    "title": "Computational Complexity",
+    "simpleTitle": "Computational Complexity",
+    "authors": [
+      "Sanjeev Arora",
+      "Boaz Barak"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/ad9f47c613df5edb2336deabad134a3d.jpg",
+    "link": "https://www.goodreads.com/book/show/6535065",
+    "lists": [
+      "read"
+    ],
+    "pages": 579,
+    "publisher": "Cambridge University Press",
+    "yearPublished": 2007,
+    "basename": "computational-complexity-sanjeev-arora-2007"
+  },
+  "cosmos-carl-sagan-1980": {
+    "id": "cosmos-carl-sagan-1980",
+    "title": "Cosmos",
+    "simpleTitle": "Cosmos",
+    "authors": [
+      "Carl Sagan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/2c0847f66f16adcc6ddf93f1db5827e7.jpg",
+    "link": "https://www.goodreads.com/book/show/55030",
+    "lists": [
+      "read"
+    ],
+    "pages": 384,
+    "publisher": "Random House",
+    "yearPublished": 1980,
+    "basename": "cosmos-carl-sagan-1980"
+  },
+  "crossroads-of-twilight-robert-jordan-2003": {
+    "id": "crossroads-of-twilight-robert-jordan-2003",
+    "title": "Crossroads Of Twilight (The Wheel Of Time, Book 10)",
+    "simpleTitle": "Crossroads Of Twilight",
+    "authors": [
+      "Robert Jordan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/a244b272f67df33c8c7786c788e41767.jpg",
+    "link": "https://www.goodreads.com/book/show/233660",
+    "lists": [
+      "read"
+    ],
+    "pages": 700,
+    "publisher": "Orbit",
+    "yearPublished": 2003,
+    "basename": "crossroads-of-twilight-robert-jordan-2003"
+  },
+  "crown-of-swords-robert-jordan-1996": {
+    "id": "crown-of-swords-robert-jordan-1996",
+    "title": "Crown Of Swords (The Wheel Of Time, 7)",
+    "simpleTitle": "Crown Of Swords",
+    "authors": [
+      "Robert Jordan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/c31c01f565140ba8ab7fff1756d49e26.jpg",
+    "link": "https://www.goodreads.com/book/show/12971570",
+    "lists": [
+      "read"
+    ],
+    "publisher": "New Millennium Press",
+    "yearPublished": 1996,
+    "basename": "crown-of-swords-robert-jordan-1996"
+  },
+  "cryptonomicon-neal-stephenson-1999": {
+    "id": "cryptonomicon-neal-stephenson-1999",
+    "title": "Cryptonomicon",
+    "simpleTitle": "Cryptonomicon",
+    "authors": [
+      "Neal Stephenson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/5a346c62e209dc83cc9976ee80a6b22c.jpg",
+    "link": "https://www.goodreads.com/book/show/816",
+    "lists": [
+      "read"
+    ],
+    "pages": 1139,
+    "publisher": "Avon",
+    "yearPublished": 1999,
+    "basename": "cryptonomicon-neal-stephenson-1999"
+  },
+  "dark-emu-bruce-pascoe-2014": {
+    "id": "dark-emu-bruce-pascoe-2014",
+    "title": "Dark Emu",
+    "simpleTitle": "Dark Emu",
+    "authors": [
+      "Bruce Pascoe"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/d0be7bbe5140a41cdd2bf8ea344afe54.jpg",
+    "link": "https://www.goodreads.com/book/show/21401526",
+    "lists": [
+      "read"
+    ],
+    "pages": 176,
+    "publisher": "Magabala Books",
+    "yearPublished": 2014,
+    "basename": "dark-emu-bruce-pascoe-2014"
+  },
+  "debt-david-graeber-2011": {
+    "id": "debt-david-graeber-2011",
+    "title": "Debt: The First 5,000 Years",
+    "simpleTitle": "Debt",
+    "authors": [
+      "David Graeber"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/2445d0e5438b4946a01536226932e256.jpg",
+    "link": "https://www.goodreads.com/book/show/6617037",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-10-03",
+    "pages": 534,
+    "publisher": "Melville House Publishing",
+    "yearPublished": 2011,
+    "basename": "debt-david-graeber-2011"
+  },
+  "delusions-of-gender-cordelia-fine-2005": {
+    "id": "delusions-of-gender-cordelia-fine-2005",
+    "title": "Delusions of Gender: How Our Minds, Society, and Neurosexism Create Difference",
+    "simpleTitle": "Delusions of Gender",
+    "authors": [
+      "Cordelia Fine"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/8b60dc632696c1894c05de38478ec8fa.jpg",
+    "link": "https://www.goodreads.com/book/show/8031168",
+    "lists": [
+      "read"
+    ],
+    "pages": 338,
+    "publisher": "W.W. Norton & Company",
+    "yearPublished": 2005,
+    "basename": "delusions-of-gender-cordelia-fine-2005"
+  },
+  "dragons-egg-robert-l-forward-1980": {
+    "id": "dragons-egg-robert-l-forward-1980",
+    "title": "Dragon's Egg",
+    "simpleTitle": "Dragon's Egg",
+    "authors": [
+      "Robert L. Forward"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/b9132f8723bc49ec0dc06af850b2d3fd.jpg",
+    "link": "https://www.goodreads.com/book/show/263466",
+    "lists": [
+      "read"
+    ],
+    "pages": 352,
+    "publisher": "Del Rey Books",
+    "yearPublished": 1980,
+    "basename": "dragons-egg-robert-l-forward-1980"
+  },
+  "educated-tara-westover-2018": {
+    "id": "educated-tara-westover-2018",
+    "title": "Educated",
+    "simpleTitle": "Educated",
+    "authors": [
+      "Tara Westover"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/0a8408e84de40aaaca00f476ce3ea269.jpg",
+    "link": "https://www.goodreads.com/book/show/35133922",
+    "lists": [
+      "read"
+    ],
+    "pages": 334,
+    "publisher": "Random House",
+    "yearPublished": 2018,
+    "basename": "educated-tara-westover-2018"
+  },
+  "elantris-brandon-sanderson-2005": {
+    "id": "elantris-brandon-sanderson-2005",
+    "title": "Elantris (Elantris, #1)",
+    "simpleTitle": "Elantris",
+    "authors": [
+      "Brandon Sanderson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/d7cce2dc40d87bf1e95b5eb812b2398c.jpg",
+    "link": "https://www.goodreads.com/book/show/68427",
+    "lists": [
+      "read"
+    ],
+    "pages": 638,
+    "publisher": "Tor Fantasy",
+    "yearPublished": 2005,
+    "basename": "elantris-brandon-sanderson-2005"
+  },
+  "enders-game-orson-scott-card-1985": {
+    "id": "enders-game-orson-scott-card-1985",
+    "title": "Ender’s Game (Ender’s Saga, #1)",
+    "simpleTitle": "Ender’s Game",
+    "authors": [
+      "Orson Scott Card",
+      "Stefan Rudnicki",
+      "Harlan Ellison"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/37edc82f118be2e7999e334b26fa96df.jpg",
+    "link": "https://www.goodreads.com/book/show/375802",
+    "lists": [
+      "read"
+    ],
+    "pages": 324,
+    "publisher": "Macmillan Audio",
+    "yearPublished": 1985,
+    "basename": "enders-game-orson-scott-card-1985"
+  },
+  "endymion-dan-simmons-1996": {
+    "id": "endymion-dan-simmons-1996",
+    "title": "Endymion (Hyperion Cantos, #3)",
+    "simpleTitle": "Endymion",
+    "authors": [
+      "Dan Simmons"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/c96c1c2bf1a2e37b89b0866bb4a87559.jpg",
+    "link": "https://www.goodreads.com/book/show/3977",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2014-04-11",
+    "pages": 563,
+    "publisher": "Bantam Spectra",
+    "yearPublished": 1996,
+    "basename": "endymion-dan-simmons-1996"
+  },
+  "enlightenment-now-steven-pinker-2018": {
+    "id": "enlightenment-now-steven-pinker-2018",
+    "title": "Enlightenment Now: The Case for Reason, Science, Humanism, and Progress",
+    "simpleTitle": "Enlightenment Now",
+    "authors": [
+      "Steven Pinker"
+    ],
+    "rating": 2,
+    "imageUrl": "/images/book-images/65ce8f7fe8003e623b26dd1139009288.jpg",
+    "link": "https://www.goodreads.com/book/show/35696171",
+    "lists": [
+      "read"
+    ],
+    "pages": 576,
+    "publisher": "Viking",
+    "yearPublished": 2018,
+    "basename": "enlightenment-now-steven-pinker-2018"
+  },
+  "factfulness-hans-rosling-2018": {
+    "id": "factfulness-hans-rosling-2018",
+    "title": "Factfulness: Ten Reasons We're Wrong About the World – and Why Things Are Better Than You Think",
+    "simpleTitle": "Factfulness",
+    "authors": [
+      "Hans Rosling",
+      "Ola Rosling",
+      "Anna Rosling Rönnlund"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/079a219ad4fd7c5aa01abec8fd4f4d52.jpg",
+    "link": "https://www.goodreads.com/book/show/34890015",
+    "lists": [
+      "read"
+    ],
+    "pages": 342,
+    "publisher": "Sceptre",
+    "yearPublished": 2018,
+    "basename": "factfulness-hans-rosling-2018"
+  },
+  "fahrenheit-451-ray-bradbury-1953": {
+    "id": "fahrenheit-451-ray-bradbury-1953",
+    "title": "Fahrenheit 451",
+    "simpleTitle": "Fahrenheit 451",
+    "authors": [
+      "Ray Bradbury"
+    ],
+    "rating": 0,
+    "imageUrl": "/images/book-images/aeec4f59a21355b8ce3a6f0eb1832d02.jpg",
+    "link": "https://www.goodreads.com/book/show/13079982",
+    "lists": [
+      "read"
+    ],
+    "pages": 194,
+    "publisher": "Simon & Schuster",
+    "yearPublished": 1953,
+    "basename": "fahrenheit-451-ray-bradbury-1953"
+  },
+  "failure-is-not-an-option-gene-kranz-2000": {
+    "id": "failure-is-not-an-option-gene-kranz-2000",
+    "title": "Failure is Not an Option: Mission Control From Mercury to Apollo 13 and Beyond",
+    "simpleTitle": "Failure is Not an Option",
+    "authors": [
+      "Gene Kranz"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/f55459c0ec42582e357db3ef5b5ccc53.jpg",
+    "link": "https://www.goodreads.com/book/show/141499",
+    "lists": [
+      "read"
+    ],
+    "pages": 416,
+    "publisher": "Berkley Trade",
+    "yearPublished": 2000,
+    "basename": "failure-is-not-an-option-gene-kranz-2000"
+  },
+  "falter-bill-mckibben-2019": {
+    "id": "falter-bill-mckibben-2019",
+    "title": "Falter: Has the Human Game Begun to Play Itself Out?",
+    "simpleTitle": "Falter",
+    "authors": [
+      "Bill McKibben"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/bf6158ad7cc88fdba9c615cea54a6966.jpg",
+    "link": "https://www.goodreads.com/book/show/40046057",
+    "lists": [
+      "read"
+    ],
+    "pages": 291,
+    "publisher": "Henry Holt and Co.",
+    "yearPublished": 2019,
+    "basename": "falter-bill-mckibben-2019"
+  },
+  "fermats-enigma-simon-singh-1997": {
+    "id": "fermats-enigma-simon-singh-1997",
+    "title": "Fermat's Enigma: The Epic Quest to Solve the World's Greatest Mathematical Problem",
+    "simpleTitle": "Fermat's Enigma",
+    "authors": [
+      "Simon Singh"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/f194e7474ab56f09d1bc5ee8cab255da.jpg",
+    "link": "https://www.goodreads.com/book/show/38412",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2013-04-17",
+    "pages": 315,
+    "publisher": "Anchor",
+    "yearPublished": 1997,
+    "basename": "fermats-enigma-simon-singh-1997"
+  },
+  "finding-the-heart-of-the-nation-the-journey-of-the-uluru-statement-towards-voice-treaty-and-truth-thomas-mayor-2019": {
+    "id": "finding-the-heart-of-the-nation-the-journey-of-the-uluru-statement-towards-voice-treaty-and-truth-thomas-mayor-2019",
+    "title": "Finding the Heart of the Nation - The Journey of the Uluru Statement towards Voice, Treaty and Truth",
+    "simpleTitle": "Finding the Heart of the Nation",
+    "authors": [
+      "Thomas Mayor"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/436127c193c4c526a0f35d581e038698.jpg",
+    "link": "https://www.goodreads.com/book/show/52091889",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-12-16",
+    "pages": 264,
+    "publisher": "Hardie Grant",
+    "yearPublished": 2019,
+    "basename": "finding-the-heart-of-the-nation-the-journey-of-the-uluru-statement-towards-voice-treaty-and-truth-thomas-mayor-2019"
+  },
+  "godel-escher-bach-douglas-r-hofstadter-1979": {
+    "id": "godel-escher-bach-douglas-r-hofstadter-1979",
+    "title": "Gödel, Escher, Bach: An Eternal Golden Braid",
+    "simpleTitle": "Gödel, Escher, Bach",
+    "authors": [
+      "Douglas R. Hofstadter"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/4aaa4ee0006a93ca6009e4bcde55dbfc.jpg",
+    "link": "https://www.goodreads.com/book/show/24113",
+    "lists": [
+      "read"
+    ],
+    "pages": 777,
+    "publisher": "Basic Books",
+    "yearPublished": 1979,
+    "basename": "godel-escher-bach-douglas-r-hofstadter-1979"
+  },
+  "gut-giulia-enders-2014": {
+    "id": "gut-giulia-enders-2014",
+    "title": "Gut: The Inside Story of Our Body’s Most Underrated Organ",
+    "simpleTitle": "Gut",
+    "authors": [
+      "Giulia Enders",
+      "Jill Enders"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/46f61c2a3a78339c16b8a582706522a0.jpg",
+    "link": "https://www.goodreads.com/book/show/23013953",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-12-04",
+    "pages": 273,
+    "publisher": "Greystone Books",
+    "yearPublished": 2014,
+    "basename": "gut-giulia-enders-2014"
+  },
+  "her-body-and-other-parties-carmen-maria-machado-2017": {
+    "id": "her-body-and-other-parties-carmen-maria-machado-2017",
+    "title": "Her Body and Other Parties",
+    "simpleTitle": "Her Body and Other Parties",
+    "authors": [
+      "Carmen Maria Machado"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/92686b82028f5a48d1e553a80a6d6f59.jpg",
+    "link": "https://www.goodreads.com/book/show/33375622",
+    "lists": [
+      "read"
+    ],
+    "pages": 248,
+    "publisher": "Graywolf Press",
+    "yearPublished": 2017,
+    "basename": "her-body-and-other-parties-carmen-maria-machado-2017"
+  },
+  "horizon-barry-lopez-2019": {
+    "id": "horizon-barry-lopez-2019",
+    "title": "Horizon",
+    "simpleTitle": "Horizon",
+    "authors": [
+      "Barry Lopez"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/85fb7708d989f936cb51ef53a8af080f.jpg",
+    "link": "https://www.goodreads.com/book/show/15259073",
+    "lists": [
+      "read"
+    ],
+    "pages": 592,
+    "publisher": "Knopf Publishing Group",
+    "yearPublished": 2019,
+    "basename": "horizon-barry-lopez-2019"
+  },
+  "how-adam-smith-can-change-your-life-russ-roberts-2014": {
+    "id": "how-adam-smith-can-change-your-life-russ-roberts-2014",
+    "title": "How Adam Smith Can Change Your Life: An Unexpected Guide to Human Nature and Happiness",
+    "simpleTitle": "How Adam Smith Can Change Your Life",
+    "authors": [
+      "Russ Roberts"
+    ],
+    "rating": 3,
+    "imageUrl": "/images/book-images/3aa4bc701088c7281cea4b04ef56717c.jpg",
+    "link": "https://www.goodreads.com/book/show/20821053",
+    "lists": [
+      "read"
+    ],
+    "pages": 261,
+    "publisher": "Portfolio",
+    "yearPublished": 2014,
+    "basename": "how-adam-smith-can-change-your-life-russ-roberts-2014"
+  },
+  "how-powerful-we-are-sally-rugg": {
+    "id": "how-powerful-we-are-sally-rugg",
+    "title": "How Powerful We Are: Behind the scenes with one of Australia's leading activists",
+    "simpleTitle": "How Powerful We Are",
+    "authors": [
+      "Sally Rugg"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/4ec71a44a4b5f339a161e71de937fc12.jpg",
+    "link": "https://www.goodreads.com/book/show/49981523",
+    "lists": [
+      "read"
+    ],
+    "pages": 272,
+    "publisher": "Hachette Australia",
+    "basename": "how-powerful-we-are-sally-rugg"
+  },
+  "how-to-change-your-mind-michael-pollan-2018": {
+    "id": "how-to-change-your-mind-michael-pollan-2018",
+    "title": "How to Change Your Mind: What the New Science of Psychedelics Teaches Us About Consciousness, Dying, Addiction, Depression, and Transcendence",
+    "simpleTitle": "How to Change Your Mind",
+    "authors": [
+      "Michael Pollan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/bd45b523b61f78289f818ad22f43c46b.jpg",
+    "link": "https://www.goodreads.com/book/show/36613747",
+    "lists": [
+      "read"
+    ],
+    "pages": 480,
+    "publisher": "Allen Lane",
+    "yearPublished": 2018,
+    "basename": "how-to-change-your-mind-michael-pollan-2018"
+  },
+  "how-to-sit-thich-nhat-hanh-2014": {
+    "id": "how-to-sit-thich-nhat-hanh-2014",
+    "title": "How to Sit (Mindfulness Essentials, #1)",
+    "simpleTitle": "How to Sit",
+    "authors": [
+      "Thich Nhat Hanh"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/1145d20cd88af7fed20149feb3d5db5d.jpg",
+    "link": "https://www.goodreads.com/book/show/18342486",
+    "lists": [
+      "read"
+    ],
+    "pages": 117,
+    "publisher": "Parallax Press",
+    "yearPublished": 2014,
+    "basename": "how-to-sit-thich-nhat-hanh-2014"
+  },
+  "how-to-solve-it-george-polya-1944": {
+    "id": "how-to-solve-it-george-polya-1944",
+    "title": "How to Solve It: A New Aspect of Mathematical Method",
+    "simpleTitle": "How to Solve It",
+    "authors": [
+      "George Pólya"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/b8699404542026495b60ac65e4aff9aa.jpg",
+    "link": "https://www.goodreads.com/book/show/192221",
+    "lists": [
+      "read"
+    ],
+    "pages": 288,
+    "publisher": "Princeton University Press",
+    "yearPublished": 1944,
+    "basename": "how-to-solve-it-george-polya-1944"
+  },
+  "how-to-walk-thich-nhat-hanh-2015": {
+    "id": "how-to-walk-thich-nhat-hanh-2015",
+    "title": "How to Walk (Mindfulness Essentials, #4)",
+    "simpleTitle": "How to Walk",
+    "authors": [
+      "Thich Nhat Hanh",
+      "Jason DeAntonis"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/2dceb12bab7f9074b20357320bb0751c.jpg",
+    "link": "https://www.goodreads.com/book/show/22928976",
+    "lists": [
+      "read"
+    ],
+    "pages": 120,
+    "publisher": "Parallax Press",
+    "yearPublished": 2015,
+    "basename": "how-to-walk-thich-nhat-hanh-2015"
+  },
+  "hyperion-dan-simmons-1989": {
+    "id": "hyperion-dan-simmons-1989",
+    "title": "Hyperion (Hyperion Cantos #1)",
+    "simpleTitle": "Hyperion",
+    "authors": [
+      "Dan Simmons"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/3ec80ec64552555e2bbabd4f5c9fd7a3.jpg",
+    "link": "https://www.goodreads.com/book/show/77566",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2014-04-11",
+    "pages": 482,
+    "publisher": "Bantam Spectra",
+    "yearPublished": 1989,
+    "basename": "hyperion-dan-simmons-1989"
+  },
+  "i-am-a-strange-loop-douglas-r-hofstadter-2007": {
+    "id": "i-am-a-strange-loop-douglas-r-hofstadter-2007",
+    "title": "I Am a Strange Loop",
+    "simpleTitle": "I Am a Strange Loop",
+    "authors": [
+      "Douglas R. Hofstadter"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/fdc5bb6bca9af173d8268e420b3b5fd4.jpg",
+    "link": "https://www.goodreads.com/book/show/123471",
+    "lists": [
+      "read"
+    ],
+    "pages": 412,
+    "publisher": "Basic Books (AZ)",
+    "yearPublished": 2007,
+    "basename": "i-am-a-strange-loop-douglas-r-hofstadter-2007"
+  },
+  "i-feel-you-cris-beam": {
+    "id": "i-feel-you-cris-beam",
+    "title": "I Feel You: The Surprising Power of Extreme Empathy",
+    "simpleTitle": "I Feel You",
+    "authors": [
+      "Cris Beam"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/77de53c0cc789a715d0e66cce9f4b285.jpg",
+    "link": "https://www.goodreads.com/book/show/36808161",
+    "lists": [
+      "read"
+    ],
+    "pages": 256,
+    "publisher": "Houghton Mifflin",
+    "basename": "i-feel-you-cris-beam"
+  },
+  "inferior-angela-saini-2016": {
+    "id": "inferior-angela-saini-2016",
+    "title": "Inferior: How Science Got Women Wrong—and the New Research That's Rewriting the Story",
+    "simpleTitle": "Inferior",
+    "authors": [
+      "Angela Saini"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/1c1c4a7dfad1a5786cab89e23bb50d68.jpg",
+    "link": "https://www.goodreads.com/book/show/31869108",
+    "lists": [
+      "read"
+    ],
+    "pages": 200,
+    "publisher": "Beacon Press",
+    "yearPublished": 2016,
+    "basename": "inferior-angela-saini-2016"
+  },
+  "in-praise-of-shadows-junichiro-tanizaki-1933": {
+    "id": "in-praise-of-shadows-junichiro-tanizaki-1933",
+    "title": "In Praise of Shadows",
+    "simpleTitle": "In Praise of Shadows",
+    "authors": [
+      "Jun'ichirō Tanizaki",
+      "Edward G. Seidensticker",
+      "Thomas J. Harper",
+      "Charles Moore"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/c4903cbc7f8a09f2154180cb1c17ce7b.jpg",
+    "link": "https://www.goodreads.com/book/show/34473",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2020-02-04",
+    "pages": 56,
+    "publisher": "Leete's Island Books",
+    "yearPublished": 1933,
+    "basename": "in-praise-of-shadows-junichiro-tanizaki-1933"
+  },
+  "into-thin-air-jon-krakauer-1997": {
+    "id": "into-thin-air-jon-krakauer-1997",
+    "title": "Into Thin Air: A Personal Account of the Mount Everest Disaster",
+    "simpleTitle": "Into Thin Air",
+    "authors": [
+      "Jon Krakauer"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/2d6729f41c29594d20664bd54a9d76bb.jpg",
+    "link": "https://www.goodreads.com/book/show/1898",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2020-03-10",
+    "pages": 368,
+    "publisher": "Anchor Books",
+    "yearPublished": 1997,
+    "basename": "into-thin-air-jon-krakauer-1997"
+  },
+  "invisible-women-caroline-criado-perez-2019": {
+    "id": "invisible-women-caroline-criado-perez-2019",
+    "title": "Invisible Women: Data Bias in a World Designed for Men",
+    "simpleTitle": "Invisible Women",
+    "authors": [
+      "Caroline Criado-Pérez"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/58447669282b011194e29213f51a10a7.jpg",
+    "link": "https://www.goodreads.com/book/show/41104077",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-08-19",
+    "pages": 411,
+    "publisher": "Harry N. Abrams",
+    "yearPublished": 2019,
+    "basename": "invisible-women-caroline-criado-perez-2019"
+  },
+  "knife-of-dreams-robert-jordan-2005": {
+    "id": "knife-of-dreams-robert-jordan-2005",
+    "title": "Knife of Dreams (The Wheel of Time, #11)",
+    "simpleTitle": "Knife of Dreams",
+    "authors": [
+      "Robert Jordan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/5d03729faa36dfa1dc9ae56d9fa91111.jpg",
+    "link": "https://www.goodreads.com/book/show/13888",
+    "lists": [
+      "read"
+    ],
+    "pages": 860,
+    "publisher": "Tom Doherty Associates",
+    "yearPublished": 2005,
+    "basename": "knife-of-dreams-robert-jordan-2005"
+  },
+  "kon-tiki-thor-heyerdahl-1948": {
+    "id": "kon-tiki-thor-heyerdahl-1948",
+    "title": "Kon-Tiki",
+    "simpleTitle": "Kon-Tiki",
+    "authors": [
+      "Thor Heyerdahl"
+    ],
+    "rating": 3,
+    "imageUrl": "/images/book-images/0531cbdb2a436ddcb36e52c5ca7cedf4.jpg",
+    "link": "https://www.goodreads.com/book/show/790171",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2020-03-26",
+    "pages": 240,
+    "publisher": "Rand McNally",
+    "yearPublished": 1948,
+    "basename": "kon-tiki-thor-heyerdahl-1948"
+  },
+  "less-andrew-sean-greer-2017": {
+    "id": "less-andrew-sean-greer-2017",
+    "title": "Less",
+    "simpleTitle": "Less",
+    "authors": [
+      "Andrew Sean Greer"
+    ],
+    "rating": 2,
+    "imageUrl": "/images/book-images/1cfdf0e8d0c87a228c1f40d9bee7888b.jpg",
+    "link": "https://www.goodreads.com/book/show/39927096",
+    "lists": [
+      "read"
+    ],
+    "pages": 273,
+    "publisher": "Lee Boudreaux Books",
+    "yearPublished": 2017,
+    "basename": "less-andrew-sean-greer-2017"
+  },
+  "logicomix-apostolos-k-doxiadis-2009": {
+    "id": "logicomix-apostolos-k-doxiadis-2009",
+    "title": "Logicomix: An Epic Search for Truth",
+    "simpleTitle": "Logicomix",
+    "authors": [
+      "Apostolos K. Doxiadis",
+      "Christos H. Papadimitriou",
+      "Alecos Papadatos",
+      "Annie Di Donna"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/9294dec2af88c0bc7d86be8f6d3bee0e.jpg",
+    "link": "https://www.goodreads.com/book/show/6493321",
+    "lists": [
+      "read"
+    ],
+    "pages": 352,
+    "publisher": "Bloomsbury (NYC)",
+    "yearPublished": 2009,
+    "basename": "logicomix-apostolos-k-doxiadis-2009"
+  },
+  "lord-of-chaos-robert-jordan-1994": {
+    "id": "lord-of-chaos-robert-jordan-1994",
+    "title": "Lord of Chaos (The Wheel of Time, #6)",
+    "simpleTitle": "Lord of Chaos",
+    "authors": [
+      "Robert Jordan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/3f2dea3b79efe55678eda35f88450378.jpg",
+    "link": "https://www.goodreads.com/book/show/35231",
+    "lists": [
+      "read"
+    ],
+    "pages": 1011,
+    "publisher": "Tor Books",
+    "yearPublished": 1994,
+    "basename": "lord-of-chaos-robert-jordan-1994"
+  },
+  "lost-at-sea-jon-ronson-2012": {
+    "id": "lost-at-sea-jon-ronson-2012",
+    "title": "Lost At Sea: The Jon Ronson Mysteries",
+    "simpleTitle": "Lost At Sea",
+    "authors": [
+      "Jon Ronson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/285311f4de8825569af8e07cdd970f3e.jpg",
+    "link": "https://www.goodreads.com/book/show/15737151",
+    "lists": [
+      "read"
+    ],
+    "pages": 400,
+    "publisher": "Riverhead Hardcover",
+    "yearPublished": 2012,
+    "basename": "lost-at-sea-jon-ronson-2012"
+  },
+  "lost-connections-johann-hari-2018": {
+    "id": "lost-connections-johann-hari-2018",
+    "title": "Lost Connections: Uncovering the Real Causes of Depression - and the Unexpected Solutions",
+    "simpleTitle": "Lost Connections",
+    "authors": [
+      "Johann Hari"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/53dface22ab5f0c82aeaeaf6df6ca9bc.jpg",
+    "link": "https://www.goodreads.com/book/show/34921573",
+    "lists": [
+      "read"
+    ],
+    "pages": 322,
+    "publisher": "Bloomsbury USA",
+    "yearPublished": 2018,
+    "basename": "lost-connections-johann-hari-2018"
+  },
+  "mad-bad-dangerous-to-know-ranulph-fiennes-1993": {
+    "id": "mad-bad-dangerous-to-know-ranulph-fiennes-1993",
+    "title": "Mad, Bad & Dangerous to Know: The Autobiography",
+    "simpleTitle": "Mad, Bad & Dangerous to Know",
+    "authors": [
+      "Ranulph Fiennes"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/569d08c84f3b06d8b7d6fc2dfdc29249.jpg",
+    "link": "https://www.goodreads.com/book/show/2060190",
+    "lists": [
+      "read"
+    ],
+    "pages": 416,
+    "publisher": "Hodder & Stoughton",
+    "yearPublished": 1993,
+    "basename": "mad-bad-dangerous-to-know-ranulph-fiennes-1993"
+  },
+  "made-by-humans-ellen-broad": {
+    "id": "made-by-humans-ellen-broad",
+    "title": "Made by Humans: The AI Condition",
+    "simpleTitle": "Made by Humans",
+    "authors": [
+      "Ellen Broad"
+    ],
+    "rating": 2,
+    "imageUrl": "/images/book-images/7bc6a0b30b48cf116687a55ece422f30.jpg",
+    "link": "https://www.goodreads.com/book/show/40626257",
+    "lists": [
+      "read"
+    ],
+    "pages": 277,
+    "publisher": "Melbourne University Press",
+    "basename": "made-by-humans-ellen-broad"
+  },
+  "magician-raymond-e-feist-1982": {
+    "id": "magician-raymond-e-feist-1982",
+    "title": "Magician (The Riftwar Saga, #1-2)",
+    "simpleTitle": "Magician",
+    "authors": [
+      "Raymond E. Feist"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/f28f380c6118449d6fa7873d6e704abe.jpg",
+    "link": "https://www.goodreads.com/book/show/43916",
+    "lists": [
+      "read"
+    ],
+    "pages": 681,
+    "publisher": "HarperCollins",
+    "yearPublished": 1982,
+    "basename": "magician-raymond-e-feist-1982"
+  },
+  "milk-and-honey-rupi-kaur-2014": {
+    "id": "milk-and-honey-rupi-kaur-2014",
+    "title": "Milk and Honey",
+    "simpleTitle": "Milk and Honey",
+    "authors": [
+      "Rupi Kaur"
+    ],
+    "rating": 0,
+    "imageUrl": "/images/book-images/2dceb7c44b1a1ce55cda856f63ca106e.jpg",
+    "link": "https://www.goodreads.com/book/show/23513349",
+    "lists": [
+      "read"
+    ],
+    "pages": 204,
+    "publisher": "Createspace",
+    "yearPublished": 2014,
+    "basename": "milk-and-honey-rupi-kaur-2014"
+  },
+  "mountains-of-the-mind-robert-macfarlane-2003": {
+    "id": "mountains-of-the-mind-robert-macfarlane-2003",
+    "title": "Mountains of the Mind: A History of a Fascination",
+    "simpleTitle": "Mountains of the Mind",
+    "authors": [
+      "Robert Macfarlane"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/48a8caa7458acab8ae6aa0a85badfaab.jpg",
+    "link": "https://www.goodreads.com/book/show/839157",
+    "lists": [
+      "read"
+    ],
+    "pages": 320,
+    "publisher": "Granta Books",
+    "yearPublished": 2003,
+    "basename": "mountains-of-the-mind-robert-macfarlane-2003"
+  },
+  "my-sister-the-serial-killer-oyinkan-braithwaite-2017": {
+    "id": "my-sister-the-serial-killer-oyinkan-braithwaite-2017",
+    "title": "My Sister, the Serial Killer",
+    "simpleTitle": "My Sister, the Serial Killer",
+    "authors": [
+      "Oyinkan Braithwaite"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/a000623a2d91aa286ff8e6d23a3b4c06.jpg",
+    "link": "https://www.goodreads.com/book/show/38819868",
+    "lists": [
+      "read"
+    ],
+    "pages": 226,
+    "publisher": "Doubleday Books",
+    "yearPublished": 2017,
+    "basename": "my-sister-the-serial-killer-oyinkan-braithwaite-2017"
+  },
+  "neuromancer-william-gibson-1984": {
+    "id": "neuromancer-william-gibson-1984",
+    "title": "Neuromancer (Sprawl, #1)",
+    "simpleTitle": "Neuromancer",
+    "authors": [
+      "William Gibson"
+    ],
+    "rating": 0,
+    "imageUrl": "/images/book-images/242175fb4ef26e07dc9561edf82aea25.jpg",
+    "link": "https://www.goodreads.com/book/show/22328",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2017-02-13",
+    "pages": 271,
+    "publisher": "Ace Books",
+    "yearPublished": 1984,
+    "basename": "neuromancer-william-gibson-1984"
+  },
+  "new-spring-robert-jordan-2004": {
+    "id": "new-spring-robert-jordan-2004",
+    "title": "New Spring (The Wheel of Time, #0)",
+    "simpleTitle": "New Spring",
+    "authors": [
+      "Robert Jordan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/70e0981df6f580ae6c9b1e6f2764e042.jpg",
+    "link": "https://www.goodreads.com/book/show/187065",
+    "lists": [
+      "read"
+    ],
+    "pages": 423,
+    "publisher": "Orbit",
+    "yearPublished": 2004,
+    "basename": "new-spring-robert-jordan-2004"
+  },
+  "no-friend-but-the-mountains-behrouz-boochani-2018": {
+    "id": "no-friend-but-the-mountains-behrouz-boochani-2018",
+    "title": "No Friend but the Mountains: Writing from Manus Prison",
+    "simpleTitle": "No Friend but the Mountains",
+    "authors": [
+      "Behrouz Boochani",
+      "Omid Tofighian"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/a577212d7a925df288419ee6bd40d60c.jpg",
+    "link": "https://www.goodreads.com/book/show/39284186",
+    "lists": [
+      "read"
+    ],
+    "pages": 416,
+    "publisher": "Picador Australia",
+    "yearPublished": 2018,
+    "basename": "no-friend-but-the-mountains-behrouz-boochani-2018"
+  },
+  "notes-on-the-synthesis-of-form-christopher-w-alexander-1964": {
+    "id": "notes-on-the-synthesis-of-form-christopher-w-alexander-1964",
+    "title": "Notes on the Synthesis of Form",
+    "simpleTitle": "Notes on the Synthesis of Form",
+    "authors": [
+      "Christopher W. Alexander"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/c7a3853b0b2cd21f1a9fc1079920bb00.jpg",
+    "link": "https://www.goodreads.com/book/show/320553",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-10-10",
+    "pages": 224,
+    "publisher": "Harvard University Press",
+    "yearPublished": 1964,
+    "basename": "notes-on-the-synthesis-of-form-christopher-w-alexander-1964"
+  },
+  "oathbringer-brandon-sanderson-2017": {
+    "id": "oathbringer-brandon-sanderson-2017",
+    "title": "Oathbringer (The Stormlight Archive, #3)",
+    "simpleTitle": "Oathbringer",
+    "authors": [
+      "Brandon Sanderson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/dbc06871a0ec08abbf62d77ab24b42ed.jpg",
+    "link": "https://www.goodreads.com/book/show/34002132",
+    "lists": [
+      "read"
+    ],
+    "pages": 1243,
+    "publisher": "Tor Books",
+    "yearPublished": 2017,
+    "basename": "oathbringer-brandon-sanderson-2017"
+  },
+  "oh-the-places-youll-go-dr-seuss-1990": {
+    "id": "oh-the-places-youll-go-dr-seuss-1990",
+    "title": "Oh, the Places You'll Go!",
+    "simpleTitle": "Oh, the Places You'll Go!",
+    "authors": [
+      "Dr. Seuss"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/880b3d89a7e009a6484d534372b0e91f.jpg",
+    "link": "https://www.goodreads.com/book/show/191139",
+    "lists": [
+      "read"
+    ],
+    "pages": 44,
+    "publisher": "Random House Books for Young Readers",
+    "yearPublished": 1990,
+    "basename": "oh-the-places-youll-go-dr-seuss-1990"
+  },
+  "old-path-white-clouds-thich-nhat-hanh-1987": {
+    "id": "old-path-white-clouds-thich-nhat-hanh-1987",
+    "title": "Old Path White Clouds: Walking in the Footsteps of the Buddha",
+    "simpleTitle": "Old Path White Clouds",
+    "authors": [
+      "Thich Nhat Hanh",
+      "Nguyen Thi Hop",
+      "Mobi Ho"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/065c37b8419577ccfd0110374ab01d0a.jpg",
+    "link": "https://www.goodreads.com/book/show/241899",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-10-09",
+    "pages": 600,
+    "publisher": "Parallax Press",
+    "yearPublished": 1987,
+    "basename": "old-path-white-clouds-thich-nhat-hanh-1987"
+  },
+  "on-fire-naomi-klein-2019": {
+    "id": "on-fire-naomi-klein-2019",
+    "title": "On Fire: The Case for the Green New Deal",
+    "simpleTitle": "On Fire",
+    "authors": [
+      "Naomi Klein"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/8a7c2427d09f14767d4d3457acf1d98c.jpg",
+    "link": "https://www.goodreads.com/book/show/43821569",
+    "lists": [
+      "read"
+    ],
+    "pages": 288,
+    "publisher": "Simon Schuster Audio",
+    "yearPublished": 2019,
+    "basename": "on-fire-naomi-klein-2019"
+  },
+  "permanent-record-edward-snowden-2019": {
+    "id": "permanent-record-edward-snowden-2019",
+    "title": "Permanent Record",
+    "simpleTitle": "Permanent Record",
+    "authors": [
+      "Edward Snowden"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/a488652266895c8259a317f8f707a41e.jpg",
+    "link": "https://www.goodreads.com/book/show/46223297",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-10-23",
+    "pages": 339,
+    "publisher": "Metropolitan Books",
+    "yearPublished": 2019,
+    "basename": "permanent-record-edward-snowden-2019"
+  },
+  "quantum-manjit-kumar-2007": {
+    "id": "quantum-manjit-kumar-2007",
+    "title": "Quantum: Einstein, Bohr and the Great Debate About the Nature of Reality",
+    "simpleTitle": "Quantum",
+    "authors": [
+      "Manjit Kumar"
+    ],
+    "rating": 0,
+    "imageUrl": "/images/book-images/219c09911523867ea942f3591636c4ff.jpg",
+    "link": "https://www.goodreads.com/book/show/6448772",
+    "lists": [
+      "read"
+    ],
+    "pages": 360,
+    "publisher": "Icon Books",
+    "yearPublished": 2007,
+    "basename": "quantum-manjit-kumar-2007"
+  },
+  "radical-candor-kim-malone-scott-2017": {
+    "id": "radical-candor-kim-malone-scott-2017",
+    "title": "Radical Candor: Be a Kickass Boss Without Losing Your Humanity",
+    "simpleTitle": "Radical Candor",
+    "authors": [
+      "Kim Malone Scott"
+    ],
+    "rating": 2,
+    "imageUrl": "/images/book-images/51582c4fd2da15e009b55bd3e653e687.jpg",
+    "link": "https://www.goodreads.com/book/show/29939161",
+    "lists": [
+      "read"
+    ],
+    "pages": 246,
+    "publisher": "St. Martin's Press",
+    "yearPublished": 2017,
+    "basename": "radical-candor-kim-malone-scott-2017"
+  },
+  "reality-is-not-what-it-seems-carlo-rovelli-2014": {
+    "id": "reality-is-not-what-it-seems-carlo-rovelli-2014",
+    "title": "Reality is Not What it Seems: The Journey to Quantum Gravity",
+    "simpleTitle": "Reality is Not What it Seems",
+    "authors": [
+      "Carlo Rovelli"
+    ],
+    "rating": 1,
+    "imageUrl": "/images/book-images/f422f16e1c474144596c7f269780b6fe.jpg",
+    "link": "https://www.goodreads.com/book/show/29767627",
+    "lists": [
+      "read"
+    ],
+    "pages": 256,
+    "publisher": "Allen Lane",
+    "yearPublished": 2014,
+    "basename": "reality-is-not-what-it-seems-carlo-rovelli-2014"
+  },
+  "redshirts-john-scalzi-2012": {
+    "id": "redshirts-john-scalzi-2012",
+    "title": "Redshirts",
+    "simpleTitle": "Redshirts",
+    "authors": [
+      "John Scalzi"
+    ],
+    "rating": 3,
+    "imageUrl": "/images/book-images/6f48fa9142662800fcff7e80f8ea4cc7.jpg",
+    "link": "https://www.goodreads.com/book/show/13055592",
+    "lists": [
+      "read"
+    ],
+    "pages": 320,
+    "publisher": "Tor Books",
+    "yearPublished": 2012,
+    "basename": "redshirts-john-scalzi-2012"
+  },
+  "refugee-rights-and-policy-wrongs-jane-mcadam": {
+    "id": "refugee-rights-and-policy-wrongs-jane-mcadam",
+    "title": "Refugee Rights and Policy Wrongs: A frank, up-to-date guide by experts",
+    "simpleTitle": "Refugee Rights and Policy Wrongs",
+    "authors": [
+      "Jane McAdam",
+      "Fiona Chong"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/0c9e9491869f66c8cbe977cf2fba3051.jpg",
+    "link": "https://www.goodreads.com/book/show/51046959",
+    "lists": [
+      "read"
+    ],
+    "pages": 288,
+    "publisher": "University of New South Wales Press",
+    "basename": "refugee-rights-and-policy-wrongs-jane-mcadam"
+  },
+  "rendezvous-with-rama-arthur-c-clarke-1973": {
+    "id": "rendezvous-with-rama-arthur-c-clarke-1973",
+    "title": "Rendezvous with Rama (Rama, #1)",
+    "simpleTitle": "Rendezvous with Rama",
+    "authors": [
+      "Arthur C. Clarke"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/35ca38ece889d7f34f04c9fd538c51d8.jpg",
+    "link": "https://www.goodreads.com/book/show/112537",
+    "lists": [
+      "read"
+    ],
+    "pages": 243,
+    "yearPublished": 1973,
+    "basename": "rendezvous-with-rama-arthur-c-clarke-1973"
+  },
+  "sand-talk-tyson-yunkaporta-2019": {
+    "id": "sand-talk-tyson-yunkaporta-2019",
+    "title": "Sand Talk: How Indigenous Thinking Can Save the World",
+    "simpleTitle": "Sand Talk",
+    "authors": [
+      "Tyson Yunkaporta"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/526f7e079a1f66bdf0c5a030faf0832c.jpg",
+    "link": "https://www.goodreads.com/book/show/45449501",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-11-15",
+    "pages": 256,
+    "publisher": "HarperOne",
+    "yearPublished": 2019,
+    "basename": "sand-talk-tyson-yunkaporta-2019"
+  },
+  "-seishi-yokomizo-1973": {
+    "id": "-seishi-yokomizo-1973",
+    "title": "本陣殺人事件 [The Case of the Honjin Murder]",
+    "simpleTitle": "本陣殺人事件",
+    "authors": [
+      "Seishi Yokomizo",
+      "横溝 正史"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/cfa4d1b2c2588e926047a4a3007e1a07.jpg",
+    "link": "https://www.goodreads.com/book/show/5863774",
+    "lists": [
+      "read"
+    ],
+    "pages": 407,
+    "publisher": "角川書店",
+    "yearPublished": 1973,
+    "basename": "-seishi-yokomizo-1973"
+  },
+  "she-said-jodi-kantor-2019": {
+    "id": "she-said-jodi-kantor-2019",
+    "title": "She Said: Breaking the Sexual Harassment Story That Helped Ignite a Movement",
+    "simpleTitle": "She Said",
+    "authors": [
+      "Jodi Kantor",
+      "Megan Twohey"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/2c53ba445e80d3258653ea5602ffe7c4.jpg",
+    "link": "https://www.goodreads.com/book/show/44767249",
+    "lists": [
+      "read"
+    ],
+    "pages": 310,
+    "publisher": "Penguin Press",
+    "yearPublished": 2019,
+    "basename": "she-said-jodi-kantor-2019"
+  },
+  "siddhartha-hermann-hesse-1922": {
+    "id": "siddhartha-hermann-hesse-1922",
+    "title": "Siddhartha",
+    "simpleTitle": "Siddhartha",
+    "authors": [
+      "Hermann Hesse",
+      "Hilda Rosner"
+    ],
+    "rating": 2,
+    "imageUrl": "/images/book-images/c0a263b333ce6dcf33b7e7d772163f50.jpg",
+    "link": "https://www.goodreads.com/book/show/52036",
+    "lists": [
+      "read"
+    ],
+    "pages": 152,
+    "publisher": "Bantam Books",
+    "yearPublished": 1922,
+    "basename": "siddhartha-hermann-hesse-1922"
+  },
+  "snapshot-brandon-sanderson-2017": {
+    "id": "snapshot-brandon-sanderson-2017",
+    "title": "Snapshot",
+    "simpleTitle": "Snapshot",
+    "authors": [
+      "Brandon Sanderson"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/d4e2713d1b1725a1592f9268589f990d.jpg",
+    "link": "https://www.goodreads.com/book/show/31176804",
+    "lists": [
+      "read"
+    ],
+    "pages": 123,
+    "publisher": "Vault Books",
+    "yearPublished": 2017,
+    "basename": "snapshot-brandon-sanderson-2017"
+  },
+  "snow-crash-neal-stephenson-1992": {
+    "id": "snow-crash-neal-stephenson-1992",
+    "title": "Snow Crash",
+    "simpleTitle": "Snow Crash",
+    "authors": [
+      "Neal Stephenson",
+      "Guy Abadia"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/90eb5ad56b20a58db6bea42b1722c1ee.jpg",
+    "link": "https://www.goodreads.com/book/show/830",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2014-04-11",
+    "pages": 438,
+    "publisher": "Bantam Books",
+    "yearPublished": 1992,
+    "basename": "snow-crash-neal-stephenson-1992"
+  },
+  "solitary-albert-woodfox-2019": {
+    "id": "solitary-albert-woodfox-2019",
+    "title": "Solitary",
+    "simpleTitle": "Solitary",
+    "authors": [
+      "Albert Woodfox"
+    ],
+    "rating": 0,
+    "imageUrl": "/images/book-images/84336f44e15bb71c4d15882e3f94e66e.jpg",
+    "link": "https://www.goodreads.com/book/show/40642337",
+    "lists": [
+      "read"
+    ],
+    "pages": 433,
+    "publisher": "Grove Press",
+    "yearPublished": 2019,
+    "basename": "solitary-albert-woodfox-2019"
+  },
+  "so-youve-been-publicly-shamed-jon-ronson-2015": {
+    "id": "so-youve-been-publicly-shamed-jon-ronson-2015",
+    "title": "So You've Been Publicly Shamed",
+    "simpleTitle": "So You've Been Publicly Shamed",
+    "authors": [
+      "Jon Ronson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/5f608a25dc5d7a5c986a98f10691004f.jpg",
+    "link": "https://www.goodreads.com/book/show/22571552",
+    "lists": [
+      "read"
+    ],
+    "pages": 290,
+    "publisher": "Riverhead Books",
+    "yearPublished": 2015,
+    "basename": "so-youve-been-publicly-shamed-jon-ronson-2015"
+  },
+  "so-you-want-to-talk-about-race-ijeoma-oluo-2018": {
+    "id": "so-you-want-to-talk-about-race-ijeoma-oluo-2018",
+    "title": "So You Want to Talk About Race",
+    "simpleTitle": "So You Want to Talk About Race",
+    "authors": [
+      "Ijeoma Oluo"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/5112a554eb08869cc321b75d2df8d642.jpg",
+    "link": "https://www.goodreads.com/book/show/35099718",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-08-20",
+    "pages": 248,
+    "publisher": "Seal Press",
+    "yearPublished": 2018,
+    "basename": "so-you-want-to-talk-about-race-ijeoma-oluo-2018"
+  },
+  "start-where-you-are-pema-chodron-1994": {
+    "id": "start-where-you-are-pema-chodron-1994",
+    "title": "Start Where You Are: A Guide to Compassionate Living",
+    "simpleTitle": "Start Where You Are",
+    "authors": [
+      "Pema Chödrön"
+    ],
+    "rating": 0,
+    "imageUrl": "/images/book-images/be60e083c978b249bc269f4c63adc85f.jpg",
+    "link": "https://www.goodreads.com/book/show/815715",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-12-11",
+    "pages": 176,
+    "publisher": "Shambhala",
+    "yearPublished": 1994,
+    "basename": "start-where-you-are-pema-chodron-1994"
+  },
+  "surfaces-and-essences-douglas-r-hofstadter-2011": {
+    "id": "surfaces-and-essences-douglas-r-hofstadter-2011",
+    "title": "Surfaces and Essences: Analogy as the Fuel and Fire of Thinking",
+    "simpleTitle": "Surfaces and Essences",
+    "authors": [
+      "Douglas R. Hofstadter",
+      "Emmanuel Sander"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/84feeb870b5eb18c0a54b795e50bf912.jpg",
+    "link": "https://www.goodreads.com/book/show/7711871",
+    "lists": [
+      "read"
+    ],
+    "pages": 578,
+    "publisher": "Basic Books",
+    "yearPublished": 2011,
+    "basename": "surfaces-and-essences-douglas-r-hofstadter-2011"
+  },
+  "tall-man-chloe-hooper-2008": {
+    "id": "tall-man-chloe-hooper-2008",
+    "title": "Tall Man: The Death of Doomadgee",
+    "simpleTitle": "Tall Man",
+    "authors": [
+      "Chloe Hooper"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/7f8f599ab7c3fbb6674fcdc5df53a107.jpg",
+    "link": "https://www.goodreads.com/book/show/3901371",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2020-02-26",
+    "pages": 258,
+    "publisher": "Scribner Book Company",
+    "yearPublished": 2008,
+    "basename": "tall-man-chloe-hooper-2008"
+  },
+  "testosterone-rex-cordelia-fine-2017": {
+    "id": "testosterone-rex-cordelia-fine-2017",
+    "title": "Testosterone Rex: Myths of Sex, Science, and Society",
+    "simpleTitle": "Testosterone Rex",
+    "authors": [
+      "Cordelia Fine"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/6ba4ad47110483b0e5d494091a3758d8.jpg",
+    "link": "https://www.goodreads.com/book/show/35187176",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-03-31",
+    "pages": 272,
+    "publisher": "W. W. Norton Company",
+    "yearPublished": 2017,
+    "basename": "testosterone-rex-cordelia-fine-2017"
+  },
+  "the-age-of-surveillance-capitalism-shoshana-zuboff-2018": {
+    "id": "the-age-of-surveillance-capitalism-shoshana-zuboff-2018",
+    "title": "The Age of Surveillance Capitalism: The Fight for a Human Future at the New Frontier of Power",
+    "simpleTitle": "The Age of Surveillance Capitalism",
+    "authors": [
+      "Shoshana Zuboff"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/77f2144aa115d7fd49a9e49d09a43b93.jpg",
+    "link": "https://www.goodreads.com/book/show/26195941",
+    "lists": [
+      "read"
+    ],
+    "pages": 691,
+    "publisher": "PublicAffairs",
+    "yearPublished": 2018,
+    "basename": "the-age-of-surveillance-capitalism-shoshana-zuboff-2018"
+  },
+  "the-beginning-of-infinity-david-deutsch-2011": {
+    "id": "the-beginning-of-infinity-david-deutsch-2011",
+    "title": "The Beginning of Infinity: Explanations That Transform the World",
+    "simpleTitle": "The Beginning of Infinity",
+    "authors": [
+      "David Deutsch"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/48583fd84cf0fa9f52fde6f3a17a57c7.jpg",
+    "link": "https://www.goodreads.com/book/show/10483171",
+    "lists": [
+      "read"
+    ],
+    "pages": 487,
+    "publisher": "Viking",
+    "yearPublished": 2011,
+    "basename": "the-beginning-of-infinity-david-deutsch-2011"
+  },
+  "the-big-picture-sean-carroll-2016": {
+    "id": "the-big-picture-sean-carroll-2016",
+    "title": "The Big Picture: On the Origins of Life, Meaning, and the Universe Itself",
+    "simpleTitle": "The Big Picture",
+    "authors": [
+      "Sean Carroll"
+    ],
+    "rating": 2,
+    "imageUrl": "/images/book-images/67b4439e7952becb03fb1af4af62b594.jpg",
+    "link": "https://www.goodreads.com/book/show/26150770",
+    "lists": [
+      "read"
+    ],
+    "pages": 480,
+    "publisher": "Dutton",
+    "yearPublished": 2016,
+    "basename": "the-big-picture-sean-carroll-2016"
+  },
+  "the-city-in-the-middle-of-the-night-charlie-jane-anders-2019": {
+    "id": "the-city-in-the-middle-of-the-night-charlie-jane-anders-2019",
+    "title": "The City in the Middle of the Night",
+    "simpleTitle": "The City in the Middle of the Night",
+    "authors": [
+      "Charlie Jane Anders"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/15475b43f4e4869d4923a25a2c5835c9.jpg",
+    "link": "https://www.goodreads.com/book/show/37534907",
+    "lists": [
+      "read"
+    ],
+    "pages": 366,
+    "publisher": "Tor Books",
+    "yearPublished": 2019,
+    "basename": "the-city-in-the-middle-of-the-night-charlie-jane-anders-2019"
+  },
+  "the-dragon-reborn-robert-jordan-1991": {
+    "id": "the-dragon-reborn-robert-jordan-1991",
+    "title": "The Dragon Reborn (The Wheel of Time, #3)",
+    "simpleTitle": "The Dragon Reborn",
+    "authors": [
+      "Robert Jordan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/61ead3e12ef91ed9ec1367c99a5edc1d.jpg",
+    "link": "https://www.goodreads.com/book/show/34897",
+    "lists": [
+      "read"
+    ],
+    "pages": 624,
+    "publisher": "Tor Books",
+    "yearPublished": 1991,
+    "basename": "the-dragon-reborn-robert-jordan-1991"
+  },
+  "the-dreamblood-duology-nk-jemisin-2016": {
+    "id": "the-dreamblood-duology-nk-jemisin-2016",
+    "title": "The Dreamblood Duology (Dreamblood, #1-2)",
+    "simpleTitle": "The Dreamblood Duology",
+    "authors": [
+      "N.K. Jemisin"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/bacd585d77b7360a8a1ecdd80ed067d3.jpg",
+    "link": "https://www.goodreads.com/book/show/29775367",
+    "lists": [
+      "read"
+    ],
+    "pages": 930,
+    "publisher": "Orbit",
+    "yearPublished": 2016,
+    "basename": "the-dreamblood-duology-nk-jemisin-2016"
+  },
+  "the-eastern-curlew-harry-saddler": {
+    "id": "the-eastern-curlew-harry-saddler",
+    "title": "The Eastern Curlew",
+    "simpleTitle": "The Eastern Curlew",
+    "authors": [
+      "Harry Saddler"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/7f69444e33359d5d687f1f3dc2b8b069.jpg",
+    "link": "https://www.goodreads.com/book/show/41011110",
+    "lists": [
+      "read"
+    ],
+    "pages": 177,
+    "publisher": "Affirm Press",
+    "basename": "the-eastern-curlew-harry-saddler"
+  },
+  "the-elegant-universe-brian-greene-1999": {
+    "id": "the-elegant-universe-brian-greene-1999",
+    "title": "The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory",
+    "simpleTitle": "The Elegant Universe",
+    "authors": [
+      "Brian Greene"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/705c7211cfc96bf9e8bb08b0d55d8f3d.jpg",
+    "link": "https://www.goodreads.com/book/show/8049273",
+    "lists": [
+      "read"
+    ],
+    "pages": 464,
+    "publisher": "W. W. Norton & Company",
+    "yearPublished": 1999,
+    "basename": "the-elegant-universe-brian-greene-1999"
+  },
+  "the-eye-of-the-world-robert-jordan-1990": {
+    "id": "the-eye-of-the-world-robert-jordan-1990",
+    "title": "The Eye of the World (The Wheel of Time, #1)",
+    "simpleTitle": "The Eye of the World",
+    "authors": [
+      "Robert Jordan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/426bb23fbb77bbb925937ef359f63b41.jpg",
+    "link": "https://www.goodreads.com/book/show/228665",
+    "lists": [
+      "read"
+    ],
+    "pages": 814,
+    "publisher": "Tor Books",
+    "yearPublished": 1990,
+    "basename": "the-eye-of-the-world-robert-jordan-1990"
+  },
+  "the-fall-of-hyperion-dan-simmons-1990": {
+    "id": "the-fall-of-hyperion-dan-simmons-1990",
+    "title": "The Fall of Hyperion (Hyperion Cantos #2)",
+    "simpleTitle": "The Fall of Hyperion",
+    "authors": [
+      "Dan Simmons"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/fe688172fc0fb55c229b40e2fb2153ea.jpg",
+    "link": "https://www.goodreads.com/book/show/77565",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2014-04-11",
+    "pages": 517,
+    "publisher": "Spectra Books",
+    "yearPublished": 1990,
+    "basename": "the-fall-of-hyperion-dan-simmons-1990"
+  },
+  "the-fellowship-of-the-ring-jrr-tolkien-1954": {
+    "id": "the-fellowship-of-the-ring-jrr-tolkien-1954",
+    "title": "The Fellowship of the Ring (The Lord of the Rings, #1)",
+    "simpleTitle": "The Fellowship of the Ring",
+    "authors": [
+      "J.R.R. Tolkien"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/94e4e4c1705c400939830cfe851cfd3a.jpg",
+    "link": "https://www.goodreads.com/book/show/34",
+    "lists": [
+      "read"
+    ],
+    "pages": 398,
+    "publisher": "Houghton Mifflin Harcourt",
+    "yearPublished": 1954,
+    "basename": "the-fellowship-of-the-ring-jrr-tolkien-1954"
+  },
+  "the-fifth-season-nk-jemisin-2015": {
+    "id": "the-fifth-season-nk-jemisin-2015",
+    "title": "The Fifth Season (The Broken Earth, #1)",
+    "simpleTitle": "The Fifth Season",
+    "authors": [
+      "N.K. Jemisin"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/0e1e227a74b853f5615d766f0cadc7f1.jpg",
+    "link": "https://www.goodreads.com/book/show/19161852",
+    "lists": [
+      "read"
+    ],
+    "pages": 468,
+    "publisher": "Orbit",
+    "yearPublished": 2015,
+    "basename": "the-fifth-season-nk-jemisin-2015"
+  },
+  "the-final-empire-brandon-sanderson-2006": {
+    "id": "the-final-empire-brandon-sanderson-2006",
+    "title": "The Final Empire (Mistborn, #1)",
+    "simpleTitle": "The Final Empire",
+    "authors": [
+      "Brandon Sanderson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/08c9645582646f117bbebde2364fa3dd.jpg",
+    "link": "https://www.goodreads.com/book/show/68428",
+    "lists": [
+      "read"
+    ],
+    "pages": 541,
+    "publisher": "Tor Books",
+    "yearPublished": 2006,
+    "basename": "the-final-empire-brandon-sanderson-2006"
+  },
+  "the-fires-of-heaven-robert-jordan-1993": {
+    "id": "the-fires-of-heaven-robert-jordan-1993",
+    "title": "The Fires of Heaven (The Wheel of Time, #5)",
+    "simpleTitle": "The Fires of Heaven",
+    "authors": [
+      "Robert Jordan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/ffebf92c4bbc9cb710f284a0799619fb.jpg",
+    "link": "https://www.goodreads.com/book/show/13895",
+    "lists": [
+      "read"
+    ],
+    "pages": 912,
+    "publisher": "Orbit",
+    "yearPublished": 1993,
+    "basename": "the-fires-of-heaven-robert-jordan-1993"
+  },
+  "the-gathering-storm-robert-jordan-2009": {
+    "id": "the-gathering-storm-robert-jordan-2009",
+    "title": "The Gathering Storm (The Wheel of Time, #12)",
+    "simpleTitle": "The Gathering Storm",
+    "authors": [
+      "Robert Jordan",
+      "Brandon Sanderson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/49bc87d41b0f2f37a433d76e7dd41dba.jpg",
+    "link": "https://www.goodreads.com/book/show/1166599",
+    "lists": [
+      "read"
+    ],
+    "pages": 783,
+    "publisher": "Tor Books",
+    "yearPublished": 2009,
+    "basename": "the-gathering-storm-robert-jordan-2009"
+  },
+  "the-giving-tree-shel-silverstein-1964": {
+    "id": "the-giving-tree-shel-silverstein-1964",
+    "title": "The Giving Tree",
+    "simpleTitle": "The Giving Tree",
+    "authors": [
+      "Shel Silverstein"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/23d56b61e665282e2497dd3f58fe1743.jpg",
+    "link": "https://www.goodreads.com/book/show/370493",
+    "lists": [
+      "read"
+    ],
+    "pages": 64,
+    "publisher": "HarperCollins Publishers",
+    "yearPublished": 1964,
+    "basename": "the-giving-tree-shel-silverstein-1964"
+  },
+  "the-great-hunt-robert-jordan-1990": {
+    "id": "the-great-hunt-robert-jordan-1990",
+    "title": "The Great Hunt (The Wheel of Time, #2)",
+    "simpleTitle": "The Great Hunt",
+    "authors": [
+      "Robert Jordan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/dfa047f507ca0febc6696849f324b5b5.jpg",
+    "link": "https://www.goodreads.com/book/show/233649",
+    "lists": [
+      "read"
+    ],
+    "pages": 705,
+    "publisher": "Tor Books",
+    "yearPublished": 1990,
+    "basename": "the-great-hunt-robert-jordan-1990"
+  },
+  "the-guilty-feminist-deborah-frances-white-2018": {
+    "id": "the-guilty-feminist-deborah-frances-white-2018",
+    "title": "The Guilty Feminist: From Our Noble Goals to Our Worst Hypocrisies",
+    "simpleTitle": "The Guilty Feminist",
+    "authors": [
+      "Deborah Frances-White"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/34afd11a16212eea34aa944ea568a7f9.jpg",
+    "link": "https://www.goodreads.com/book/show/39703115",
+    "lists": [
+      "read"
+    ],
+    "pages": 336,
+    "publisher": "Little, Brown Book Group",
+    "yearPublished": 2018,
+    "basename": "the-guilty-feminist-deborah-frances-white-2018"
+  },
+  "the-hate-u-give-angie-thomas-2017": {
+    "id": "the-hate-u-give-angie-thomas-2017",
+    "title": "The Hate U Give",
+    "simpleTitle": "The Hate U Give",
+    "authors": [
+      "Angie Thomas"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/bb579379ed39bf90f6acb8e6bf252ff5.jpg",
+    "link": "https://www.goodreads.com/book/show/32613366",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-08-06",
+    "pages": 448,
+    "publisher": "Walker Books",
+    "yearPublished": 2017,
+    "basename": "the-hate-u-give-angie-thomas-2017"
+  },
+  "the-hero-of-ages-brandon-sanderson-2008": {
+    "id": "the-hero-of-ages-brandon-sanderson-2008",
+    "title": "The Hero of Ages (Mistborn, #3)",
+    "simpleTitle": "The Hero of Ages",
+    "authors": [
+      "Brandon Sanderson"
+    ],
+    "rating": 0,
+    "imageUrl": "/images/book-images/e5d5537a6c2ef865131731cf3ef6c823.jpg",
+    "link": "https://www.goodreads.com/book/show/2767793",
+    "lists": [
+      "read"
+    ],
+    "pages": 572,
+    "publisher": "Tor Books",
+    "yearPublished": 2008,
+    "basename": "the-hero-of-ages-brandon-sanderson-2008"
+  },
+  "the-hidden-life-of-trees-peter-wohlleben-2015": {
+    "id": "the-hidden-life-of-trees-peter-wohlleben-2015",
+    "title": "The Hidden Life of Trees: What They Feel, How They Communicate – Discoveries from a Secret World",
+    "simpleTitle": "The Hidden Life of Trees",
+    "authors": [
+      "Peter Wohlleben",
+      "Tim Flannery",
+      "Jane Billinghurst",
+      "Suzanne Simard"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/d894911f53d27e0344154f8bdadba62c.jpg",
+    "link": "https://www.goodreads.com/book/show/28256439",
+    "lists": [
+      "read"
+    ],
+    "pages": 288,
+    "publisher": "Greystone Books",
+    "yearPublished": 2015,
+    "basename": "the-hidden-life-of-trees-peter-wohlleben-2015"
+  },
+  "the-hitchhikers-guide-to-the-galaxy-douglas-adams-1979": {
+    "id": "the-hitchhikers-guide-to-the-galaxy-douglas-adams-1979",
+    "title": "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
+    "simpleTitle": "The Hitchhiker's Guide to the Galaxy",
+    "authors": [
+      "Douglas Adams"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/414cd84474cb125ad527d3a9c709230f.jpg",
+    "link": "https://www.goodreads.com/book/show/11",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2014-04-11",
+    "pages": 216,
+    "publisher": "Del Rey Books",
+    "yearPublished": 1979,
+    "basename": "the-hitchhikers-guide-to-the-galaxy-douglas-adams-1979"
+  },
+  "the-hobbit-or-there-and-back-again-jrr-tolkien-1937": {
+    "id": "the-hobbit-or-there-and-back-again-jrr-tolkien-1937",
+    "title": "The Hobbit, or There and Back Again",
+    "simpleTitle": "The Hobbit, or There and Back Again",
+    "authors": [
+      "J.R.R. Tolkien"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/e105e6918ff7ffce0663b4064956c9b6.jpg",
+    "link": "https://www.goodreads.com/book/show/5907",
+    "lists": [
+      "read"
+    ],
+    "pages": 366,
+    "publisher": "Houghton Mifflin",
+    "yearPublished": 1937,
+    "basename": "the-hobbit-or-there-and-back-again-jrr-tolkien-1937"
+  },
+  "the-inheritance-trilogy-nk-jemisin-2014": {
+    "id": "the-inheritance-trilogy-nk-jemisin-2014",
+    "title": "The Inheritance Trilogy (Inheritance, #1-3.5)",
+    "simpleTitle": "The Inheritance Trilogy",
+    "authors": [
+      "N.K. Jemisin"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/3c9100322a78b18e7549f6616e9141f2.jpg",
+    "link": "https://www.goodreads.com/book/show/21481566",
+    "lists": [
+      "read"
+    ],
+    "pages": 1442,
+    "publisher": "Orbit",
+    "yearPublished": 2014,
+    "basename": "the-inheritance-trilogy-nk-jemisin-2014"
+  },
+  "the-invention-of-nature-andrea-wulf-2015": {
+    "id": "the-invention-of-nature-andrea-wulf-2015",
+    "title": "The Invention of Nature: Alexander von Humboldt's New World",
+    "simpleTitle": "The Invention of Nature",
+    "authors": [
+      "Andrea Wulf"
+    ],
+    "rating": 0,
+    "imageUrl": "/images/book-images/5372acfcaacea23c64061c6015dc77f5.jpg",
+    "link": "https://www.goodreads.com/book/show/23995249",
+    "lists": [
+      "read"
+    ],
+    "pages": 473,
+    "publisher": "Knopf",
+    "yearPublished": 2015,
+    "basename": "the-invention-of-nature-andrea-wulf-2015"
+  },
+  "the-last-lecture-randy-pausch-2008": {
+    "id": "the-last-lecture-randy-pausch-2008",
+    "title": "The Last Lecture",
+    "simpleTitle": "The Last Lecture",
+    "authors": [
+      "Randy Pausch"
+    ],
+    "rating": 3,
+    "imageUrl": "/images/book-images/f0436424f55ba0d531099ba5a06f89d1.jpg",
+    "link": "https://www.goodreads.com/book/show/40611510",
+    "lists": [
+      "read"
+    ],
+    "pages": 217,
+    "publisher": "Hachette Books",
+    "yearPublished": 2008,
+    "basename": "the-last-lecture-randy-pausch-2008"
+  },
+  "the-lord-of-the-rings-jrr-tolkien-1955": {
+    "id": "the-lord-of-the-rings-jrr-tolkien-1955",
+    "title": "The Lord of the Rings (The Lord of the Rings, #1-3)",
+    "simpleTitle": "The Lord of the Rings",
+    "authors": [
+      "J.R.R. Tolkien"
+    ],
+    "rating": 0,
+    "imageUrl": "/images/book-images/16a0f71a643d81fab6f34de756528473.jpg",
+    "link": "https://www.goodreads.com/book/show/33",
+    "lists": [
+      "read"
+    ],
+    "pages": 1216,
+    "publisher": "Houghton Mifflin Harcourt",
+    "yearPublished": 1955,
+    "basename": "the-lord-of-the-rings-jrr-tolkien-1955"
+  },
+  "the-martian-andy-weir-2012": {
+    "id": "the-martian-andy-weir-2012",
+    "title": "The Martian",
+    "simpleTitle": "The Martian",
+    "authors": [
+      "Andy Weir"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/612782dce015178283cb0421742afadc.jpg",
+    "link": "https://www.goodreads.com/book/show/18007564",
+    "lists": [
+      "read"
+    ],
+    "pages": 369,
+    "publisher": "Crown",
+    "yearPublished": 2012,
+    "basename": "the-martian-andy-weir-2012"
+  },
+  "the-men-who-stare-at-goats-jon-ronson-2004": {
+    "id": "the-men-who-stare-at-goats-jon-ronson-2004",
+    "title": "The Men Who Stare at Goats",
+    "simpleTitle": "The Men Who Stare at Goats",
+    "authors": [
+      "Jon Ronson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/da38085e6665b7ff98b147c7befe243e.jpg",
+    "link": "https://www.goodreads.com/book/show/1824",
+    "lists": [
+      "read"
+    ],
+    "pages": 259,
+    "publisher": "Simon Schuster",
+    "yearPublished": 2004,
+    "basename": "the-men-who-stare-at-goats-jon-ronson-2004"
+  },
+  "them-jon-ronson-2001": {
+    "id": "them-jon-ronson-2001",
+    "title": "Them: Adventures with Extremists",
+    "simpleTitle": "Them",
+    "authors": [
+      "Jon Ronson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/550ec5b8cd5e99f767d0929d6abea596.jpg",
+    "link": "https://www.goodreads.com/book/show/1823",
+    "lists": [
+      "read"
+    ],
+    "pages": 336,
+    "publisher": "Simon Schuster",
+    "yearPublished": 2001,
+    "basename": "them-jon-ronson-2001"
+  },
+  "the-obelisk-gate-nk-jemisin-2016": {
+    "id": "the-obelisk-gate-nk-jemisin-2016",
+    "title": "The Obelisk Gate (The Broken Earth, #2)",
+    "simpleTitle": "The Obelisk Gate",
+    "authors": [
+      "N.K. Jemisin"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/8668e73b6c77c18f4f0f48512d8c58a8.jpg",
+    "link": "https://www.goodreads.com/book/show/26228034",
+    "lists": [
+      "read"
+    ],
+    "pages": 410,
+    "publisher": "Orbit",
+    "yearPublished": 2016,
+    "basename": "the-obelisk-gate-nk-jemisin-2016"
+  },
+  "the-oregon-experiment-christopher-w-alexander-1975": {
+    "id": "the-oregon-experiment-christopher-w-alexander-1975",
+    "title": "The Oregon Experiment",
+    "simpleTitle": "The Oregon Experiment",
+    "authors": [
+      "Christopher W. Alexander",
+      "Murray Silverstein",
+      "Shlomo Angel",
+      "Sara Ishikawa",
+      "Denny Abrams"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/6ec7922bf730749227a5518b8b7dc7a4.jpg",
+    "link": "https://www.goodreads.com/book/show/616875",
+    "lists": [
+      "read"
+    ],
+    "pages": 202,
+    "publisher": "Oxford University Press, USA",
+    "yearPublished": 1975,
+    "basename": "the-oregon-experiment-christopher-w-alexander-1975"
+  },
+  "the-path-of-daggers-robert-jordan-1998": {
+    "id": "the-path-of-daggers-robert-jordan-1998",
+    "title": "The Path of Daggers (The Wheel of Time, #8)",
+    "simpleTitle": "The Path of Daggers",
+    "authors": [
+      "Robert Jordan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/204c634b396512b5ea3c240b7371f571.jpg",
+    "link": "https://www.goodreads.com/book/show/140974",
+    "lists": [
+      "read"
+    ],
+    "pages": 685,
+    "publisher": "Tor Books",
+    "yearPublished": 1998,
+    "basename": "the-path-of-daggers-robert-jordan-1998"
+  },
+  "the-power-naomi-alderman-2016": {
+    "id": "the-power-naomi-alderman-2016",
+    "title": "The Power",
+    "simpleTitle": "The Power",
+    "authors": [
+      "Naomi Alderman"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/2aa253b8c3f25a8768233f07751b27c9.jpg",
+    "link": "https://www.goodreads.com/book/show/29751398",
+    "lists": [
+      "read"
+    ],
+    "pages": 341,
+    "publisher": "Viking",
+    "yearPublished": 2016,
+    "basename": "the-power-naomi-alderman-2016"
+  },
+  "the-power-of-hope-kon-karapanagiotidis": {
+    "id": "the-power-of-hope-kon-karapanagiotidis",
+    "title": "The Power Of Hope",
+    "simpleTitle": "The Power Of Hope",
+    "authors": [
+      "Kon Karapanagiotidis"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/7a6da8be9addbfc1a5958ec36368414f.jpg",
+    "link": "https://www.goodreads.com/book/show/37806735",
+    "lists": [
+      "read"
+    ],
+    "pages": 288,
+    "publisher": "HarperCollins",
+    "basename": "the-power-of-hope-kon-karapanagiotidis"
+  },
+  "the-princess-bride-william-goldman-1973": {
+    "id": "the-princess-bride-william-goldman-1973",
+    "title": "The Princess Bride",
+    "simpleTitle": "The Princess Bride",
+    "authors": [
+      "William Goldman"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/02de17d7f86f57addee64cdf46344c94.jpg",
+    "link": "https://www.goodreads.com/book/show/21787",
+    "lists": [
+      "read"
+    ],
+    "pages": 456,
+    "publisher": "Ballantine Books",
+    "yearPublished": 1973,
+    "basename": "the-princess-bride-william-goldman-1973"
+  },
+  "the-psychopath-test-jon-ronson-2011": {
+    "id": "the-psychopath-test-jon-ronson-2011",
+    "title": "The Psychopath Test: A Journey Through the Madness Industry",
+    "simpleTitle": "The Psychopath Test",
+    "authors": [
+      "Jon Ronson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/8a4f6ef751ff38d6c8bf290dd2508446.jpg",
+    "link": "https://www.goodreads.com/book/show/12391521",
+    "lists": [
+      "read"
+    ],
+    "pages": 275,
+    "publisher": "Riverhead Books",
+    "yearPublished": 2011,
+    "basename": "the-psychopath-test-jon-ronson-2011"
+  },
+  "the-seven-necessary-sins-for-women-and-girls-mona-eltahawy-2019": {
+    "id": "the-seven-necessary-sins-for-women-and-girls-mona-eltahawy-2019",
+    "title": "The Seven Necessary Sins for Women and Girls",
+    "simpleTitle": "The Seven Necessary Sins for Women and Girls",
+    "authors": [
+      "Mona Eltahawy"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/7a503109156aa908d3ed3a1efabf605f.jpg",
+    "link": "https://www.goodreads.com/book/show/43427042",
+    "lists": [
+      "read"
+    ],
+    "pages": 216,
+    "publisher": "Beacon Press",
+    "yearPublished": 2019,
+    "basename": "the-seven-necessary-sins-for-women-and-girls-mona-eltahawy-2019"
+  },
+  "the-shadow-of-the-sun-ryszard-kapuscinski-1998": {
+    "id": "the-shadow-of-the-sun-ryszard-kapuscinski-1998",
+    "title": "The Shadow of the Sun",
+    "simpleTitle": "The Shadow of the Sun",
+    "authors": [
+      "Ryszard Kapuściński",
+      "Klara Glowczewska"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/abed5c0a706d849df81de1545696ee60.jpg",
+    "link": "https://www.goodreads.com/book/show/9541",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2020-04-09",
+    "pages": 336,
+    "publisher": "Vintage",
+    "yearPublished": 1998,
+    "basename": "the-shadow-of-the-sun-ryszard-kapuscinski-1998"
+  },
+  "the-shadow-rising-robert-jordan-1992": {
+    "id": "the-shadow-rising-robert-jordan-1992",
+    "title": "The Shadow Rising (The Wheel of Time, #4)",
+    "simpleTitle": "The Shadow Rising",
+    "authors": [
+      "Robert Jordan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/3e9883aff4a5226185da7a72532420ce.jpg",
+    "link": "https://www.goodreads.com/book/show/9539",
+    "lists": [
+      "read"
+    ],
+    "pages": 1007,
+    "publisher": "Tom Doherty Tor Fantasy",
+    "yearPublished": 1992,
+    "basename": "the-shadow-rising-robert-jordan-1992"
+  },
+  "the-snow-leopard-peter-matthiessen-1978": {
+    "id": "the-snow-leopard-peter-matthiessen-1978",
+    "title": "The Snow Leopard",
+    "simpleTitle": "The Snow Leopard",
+    "authors": [
+      "Peter Matthiessen"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/48e2305a0a1cbe4b65943f483ee77676.jpg",
+    "link": "https://www.goodreads.com/book/show/764165",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-12-29",
+    "pages": 352,
+    "publisher": "Penguin Books",
+    "yearPublished": 1978,
+    "basename": "the-snow-leopard-peter-matthiessen-1978"
+  },
+  "the-stone-sky-nk-jemisin-2017": {
+    "id": "the-stone-sky-nk-jemisin-2017",
+    "title": "The Stone Sky (The Broken Earth, #3)",
+    "simpleTitle": "The Stone Sky",
+    "authors": [
+      "N.K. Jemisin"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/bc6888f3cfb621a4cc5074543b8de833.jpg",
+    "link": "https://www.goodreads.com/book/show/31817749",
+    "lists": [
+      "read"
+    ],
+    "pages": 416,
+    "publisher": "Orbit",
+    "yearPublished": 2017,
+    "basename": "the-stone-sky-nk-jemisin-2017"
+  },
+  "the-strangest-man-graham-farmelo-2009": {
+    "id": "the-strangest-man-graham-farmelo-2009",
+    "title": "The Strangest Man: The Hidden Life of Paul Dirac, Mystic of the Atom",
+    "simpleTitle": "The Strangest Man",
+    "authors": [
+      "Graham Farmelo"
+    ],
+    "rating": 0,
+    "imageUrl": "/images/book-images/748542d2302ac8622f555f35f039be82.jpg",
+    "link": "https://www.goodreads.com/book/show/6629359",
+    "lists": [
+      "read"
+    ],
+    "pages": 539,
+    "publisher": "Basic Books (AZ)",
+    "yearPublished": 2009,
+    "basename": "the-strangest-man-graham-farmelo-2009"
+  },
+  "the-tao-of-leadership-john-heider-1985": {
+    "id": "the-tao-of-leadership-john-heider-1985",
+    "title": "The Tao of Leadership: Lao Tzu's Tao Te Ching Adapted for a New Age",
+    "simpleTitle": "The Tao of Leadership",
+    "authors": [
+      "John Heider"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/818ee7215833da4472fd845cbc4da215.jpg",
+    "link": "https://www.goodreads.com/book/show/57857",
+    "lists": [
+      "read"
+    ],
+    "pages": 180,
+    "publisher": "Green Dragon Publishing Group",
+    "yearPublished": 1985,
+    "basename": "the-tao-of-leadership-john-heider-1985"
+  },
+  "the-timeless-way-of-building-christopher-w-alexander-1978": {
+    "id": "the-timeless-way-of-building-christopher-w-alexander-1978",
+    "title": "The Timeless Way of Building",
+    "simpleTitle": "The Timeless Way of Building",
+    "authors": [
+      "Christopher W. Alexander"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/cae11d701c4a940b33744af3fbd7828a.jpg",
+    "link": "https://www.goodreads.com/book/show/106728",
+    "lists": [
+      "read"
+    ],
+    "pages": 552,
+    "publisher": "Oxford University Press, USA",
+    "yearPublished": 1978,
+    "basename": "the-timeless-way-of-building-christopher-w-alexander-1978"
+  },
+  "the-two-towers-jrr-tolkien-1954": {
+    "id": "the-two-towers-jrr-tolkien-1954",
+    "title": "The Two Towers (The Lord of the Rings, #2)",
+    "simpleTitle": "The Two Towers",
+    "authors": [
+      "J.R.R. Tolkien",
+      "Peter S. Beagle"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/d8f662dab6d9b76547ee9e45207afc98.jpg",
+    "link": "https://www.goodreads.com/book/show/15241",
+    "lists": [
+      "read"
+    ],
+    "pages": 322,
+    "publisher": "Houghton Mifflin",
+    "yearPublished": 1954,
+    "basename": "the-two-towers-jrr-tolkien-1954"
+  },
+  "the-ultimate-hitchhikers-guide-to-the-galaxy-douglas-adams-1996": {
+    "id": "the-ultimate-hitchhikers-guide-to-the-galaxy-douglas-adams-1996",
+    "title": "The Ultimate Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1-5)",
+    "simpleTitle": "The Ultimate Hitchhiker's Guide to the Galaxy",
+    "authors": [
+      "Douglas Adams"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/2c3c4b53fe3a8dfa73c9487a3c720790.jpg",
+    "link": "https://www.goodreads.com/book/show/13",
+    "lists": [
+      "read"
+    ],
+    "pages": 815,
+    "publisher": "Del Rey Books",
+    "yearPublished": 1996,
+    "basename": "the-ultimate-hitchhikers-guide-to-the-galaxy-douglas-adams-1996"
+  },
+  "the-value-of-everything-mariana-mazzucato-2018": {
+    "id": "the-value-of-everything-mariana-mazzucato-2018",
+    "title": "The Value of Everything: Making and Taking in the Global Economy",
+    "simpleTitle": "The Value of Everything",
+    "authors": [
+      "Mariana Mazzucato"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/08c0e5ae913069e62ae3e28195b0fa44.jpg",
+    "link": "https://www.goodreads.com/book/show/29502362",
+    "lists": [
+      "read"
+    ],
+    "pages": 384,
+    "publisher": "PublicAffairs",
+    "yearPublished": 2018,
+    "basename": "the-value-of-everything-mariana-mazzucato-2018"
+  },
+  "the-way-of-kings-brandon-sanderson-2010": {
+    "id": "the-way-of-kings-brandon-sanderson-2010",
+    "title": "The Way of Kings (The Stormlight Archive, #1)",
+    "simpleTitle": "The Way of Kings",
+    "authors": [
+      "Brandon Sanderson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/28f0aa35df4ca1484184e17902a32f2e.jpg",
+    "link": "https://www.goodreads.com/book/show/7235533",
+    "lists": [
+      "read"
+    ],
+    "pages": 1007,
+    "publisher": "Tor Books",
+    "yearPublished": 2010,
+    "basename": "the-way-of-kings-brandon-sanderson-2010"
+  },
+  "the-well-of-ascension-brandon-sanderson-2007": {
+    "id": "the-well-of-ascension-brandon-sanderson-2007",
+    "title": "The Well of Ascension (Mistborn, #2)",
+    "simpleTitle": "The Well of Ascension",
+    "authors": [
+      "Brandon Sanderson"
+    ],
+    "rating": 0,
+    "imageUrl": "/images/book-images/50639bd921d9b78aff8420f61ec2bf79.jpg",
+    "link": "https://www.goodreads.com/book/show/68429",
+    "lists": [
+      "read"
+    ],
+    "pages": 590,
+    "publisher": "Tor Books",
+    "yearPublished": 2007,
+    "basename": "the-well-of-ascension-brandon-sanderson-2007"
+  },
+  "thick-tressie-mcmillan-cottom-2019": {
+    "id": "thick-tressie-mcmillan-cottom-2019",
+    "title": "Thick: And Other Essays",
+    "simpleTitle": "Thick",
+    "authors": [
+      "Tressie McMillan Cottom"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/683991b3153089f3cc65a06523213bae.jpg",
+    "link": "https://www.goodreads.com/book/show/40365093",
+    "lists": [
+      "read"
+    ],
+    "pages": 248,
+    "publisher": "New Press",
+    "yearPublished": 2019,
+    "basename": "thick-tressie-mcmillan-cottom-2019"
+  },
+  "thinking-fast-and-slow-daniel-kahneman-2011": {
+    "id": "thinking-fast-and-slow-daniel-kahneman-2011",
+    "title": "Thinking, Fast and Slow",
+    "simpleTitle": "Thinking, Fast and Slow",
+    "authors": [
+      "Daniel Kahneman"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/8e66163f2bbc9e7ea1eb12ab7299a7d2.jpg",
+    "link": "https://www.goodreads.com/book/show/11468377",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2017-03-15",
+    "pages": 499,
+    "publisher": "Farrar, Straus and Giroux",
+    "yearPublished": 2011,
+    "basename": "thinking-fast-and-slow-daniel-kahneman-2011"
+  },
+  "touching-the-void-joe-simpson-1988": {
+    "id": "touching-the-void-joe-simpson-1988",
+    "title": "Touching the Void: The True Story of One Man's Miraculous Survival",
+    "simpleTitle": "Touching the Void",
+    "authors": [
+      "Joe Simpson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/ab7e677517152065a7e72f706416bbcb.jpg",
+    "link": "https://www.goodreads.com/book/show/18600",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2020-03-11",
+    "pages": 218,
+    "publisher": "Harper Perennial",
+    "yearPublished": 1988,
+    "basename": "touching-the-void-joe-simpson-1988"
+  },
+  "towers-of-midnight-robert-jordan-2010": {
+    "id": "towers-of-midnight-robert-jordan-2010",
+    "title": "Towers of Midnight (The Wheel of Time, #13)",
+    "simpleTitle": "Towers of Midnight",
+    "authors": [
+      "Robert Jordan",
+      "Brandon Sanderson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/9b07e49295771266586af8be456e2911.jpg",
+    "link": "https://www.goodreads.com/book/show/8253920",
+    "lists": [
+      "read"
+    ],
+    "pages": 863,
+    "publisher": "Tom Doherty Associates TOR Fantasy",
+    "yearPublished": 2010,
+    "basename": "towers-of-midnight-robert-jordan-2010"
+  },
+  "trick-mirror-jia-tolentino-2019": {
+    "id": "trick-mirror-jia-tolentino-2019",
+    "title": "Trick Mirror: Reflections on Self-Delusion",
+    "simpleTitle": "Trick Mirror",
+    "authors": [
+      "Jia Tolentino"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/fd2053fd443ff6b6a5f571b2c922a60f.jpg",
+    "link": "https://www.goodreads.com/book/show/43126457",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-11-16",
+    "pages": 303,
+    "publisher": "Random House",
+    "yearPublished": 2019,
+    "basename": "trick-mirror-jia-tolentino-2019"
+  },
+  "underland-robert-macfarlane-2019": {
+    "id": "underland-robert-macfarlane-2019",
+    "title": "Underland",
+    "simpleTitle": "Underland",
+    "authors": [
+      "Robert Macfarlane"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/df27be118dbb8bea369146127fc529c6.jpg",
+    "link": "https://www.goodreads.com/book/show/41817481",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2020-02-28",
+    "pages": 496,
+    "publisher": "W.W. Norton & Company",
+    "yearPublished": 2019,
+    "basename": "underland-robert-macfarlane-2019"
+  },
+  "weapons-of-math-destruction-cathy-oneil-2016": {
+    "id": "weapons-of-math-destruction-cathy-oneil-2016",
+    "title": "Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy",
+    "simpleTitle": "Weapons of Math Destruction",
+    "authors": [
+      "Cathy O'Neil"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/f86ed91a956d4658cf486440a1c72c02.jpg",
+    "link": "https://www.goodreads.com/book/show/28186015",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2016-03-15",
+    "pages": 259,
+    "publisher": "Crown",
+    "yearPublished": 2016,
+    "basename": "weapons-of-math-destruction-cathy-oneil-2016"
+  },
+  "when-things-fall-apart-pema-chodron-1996": {
+    "id": "when-things-fall-apart-pema-chodron-1996",
+    "title": "When Things Fall Apart: Heart Advice for Difficult Times",
+    "simpleTitle": "When Things Fall Apart",
+    "authors": [
+      "Pema Chödrön"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/3ac712109e4032811742b11053f8ad93.jpg",
+    "link": "https://www.goodreads.com/book/show/687278",
+    "lists": [
+      "read"
+    ],
+    "pages": 160,
+    "publisher": "Shambhala",
+    "yearPublished": 1996,
+    "basename": "when-things-fall-apart-pema-chodron-1996"
+  },
+  "white-tearsbrown-scars-ruby-hamad": {
+    "id": "white-tearsbrown-scars-ruby-hamad",
+    "title": "White Tears/Brown Scars",
+    "simpleTitle": "White Tears/Brown Scars",
+    "authors": [
+      "Ruby Hamad"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/0a3755c462a7b54c54da1d03cccd4886.jpg",
+    "link": "https://www.goodreads.com/book/show/51261722",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2019-11-03",
+    "publisher": "Melbourne University Publishing",
+    "basename": "white-tearsbrown-scars-ruby-hamad"
+  },
+  "why-buddhism-is-true-robert-wright-2017": {
+    "id": "why-buddhism-is-true-robert-wright-2017",
+    "title": "Why Buddhism is True: The Science and Philosophy of Meditation and Enlightenment",
+    "simpleTitle": "Why Buddhism is True",
+    "authors": [
+      "Robert Wright"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/72811562770617322bb46514327eb9a9.jpg",
+    "link": "https://www.goodreads.com/book/show/32895535",
+    "lists": [
+      "read"
+    ],
+    "pages": 336,
+    "publisher": "Simon Schuster Audio",
+    "yearPublished": 2017,
+    "basename": "why-buddhism-is-true-robert-wright-2017"
+  },
+  "winters-heart-robert-jordan-2000": {
+    "id": "winters-heart-robert-jordan-2000",
+    "title": "Winter's Heart (The Wheel of Time, #9)",
+    "simpleTitle": "Winter's Heart",
+    "authors": [
+      "Robert Jordan"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/5fda41b999493b020b17f9c49bb9ea0c.jpg",
+    "link": "https://www.goodreads.com/book/show/13891",
+    "lists": [
+      "read"
+    ],
+    "pages": 780,
+    "publisher": "Tor Fantasy",
+    "yearPublished": 2000,
+    "basename": "winters-heart-robert-jordan-2000"
+  },
+  "words-of-radiance-brandon-sanderson-2014": {
+    "id": "words-of-radiance-brandon-sanderson-2014",
+    "title": "Words of Radiance (The Stormlight Archive, #2)",
+    "simpleTitle": "Words of Radiance",
+    "authors": [
+      "Brandon Sanderson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/c8d3b94e56ed60accc36329514e77b6d.jpg",
+    "link": "https://www.goodreads.com/book/show/17332218",
+    "lists": [
+      "read"
+    ],
+    "pages": 1087,
+    "publisher": "Tor Books",
+    "yearPublished": 2014,
+    "basename": "words-of-radiance-brandon-sanderson-2014"
+  },
+  "wrinkles-in-time-george-smoot-1993": {
+    "id": "wrinkles-in-time-george-smoot-1993",
+    "title": "Wrinkles in Time",
+    "simpleTitle": "Wrinkles in Time",
+    "authors": [
+      "George Smoot",
+      "Keay Davidson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/141e4e3572ed45f730f09559a0946a5e.jpg",
+    "link": "https://www.goodreads.com/book/show/180",
+    "lists": [
+      "read"
+    ],
+    "pages": 360,
+    "publisher": "Harper Perennial",
+    "yearPublished": 1993,
+    "basename": "wrinkles-in-time-george-smoot-1993"
+  },
+  "your-brain-is-a-time-machine-dean-buonomano-2017": {
+    "id": "your-brain-is-a-time-machine-dean-buonomano-2017",
+    "title": "Your Brain Is a Time Machine: The Neuroscience and Physics of Time",
+    "simpleTitle": "Your Brain Is a Time Machine",
+    "authors": [
+      "Dean Buonomano"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/6f3fac1664cdd2082a5829dece4e4f5c.jpg",
+    "link": "https://www.goodreads.com/book/show/35187183",
+    "lists": [
+      "read"
+    ],
+    "pages": 304,
+    "publisher": "W. W. Norton Company",
+    "yearPublished": 2017,
+    "basename": "your-brain-is-a-time-machine-dean-buonomano-2017"
+  },
+  "zen-and-the-art-of-motorcycle-maintenance-robert-m-pirsig-1974": {
+    "id": "zen-and-the-art-of-motorcycle-maintenance-robert-m-pirsig-1974",
+    "title": "Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values (Phaedrus, #1)",
+    "simpleTitle": "Zen and the Art of Motorcycle Maintenance",
+    "authors": [
+      "Robert M. Pirsig"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/9f8b6d86e51913a3189ae0c8ce88ad4e.jpg",
+    "link": "https://www.goodreads.com/book/show/629",
+    "lists": [
+      "read"
+    ],
+    "pages": 540,
+    "publisher": "HarperTorch",
+    "yearPublished": 1974,
+    "basename": "zen-and-the-art-of-motorcycle-maintenance-robert-m-pirsig-1974"
+  }
+}

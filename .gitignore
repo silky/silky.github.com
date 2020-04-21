@@ -1,4 +1,5 @@
 _cache/
+src/node_modules/
 
 *.o
 *.hi

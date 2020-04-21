@@ -1,2 +1,5 @@
 #!/bin/sh
+
+# Make books.json
+npx -- m2j -w 0 books/*.md >js/books.json
 stack run -- -- clean && stack run -- -- watch

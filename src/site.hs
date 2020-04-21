@@ -43,6 +43,13 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
 
+    match "books/*" $ do
+      route $ setExtension "html"
+      compile $ pandocMathCompiler
+        >>= loadAndApplyTemplate "templates/book.html" defaultContext
+        >>= loadAndApplyTemplate "templates/default.html" postCtx
+        >>= relativizeUrls
+          
     match (fromList ["about.rst", "contact.markdown"]) $ do
         route   $ setExtension "html"
         compile $ pandocMathCompiler
@@ -95,7 +102,7 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
-    match (fromList ["links.html", "about.html"]) $ do
+    match (fromList ["links.html", "about.html", "library.html"]) $ do
         route idRoute
         compile $ do
             let linksCtx = defaultContext

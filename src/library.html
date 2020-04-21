@@ -1,0 +1,17 @@
+---
+title: Library
+---
+<link href="/css/library.css" rel="stylesheet" />
+<script src="/js/library.js"></script>
+
+Here's the library.
+
+<div id="library">
+</div>
+
+<script language="javascript">
+var node = document.getElementById("library");
+var app  = Elm.Main.init( { node: node } );
+
+app.ports.setBooksUrl.send("/js/books.json");
+</script>
