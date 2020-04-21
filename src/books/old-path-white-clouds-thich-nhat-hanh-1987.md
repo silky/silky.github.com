@@ -15,4 +15,6 @@ dateRead: "2019-10-09"
 pages: 600
 publisher: Parallax Press
 yearPublished: 1987
+summary:
+  The life of Buddha, in the form of stories, told in a very accessible way.
 ---

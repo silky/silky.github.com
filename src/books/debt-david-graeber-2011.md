@@ -13,4 +13,6 @@ dateRead: "2019-10-03"
 pages: 534
 publisher: Melville House Publishing
 yearPublished: 2011
+summary:
+  The history of debt and how cash money emerged.
 ---
