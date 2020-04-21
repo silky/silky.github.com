@@ -1,3 +1,7 @@
+div.book-content {
+  margin-top: 20px;
+}
+
 div.book {
   display:         flex;
   flex-direction:  row;
@@ -6,7 +10,6 @@ div.book {
   height:          180px;
   align-content:   stretch;
 }
-
 
 div.book-content {
   display: flex;
@@ -44,13 +47,12 @@ div.book-authors {
   text-transform: uppercase;
   font-size:      0.7em;
   font-family:    "PT Mono";
-
 }
 
 div.date-read {
   font-size: 0.7em;
-  color: tan;
-  width: 70px;
+  color:     tan;
+  width:     70px;
 }
 
 div.book-lists {

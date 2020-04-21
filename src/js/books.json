@@ -1,4 +1,23 @@
 {
+  "-seishi-yokomizo-1973": {
+    "id": "-seishi-yokomizo-1973",
+    "title": "本陣殺人事件 [The Case of the Honjin Murder]",
+    "simpleTitle": "本陣殺人事件",
+    "authors": [
+      "Seishi Yokomizo",
+      "横溝 正史"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/cfa4d1b2c2588e926047a4a3007e1a07.jpg",
+    "link": "https://www.goodreads.com/book/show/5863774",
+    "lists": [
+      "read"
+    ],
+    "pages": 407,
+    "publisher": "角川書店",
+    "yearPublished": 1973,
+    "basename": "-seishi-yokomizo-1973"
+  },
   "2001-arthur-c-clarke-1968": {
     "id": "2001-arthur-c-clarke-1968",
     "title": "2001: A Space Odyssey (Space Odyssey, #1)",
@@ -106,6 +125,25 @@
     "publisher": "Sustasis Press",
     "yearPublished": 1965,
     "basename": "a-city-is-not-a-tree-christopher-w-alexander-1965"
+  },
+  "a-woman-in-the-polar-night-christiane-ritter-1938": {
+    "id": "a-woman-in-the-polar-night-christiane-ritter-1938",
+    "title": "A Woman in the Polar Night",
+    "simpleTitle": "A Woman in the Polar Night",
+    "authors": [
+      "Christiane Ritter"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/a60280fae837b8547b83e04e5fdeac03.jpg",
+    "link": "https://www.goodreads.com/book/show/8266887",
+    "lists": [
+      "read"
+    ],
+    "dateRead": "2020-03-23",
+    "pages": 215,
+    "publisher": "University of Alaska Press",
+    "yearPublished": 1938,
+    "basename": "a-woman-in-the-polar-night-christiane-ritter-1938"
   },
   "affluence-without-abundance-james-suzman-2017": {
     "id": "affluence-without-abundance-james-suzman-2017",
@@ -241,25 +279,6 @@
     "publisher": "Orion Books Ltd., London",
     "yearPublished": 1960,
     "basename": "asterix-the-gaul-rene-goscinny-1960"
-  },
-  "a-woman-in-the-polar-night-christiane-ritter-1938": {
-    "id": "a-woman-in-the-polar-night-christiane-ritter-1938",
-    "title": "A Woman in the Polar Night",
-    "simpleTitle": "A Woman in the Polar Night",
-    "authors": [
-      "Christiane Ritter"
-    ],
-    "rating": 5,
-    "imageUrl": "/images/book-images/a60280fae837b8547b83e04e5fdeac03.jpg",
-    "link": "https://www.goodreads.com/book/show/8266887",
-    "lists": [
-      "read"
-    ],
-    "dateRead": "2020-03-23",
-    "pages": 215,
-    "publisher": "University of Alaska Press",
-    "yearPublished": 1938,
-    "basename": "a-woman-in-the-polar-night-christiane-ritter-1938"
   },
   "bad-blood-john-carreyrou-2018": {
     "id": "bad-blood-john-carreyrou-2018",
@@ -1012,24 +1031,6 @@
     "publisher": "Houghton Mifflin",
     "basename": "i-feel-you-cris-beam"
   },
-  "inferior-angela-saini-2016": {
-    "id": "inferior-angela-saini-2016",
-    "title": "Inferior: How Science Got Women Wrong—and the New Research That's Rewriting the Story",
-    "simpleTitle": "Inferior",
-    "authors": [
-      "Angela Saini"
-    ],
-    "rating": 4,
-    "imageUrl": "/images/book-images/1c1c4a7dfad1a5786cab89e23bb50d68.jpg",
-    "link": "https://www.goodreads.com/book/show/31869108",
-    "lists": [
-      "read"
-    ],
-    "pages": 200,
-    "publisher": "Beacon Press",
-    "yearPublished": 2016,
-    "basename": "inferior-angela-saini-2016"
-  },
   "in-praise-of-shadows-junichiro-tanizaki-1933": {
     "id": "in-praise-of-shadows-junichiro-tanizaki-1933",
     "title": "In Praise of Shadows",
@@ -1051,6 +1052,24 @@
     "publisher": "Leete's Island Books",
     "yearPublished": 1933,
     "basename": "in-praise-of-shadows-junichiro-tanizaki-1933"
+  },
+  "inferior-angela-saini-2016": {
+    "id": "inferior-angela-saini-2016",
+    "title": "Inferior: How Science Got Women Wrong—and the New Research That's Rewriting the Story",
+    "simpleTitle": "Inferior",
+    "authors": [
+      "Angela Saini"
+    ],
+    "rating": 4,
+    "imageUrl": "/images/book-images/1c1c4a7dfad1a5786cab89e23bb50d68.jpg",
+    "link": "https://www.goodreads.com/book/show/31869108",
+    "lists": [
+      "read"
+    ],
+    "pages": 200,
+    "publisher": "Beacon Press",
+    "yearPublished": 2016,
+    "basename": "inferior-angela-saini-2016"
   },
   "into-thin-air-jon-krakauer-1997": {
     "id": "into-thin-air-jon-krakauer-1997",
@@ -1622,25 +1641,6 @@
     "yearPublished": 2019,
     "basename": "sand-talk-tyson-yunkaporta-2019"
   },
-  "-seishi-yokomizo-1973": {
-    "id": "-seishi-yokomizo-1973",
-    "title": "本陣殺人事件 [The Case of the Honjin Murder]",
-    "simpleTitle": "本陣殺人事件",
-    "authors": [
-      "Seishi Yokomizo",
-      "横溝 正史"
-    ],
-    "rating": 4,
-    "imageUrl": "/images/book-images/cfa4d1b2c2588e926047a4a3007e1a07.jpg",
-    "link": "https://www.goodreads.com/book/show/5863774",
-    "lists": [
-      "read"
-    ],
-    "pages": 407,
-    "publisher": "角川書店",
-    "yearPublished": 1973,
-    "basename": "-seishi-yokomizo-1973"
-  },
   "she-said-jodi-kantor-2019": {
     "id": "she-said-jodi-kantor-2019",
     "title": "She Said: Breaking the Sexual Harassment Story That Helped Ignite a Movement",
@@ -1717,23 +1717,24 @@
     "yearPublished": 1992,
     "basename": "snow-crash-neal-stephenson-1992"
   },
-  "solitary-albert-woodfox-2019": {
-    "id": "solitary-albert-woodfox-2019",
-    "title": "Solitary",
-    "simpleTitle": "Solitary",
+  "so-you-want-to-talk-about-race-ijeoma-oluo-2018": {
+    "id": "so-you-want-to-talk-about-race-ijeoma-oluo-2018",
+    "title": "So You Want to Talk About Race",
+    "simpleTitle": "So You Want to Talk About Race",
     "authors": [
-      "Albert Woodfox"
+      "Ijeoma Oluo"
     ],
-    "rating": 0,
-    "imageUrl": "/images/book-images/84336f44e15bb71c4d15882e3f94e66e.jpg",
-    "link": "https://www.goodreads.com/book/show/40642337",
+    "rating": 5,
+    "imageUrl": "/images/book-images/5112a554eb08869cc321b75d2df8d642.jpg",
+    "link": "https://www.goodreads.com/book/show/35099718",
     "lists": [
       "read"
     ],
-    "pages": 433,
-    "publisher": "Grove Press",
-    "yearPublished": 2019,
-    "basename": "solitary-albert-woodfox-2019"
+    "dateRead": "2019-08-20",
+    "pages": 248,
+    "publisher": "Seal Press",
+    "yearPublished": 2018,
+    "basename": "so-you-want-to-talk-about-race-ijeoma-oluo-2018"
   },
   "so-youve-been-publicly-shamed-jon-ronson-2015": {
     "id": "so-youve-been-publicly-shamed-jon-ronson-2015",
@@ -1753,24 +1754,23 @@
     "yearPublished": 2015,
     "basename": "so-youve-been-publicly-shamed-jon-ronson-2015"
   },
-  "so-you-want-to-talk-about-race-ijeoma-oluo-2018": {
-    "id": "so-you-want-to-talk-about-race-ijeoma-oluo-2018",
-    "title": "So You Want to Talk About Race",
-    "simpleTitle": "So You Want to Talk About Race",
+  "solitary-albert-woodfox-2019": {
+    "id": "solitary-albert-woodfox-2019",
+    "title": "Solitary",
+    "simpleTitle": "Solitary",
     "authors": [
-      "Ijeoma Oluo"
+      "Albert Woodfox"
     ],
-    "rating": 5,
-    "imageUrl": "/images/book-images/5112a554eb08869cc321b75d2df8d642.jpg",
-    "link": "https://www.goodreads.com/book/show/35099718",
+    "rating": 0,
+    "imageUrl": "/images/book-images/84336f44e15bb71c4d15882e3f94e66e.jpg",
+    "link": "https://www.goodreads.com/book/show/40642337",
     "lists": [
       "read"
     ],
-    "dateRead": "2019-08-20",
-    "pages": 248,
-    "publisher": "Seal Press",
-    "yearPublished": 2018,
-    "basename": "so-you-want-to-talk-about-race-ijeoma-oluo-2018"
+    "pages": 433,
+    "publisher": "Grove Press",
+    "yearPublished": 2019,
+    "basename": "solitary-albert-woodfox-2019"
   },
   "start-where-you-are-pema-chodron-1994": {
     "id": "start-where-you-are-pema-chodron-1994",
@@ -2376,24 +2376,6 @@
     "yearPublished": 2004,
     "basename": "the-men-who-stare-at-goats-jon-ronson-2004"
   },
-  "them-jon-ronson-2001": {
-    "id": "them-jon-ronson-2001",
-    "title": "Them: Adventures with Extremists",
-    "simpleTitle": "Them",
-    "authors": [
-      "Jon Ronson"
-    ],
-    "rating": 5,
-    "imageUrl": "/images/book-images/550ec5b8cd5e99f767d0929d6abea596.jpg",
-    "link": "https://www.goodreads.com/book/show/1823",
-    "lists": [
-      "read"
-    ],
-    "pages": 336,
-    "publisher": "Simon Schuster",
-    "yearPublished": 2001,
-    "basename": "them-jon-ronson-2001"
-  },
   "the-obelisk-gate-nk-jemisin-2016": {
     "id": "the-obelisk-gate-nk-jemisin-2016",
     "title": "The Obelisk Gate (The Broken Earth, #2)",
@@ -2559,6 +2541,7 @@
     "pages": 336,
     "publisher": "Vintage",
     "yearPublished": 1998,
+    "summary": "A polish journalists experience of africa in the 60s and 70s. Really enjoyable.",
     "basename": "the-shadow-of-the-sun-ryszard-kapuscinski-1998"
   },
   "the-shadow-rising-robert-jordan-1992": {
@@ -2760,6 +2743,24 @@
     "publisher": "Tor Books",
     "yearPublished": 2007,
     "basename": "the-well-of-ascension-brandon-sanderson-2007"
+  },
+  "them-jon-ronson-2001": {
+    "id": "them-jon-ronson-2001",
+    "title": "Them: Adventures with Extremists",
+    "simpleTitle": "Them",
+    "authors": [
+      "Jon Ronson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/550ec5b8cd5e99f767d0929d6abea596.jpg",
+    "link": "https://www.goodreads.com/book/show/1823",
+    "lists": [
+      "read"
+    ],
+    "pages": 336,
+    "publisher": "Simon Schuster",
+    "yearPublished": 2001,
+    "basename": "them-jon-ronson-2001"
   },
   "thick-tressie-mcmillan-cottom-2019": {
     "id": "thick-tressie-mcmillan-cottom-2019",
