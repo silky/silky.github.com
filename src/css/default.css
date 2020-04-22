@@ -123,3 +123,9 @@ div.book-meta ul li {
   margin: 0;
   padding: 0;
 }
+
+div.book-summary {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
