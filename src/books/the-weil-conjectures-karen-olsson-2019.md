@@ -36,5 +36,5 @@ some instructable way".
 appear in your head" as your thinking of the proofs. This is a fun idea, and
 could be done in many contexts!
 - Page 143: "... any transformation in any realm has a fixed point..."
-- Page 144: Mentions Brouwer's book "[Life, Art, and
+- Page 144 mentions Brouwer's book "[Life, Art, and
 Mysticism](https://projecteuclid.org/download/pdf_1/euclid.ndjfl/1039886518)" 
