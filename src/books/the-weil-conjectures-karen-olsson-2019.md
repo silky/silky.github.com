@@ -31,7 +31,7 @@ with subjects; the Weil siblings
 Book](https://www.goodreads.com/book/show/1454428.The_Psychology_of_Invention_in_the_Mathematical_Field) and mentions that he loves mushrooms.
 - Page 112: "... The matricies of my dream were life-size, with detachable
 rows and columns that would hover over a person and act upon him or her in
-some instructable way".
+some inscrutable way".
 - Page 119 discusses writing down math proofs alongside the "thoughts that
 appear in your head" as your thinking of the proofs. This is a fun idea, and
 could be done in many contexts!
