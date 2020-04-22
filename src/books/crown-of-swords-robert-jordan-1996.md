@@ -1,14 +1,15 @@
 ---
 id: crown-of-swords-robert-jordan-1996
-title: "Crown Of Swords (The Wheel Of Time, 7)"
-simpleTitle: "Crown Of Swords"
+title: "A Crown Of Swords (The Wheel of Time, #7)"
+simpleTitle: "A Crown of Swords"
 authors:
   - Robert Jordan
 rating: 5
 imageUrl: /images/book-images/c31c01f565140ba8ab7fff1756d49e26.jpg
-link: https://www.goodreads.com/book/show/12971570
+link: https://www.goodreads.com/book/show/13890
+pages: 880
 lists:
   - read
-publisher: New Millennium Press
+publisher: Tor Books
 yearPublished: 1996
 ---
