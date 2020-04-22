@@ -100,3 +100,26 @@ ul.talks {
 ul.talks li p { 
   font-size: 0.9em;
 }
+
+div.book-stuff {
+  display:        flex;
+  flex-direction: row;
+}
+
+div.book-meta {
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+div.book-meta ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+div.book-meta ul li {
+  margin: 0;
+  padding: 0;
+}

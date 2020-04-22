@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 {-# LANGUAGE OverloadedStrings #-}
-import           Data.Monoid (mappend)
+import           Data.Monoid (mappend, (<>))
 import           Hakyll
 import           Control.Applicative
 import qualified Data.Set as S
@@ -45,8 +45,18 @@ main = hakyll $ do
 
     match "books/*" $ do
       route $ setExtension "html"
+
+      let ctx = listFieldWith "authors" defaultContext (\i -> do 
+                  let identifier = itemIdentifier i 
+                  metadata <- getMetadata identifier
+                  let metas = maybe [] id $ lookupStringList "authors" metadata
+                  -- let metas = maybe [] (map trim . splitAll "-") $ lookupString "something" metadata
+                  return $ map (\x -> Item (fromFilePath x) x) metas
+                )
+                <> defaultContext
+
       compile $ pandocMathCompiler
-        >>= loadAndApplyTemplate "templates/book.html" defaultContext
+        >>= loadAndApplyTemplate "templates/book.html" ctx
         >>= loadAndApplyTemplate "templates/default.html" postCtx
         >>= relativizeUrls
           

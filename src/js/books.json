@@ -2728,6 +2728,26 @@
     "yearPublished": 2010,
     "basename": "the-way-of-kings-brandon-sanderson-2010"
   },
+  "the-weil-conjectures-karen-olsson-2019": {
+    "id": "the-weil-conjectures-karen-olsson-2019",
+    "title": "The Weil Conjectures: On Math and the Pursuit of the Unknown",
+    "simpleTitle": "The Weil Conjectures",
+    "authors": [
+      "Karen Olsson"
+    ],
+    "rating": 5,
+    "imageUrl": "/images/book-images/425aa9b8f62c11b949a80a6f8ca26b74.jpg",
+    "link": "https://www.goodreads.com/book/show/41940441",
+    "lists": [
+      "read"
+    ],
+    "pages": 224,
+    "publisher": "Farrar, Straus and Giroux",
+    "yearPublished": 2019,
+    "dateRead": "2020-04-23",
+    "summary": "A quirky history of Simone and André Weil, as well as the author herself.",
+    "basename": "the-weil-conjectures-karen-olsson-2019"
+  },
   "the-well-of-ascension-brandon-sanderson-2007": {
     "id": "the-well-of-ascension-brandon-sanderson-2007",
     "title": "The Well of Ascension (Mistborn, #2)",

@@ -1,12 +1,42 @@
 
-<!--
-$if(summary)$
-  $summary$
-$endif$
 
-$if(pages)$
-  $pages$
-$endif$
--->
+<div class="book-stuff">
+  <div class="book-meta">
+    <b>Authors(s)</b>
+
+    <ul>
+    $for(authors)$
+      <li>$body$</li>
+    $endfor$
+    </ul>
+
+    $if(publisher)$
+      <b>Publisher</b>
+      $publisher$
+    $endif$
+
+    $if(yearPublished)$
+      <b>Year Published</b>
+      $yearPublished$
+    $endif$
+
+    $if(pages)$
+      <b>Pages</b>
+      $pages$
+    $endif$
+
+    $if(rating)$
+      <b>My Rating</b>
+      $rating$/5
+    $endif$
+
+    <span><a href="$link$">Link</a></span>
+  </div>
+  <div class="book-image">
+    <img src="$imageUrl$" />
+  </div>
+</div>
+
+<hr />
 
 $body$
