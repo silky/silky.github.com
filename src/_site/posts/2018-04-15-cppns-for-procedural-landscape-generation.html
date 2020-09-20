@@ -62,11 +62,9 @@
 <li><a href="http://blog.otoro.net/2016/06/02/generating-large-images-from-latent-vectors-part-two/">Generating Large Images from Latent Vectors - Part Two</a></li>
 <li><a href="http://blog.otoro.net/2016/04/06/the-frog-of-cifar-10/">The Frog of CIFAR 10</a></li>
 </ul>
-<p>One of the main reasons I loved this idea so much is that almost all machine learning that you see concerns itself with fixed output dimensions; at least for images. The cool thing about the CPPN is that it maps <em>pixel coordinates</em>, along with some configurably latent-vector <span class="math inline">$\vec{z}$</span>, to <em>rgb values</em>:</p>
-<p><br /><span class="math display">$$
-\text{cppn}(x, y, \vec{z}) = (r,g,b)
-$$</span><br /></p>
-<p>This is cool because, there is a value defined for every point! So you can use these things to create arbitrarily-large pictures! Furthermore, for a given <span class="math inline">$\vec{z}$</span> we can make higher-resolution images by evaluating the network over different widths.</p>
+<p>One of the main reasons I loved this idea so much is that almost all machine learning that you see concerns itself with fixed output dimensions; at least for images. The cool thing about the CPPN is that it maps <em>pixel coordinates</em>, along with some configurably latent-vector <span class="math inline"><em>z⃗</em></span>, to <em>rgb values</em>:</p>
+<p><br /><span class="math display">cppn(<em>x</em>, <em>y</em>, <em>z⃗</em>) = (<em>r</em>, <em>g</em>, <em>b</em>)</span><br /></p>
+<p>This is cool because, there is a value defined for every point! So you can use these things to create arbitrarily-large pictures! Furthermore, for a given <span class="math inline"><em>z⃗</em></span> we can make higher-resolution images by evaluating the network over different widths.</p>
 <p>At Silverpond we’ve put this idea to good use in our upcoming event at <a href="https://mkw.melbourne.vic.gov.au/events/ai-fashion-designer/">Melbourne Knowledge Week</a>.</p>
 <p>In any case, here I’d like to document my playing-around with the idea of using CPPNs to generate 3d landscapes.</p>
 <p>I’ve put together some pieces of code here: <a href="https://github.com/silky/cppn-3d">cppn-3d</a>. Thanks to the amazing <a href="https://mybinder.org">MyBinder</a> you can even <a href="https://mybinder.org/v2/gh/silky/cppn-3d/master?filepath=python%2FGenerate%20Maps.ipynb">run the notebook online, right now,</a> and start generating your own cool images!</p>
@@ -105,55 +103,55 @@ ys  = stitch_together(yss)</code></pre>
 </center>
 <p>It worked! You can also <a href="https://silky.github.io/cppn-3d/javascript/index.html">play with this live</a> if you wish; it does a kind of cool animation, albeit kinda slowly.</p>
 <p>Of course, what I really wanted was to get a feel for how “walkable” or “playable” the resulting map would be. So I found my way to Unity3D, and half-wrote half-googled a tiny script to load in the image as a height map:</p>
-<div class="sourceCode"><pre class="sourceCode c#"><code class="sourceCode cs"><span class="kw">using</span> System.<span class="fu">IO</span>;
-<span class="kw">using</span> UnityEngine;
-
-<span class="kw">public</span> <span class="kw">class</span> TerrainHeight : MonoBehaviour {
-    <span class="kw">public</span> <span class="dt">int</span> height  = <span class="dv">400</span>;
-    <span class="kw">public</span> <span class="dt">int</span> width   = <span class="dv">400</span>;
-    <span class="kw">public</span> <span class="dt">int</span> depth   = <span class="dv">200</span>;
-    <span class="kw">public</span> <span class="dt">string</span> cppnImage = <span class="st">&quot;/home/noon/dev/cppn-3d/python/multi-2.png&quot;</span>;
-
-
-	<span class="dt">void</span> <span class="fu">Start</span> () {
-        Terrain terrain     = GetComponent&lt;Terrain&gt;();
-        terrain.<span class="fu">terrainData</span> = <span class="fu">GenerateTerrain</span>(terrain.<span class="fu">terrainData</span>);
-	}
-	
-
-	TerrainData <span class="fu">GenerateTerrain</span> (TerrainData data) {
-        data.<span class="fu">size</span> = <span class="kw">new</span> <span class="fu">Vector3</span>(width, depth, height);
-		data.<span class="fu">SetHeights</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="fu">GenerateHeights</span>());
-        <span class="kw">return</span> data;
-	}
-
-
-    <span class="kw">public</span> <span class="kw">static</span> Texture2D <span class="fu">LoadPng</span> (<span class="dt">string</span> filePath) {
-        <span class="dt">byte</span>[] data       = File.<span class="fu">ReadAllBytes</span>(filePath);
-        Texture2D texture = <span class="kw">new</span> <span class="fu">Texture2D</span>(<span class="dv">2</span>, <span class="dv">2</span>);
-        texture.<span class="fu">LoadImage</span>(data);
-        <span class="kw">return</span> texture;
-    }
-
-
-    <span class="dt">float</span>[,] <span class="fu">GenerateHeights</span> () {
-        <span class="dt">float</span>[,] heights = <span class="kw">new</span> <span class="dt">float</span>[width, height];
-        Texture2D image = <span class="fu">LoadPng</span>(cppnImage);
-        <span class="kw">for</span> (<span class="dt">int</span> x = <span class="dv">0</span>; x &lt; width; x++) {
-            <span class="kw">for</span> (<span class="dt">int</span> y = <span class="dv">0</span>; y &lt; height; y++) {
-                Color colour = image.<span class="fu">GetPixel</span>(x, y);
-
-                <span class="dt">float</span> height = colour.<span class="fu">r</span>
-                             + colour.<span class="fu">g</span>
-                             + colour.<span class="fu">b</span>;
-
-                heights[x, y] = height / <span class="dv">3</span>;
-            }
-        }
-
-        <span class="kw">return</span> heights;
-    }
-}</code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode c#"><code class="sourceCode cs"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">using</span> System.<span class="fu">IO</span>;</a>
+<a class="sourceLine" id="cb2-2" title="2"><span class="kw">using</span> UnityEngine;</a>
+<a class="sourceLine" id="cb2-3" title="3"></a>
+<a class="sourceLine" id="cb2-4" title="4"><span class="kw">public</span> <span class="kw">class</span> TerrainHeight : MonoBehaviour {</a>
+<a class="sourceLine" id="cb2-5" title="5">    <span class="kw">public</span> <span class="dt">int</span> height  = <span class="dv">400</span>;</a>
+<a class="sourceLine" id="cb2-6" title="6">    <span class="kw">public</span> <span class="dt">int</span> width   = <span class="dv">400</span>;</a>
+<a class="sourceLine" id="cb2-7" title="7">    <span class="kw">public</span> <span class="dt">int</span> depth   = <span class="dv">200</span>;</a>
+<a class="sourceLine" id="cb2-8" title="8">    <span class="kw">public</span> <span class="dt">string</span> cppnImage = <span class="st">&quot;/home/noon/dev/cppn-3d/python/multi-2.png&quot;</span>;</a>
+<a class="sourceLine" id="cb2-9" title="9"></a>
+<a class="sourceLine" id="cb2-10" title="10"></a>
+<a class="sourceLine" id="cb2-11" title="11">	<span class="dt">void</span> <span class="fu">Start</span> () {</a>
+<a class="sourceLine" id="cb2-12" title="12">        Terrain terrain     = GetComponent&lt;Terrain&gt;();</a>
+<a class="sourceLine" id="cb2-13" title="13">        terrain.<span class="fu">terrainData</span> = <span class="fu">GenerateTerrain</span>(terrain.<span class="fu">terrainData</span>);</a>
+<a class="sourceLine" id="cb2-14" title="14">	}</a>
+<a class="sourceLine" id="cb2-15" title="15">	</a>
+<a class="sourceLine" id="cb2-16" title="16"></a>
+<a class="sourceLine" id="cb2-17" title="17">	TerrainData <span class="fu">GenerateTerrain</span> (TerrainData data) {</a>
+<a class="sourceLine" id="cb2-18" title="18">        data.<span class="fu">size</span> = <span class="kw">new</span> <span class="fu">Vector3</span>(width, depth, height);</a>
+<a class="sourceLine" id="cb2-19" title="19">		data.<span class="fu">SetHeights</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="fu">GenerateHeights</span>());</a>
+<a class="sourceLine" id="cb2-20" title="20">        <span class="kw">return</span> data;</a>
+<a class="sourceLine" id="cb2-21" title="21">	}</a>
+<a class="sourceLine" id="cb2-22" title="22"></a>
+<a class="sourceLine" id="cb2-23" title="23"></a>
+<a class="sourceLine" id="cb2-24" title="24">    <span class="kw">public</span> <span class="kw">static</span> Texture2D <span class="fu">LoadPng</span> (<span class="dt">string</span> filePath) {</a>
+<a class="sourceLine" id="cb2-25" title="25">        <span class="dt">byte</span>[] data       = File.<span class="fu">ReadAllBytes</span>(filePath);</a>
+<a class="sourceLine" id="cb2-26" title="26">        Texture2D texture = <span class="kw">new</span> <span class="fu">Texture2D</span>(<span class="dv">2</span>, <span class="dv">2</span>);</a>
+<a class="sourceLine" id="cb2-27" title="27">        texture.<span class="fu">LoadImage</span>(data);</a>
+<a class="sourceLine" id="cb2-28" title="28">        <span class="kw">return</span> texture;</a>
+<a class="sourceLine" id="cb2-29" title="29">    }</a>
+<a class="sourceLine" id="cb2-30" title="30"></a>
+<a class="sourceLine" id="cb2-31" title="31"></a>
+<a class="sourceLine" id="cb2-32" title="32">    <span class="dt">float</span>[,] <span class="fu">GenerateHeights</span> () {</a>
+<a class="sourceLine" id="cb2-33" title="33">        <span class="dt">float</span>[,] heights = <span class="kw">new</span> <span class="dt">float</span>[width, height];</a>
+<a class="sourceLine" id="cb2-34" title="34">        Texture2D image = <span class="fu">LoadPng</span>(cppnImage);</a>
+<a class="sourceLine" id="cb2-35" title="35">        <span class="kw">for</span> (<span class="dt">int</span> x = <span class="dv">0</span>; x &lt; width; x++) {</a>
+<a class="sourceLine" id="cb2-36" title="36">            <span class="kw">for</span> (<span class="dt">int</span> y = <span class="dv">0</span>; y &lt; height; y++) {</a>
+<a class="sourceLine" id="cb2-37" title="37">                Color colour = image.<span class="fu">GetPixel</span>(x, y);</a>
+<a class="sourceLine" id="cb2-38" title="38"></a>
+<a class="sourceLine" id="cb2-39" title="39">                <span class="dt">float</span> height = colour.<span class="fu">r</span></a>
+<a class="sourceLine" id="cb2-40" title="40">                             + colour.<span class="fu">g</span></a>
+<a class="sourceLine" id="cb2-41" title="41">                             + colour.<span class="fu">b</span>;</a>
+<a class="sourceLine" id="cb2-42" title="42"></a>
+<a class="sourceLine" id="cb2-43" title="43">                heights[x, y] = height / <span class="dv">3</span>;</a>
+<a class="sourceLine" id="cb2-44" title="44">            }</a>
+<a class="sourceLine" id="cb2-45" title="45">        }</a>
+<a class="sourceLine" id="cb2-46" title="46"></a>
+<a class="sourceLine" id="cb2-47" title="47">        <span class="kw">return</span> heights;</a>
+<a class="sourceLine" id="cb2-48" title="48">    }</a>
+<a class="sourceLine" id="cb2-49" title="49">}</a></code></pre></div>
 <p>In Unity3D, you attach this script to a terrain, then when you run it, it will set that piece of terrain to have the given heights you want!</p>
 <center>
 <img src="../images/cppn/viewpoint.png" />
@@ -176,10 +174,10 @@ ys  = stitch_together(yss)</code></pre>
 </center>
 <p>On the left I have a particular image that I’ve generated. I want to continue this image downwards by one tile. On the right is the same image with the next tile.</p>
 <p>This idea was due to <a href="https://www.linkedin.com/in/galacamacho/">Gala</a> (who works for <a href="https://www.neighbourlytics.com/">Neighbourlytics</a>): basically, given that we have the optimisation machinery at hand, why not just attempt to find a new image, from the network, whose border matches at the point we’re interested in.</p>
-<p>Initially, my idea was that I could do this by optimising over the z vector <span class="math inline">$\vec{z}$</span> only; i.e. leave all the other parameters of the network alone. This turned out not to work at all. I’m actually not quite sure why, because my experience with CPPNs is that if <span class="math inline">$\vec{z}$</span> is large, then you can get a whole bunch of variation by modifying it. In any case, I tried it, and while it did manage to make <em>some</em> progress, it was never really particularly good.</p>
+<p>Initially, my idea was that I could do this by optimising over the z vector <span class="math inline"><em>z⃗</em></span> only; i.e. leave all the other parameters of the network alone. This turned out not to work at all. I’m actually not quite sure why, because my experience with CPPNs is that if <span class="math inline"><em>z⃗</em></span> is large, then you can get a whole bunch of variation by modifying it. In any case, I tried it, and while it did manage to make <em>some</em> progress, it was never really particularly good.</p>
 <p>When that approach didn’t work, I used the one that generated the tile connections from above: I just optimised with respect to the entire CPPN network.</p>
 <p>There were a few problems with this approach, unfortunately:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li><p>The tiles it generated were less “interesting”: In the image above, the one of the left is made of 3 tiles. The top one is the starting one; note it’s complexity. The following two tiles are very low in interesting-ness, but the final one is actually not bad. This perhaps makes sense, as when the optimiser only has to match one colour, it can allow itself some richness in the other region.</p></li>
 <li><p>It didn’t work when I tried to match up <em>two</em> boundaries:</p></li>
 </ol>

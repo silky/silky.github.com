@@ -48,7 +48,7 @@
 <a href='https://github.com/silky/ideas/issues/464'>generalisation of deutch-jozsa’s problem</a>: here - https://en.wikipedia.org/wiki/Deutsch%E2%80%93Jozsa_algorithm generalise it so that we have multiple f’s that have different promises; i.e. i’m constant “50% of the time”. what now?
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/463'>analogy-lang</a>: reading https://maetl.net/membrane-oriented-programming by <span class="citation">@maetl</span> i had an idea for a programming language consider two types, “person” and “frog”, let’s say there are at least two problems; one is the one in the article - it’s hard to come up with a complete list of methods/properties that should exactly define one of these things. in surfaces and essences they argue that in reality no categorisation has perfectly defined boundaries; so how to define the types? another problem is what happens if i want to build a thing that is both “person-like” and “frog-like”? you can’t. especially not if the differences are far away (i.e. is frog hopping like “walking”? should it be the implementation of a “walk” method? probably not; but a “move” method? probably? but what about less-clear things? and doesn’t it depend on what your merging with) in this way it seems like it’s impossible to come up with strict types for anything so here’s an idea: analogy-lang: let’s you define types in a much more relaxed way; “this thing is like that thing in these ways, but different in these ways”
+<a href='https://github.com/silky/ideas/issues/463'>analogy-lang</a>: reading https://maetl.net/membrane-oriented-programming by <span class="citation" data-cites="maetl">@maetl</span> i had an idea for a programming language consider two types, “person” and “frog”, let’s say there are at least two problems; one is the one in the article - it’s hard to come up with a complete list of methods/properties that should exactly define one of these things. in surfaces and essences they argue that in reality no categorisation has perfectly defined boundaries; so how to define the types? another problem is what happens if i want to build a thing that is both “person-like” and “frog-like”? you can’t. especially not if the differences are far away (i.e. is frog hopping like “walking”? should it be the implementation of a “walk” method? probably not; but a “move” method? probably? but what about less-clear things? and doesn’t it depend on what your merging with) in this way it seems like it’s impossible to come up with strict types for anything so here’s an idea: analogy-lang: let’s you define types in a much more relaxed way; “this thing is like that thing in these ways, but different in these ways”
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/462'>multi-layered network</a>: train some network f to produce y_1 from x_1 f(x_1) = y_1 then, wrap that in a new network, g, that produces y_1 and y_2 from x_1 and x_2 g(x_1, x_2) = ( f(x_1,), g’(x_1, x_2) ) and so on. interesting
@@ -72,7 +72,7 @@
 <a href='https://github.com/silky/ideas/issues/456'>use autocomplete and random phrases to guess things about people</a>: “i love you …” find out who they love “give me …” find out what they want and so on
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/455'>visualise the difference between streaming and shuffling sampling algorithms</a>: streaming -&gt; for low numbers, misses items shuffling -&gt; for low numbers, bad distribution across indices that are shuffled. <span class="citation">@dseuss</span> <span class="citation">@martiningram</span>
+<a href='https://github.com/silky/ideas/issues/455'>visualise the difference between streaming and shuffling sampling algorithms</a>: streaming -&gt; for low numbers, misses items shuffling -&gt; for low numbers, bad distribution across indices that are shuffled. <span class="citation" data-cites="dseuss">@dseuss</span> <span class="citation" data-cites="martiningram">@martiningram</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/454'>symbolic tensorflow</a>: so i can do convs and explain them really easily
@@ -99,7 +99,7 @@
 <a href='https://github.com/silky/ideas/issues/447'>buddhist twitter</a>: there’s only one account, and no password
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/446'>programming ombudsman</a>: <span class="citation">@sordina</span> <span class="citation">@kirillrdy</span>
+<a href='https://github.com/silky/ideas/issues/446'>programming ombudsman</a>: <span class="citation" data-cites="sordina">@sordina</span> <span class="citation" data-cites="kirillrdy">@kirillrdy</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/445'>the computational complexity of religion</a>: given various religious abilities, what computational problems can you solve? what are the implications on computational complexity by buddhism? and so on.
@@ -108,7 +108,7 @@
 <a href='https://github.com/silky/ideas/issues/444'>spacetime calendar</a>: we have calendars for dates but they don’t often contain space constraints so why not a space-time calendar, defined in some kind of light cone?
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/443'>app to check consistency of items before you leave</a>: it’s an app you configure it to be aware of your keys, laptop, wallet, glasses then, as you leave your house, it can inform you of the status of those items: - “hey, your computer is at home” - “all g, your glasses are at work” etc <span class="citation">@gacafe</span>
+<a href='https://github.com/silky/ideas/issues/443'>app to check consistency of items before you leave</a>: it’s an app you configure it to be aware of your keys, laptop, wallet, glasses then, as you leave your house, it can inform you of the status of those items: - “hey, your computer is at home” - “all g, your glasses are at work” etc <span class="citation" data-cites="gacafe">@gacafe</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/442'>gradient tug-of-war demonstration</a>: given a function f(x,y) = x + y then if we have competing loss functions then it would be nice to visualise the gradient flow as a tug of war
@@ -117,7 +117,7 @@
 <a href='https://github.com/silky/ideas/issues/441'>a website that is entirely defined in the scroll bars/url link bar, whatever</a>: you can move pages by moving your mouse to different parts of the scroll bars and so on in that fashion
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/440'>quantum calendar</a>: it’s a calendar where on any given day in the future, items can be scheduled at the same time. but up to some limit (say 1 week) the items get collapsed and locked in <span class="citation">@silky</span> <span class="citation">@dseuss</span>
+<a href='https://github.com/silky/ideas/issues/440'>quantum calendar</a>: it’s a calendar where on any given day in the future, items can be scheduled at the same time. but up to some limit (say 1 week) the items get collapsed and locked in <span class="citation" data-cites="silky">@silky</span> <span class="citation" data-cites="dseuss">@dseuss</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/439'>streaming terminal graph receiving updates over mqtt</a>: then, can use it to plot tensorboard logs to the terminal instead of tensorboard using blessed + blessed-contrib seems to be the easiest way - https://github.com/yaronn/blessed-contrib/blob/master/examples/line-random-colors.js just need to put in the mqtt part and update the data that way.
@@ -126,7 +126,7 @@
 <a href='https://github.com/silky/ideas/issues/438'>ai escape room</a>: this is an idea of dave build an escape room controlled entirely by ai the only way out is by interacting with the machine it can control everything: heating, doors, whatever
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/437'>programmable themepark</a>: here’s a ride; how you interact with it is defined via your own programs you play minigolf, but instead of a club you use programming <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/437'>programmable themepark</a>: here’s a ride; how you interact with it is defined via your own programs you play minigolf, but instead of a club you use programming <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/436'>graph+weights to neuronal net rendering</a>: https://github.com/BlueBrain/NeuroMorphoVis
@@ -135,16 +135,16 @@
 <a href='https://github.com/silky/ideas/issues/435'>Arbitrary-Task Programming</a>: given that programming is just arranging symbols, <em>and</em> we can use deep learning to interpret the real world into symbols, <em>then</em> it’s possible to do programming by performing arbitrary tasks i.e. <em>any</em> job can be programming, if we can build the deep-learning system that converts actions in that job into symbols in a programming language
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/434'>Sitcom-Lang</a>: it’s a pre-processor, or something, for an arbtrariy language whenever a symbol is defined, that symbol is embued with a soul and a “nature”. it starts to have wants and needs; and those must be satisfied in order for it to stay in it’s present form (i.e. as a “for loop”), otherwise it might change (i.e. to be a “while” loop, or maybe even a string instead). all the symbols will interact with each other, and in that way a program will be made <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/434'>Sitcom-Lang</a>: it’s a pre-processor, or something, for an arbtrariy language whenever a symbol is defined, that symbol is embued with a soul and a “nature”. it starts to have wants and needs; and those must be satisfied in order for it to stay in it’s present form (i.e. as a “for loop”), otherwise it might change (i.e. to be a “while” loop, or maybe even a string instead). all the symbols will interact with each other, and in that way a program will be made <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/433'>brain2object2teeshirt</a>: this - https://scirate.com/arxiv/1810.02223 - but once it’s decided on the object, it gets rendered on your LED tee-shirt <span class="citation">@geekscape</span> <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/433'>brain2object2teeshirt</a>: this - https://scirate.com/arxiv/1810.02223 - but once it’s decided on the object, it gets rendered on your LED tee-shirt <span class="citation" data-cites="geekscape">@geekscape</span> <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/432'>pix2pix sourcecode2cat</a>: generate pictures of source code convert to pictures of cat instant machine for generating cat pictures from code what cat does your code look like? <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/432'>pix2pix sourcecode2cat</a>: generate pictures of source code convert to pictures of cat instant machine for generating cat pictures from code what cat does your code look like? <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/431'>physical xmonad</a>: use the uarm to be a “physical” xmonad you want to write on some piece of paper? no worries, the uarm will re-arrange your physical desk so that everything is conveniently arranged to do that <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/431'>physical xmonad</a>: use the uarm to be a “physical” xmonad you want to write on some piece of paper? no worries, the uarm will re-arrange your physical desk so that everything is conveniently arranged to do that <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/430'>collaborative painting in the style of christopher alexander</a>: it has 3 parts done by 3 artists i draw the left part; you draw the middle, and it has to interact coherently with whatever i’ve drawn; then another person draws the right side, again, it must interact that’s it.
@@ -192,10 +192,10 @@
 <a href='https://github.com/silky/ideas/issues/416'>git version flattener</a>: clone a git repo at every revision, into some folder.
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/415'>see-through jacket that is also warm</a>: optionally also magnetic <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/415'>see-through jacket that is also warm</a>: optionally also magnetic <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/414'>magnetic glass</a>: <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/414'>magnetic glass</a>: <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/413'>heated keyboard</a>: keeps your fingers warm
@@ -204,7 +204,7 @@
 <a href='https://github.com/silky/ideas/issues/412'>run an experiment where monkeys/dogs/whatever are encouraged to learn some kind of programming to solve a task</a>: i.e. a monkey gets 1 food package per day but if learns to program, using the tools provided to it, ( something like a giant physical version of scratch ) then it gets 3 food packages in some sense people have tried this, with them solving problems, but has anyone tried it where the tool they use to solve the problem is general, and can be applied to other areas of their life?
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/411'>tree to code</a>: physical trees 1. order trees by the number of leaves 2. order code by the number of statements train a deeplearning network to map between these things then, trees can write computer programs <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/411'>tree to code</a>: physical trees 1. order trees by the number of leaves 2. order code by the number of statements train a deeplearning network to map between these things then, trees can write computer programs <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/410'>ethical algorithms testing ground</a>: related to the last two #409 #408 basically, people can sign up to be ethical tester algorithms can join to provide games for people to play how would it work?
@@ -237,10 +237,10 @@
 <a href='https://github.com/silky/ideas/issues/401'>animated colour schemes for vim</a>: the colour scheme rotates as you code
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/400'>a tale of three dickens: the movie</a>: it’s an auto-generated movie from locally-coherent slices instead of the book, we make a movie, where all the scenes in the movie are interspersed based on “local coherence” i.e. from two movies select two people having a conversation with someone named bill or, flick between scenes at the beach <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/400'>a tale of three dickens: the movie</a>: it’s an auto-generated movie from locally-coherent slices instead of the book, we make a movie, where all the scenes in the movie are interspersed based on “local coherence” i.e. from two movies select two people having a conversation with someone named bill or, flick between scenes at the beach <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/399'>revolutionary walls</a>: the floor is fixed; but the walls are a tube you pull on some part of the wall to rotate it <span class="citation">@tall-josh</span>
+<a href='https://github.com/silky/ideas/issues/399'>revolutionary walls</a>: the floor is fixed; but the walls are a tube you pull on some part of the wall to rotate it <span class="citation" data-cites="tall-josh">@tall-josh</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/398'>activation function composer</a>: or more generally, a function composer 1. what does the graph of <code>relu</code> look like? 2. what about the graph of <code>relu . tanh</code> ? and so on, indefinitely and arbitrarily. some features: - what points should be push through? maybe could add certain kinds of initialisations and ranges - add things like drop-out and whatnot.
@@ -264,7 +264,7 @@
 <a href='https://github.com/silky/ideas/issues/392'>umbrella-scarf / fresh-scarf</a>: it’s a scarf but also, it has a hood that you can pull up, maybe even a clear hood, that let’s you see out front of it, but keeps you under cover could also keep smoke out of your face
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/391'>meme-net</a>: watch video, extract meme i.e. and the rollsafe guy
+<a href='https://github.com/silky/ideas/issues/391'>meme-net</a>: watch video, extract meme i.e. and the rollsafe guy
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/390'>ultimate computer setup person</a>: someone who just has the worlds best computer set up everything works no data is duplicated whole operating system exists in 1.5 gig; they’ve got 510 gig free no conda/ruby/stack issues
@@ -273,16 +273,16 @@
 <a href='https://github.com/silky/ideas/issues/389'>codebase -&gt; readme</a>: looks at an entire codebase; learns to predict the readme
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/388'>divangulation theorem for websites</a>: <span class="citation">@sordina</span> surfaces can be triangulated websites can be divangulated what are the associated theorems?
+<a href='https://github.com/silky/ideas/issues/388'>divangulation theorem for websites</a>: <span class="citation" data-cites="sordina">@sordina</span> surfaces can be triangulated websites can be divangulated what are the associated theorems?
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/387'>tasting plates for saas, *aas</a>: instead of just saying “sign up now for 6 months free”; just auto-sign people up for x free things, then let them use it up. easy way to get a billion more dollars for your saas business. <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/387'>tasting plates for saas, *aas</a>: instead of just saying “sign up now for 6 months free”; just auto-sign people up for x free things, then let them use it up. easy way to get a billion more dollars for your saas business. <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/386'>self-skating skateboard</a>: it drives down to the skate park; skates around on the pipes, does flips, 180s, griding, whatever. <span class="citation">@sordina</span> <span class="citation">@tall-josh</span>
+<a href='https://github.com/silky/ideas/issues/386'>self-skating skateboard</a>: it drives down to the skate park; skates around on the pipes, does flips, 180s, griding, whatever. <span class="citation" data-cites="sordina">@sordina</span> <span class="citation" data-cites="tall-josh">@tall-josh</span>
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/385'>different password entry forms</a>: 1. any password you type logs you in, but they all take you to a different computer. only your password takes to you yours. “honeypassword” 2. you password consists of the actual letters, but also the timing between the letters <span class="citation">@sordina</span> 3. any key you press is irrelevant, all that matters is the spacing; everything is done via morse-code (<span class="citation">@geekscape</span>)
+<a href='https://github.com/silky/ideas/issues/385'>different password entry forms</a>: 1. any password you type logs you in, but they all take you to a different computer. only your password takes to you yours. “honeypassword” 2. you password consists of the actual letters, but also the timing between the letters <span class="citation" data-cites="sordina">@sordina</span> 3. any key you press is irrelevant, all that matters is the spacing; everything is done via morse-code (<span class="citation" data-cites="geekscape">@geekscape</span>)
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/384'>congratulations!!!</a>
@@ -291,7 +291,7 @@
 <a href='https://github.com/silky/ideas/issues/383'>meeting chaos monkey</a>: every time a meeting is scheduled, a random attendee is replaced by some other random staff member
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/382'>consulto the consulting teddybear</a>: <span class="citation">@sordina</span> “that sounds good in theory” “have you tried kan-ban’ing that” “moving forward that sounds good, but right now i think we should be pragmatic”
+<a href='https://github.com/silky/ideas/issues/382'>consulto the consulting teddybear</a>: <span class="citation" data-cites="sordina">@sordina</span> “that sounds good in theory” “have you tried kan-ban’ing that” “moving forward that sounds good, but right now i think we should be pragmatic”
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/381'>small magnets in fabric that can attach to other magnets so-as to create customisable clothing</a>: just put a diff design on by switching out the magnets i just need some small magnets. jaycar sells them
@@ -348,13 +348,13 @@
 <a href='https://github.com/silky/ideas/issues/364'>Video Issues</a>: <a href="https://vimeo.com/265518095" class="uri">https://vimeo.com/265518095</a>
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/363'>Faux Project Management Generator Thing</a>: it’s an RNN that generates hundreds of tickets in trello or jira or whatever; with arbitrary due dates makes you feel stressed <span class="citation">@sordina</span> could be used for project-management training scenarios
+<a href='https://github.com/silky/ideas/issues/363'>Faux Project Management Generator Thing</a>: it’s an RNN that generates hundreds of tickets in trello or jira or whatever; with arbitrary due dates makes you feel stressed <span class="citation" data-cites="sordina">@sordina</span> could be used for project-management training scenarios
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/362'>quantum cppn</a>
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/361'>AIWS</a>: ai for aws you: “hey, i need to computer with whatever to be up at whichever.com and to have some database, blah blah” aiws: “no worries, that’s set up for you!” alt. “talky-form for AWS” <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/361'>AIWS</a>: ai for aws you: “hey, i need to computer with whatever to be up at whichever.com and to have some database, blah blah” aiws: “no worries, that’s set up for you!” alt. “talky-form for AWS” <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/360'>deep haircut mirror</a>: a mirror infront of hair-dressers that lets you look at potential haircuts on your own head
@@ -369,7 +369,7 @@
 <a href='https://github.com/silky/ideas/issues/357'>Easter Egg Evangelist for Enterprises (E^4)</a>: A floating employee who embeds on teams to consult on how to best add easter-eggs to the features they build.
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/356'>self-driving food truck</a>: <span class="citation">@martiningram</span>
+<a href='https://github.com/silky/ideas/issues/356'>self-driving food truck</a>: <span class="citation" data-cites="martiningram">@martiningram</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/355'>Stabbucks</a>: Starbucks for knives. * https://i.imgur.com/1ZCIQnh.jpg * Order venti, grande, etc knives
@@ -414,7 +414,7 @@
 <a href='https://github.com/silky/ideas/issues/342'>menu democracy</a>: buy a coffee, earn 1 voting right to change the menu in some way buy more coffees, proceed in this fashion other food yields you more votes
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/341'>dynamic videos built on the fly to answer standard google queries</a>: i.e “use python requests to do post request” a video could be made on the fly using the celeb-generating stuff of stack-gan, then the voice-simulation stuff of lyrebird or whoever, then the lip-moving stuff, the text-to-speech of wavenet or whatever, and some other random backing scene gans and music production networks it would get the content by reading the first answer it finds on google, in some summarised way. <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/341'>dynamic videos built on the fly to answer standard google queries</a>: i.e “use python requests to do post request” a video could be made on the fly using the celeb-generating stuff of stack-gan, then the voice-simulation stuff of lyrebird or whoever, then the lip-moving stuff, the text-to-speech of wavenet or whatever, and some other random backing scene gans and music production networks it would get the content by reading the first answer it finds on google, in some summarised way. <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/340'>fully-automated fashion design</a>: 1. Fashion-MNIST CPPN - At random, pick a random item of clothing, figure out what it is, and generate a large version. 2. Pick a random (creative-commons) photo from Flickr, train a style transfer network on it. 3. Apply the style transfer to a bunch of different clothing items? To make a theme? 4. Pick a name from an RNN? 5. Upload to PAOM? Run-time should be several hours for one collection? Not so bad.
@@ -426,10 +426,10 @@
 <a href='https://github.com/silky/ideas/issues/338'>use cppn to generate a 3d landscape by determining the height by the colour</a>
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/337'>lunch formation yaml specification</a>: example: <code>lunch:   - sandwhich:     - bread     - butter     - lettuce     - cucumber     - butter     - bread region: cbd</code> elements are ordered by height on the plate. <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/337'>lunch formation yaml specification</a>: example: <code>lunch:   - sandwhich:     - bread     - butter     - lettuce     - cucumber     - butter     - bread region: cbd</code> elements are ordered by height on the plate. <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/336'>a tale of 3 dickens</a>: combine: 1. a christmas carol 2. a tale of two cities 3. great expectations in order page-by-page. <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/336'>a tale of 3 dickens</a>: combine: 1. a christmas carol 2. a tale of two cities 3. great expectations in order page-by-page. <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/335'>instead of colouring in the retro-haskell tee with colours, print the source code for the program itself in the previous colour</a>: easy!
@@ -447,13 +447,13 @@
 <a href='https://github.com/silky/ideas/issues/331'>naive nn visualisation</a>: just reshape all the weights to be in the shape of an image, normalise the values, and output it.
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/330'>map sentences to “the gist”; just a few words</a>: “an embedding that compresses a piece of text to its core concepts” “like if i can compress an image” “then i should be able to compress a book” “and if i can do that that means that i can also write a compressed book” “and have the neural network write my book” <span class="citation">@gacafe</span>
+<a href='https://github.com/silky/ideas/issues/330'>map sentences to “the gist”; just a few words</a>: “an embedding that compresses a piece of text to its core concepts” “like if i can compress an image” “then i should be able to compress a book” “and if i can do that that means that i can also write a compressed book” “and have the neural network write my book” <span class="citation" data-cites="gacafe">@gacafe</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/329'>version number which, in ascii, eventually approaches the source code itself</a>
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/328'>personal world map</a>: it’s one of those scaled world maps, where the scaling is determined by say your gps coordinates over a given year, so that it only enlarges the places you go. <span class="citation">@mobeets</span>
+<a href='https://github.com/silky/ideas/issues/328'>personal world map</a>: it’s one of those scaled world maps, where the scaling is determined by say your gps coordinates over a given year, so that it only enlarges the places you go. <span class="citation" data-cites="mobeets">@mobeets</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/327'>water doughnut</a>
@@ -483,13 +483,13 @@
 <a href='https://github.com/silky/ideas/issues/319'>artistic-arxiv</a>: instead of papers, each day take a random few images from every paper and show that. maybe it’d be cool.
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/318'>DeepWiki</a>: on normal wikipedia, humans edit pages about concepts in the form of words on deepwiki AIs edit concepts in the form of embeddings by way of adjusting the vectors (or something) they’d need to think about how to manage edits and revisions and so on. but that’s the general idea. <span class="citation">@sordina</span>
+<a href='https://github.com/silky/ideas/issues/318'>DeepWiki</a>: on normal wikipedia, humans edit pages about concepts in the form of words on deepwiki AIs edit concepts in the form of embeddings by way of adjusting the vectors (or something) they’d need to think about how to manage edits and revisions and so on. but that’s the general idea. <span class="citation" data-cites="sordina">@sordina</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/317'>secret walls: wear the streets (or: graffiti on a wall of clothes; and wear them)</a>
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/316'>a network that is given the punchline and has to work out the setup</a>: <span class="citation">@icp-jesus</span>
+<a href='https://github.com/silky/ideas/issues/316'>a network that is given the punchline and has to work out the setup</a>: <span class="citation" data-cites="icp-jesus">@icp-jesus</span>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/315'>reverse website or inverse website</a>: normally, you visit a site and see the website and you can view source to see the source what about if you could visit a site and see the source, then view the source to see the site
@@ -929,7 +929,7 @@ div.alt { background: #eaeaea; }
 <p>Naively, I figured this would be really easy with Google colab. While it was straightforward to start training, what I noticed is that getting data on to and off of the instance was frustrating, and the timeouts blocked me from getting a good amount of training time.</p>
 <h3 id="solution">Solution</h3>
 <p>Happily, colab supports very nice integration with Google services, so my plan was:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Download data from Google Cloud Platform (GCP),</li>
 <li>Train, or continue training,</li>
 <li>Push a checkpoint to Google Drive occasionally,</li>
@@ -944,72 +944,72 @@ div.alt { background: #eaeaea; }
 <p>As I’m using the <code>sketch_rnn</code> model, I first simply install <code>magenta</code> (and I have to pick a Python 2 environment.)</p>
 <pre><code>!pip install magenta</code></pre>
 <p>Now, there’s some considerations. Recalling that I’m going to be pushing my checkpoints to Google Drive, I need to authenticate with Google Drive. This is how that looks:</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">from</span> google.colab <span class="im">import</span> auth
-auth.authenticate_user()</code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="im">from</span> google.colab <span class="im">import</span> auth</a>
+<a class="sourceLine" id="cb3-2" title="2">auth.authenticate_user()</a></code></pre></div>
 <p>Then you’ll be prompted to copy in a code. Once that’s done, you can connect to Google Drive like so:</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">from</span> googleapiclient.discovery <span class="im">import</span> build
-drive_service <span class="op">=</span> build(<span class="st">&#39;drive&#39;</span>, <span class="st">&#39;v3&#39;</span>)</code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="im">from</span> googleapiclient.discovery <span class="im">import</span> build</a>
+<a class="sourceLine" id="cb4-2" title="2">drive_service <span class="op">=</span> build(<span class="st">&#39;drive&#39;</span>, <span class="st">&#39;v3&#39;</span>)</a></code></pre></div>
 <p>Now, if I’m training from scratch, I’ll run something like this:</p>
 <pre><code>!sketch_rnn_train --log_root=logs --data_dir=./ --hparams=&quot;data_set=[eye.npz],num_steps=501&quot;</code></pre>
 <p>This will run for however long, and utlimately produce checkpoints in the <code>./logs</code> folder, supposing that <code>eye.npz</code> exists in the present directory.</p>
 <p>Once that’s completed, I start my main training-pushing loop. Firstly, there’s a bit of busywork to zip files, get the latest checkpoint number, and upload it to Google Drive:</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python"><span class="im">import</span> os
-<span class="im">import</span> zipfile
-<span class="im">from</span> googleapiclient.http <span class="im">import</span> MediaFileUpload
-
-<span class="kw">def</span> get_largest_num (<span class="bu">dir</span><span class="op">=</span><span class="st">&quot;logs&quot;</span>, prefix<span class="op">=</span><span class="st">&quot;vector&quot;</span>):
-  
-  files <span class="op">=</span> os.listdir(<span class="bu">dir</span>)
-  
-  biggest <span class="op">=</span> <span class="dv">0</span>
-  
-  <span class="cf">for</span> f <span class="kw">in</span> files:
-    <span class="cf">if</span> f.startswith(prefix):
-      k <span class="op">=</span> <span class="bu">int</span>( f.split(<span class="st">&quot;.&quot;</span>)[<span class="dv">0</span>].split(<span class="st">&quot;-&quot;</span>)[<span class="dv">1</span>] ) 
-      <span class="cf">if</span> k <span class="op">&gt;</span> biggest:
-        biggest <span class="op">=</span> k
-  
-  <span class="cf">return</span> biggest
-
-
-<span class="kw">def</span> zip_model (name, k):
-  sk     <span class="op">=</span> <span class="bu">str</span>(k)
-  zipobj <span class="op">=</span> zipfile.ZipFile(name <span class="op">+</span> <span class="st">&quot;.zip&quot;</span>, <span class="st">&quot;w&quot;</span>, zipfile.ZIP_DEFLATED)
-
-  files <span class="op">=</span> [ <span class="st">&quot;checkpoint&quot;</span>
-          , <span class="st">&quot;model_config.json&quot;</span>
-          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.meta&quot;</span>
-          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.index&quot;</span>
-          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.data-00000-of-00001&quot;</span>]
-  
-  <span class="cf">for</span> f <span class="kw">in</span> files:
-    zipobj.write(<span class="st">&quot;logs/&quot;</span> <span class="op">+</span> f, f)
-
-
-
-<span class="kw">def</span> upload_to_drive (name<span class="op">=</span><span class="st">&quot;model.zip&quot;</span>):
-  file_metadata <span class="op">=</span> {
-    <span class="st">&quot;name&quot;</span>:     name,
-    <span class="st">&quot;mimeType&quot;</span>: <span class="st">&quot;binary/octet-stream&quot;</span> }
-
-  media <span class="op">=</span> MediaFileUpload(name, 
-                          mimetype<span class="op">=</span><span class="st">&quot;binary/octet-stream&quot;</span>,
-                          resumable<span class="op">=</span><span class="va">True</span>)
-
-  created <span class="op">=</span> drive_service.files().create(body<span class="op">=</span>file_metadata,
-                                         media_body<span class="op">=</span>media,
-                                         fields<span class="op">=</span><span class="st">&quot;id&quot;</span>).execute()
-  file_id <span class="op">=</span> created.get(<span class="st">&quot;id&quot;</span>)
-  <span class="cf">return</span> file_id</code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="im">import</span> os</a>
+<a class="sourceLine" id="cb6-2" title="2"><span class="im">import</span> zipfile</a>
+<a class="sourceLine" id="cb6-3" title="3"><span class="im">from</span> googleapiclient.http <span class="im">import</span> MediaFileUpload</a>
+<a class="sourceLine" id="cb6-4" title="4"></a>
+<a class="sourceLine" id="cb6-5" title="5"><span class="kw">def</span> get_largest_num (<span class="bu">dir</span><span class="op">=</span><span class="st">&quot;logs&quot;</span>, prefix<span class="op">=</span><span class="st">&quot;vector&quot;</span>):</a>
+<a class="sourceLine" id="cb6-6" title="6">  </a>
+<a class="sourceLine" id="cb6-7" title="7">  files <span class="op">=</span> os.listdir(<span class="bu">dir</span>)</a>
+<a class="sourceLine" id="cb6-8" title="8">  </a>
+<a class="sourceLine" id="cb6-9" title="9">  biggest <span class="op">=</span> <span class="dv">0</span></a>
+<a class="sourceLine" id="cb6-10" title="10">  </a>
+<a class="sourceLine" id="cb6-11" title="11">  <span class="cf">for</span> f <span class="kw">in</span> files:</a>
+<a class="sourceLine" id="cb6-12" title="12">    <span class="cf">if</span> f.startswith(prefix):</a>
+<a class="sourceLine" id="cb6-13" title="13">      k <span class="op">=</span> <span class="bu">int</span>( f.split(<span class="st">&quot;.&quot;</span>)[<span class="dv">0</span>].split(<span class="st">&quot;-&quot;</span>)[<span class="dv">1</span>] ) </a>
+<a class="sourceLine" id="cb6-14" title="14">      <span class="cf">if</span> k <span class="op">&gt;</span> biggest:</a>
+<a class="sourceLine" id="cb6-15" title="15">        biggest <span class="op">=</span> k</a>
+<a class="sourceLine" id="cb6-16" title="16">  </a>
+<a class="sourceLine" id="cb6-17" title="17">  <span class="cf">return</span> biggest</a>
+<a class="sourceLine" id="cb6-18" title="18"></a>
+<a class="sourceLine" id="cb6-19" title="19"></a>
+<a class="sourceLine" id="cb6-20" title="20"><span class="kw">def</span> zip_model (name, k):</a>
+<a class="sourceLine" id="cb6-21" title="21">  sk     <span class="op">=</span> <span class="bu">str</span>(k)</a>
+<a class="sourceLine" id="cb6-22" title="22">  zipobj <span class="op">=</span> zipfile.ZipFile(name <span class="op">+</span> <span class="st">&quot;.zip&quot;</span>, <span class="st">&quot;w&quot;</span>, zipfile.ZIP_DEFLATED)</a>
+<a class="sourceLine" id="cb6-23" title="23"></a>
+<a class="sourceLine" id="cb6-24" title="24">  files <span class="op">=</span> [ <span class="st">&quot;checkpoint&quot;</span></a>
+<a class="sourceLine" id="cb6-25" title="25">          , <span class="st">&quot;model_config.json&quot;</span></a>
+<a class="sourceLine" id="cb6-26" title="26">          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.meta&quot;</span></a>
+<a class="sourceLine" id="cb6-27" title="27">          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.index&quot;</span></a>
+<a class="sourceLine" id="cb6-28" title="28">          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.data-00000-of-00001&quot;</span>]</a>
+<a class="sourceLine" id="cb6-29" title="29">  </a>
+<a class="sourceLine" id="cb6-30" title="30">  <span class="cf">for</span> f <span class="kw">in</span> files:</a>
+<a class="sourceLine" id="cb6-31" title="31">    zipobj.write(<span class="st">&quot;logs/&quot;</span> <span class="op">+</span> f, f)</a>
+<a class="sourceLine" id="cb6-32" title="32"></a>
+<a class="sourceLine" id="cb6-33" title="33"></a>
+<a class="sourceLine" id="cb6-34" title="34"></a>
+<a class="sourceLine" id="cb6-35" title="35"><span class="kw">def</span> upload_to_drive (name<span class="op">=</span><span class="st">&quot;model.zip&quot;</span>):</a>
+<a class="sourceLine" id="cb6-36" title="36">  file_metadata <span class="op">=</span> {</a>
+<a class="sourceLine" id="cb6-37" title="37">    <span class="st">&quot;name&quot;</span>:     name,</a>
+<a class="sourceLine" id="cb6-38" title="38">    <span class="st">&quot;mimeType&quot;</span>: <span class="st">&quot;binary/octet-stream&quot;</span> }</a>
+<a class="sourceLine" id="cb6-39" title="39"></a>
+<a class="sourceLine" id="cb6-40" title="40">  media <span class="op">=</span> MediaFileUpload(name, </a>
+<a class="sourceLine" id="cb6-41" title="41">                          mimetype<span class="op">=</span><span class="st">&quot;binary/octet-stream&quot;</span>,</a>
+<a class="sourceLine" id="cb6-42" title="42">                          resumable<span class="op">=</span><span class="va">True</span>)</a>
+<a class="sourceLine" id="cb6-43" title="43"></a>
+<a class="sourceLine" id="cb6-44" title="44">  created <span class="op">=</span> drive_service.files().create(body<span class="op">=</span>file_metadata,</a>
+<a class="sourceLine" id="cb6-45" title="45">                                         media_body<span class="op">=</span>media,</a>
+<a class="sourceLine" id="cb6-46" title="46">                                         fields<span class="op">=</span><span class="st">&quot;id&quot;</span>).execute()</a>
+<a class="sourceLine" id="cb6-47" title="47">  file_id <span class="op">=</span> created.get(<span class="st">&quot;id&quot;</span>)</a>
+<a class="sourceLine" id="cb6-48" title="48">  <span class="cf">return</span> file_id</a></code></pre></div>
 <p>Then, the main loop:</p>
-<div class="sourceCode"><pre class="sourceCode python"><code class="sourceCode python">iterations <span class="op">=</span> <span class="dv">200</span>
-<span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(iterations):
-  <span class="bu">print</span>(<span class="st">&quot;Iteration &quot;</span> <span class="op">+</span> <span class="bu">str</span>(k))
-  cmd <span class="op">=</span> <span class="st">&#39;sketch_rnn_train --log_root=logs --resume_training --data_dir=./ &#39;</span> <span class="op">+</span> <span class="op">\</span>
-        <span class="co">&#39; --hparams=&quot;data_set=[eye.npz],num_steps=1001&quot;&#39;</span>
-  x <span class="op">=</span> os.system(cmd)
-  zip_model(<span class="st">&quot;model&quot;</span>, get_largest_num())
-  upload_to_drive()</code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">iterations <span class="op">=</span> <span class="dv">200</span></a>
+<a class="sourceLine" id="cb7-2" title="2"><span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(iterations):</a>
+<a class="sourceLine" id="cb7-3" title="3">  <span class="bu">print</span>(<span class="st">&quot;Iteration &quot;</span> <span class="op">+</span> <span class="bu">str</span>(k))</a>
+<a class="sourceLine" id="cb7-4" title="4">  cmd <span class="op">=</span> <span class="st">&#39;sketch_rnn_train --log_root=logs --resume_training --data_dir=./ &#39;</span> <span class="op">+</span> <span class="op">\</span></a>
+<a class="sourceLine" id="cb7-5" title="5">        <span class="co">&#39; --hparams=&quot;data_set=[eye.npz],num_steps=1001&quot;&#39;</span></a>
+<a class="sourceLine" id="cb7-6" title="6">  x <span class="op">=</span> os.system(cmd)</a>
+<a class="sourceLine" id="cb7-7" title="7">  zip_model(<span class="st">&quot;model&quot;</span>, get_largest_num())</a>
+<a class="sourceLine" id="cb7-8" title="8">  upload_to_drive()</a></code></pre></div>
 <p>So, all that does is run the main training command, to reload the model from the latest checkpoint and continue training, then zips and uploads!</p>
 <p>Set the iterations to whatever you wish; chances are your instance will never run for that long anyway; the main point is to push up the checkpoints every-so-often (for me, every 1000 steps of the sketch_rnn model; which takes about 1 hour or so, depending on params.)</p>
 <p><strong>Brining down the most recent Drive checkpoint</strong></p>
@@ -1411,7 +1411,7 @@ $2,500,000
 <p><em>by Patrick Rebentrost</em></p>
 <p>Next up was Patrick, who gave a far-reaching talk on a variety of topics that he and his colleagues have been researching over the last few years.</p>
 <p>He started off by reminding us of a bunch of challenges that he posed in a prior paper:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>The “input” challenge - How to get data in to a quantum network? It turns out this is very subtle.</li>
 <li>The “costing” challenge - Just how many qubits are required to implement these algorithms? How practical is it to build?</li>
 <li>The “output” challenge - Even if we build an efficient quantum machine learning algorithm that produces a final state that encodes the answer; how do we read out the answer efficiently? It takes many measurements to extract the known state, so is it efficient to do so?</li>
@@ -1443,7 +1443,7 @@ $2,500,000
 <p>Even though it had a reasonably uninspiring title, this talk was actually excellent, and should’ve, in fact, been the opening talk of the conference.</p>
 <p>Aske introduced some motivation, and introduced some simplifying assumptions about AI to try and cut off typical arguments about what it means to be “intelligent”. He defined his working notion, which is “to <em>be</em> intelligent is to <em>act</em> intelligently”, which later was quite controversial to a number of people.</p>
 <p>He had a unifying way of explaining why we’ve seen such a boom of AI recently, which is:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Algorithms</li>
 <li>Data</li>
 <li>Speed</li>
@@ -1475,7 +1475,7 @@ $2,500,000
 <p>The next idea he covered was the <a href="https://arxiv.org/pdf/1803.00745.pdf">learning of quantum circuits</a> see also <a href="https://arxiv.org/pdf/1804.04168.pdf">Differentiable Learning of Quantum Circuit Born Machine</a>.</p>
 <p>This I think is a particularly great idea, and his approach was to focus on generate certain kinds of entangled states, with great results. They managed to find a state that has more entanglement, compared to the standard one, with this scheme. They also made some interesting observations about the expressive power of the depth of the circuits and what kind of states they can possible prepare.</p>
 <p>His final insights were:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Focus on the hardest problems of interest to ML exports, as this will be the quickest path to demonstrating a quantum advantage in the near-term.</li>
 <li>Focus on novel hybrid quantum-classical approaches.</li>
 </ol>
@@ -1494,7 +1494,7 @@ $2,500,000
 <p>He was describing the recent work by Ewin Tang: <a href="https://scirate.com/arxiv/1807.04271">A quantum-inspired classical algorithm for recommendation systems</a> (which we actually already covered <a href="http://silverpond.com.au/2018/07/22/interesting-reads-in-quantum-computing-machine-learning-and-ethics.html">here</a>).</p>
 <h3 id="open-areas-of-investigation">Open areas of investigation</h3>
 <p>Here’s the list of open/interesting topics from today:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Quantum datasets; benchmark problems,</li>
 </ol>
 <ul>
@@ -1504,14 +1504,14 @@ $2,500,000
 <li>How to generalise across qubit sizes?</li>
 <li>Reinforcement learning problems? Quantum games? Quantum chess? Communication games?</li>
 </ul>
-<ol start="2" style="list-style-type: decimal">
+<ol start="2" type="1">
 <li><p>What does truly quantum ML look like? Let’s stop trying to map classical algorithms to quantum ones, and just make up new ones</p></li>
 <li>This hybrid idea of linking parts of a network to qubits and parts being classical</li>
 </ol>
 <ul>
 <li>How do you train these things?</li>
 </ul>
-<ol start="4" style="list-style-type: decimal">
+<ol start="4" type="1">
 <li>Near-term, if we want to do quantum ML, we should focus on what actual hardware will be used, and target our approaches to those models.</li>
 </ol>
 <hr />
@@ -1529,9 +1529,9 @@ $2,500,000
 <p>In general we’d need <span class="math inline">2<sup><em>n</em></sup></span> examples to learn <span class="math inline"><em>f</em></span> fully, but we’ll want to do <em>efficient</em> learning, so we’d like to learn from far fewer queries than that.</p>
 <p>Ronald preferred to work in the framework of PAC-learnability, which was introduced by Leslie Valiant in 1984. Leslie has a nice readable book on the topic (I’ve unfortunately lost my copy a while ago) which is well worth a read.</p>
 <p>It turns out that in 1995, Bshouty and Jackson introduced a <a href="http://www.mathcs.duq.edu/~jackson/quantex.pdf">quantum version of this notion</a> (see also <a href="https://arxiv.org/pdf/quant-ph/0202066.pdf">Quantum DNF Learnability Revisited</a>).</p>
-<p>Their idea is to consider the state of training data: <br /><span class="math display">$$ \sum_{x \in \{0,1\}^n } \sqrt{D(x)} |x, f(x)\rangle $$</span><br /> To demonstrate a speedup, suppose that we have the uniform distribution over the samples; so then our state becomes <br /><span class="math display">$$ \frac{1}{2^n} \sum_{x \in \{0,1\}^n } |x, f(x)\rangle $$</span><br /> The main idea is to hit this with the Fourier sampling tool, that is a classic trick in quantum algorithms. The essential idea is, firstly support that <span class="math inline">(<em>x</em>)= ± 1</span>, then we can do another standard trick, the Hadamard transformation, and obtain the state <br /><span class="math display">$$ \frac{1}{2^n} \sum_{x \in \{0,1\}^n } \hat{f}(s)|s\rangle $$</span><br /></p>
+<p>Their idea is to consider the state of training data: <br /><span class="math display">$$ \sum_{x \in \{0,1\}^n } \sqrt{D(x)} |x, f(x)\rangle $$</span><br /> To demonstrate a speedup, suppose that we have the uniform distribution over the samples; so then our state becomes <br /><span class="math display">$$ \frac{1}{2^n} \sum_{x \in \{0,1\}^n } |x, f(x)\rangle $$</span><br /> The main idea is to hit this with the Fourier sampling tool, that is a classic trick in quantum algorithms. The essential idea is, firstly support that <span class="math inline">(<em>x</em>) =  ± 1</span>, then we can do another standard trick, the Hadamard transformation, and obtain the state <br /><span class="math display">$$ \frac{1}{2^n} \sum_{x \in \{0,1\}^n } \hat{f}(s)|s\rangle $$</span><br /></p>
 <p>where <br /><span class="math display">$$\hat{f}(s) = \frac{1}{2^n} \sum_{x} f(x) (-1)^{s \cdot x}$$</span><br />.</p>
-<p>The point here is that when you measure this final state, the state you see is <span class="math inline"><em>s</em></span> with probability <span class="math inline">$\hat{f}(s)^2$</span>. For a certain choice of <span class="math inline"><em>f</em></span>, namely when <span class="math inline"><em>f</em></span> is linear mod 2, then you can learn the function perfectly in exactly one query. Classically you would require at least <span class="math inline"><em>n</em></span> queries. Great reduction!</p>
+<p>The point here is that when you measure this final state, the state you see is <span class="math inline"><em>s</em></span> with probability <span class="math inline"><em>f̂</em>(<em>s</em>)<sup>2</sup></span>. For a certain choice of <span class="math inline"><em>f</em></span>, namely when <span class="math inline"><em>f</em></span> is linear mod 2, then you can learn the function perfectly in exactly one query. Classically you would require at least <span class="math inline"><em>n</em></span> queries. Great reduction!</p>
 <p>He then went into a few more examples, getting a little bit more technical each time; one was for the so-called “Coupon collector” problem, which is simply: imagine you get a random baseball card from a store, how many times do you need to visit the store before you have the entire set of cards?</p>
 <p>Again, because this is a uniform problem, we can use similar techniques to improve on it. Classical, one can find that the expected number of store visits (samples) is approximately <span class="math inline"><em>N</em>log <em>N</em></span> (where <span class="math inline"><em>N</em></span> is the number of cards in total), but quantumly it can be done with <span class="math inline"><em>O</em>(<em>N</em>)</span> samples.</p>
 <p>Perhaps of interest, was some conclusions that they were able to show that <em>no</em> quantum speedup can be obtained when for <em>all</em> distributions; i.e. there are some bad distributions that we will just struggle with. I don’t think anyone finds this particularly surprising, and shouldn’t have a big impact on real-world problems, because typically, most data isn’t, shall we say, adversially prepared; the distributions tend to be wildly different (a natural example being the set of all images of mountains as a subset of all possible images).</p>
@@ -1612,9 +1612,11 @@ $2,500,000
 <p>The interesting things that came to me regarding today were:</p>
 <ul>
 <li>How to combine SciNet with the neural-nets for determining wave functions?</li>
-<li>What’s the relationship between tensor networks and these neural nets? and Conv nets?</li>
+<li>What’s the relationship between tensor networks and these neural nets? and Conv nets?
+<ul>
 <li><a href="https://scirate.com/arxiv/1710.01437">Duality of Graphical Models and Tensor Networks</a></li>
 <li><a href="https://scirate.com/arxiv/1710.04045">Neural-Network Quantum States, String-Bond States, and Chiral Topological States</a></li>
+</ul></li>
 </ul>
 <h3 id="final-thoughts-on-the-conference">Final thoughts on the conference</h3>
 <p>Overall, I’m inspired by quantum machine learning. I feel like there’s heaps of cool things to do.</p>

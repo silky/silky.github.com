@@ -58,7 +58,7 @@
 <p>One thing I wanted to share was a small technique that I used to get a version number in all of the pdfs that I generated from my LyX documents. The idea was that when I sent my document to obtain feedback from various interested parties, I could easily see which version they had commented on.</p>
 <p>What I wanted as a footer that would be included on every page, that contained the version number.</p>
 <p>The approach is:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>In the “LaTeX Preamble” setting of the LyX document, include (something like)</li>
 </ol>
 <pre><code>\usepackage{fancyhdr}
@@ -66,7 +66,7 @@
 \cfoot{\tiny{|VERSION|}}
 \rfoot{\thepage}
 \rhead{}</code></pre>
-<ol start="2" style="list-style-type: decimal">
+<ol start="2" type="1">
 <li>Build your LyX documents by the command line with a <code>Makefile</code>. My <code>Makefile</code> looks like so:</li>
 </ol>
 <pre><code>BUILD_NUMBER_FILE := build-number.txt
@@ -89,7 +89,7 @@ pdf: buildnumber
 buildnumber:
 	@if ! test -f $(BUILD_NUMBER_FILE); then echo 0 &gt; $(BUILD_NUMBER_FILE); fi
 	@echo $$(($$(cat $(BUILD_NUMBER_FILE)) + 1)) &gt; $(BUILD_NUMBER_FILE)</code></pre>
-<ol start="3" style="list-style-type: decimal">
+<ol start="3" type="1">
 <li>Build with the <code>make</code> command and profit!</li>
 </ol>
 <p>Note that there is a <code>build-number.txt</code> file that is incremented on each build, so you don’t need to do that manually.</p>

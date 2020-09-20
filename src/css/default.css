@@ -129,3 +129,11 @@ div.book-summary {
   display: flex;
   flex-direction: column;
 }
+
+a.sourceLine {
+  color: black;
+}
+a.sourceLine:hover {
+  color: black;
+  background: none;
+}

@@ -51,70 +51,38 @@
 <p>So imagine you love Haskell and you have written a Haskell program, you’ve hosted it on <a href="https://github.com">GitHub</a> and you’ve dilligently set up a CI build on <a href="https://travis-ci.org">Travis</a> that uses <a href="https://github.com/commercialhaskell/stack">stack</a> to build/test/etc.</p>
 <p>Now, because stack is great and life is good, people can build your project from the source largely without issue. But suppose now that you’d like to provide Windows binaries for download. It so happens that we live in an age where this is completely automatable! Let’s see how.</p>
 <p>The essence of my approach is to use the CI system <a href="http://www.appveyor.com/">AppVeyor</a> (essentially like a Travis for Windows), and the following <code>appveyor.yml</code> file (full file below, I’ll go through details next):</p>
-<div class="sourceCode"><table class="sourceCode yaml numberLines"><tr class="sourceCode"><td class="lineNumbers"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-</pre></td><td class="sourceCode"><pre><code class="sourceCode yaml"><span class="fu">build:</span><span class="at"> off</span>
-
-<span class="fu">before_build:</span>
-<span class="kw">-</span> <span class="fu">curl -ostack.zip -L --insecure http:</span><span class="at">//www.stackage.org/stack/windows-i386</span>
-<span class="kw">-</span> 7z x stack.zip stack.exe
-<span class="kw">-</span> <span class="fu">sed -i 's/git@github.com:</span><span class="at">/https:\/\/github.com\//' .gitmodules</span>
-<span class="co"># Appveyor doesn't clone recursively.</span>
-<span class="kw">-</span> git submodule update --init --recursive
-
-<span class="fu">skip_tags:</span><span class="at"> true</span>
-
-<span class="fu">build_script:</span>
-<span class="co"># Suppress output from stack setup, as there is a lot and it's not necessary.</span>
-<span class="kw">-</span> stack setup --no-terminal &gt; nul
-<span class="kw">-</span> stack build --only-snapshot --no-terminal
-<span class="kw">-</span> stack --local-bin-path . install haskmas
-<span class="co"># Set a magical environment variable</span>
-<span class="kw">-</span> <span class="fu">cmd:</span><span class="at"> for /f %%i in ('stack exec -- haskmas -v') do set HASKMAS_VERSION=%%i</span>
-
-<span class="fu">artifacts:</span>
-<span class="kw">-</span> <span class="fu">path:</span><span class="at"> haskmas.exe</span>
-
-<span class="co"># Auto-deploy</span>
-<span class="fu">deploy:</span>
-  <span class="kw">-</span> <span class="fu">provider:</span><span class="at"> GitHub</span>
-    <span class="fu">tag:</span><span class="at"> </span><span class="st">'haskmas-$(HASKMAS_VERSION)'</span>
-    <span class="fu">release:</span><span class="at"> </span><span class="st">'Release haskmas-$(HASKMAS_VERSION)'</span>
-    <span class="fu">auth_token:</span>
-      <span class="fu">secure:</span><span class="at"> FZXhwa1ucQwyFtswv/XNUJkclAxoz4YGGu69dSOEEkwG7Rlh/Gho66SJtOUJ57kN</span>
-    <span class="fu">artifact:</span><span class="at"> haskmas.exe</span>
-    <span class="fu">on:</span>
-      <span class="fu">branch:</span><span class="at"> master</span></code></pre></td></tr></table></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource yaml numberLines"><code class="sourceCode yaml"><a class="sourceLine" id="cb1-1" title="1"><span class="fu">build:</span><span class="at"> </span><span class="ch">off</span></a>
+<a class="sourceLine" id="cb1-2" title="2"></a>
+<a class="sourceLine" id="cb1-3" title="3"><span class="fu">before_build:</span></a>
+<a class="sourceLine" id="cb1-4" title="4"><span class="kw">-</span> curl -ostack.zip -L --insecure http://www.stackage.org/stack/windows-i386</a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="kw">-</span> 7z x stack.zip stack.exe</a>
+<a class="sourceLine" id="cb1-6" title="6"><span class="kw">-</span> sed -i <span class="st">'s/git@github.com:/https:\/\/github.com\//'</span> .gitmodules</a>
+<a class="sourceLine" id="cb1-7" title="7"><span class="co"># Appveyor doesn't clone recursively.</span></a>
+<a class="sourceLine" id="cb1-8" title="8"><span class="kw">-</span> git submodule update --init --recursive</a>
+<a class="sourceLine" id="cb1-9" title="9"></a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="fu">skip_tags:</span><span class="at"> </span><span class="ch">true</span></a>
+<a class="sourceLine" id="cb1-11" title="11"></a>
+<a class="sourceLine" id="cb1-12" title="12"><span class="fu">build_script:</span></a>
+<a class="sourceLine" id="cb1-13" title="13"><span class="co"># Suppress output from stack setup, as there is a lot and it's not necessary.</span></a>
+<a class="sourceLine" id="cb1-14" title="14"><span class="kw">-</span> stack setup --no-terminal &gt; nul</a>
+<a class="sourceLine" id="cb1-15" title="15"><span class="kw">-</span> stack build --only-snapshot --no-terminal</a>
+<a class="sourceLine" id="cb1-16" title="16"><span class="kw">-</span> stack --local-bin-path . install haskmas</a>
+<a class="sourceLine" id="cb1-17" title="17"><span class="co"># Set a magical environment variable</span></a>
+<a class="sourceLine" id="cb1-18" title="18"><span class="kw">-</span> <span class="fu">cmd:</span><span class="at"> for /f %%i in ('stack exec -- haskmas -v') do set HASKMAS_VERSION=%%i</span></a>
+<a class="sourceLine" id="cb1-19" title="19"></a>
+<a class="sourceLine" id="cb1-20" title="20"><span class="fu">artifacts:</span></a>
+<a class="sourceLine" id="cb1-21" title="21"><span class="kw">-</span> <span class="fu">path:</span><span class="at"> haskmas.exe</span></a>
+<a class="sourceLine" id="cb1-22" title="22"></a>
+<a class="sourceLine" id="cb1-23" title="23"><span class="co"># Auto-deploy</span></a>
+<a class="sourceLine" id="cb1-24" title="24"><span class="fu">deploy:</span></a>
+<a class="sourceLine" id="cb1-25" title="25">  <span class="kw">-</span> <span class="fu">provider:</span><span class="at"> GitHub</span></a>
+<a class="sourceLine" id="cb1-26" title="26">    <span class="fu">tag:</span><span class="at"> </span><span class="st">'haskmas-$(HASKMAS_VERSION)'</span></a>
+<a class="sourceLine" id="cb1-27" title="27">    <span class="fu">release:</span><span class="at"> </span><span class="st">'Release haskmas-$(HASKMAS_VERSION)'</span></a>
+<a class="sourceLine" id="cb1-28" title="28">    <span class="fu">auth_token:</span></a>
+<a class="sourceLine" id="cb1-29" title="29">      <span class="fu">secure:</span><span class="at"> FZXhwa1ucQwyFtswv/XNUJkclAxoz4YGGu69dSOEEkwG7Rlh/Gho66SJtOUJ57kN</span></a>
+<a class="sourceLine" id="cb1-30" title="30">    <span class="fu">artifact:</span><span class="at"> haskmas.exe</span></a>
+<a class="sourceLine" id="cb1-31" title="31">    <span class="fu">on:</span></a>
+<a class="sourceLine" id="cb1-32" title="32">      <span class="fu">branch:</span><span class="at"> master</span></a></code></pre></div>
 <p>Details:</p>
 <ul>
 <li>Line 1 disables the <em>standard</em> build process which would use MSBuild.</li>

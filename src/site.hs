@@ -13,7 +13,7 @@ pandocMathCompiler =
     let mathExtensions = [Ext_tex_math_dollars, Ext_latex_macros,
                          Ext_backtick_code_blocks]
         defaultExtensions = writerExtensions defaultHakyllWriterOptions
-        newExtensions = foldr S.insert defaultExtensions mathExtensions
+        newExtensions = defaultExtensions <> extensionsFromList mathExtensions
         writerOptions = defaultHakyllWriterOptions {
                           writerExtensions = newExtensions,
                           writerHTMLMathMethod = MathJax ""

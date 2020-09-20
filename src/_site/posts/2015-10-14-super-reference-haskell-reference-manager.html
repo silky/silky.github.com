@@ -49,19 +49,16 @@
 
 <p>Today I’m announcing a (very) alpha version of my web-based reference management system, <a href="https://github.com/silky/super-reference">super-reference</a>!</p>
 <p>Super-reference is a system which:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Reads a bibtex file and lets you search the bibtex entries in it</li>
 <li>Provides an interface to open associated PDFs or visit associated links</li>
 <li>Maintains a list of ‘currently reading’ PDFs by synching a folder (for me, a dropbox folder)</li>
 </ol>
 <p>Here’s a screenshot of the main (only) page:</p>
-<div class="figure">
-<img src="https://raw.github.com/silky/super-reference/master/another_screenshot.png" />
-
-</div>
+<p><img src="https://raw.github.com/silky/super-reference/master/another_screenshot.png" /></p>
 <p>Super-reference is built around my workflow for getting the latest papers.</p>
 <p>A high-level overview of my workflow is:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Find an interesting paper</li>
 <li>Obtain the pdf file for this paper, (preferably from <a href="https://arxiv.org">arXiv</a>)</li>
 <li>Save this pdf on my computer, and get the <code>bibtex</code> data for the file somehow</li>
@@ -70,7 +67,7 @@
 <p>All the while I’d like to maintain a list of “papers I’m currently reading” and have them available on my tablet.</p>
 <p>Items 1-3 take place <em>outside</em> of super-reference. My workflow for finding new papers and saving them on my computer is a little specialised, but happily you don’t need to follow this protocol if you want to get utility out of super-reference — you simply need a <code>bibtex</code> file to point it at.</p>
 <p>Here’s my new paper obtaining workflow (yours may be different):</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Browse <a href="https://scirate.com">SciRate</a> regularly, and “scite” interesting papers</li>
 <li>Periodically run <a href="https://github.com/silky/scirate3_scraper">scirate3_scaper</a> to bring down all the papers I’ve scited recently, and their bibtex entries</li>
 <li>Combine all these bibtex entries ino my <em>One True</em> bibtex file</li>

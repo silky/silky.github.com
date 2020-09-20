@@ -54,34 +54,31 @@
 <p>I built the 3D version of the logo by moving around rectangles, and by extruding a hand-drawn shape.</p>
 <p>The cool thing about generating this image in fully-feature programming language is that I can build a tree of any size I like!</p>
 <p>Here’s the (pretty verbose) code that gets me a tree of arbitrary depth:</p>
-<div class="sourceCode"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span class="ot">ntree ::</span> <span class="dt">Integer</span> <span class="ot">-&gt;</span> <span class="dt">SymbolicObj3</span>
-ntree n <span class="fu">=</span> finalObj
-  <span class="kw">where</span>
-      dec     <span class="fu">=</span> <span class="fl">0.8</span>
-      ratios  <span class="fu">=</span> <span class="dv">0</span> <span class="fu">:</span> [dec<span class="fu">^</span>j <span class="fu">|</span> j <span class="ot">&lt;-</span> [<span class="dv">0</span><span class="fu">..</span>(n<span class="fu">-</span><span class="dv">2</span>)]]
-      <span class="co">-- build up logo structure</span>
-      ((lx, ly, lz), objs) <span class="fu">=</span> foldl f ((<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>), []) (zip [<span class="dv">0</span><span class="fu">..</span>(n<span class="fu">-</span><span class="dv">1</span>)] ratios)
-      <span class="co">-- position of logos</span>
-      (x,y,z) <span class="fu">=</span> (<span class="dv">40</span>, <span class="dv">4</span>, <span class="dv">0</span>)
-<span class="ot">      f ::</span> ((ℝ, ℝ, ℝ), [<span class="dt">SymbolicObj3</span>]) <span class="ot">-&gt;</span> (<span class="dt">Integer</span>, <span class="dt">Float</span>) <span class="ot">-&gt;</span> ((ℝ, ℝ, ℝ), [<span class="dt">SymbolicObj3</span>])
-      f ((x', y', z'), xs) (j, r) <span class="fu">=</span>
-                <span class="kw">let</span> newPos <span class="fu">=</span> (x' <span class="fu">+</span> r<span class="fu">*</span>x, y' <span class="fu">+</span> r<span class="fu">*</span>y, z' <span class="fu">+</span> r<span class="fu">*</span>z)
-                    s      <span class="fu">=</span> dec <span class="fu">^</span> j
-                    loc    <span class="fu">=</span> <span class="kw">if</span> (even j) <span class="kw">then</span> <span class="dt">R</span> <span class="kw">else</span> <span class="dt">L</span>
-                    obj3   <span class="fu">=</span> translate newPos <span class="fu">$</span> scale (s, s, s) (logoBauble loc)
-                 <span class="kw">in</span> (newPos, obj3 <span class="fu">:</span> xs)
-      <span class="co">-- star</span>
-      (a,b,c)   <span class="fu">=</span> (<span class="fl">40.5</span>, <span class="fl">24.5</span>, <span class="dv">0</span>)
-      starScale <span class="fu">=</span> dec <span class="fu">**</span> (fromIntegral (n<span class="fu">-</span><span class="dv">3</span>))
-      posScale  <span class="fu">=</span> dec <span class="fu">**</span> (fromIntegral n)
-      starObj   <span class="fu">=</span> translate (lx <span class="fu">+</span> (posScale <span class="fu">*</span> a), ly <span class="fu">+</span> (posScale <span class="fu">*</span> b), lz <span class="fu">+</span> (posScale <span class="fu">*</span> c))
-                    <span class="fu">$</span> scale (starScale, starScale, starScale) star
-      finalObj <span class="fu">=</span> union (starObj <span class="fu">:</span> objs)</code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb1-1" title="1"><span class="ot">ntree ::</span> <span class="dt">Integer</span> <span class="ot">-&gt;</span> <span class="dt">SymbolicObj3</span></a>
+<a class="sourceLine" id="cb1-2" title="2">ntree n <span class="fu">=</span> finalObj</a>
+<a class="sourceLine" id="cb1-3" title="3">  <span class="kw">where</span></a>
+<a class="sourceLine" id="cb1-4" title="4">      dec     <span class="fu">=</span> <span class="fl">0.8</span></a>
+<a class="sourceLine" id="cb1-5" title="5">      ratios  <span class="fu">=</span> <span class="dv">0</span> <span class="fu">:</span> [dec<span class="fu">^</span>j <span class="fu">|</span> j <span class="ot">&lt;-</span> [<span class="dv">0</span><span class="fu">..</span>(n<span class="fu">-</span><span class="dv">2</span>)]]</a>
+<a class="sourceLine" id="cb1-6" title="6">      <span class="co">-- build up logo structure</span></a>
+<a class="sourceLine" id="cb1-7" title="7">      ((lx, ly, lz), objs) <span class="fu">=</span> <span class="fu">foldl</span> f ((<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>), []) (<span class="fu">zip</span> [<span class="dv">0</span><span class="fu">..</span>(n<span class="fu">-</span><span class="dv">1</span>)] ratios)</a>
+<a class="sourceLine" id="cb1-8" title="8">      <span class="co">-- position of logos</span></a>
+<a class="sourceLine" id="cb1-9" title="9">      (x,y,z) <span class="fu">=</span> (<span class="dv">40</span>, <span class="dv">4</span>, <span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb1-10" title="10"><span class="ot">      f ::</span> ((ℝ, ℝ, ℝ), [<span class="dt">SymbolicObj3</span>]) <span class="ot">-&gt;</span> (<span class="dt">Integer</span>, <span class="dt">Float</span>) <span class="ot">-&gt;</span> ((ℝ, ℝ, ℝ), [<span class="dt">SymbolicObj3</span>])</a>
+<a class="sourceLine" id="cb1-11" title="11">      f ((x', y', z'), xs) (j, r) <span class="fu">=</span></a>
+<a class="sourceLine" id="cb1-12" title="12">                <span class="kw">let</span> newPos <span class="fu">=</span> (x' <span class="fu">+</span> r<span class="fu">*</span>x, y' <span class="fu">+</span> r<span class="fu">*</span>y, z' <span class="fu">+</span> r<span class="fu">*</span>z)</a>
+<a class="sourceLine" id="cb1-13" title="13">                    s      <span class="fu">=</span> dec <span class="fu">^</span> j</a>
+<a class="sourceLine" id="cb1-14" title="14">                    loc    <span class="fu">=</span> <span class="kw">if</span> (<span class="fu">even</span> j) <span class="kw">then</span> <span class="dt">R</span> <span class="kw">else</span> <span class="dt">L</span></a>
+<a class="sourceLine" id="cb1-15" title="15">                    obj3   <span class="fu">=</span> translate newPos <span class="fu">$</span> scale (s, s, s) (logoBauble loc)</a>
+<a class="sourceLine" id="cb1-16" title="16">                 <span class="kw">in</span> (newPos, obj3 <span class="fu">:</span> xs)</a>
+<a class="sourceLine" id="cb1-17" title="17">      <span class="co">-- star</span></a>
+<a class="sourceLine" id="cb1-18" title="18">      (a,b,c)   <span class="fu">=</span> (<span class="fl">40.5</span>, <span class="fl">24.5</span>, <span class="dv">0</span>)</a>
+<a class="sourceLine" id="cb1-19" title="19">      starScale <span class="fu">=</span> dec <span class="fu">**</span> (<span class="fu">fromIntegral</span> (n<span class="fu">-</span><span class="dv">3</span>))</a>
+<a class="sourceLine" id="cb1-20" title="20">      posScale  <span class="fu">=</span> dec <span class="fu">**</span> (<span class="fu">fromIntegral</span> n)</a>
+<a class="sourceLine" id="cb1-21" title="21">      starObj   <span class="fu">=</span> translate (lx <span class="fu">+</span> (posScale <span class="fu">*</span> a), ly <span class="fu">+</span> (posScale <span class="fu">*</span> b), lz <span class="fu">+</span> (posScale <span class="fu">*</span> c))</a>
+<a class="sourceLine" id="cb1-22" title="22">                    <span class="fu">$</span> scale (starScale, starScale, starScale) star</a>
+<a class="sourceLine" id="cb1-23" title="23">      finalObj <span class="fu">=</span> union (starObj <span class="fu">:</span> objs)</a></code></pre></div>
 <p>Running this with <span class="math inline"><em>n</em> = 5</span> gives result in the following render in OpenSCAD:</p>
-<div class="figure">
-<img src="../images/tree-5.png" />
-
-</div>
+<p><img src="../images/tree-5.png" /></p>
 <p>So there you have it! You can view the source code here: <a href="https://github.com/silky/haskmas">github.com/silky/haskmas</a> or download a ready-to-print STL from <a href="http://www.thingiverse.com/thing:1187442">Thingiverse</a>.</p>
 <p>Have a happy Haskmas! :)</p>
 

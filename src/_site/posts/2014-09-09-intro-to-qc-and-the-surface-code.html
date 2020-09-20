@@ -68,7 +68,7 @@
 <p><br /><span class="math display">$$ \begin{aligned}
     |\psi\rangle = \alpha |0\rangle + \beta |1\rangle.
 \end{aligned} $$</span><br /></p>
-<p>For a ket <span class="math inline">|<em>ψ</em>⟩</span> the bra is given by <span class="math inline">⟨<em>ψ</em>|=(|<em>ψ</em>⟩)<sup>†</sup></span>, where <span class="math inline">†</span> means take the conjugate tranpose. So we write the inner product as <span class="math inline">⟨<em>ψ</em>|<em>φ</em>⟩</span> and the outer product as <span class="math inline">|<em>ψ</em>⟩⟨<em>φ</em>|</span>.</p>
+<p>For a ket <span class="math inline">|<em>ψ</em>⟩</span> the bra is given by <span class="math inline">⟨<em>ψ</em>| = (|<em>ψ</em>⟩)<sup>†</sup></span>, where <span class="math inline">†</span> means take the conjugate tranpose. So we write the inner product as <span class="math inline">⟨<em>ψ</em>|<em>φ</em>⟩</span> and the outer product as <span class="math inline">|<em>ψ</em>⟩⟨<em>φ</em>|</span>.</p>
 <p>We will also refer to the so-called <em>Hadamard basis</em>, which is</p>
 <p><br /><span class="math display">$$ \begin{aligned}
     |+\rangle &amp;= \frac{1}{\sqrt{2}}\left(|0\rangle + |1\rangle\right), \\
@@ -102,7 +102,7 @@
     Z|+\rangle &amp;= |-\rangle, \\
     Z|-\rangle &amp;= |+\rangle.
 \end{aligned} $$</span><br /></p>
-<p>And furthermore, we have <span class="math inline"><em>X</em><em>Z</em> = −<em>Z</em><em>X</em></span> (these operators anticommute).</p>
+<p>And furthermore, we have <span class="math inline"><em>X</em><em>Z</em> =  − <em>Z</em><em>X</em></span> (these operators anticommute).</p>
 <p><strong>Measurement</strong> Quantum mechanics prescribes that for an arbitrary qubit (written in the standard basis),</p>
 <p><br /><span class="math display">$$ \begin{aligned}
     |\psi\rangle &amp;= \alpha|0\rangle + \beta|1\rangle,
@@ -113,17 +113,14 @@
     X &amp;= |+\rangle\langle +| - |-\rangle\langle -|, \\
     Z &amp;= |0\rangle\langle 0| - |1\rangle\langle 1|,
 \end{aligned} $$</span><br /></p>
-<p>and therefore make statements such as “measure in the <span class="math inline"><em>X</em></span> basis”, where this means to project the qubit into the basis <span class="math inline">{|+⟩,|−⟩}</span>.</p>
+<p>and therefore make statements such as “measure in the <span class="math inline"><em>X</em></span> basis”, where this means to project the qubit into the basis <span class="math inline">{| + ⟩, | − ⟩}</span>.</p>
 <p><strong>Quantum circuits</strong></p>
 <p>An example quantum circuit:</p>
 <!--
     Circuit
     |0> ---- X ----- | M_Z |
 -->
-<div class="figure">
-<img src="../images/qcirc_1.jpg" />
-
-</div>
+<p><img src="../images/qcirc_1.jpg" /></p>
 <p>This enacts the operator <span class="math inline"><em>X</em></span> on the state <span class="math inline">|0⟩</span>, and we “measure” this state at the end of the circuit in the <span class="math inline"><em>Z</em></span> basis.</p>
 <p>The outcome of this circuit is the state <span class="math inline">|1⟩</span> with certainity.</p>
 <p>Let <span class="math inline">$H = \frac{1}{\sqrt{2}} \left( \begin{array}{cc}  1 &amp; 1 \\  1 &amp; -1 \end{array} \right)$</span> and <span class="math inline">$C_X = \left( \begin{array}{cccc}  1 &amp; 0 &amp; 0 &amp; 0 \\  0 &amp; 1 &amp; 0 &amp; 0 \\  0 &amp; 0 &amp; 0 &amp; 1 \\  0 &amp; 0 &amp; 1 &amp; 0  \end{array} \right) = \left(  \begin{array}{ccc}  1 &amp; &amp; \\  &amp; 1 &amp; \\  &amp; &amp; X  \end{array} \right)$</span>.</p>
@@ -133,11 +130,8 @@
                  |     |
     |0> -------- [     ] ------
 -->
-<div class="figure">
-<img src="../images/qcirc_2.jpg" />
-
-</div>
-<p>The outcome of this circuit is the state <span class="math inline">|00⟩+|11⟩</span>. This is infact an <em>entangled</em> state.</p>
+<p><img src="../images/qcirc_2.jpg" /></p>
+<p>The outcome of this circuit is the state <span class="math inline">|00⟩ + |11⟩</span>. This is infact an <em>entangled</em> state.</p>
 <p><strong>Universal quantum computation</strong></p>
 <p>Previously I described quantum computation as the evaluation of any circuit in polynomial time i.e. we could choose any unitary operations we like.</p>
 <p>Infact, it turns out that, due to a standard theorem (Solovay-Kitaev theorem), that if we can perform the gates <span class="math inline">{<em>H</em>, <em>S</em>, <em>T</em>, <em>C</em><sub><em>X</em></sub>}</span>, then we can approximate any unitary matrix (acting on the qubits involved), and hence perform any computation. (It’s not particularly important what the <span class="math inline"><em>S</em></span> and <span class="math inline"><em>T</em></span> gates are, for our purposes.)</p>
@@ -154,7 +148,7 @@
 <p><br /><span class="math display">$$ \begin{aligned}
     U(|\psi\rangle \otimes |0\rangle) = |\psi\rangle \otimes |\psi\rangle.
 \end{aligned} $$</span><br /></p>
-<p><em>Proof</em>. Let <span class="math inline">|<em>ψ</em>⟩=<em>α</em>|0⟩+<em>β</em>|1⟩</span> then apply <span class="math inline"><em>U</em></span> before and after enacting the tensor product, and note contradiction.</p>
+<p><em>Proof</em>. Let <span class="math inline">|<em>ψ</em>⟩ = <em>α</em>|0⟩ + <em>β</em>|1⟩</span> then apply <span class="math inline"><em>U</em></span> before and after enacting the tensor product, and note contradiction.</p>
 <h3 id="quantum-errors">Quantum errors</h3>
 <p>For the moment, we will consider only errors that may occur on a single qubit, i.e. an erroneous unitary operation.</p>
 <p>Any <span class="math inline">2<sup><em>n</em></sup> × 2<sup><em>n</em></sup></span> unitary matrix can infact be expressed as a sum of (tensor products of) Pauli operators, with appropriate coefficients, so we consider the general single-qubit error operator</p>
@@ -164,7 +158,7 @@
 <p>(Recall that <span class="math inline"><em>Y</em> = i<em>X</em><em>Z</em></span>.)</p>
 <p>Of course, we can correct any of these errors by applying <span class="math inline"><em>E</em><sup>†</sup></span>, but in so doing we would in principle need to know the coefficients. It turns out there is a better way.</p>
 <p>The first step is to think completely differently about how we would encode a logical qubit.</p>
-<p>Consider the operators <span class="math inline"><em>X</em><sub>1</sub>, <em>X</em><sub>2</sub></span> and <span class="math inline"><em>Z</em><sub>1</sub>, <em>Z</em><sub>2</sub></span>, acting on two qubits. These operators commute, as <span class="math inline"><em>X</em><em>Z</em> = −<em>X</em><em>Z</em></span> (and operators acting on different qubits always commute.) The (un-normalised) eigenspace is</p>
+<p>Consider the operators <span class="math inline"><em>X</em><sub>1</sub>, <em>X</em><sub>2</sub></span> and <span class="math inline"><em>Z</em><sub>1</sub>, <em>Z</em><sub>2</sub></span>, acting on two qubits. These operators commute, as <span class="math inline"><em>X</em><em>Z</em> =  − <em>X</em><em>Z</em></span> (and operators acting on different qubits always commute.) The (un-normalised) eigenspace is</p>
 <p><br /><span class="math display">$$ \begin{aligned}
     \begin{array}{ccc}
         Z_1 Z_2 &amp; X_1 X_2 &amp; \text{Eigenvectors} \\ \hline
@@ -182,8 +176,8 @@
 <p><br /><span class="math display">$$ \begin{aligned}
     X_1 X_2 |\psi\rangle = \lambda_X |\psi\rangle
 \end{aligned} $$</span><br /></p>
-<p>then we cut out two of the possible basis states that the system could be in. For example, say <span class="math inline"><em>λ</em><sub><em>X</em></sub> = +1</span>.</p>
-<p>Then this rules out the state <span class="math inline">|00⟩−|11⟩</span> and <span class="math inline">|01⟩−|10⟩</span>, leaving us with:</p>
+<p>then we cut out two of the possible basis states that the system could be in. For example, say <span class="math inline"><em>λ</em><sub><em>X</em></sub> =  + 1</span>.</p>
+<p>Then this rules out the state <span class="math inline">|00⟩ − |11⟩</span> and <span class="math inline">|01⟩ − |10⟩</span>, leaving us with:</p>
 <p><br /><span class="math display">$$ \begin{aligned}
     |\psi\rangle = \alpha|e_1\rangle + \gamma|e_3\rangle.
 \end{aligned} $$</span><br /></p>
@@ -192,21 +186,15 @@
 <li><p>In general we rule out half the eigenvectors when specifying a stabilizer constraint.</p></li>
 <li><p>Suppose we enact <span class="math inline"><em>X</em><sub>1</sub><em>X</em><sub>2</sub></span> on this new constrained state; it will remain the same, so we can measure in this basis as often as we like, and we will continue to obtain the same eigenvalue when there are no errors.</p></li>
 <li><p>If either qubit undergoes say a <span class="math inline"><em>Z</em></span> error, the eigenvalue <span class="math inline"><em>λ</em><sub><em>X</em></sub></span> will change. So we can <em>detect</em> this error. We can also correct it, by applying <span class="math inline"><em>Z</em></span> again (if we wished), as <span class="math inline"><em>Z</em><sup>2</sup> = 1</span>.</p></li>
-<li><p>If either qubit undergoes a <span class="math inline"><em>X</em></span> error, this is <em>not detectable</em>. We will still be in the <span class="math inline">+1</span> eigenstate of <span class="math inline"><em>X</em><sub>1</sub><em>X</em><sub>2</sub></span>, but the coefficients will have switched.</p></li>
+<li><p>If either qubit undergoes a <span class="math inline"><em>X</em></span> error, this is <em>not detectable</em>. We will still be in the <span class="math inline"> + 1</span> eigenstate of <span class="math inline"><em>X</em><sub>1</sub><em>X</em><sub>2</sub></span>, but the coefficients will have switched.</p></li>
 </ul>
 <p>This is a toy model.</p>
 <p>The surface code is a system by which we can detect <em>any</em> single qubit error, <span class="math inline"><em>E</em></span> as before, along with several other kinds.</p>
 <h2 id="the-surface-code">The surface code</h2>
 <p>We define the surface code on a <span class="math inline"><em>k</em> × <em>k</em></span> lattice. At each lattice site we place a qubit. For example, suppose <span class="math inline"><em>k</em> = 3</span>, then we have</p>
-<div class="figure">
-<img src="../images/surface_code_1.jpg" />
-
-</div>
+<p><img src="../images/surface_code_1.jpg" /></p>
 <p>Now, we let there be two types of black cricles. Those associated with <span class="math inline"><em>X</em></span> operators, and those associated with <span class="math inline"><em>Z</em></span>s. We also label the white qubits, as these will form the <em>quiescent</em> state - the stable state of the surface code, and the state which we will manipulate in order to perform computation,</p>
-<div class="figure">
-<img src="../images/surface_code_3.jpg" />
-
-</div>
+<p><img src="../images/surface_code_3.jpg" /></p>
 <p>In the <span class="math inline"><em>k</em> = 3</span> system, the implementation of the surface code will enforce the following constraints (with the white qubits labelled as in the above image in red),</p>
 <p><br /><span class="math display">$$ \begin{aligned}
     Z_1 Z_2 Z_3 |\psi\rangle = \lambda^{(Z)}_{1,2,3}|\psi\rangle, \\
@@ -228,7 +216,7 @@ $$ \begin{aligned}
 <p>In our lattice here, we have <span class="math inline">5</span> data qubits, and <span class="math inline">4</span> measurement qubits. We showed that there are <span class="math inline">4</span> constraints coming from the <span class="math inline">4</span> data qubits, and as we claimed earlier each of these halve the state space, so the resulting state space has dimension <span class="math inline">2<sup>5</sup>/2<sup>4</sup> = 2</span>. In other words, it encodes one qubit.</p>
 <p>Our goal now is to define logical operations on this qubit. In a much larger surface code (and with some modifications to the way logical qubits are encoded on the lattice), it is possible to define all the logical operations necessary to perform universal quantum computation, but here we’ll only look at <span class="math inline"><em>X</em><sub><em>L</em></sub></span> and <span class="math inline"><em>Z</em><sub><em>L</em></sub></span>.</p>
 <p>Consider an <span class="math inline"><em>X</em></span> on data qubit <span class="math inline">4</span>. This operation commutes with the <span class="math inline"><em>X</em></span> stabilizers, but will be detected by the <span class="math inline"><em>Z</em></span> stabilier to the right. Consider then the operation <span class="math inline"><em>X</em><sub><em>L</em></sub> = <em>X</em><sub>4</sub><em>X</em><sub>5</sub></span>. This operation commutes with all the stabilizers, and cannot be written in terms of any of them.</p>
-<p>So by performing these operators we have obtained <span class="math inline">|<em>ψ</em><sub><em>X</em></sub>⟩=<em>X</em><sub><em>L</em></sub>|<em>ψ</em>⟩</span> - we’ve manipulated one of the degrees of freedom.</p>
+<p>So by performing these operators we have obtained <span class="math inline">|<em>ψ</em><sub><em>X</em></sub>⟩ = <em>X</em><sub><em>L</em></sub>|<em>ψ</em>⟩</span> - we’ve manipulated one of the degrees of freedom.</p>
 <p>Similarly, we can define <span class="math inline"><em>Z</em><sub><em>L</em></sub> = <em>Z</em><sub>2</sub><em>Z</em><sub>5</sub></span>. Note that this anticommutes with <span class="math inline"><em>X</em><sub><em>L</em></sub></span>.</p>
 <p>So we’ve exhibited some logical operators.</p>
 <h3 id="surface-code-facts-and-final-comments">Surface code facts and final comments</h3>

@@ -82,7 +82,7 @@
 <p><em>by Patrick Rebentrost</em></p>
 <p>Next up was Patrick, who gave a far-reaching talk on a variety of topics that he and his colleagues have been researching over the last few years.</p>
 <p>He started off by reminding us of a bunch of challenges that he posed in a prior paper:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>The “input” challenge - How to get data in to a quantum network? It turns out this is very subtle.</li>
 <li>The “costing” challenge - Just how many qubits are required to implement these algorithms? How practical is it to build?</li>
 <li>The “output” challenge - Even if we build an efficient quantum machine learning algorithm that produces a final state that encodes the answer; how do we read out the answer efficiently? It takes many measurements to extract the known state, so is it efficient to do so?</li>
@@ -114,7 +114,7 @@
 <p>Even though it had a reasonably uninspiring title, this talk was actually excellent, and should’ve, in fact, been the opening talk of the conference.</p>
 <p>Aske introduced some motivation, and introduced some simplifying assumptions about AI to try and cut off typical arguments about what it means to be “intelligent”. He defined his working notion, which is “to <em>be</em> intelligent is to <em>act</em> intelligently”, which later was quite controversial to a number of people.</p>
 <p>He had a unifying way of explaining why we’ve seen such a boom of AI recently, which is:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Algorithms</li>
 <li>Data</li>
 <li>Speed</li>
@@ -146,7 +146,7 @@
 <p>The next idea he covered was the <a href="https://arxiv.org/pdf/1803.00745.pdf">learning of quantum circuits</a> see also <a href="https://arxiv.org/pdf/1804.04168.pdf">Differentiable Learning of Quantum Circuit Born Machine</a>.</p>
 <p>This I think is a particularly great idea, and his approach was to focus on generate certain kinds of entangled states, with great results. They managed to find a state that has more entanglement, compared to the standard one, with this scheme. They also made some interesting observations about the expressive power of the depth of the circuits and what kind of states they can possible prepare.</p>
 <p>His final insights were:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Focus on the hardest problems of interest to ML exports, as this will be the quickest path to demonstrating a quantum advantage in the near-term.</li>
 <li>Focus on novel hybrid quantum-classical approaches.</li>
 </ol>
@@ -165,7 +165,7 @@
 <p>He was describing the recent work by Ewin Tang: <a href="https://scirate.com/arxiv/1807.04271">A quantum-inspired classical algorithm for recommendation systems</a> (which we actually already covered <a href="http://silverpond.com.au/2018/07/22/interesting-reads-in-quantum-computing-machine-learning-and-ethics.html">here</a>).</p>
 <h3 id="open-areas-of-investigation">Open areas of investigation</h3>
 <p>Here’s the list of open/interesting topics from today:</p>
-<ol style="list-style-type: decimal">
+<ol type="1">
 <li>Quantum datasets; benchmark problems,</li>
 </ol>
 <ul>
@@ -175,14 +175,14 @@
 <li>How to generalise across qubit sizes?</li>
 <li>Reinforcement learning problems? Quantum games? Quantum chess? Communication games?</li>
 </ul>
-<ol start="2" style="list-style-type: decimal">
+<ol start="2" type="1">
 <li><p>What does truly quantum ML look like? Let’s stop trying to map classical algorithms to quantum ones, and just make up new ones</p></li>
 <li>This hybrid idea of linking parts of a network to qubits and parts being classical</li>
 </ol>
 <ul>
 <li>How do you train these things?</li>
 </ul>
-<ol start="4" style="list-style-type: decimal">
+<ol start="4" type="1">
 <li>Near-term, if we want to do quantum ML, we should focus on what actual hardware will be used, and target our approaches to those models.</li>
 </ol>
 <hr />
@@ -200,9 +200,9 @@
 <p>In general we’d need <span class="math inline">2<sup><em>n</em></sup></span> examples to learn <span class="math inline"><em>f</em></span> fully, but we’ll want to do <em>efficient</em> learning, so we’d like to learn from far fewer queries than that.</p>
 <p>Ronald preferred to work in the framework of PAC-learnability, which was introduced by Leslie Valiant in 1984. Leslie has a nice readable book on the topic (I’ve unfortunately lost my copy a while ago) which is well worth a read.</p>
 <p>It turns out that in 1995, Bshouty and Jackson introduced a <a href="http://www.mathcs.duq.edu/~jackson/quantex.pdf">quantum version of this notion</a> (see also <a href="https://arxiv.org/pdf/quant-ph/0202066.pdf">Quantum DNF Learnability Revisited</a>).</p>
-<p>Their idea is to consider the state of training data: <br /><span class="math display">$$ \sum_{x \in \{0,1\}^n } \sqrt{D(x)} |x, f(x)\rangle $$</span><br /> To demonstrate a speedup, suppose that we have the uniform distribution over the samples; so then our state becomes <br /><span class="math display">$$ \frac{1}{2^n} \sum_{x \in \{0,1\}^n } |x, f(x)\rangle $$</span><br /> The main idea is to hit this with the Fourier sampling tool, that is a classic trick in quantum algorithms. The essential idea is, firstly support that <span class="math inline">(<em>x</em>)= ± 1</span>, then we can do another standard trick, the Hadamard transformation, and obtain the state <br /><span class="math display">$$ \frac{1}{2^n} \sum_{x \in \{0,1\}^n } \hat{f}(s)|s\rangle $$</span><br /></p>
+<p>Their idea is to consider the state of training data: <br /><span class="math display">$$ \sum_{x \in \{0,1\}^n } \sqrt{D(x)} |x, f(x)\rangle $$</span><br /> To demonstrate a speedup, suppose that we have the uniform distribution over the samples; so then our state becomes <br /><span class="math display">$$ \frac{1}{2^n} \sum_{x \in \{0,1\}^n } |x, f(x)\rangle $$</span><br /> The main idea is to hit this with the Fourier sampling tool, that is a classic trick in quantum algorithms. The essential idea is, firstly support that <span class="math inline">(<em>x</em>) =  ± 1</span>, then we can do another standard trick, the Hadamard transformation, and obtain the state <br /><span class="math display">$$ \frac{1}{2^n} \sum_{x \in \{0,1\}^n } \hat{f}(s)|s\rangle $$</span><br /></p>
 <p>where <br /><span class="math display">$$\hat{f}(s) = \frac{1}{2^n} \sum_{x} f(x) (-1)^{s \cdot x}$$</span><br />.</p>
-<p>The point here is that when you measure this final state, the state you see is <span class="math inline"><em>s</em></span> with probability <span class="math inline">$\hat{f}(s)^2$</span>. For a certain choice of <span class="math inline"><em>f</em></span>, namely when <span class="math inline"><em>f</em></span> is linear mod 2, then you can learn the function perfectly in exactly one query. Classically you would require at least <span class="math inline"><em>n</em></span> queries. Great reduction!</p>
+<p>The point here is that when you measure this final state, the state you see is <span class="math inline"><em>s</em></span> with probability <span class="math inline"><em>f̂</em>(<em>s</em>)<sup>2</sup></span>. For a certain choice of <span class="math inline"><em>f</em></span>, namely when <span class="math inline"><em>f</em></span> is linear mod 2, then you can learn the function perfectly in exactly one query. Classically you would require at least <span class="math inline"><em>n</em></span> queries. Great reduction!</p>
 <p>He then went into a few more examples, getting a little bit more technical each time; one was for the so-called “Coupon collector” problem, which is simply: imagine you get a random baseball card from a store, how many times do you need to visit the store before you have the entire set of cards?</p>
 <p>Again, because this is a uniform problem, we can use similar techniques to improve on it. Classical, one can find that the expected number of store visits (samples) is approximately <span class="math inline"><em>N</em>log <em>N</em></span> (where <span class="math inline"><em>N</em></span> is the number of cards in total), but quantumly it can be done with <span class="math inline"><em>O</em>(<em>N</em>)</span> samples.</p>
 <p>Perhaps of interest, was some conclusions that they were able to show that <em>no</em> quantum speedup can be obtained when for <em>all</em> distributions; i.e. there are some bad distributions that we will just struggle with. I don’t think anyone finds this particularly surprising, and shouldn’t have a big impact on real-world problems, because typically, most data isn’t, shall we say, adversially prepared; the distributions tend to be wildly different (a natural example being the set of all images of mountains as a subset of all possible images).</p>
@@ -283,9 +283,11 @@
 <p>The interesting things that came to me regarding today were:</p>
 <ul>
 <li>How to combine SciNet with the neural-nets for determining wave functions?</li>
-<li>What’s the relationship between tensor networks and these neural nets? and Conv nets?</li>
+<li>What’s the relationship between tensor networks and these neural nets? and Conv nets?
+<ul>
 <li><a href="https://scirate.com/arxiv/1710.01437">Duality of Graphical Models and Tensor Networks</a></li>
 <li><a href="https://scirate.com/arxiv/1710.04045">Neural-Network Quantum States, String-Bond States, and Chiral Topological States</a></li>
+</ul></li>
 </ul>
 <h3 id="final-thoughts-on-the-conference">Final thoughts on the conference</h3>
 <p>Overall, I’m inspired by quantum machine learning. I feel like there’s heaps of cool things to do.</p>
