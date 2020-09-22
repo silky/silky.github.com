@@ -261,6 +261,8 @@ var VoronoiLinks = {
             {"name": "Jeni's Musing", "link": "http://www.jenitennison.com/archive/index.html"},
             {"name": "Fashioning-Tech", "link": "https://fashioningtech.com/"},
             {"name": "David Wakeham", "link": "https://hapax.github.io/"},
+            {"name": "Rebecca Wirfs-Brock", "link": "http://wirfs-brock.com/blog/"},
+            {"name": "Living Design PRocess", "link": "https://www.livingdesignprocess.org/"},
             ]
 
         VoronoiLinks.updateData(links);
