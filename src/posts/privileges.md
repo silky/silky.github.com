@@ -24,7 +24,7 @@ My list:
 - Language: I speak English natively.
 - Exposed to tech from a young age: I had a computer in the house since I was
 young, and was able to learn programming on my own as a result.
-- Well-educated: I went to a private school, and was eventually able to go
+- Well-educated: I went to a private school, and was eventually able to attend
 good universities and get access to experts and knowledge in this way.
 
 These things have helped me get jobs in the past. Some of them are
