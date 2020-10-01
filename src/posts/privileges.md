@@ -25,14 +25,12 @@ My list:
 - Exposed to tech from a young age: I had a computer in the house since I was
 young, and was able to learn programming on my own as a result.
 
-Surely, these things have helped me get jobs in the past. Some of them are
-traits that you can improve, as wel as baseline things thare are out of my
+These things have helped me get jobs in the past. Some of them are
+traits that you can improve, as well as baseline things thare are out of my
 control to some degree (i.e. mental health; certainly it can be improved, but
 certainly it's not all my doing.)
 
 I also found this: [Privilege
-Checklist](https://sites.google.com/a/u.boisestate.edu/social-justice-training/about-us/our-training/privilege-checklist) from this [Social Justice Training](https://sites.google.com/a/u.boisestate.edu/social-justice-training/home) program, that is a very good starting point for building a comprehensive list. This
-feels like it's probably quite a great exercise for teams to get together and
-think about.
+Checklist](https://sites.google.com/a/u.boisestate.edu/social-justice-training/about-us/our-training/privilege-checklist) from this [Social Justice Training](https://sites.google.com/a/u.boisestate.edu/social-justice-training/home) program, that is a very good starting point for building a comprehensive list. This feels like a great exercise for teams to get together and think about.
 
 What's your list?
