@@ -262,7 +262,7 @@ var VoronoiLinks = {
             {"name": "Fashioning-Tech", "link": "https://fashioningtech.com/"},
             {"name": "David Wakeham", "link": "https://hapax.github.io/"},
             {"name": "Rebecca Wirfs-Brock", "link": "http://wirfs-brock.com/blog/"},
-            {"name": "Living Design PRocess", "link": "https://www.livingdesignprocess.org/"},
+            {"name": "Living Design Process", "link": "https://www.livingdesignprocess.org/"},
             ]
 
         VoronoiLinks.updateData(links);
