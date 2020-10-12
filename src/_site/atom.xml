@@ -8,8 +8,36 @@
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
     </author>
-    <updated>2020-10-01T00:00:00Z</updated>
+    <updated>2020-10-12T00:00:00Z</updated>
     <entry>
+    <title>New job; moving to Cambridge!</title>
+    <link href="https://silky.github.io/posts/melbourne-cambridge.html" />
+    <id>https://silky.github.io/posts/melbourne-cambridge.html</id>
+    <published>2020-10-12T00:00:00Z</published>
+    <updated>2020-10-12T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on October 12, 2020
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>So, I’m very excited to share that we’re moving overseas! We’re headed to Cambridge in the UK at the end of this month.</p>
+<p>I’m very lucky to be starting work with a very cool quantum computing company: <a href="https://www.riverlane.com/">Riverlane</a>.</p>
+<h2 id="leaving-melbourne">Leaving Melbourne</h2>
+<p>It’s going to be interesting leaving Melbourne. I’ve lived here all my life basically, and I’ve found a really nice group of friends. I’m going to miss everyone.</p>
+<p>I owe a big thanks to <strong>everyone</strong> that’s helped me in my career and life over the years here. I won’t list all of you, but thanks :) I wouldn’t be where I am if I hadn’t had your help and support. ❤️ 💖</p>
+<p>In particular the meetup community has been a great place for me and somewhere I was able to forge some really strong friendships. Specifically, I’ve had a great time at the Melbourne Maths and Science Meetup, the Haskell Meetup, back in the day I loved MXUG, and of course I have to thank my friend David Kemp for being the only consistent attendee of the Quantum Lunch, started way back in the day! I’ll also miss hanging out with the cool people who’ve come to events I’ve helped organise, such as <a href="https://www.composeconference.org/2016-melbourne/">compose conference</a> and <a href="https://postpredictionconference.github.io/">post-prediction conference</a>. I love Melbourne for the really nice connection you get between different communities, and it’s been some of my favourite times meeting people from outside my standard little bubble.</p>
+<p>I also have to thank my friend Charles Hill from Melbourne University, who taught me so much about quantum computing, is an amazing researcher and very kind and generous person.</p>
+<p>Thanks also to the other people in the tech community here that have supported me and helped me first move into new jobs and learn interesting and fun things. I’ve been very lucky.</p>
+<p>Of course, thanks again to all the people that helped out with <a href="https://braneshop.com.au/">Braneshop</a> whom I’ve already mentioned over there.</p>
+<h2 id="cambridge">Cambridge</h2>
+<p>We’re totally new to Cambridge, so if you’ve got suggestions/connections I’d love to hear about it! Definitely keen to meet some people and get into the community over there.</p>
+<p><strong>Reach out if you like!</strong></p>
+<p>I’ve benefitted a lot from emailing random people and just asking questions, so please feel free to reach out to me if you think I can help with anything!</p>
+]]></summary>
+</entry>
+<entry>
     <title>Privileges</title>
     <link href="https://silky.github.io/posts/privileges.html" />
     <id>https://silky.github.io/posts/privileges.html</id>
@@ -1396,274 +1424,6 @@ $2,500,000
 <p>You’ll find all of these saved under the date-and-time in the <code>./saved-videos</code> folder. The JSON can be used to recreate the entire dance in any form you wish; it gives the coords of the various joints.</p>
 <p>At the present moment it the dance capture only starts when the people in frame all raise their hands above their heads.</p>
 <p>Feel free to change and play with as you wish!</p>
-]]></summary>
-</entry>
-<entry>
-    <title>QML+ Conference Review & Current State of Quantum Machine Learning</title>
-    <link href="https://silky.github.io/posts/2018-10-23-qml-plus-conference-review-of-work-on-quantum-machine-learning.html" />
-    <id>https://silky.github.io/posts/2018-10-23-qml-plus-conference-review-of-work-on-quantum-machine-learning.html</id>
-    <published>2018-10-23T00:00:00Z</published>
-    <updated>2018-10-23T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div class="info">
-    Posted on October 23, 2018
-    
-        by Noon van der Silk
-    
-</div>
-
-<p><small>(This series of posts originally appeared on the <a href="https://silverpond.com.au/2018/09/17/qml-plus-2018-day-1/">Silverpond blog</a>)</small></p>
-<h2 id="day-1">Day 1</h2>
-<center>
-<img src="/images/innsbruck.jpg" width="800" />
-</center>
-<p>Well, we made it to Innsbruck, Austria!</p>
-<p>It was a huge journey to get here, and I have to tell you, Austria in general, and Innsbruck in particular, is absolutely beautiful.</p>
-<p>On the train ride from Vienna to Salzburg, we spent most of the time looking out of the window taking photos. The weather is amazing; it’s perfectly warm and sunny, and it’s amazing to walk around the town and just see mountains everywhere.</p>
-<p>But, I’m here, of course, on business, and in particular, primarily to attend the QML+ – <em><a href="https://www.uibk.ac.at/congress/quantum-machine-learning-plus/index.html.en">Quantum Machine Learning … Plus</a></em> – conference.</p>
-<p>It’s the night of Day 1, so here’s a review of what happened:</p>
-<h3 id="opening-talk-why-qml">Opening Talk: Why QML+?</h3>
-<p><em>by Hans Briegel</em></p>
-<p>Hans Briegel, famous partly for his involvement measurement-based quantum computation (and of particular relevance to me, because this was part of what my Masters work was about) gave an overview talk about why we might care to think about how quantum computing could play a role in machine learning.</p>
-<p>I quite enjoyed one of his ideas, which is thinking about how “Embodied AI” relates to the ideas of “information is physical” insofaras both imply that in order to think about the primary subject, we need to involve physics. This has been particularly fruitful in physics and information theory, and relates to some very far-reaching ideas, such as <a href="https://en.wikipedia.org/wiki/Firewall_(physics)">black holes</a>.</p>
-<p>He used this as motivation to study a “Artificial Agent” (or in standard lingo, <em>Reinforcement learning</em>) in the quantum setting:</p>
-<p><img src="/images/agent-env-qc.png" width="600" /></p>
-<p>His observation is: What is quantum? There are four options:</p>
-<ul>
-<li><em>CC</em>: Classical Agent, Classical Environment</li>
-<li><em>CQ</em>: Classical Agent, Quantum Environment</li>
-<li><em>QC</em>: Quantum Agent, Classical Environment</li>
-<li><em>QQ</em>: Quantum Agent, Quantum Environment</li>
-</ul>
-<p>He noted that in the Quantum-Quantum setting, there are some foundational open problems:</p>
-<ul>
-<li>How do you measure that you’re learning?</li>
-<li>What does it mean to “act” in a fully quantum setting?</li>
-<li>What role does decoherence play?</li>
-</ul>
-<p>I don’t think even these questions are quite clear to me, let alone the answers; but still interesting to think about.</p>
-<p>One idea/question I had is: What is the simplest truly quantum reinforcement learning problem?</p>
-<h3 id="quantum-algorithms-for-the-hopfield-network-quantum-gradient-descent-and-monte-carlo">Quantum algorithms for the Hopfield network, quantum gradient descent, and Monte Carlo</h3>
-<p><em>by Patrick Rebentrost</em></p>
-<p>Next up was Patrick, who gave a far-reaching talk on a variety of topics that he and his colleagues have been researching over the last few years.</p>
-<p>He started off by reminding us of a bunch of challenges that he posed in a prior paper:</p>
-<ol type="1">
-<li>The “input” challenge - How to get data in to a quantum network? It turns out this is very subtle.</li>
-<li>The “costing” challenge - Just how many qubits are required to implement these algorithms? How practical is it to build?</li>
-<li>The “output” challenge - Even if we build an efficient quantum machine learning algorithm that produces a final state that encodes the answer; how do we read out the answer efficiently? It takes many measurements to extract the known state, so is it efficient to do so?</li>
-<li>The “benchmarking” challenge - <em>even if</em> we solve all the above, how does it compare to classical algorithms? It can be very hard to prove that the quantum algorithm is better than any possible classical one.</li>
-</ol>
-<p>Next, he talked about a quantum algorithm for training a so-called “Hopfield” neural network via the Hebbian learning procedure.</p>
-<p>The Hopfield network is simply one in each every node is connected to every other node; and there is only one layer, and every node is both input and output (there are no layers, essentially). This may seem odd, and you should rightly wonder how you could train such a thing. One way to train it turns out to be the so-called “Hebbian” learning, which is inspired by the Human brain. The idea is captured by the phrase: “Neurons that fire together wire together”. With this idea in hand, it’s possible to develop a scheme to encode all this into a quantum computer, and perform all the updates and training. You can find more <a href="https://arxiv.org/pdf/1710.03599.pdf">here</a>.</p>
-<p>For the everyday deep learning person, these ideas may sound a bit odd. Rightly so, because it’s not standard practice. Essentially the only reason to focus on these for in the quantum machine learning setting is that this is a network for which we <em>can</em> come up with a scheme to implement it on a quantum computer. A natural question is: Can we adapt the Hopefield-network techniques to work with multiple layers? I tentatively feel like the answer could be “yes”, but I haven’t thought a lot about it.</p>
-<p>The next paper he talked about is this one: <a href="https://scirate.com/arxiv/1612.01789">Quantum gradient descent and Newton’s method for constrained polynomial optimization</a>.</p>
-<p>I happened to read this one when it came out, because it was quite a big step. Previously, we had no idea how to even compute a quantum gradient, so this contribution was huge.</p>
-<p>Unfortunately, the main problem of this paper is that the algorithm gets exponentially slower as the number of training steps increases. This is, at least naively, incredibly problematic for typical machine learning, where the number of steps is in the hundreds of thousands. In the paper they make the argument that oftentimes good results can be achieved after a very small number of steps, but it’s not clear to me how practical this is.</p>
-<p>His final topic was <a href="https://scirate.com/arxiv/1805.00109">Quantum computational finance</a>; he was basically out of time, so didn’t go in to much detail, but the main idea is that again, using a standard technique in quantum computing called “amplitude amplification”, one can achieve a quadratic speedup in a certain kind of derivative-pricing. It turns out that banks and genuinely interested in these techniques, because being able to price something in say ~2 days, instead of 7 days, is a significant advantage market-wise.</p>
-<p>Partick ended with a funny remark along these lines, which is that, the beauty of working in the finance world is that you don’t need to <em>prove</em> anything, you just simply build it, and let it go around making trades in the market; if it doesn’t work, you simply lose money!</p>
-<h2 id="lunch">Lunch</h2>
-<p>Over lunch, I had a really nice chat with <a href="https://github.com/pooya-git">Pooya Ronagh</a> from <a href="https://1qbit.com/">1Qbit</a> and <a href="https://homepages.cwi.nl/~rdewolf/">Ronald de Wolf</a>. We chatted largely about how the practical every-day machine learning could be aided by quantum techniques. Ronald pushed hard to understand what areas quantum researchers should focus on, and Pooya and I were trying to come up with ideas. Pooya had an interesting comment that, in many ways, faster machine learning isn’t super useful, because for the physical cost of a quantum computer, you can already buy significant hardware and get great results. So bad results faster doesn’t really help, in a foundational way.</p>
-<p>Some thoughts we had is that maybe just flat-out alternatives to gradient descent would be interesting; i.e. we know there are areas where gradient-descent style optimisation is not great: <a href="http://silky.github.io/posts/2018-06-16-when-will-google-translate-be-great.html">translation</a>, program synthesis, neural architecture search, etc.</p>
-<p>In any case, it was a very inspiring chat, and I was really glad to have met them!</p>
-<h2 id="programmable-superpositions-with-hebbian-un-learning">Programmable Superpositions with Hebbian (un)-Learning</h2>
-<p><em>by Wolfgang Lechner</em></p>
-<p>This, I must say, was quite technical, and I didn’t quite follow most of it. But I did get the general idea.</p>
-<p>The main tool of quantum machine learning is the so-called <a href="https://scirate.com/arxiv/0811.3171">HHL algorithm</a> (see also: <a href="https://scirate.com/arxiv/1802.08227">Quantum linear systems: a primer</a>). One thing it requires is efficient loading of the training data. It turns out that typically, if you want to load the training data into a quantum algorithm, in general you’ll need to do an exponential amount of work in the number of training samples. Which is hugely problematic. I think I need to understand this a bit more, but at least the basic idea was clear: the data-loading needs to be sped up.</p>
-<p>The main contribution of this work is that, through a rather elaborate procedure, partially described here: <a href="https://arxiv.org/pdf/1708.02533.pdf">Programmable superpositions of Ising configurations</a> (but more in upcoming publications), it’s possible to prepare the required state by encoding it into a Hamiltonian, and then letting the Hamiltonian evolve via adiabatic evolution. How? Hebbian Learning, evidentally! I admit that I didn’t follow most of this talk, but I do think this kind of thing is quite interesting, and there’s definitely a need to solve this general, and reasonably embarassing problem.</p>
-<hr />
-<h2 id="day-2">Day 2</h2>
-<p><img src="/images/innsbruck-2.jpg" width="800" /></p>
-<p>We’re back. There first two talks were quite great, and there was another that was interesting and is worth a mention.</p>
-<h3 id="opening-talk-artificial-intelligence-quantum-computing">Opening Talk: Artificial Intelligence &amp; Quantum Computing</h3>
-<p>by Aske Plaat</p>
-<p>Even though it had a reasonably uninspiring title, this talk was actually excellent, and should’ve, in fact, been the opening talk of the conference.</p>
-<p>Aske introduced some motivation, and introduced some simplifying assumptions about AI to try and cut off typical arguments about what it means to be “intelligent”. He defined his working notion, which is “to <em>be</em> intelligent is to <em>act</em> intelligently”, which later was quite controversial to a number of people.</p>
-<p>He had a unifying way of explaining why we’ve seen such a boom of AI recently, which is:</p>
-<ol type="1">
-<li>Algorithms</li>
-<li>Data</li>
-<li>Speed</li>
-</ol>
-<p>I think this is a nice way of phrasing it. He then dove into the various parts in more detail, starting with <em>algorithms</em>.</p>
-<p>He introduced what he sees as two main camps of machine learning:</p>
-<ul>
-<li>Connectionist AI, and,</li>
-<li>Symbolic AI.</li>
-</ul>
-<p>Connectionist AI, as he sees it, is the kind that we all know and love: Deep learning, neural networks, “bottom-up” reasoning, function approximation, etc.</p>
-<p>Symbolic AI, as he sees it, is more related to philosophy, logics, ontologies, expert systems, planning, Q-Learning, and other kind of pre-defined “slow-thinking/high-level reasoning” ideas.</p>
-<p>The main point he makes with the distinction is that maybe more merging between the two schools of thought needs to take place. He gives the example of AlphaGo as being a case where the two ideas merged. Another one I thought of is the idea of <a href="https://scirate.com/arxiv/1803.05252">Algebraic Machine Learning</a> which certainly has some grand claims, but is at least mildly interesting for it’s ideas.</p>
-<p>He then made some comments about how speed is also relevant, and without it we wouldn’t see such a boom. Again this is of interest to quantum-computing types, because being faster than classical computers is fundamentally what the field is all about, and that’s where there’s been a lot of focus recently (i.e. quantum speedups over classical algorithms).</p>
-<p>Aske also noted the abundance of benchmarks for classical machine learning, which became a theme for a few of the questions during question time. In particular we discussed who, if anyone, and how, if possible, to come up with some good benchmark datasets and problems for quantum machine learning. Presently, no-one has anything good along those lines.</p>
-<p>He then noted some challenges in classical ML, and made the observation that <em>simply</em> achieving a speedup won’t solve these problems (for example, the adversial attacks, or the delayed credit assignment problem). The claim is that we need to put some effort into what truly <em>quantum</em> algorithms might look like.</p>
-<p>The main thing I got out of the talk was the idea that we should be thinking about making new benchmarks for quantum machine learning.</p>
-<h3 id="quantum-assisted-machine-learnnig-in-near-term-quantum-devices">Quantum-Assisted Machine Learnnig in Near-Term Quantum Devices</h3>
-<p>by Alejandro Perdomo-Ortiz</p>
-<p>Alejandro is very experienced in this field, it turns out. He’s been leading a team at NASA working on QML for the last 5 years, and now has moved to Rigetti, where he’s conducting research on the frontiers of quantum machine learning (also, Rigetti has a <a href="https://www.rigetti.com/qcs">quantum cloud service</a> coming …)</p>
-<p>At NASA his drive was to drive interest in the practical usage of the quantum devices that NASA had purchased (in particular the D-Wave).</p>
-<p>He noted that quantum chemistry, and the simulation of quantum systems, was the most natural idea, and everyone should be looking at it. But furthermore, he was tasked with thinking of other problems that could be mapped to these particular optimisation devices. Naturally, one idea is just straightforwad discrete optimisation; finding some satisfying assignment of variables for the minimisation of some particular cost function. And he conducted some early work here mapping protein folding to a certain kind of optimisation problem.</p>
-<p>He echo’d Aske’s thoughts and said that we should be focusing on designing new algorithms, over just simply speed.</p>
-<p>One of the most memorably quotes from his talk was “Look for the intractable, the more intractable the better, for me”.</p>
-<p>One thing he spent a bit of time on was using the D-Wave to again implement one of these Hopfield networks (he called it here a “fully-visible model”), on a simplified digit dataset. Turned out it worked! Which essentially demonstrated that it was indeed possible to map a ML problem onto the device, and then have the device learn it’s own weights (couplings, here) which would allow it to do well at generating new digits!</p>
-<p>Following this work, they then observed that infact they could train an autoencoder entirely classically, and then use the embedding vectors for all the training data as-in the setup above to <a href="https://arxiv.org/pdf/1801.07686.pdf">train a kind of hybrid generative</a> system:</p>
-<p><img src="/images/auto-enc-qc-classical.png" /></p>
-<p>I must say that I found this both interesting and confusing. It’s interesting because it’s a great way to use the complicated device to do “real” work, even when it has alone a very small amount of input nodes (it was something like 46, here, for this device). But it’s also confusing because most of the “juice” in the network is in the classical weights, not in the embedding vector itself. When I asked Alejandro about this, he said that it was mainly a way to demonstrate the hybrid set up, and that over time the idea is to make more regions quantum, and see how that changes things. I find it <em>very</em> interesting to think about how one would even go about jointly training a hybrid quantum-classical system.</p>
-<p>The next idea he covered was the <a href="https://arxiv.org/pdf/1803.00745.pdf">learning of quantum circuits</a> see also <a href="https://arxiv.org/pdf/1804.04168.pdf">Differentiable Learning of Quantum Circuit Born Machine</a>.</p>
-<p>This I think is a particularly great idea, and his approach was to focus on generate certain kinds of entangled states, with great results. They managed to find a state that has more entanglement, compared to the standard one, with this scheme. They also made some interesting observations about the expressive power of the depth of the circuits and what kind of states they can possible prepare.</p>
-<p>His final insights were:</p>
-<ol type="1">
-<li>Focus on the hardest problems of interest to ML exports, as this will be the quickest path to demonstrating a quantum advantage in the near-term.</li>
-<li>Focus on novel hybrid quantum-classical approaches.</li>
-</ol>
-<h3 id="lunch-1">Lunch</h3>
-<p>For lunch, Gala and I decided to enjoy the beautiful park right next to the venue! By chance, there was a beer garden inside!</p>
-<h3 id="machine-learning-for-designing-new-quantum-experiments">Machine learning for designing new quantum experiments</h3>
-<p>by Alexey Melnikov</p>
-<p>This talk was essentially another kind of program-synthesis problem, but this time in the language of optical elements. The idea is that, given some set of optical elements, and some number of qubits, how can we find all the possible sets of operations that make entangled states?</p>
-<p>There new idea is to use a Reinforcement-Learning-inspired framework called “<a href="http://projectivesimulation.org">Projective Simulation</a>”. I must say that I found the framework a little odd, but they did get good results, and it’s available as a python library for you to experiment with!</p>
-<h3 id="the-quantum-way-of-doing-computations-new-technologies-for-the-quantum-age">The Quantum Way of Doing Computations: New Technologies for the Quantum Age</h3>
-<p>by Rainer Blatt</p>
-<p>This talk was a bit oddly-placed. It was an overview of how quantum computing works, and an introduction to the trapped-ion style of quantum computing.</p>
-<h3 id="panel">Panel</h3>
-<p>The last event of the day was a very large panel of most of the speakers (~10 people) with a bunch of questions prepared by the organisers that were aimed to be thought-provoking. The best comment that came out of the entire discussion was from Matthias Troyer:</p>
-<p>“That’s how you get a quantum advantage with zero qubits”</p>
-<p>He was describing the recent work by Ewin Tang: <a href="https://scirate.com/arxiv/1807.04271">A quantum-inspired classical algorithm for recommendation systems</a> (which we actually already covered <a href="http://silverpond.com.au/2018/07/22/interesting-reads-in-quantum-computing-machine-learning-and-ethics.html">here</a>).</p>
-<h3 id="open-areas-of-investigation">Open areas of investigation</h3>
-<p>Here’s the list of open/interesting topics from today:</p>
-<ol type="1">
-<li>Quantum datasets; benchmark problems,</li>
-</ol>
-<ul>
-<li>Detecting entanglement?</li>
-<li>Creation of states?</li>
-<li>Classifying entangled vs. non-entangled?</li>
-<li>How to generalise across qubit sizes?</li>
-<li>Reinforcement learning problems? Quantum games? Quantum chess? Communication games?</li>
-</ul>
-<ol start="2" type="1">
-<li><p>What does truly quantum ML look like? Let’s stop trying to map classical algorithms to quantum ones, and just make up new ones</p></li>
-<li>This hybrid idea of linking parts of a network to qubits and parts being classical</li>
-</ol>
-<ul>
-<li>How do you train these things?</li>
-</ul>
-<ol start="4" type="1">
-<li>Near-term, if we want to do quantum ML, we should focus on what actual hardware will be used, and target our approaches to those models.</li>
-</ol>
-<hr />
-<h2 id="day-3">Day 3</h2>
-<p><img src="/images/innsbruck-day-3.png" width="800" /></p>
-<p>Today, there were only 3 talks; and we had a free afternoon! So we climbed* the big mountain!</p>
-<p>*: Okay okay, by “climbed” I mean “took the lifts”. But there were 3 lifts!</p>
-<h3 id="opening-talk-learning-from-quantum-data-strengths-and-weaknesses">Opening Talk: Learning from Quantum Data: Strengths and Weaknesses</h3>
-<p>by Ronald de Wolf</p>
-<p>This was a great and classic talk in the same vein as many talks in the theory of quantum computation.</p>
-<p>Ronald addressed the natural problem of what you could do if you your data was given you to as a quantum state (thereby ignoring all the problems that have been brought up with QRAM in the past few days; let’s just suppose we have the state!).</p>
-<p>The proposal is to consider supervised learning in a very formal sense; imagine we have a function: <span class="math inline"><em>f</em> : {0, 1}<sup><em>n</em></sup> → {0, 1}</span>.</p>
-<p>Then, we can think of it as a supervised learning problem where we have <span class="math inline"><em>n</em></span> binary features, producing a single binary output, and we have our examples in the form: <span class="math inline">(<em>x</em>, <em>f</em>(<em>x</em>))</span>.</p>
-<p>Ronald wanted us to consider the so-called <em>sample</em> complexity, i.e. how many times do we have to evaluate <span class="math inline"><em>f</em></span>, instead of the more standard <span class="math inline"><em>t</em><em>i</em><em>m</em><em>e</em></span> complexity. In this sense here, the ideas are at least related, because fewer samples will take less time.</p>
-<p>In general we’d need <span class="math inline">2<sup><em>n</em></sup></span> examples to learn <span class="math inline"><em>f</em></span> fully, but we’ll want to do <em>efficient</em> learning, so we’d like to learn from far fewer queries than that.</p>
-<p>Ronald preferred to work in the framework of PAC-learnability, which was introduced by Leslie Valiant in 1984. Leslie has a nice readable book on the topic (I’ve unfortunately lost my copy a while ago) which is well worth a read.</p>
-<p>It turns out that in 1995, Bshouty and Jackson introduced a <a href="http://www.mathcs.duq.edu/~jackson/quantex.pdf">quantum version of this notion</a> (see also <a href="https://arxiv.org/pdf/quant-ph/0202066.pdf">Quantum DNF Learnability Revisited</a>).</p>
-<p>Their idea is to consider the state of training data: <br /><span class="math display">$$ \sum_{x \in \{0,1\}^n } \sqrt{D(x)} |x, f(x)\rangle $$</span><br /> To demonstrate a speedup, suppose that we have the uniform distribution over the samples; so then our state becomes <br /><span class="math display">$$ \frac{1}{2^n} \sum_{x \in \{0,1\}^n } |x, f(x)\rangle $$</span><br /> The main idea is to hit this with the Fourier sampling tool, that is a classic trick in quantum algorithms. The essential idea is, firstly support that <span class="math inline">(<em>x</em>) =  ± 1</span>, then we can do another standard trick, the Hadamard transformation, and obtain the state <br /><span class="math display">$$ \frac{1}{2^n} \sum_{x \in \{0,1\}^n } \hat{f}(s)|s\rangle $$</span><br /></p>
-<p>where <br /><span class="math display">$$\hat{f}(s) = \frac{1}{2^n} \sum_{x} f(x) (-1)^{s \cdot x}$$</span><br />.</p>
-<p>The point here is that when you measure this final state, the state you see is <span class="math inline"><em>s</em></span> with probability <span class="math inline"><em>f̂</em>(<em>s</em>)<sup>2</sup></span>. For a certain choice of <span class="math inline"><em>f</em></span>, namely when <span class="math inline"><em>f</em></span> is linear mod 2, then you can learn the function perfectly in exactly one query. Classically you would require at least <span class="math inline"><em>n</em></span> queries. Great reduction!</p>
-<p>He then went into a few more examples, getting a little bit more technical each time; one was for the so-called “Coupon collector” problem, which is simply: imagine you get a random baseball card from a store, how many times do you need to visit the store before you have the entire set of cards?</p>
-<p>Again, because this is a uniform problem, we can use similar techniques to improve on it. Classical, one can find that the expected number of store visits (samples) is approximately <span class="math inline"><em>N</em>log <em>N</em></span> (where <span class="math inline"><em>N</em></span> is the number of cards in total), but quantumly it can be done with <span class="math inline"><em>O</em>(<em>N</em>)</span> samples.</p>
-<p>Perhaps of interest, was some conclusions that they were able to show that <em>no</em> quantum speedup can be obtained when for <em>all</em> distributions; i.e. there are some bad distributions that we will just struggle with. I don’t think anyone finds this particularly surprising, and shouldn’t have a big impact on real-world problems, because typically, most data isn’t, shall we say, adversially prepared; the distributions tend to be wildly different (a natural example being the set of all images of mountains as a subset of all possible images).</p>
-<p>The main idea here is that by utilising standard tricks from quantum algorithms we can get significant speedups when we know something about the distribution that we are learning from.</p>
-<h3 id="limitations-on-learning-of-quantum-processes">Limitations on learning of quantum processes</h3>
-<p>by Mario Ziman</p>
-<p>This one was a little bit technical, but it had some interesting ideas.</p>
-<p>Mario phrased the problem of quantum machine learning as follows:</p>
-<p><img src="/images/mario-qml.png" /></p>
-<p>The point being that in typical ML we want to modify the function <span class="math inline"><em>f</em></span>, and in quantum ML then we wish to modify the unitary <span class="math inline"><em>U</em><sub><em>f</em></sub></span>. This turns out to be quite problematic, because this function is truly quantum, and we know that quantum states suffer from the no-cloning principle: you cannot copy an unknown quantum state; so you can only use it once. Mario mentioned that this results in a <em>No-programming</em> theorem, which means that we cannot perfectly store an unknown quantum transformation (i.e., <em>even if</em> we find a <span class="math inline"><em>U</em><sub><em>f</em></sub></span> that works well; we can’t save it! We have to know how many times we want to use it <em>in advance!</em>).</p>
-<p>However, it turns out we can still make some progress by, instead of requiring some kind of exact copy, we aim for probabilistic performance. The only remaining thing I got from this talk was that probabilistic learning, in their sense involving some kind of “probabilistic Q learning” is related to quantum teleportation. You can read about this work more <a href="https://scirate.com/arxiv/1809.04552">here</a>.</p>
-<h3 id="discovering-physical-concepts-with-neural-networks">Discovering physical concepts with neural networks</h3>
-<p>by Renato Renner</p>
-<p>This was a talk I was quite excited about. The paper for it is <a href="https://scirate.com/arxiv/1807.10300">here</a>. They’ve also made <a href="https://github.com/eth-nn-physics/nn_physical_concepts">the code available</a>, in TensorFlow.</p>
-<p>The fundamental idea is really nice: Maybe we can build a neural network to act exactly as a standard human physicist would: they shall observe data, try and form theories, ask questions of their theories, and then check the answers.</p>
-<p>This is very nicely expressed by the picture from the paper:</p>
-<p><img src="/images/physical-concepts.png" width="800" /></p>
-<p>The point is that they train an autoencoder on the data, but the put constraints on the latent vector so that the entries by adding the mutual information between them on to the loss so-as to require independence; i.e. the parameters that the network learns should be independent.</p>
-<p>They then introduce this idea of questions and answers. Unfortunately, I think the way this idea doesn’t go far enough is by, it seems to me, treating the answers as the input data itself; so that truly this network only functions as a special kind of autoencoder (at least, this is how it is in the code, and as far as I can see in the paper).</p>
-<p>In any case, they’re able to show several problems where it is able to look at experimental data and where the latent variables are correlated to the terms that they expected to see in the equations that model these phenomena. I think that’s pretty cool.</p>
-<p>One thing Renato noted quite strongly was that perhaps this isn’t super surprising, and maybe the network received a lot of help by the way the data was sent to it. I think that this could be mitigated, maybe, by thinking a bit more about the quesiton/answer set up, and more generally thinking about how we can allow the network to reject data samples.</p>
-<p>Some ideas I had during this talk related to the kind of “falsifiability” ideas; namely that if this system is forced to come up with theories for data, then how can we also ensure that the theories it has can be proven wrong?</p>
-<p>My other idea was, what if instead of just having a latent variable, i..e an independent variable, have an entire neural network in there, that could perhaps serve as an “independent explanation”.</p>
-<p>Overall, I quite enjoyed this talk and idea.</p>
-<h3 id="open-areas-of-investigation-1">Open areas of investigation</h3>
-<p>The interesting things that came to me regarding today were:</p>
-<ul>
-<li>What other cool quantum algorithm tricks should we be using?
-<ul>
-<li>Bomb testing?</li>
-<li>The bomb-testing thing is a kind of learning anyway. Probably interesting?</li>
-</ul></li>
-<li>If we do really want to learn truly quantum unitaries, then what’s the deal with having to know how many times we want to use it!? That’s crazy!</li>
-<li>How can we make a better machine for generating theories?</li>
-</ul>
-<hr />
-<h2 id="day-4">Day 4</h2>
-<p><img src="/images/innsbruck-day-4.png" width="800" /></p>
-<p>Well, it’s Thursday night, and I’ve just finished up my last day at the conference. Tomorrow, we’ll be heading on our (short) holiday! While QML+ formally has two more talks tomrorrow, they are less relevant to me personally, plus we need to get a head start to make it to some waterfalls!</p>
-<p>Here’s my summary of the talks I attended today!</p>
-<h3 id="opening-talk-mlq">Opening Talk: ML+Q</h3>
-<p>by Matthias Troyer</p>
-<p>With an amusingly-titled talk, Matthias is the master of classical simulation algorithms for quantum processes. He spends most of his time working on the software side, trying to demonstrate practical quantum speedups for optimisation problems.</p>
-<p>As with most of the other talks, he described several pieces of work. The first was a <a href="https://arxiv.org/pdf/1606.02318.pdf">neural network that could be used to learn a quantum wave function</a>, and then used to find phases and amplitudes of given states, and compute other properties.</p>
-<p>Their setup was the (seemingly-standard) Restricted Boltzmann Machine, where the input was whether-or-not there is a z-rotation on the given qubit, and the output being the inner product with some state <span class="math inline">|<em>s</em>⟩</span>.</p>
-<p><img src="/images/nqs.png" /></p>
-<p>But, non-standardly, the weights of this network are actually found using what they refer to as “reinforcement learning”, but is actually something called “<a href="https://scirate.com/arxiv/cond-mat/0702349">Stochastic Reconfiguration</a>”. Once they find initial values for the weights, by looking at the Hamiltonian of the particular system, they then fine-tuned, if they want to compute properties that depend on time. It’s a little bit involved, to say the least.</p>
-<p>Anyway, having done this, they do acheieve some nice results. They are able to use their neural network to compute various properties quite well.</p>
-<p>Later, they applied an RBM again, but without the weird “Stochastic Reconfiguration”, and were able to get very good results in <a href="https://scirate.com/arxiv/1703.05334">learning quantum states</a>.</p>
-<p>He then spent a bit of time covering his work on <a href="https://scirate.com/arxiv/1806.06081">quantum annealing</a>. In particular, in that worked they observe that quantum annealers seem to be fated to always produce unfair samples of the potential states; i.e. not every state has equal probability to appear. Ingeniously, they came up with a classical simulation of quantum annealing that is actually faster and more accurate. Even more ingeniously, they show that infact they can implement the classical simulation as a quantum process, and <em>again</em> get a speedup, for a total of a quartic (2 times quadratic) speedup!</p>
-<p>All this resulted in the numerical comment that if there is any quantum annealing problem you’re running classically for more than 1 day, you’ll go faster if you use a quantum annealer.</p>
-<p>One of the interesting conclusions for this part of the work was, when you’re simulating adiabatically evolving something classically, sometimes it’s better, if you want tunneling, to evolve very fast (<a href="https://en.wikipedia.org/wiki/Adiabatic_theorem">the adiabatic theorem</a> would tell us we need to evolve slowly). He demonstrated this in an amusing way by saying that he could tunnel through the wall in room if we would just close our eyes for 30 seconds, instead of 30 microseconds.</p>
-<p>His other summaries were:</p>
-<ul>
-<li>Neural nets are great for learning efficient representations of wave functions; and probably more</li>
-<li>Stoquastic quantum annealing can be well mimicked by a classical laptop</li>
-<li>Sampling bias makes quantum annealers bad for this task</li>
-<li>Gate-model quantum computers <em>will</em> accelerate quantum-inspired algorithms</li>
-</ul>
-<h3 id="early-lunchhike">Early Lunch/Hike</h3>
-<p>Unfortunately, a talk I was looking forward to, by Franceso Petruccione, probably related to <a href="https://scirate.com/arxiv/1704.02146">this work</a> was cancalled, so Gala and I went for a long hike instead. We almost got lost, found beautiful forests, found a beautiful field that reminded me of Jurassic Park, lost faith in ever seeing the bottom of the mountain again and eventually made it back to the lifts alive.</p>
-<p>This impromptu adventure meant we just got back in time for the last talk of the day.</p>
-<h3 id="quantum-speedup-in-testing-causal-hypotheses">Quantum speedup in testing causal hypotheses</h3>
-<p>by Giulio Chiribella</p>
-<p>This talk was essentially based around <a href="https://arxiv.org/pdf/1806.06459.pdf">this paper</a>.</p>
-<p>The main point is to think about a framework for causal hypotheses, and then see how classical and quantum approaches compare. The setup as like so:</p>
-<p><img src="/images/causal.png" /></p>
-<p>We think of curly-C as some kind of unknown process (for example, <code>node.js</code>, ha ha ha), and then ask ourselves: What is the causal relationship between B and A? And between C and A?</p>
-<p>The setting Giulio proposes is that we want to be able to determine exactly, from a given set of hypotheses, which one is correct. Here, imagine the following:</p>
-<ul>
-<li><strong>Hypothesis 1</strong>: B is dependent on A, and C is uniformly random.</li>
-<li><strong>Hypothesis 2</strong>: C is dependent on A, and B is uniformly random.</li>
-</ul>
-<p>The question is: Who can do better, as a function of the number of trials, to determine which hypothesis is right? In order to be able to make progress, we allow ourselves <em>interventions</em>; i.e. that we can feed data into <span class="math inline"><em>A</em></span>, and then use that to make subsequent queries to curly-C.</p>
-<p>For reasons I don’t really understand, in the paper they claim that classically, if the dimension of all variables is finite and fixed to <span class="math inline"><em>d</em></span>, then, if B (or C) is dependent on A, then that means that the function mapping A to B is invertible. With such a constraint, it’s easy to see that it’s possible to determine the difference between the two hypothesis. The value of interest to them is the “discrimination rate”, as the number of experiments is performed. They find that it is <span class="math inline">log <em>d</em></span>. Quantumly, they find that they are able to differentiate the two hypothesis with discriminatio rate <span class="math inline">2log <em>d</em></span>. This, in the theory they’ve developed, is exponentially better than the classical case. Great!</p>
-<p>I left this talk a little bit confused, but at least vaugely interested in the idea of quantum causal modelling.</p>
-<h3 id="open-areas-of-investigation-2">Open areas of investigation</h3>
-<p>The interesting things that came to me regarding today were:</p>
-<ul>
-<li>How to combine SciNet with the neural-nets for determining wave functions?</li>
-<li>What’s the relationship between tensor networks and these neural nets? and Conv nets?
-<ul>
-<li><a href="https://scirate.com/arxiv/1710.01437">Duality of Graphical Models and Tensor Networks</a></li>
-<li><a href="https://scirate.com/arxiv/1710.04045">Neural-Network Quantum States, String-Bond States, and Chiral Topological States</a></li>
-</ul></li>
-</ul>
-<h3 id="final-thoughts-on-the-conference">Final thoughts on the conference</h3>
-<p>Overall, I’m inspired by quantum machine learning. I feel like there’s heaps of cool things to do.</p>
-<p>Unfortunately, I’m disappointed by some things about this conference. Having come from so far away, and wanting to maximise my time the best way, I found it frustrating that even the <em>titles</em> for most of the talks weren’t known in advance.</p>
-<p>I found the conference events and overall feeling to be very non-inclusive. There was lots of mention of people working in ML/QC as “guys”; there were lots of in-crowds and, while there was lots of talk of wanting to mix with the “machine learning crowd”, people were somewhat skeptical of me not being associated with any university, and attempts to organise people as either “machine learning/classical” and “quantum”. Further, there was also no mention of a code of conduct.</p>
-<p>Sarah Moran, of <a href="https://girlgeekacademy.com/">Girl Geek Academy</a> once gave a talk about “micro positive-actions” (or something, I can’t remember the name) but the ones that stuck out to me were:</p>
-<ul>
-<li>Name tags, always (this conference did well at this),</li>
-<li>Always leave a spot open in a talking circle,</li>
-</ul>
-<p>These are great rules of thumb for any organisers to keep in mind. If you have more, please let me know!</p>
-<p>Overall, it would be great to see these academic conferences put significant effort into making their conferences feel much more welcoming to all types of people.</p>
 ]]></summary>
 </entry>
 
