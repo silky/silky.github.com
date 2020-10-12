@@ -55,6 +55,6 @@ community over there.
 
 **Reach out if you like!**
 
-I've benefitted a lot from emailing random people and just asking questions,
+I've benefited a lot from emailing random people and just asking questions,
 so please feel free to reach out to me if you think I can help with
 anything!
