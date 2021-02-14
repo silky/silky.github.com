@@ -17,7 +17,7 @@ div.alt { background: #eaeaea; }
 </style>
 
 
-Continuing the tradition [started in 2018](posts/2019-01-03-2018-books.html),
+Continuing the tradition [started in 2018](/posts/2019-01-03-2018-books.html),
 continued in 2019 [over on the Braneshop
 blog](https://braneshop.com.au/posts/2019-Books.html), I was
 reminded I haven't posted the books I read in 2020 yet.
