@@ -167,7 +167,7 @@ I can't remember much about this book at this point; I think I enjoyed it.
 </div>
 </div>
 
-<div class="book">
+<div class="book alt">
 <div class="img"><img src="/images/2020-reading/the-worst-journey-in-the-world.jpg" /></div>
 <div class="text">
 <strong><a href="https://www.goodreads.com//book/show/48503.The_Worst_Journey_in_the_World">The Worst Journey in the World</a></strong> by Cherry-Garrard, Apsley
@@ -180,7 +180,7 @@ Scott and Amundsen.
 </div>
 </div>
 
-<div class="book alt">
+<div class="book">
 <div class="img"><img src="/images/2020-reading/the-last-place-on-earth.jpg" /></div>
 <div class="text">
 <strong><a href="https://www.goodreads.com//book/show/549488.The_Last_Place_on_Earth">The Last Place on Earth: Scott and Amundsen's Race to the South Pole</a></strong> by Huntford, Roland
