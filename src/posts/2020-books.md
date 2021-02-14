@@ -503,9 +503,9 @@ thought about willpower and energy.
 <div class="text">
 <strong><a href="https://www.goodreads.com//book/show/43800661-see-what-you-made-me-do">See What You Made Me Do: Power, Control and Domestic Violence</a></strong> by Hill, Jess
 
-This is a very hard book to read. It contains some exceptionally difficult
-stories. Definitely recommended reading, but if you want a more academic
-treatment see the earlier book by Kate Manne.
+This is a very hard book to read, emotionally. It contains some exceptionally
+difficult stories. Definitely recommended reading, but if you want a more
+academic treatment see the earlier book by Kate Manne.
 
 </div>
 </div>
