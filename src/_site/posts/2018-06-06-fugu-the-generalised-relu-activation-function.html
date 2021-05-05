@@ -64,9 +64,9 @@ $$</span><br /></p>
 $$</span><br /></p>
 <p>Then, <span class="math inline"><code>ReLU</code>(<em>x</em>) = <code>fugu</code>(<em>x</em>, 0, id, 0)</span>, if you wish.</p>
 <p>Here’s the <code>fugu</code> function in Python TensorFlow:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb1-1" title="1"><span class="kw">def</span> fugu (x, f, g<span class="op">=</span><span class="kw">lambda</span> x: x, point<span class="op">=</span><span class="dv">0</span>):</a>
-<a class="sourceLine" id="cb1-2" title="2">    cond   <span class="op">=</span> tf.less(x, point)</a>
-<a class="sourceLine" id="cb1-3" title="3">    <span class="cf">return</span> tf.where(cond, f(x), g(x))</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">def</span> fugu (x, f, g<span class="op">=</span><span class="kw">lambda</span> x: x, point<span class="op">=</span><span class="dv">0</span>):</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a>    cond   <span class="op">=</span> tf.less(x, point)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a>    <span class="cf">return</span> tf.where(cond, f(x), g(x))</span></code></pre></div>
 <p>There, <code>tf.nn.relu(x) = fugu(x, tf.zeros_like)</code>.</p>
 <p>What kinds of cool/useful functions can you build with this?</p>
 <p>Exercise: Can you use the <code>fugu</code> function to build a kind of “stairway-to-relu” function?</p>

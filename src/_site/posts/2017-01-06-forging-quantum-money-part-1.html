@@ -74,7 +74,7 @@
     |+\rangle &amp;= \frac{1}{\sqrt{2}} \left( |0\rangle + |1\rangle \right), \\
     |-\rangle &amp;= \frac{1}{\sqrt{2}} \left( |0\rangle - |1\rangle \right).
 \end{aligned} $$</span><br /></p>
-<p>The first two states, <span class="math inline">{|0⟩, |1⟩}</span> form a <em>basis</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> – the <em>computational</em> basis – for a single qubit, and the second two, <span class="math inline">{| + ⟩, | − ⟩}</span> form a different, orthogonal, basis – the <em>Hadamard</em> basis.</p>
+<p>The first two states, <span class="math inline">{|0⟩, |1⟩}</span> form a <em>basis</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> – the <em>computational</em> basis – for a single qubit, and the second two, <span class="math inline">{| + ⟩, | − ⟩}</span> form a different, orthogonal, basis – the <em>Hadamard</em> basis.</p>
 <p>The crucial idea to understanding the scheme is that in quantum mechanics, <em>measurement</em> can irreversibly destroy a given quantum state, changing it to be a completely different one.</p>
 <h2 id="measurement">Measurement</h2>
 <p>To <em>measure</em> a given state in quantum mechanics is to first fix a set of potential measurement outcomes, and then “look” at the given state, and see which one of these outcomes the state when in. Let’s see an example.</p>
@@ -131,10 +131,10 @@
 <p>In an earlier paper, <a href="https://arxiv.org/pdf/1202.4010.pdf">Molina Vidick and Watrous</a> show that in a model where the attacker <em>doesn’t</em> interact with the bank after receiving the note, the best attack that one can mount results in a success probability of <span class="math inline">$\left(\frac{3}{4}\right)^n$</span>, where <span class="math inline"><em>n</em></span> is the number of qubits in the money state. This is better than my approach here, but if we set <span class="math inline"><em>n</em></span> to be of modest size, say <span class="math inline"><em>n</em> = 10</span>, then this approach will succeed <em>at most</em> 5 times out of 100; still not particularly good. If we had 100 twenty dollar notes, we could attempt to forge them, and we’d end up with a total of <span class="math inline">2 × 5 × 20 = $200</span> instead of the original <span class="math inline">$2, 000</span> we started with.</p>
 <h1 id="summary">Summary</h1>
 <p>We’ve seen that Wiesner’s original scheme for quantum money doesn’t appear to be forgable with our first ideas. In the next post we’ll learn about a very cool technique in quantum mechanics, the <a href="https://en.wikipedia.org/wiki/Elitzur%E2%80%93Vaidman_bomb_tester">Elitzur-Vaidman bomb tester</a>, and then we’ll see how it can be used to beat Wiesner’s scheme!</p>
-<section class="footnotes">
+<section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1"><p>A one-qubit <em>basis</em> is a set of states such that any state involving one qubit can be written as a linear combination of either of the elements in the basis.<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn1" role="doc-endnote"><p>A one-qubit <em>basis</em> is a set of states such that any state involving one qubit can be written as a linear combination of either of the elements in the basis.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 

@@ -59,7 +59,7 @@
 <p>But first, let’s take a look at the paper that got me interested in machine learning in the first place!</p>
 <h2 id="arxiv1307.0411---quantum-algorithms-for-supervised-and-unsupervised-machine-learning">arXiv:1307.0411 - Quantum algorithms for supervised and unsupervised machine learning</h2>
 <p>The paper, <a href="https://scirate.com/arxiv/1307.0411">Quantum algorithms for supervised and unsupervised machine learning</a> by Lloyd, Mohseni and Rebentrost in 2013, was one of my first technical exposures to machine learning. It’s an interesting one because it demonstrates that for certain types of clustering algorithms there is a quantum algorithm that exhibits an exponential speed-up over the classical counterpart.</p>
-<p><strong>Aside</strong>: Gaining complexity-theoretic speed-ups is the central task of (quantum) complexity theory. The speedup in this paper is interested, but it “only” demonstrates a speed-up on a problem that is already known to be <em>efficient</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> for classical computers, so it <em>doesn’t</em> provide evidence that quantum computers are fundamentally more powerful than classical ones, by the standard notions in computer science.</p>
+<p><strong>Aside</strong>: Gaining complexity-theoretic speed-ups is the central task of (quantum) complexity theory. The speedup in this paper is interested, but it “only” demonstrates a speed-up on a problem that is already known to be <em>efficient</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> for classical computers, so it <em>doesn’t</em> provide evidence that quantum computers are fundamentally more powerful than classical ones, by the standard notions in computer science.</p>
 <p>The <code>Supervised clustering</code> problem that is tackled in the paper is as follows:</p>
 <blockquote>
 <p>Given some vector <span class="math inline"><em>u⃗</em> ∈ ℝ<sup><em>N</em></sup></span>, and two sets of vectors <span class="math inline"><em>V</em></span> and <span class="math inline"><em>W</em></span>, then given <span class="math inline"><em>M</em></span> representative samples from <span class="math inline"><em>V</em></span>: <span class="math inline"><em>v⃗</em><sub><em>j</em></sub> ∈ <em>V</em></span> and <span class="math inline"><em>w⃗</em><sub><em>k</em></sub> ∈ <em>W</em></span>, figure out which set <span class="math inline"><em>u⃗</em></span> should go in to, by comparing the distances to these vectors.</p>
@@ -67,13 +67,13 @@
 <p>In pictures it looks like so:</p>
 <div style="text-align: center">
 <figure>
-<img src="../images/supervised-clustering.png" alt="Figure 1. An example of the supervised clustering problem with \vec{u} \in \mathbb{R}^2 and M=3. We’ve drawn 3 points from V, the (unknown) dashed purple region, and 3 points from W, the dashed pink region." /><figcaption>Figure 1. An example of the supervised clustering problem with <span class="math inline"><em>u⃗</em> ∈ ℝ<sup>2</sup></span> and <span class="math inline"><em>M</em> = 3</span>. We’ve drawn 3 points from <span class="math inline"><em>V</em></span>, the (unknown) dashed purple region, and 3 points from <span class="math inline"><em>W</em></span>, the dashed pink region.</figcaption>
+<img src="../images/supervised-clustering.png" alt /><figcaption>Figure 1. An example of the supervised clustering problem with <span class="math inline"><em>u⃗</em> ∈ ℝ<sup>2</sup></span> and <span class="math inline"><em>M</em> = 3</span>. We’ve drawn 3 points from <span class="math inline"><em>V</em></span>, the (unknown) dashed purple region, and 3 points from <span class="math inline"><em>W</em></span>, the dashed pink region.</figcaption>
 </figure>
 </div>
 <p>Classically, if we think about where we’d like to put <span class="math inline"><em>u⃗</em></span>, we could compare the distance to all the points <span class="math inline">$\vec{v_1}, \vec{v_2}, \vec{v_3}$</span> and to all the points <span class="math inline">$\vec{w_1}, \vec{w_2},\vec{w_3}$</span>. In the specific example I’ve drawn, doing so will show that, out of the two sets, <span class="math inline"><em>u⃗</em></span> belongs in <span class="math inline"><em>V</em></span>.</p>
 <p>In general, we can see that, using this approach, we would need to look at all <span class="math inline"><em>M</em></span> data points, and we’d need to compare each dimension of the <span class="math inline"><em>N</em></span> dimensions of each vector <span class="math inline">$\vec{v_j}, \vec{w_k}, \vec{u}$</span>; i.e. we’d need to look at at least <span class="math inline"><em>M</em> × <em>N</em></span> pieces of information. In other words, we’d compute the distance</p>
 <p></p>
-<p>By looking at the problem slightly more formally, we find that classically the best known algorithm takes “something like”<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> <span class="math inline"><code>pol</code><em>y</em>(<em>M</em> × <em>N</em>)</span> steps, where “<span class="math inline"><code>poly</code></span>” means that the true running time is a polynomial of <span class="math inline"><em>M</em> × <em>N</em></span>.</p>
+<p>By looking at the problem slightly more formally, we find that classically the best known algorithm takes “something like”<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> <span class="math inline"><code>pol</code><em>y</em>(<em>M</em> × <em>N</em>)</span> steps, where “<span class="math inline"><code>poly</code></span>” means that the true running time is a polynomial of <span class="math inline"><em>M</em> × <em>N</em></span>.</p>
 <p>Quantumly, the paper demonstrates an algorithm that lets us solve this problem in “something like” <span class="math inline">log (<em>M</em> × <em>N</em>)</span> time steps. This is a significant improvement, in a practical sense. To get an idea, if we took <span class="math inline">100</span> samples from a <span class="math inline"><em>N</em> = 350</span>-dimensional space, then <span class="math inline"><em>M</em> × <em>N</em> = 35, 000</span> and <span class="math inline">log (<em>M</em> × <em>N</em>) ≈ 10</span>.</p>
 <p>The quantum algorithm works by constructing a state in a certain state so that, when measured, the distance that we wanted, <span class="math inline"><em>d</em>(<em>u⃗</em>, <em>V</em>)</span>, is the probability that we achieve a certain measurement outcome. In this way, we can build this certain state, and measure it, several times, and use this information to approximate the required distances. And, the paper shows that this whole process can be done in “something like” a running time of <span class="math inline">log (<em>M</em> × <em>N</em>)</span>.</p>
 <p>There’s more contirbutions in the paper than just this; so it’s worth a look if you’re interested.</p>
@@ -81,7 +81,7 @@
 <p>So this paper is pretty cool. We can get a feel for what it’s doing by first considering the following network:</p>
 <div style="text-align: center">
 <figure>
-<img src="../images/basic-nn.png" alt="Figure 2. A simple classical neural network" /><figcaption>Figure 2. A simple classical neural network</figcaption>
+<img src="../images/basic-nn.png" alt /><figcaption>Figure 2. A simple classical neural network</figcaption>
 </figure>
 </div>
 <p>This network has two inputs, <span class="math inline"><em>x</em><sub>1</sub>, <em>x</em><sub>2</sub></span>, three learnable weights, <span class="math inline"><em>w</em><sub>1</sub>, <em>w</em><sub>2</sub>, <em>w</em><sub>3</sub></span>, one output value <span class="math inline"><em>y</em></span>, and an activation function <span class="math inline"><em>f</em></span>.</p>
@@ -96,7 +96,7 @@
 <p>The way this paper solves these problems is to transition Figure 2 from a classical non-reversible network to a reversible quantum one:</p>
 <div style="text-align: center">
 <figure>
-<img src="../images/transition-to-quantum-nn.png" alt="Figure 3. The transition from classical, to reversible classical, to quantum." /><figcaption>Figure 3. The transition from classical, to reversible classical, to quantum.</figcaption>
+<img src="../images/transition-to-quantum-nn.png" alt /><figcaption>Figure 3. The transition from classical, to reversible classical, to quantum.</figcaption>
 </figure>
 </div>
 <p>The final network takes in an arbitrary quantum state of two qubits, <span class="math inline"><em>x</em><sub>1</sub>, <em>x</em><sub>2</sub></span>, and then adjoins an ancilla state <span class="math inline">|0⟩</span>, applies some unitary operation <span class="math inline"><em>U</em></span>, and emits a combined final state <span class="math inline">|<em>ψ</em>⟩<sub><em>x</em><sub>1</sub>, <em>x</em><sub>2</sub>, <em>y</em></sub><sup>Out</sup></span> where the final qubit <span class="math inline"><em>y</em></span> contains the result we’re interested in.</p>
@@ -118,7 +118,7 @@
 <p>So one direction to take this paper would be to build a “fully quantum” neural network like so:</p>
 <div style="text-align: center">
 <figure>
-<img src="../images/fully-quantum-nn.png" alt="Figure 5. Fully-quantum neural network. The inputs and the weights are quantum states; and the activation function U is unitary." /><figcaption>Figure 5. Fully-quantum neural network. The inputs and the weights are quantum states; and the activation function <span class="math inline"><em>U</em></span> is unitary.</figcaption>
+<img src="../images/fully-quantum-nn.png" alt /><figcaption>Figure 5. Fully-quantum neural network. The inputs and the weights are quantum states; and the activation function <span class="math inline"><em>U</em></span> is unitary.</figcaption>
 </figure>
 </div>
 <p>where we make the weights quantum states, <s>and the weights are multiplied onto the inputs as a dot-product</s>. This would require that the weight state is the same size as the input state; but that should be possible because we’re the ones building the network structure.</p>
@@ -147,11 +147,11 @@
 <li><a href="https://scirate.com/arxiv/1606.02318">1606.02318 - Solving the Quantum Many-Body Problem with Artificial Neural Networks</a></li>
 <li>even more: <a href="https://scirate.com/search?utf8=%E2%9C%93&amp;q=quantum+machine+learning">SciRate - quantum machine learning</a>!</li>
 </ul>
-<section class="footnotes">
+<section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1"><p>Here <em>efficient</em> means that the problem is in the complexity class caled <span class="math inline"><strong>P</strong></span>. Problems that are efficient for quantum computers are in the complexity class <span class="math inline"><strong>BQP</strong></span>. One of the main outstanding questions in the field is “Are quantum computers more powerful than classical ones?” and this can be phrased as comparing the class <span class="math inline"><strong>P</strong></span> and <span class="math inline"><strong>BQP</strong></span>.<a href="#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p><em>“Something like” x</em> here is a very informal term for the more formal statement that the running time is <span class="math inline"><em>O</em>(<em>x</em>)</span>. See <a href="https://en.wikipedia.org/wiki/Big_O_notation">Big O Notation</a> for more.<a href="#fnref2" class="footnote-back">↩</a></p></li>
+<li id="fn1" role="doc-endnote"><p>Here <em>efficient</em> means that the problem is in the complexity class caled <span class="math inline"><strong>P</strong></span>. Problems that are efficient for quantum computers are in the complexity class <span class="math inline"><strong>BQP</strong></span>. One of the main outstanding questions in the field is “Are quantum computers more powerful than classical ones?” and this can be phrased as comparing the class <span class="math inline"><strong>P</strong></span> and <span class="math inline"><strong>BQP</strong></span>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p><em>“Something like” x</em> here is a very informal term for the more formal statement that the running time is <span class="math inline"><em>O</em>(<em>x</em>)</span>. See <a href="https://en.wikipedia.org/wiki/Big_O_notation">Big O Notation</a> for more.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 

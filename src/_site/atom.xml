@@ -8,8 +8,25 @@
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
     </author>
-    <updated>2021-02-14T00:00:00Z</updated>
+    <updated>2021-05-05T00:00:00Z</updated>
     <entry>
+    <title>Fun with linear types and quantum computing in Haskell</title>
+    <link href="https://silky.github.io/posts/fun-with-linear-types-and-quantum-computing-in-haskell.html" />
+    <id>https://silky.github.io/posts/fun-with-linear-types-and-quantum-computing-in-haskell.html</id>
+    <published>2021-05-05T00:00:00Z</published>
+    <updated>2021-05-05T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on May  5, 2021
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>When the <a href="https://www.tweag.io/blog/2020-06-19-linear-types-merged/">Linear Haskell</a> extension was announced, I got excited and started playing around with <a href="https://www.tweag.io/blog/2021-02-10-linear-base/">linear-base</a>.</p>
+<p>I was particularly excited to see if one could build the most simple</p>
+]]></summary>
+</entry>
+<entry>
     <title>2020 Books</title>
     <link href="https://silky.github.io/posts/2020-books.html" />
     <id>https://silky.github.io/posts/2020-books.html</id>
@@ -566,7 +583,7 @@ div.alt { background: #eaeaea; }
 <a href='https://github.com/silky/ideas/issues/436'>graph+weights to neuronal net rendering</a>: https://github.com/BlueBrain/NeuroMorphoVis
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/435'>Arbitrary-Task Programming</a>: given that programming is just arranging symbols, <em>and</em> we can use deep learning to interpret the real world into symbols, <em>then</em> it’s possible to do programming by performing arbitrary tasks i.e. <em>any</em> job can be programming, if we can build the deep-learning system that converts actions in that job into symbols in a programming language
+<a href='https://github.com/silky/ideas/issues/435'>Arbitrary-Task Programming</a>: given that programming is just arranging symbols, <em>and</em> we can use deep learning to interpret the real world into symbols, <em>then</em> it’s possible to do programming by performing arbitrary tasks i.e. <em>any</em> job can be programming, if we can build the deep-learning system that converts actions in that job into symbols in a programming language
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/434'>Sitcom-Lang</a>: it’s a pre-processor, or something, for an arbtrariy language whenever a symbol is defined, that symbol is embued with a soul and a “nature”. it starts to have wants and needs; and those must be satisfied in order for it to stay in it’s present form (i.e. as a “for loop”), otherwise it might change (i.e. to be a “while” loop, or maybe even a string instead). all the symbols will interact with each other, and in that way a program will be made <span class="citation" data-cites="sordina">@sordina</span>
@@ -779,7 +796,7 @@ div.alt { background: #eaeaea; }
 <a href='https://github.com/silky/ideas/issues/365'>Collaborative Password Manager</a>: say i want to make a password for a system you will control, but we both need access to maybe i can have my program generate part of it; you’re program generate part, then combine them both on our independent computers, without the entire password leaving either of them could build this on top of the public keys on github somehow; so i just pick the github user i’m going to share a password with could clearly do this immediately by encrypting it with their public key, or something. but maybe something richer can be done
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/364'>Video Issues</a>: <a href="https://vimeo.com/265518095" class="uri">https://vimeo.com/265518095</a>
+<a href='https://github.com/silky/ideas/issues/364'>Video Issues</a>: <a href="https://vimeo.com/265518095">https://vimeo.com/265518095</a>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/363'>Faux Project Management Generator Thing</a>: it’s an RNN that generates hundreds of tickets in trello or jira or whatever; with arbitrary due dates makes you feel stressed <span class="citation" data-cites="sordina">@sordina</span> could be used for project-management training scenarios
@@ -1325,25 +1342,6 @@ div.alt { background: #eaeaea; }
 ]]></summary>
 </entry>
 <entry>
-    <title>The Quantum Computing Slack Channel</title>
-    <link href="https://silky.github.io/posts/2018-12-13-quantum-computing-slack-channel.html" />
-    <id>https://silky.github.io/posts/2018-12-13-quantum-computing-slack-channel.html</id>
-    <published>2018-12-13T00:00:00Z</published>
-    <updated>2018-12-13T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div class="info">
-    Posted on December 13, 2018
-    
-        by Noon van der Silk
-    
-</div>
-
-<p>Just a quick note to introduce the quantum computing slack channel: <a href="http://quantum-computing.slack.com">Quantum Computing on Slack</a>.</p>
-<p>You can join by requesting an invite at this link: <a href="https://quantum-computing.herokuapp.com">Quantum Computing Slack Invite</a>.</p>
-<p>Hope to see you there!</p>
-<p>We’ll follow the <a href="https://scirate.com/conduct">Code of Conduct</a> from <a href="https://scirate.com/">SciRate</a>.</p>
-]]></summary>
-</entry>
-<entry>
     <title>Reliable training hack on the Google Colaboratory</title>
     <link href="https://silky.github.io/posts/2018-11-19-reliable-training-hack-on-google-colaboratory.html" />
     <id>https://silky.github.io/posts/2018-11-19-reliable-training-hack-on-google-colaboratory.html</id>
@@ -1378,72 +1376,72 @@ div.alt { background: #eaeaea; }
 <p>As I’m using the <code>sketch_rnn</code> model, I first simply install <code>magenta</code> (and I have to pick a Python 2 environment.)</p>
 <pre><code>!pip install magenta</code></pre>
 <p>Now, there’s some considerations. Recalling that I’m going to be pushing my checkpoints to Google Drive, I need to authenticate with Google Drive. This is how that looks:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="im">from</span> google.colab <span class="im">import</span> auth</a>
-<a class="sourceLine" id="cb3-2" title="2">auth.authenticate_user()</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"></a><span class="im">from</span> google.colab <span class="im">import</span> auth</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true"></a>auth.authenticate_user()</span></code></pre></div>
 <p>Then you’ll be prompted to copy in a code. Once that’s done, you can connect to Google Drive like so:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="im">from</span> googleapiclient.discovery <span class="im">import</span> build</a>
-<a class="sourceLine" id="cb4-2" title="2">drive_service <span class="op">=</span> build(<span class="st">&#39;drive&#39;</span>, <span class="st">&#39;v3&#39;</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"></a><span class="im">from</span> googleapiclient.discovery <span class="im">import</span> build</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true"></a>drive_service <span class="op">=</span> build(<span class="st">&#39;drive&#39;</span>, <span class="st">&#39;v3&#39;</span>)</span></code></pre></div>
 <p>Now, if I’m training from scratch, I’ll run something like this:</p>
 <pre><code>!sketch_rnn_train --log_root=logs --data_dir=./ --hparams=&quot;data_set=[eye.npz],num_steps=501&quot;</code></pre>
 <p>This will run for however long, and utlimately produce checkpoints in the <code>./logs</code> folder, supposing that <code>eye.npz</code> exists in the present directory.</p>
 <p>Once that’s completed, I start my main training-pushing loop. Firstly, there’s a bit of busywork to zip files, get the latest checkpoint number, and upload it to Google Drive:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="im">import</span> os</a>
-<a class="sourceLine" id="cb6-2" title="2"><span class="im">import</span> zipfile</a>
-<a class="sourceLine" id="cb6-3" title="3"><span class="im">from</span> googleapiclient.http <span class="im">import</span> MediaFileUpload</a>
-<a class="sourceLine" id="cb6-4" title="4"></a>
-<a class="sourceLine" id="cb6-5" title="5"><span class="kw">def</span> get_largest_num (<span class="bu">dir</span><span class="op">=</span><span class="st">&quot;logs&quot;</span>, prefix<span class="op">=</span><span class="st">&quot;vector&quot;</span>):</a>
-<a class="sourceLine" id="cb6-6" title="6">  </a>
-<a class="sourceLine" id="cb6-7" title="7">  files <span class="op">=</span> os.listdir(<span class="bu">dir</span>)</a>
-<a class="sourceLine" id="cb6-8" title="8">  </a>
-<a class="sourceLine" id="cb6-9" title="9">  biggest <span class="op">=</span> <span class="dv">0</span></a>
-<a class="sourceLine" id="cb6-10" title="10">  </a>
-<a class="sourceLine" id="cb6-11" title="11">  <span class="cf">for</span> f <span class="kw">in</span> files:</a>
-<a class="sourceLine" id="cb6-12" title="12">    <span class="cf">if</span> f.startswith(prefix):</a>
-<a class="sourceLine" id="cb6-13" title="13">      k <span class="op">=</span> <span class="bu">int</span>( f.split(<span class="st">&quot;.&quot;</span>)[<span class="dv">0</span>].split(<span class="st">&quot;-&quot;</span>)[<span class="dv">1</span>] ) </a>
-<a class="sourceLine" id="cb6-14" title="14">      <span class="cf">if</span> k <span class="op">&gt;</span> biggest:</a>
-<a class="sourceLine" id="cb6-15" title="15">        biggest <span class="op">=</span> k</a>
-<a class="sourceLine" id="cb6-16" title="16">  </a>
-<a class="sourceLine" id="cb6-17" title="17">  <span class="cf">return</span> biggest</a>
-<a class="sourceLine" id="cb6-18" title="18"></a>
-<a class="sourceLine" id="cb6-19" title="19"></a>
-<a class="sourceLine" id="cb6-20" title="20"><span class="kw">def</span> zip_model (name, k):</a>
-<a class="sourceLine" id="cb6-21" title="21">  sk     <span class="op">=</span> <span class="bu">str</span>(k)</a>
-<a class="sourceLine" id="cb6-22" title="22">  zipobj <span class="op">=</span> zipfile.ZipFile(name <span class="op">+</span> <span class="st">&quot;.zip&quot;</span>, <span class="st">&quot;w&quot;</span>, zipfile.ZIP_DEFLATED)</a>
-<a class="sourceLine" id="cb6-23" title="23"></a>
-<a class="sourceLine" id="cb6-24" title="24">  files <span class="op">=</span> [ <span class="st">&quot;checkpoint&quot;</span></a>
-<a class="sourceLine" id="cb6-25" title="25">          , <span class="st">&quot;model_config.json&quot;</span></a>
-<a class="sourceLine" id="cb6-26" title="26">          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.meta&quot;</span></a>
-<a class="sourceLine" id="cb6-27" title="27">          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.index&quot;</span></a>
-<a class="sourceLine" id="cb6-28" title="28">          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.data-00000-of-00001&quot;</span>]</a>
-<a class="sourceLine" id="cb6-29" title="29">  </a>
-<a class="sourceLine" id="cb6-30" title="30">  <span class="cf">for</span> f <span class="kw">in</span> files:</a>
-<a class="sourceLine" id="cb6-31" title="31">    zipobj.write(<span class="st">&quot;logs/&quot;</span> <span class="op">+</span> f, f)</a>
-<a class="sourceLine" id="cb6-32" title="32"></a>
-<a class="sourceLine" id="cb6-33" title="33"></a>
-<a class="sourceLine" id="cb6-34" title="34"></a>
-<a class="sourceLine" id="cb6-35" title="35"><span class="kw">def</span> upload_to_drive (name<span class="op">=</span><span class="st">&quot;model.zip&quot;</span>):</a>
-<a class="sourceLine" id="cb6-36" title="36">  file_metadata <span class="op">=</span> {</a>
-<a class="sourceLine" id="cb6-37" title="37">    <span class="st">&quot;name&quot;</span>:     name,</a>
-<a class="sourceLine" id="cb6-38" title="38">    <span class="st">&quot;mimeType&quot;</span>: <span class="st">&quot;binary/octet-stream&quot;</span> }</a>
-<a class="sourceLine" id="cb6-39" title="39"></a>
-<a class="sourceLine" id="cb6-40" title="40">  media <span class="op">=</span> MediaFileUpload(name, </a>
-<a class="sourceLine" id="cb6-41" title="41">                          mimetype<span class="op">=</span><span class="st">&quot;binary/octet-stream&quot;</span>,</a>
-<a class="sourceLine" id="cb6-42" title="42">                          resumable<span class="op">=</span><span class="va">True</span>)</a>
-<a class="sourceLine" id="cb6-43" title="43"></a>
-<a class="sourceLine" id="cb6-44" title="44">  created <span class="op">=</span> drive_service.files().create(body<span class="op">=</span>file_metadata,</a>
-<a class="sourceLine" id="cb6-45" title="45">                                         media_body<span class="op">=</span>media,</a>
-<a class="sourceLine" id="cb6-46" title="46">                                         fields<span class="op">=</span><span class="st">&quot;id&quot;</span>).execute()</a>
-<a class="sourceLine" id="cb6-47" title="47">  file_id <span class="op">=</span> created.get(<span class="st">&quot;id&quot;</span>)</a>
-<a class="sourceLine" id="cb6-48" title="48">  <span class="cf">return</span> file_id</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"></a><span class="im">import</span> os</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true"></a><span class="im">import</span> zipfile</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true"></a><span class="im">from</span> googleapiclient.http <span class="im">import</span> MediaFileUpload</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true"></a><span class="kw">def</span> get_largest_num (<span class="bu">dir</span><span class="op">=</span><span class="st">&quot;logs&quot;</span>, prefix<span class="op">=</span><span class="st">&quot;vector&quot;</span>):</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true"></a>  </span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true"></a>  files <span class="op">=</span> os.listdir(<span class="bu">dir</span>)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true"></a>  </span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true"></a>  biggest <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true"></a>  </span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true"></a>  <span class="cf">for</span> f <span class="kw">in</span> files:</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true"></a>    <span class="cf">if</span> f.startswith(prefix):</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true"></a>      k <span class="op">=</span> <span class="bu">int</span>( f.split(<span class="st">&quot;.&quot;</span>)[<span class="dv">0</span>].split(<span class="st">&quot;-&quot;</span>)[<span class="dv">1</span>] ) </span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true"></a>      <span class="cf">if</span> k <span class="op">&gt;</span> biggest:</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true"></a>        biggest <span class="op">=</span> k</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true"></a>  </span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true"></a>  <span class="cf">return</span> biggest</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true"></a></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true"></a><span class="kw">def</span> zip_model (name, k):</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true"></a>  sk     <span class="op">=</span> <span class="bu">str</span>(k)</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true"></a>  zipobj <span class="op">=</span> zipfile.ZipFile(name <span class="op">+</span> <span class="st">&quot;.zip&quot;</span>, <span class="st">&quot;w&quot;</span>, zipfile.ZIP_DEFLATED)</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true"></a></span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true"></a>  files <span class="op">=</span> [ <span class="st">&quot;checkpoint&quot;</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true"></a>          , <span class="st">&quot;model_config.json&quot;</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true"></a>          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.meta&quot;</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true"></a>          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.index&quot;</span></span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true"></a>          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.data-00000-of-00001&quot;</span>]</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true"></a>  </span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true"></a>  <span class="cf">for</span> f <span class="kw">in</span> files:</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true"></a>    zipobj.write(<span class="st">&quot;logs/&quot;</span> <span class="op">+</span> f, f)</span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true"></a></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true"></a></span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true"></a></span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true"></a><span class="kw">def</span> upload_to_drive (name<span class="op">=</span><span class="st">&quot;model.zip&quot;</span>):</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true"></a>  file_metadata <span class="op">=</span> {</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true"></a>    <span class="st">&quot;name&quot;</span>:     name,</span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true"></a>    <span class="st">&quot;mimeType&quot;</span>: <span class="st">&quot;binary/octet-stream&quot;</span> }</span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true"></a></span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true"></a>  media <span class="op">=</span> MediaFileUpload(name, </span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true"></a>                          mimetype<span class="op">=</span><span class="st">&quot;binary/octet-stream&quot;</span>,</span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true"></a>                          resumable<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true"></a></span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true"></a>  created <span class="op">=</span> drive_service.files().create(body<span class="op">=</span>file_metadata,</span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true"></a>                                         media_body<span class="op">=</span>media,</span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true"></a>                                         fields<span class="op">=</span><span class="st">&quot;id&quot;</span>).execute()</span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true"></a>  file_id <span class="op">=</span> created.get(<span class="st">&quot;id&quot;</span>)</span>
+<span id="cb6-48"><a href="#cb6-48" aria-hidden="true"></a>  <span class="cf">return</span> file_id</span></code></pre></div>
 <p>Then, the main loop:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">iterations <span class="op">=</span> <span class="dv">200</span></a>
-<a class="sourceLine" id="cb7-2" title="2"><span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(iterations):</a>
-<a class="sourceLine" id="cb7-3" title="3">  <span class="bu">print</span>(<span class="st">&quot;Iteration &quot;</span> <span class="op">+</span> <span class="bu">str</span>(k))</a>
-<a class="sourceLine" id="cb7-4" title="4">  cmd <span class="op">=</span> <span class="st">&#39;sketch_rnn_train --log_root=logs --resume_training --data_dir=./ &#39;</span> <span class="op">+</span> <span class="op">\</span></a>
-<a class="sourceLine" id="cb7-5" title="5">        <span class="co">&#39; --hparams=&quot;data_set=[eye.npz],num_steps=1001&quot;&#39;</span></a>
-<a class="sourceLine" id="cb7-6" title="6">  x <span class="op">=</span> os.system(cmd)</a>
-<a class="sourceLine" id="cb7-7" title="7">  zip_model(<span class="st">&quot;model&quot;</span>, get_largest_num())</a>
-<a class="sourceLine" id="cb7-8" title="8">  upload_to_drive()</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true"></a>iterations <span class="op">=</span> <span class="dv">200</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true"></a><span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(iterations):</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true"></a>  <span class="bu">print</span>(<span class="st">&quot;Iteration &quot;</span> <span class="op">+</span> <span class="bu">str</span>(k))</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true"></a>  cmd <span class="op">=</span> <span class="st">&#39;sketch_rnn_train --log_root=logs --resume_training --data_dir=./ &#39;</span> <span class="op">+</span> <span class="op">\</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true"></a>        <span class="co">&#39; --hparams=&quot;data_set=[eye.npz],num_steps=1001&quot;&#39;</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true"></a>  x <span class="op">=</span> os.system(cmd)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true"></a>  zip_model(<span class="st">&quot;model&quot;</span>, get_largest_num())</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true"></a>  upload_to_drive()</span></code></pre></div>
 <p>So, all that does is run the main training command, to reload the model from the latest checkpoint and continue training, then zips and uploads!</p>
 <p>Set the iterations to whatever you wish; chances are your instance will never run for that long anyway; the main point is to push up the checkpoints every-so-often (for me, every 1000 steps of the sketch_rnn model; which takes about 1 hour or so, depending on params.)</p>
 <p><strong>Brining down the most recent Drive checkpoint</strong></p>
@@ -1512,7 +1510,6 @@ flex-direction: column;
 }
 </style>
 <div class="tables">
-<div>
 <h3 id="option-1---all-projects-considered-equally">Option 1 - All projects considered equally</h3>
 <table class="budget">
 <tr>
@@ -1593,8 +1590,6 @@ $2,000,000
 </td>
 </tr>
 </table>
-</div>
-<div>
 <h3 id="option-2---projects-considered-unequally">Option 2 - Projects considered unequally</h3>
 <table class="budget">
 <tr>
@@ -1675,8 +1670,6 @@ $2,500,000
 </td>
 </tr>
 </table>
-</div>
-<div>
 <h3 id="option-3---a-middle-ground">Option 3 - A middle ground</h3>
 <table class="budget">
 <tr>
@@ -1757,7 +1750,6 @@ $2,500,000
 </td>
 </tr>
 </table>
-</div>
 </div>
 <p>The main conclusion is that, for the same amount of money, we can chose to either support lots of small projects, or few total projects.</p>
 <p>One of the main premises of the book, is that good change is made locally, by locals. In this way, schemes 2 and 3 are a <em>significant</em> improvement over Option 1.</p>

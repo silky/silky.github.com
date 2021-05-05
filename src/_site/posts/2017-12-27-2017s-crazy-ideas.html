@@ -47,7 +47,7 @@
     
 </div>
 
-<p>Given that it’s the end of the year, I thought it would be nice to generate<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a> a list of all the <a href="https://github.com/silky/ideas/issues">ideas that we came up with in 2017</a>:</p>
+<p>Given that it’s the end of the year, I thought it would be nice to generate<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> a list of all the <a href="https://github.com/silky/ideas/issues">ideas that we came up with in 2017</a>:</p>
 <h1 id="the-ideas">The Ideas</h1>
 <ol>
 <li>
@@ -589,7 +589,7 @@ makes them keep reading too.
 <a href="https://github.com/silky/ideas/issues/157">a restaurant where you dance at your table and they bring over food</a>: <span class="citation" data-cites="gacafe">@gacafe</span>
 </li>
 <li>
-<a href="https://github.com/silky/ideas/issues/156">math fact finder</a>: machine learning to find math facts - i.e. - what can you tell me a periodic equations?
+<a href="https://github.com/silky/ideas/issues/156">math fact finder</a>: machine learning to find math facts - i.e. - what can you tell me a periodic equations?
 </li>
 <li>
 <a href="https://github.com/silky/ideas/issues/155">random handshake generator</a>
@@ -904,7 +904,7 @@ makes them keep reading too.
 <a href="https://github.com/silky/ideas/issues/52">history books from the future</a>: reading history books is fun but what if it were possible to read history books from the distant future? i guess books like this already exist.
 </li>
 <li>
-<a href="https://github.com/silky/ideas/issues/51">infer-whatever</a>: suppose you have a set of data; say of funding outcomes for research grants. and then you want some way of looking at it; like, “i’d like to see that women get more funding than men”. the program would then look for a way to achieve this by a certain categorisation of funding classes, i.e. “women win more grants with the word ‘toast’ in them than men”. could rule out trivial ones like “women win more grants when the PI’s title is”mrs&quot;&quot;. it’d be fun to see how possible all the cominbations are to achieve. could it just actually list every possible way of making inferences on the data?
+<a href="https://github.com/silky/ideas/issues/51">infer-whatever</a>: suppose you have a set of data; say of funding outcomes for research grants. and then you want some way of looking at it; like, “i’d like to see that women get more funding than men”. the program would then look for a way to achieve this by a certain categorisation of funding classes, i.e. “women win more grants with the word ‘toast’ in them than men”. could rule out trivial ones like “women win more grants when the PI’s title is”mrs"". it’d be fun to see how possible all the cominbations are to achieve. could it just actually list every possible way of making inferences on the data?
 </li>
 <li>
 <a href="https://github.com/silky/ideas/issues/50">browser plugin to save/load current open pages to json</a>: or some other plain text file format, so it can be pasted somewhere.
@@ -1015,7 +1015,7 @@ makes them keep reading too.
 <a href="https://github.com/silky/ideas/issues/15">invalid premise detector</a>: imagine if it were possible to look at natural language statements and determine an incorrect premise, and have it pointed out. currently it’s not feasible least-of-all because it isn’t possible to programmatically review all statements. but suppose it were (whether or not this is a good idea, it’s becoming more feasible), then it would be possible to consider the existence of such a program. it would look at each statement, and decide whether or not it is justified. for example: s1: “it doesn’t hurt to let people know about standard thing when something new comes along” could be analysed as invalid, because perhaps it is bad, if say the standard things are bad, or similar. i.e. the above statement is only valid with certain assumptions. perhaps alternatively this project could be something like ‘assumptions identifier’; and for each statement it is able to work out the assumptions under which it is valid.
 </li>
 <li>
-<a href="https://github.com/silky/ideas/issues/14">programmers keyboard</a>: there are many ideas like this, but i’m not sure which one i like best. a custom key layout? an actual physical keyboard? a supplemental keyboard to the typical one? a modal keyboard? one idea is to add a new row of keys. This new row would feature specific keys for characters such as: ! ? * &lt; &gt; ( ) { } . &quot; : + &amp; | . This list could possible be configured for different languages, as some wouldn’t require those characters, and may want different ones (for example Python, or some form of assembly). But at least it may save us from constantly pressing shift, and it may be interesting to see if it can lead to other possible benefits; i.e. what other buttons could be implemented and considered. It may be interesting to consider a ‘build’ button, or attach some macros to ‘programmable’ buttons. It is already known that <a href="http://www.artlebedev.com/everything/optimus/">programmable keyboards</a> exist, so maybe they are the answer; but they are very expensive. maybe this can all be solved by vim configurations, though (as with many of lifes problems).
+<a href="https://github.com/silky/ideas/issues/14">programmers keyboard</a>: there are many ideas like this, but i’m not sure which one i like best. a custom key layout? an actual physical keyboard? a supplemental keyboard to the typical one? a modal keyboard? one idea is to add a new row of keys. This new row would feature specific keys for characters such as: ! ? * &lt; &gt; ( ) { } . " : + &amp; | . This list could possible be configured for different languages, as some wouldn’t require those characters, and may want different ones (for example Python, or some form of assembly). But at least it may save us from constantly pressing shift, and it may be interesting to see if it can lead to other possible benefits; i.e. what other buttons could be implemented and considered. It may be interesting to consider a ‘build’ button, or attach some macros to ‘programmable’ buttons. It is already known that <a href="http://www.artlebedev.com/everything/optimus/">programmable keyboards</a> exist, so maybe they are the answer; but they are very expensive. maybe this can all be solved by vim configurations, though (as with many of lifes problems).
 </li>
 <li>
 <a href="https://github.com/silky/ideas/issues/13">creative idea generator</a>: it should be possible to have a program that generates creative ideas on a given topic. as a first pass it should be able to generate other ‘random-combination’ based ideas that i’ve thought of; much like the ‘lift reading/writing’ above.
@@ -1057,10 +1057,10 @@ makes them keep reading too.
 <a href="https://github.com/silky/ideas/issues/1">open art/programming cafe space?</a>: art gallery-themed, but a cafe where you can sit and mingle amongst the art, and maybe incorporate the programming space idea? https://github.com/hahayes/hahayes-projects/issues/9
 </li>
 </ol>
-<section class="footnotes">
+<section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1"><p>It was a ‘simple’ matter of <code>jq '[.[] | select (.created_at &gt;=&quot;2016-01-01&quot;)]' all.json&gt;this-year.json</code> where I got <code>all.json</code> by combing the pages.json <code>curl  &quot;https://api.github.com/repos/silky/ideas/issues?state=all&amp;per_page=100&amp;page=1&quot; p1.json</code> with <code>jq -s '[.[][]]' p*.json &gt; all.json</code> (jq is just <em>so</em> easy! …)<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn1" role="doc-endnote"><p>It was a ‘simple’ matter of <code>jq '[.[] | select (.created_at &gt;="2016-01-01")]' all.json&gt;this-year.json</code> where I got <code>all.json</code> by combing the pages.json <code>curl  "https://api.github.com/repos/silky/ideas/issues?state=all&amp;per_page=100&amp;page=1" p1.json</code> with <code>jq -s '[.[][]]' p*.json &gt; all.json</code> (jq is just <em>so</em> easy! …)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 

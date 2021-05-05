@@ -9,26 +9,89 @@ packages:
     version: 0.1.0.0
     git: https://github.com/silky/hakyll-diagrams.git
     pantry-tree:
-      size: 415
-      sha256: 0c74444b25882746bb86ea5c761de8af9d1020a0725b0a89ad88dcbfedcb08f7
-    commit: 72936d978f08e638d1d845fc113401095db12bad
+      size: 472
+      sha256: 418aa8bfef0e60675af3d494c0b8a4e32ed9641c77b49157d4c3350b5405eafa
+    commit: 092a8f44b60172502e0f5f1a6261151e16ebafcf
   original:
     git: https://github.com/silky/hakyll-diagrams.git
-    commit: 72936d978f08e638d1d845fc113401095db12bad
+    commit: 092a8f44b60172502e0f5f1a6261151e16ebafcf
 - completed:
     name: diagrams-pandoc
     version: 0.4.0.0
     git: https://github.com/silky/diagrams-pandoc.git
     pantry-tree:
-      size: 796
-      sha256: f085994af231ac01fd7f8b077775ffcb9049b8c226909885ee298ba20a6af809
-    commit: 8bbf3811f9353e119df64f739ccfa5a1e7edfb2a
+      size: 853
+      sha256: 03c9abfeb88ff9622a3f7a3cdfb905a7de11b6f1d29e26899242beafeb312187
+    commit: 3280dc85aea69d6ae1fe92bf3b162b5b9fe61f9a
   original:
     git: https://github.com/silky/diagrams-pandoc.git
-    commit: 8bbf3811f9353e119df64f739ccfa5a1e7edfb2a
+    commit: 3280dc85aea69d6ae1fe92bf3b162b5b9fe61f9a
+- completed:
+    hackage: diagrams-builder-0.8.0.5@sha256:ec0fa6c110fe26a64d161bbecd78dfe22edab0d477ed842eb8fda57f262f18d4,7663
+    pantry-tree:
+      size: 993
+      sha256: 47bc009e1250e69f60d67c7604219aff98e8939d541d40ee3362790afc6ec1db
+  original:
+    hackage: diagrams-builder-0.8.0.5@sha256:ec0fa6c110fe26a64d161bbecd78dfe22edab0d477ed842eb8fda57f262f18d4,7663
+- completed:
+    hackage: diagrams-cairo-1.4.1.1@sha256:24dd541b2c98f5a5785a68ea136bf154a4ffca571e0638660dd1ced45e4a84cb,3811
+    pantry-tree:
+      size: 721
+      sha256: 1b133e90dde15763d3c7c4c8fc0d896d314693ad36b8fe6db4281c223e5b1666
+  original:
+    hackage: diagrams-cairo-1.4.1.1@sha256:24dd541b2c98f5a5785a68ea136bf154a4ffca571e0638660dd1ced45e4a84cb,3811
+- completed:
+    hackage: palette-0.3.0.2@sha256:583ab3b018a26ae8788c6a13007d72edeb9231315da8728b9bb4ff5f4236a374,1522
+    pantry-tree:
+      size: 6342
+      sha256: fd476440e94fc797e7dfe033c88c8925c23aaf8ea40cdccbfff9c132760cdc64
+  original:
+    hackage: palette-0.3.0.2@sha256:583ab3b018a26ae8788c6a13007d72edeb9231315da8728b9bb4ff5f4236a374,1522
+- completed:
+    hackage: cairo-0.13.8.1@sha256:1938aaeb5d3504678d995774dfe870f6b66cbd43d336b692fa8779b23b2b67a9,4075
+    pantry-tree:
+      size: 2830
+      sha256: 8f6344da4c578a4dd3a49c333e2158b695bfae32a74d34a76bbc6e531b70c95c
+  original:
+    hackage: cairo-0.13.8.1@sha256:1938aaeb5d3504678d995774dfe870f6b66cbd43d336b692fa8779b23b2b67a9,4075
+- completed:
+    hackage: haskell-src-exts-1.22.0@sha256:f558923a9c8f57402c33a8cc871b934027a5c65414404c87239f6cbd7357d54e,4541
+    pantry-tree:
+      size: 96940
+      sha256: 597b6f48bd409a4d0da013c4e356945c42e0d098966035d3aa68cd4a3ccd66c9
+  original:
+    hackage: haskell-src-exts-1.22.0@sha256:f558923a9c8f57402c33a8cc871b934027a5c65414404c87239f6cbd7357d54e,4541
+- completed:
+    hackage: haskell-src-exts-simple-1.22.0.0@sha256:f4f8cd392c73693d9c0ccf6dbab9469348427a3a649123357a4fa4711d127bfa,1519
+    pantry-tree:
+      size: 841
+      sha256: 3aa5bcfbdc680587a7796f1b1d661bbed3b0905bb19e50bca0ac85fdbe3cff1b
+  original:
+    hackage: haskell-src-exts-simple-1.22.0.0@sha256:f4f8cd392c73693d9c0ccf6dbab9469348427a3a649123357a4fa4711d127bfa,1519
+- completed:
+    hackage: pango-0.13.8.1@sha256:877b121c0bf87c96d3619effae6751ecfd74b7f7f3227cf3fde012597aed5ed9,3917
+    pantry-tree:
+      size: 1506
+      sha256: eec456a3d16f1a9305196a86a7c49a6f2cfe1b041a50b02059dc4898a07a3bd9
+  original:
+    hackage: pango-0.13.8.1@sha256:877b121c0bf87c96d3619effae6751ecfd74b7f7f3227cf3fde012597aed5ed9,3917
+- completed:
+    hackage: glib-0.13.8.1@sha256:42670daf0c85309281e08ba8559df75daa2e3be642e79fdfa781bef5e59658b0,3156
+    pantry-tree:
+      size: 1625
+      sha256: 1167575db8823b7a9f5fbaebdbc0ea5cef54301e442754ec256ba9371bd388e7
+  original:
+    hackage: glib-0.13.8.1@sha256:42670daf0c85309281e08ba8559df75daa2e3be642e79fdfa781bef5e59658b0,3156
+- completed:
+    hackage: gtk2hs-buildtools-0.13.8.0@sha256:132f38155fc677430a47ea750918973161c876fb6f281d342ac2f07eb99229ce,5238
+    pantry-tree:
+      size: 3588
+      sha256: 4552e3c0f2ef0f16285c38898d7e2b6aeea67d4e37cd203b0c82f70592096c45
+  original:
+    hackage: gtk2hs-buildtools-0.13.8.0@sha256:132f38155fc677430a47ea750918973161c876fb6f281d342ac2f07eb99229ce,5238
 snapshots:
 - completed:
-    size: 509471
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/12/26.yaml
-    sha256: 95f014df58d0679b1c4a2b7bf2b652b61da8d30de5f571abb0d59015ef678646
-  original: lts-12.26
+    size: 531237
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/16/0.yaml
+    sha256: 210e15b7043e2783115afe16b0d54914b1611cdaa73f3ca3ca7f8e0847ff54e5
+  original: lts-16.0

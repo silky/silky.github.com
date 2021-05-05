@@ -103,55 +103,55 @@ ys  = stitch_together(yss)</code></pre>
 </center>
 <p>It worked! You can also <a href="https://silky.github.io/cppn-3d/javascript/index.html">play with this live</a> if you wish; it does a kind of cool animation, albeit kinda slowly.</p>
 <p>Of course, what I really wanted was to get a feel for how “walkable” or “playable” the resulting map would be. So I found my way to Unity3D, and half-wrote half-googled a tiny script to load in the image as a height map:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode c#"><code class="sourceCode cs"><a class="sourceLine" id="cb2-1" title="1"><span class="kw">using</span> System.<span class="fu">IO</span>;</a>
-<a class="sourceLine" id="cb2-2" title="2"><span class="kw">using</span> UnityEngine;</a>
-<a class="sourceLine" id="cb2-3" title="3"></a>
-<a class="sourceLine" id="cb2-4" title="4"><span class="kw">public</span> <span class="kw">class</span> TerrainHeight : MonoBehaviour {</a>
-<a class="sourceLine" id="cb2-5" title="5">    <span class="kw">public</span> <span class="dt">int</span> height  = <span class="dv">400</span>;</a>
-<a class="sourceLine" id="cb2-6" title="6">    <span class="kw">public</span> <span class="dt">int</span> width   = <span class="dv">400</span>;</a>
-<a class="sourceLine" id="cb2-7" title="7">    <span class="kw">public</span> <span class="dt">int</span> depth   = <span class="dv">200</span>;</a>
-<a class="sourceLine" id="cb2-8" title="8">    <span class="kw">public</span> <span class="dt">string</span> cppnImage = <span class="st">&quot;/home/noon/dev/cppn-3d/python/multi-2.png&quot;</span>;</a>
-<a class="sourceLine" id="cb2-9" title="9"></a>
-<a class="sourceLine" id="cb2-10" title="10"></a>
-<a class="sourceLine" id="cb2-11" title="11">	<span class="dt">void</span> <span class="fu">Start</span> () {</a>
-<a class="sourceLine" id="cb2-12" title="12">        Terrain terrain     = GetComponent&lt;Terrain&gt;();</a>
-<a class="sourceLine" id="cb2-13" title="13">        terrain.<span class="fu">terrainData</span> = <span class="fu">GenerateTerrain</span>(terrain.<span class="fu">terrainData</span>);</a>
-<a class="sourceLine" id="cb2-14" title="14">	}</a>
-<a class="sourceLine" id="cb2-15" title="15">	</a>
-<a class="sourceLine" id="cb2-16" title="16"></a>
-<a class="sourceLine" id="cb2-17" title="17">	TerrainData <span class="fu">GenerateTerrain</span> (TerrainData data) {</a>
-<a class="sourceLine" id="cb2-18" title="18">        data.<span class="fu">size</span> = <span class="kw">new</span> <span class="fu">Vector3</span>(width, depth, height);</a>
-<a class="sourceLine" id="cb2-19" title="19">		data.<span class="fu">SetHeights</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="fu">GenerateHeights</span>());</a>
-<a class="sourceLine" id="cb2-20" title="20">        <span class="kw">return</span> data;</a>
-<a class="sourceLine" id="cb2-21" title="21">	}</a>
-<a class="sourceLine" id="cb2-22" title="22"></a>
-<a class="sourceLine" id="cb2-23" title="23"></a>
-<a class="sourceLine" id="cb2-24" title="24">    <span class="kw">public</span> <span class="kw">static</span> Texture2D <span class="fu">LoadPng</span> (<span class="dt">string</span> filePath) {</a>
-<a class="sourceLine" id="cb2-25" title="25">        <span class="dt">byte</span>[] data       = File.<span class="fu">ReadAllBytes</span>(filePath);</a>
-<a class="sourceLine" id="cb2-26" title="26">        Texture2D texture = <span class="kw">new</span> <span class="fu">Texture2D</span>(<span class="dv">2</span>, <span class="dv">2</span>);</a>
-<a class="sourceLine" id="cb2-27" title="27">        texture.<span class="fu">LoadImage</span>(data);</a>
-<a class="sourceLine" id="cb2-28" title="28">        <span class="kw">return</span> texture;</a>
-<a class="sourceLine" id="cb2-29" title="29">    }</a>
-<a class="sourceLine" id="cb2-30" title="30"></a>
-<a class="sourceLine" id="cb2-31" title="31"></a>
-<a class="sourceLine" id="cb2-32" title="32">    <span class="dt">float</span>[,] <span class="fu">GenerateHeights</span> () {</a>
-<a class="sourceLine" id="cb2-33" title="33">        <span class="dt">float</span>[,] heights = <span class="kw">new</span> <span class="dt">float</span>[width, height];</a>
-<a class="sourceLine" id="cb2-34" title="34">        Texture2D image = <span class="fu">LoadPng</span>(cppnImage);</a>
-<a class="sourceLine" id="cb2-35" title="35">        <span class="kw">for</span> (<span class="dt">int</span> x = <span class="dv">0</span>; x &lt; width; x++) {</a>
-<a class="sourceLine" id="cb2-36" title="36">            <span class="kw">for</span> (<span class="dt">int</span> y = <span class="dv">0</span>; y &lt; height; y++) {</a>
-<a class="sourceLine" id="cb2-37" title="37">                Color colour = image.<span class="fu">GetPixel</span>(x, y);</a>
-<a class="sourceLine" id="cb2-38" title="38"></a>
-<a class="sourceLine" id="cb2-39" title="39">                <span class="dt">float</span> height = colour.<span class="fu">r</span></a>
-<a class="sourceLine" id="cb2-40" title="40">                             + colour.<span class="fu">g</span></a>
-<a class="sourceLine" id="cb2-41" title="41">                             + colour.<span class="fu">b</span>;</a>
-<a class="sourceLine" id="cb2-42" title="42"></a>
-<a class="sourceLine" id="cb2-43" title="43">                heights[x, y] = height / <span class="dv">3</span>;</a>
-<a class="sourceLine" id="cb2-44" title="44">            }</a>
-<a class="sourceLine" id="cb2-45" title="45">        }</a>
-<a class="sourceLine" id="cb2-46" title="46"></a>
-<a class="sourceLine" id="cb2-47" title="47">        <span class="kw">return</span> heights;</a>
-<a class="sourceLine" id="cb2-48" title="48">    }</a>
-<a class="sourceLine" id="cb2-49" title="49">}</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode c#"><code class="sourceCode cs"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="kw">using</span> System.<span class="fu">IO</span>;</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a><span class="kw">using</span> UnityEngine;</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true"></a><span class="kw">public</span> <span class="kw">class</span> TerrainHeight : MonoBehaviour {</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true"></a>    <span class="kw">public</span> <span class="dt">int</span> height  = <span class="dv">400</span>;</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true"></a>    <span class="kw">public</span> <span class="dt">int</span> width   = <span class="dv">400</span>;</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true"></a>    <span class="kw">public</span> <span class="dt">int</span> depth   = <span class="dv">200</span>;</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true"></a>    <span class="kw">public</span> <span class="dt">string</span> cppnImage = <span class="st">&quot;/home/noon/dev/cppn-3d/python/multi-2.png&quot;</span>;</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true"></a></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true"></a>	<span class="dt">void</span> <span class="fu">Start</span> () {</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true"></a>        Terrain terrain     = GetComponent&lt;Terrain&gt;();</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true"></a>        terrain.<span class="fu">terrainData</span> = <span class="fu">GenerateTerrain</span>(terrain.<span class="fu">terrainData</span>);</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true"></a>	}</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true"></a>	</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true"></a>	TerrainData <span class="fu">GenerateTerrain</span> (TerrainData data) {</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true"></a>        data.<span class="fu">size</span> = <span class="kw">new</span> <span class="fu">Vector3</span>(width, depth, height);</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true"></a>		data.<span class="fu">SetHeights</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="fu">GenerateHeights</span>());</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true"></a>        <span class="kw">return</span> data;</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true"></a>	}</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true"></a></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true"></a>    <span class="kw">public</span> <span class="kw">static</span> Texture2D <span class="fu">LoadPng</span> (<span class="dt">string</span> filePath) {</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true"></a>        <span class="dt">byte</span>[] data       = File.<span class="fu">ReadAllBytes</span>(filePath);</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true"></a>        Texture2D texture = <span class="kw">new</span> <span class="fu">Texture2D</span>(<span class="dv">2</span>, <span class="dv">2</span>);</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true"></a>        texture.<span class="fu">LoadImage</span>(data);</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true"></a>        <span class="kw">return</span> texture;</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true"></a>    }</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true"></a></span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true"></a></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true"></a>    <span class="dt">float</span>[,] <span class="fu">GenerateHeights</span> () {</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true"></a>        <span class="dt">float</span>[,] heights = <span class="kw">new</span> <span class="dt">float</span>[width, height];</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true"></a>        Texture2D image = <span class="fu">LoadPng</span>(cppnImage);</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true"></a>        <span class="kw">for</span> (<span class="dt">int</span> x = <span class="dv">0</span>; x &lt; width; x++) {</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true"></a>            <span class="kw">for</span> (<span class="dt">int</span> y = <span class="dv">0</span>; y &lt; height; y++) {</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true"></a>                Color colour = image.<span class="fu">GetPixel</span>(x, y);</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true"></a></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true"></a>                <span class="dt">float</span> height = colour.<span class="fu">r</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true"></a>                             + colour.<span class="fu">g</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true"></a>                             + colour.<span class="fu">b</span>;</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true"></a></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true"></a>                heights[x, y] = height / <span class="dv">3</span>;</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true"></a>            }</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true"></a>        }</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true"></a></span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true"></a>        <span class="kw">return</span> heights;</span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true"></a>    }</span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true"></a>}</span></code></pre></div>
 <p>In Unity3D, you attach this script to a terrain, then when you run it, it will set that piece of terrain to have the given heights you want!</p>
 <center>
 <img src="../images/cppn/viewpoint.png" />

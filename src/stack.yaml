@@ -1,13 +1,21 @@
-resolver: lts-12.26
+resolver: lts-16.0
 packages:
     - .
 
 extra-deps:
-    - git: https://github.com/silky/hakyll-diagrams.git
-      commit: 72936d978f08e638d1d845fc113401095db12bad
-
-    - git: https://github.com/silky/diagrams-pandoc.git
-      commit: 8bbf3811f9353e119df64f739ccfa5a1e7edfb2a
+- git: https://github.com/silky/hakyll-diagrams.git
+  commit: 092a8f44b60172502e0f5f1a6261151e16ebafcf
+- git: https://github.com/silky/diagrams-pandoc.git
+  commit: 3280dc85aea69d6ae1fe92bf3b162b5b9fe61f9a
+- diagrams-builder-0.8.0.5@sha256:ec0fa6c110fe26a64d161bbecd78dfe22edab0d477ed842eb8fda57f262f18d4,7663
+- diagrams-cairo-1.4.1.1@sha256:24dd541b2c98f5a5785a68ea136bf154a4ffca571e0638660dd1ced45e4a84cb,3811
+- palette-0.3.0.2@sha256:583ab3b018a26ae8788c6a13007d72edeb9231315da8728b9bb4ff5f4236a374,1522
+- cairo-0.13.8.1@sha256:1938aaeb5d3504678d995774dfe870f6b66cbd43d336b692fa8779b23b2b67a9,4075
+- haskell-src-exts-1.22.0@sha256:f558923a9c8f57402c33a8cc871b934027a5c65414404c87239f6cbd7357d54e,4541
+- haskell-src-exts-simple-1.22.0.0@sha256:f4f8cd392c73693d9c0ccf6dbab9469348427a3a649123357a4fa4711d127bfa,1519
+- pango-0.13.8.1@sha256:877b121c0bf87c96d3619effae6751ecfd74b7f7f3227cf3fde012597aed5ed9,3917
+- glib-0.13.8.1@sha256:42670daf0c85309281e08ba8559df75daa2e3be642e79fdfa781bef5e59658b0,3156
+- gtk2hs-buildtools-0.13.8.0@sha256:132f38155fc677430a47ea750918973161c876fb6f281d342ac2f07eb99229ce,5238
 
 
 flags: {}
