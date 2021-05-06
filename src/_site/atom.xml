@@ -22,8 +22,11 @@
     
 </div>
 
-<p>When the <a href="https://www.tweag.io/blog/2020-06-19-linear-types-merged/">Linear Haskell</a> extension was announced, I got excited and started playing around with <a href="https://www.tweag.io/blog/2021-02-10-linear-base/">linear-base</a>.</p>
-<p>I was particularly excited to see if one could build the most simple</p>
+<p>When the <a href="https://www.tweag.io/blog/2020-06-19-linear-types-merged/">linear Haskell</a> extension was announced, I got excited and started playing around with <a href="https://www.tweag.io/blog/2021-02-10-linear-base/">linear-base</a>.</p>
+<p>While the linear haskell paper suggests a few ways to use linear types, one of the must fun ideas to me is to use it for expressing quantum algorithms.</p>
+<p>The background is that a theorem, the <a href="https://en.wikipedia.org/wiki/No-cloning_theorem">No-Cloning Theorem</a>, constrains how variables in quantum algorithms can be used.</p>
+<p>The game, then, is can linear types in Haskell help enforce this rule? Turns out, yes! Let’s have a look:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="kw">let</span> a <span class="ot">=</span> <span class="dv">2</span></span></code></pre></div>
 ]]></summary>
 </entry>
 <entry>
