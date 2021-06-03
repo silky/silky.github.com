@@ -66,7 +66,7 @@ worry about it!
 
 I think there's a few ways to think about this:
 
-1. The optimisic view: Amazing that I be lucky enough to have things I intend
+1. The optimisic view: Amazing that I am lucky enough to have things I intend
    to do and look forward to!
 2. The pessimistic view: Sad that I had goals that I was never able to
    achieve!
