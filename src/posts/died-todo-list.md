@@ -29,6 +29,7 @@ schemes I've tried:
 - [Tiddlywiki](https://tiddlywiki.com/)
 - [Mediawiki](https://www.mediawiki.org/wiki/MediaWiki)
 - [Jira](https://en.wikipedia.org/wiki/Jira_(software))
+- [phpBB](https://www.phpbb.com/) and other misc BBS software
 - [Vim](https://www.vim.org/)
 - [Vim quickfix window](https://github.com/romainl/vim-qf)
 - [A terrible custom python script](https://github.com/silky/utils/tree/master/find-todo)
