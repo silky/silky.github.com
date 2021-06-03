@@ -93,7 +93,8 @@ hand, I was inspired at the talk today; so I might give task-warrior another
 go.
 
 But, you didn't come here for that! Maybe you came here for advice? So, here
-it is:
+it is (it's not even my advice! Gala claims it's her idea which is probably
+true):
 
 > If you can, don't even write the thing down; just do it immediately, or,
 > alternatively, convince yourself you don't need to think about it now.
