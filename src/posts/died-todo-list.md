@@ -103,7 +103,7 @@ Maybe it's part of my personality, but this works _surprisingly_ well for me.
 Especially if it's something that I'm working on with someone else; instead of
 delaying my part, I can just try and make as much progress as I can
 immediately, and send it back to the other person! Another way of saying this:
-my todo list is you!
+I can offset storing my todo list to you!
 
 I find this idea to be quite operaitonal; I often find myself using this rule
 to do something sooner rather than later.
