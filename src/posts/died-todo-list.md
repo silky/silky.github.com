@@ -58,7 +58,7 @@ schemes I've tried:
 Right now I'm back to a whiteboard (by luck I happen to have one behind me
 where I work), and 'todo' notes in code + github issues.
 
-But that's irrelevant. Or is it?!
+---
 
 My friend Ruth told me something that perhaps is very obvious but was also
 surprisingly calming to me: You'll die with items on your todo list. So don't
