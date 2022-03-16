@@ -8,8 +8,32 @@
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
     </author>
-    <updated>2021-06-03T00:00:00Z</updated>
+    <updated>2022-03-16T00:00:00Z</updated>
     <entry>
+    <title>You Have Already Accomplished Everything</title>
+    <link href="https://silky.github.io/posts/everything.html" />
+    <id>https://silky.github.io/posts/everything.html</id>
+    <published>2022-03-16T00:00:00Z</published>
+    <updated>2022-03-16T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on March 16, 2022
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>You were born, cried, learned, made friends, and talked to no-one.</p>
+<p>You have survived off the land; launched a startup (the best one), managed thousands of people, and never been able to get a job, no matter what your resume says or how you change your name.</p>
+<p>You have travelled; and you have lived alone, isolated, and cold.</p>
+<p>You have been the best and succeeded all your life.</p>
+<p>You have failed; only, just missed out, and never tried again.</p>
+<p>You made people happy; shown them the best time, given them everything, and hurt them, taken it all for yourself, and killed them.</p>
+<p>You have died after every breath, and before your first.</p>
+<p>You have already accomplished everything.</p>
+<p>What do you want to do next?</p>
+]]></summary>
+</entry>
+<entry>
     <title>☐ He died with a todo list in his hand ...</title>
     <link href="https://silky.github.io/posts/died-todo-list.html" />
     <id>https://silky.github.io/posts/died-todo-list.html</id>
@@ -1513,317 +1537,6 @@ drive.mount(&#39;/content/gdrive&#39;)</code></pre>
 <h3 id="thats-it">That’s it!</h3>
 <p>Hope this helps you do some training!</p>
 <p>You can read more about other ways to access data from Google Colaboratory <a href="https://colab.research.google.com/notebooks/io.ipynb">here</a>.</p>
-]]></summary>
-</entry>
-<entry>
-    <title>A quick note on budgeting ...</title>
-    <link href="https://silky.github.io/posts/2018-11-09-quick-note-on-budgeting.html" />
-    <id>https://silky.github.io/posts/2018-11-09-quick-note-on-budgeting.html</id>
-    <published>2018-11-09T00:00:00Z</published>
-    <updated>2018-11-09T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div class="info">
-    Posted on November  9, 2018
-    
-        by Noon van der Silk
-    
-</div>
-
-<p>In “<a href="https://www.goodreads.com/book/show/616875.The_Oregon_Experiment">The Oregon Experiment</a>”, the authors consider the following budgeting scenario.</p>
-<p>Suppose you’re in the following situation: You have ~$2,500,000 that you’d like to allocate to construction projects in your community.</p>
-<p>There are many ways you can allocate this money to projects of varying sizes. Consider the following options:</p>
-<style type="text/css">
-table.budget {
-margin: 10px;
-background: #eaeaea;
-}
-table.budget th {
-border: 0;
-margin: 0;
-border-bottom: solid 1px gray;
-}
-table.budget td {
-border: 0;
-padding: 5px;
-}
-table.budget td.r {
-text-align: right;
-}
-td.m, th.m { width: 100px; }
-td.r, th.r { width: 150px; }
-table.budget td.m {
-text-align: center;
-}
-table.budget tr.total td {
-border-top: solid 1px gray;
-}
-div.tables {
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
-}
-div.tables div {
-display: flex;
-flex-direction: column;
-}
-</style>
-<div class="tables">
-<div>
-<h3 id="option-1---all-projects-considered-equally">Option 1 - All projects considered equally</h3>
-<table class="budget">
-<tr>
-<th>
-category
-</th>
-<th class="m">
-number of projects
-</th>
-<th class="r">
-rough total cost based on averages
-</th>
-</tr>
-<tr>
-<td>
-A &lt; $1000
-</td>
-<td class="m">
-1
-</td>
-<td class="r">
-$500
-</td>
-</tr>
-<tr>
-<td>
-B $1000-$10,000
-</td>
-<td class="m">
-1
-</td>
-<td class="r">
-$5,000
-</td>
-</tr>
-<tr>
-<td>
-C $10,000-$100,000
-</td>
-<td class="m">
-1
-</td>
-<td class="r">
-$50,000
-</td>
-</tr>
-<tr>
-<td>
-D $100,000-$1,000,000
-</td>
-<td class="m">
-1
-</td>
-<td class="r">
-$500,000
-</td>
-</tr>
-<tr>
-<td>
-E &gt; $1,000,000
-</td>
-<td class="m">
-1
-</td>
-<td class="r">
-$2,000,000
-</td>
-</tr>
-<tr class="total">
-<td>
-<b>totals</b>
-</td>
-<td class="m">
-5
-</td>
-<td class="r">
-~$2,600,000
-</td>
-</tr>
-</table>
-</div>
-<div>
-<h3 id="option-2---projects-considered-unequally">Option 2 - Projects considered unequally</h3>
-<table class="budget">
-<tr>
-<th>
-category
-</th>
-<th class="m">
-number of projects
-</th>
-<th class="r">
-rough total cost based on averages
-</th>
-</tr>
-<tr>
-<td>
-A &lt; $1000
-</td>
-<td class="m">
-1000
-</td>
-<td class="r">
-$500,000
-</td>
-</tr>
-<tr>
-<td>
-B $1000-$10,000
-</td>
-<td class="m">
-100
-</td>
-<td class="r">
-$500,000
-</td>
-</tr>
-<tr>
-<td>
-C $10,000-$100,000
-</td>
-<td class="m">
-10
-</td>
-<td class="r">
-$500,000
-</td>
-</tr>
-<tr>
-<td>
-D $100,000-$1,000,000
-</td>
-<td class="m">
-1
-</td>
-<td class="r">
-$500,000
-</td>
-</tr>
-<tr>
-<td>
-E &gt; $1,000,000
-</td>
-<td class="m">
-⅒ th of a project
-</td>
-<td class="r">
-$500,000
-</td>
-</tr>
-<tr class="total">
-<td>
-<b>totals</b>
-</td>
-<td class="m">
-~1100
-</td>
-<td class="r">
-$2,500,000
-</td>
-</tr>
-</table>
-</div>
-<div>
-<h3 id="option-3---a-middle-ground">Option 3 - A middle ground</h3>
-<table class="budget">
-<tr>
-<th>
-category
-</th>
-<th class="m">
-number of projects
-</th>
-<th class="r">
-rough total cost based on averages
-</th>
-</tr>
-<tr>
-<td>
-A &lt; $1000
-</td>
-<td class="m">
-500
-</td>
-<td class="r">
-$250,000
-</td>
-</tr>
-<tr>
-<td>
-B $1000-$10,000
-</td>
-<td class="m">
-50
-</td>
-<td class="r">
-$250,000
-</td>
-</tr>
-<tr>
-<td>
-C $10,000-$100,000
-</td>
-<td class="m">
-10
-</td>
-<td class="r">
-$500,000
-</td>
-</tr>
-<tr>
-<td>
-D $100,000-$1,000,000
-</td>
-<td class="m">
-1
-</td>
-<td class="r">
-$500,000
-</td>
-</tr>
-<tr>
-<td>
-E &gt; $1,000,000
-</td>
-<td class="m">
-1
-</td>
-<td class="r">
-$1,000,000
-</td>
-</tr>
-<tr class="total">
-<td>
-<b>totals</b>
-</td>
-<td class="m">
-~550
-</td>
-<td class="r">
-$2,500,000
-</td>
-</tr>
-</table>
-</div>
-</div>
-<p>The main conclusion is that, for the same amount of money, we can chose to either support lots of small projects, or few total projects.</p>
-<p>One of the main premises of the book, is that good change is made locally, by locals. In this way, schemes 2 and 3 are a <em>significant</em> improvement over Option 1.</p>
-<p>One of the best initiatives that Victoria is doing along these lines is the “<a href="https://pickmyproject.vic.gov.au/">Pick My Project</a>” program.</p>
-<p>However, I think it’s also interesting to think about this in relation to other areas:</p>
-<ul>
-<li>Health: Should you make one big change? Or many small ones?</li>
-<li>Programming: Should you write one big program? Or many little ones?</li>
-<li>Management: Should you set big goals from the top? Or should you empower the people below you to set their own goals?</li>
-</ul>
 ]]></summary>
 </entry>
 

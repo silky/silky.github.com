@@ -43,23 +43,6 @@ main = hakyll $ do
         route   idRoute
         compile compressCssCompiler
 
-    match "books/*" $ do
-      route $ setExtension "html"
-
-      let ctx = listFieldWith "authors" defaultContext (\i -> do 
-                  let identifier = itemIdentifier i 
-                  metadata <- getMetadata identifier
-                  let metas = maybe [] id $ lookupStringList "authors" metadata
-                  -- let metas = maybe [] (map trim . splitAll "-") $ lookupString "something" metadata
-                  return $ map (\x -> Item (fromFilePath x) x) metas
-                )
-                <> defaultContext
-
-      compile $ pandocMathCompiler
-        >>= loadAndApplyTemplate "templates/book.html" ctx
-        >>= loadAndApplyTemplate "templates/default.html" postCtx
-        >>= relativizeUrls
-          
     match (fromList ["about.rst", "contact.markdown"]) $ do
         route   $ setExtension "html"
         compile $ pandocMathCompiler
@@ -68,7 +51,7 @@ main = hakyll $ do
 
     match "talks/*" $ do
         route $ setExtension "html"
-        compile $ 
+        compile $
                 (pandocCompilerDiagrams "images/diagrams" <|> pandocMathCompiler)
             >>= loadAndApplyTemplate "templates/talk.html"    postCtx
             >>= saveSnapshot "content"
@@ -77,7 +60,7 @@ main = hakyll $ do
 
     match "posts/*" $ do
         route $ setExtension "html"
-        compile $ 
+        compile $
                 (pandocCompilerDiagrams "images/diagrams" <|> pandocMathCompiler)
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= saveSnapshot "content"
