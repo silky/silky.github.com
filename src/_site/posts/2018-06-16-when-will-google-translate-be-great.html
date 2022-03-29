@@ -47,40 +47,87 @@
     
 </div>
 
-<p>I’ve been reading “<a href="https://www.amazon.com/Surfaces-Essences-Analogy-Fuel-Thinking/dp/0465018475/">Surfaces and Essences</a>” by Doug Hofstadter and Emmanuel Sander.</p>
+<p>I’ve been reading “<a href="https://www.amazon.com/Surfaces-Essences-Analogy-Fuel-Thinking/dp/0465018475/">Surfaces and
+Essences</a>” by Doug Hofstadter and Emmanuel Sander.</p>
 <center>
 <a href="https://www.amazon.com/Surfaces-Essences-Analogy-Fuel-Thinking/dp/0465018475/"><img src="../images/surfaces-and-essences.png" /></a>
 </center>
-<p>You can essentially judge this book by it’s cover: It argues that analogies are the key technique we use to think and understand. I quite love this book, in particular because it presents lots of interesting ideas for people interested in the topic, and for people interested in AI and machine learning.</p>
-<p>The reason I enjoy this book so much is because I think it presents a very strong task for machine learning people to tackle; namely to build a system that is capable of this analogical reasoning. One thing that’s true of <strong>all</strong> modern machine learning systems it that their knowlege is very “narrow” and, almost all of the time, the bounds of it are determined entirely before training.</p>
-<p>In any case, we’re focused right now on translation. Doug recently wrote about his thoughts here: <a href="https://www.theatlantic.com/technology/archive/2018/01/the-shallowness-of-google-translate/551570/">The Shallowness of Google Translate</a>.</p>
-<p>I’m not going to go into a lot of detail here; I just want to track the progress of a specific phrase that Doug and Emmanuel hvea in the book. They started tracking it in 2004, and it being 2018 now; 14 years later! I wanted to see how things had progressed.</p>
-<p>Here’s the complex paragraph (in French) and the task is to translate it into English:</p>
+<p>You can essentially judge this book by it’s cover: It argues that analogies
+are the key technique we use to think and understand. I quite love this book,
+in particular because it presents lots of interesting ideas for people
+interested in the topic, and for people interested in AI and machine learning.</p>
+<p>The reason I enjoy this book so much is because I think it presents a very
+strong task for machine learning people to tackle; namely to build a system
+that is capable of this analogical reasoning. One thing that’s true of
+<strong>all</strong> modern machine learning systems it that their knowlege is very
+“narrow” and, almost all of the time, the bounds of it are determined
+entirely before training.</p>
+<p>In any case, we’re focused right now on translation. Doug recently wrote about his thoughts here:
+<a href="https://www.theatlantic.com/technology/archive/2018/01/the-shallowness-of-google-translate/551570/">The Shallowness of Google Translate</a>.</p>
+<p>I’m not going to go into a lot of detail here; I just want to track the
+progress of a specific phrase that Doug and Emmanuel hvea in the book. They
+started tracking it in 2004, and it being 2018 now; 14 years later! I wanted
+to see how things had progressed.</p>
+<p>Here’s the complex paragraph (in French) and the task is to translate it into
+English:</p>
 <p><strong>Original</strong></p>
 <blockquote>
-<p>Parfois, le succès ne fut pas au rendez-vous. On a beau y penser très fort, le bon numéro ne sort pas forcément. Sagan prenait échecs d’auteur dramatique comme les revers casino, avec respect pour les caprices de la banque et du ciel. Il faut bien pedre un peu, pour mieux savourer la gagne du lendemain. Qui ne l’a pas vue « récupérer » en quelques quarts d’heure les pertes de toute une nuit ne peut comprendre comme c’est joyeux de narguer le sort.</p>
+<p>Parfois, le succès ne fut pas au rendez-vous. On a beau y penser très fort,
+le bon numéro ne sort pas forcément. Sagan prenait échecs d’auteur
+dramatique comme les revers casino, avec respect pour les caprices de la
+banque et du ciel. Il faut bien pedre un peu, pour mieux savourer la
+gagne du lendemain. Qui ne l’a pas vue « récupérer » en quelques quarts
+d’heure les pertes de toute une nuit ne peut comprendre comme c’est
+joyeux de narguer le sort.</p>
 </blockquote>
 <p><strong>Human-translation by Doug and Emmanuel</strong></p>
 <blockquote>
-<p>Sometimes things just didn’t work out right; no matter how hard she wished for it, the dice simply wouldn’t come up her way. But Sagan always took her failures as a playwright much as she took her gambling losses, acknowledging the arbitrary whims of the house and of divine fate. After all, everyone has to lose now and then, so that the next day’s victory will taste all the sweeter. And if you never saw her win back a whole night’s losses, often in well under an hour, you just can’t have any idea of the glee she took in laughing in the face of destiny.</p>
+<p>Sometimes things just didn’t work out right; no matter how hard she wished for
+it, the dice simply wouldn’t come up her way. But Sagan always took her
+failures as a playwright much as she took her gambling losses, acknowledging
+the arbitrary whims of the house and of divine fate. After all, everyone has
+to lose now and then, so that the next day’s victory will taste all the
+sweeter. And if you never saw her win back a whole night’s losses, often in
+well under an hour, you just can’t have any idea of the glee she took in
+laughing in the face of destiny.</p>
 </blockquote>
-<p>Then here are the translations over the years (the first two coming from the book itself):</p>
+<p>Then here are the translations over the years (the first two coming from the book
+itself):</p>
 <p><strong>Google Translate, 2004</strong></p>
 <blockquote>
-<p>Sometimes, success was not with go. One thinks of it in vain very extremely, the good number does not leave inevitable. Sagan took the failures of dramatic author like in the reverses of casino, with respect for the whims of the bank and the sky. It is necessary well to lose a little, for better enjoying gains it following day. Who did not see it “recovering” in a few fifteen minutes the losses of a whole night cannot include/understand as they is merry of narguer the fate.</p>
+<p>Sometimes, success was not with go. One thinks of it in vain very extremely,
+the good number does not leave inevitable. Sagan took the failures of dramatic
+author like in the reverses of casino, with respect for the whims of the bank
+and the sky. It is necessary well to lose a little, for better enjoying gains
+it following day. Who did not see it “recovering” in a few fifteen minutes the
+losses of a whole night cannot include/understand as they is merry of narguer
+the fate.</p>
 </blockquote>
 <p><em>Verdict</em>: Terrible.</p>
 <p><strong>Google Translate, 2009</strong></p>
 <blockquote>
-<p>Sometimes, success was not there. It was nice to think very hard, the proper number does not necessarily spell. Sagan took the failures as a dramatist such as backhand casino, with respect to the whims of the Bank and the sky. It must be losig a little, better enjoy the gains overnight. Who did not see “recover” in a few minutes lost a whole night can not understand how happy it is the sort of taunt.</p>
+<p>Sometimes, success was not there. It was nice to think very hard, the proper
+number does not necessarily spell. Sagan took the failures as a dramatist such
+as backhand casino, with respect to the whims of the Bank and the sky. It must
+be losig a little, better enjoy the gains overnight. Who did not see “recover”
+in a few minutes lost a whole night can not understand how happy it is the
+sort of taunt.</p>
 </blockquote>
 <p><em>Verdict</em>: Still terrible.</p>
 <p><strong>Google Translate, 2018</strong></p>
 <blockquote>
-<p>Sometimes the success was not there. We can think about it very well, the good number does not necessarily come out. Sagan took dramatic draftsman’s chess like the casino setbacks, with respect for the whims of the bank and the sky. It is necessary to lose a little, to better savor the gain of tomorrow. Whoever has not seen her “recover” in a few quarters of an hour the losses of a whole night can not understand how happy it is to taunt the spell.</p>
+<p>Sometimes the success was not there. We can think about it very well, the
+good number does not necessarily come out. Sagan took dramatic draftsman’s
+chess like the casino setbacks, with respect for the whims of the bank and
+the sky. It is necessary to lose a little, to better savor the gain of
+tomorrow. Whoever has not seen her “recover” in a few quarters of an hour
+the losses of a whole night can not understand how happy it is to taunt the
+spell.</p>
 </blockquote>
 <p><em>Verdict</em>: <em>Still</em> terrible, 14 years later!</p>
-<p>It’s very interesting to think about how to build systems that could conveivably translate phrases like this “properly”, by using the ideas from the book.</p>
+<p>It’s very interesting to think about how to build systems that could
+conveivably translate phrases like this “properly”, by using the ideas
+from the book.</p>
 
         </div>
         <div id="footer">

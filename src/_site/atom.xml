@@ -8,8 +8,129 @@
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
     </author>
-    <updated>2022-03-16T00:00:00Z</updated>
+    <updated>2022-03-29T00:00:00Z</updated>
     <entry>
+    <title>Stepping down from SciRate maintainership</title>
+    <link href="https://silky.github.io/posts/scirate-maintainership.html" />
+    <id>https://silky.github.io/posts/scirate-maintainership.html</id>
+    <published>2022-03-29T00:00:00Z</published>
+    <updated>2022-03-29T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on March 29, 2022
+    
+        by Noon van der Silk
+    
+</div>
+
+<h4 id="background">Background</h4>
+<p>I can’t remember when I first stumbled across <a href="https://scirate.com/">SciRate</a>.</p>
+<p>I’d had a fascination with scientific papers
+for many years, well before actually attending university (as a mature-age
+student) and starting to learn more formally. I would storing them in a
+variety of ways, print them out and hang them up in my house; send them to
+myself on a mailing list that I created just for that purpose, or a public
+subreddit where I would post the papers I wanted to read, so I wouldn’t forget
+about them. Evidentally, the “bookmarking” feature in the browser wasn’t one I
+found particularly useful.</p>
+<p>Eventually, I discovered <a href="https://www.jabref.org/">JabRef</a>, which I used for
+several years. I stored all the papers that I was interested in (at the time,
+quantum computing), and learned all about bibliography management. I even
+stored all the PDFs, and the metadata from the JabRef system, in git, horribly
+offending bitbuckets storage limits by having a repository ~10gb in size (I
+think it doesn’t clone successfully anymore; it’s been several years since
+I tried.)</p>
+<p>After some time I became tired with JabRef, and built my own (very very
+terrible) reference management program: <a href="https://github.com/silky/super-reference">super-reference</a>.</p>
+<p>Eventually, I discovered <a href="https://scirate.com/">SciRate</a>. I think the version
+I found was called “SciRate 2”. It was in the hands of Bill Rosgen. I got
+incredibly excited and signed up immediately. Because the code was open-source
+(I actually can’t remember, but I think it might’ve been personally hosted git
+repository somewhere), I added possibly one of my first “impactful” changes:
+MathJax support! This was neat; now we could see rendered math while reading
+abstracts and titles! I think <a href="https://arxiv.org/">arXiv.org</a> only added this
+feature a few years ago.</p>
+<p>But, aside from this very minor hacking on the code, I immediately started
+finding SciRate actually useful! I could browse it every day; see which papers
+would pop up, and track papers I was interested in. Fairly quickly, it became
+a very addictive habit for me. I began to learn the time of day that it would
+update, and made sure I would scour the website shortly after to browse the
+“freshest” papers.</p>
+<p>I ended up being completely addicted, and did this for years. I read many
+papers (but not every one that I would “scite”); made several nice
+connections, and even used my personal SciRate data to teach my first deep
+learning workshops. SciRate stuck with my as my interests varied from quantum
+computing, theoretical physics, black holes, philosophy, AI, deep learning, computer vision,
+generative art, category theory, and the stranger maths papers. For a while my
+favourite thing was discovering the “best paper title” of the week.</p>
+<p>The most memorable moment was when, many years later (after the scirate3
+re-write), I met people who “knew” me from SciRate, only because they had
+seen that I would “scite” a lot of papers (in fact, someone told me that they
+didn’t think I was a real person; only a scite-making bot.) To date, <a href="https://scirate.com/noonsilk">I’ve
+amassed more than 1 hundred thousand “scites”</a>.
+And yes, most of this was done by clicking manually; but in the last year or
+two I’ve used a custom program I wrote: <a href="https://github.com/silky/scirate-cli">the
+scirate-cli</a>.</p>
+<p>In any case, by a very strange coincidence, during my Masters program I
+happened to learn that SciRate was undergoing a re-write, amazingly by a
+company based in Melbourne (where I lived); just down the road from my
+university! I happened to have a conversation with the founder of that
+company, <a href="https://bentoner.com/">Ben Toner</a>, relating to my masters project,
+but it was a curious connection.</p>
+<p>That re-write ended up going, in my view, quite well. But I think, at some
+point, it stopped being funded, and fell on the shoulders of
+<a href="https://github.com/mispy-archive">mispy</a>. Mispy funded SciRate for a while,
+out of their own pocket, until I decided to take it over from them.</p>
+<p>That was, now, 5 years ago.</p>
+<p>All I’ve really been doing in the mean time is keeping things afloat.
+Upgrading the various packages as is required; managing the server, and
+the occasional bugfixes.</p>
+<p>The only interesting thing I did, in recent times, was to <a href="https://github.com/scirate/scirate/commit/2e7ecbce9ee6db4d70d88597b61b6b2101968ba9">add a “jobs”
+feature</a>
+to SciRate. This was actually moderately successful, but in the end it was
+more effort for me to maintain that it was worth, so I disabled it.</p>
+<h4 id="current">Current</h4>
+<p>SciRate needs a new maintainer. I’ve decided that, personally, my focus has to
+shift elswhere. You can read about that in the <a href="#addendum">Addendum</a> below.</p>
+<p>Here’s what you’ll need to do:</p>
+<ol type="1">
+<li>Take ownership of the <a href="https://github.com/scirate/scirate">scirate</a>
+repository,</li>
+<li>Update the codebase occasionally, maintain deployments, fix the occasional
+bug,</li>
+<li>Manage the error emails that come in,</li>
+<li>Restart the server when it dies,</li>
+<li>???</li>
+<li><strong>Extend it in interesting ways!</strong></li>
+</ol>
+<p>The last one is actually quite important! SciRate has lacked any real new
+features for a very long time; but there’s certainly some interesting things
+that could be done! Notable among them could be:</p>
+<ul>
+<li><a href="https://github.com/scirate/scirate/issues/366">Support for “reading groups”</a>,</li>
+<li><a href="https://github.com/scirate/scirate/issues/382">A recommendation engine</a>,</li>
+<li>…?</li>
+</ul>
+<p>The world is (somewhat) your oyster. Clearly there are some rules on how we’d
+like SciRate to develop; after all, there is a solid and growing user base,
+who have some expectation on how it will operate.</p>
+<p>In any case, if you’re interested in getting involved, reach out to
+<a href="https://web.mit.edu/aram/www">Aram</a> and myself by sending us an email:</p>
+<ul>
+<li><a href="mailto:noonsilk@gmail.com">noonsilk@gmail.com</a></li>
+<li><a href="mailto:aram@mit.edu">aram@mit.edu</a></li>
+</ul>
+<p>We’d love to hear from you.</p>
+<hr />
+<h4 id="addendum">Addendum <a name="addendum"></a></h4>
+<p>The central reason I’ve decided to stop spending time on SciRate is because of
+the climate emergency. I’ve been reading <a href="https://betweenbooks.com.au/tags/climate.html">a lot of
+books</a> and it’s become
+increasingly important to me to spend my energy learning more and doing more
+(<a href="https://en.wikipedia.org/wiki/Jevons_paradox">or less!</a>) in this space. If
+you’re interested in this too, then please reach out; I’d love to chat!</p>
+]]></summary>
+</entry>
+<entry>
     <title>You Have Already Accomplished Everything</title>
     <link href="https://silky.github.io/posts/everything.html" />
     <id>https://silky.github.io/posts/everything.html</id>
@@ -23,11 +144,14 @@
 </div>
 
 <p>You were born, cried, learned, made friends, and talked to no-one.</p>
-<p>You have survived off the land; launched a startup (the best one), managed thousands of people, and never been able to get a job, no matter what your resume says or how you change your name.</p>
+<p>You have survived off the land; launched a startup (the best one), managed
+thousands of people, and never been able to get a job, no matter what your
+resume says or how you change your name.</p>
 <p>You have travelled; and you have lived alone, isolated, and cold.</p>
 <p>You have been the best and succeeded all your life.</p>
 <p>You have failed; only, just missed out, and never tried again.</p>
-<p>You made people happy; shown them the best time, given them everything, and hurt them, taken it all for yourself, and killed them.</p>
+<p>You made people happy; shown them the best time, given them everything, and
+hurt them, taken it all for yourself, and killed them.</p>
 <p>You have died after every breath, and before your first.</p>
 <p>You have already accomplished everything.</p>
 <p>What do you want to do next?</p>
@@ -47,11 +171,20 @@
 </div>
 
 <center>
-<img width="600" src="/images/todo-list.png"/> <br /> <a href="https://www.imdb.com/title/tt0172543/">A classic Australian movie</a>: A nightmare chase through hell in a never-ending, unrequited daisy chain of desire… .
+<img width="600" src="/images/todo-list.png"/>
+<br />
+<a href="https://www.imdb.com/title/tt0172543/">A classic Australian
+movie</a>:
+A nightmare chase through hell in a never-ending, unrequited daisy chain of
+desire… .
 </center>
-<p>What is time? How do we measure a life? How many things did you get done today? What are you working on tomorrow!? Can you come hang out on Sunday!!?</p>
+<p>What is time? How do we measure a life? How many things did you get done
+today? What are you working on tomorrow!? Can you come hang out on Sunday!!?</p>
 <hr />
-<p>Recently, and also always, I’ve been thinking about how to manage a list of todos. During an internal knowledge-sharing session <a href="https://www.tweag.io/">at work</a> I was prompted to reflect on all the different schemes I’ve tried:</p>
+<p>Recently, and also always, I’ve been thinking about how to manage a list of
+todos. During an internal knowledge-sharing session <a href="https://www.tweag.io/">at
+work</a> I was prompted to reflect on all the different
+schemes I’ve tried:</p>
 <ul>
 <li>Random pieces of paper</li>
 <li><a href="https://en.wikipedia.org/wiki/Microsoft_Notepad">Notepad</a></li>
@@ -85,27 +218,53 @@
 <li>Nothing</li>
 <li>Random pieces of paper</li>
 </ul>
-<p>Right now I’m back to a whiteboard (by luck I happen to have one behind me where I work), and ‘todo’ notes in code + github issues.</p>
+<p>Right now I’m back to a whiteboard (by luck I happen to have one behind me
+where I work), and ‘todo’ notes in code + github issues.</p>
 <hr />
-<p>My friend Ruth told me something that perhaps is very obvious but was also surprisingly calming to me: You’ll die with items on your todo list. So don’t worry about it!</p>
+<p>My friend Ruth told me something that perhaps is very obvious but was also
+surprisingly calming to me: You’ll die with items on your todo list. So don’t
+worry about it!</p>
 <p>I think there’s a few ways to think about this:</p>
 <ol type="1">
-<li>The optimisic view: Amazing that I am lucky enough to have things I intend to do and look forward to!</li>
-<li>The pessimistic view: Sad that I had goals that I was never able to achieve!</li>
+<li>The optimisic view: Amazing that I am lucky enough to have things I intend
+to do and look forward to!</li>
+<li>The pessimistic view: Sad that I had goals that I was never able to
+achieve!</li>
 <li>The Buddhist view: Your big mistake is having desires at all!</li>
 </ol>
-<p>I want to live around option (3) and (1) at the moment, but of course option (2) is a very very strong driving force; and often necessary (for example, at work!); the only time I was brave enough to enact option (3) at a work setting was when <a href="https://braneshop.com.au/posts/Braneshop-A-Living-Business-Part-1.html">I ran my own business</a>!</p>
-<p>Another interesting thing that came up as part of the work discussion was that in some ways what you want to do depends on your mood. No doubt! So … maybe mood can be a parameter?!</p>
+<p>I want to live around option (3) and (1) at the moment, but of course option
+(2) is a very very strong driving force; and often necessary (for example, at
+work!); the only time I was brave enough to enact option (3) at a work
+setting was when <a href="https://braneshop.com.au/posts/Braneshop-A-Living-Business-Part-1.html">I ran my own
+business</a>!</p>
+<p>Another interesting thing that came up as part of the work discussion was that
+in some ways what you want to do depends on your mood. No doubt! So … maybe
+mood can be a parameter?!</p>
 <hr />
-<p>I think, secretly, for the rest of my life, I will believe that there is a True answer out there; an ultimate organisation scheme; the Four-Fold path to Life Efficiency: Right Editing, Right Organisation, Right Workflow and Right History.</p>
-<p>But I also think that I should never think about this again. But on the other hand, I was inspired at the talk today; so I might give task-warrior another go.</p>
-<p>But, you didn’t come here for that! Maybe you came here for advice? So, here it is (it’s not even my advice! Gala claims it’s her idea which is probably true):</p>
+<p>I think, secretly, for the rest of my life, I will believe that there is a True
+answer out there; an ultimate organisation scheme; the Four-Fold path to Life
+Efficiency: Right Editing, Right Organisation, Right Workflow and Right
+History.</p>
+<p>But I also think that I should never think about this again. But on the other
+hand, I was inspired at the talk today; so I might give task-warrior another
+go.</p>
+<p>But, you didn’t come here for that! Maybe you came here for advice? So, here
+it is (it’s not even my advice! Gala claims it’s her idea which is probably
+true):</p>
 <blockquote>
-<p>If you can, don’t even write the thing down; just do it immediately, or, alternatively, convince yourself you don’t need to think about it now.</p>
+<p>If you can, don’t even write the thing down; just do it immediately, or,
+alternatively, convince yourself you don’t need to think about it now.</p>
 </blockquote>
-<p>Maybe it’s part of my personality, but this works <em>surprisingly</em> well for me. Especially if it’s something that I’m working on with someone else; instead of delaying my part, I can just try and make as much progress as I can immediately, and send it back to the other person! Another way of saying this: I can offset storing my todo list to you!</p>
-<p>I find this idea to be quite operaitonal; I often find myself using this rule to do something sooner rather than later.</p>
-<p>Here’s one thing I know about myself: <a href="https://scirate.com/noonsilk">I can’t be trusted with lists</a>. I get a bit obsessed with organising them. So I’m trying to avoid them these days.</p>
+<p>Maybe it’s part of my personality, but this works <em>surprisingly</em> well for me.
+Especially if it’s something that I’m working on with someone else; instead of
+delaying my part, I can just try and make as much progress as I can
+immediately, and send it back to the other person! Another way of saying this:
+I can offset storing my todo list to you!</p>
+<p>I find this idea to be quite operaitonal; I often find myself using this rule
+to do something sooner rather than later.</p>
+<p>Here’s one thing I know about myself: <a href="https://scirate.com/noonsilk">I can’t be trusted with
+lists</a>. I get a
+bit obsessed with organising them. So I’m trying to avoid them these days.</p>
 ]]></summary>
 </entry>
 <entry>
@@ -132,7 +291,10 @@ div.book img { margin-right: 10px; width: 150px; }
 
 div.alt { background: #eaeaea; }
 </style>
-<p>Continuing the tradition <a href="/posts/2019-01-03-2018-books.html">started in 2018</a>, continued in 2019 <a href="https://braneshop.com.au/posts/2019-Books.html">over on the Braneshop blog</a>, I was reminded I haven’t posted the books I read in 2020 yet.</p>
+<p>Continuing the tradition <a href="/posts/2019-01-03-2018-books.html">started in 2018</a>,
+continued in 2019 <a href="https://braneshop.com.au/posts/2019-Books.html">over on the Braneshop
+blog</a>, I was
+reminded I haven’t posted the books I read in 2020 yet.</p>
 <p>So, here we are:</p>
 <div class="book">
 <div class="img">
@@ -140,7 +302,9 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/40855636-how-long-til-black-future-month">How Long ’til Black Future Month?</a></strong> by Jemisin, N.K.</p>
-<p>As a big fan of N.K. Jemisin I just wanted to read more of what she’d written. This is good for that; it’s a really nice dip-in to the worlds she has created and leaves you wanting more!</p>
+<p>As a big fan of N.K. Jemisin I just wanted to read more of what she’d written.
+This is good for that; it’s a really nice dip-in to the worlds she has created
+and leaves you wanting more!</p>
 </div>
 </div>
 <div class="book alt">
@@ -149,7 +313,8 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/40010687-gravity-s-century">Gravity’s Century: From Einstein’s Eclipse to Images of Black Holes</a></strong> by Cowen, Ron</p>
-<p>Pretty good. This was a nice history of black holes and an introduction to some of the pressing issues presently.</p>
+<p>Pretty good. This was a nice history of black holes and an introduction to
+some of the pressing issues presently.</p>
 </div>
 </div>
 <div class="book">
@@ -158,7 +323,10 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/174372.The_Cloudspotter_s_Guide">The Cloudspotter’s Guide</a></strong> by Pretor-Pinney, Gavin</p>
-<p>I picked this up after starting (but not finishing) <a href="https://www.goodreads.com/book/show/8474155-the-wavewatcher-s-companion">The Wavewatcher’s Companion</a>, which I found to be hilarious. This book was not as funny, but was still pretty good. Gavin has a very nice way of appreciating the world.</p>
+<p>I picked this up after starting (but not finishing) <a href="https://www.goodreads.com/book/show/8474155-the-wavewatcher-s-companion">The Wavewatcher’s
+Companion</a>,
+which I found to be hilarious. This book was not as funny, but was still
+pretty good. Gavin has a very nice way of appreciating the world.</p>
 </div>
 </div>
 <div class="book alt">
@@ -167,7 +335,10 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/22208239-altruism">Altruism: The Power of Compassion to Change Yourself and the World</a></strong> by Ricard, Matthieu</p>
-<p>I really quite enjoyed this book, and infact wrote a longer review over on the <a href="https://betweenbooks.com.au/reviews/2020/altruism-matthieu-ricard-2015.html">Between Books</a> website.</p>
+<p>I really quite enjoyed this book, and infact wrote a longer review over on the
+<a href="https://betweenbooks.com.au/reviews/2020/altruism-matthieu-ricard-2015.html">Between
+Books</a>
+website.</p>
 </div>
 </div>
 <div class="book">
@@ -176,7 +347,9 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/41081373-girl-woman-other">Girl, Woman, Other</a></strong> by Evaristo, Bernardine</p>
-<p>A nice collection of stories featuring different women and how their lives intersect. I think it’s quite nice to get so many stories from the everyday lives of women; especially for me, for whom it’s a bit unknown territory.</p>
+<p>A nice collection of stories featuring different women and how their lives
+intersect. I think it’s quite nice to get so many stories from the everyday
+lives of women; especially for me, for whom it’s a bit unknown territory.</p>
 </div>
 </div>
 <div class="book alt">
@@ -185,7 +358,9 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/421.The_White_Album">The White Album</a></strong> by Didion, Joan</p>
-<p>The first Joan Didion book I’ve read. She’s very famous of course; and I don’t know. It was good to read; but was it objectionably good? Maybe. It’s at least nice to know a bit about her life and how she writes. I’ll probably read more.</p>
+<p>The first Joan Didion book I’ve read. She’s very famous of course; and I don’t
+know. It was good to read; but was it objectionably good? Maybe. It’s at least
+nice to know a bit about her life and how she writes. I’ll probably read more.</p>
 </div>
 </div>
 <div class="book">
@@ -194,7 +369,10 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/17319691-mullumbimby">Mullumbimby</a></strong> by Lucashenko, Melissa</p>
-<p>I quite enjoyed this story. It’s also the first time I’ve read a modern fictional Australian indigenous-centered story. Will be on the look out for more books of this kind! Came up as part of the <a href="https://ochouse.com.au/">OC House</a> bookclub, I think.</p>
+<p>I quite enjoyed this story. It’s also the first time I’ve read a modern
+fictional Australian indigenous-centered story. Will be on the look out for
+more books of this kind! Came up as part of the <a href="https://ochouse.com.au/">OC
+House</a> bookclub, I think.</p>
 </div>
 </div>
 <div class="book alt">
@@ -203,7 +381,9 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/34640834-down-girl">Down Girl: The Logic of Misogyny</a></strong> by Manne, Kate</p>
-<p>This book is amazing. I found it to be written in a bit of an academic-y style; so it can be a bit dense, but it does an amazing job of framing what misogyny is and how it is present in all aspects of society.</p>
+<p>This book is amazing. I found it to be written in a bit of an academic-y
+style; so it can be a bit dense, but it does an amazing job of framing what
+misogyny is and how it is present in all aspects of society.</p>
 </div>
 </div>
 <div class="book">
@@ -212,7 +392,11 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/49964359-unfree-speech">Unfree Speech: The Threat to Global Democracy and Why We Must Act, Now</a></strong> by Wong, Joshua</p>
-<p>This is a nice short history of free speech and how China is taking over Hong Kong. It was interesting to read about how they attempted to make some large changes to their democracy through grass-roots organisation. In some ways quite inspiring, but also a reality check that it isn’t easy to defeat power. Worth a read.</p>
+<p>This is a nice short history of free speech and how China is taking over Hong
+Kong. It was interesting to read about how they attempted to make some large
+changes to their democracy through grass-roots organisation. In some ways
+quite inspiring, but also a reality check that it isn’t easy to defeat power.
+Worth a read.</p>
 </div>
 </div>
 <div class="book alt">
@@ -221,7 +405,10 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/43783430-a-month-in-siena">A Month in Siena</a></strong> by Matar, Hisham</p>
-<p>This was just a nice simple book about someone getting amongst life in a new town. In many ways I think this kind of experience is how many people wish their holidays to go: meeting some nice stranger, integrating into the community, and just appreciating the joy of life.</p>
+<p>This was just a nice simple book about someone getting amongst life in a new
+town. In many ways I think this kind of experience is how many people wish
+their holidays to go: meeting some nice stranger, integrating into the
+community, and just appreciating the joy of life.</p>
 </div>
 </div>
 <div class="book">
@@ -239,7 +426,10 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/48503.The_Worst_Journey_in_the_World">The Worst Journey in the World</a></strong> by Cherry-Garrard, Apsley</p>
-<p>I read the next two books back-to-back. This one was strange. It’s written from the English perspective; it’s quite racist at times. I wouldn’t recommend reading it, unless you really want to compare perspectives on the journeys of Scott and Amundsen.</p>
+<p>I read the next two books back-to-back. This one was strange. It’s written
+from the English perspective; it’s quite racist at times. I wouldn’t recommend
+reading it, unless you really want to compare perspectives on the journeys of
+Scott and Amundsen.</p>
 </div>
 </div>
 <div class="book">
@@ -248,8 +438,13 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/549488.The_Last_Place_on_Earth">The Last Place on Earth: Scott and Amundsen’s Race to the South Pole</a></strong> by Huntford, Roland</p>
-<p>This was a really interesting read. It was so fascinating to compare how Amundsen approached the journey compared to Scott. According to this book, Scott was woefully underprepared and arrogant, and Amundsen spent many many years training and learning the right skills from different indigenous groups in order to survive.</p>
-<p>If you want to learn about the race to the south pole; this book is definitely better than the above.</p>
+<p>This was a really interesting read. It was so fascinating to compare how
+Amundsen approached the journey compared to Scott. According to this book,
+Scott was woefully underprepared and arrogant, and Amundsen spent many many
+years training and learning the right skills from different indigenous groups
+in order to survive.</p>
+<p>If you want to learn about the race to the south pole; this book is definitely
+better than the above.</p>
 </div>
 </div>
 <div class="book alt">
@@ -258,7 +453,9 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/7015635-food-rules">Food Rules: An Eater’s Manual</a></strong> by Pollan, Michael</p>
-<p>More of a blog post than a book; but still, nice to keep next to you somewhere when you want to remember if it’s okay to eat chocolate everyday (probably not) or have a wine with dinner (probably fine).</p>
+<p>More of a blog post than a book; but still, nice to keep next to you somewhere
+when you want to remember if it’s okay to eat chocolate everyday (probably
+not) or have a wine with dinner (probably fine).</p>
 </div>
 </div>
 <div class="book">
@@ -267,7 +464,8 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/18528190-men-explain-things-to-me">Men Explain Things to Me</a></strong> by Solnit, Rebecca</p>
-<p>Hilarious. This is a collection of stories; some funnier than others, but overall great.</p>
+<p>Hilarious. This is a collection of stories; some funnier than others, but
+overall great.</p>
 </div>
 </div>
 <div class="book alt">
@@ -276,7 +474,8 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/9541.The_Shadow_of_the_Sun">The Shadow of the Sun</a></strong> by Kapuściński, Ryszard</p>
-<p>I enjoyed this as a nice way to get a bit of, albeit an outsiders, insight into how different people live in some of the poorer parts of Africa.</p>
+<p>I enjoyed this as a nice way to get a bit of, albeit an outsiders, insight
+into how different people live in some of the poorer parts of Africa.</p>
 </div>
 </div>
 <div class="book">
@@ -285,7 +484,8 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/50849430-capital-and-ideology">Capital and Ideology</a></strong> by Piketty, Thomas</p>
-<p>I really enjoyed this book, and wrote about it more over on <a href="https://betweenbooks.com.au/reviews/2020/capital-and-ideology-thomas-piketty-2020.html">Between Books - Capital and Ideology</a></p>
+<p>I really enjoyed this book, and wrote about it more over on <a href="https://betweenbooks.com.au/reviews/2020/capital-and-ideology-thomas-piketty-2020.html">Between
+Books - Capital and Ideology</a></p>
 </div>
 </div>
 <div class="book alt">
@@ -294,7 +494,10 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/18736925-capital-in-the-twenty-first-century">Capital in the Twenty-First Century</a></strong> by Piketty, Thomas</p>
-<p>This one I also enjoyed; I don’t think you really need to read it first before Ideology, but I opted to do so. Reading this really inspired a love and interest of economics, and Piketty seems to do an amazing job of exploring these topics in an approachable way.</p>
+<p>This one I also enjoyed; I don’t think you really need to read it first before
+Ideology, but I opted to do so. Reading this really inspired a love and
+interest of economics, and Piketty seems to do an amazing job of exploring
+these topics in an approachable way.</p>
 </div>
 </div>
 <div class="book">
@@ -303,7 +506,10 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/31451192-affluence-without-abundance">Affluence Without Abundance: The Disappearing World of the Bushmen</a></strong> by Suzman, James</p>
-<p>This book wasn’t bad; it’s an exploration of life with a marginalised tribe referred to as the Bushmen. It doesn’t totally take the expected view that the simple life is better; but it does discuss how politics and the community encroaches on this tribe, and how they live life.</p>
+<p>This book wasn’t bad; it’s an exploration of life with a marginalised tribe
+referred to as the Bushmen. It doesn’t totally take the expected view that the
+simple life is better; but it does discuss how politics and the community
+encroaches on this tribe, and how they live life.</p>
 </div>
 </div>
 <div class="book alt">
@@ -312,7 +518,9 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/8266887-a-woman-in-the-polar-night">A Woman in the Polar Night</a></strong> by Ritter, Christiane</p>
-<p>I think this is a classic book; it’s a little strange, but it does show one persons journey into the Arctic and how she learned to love it. It didn’t exactly inspire me to go and life there, but I do admire her approach!</p>
+<p>I think this is a classic book; it’s a little strange, but it does show one
+persons journey into the Arctic and how she learned to love it. It didn’t
+exactly inspire me to go and life there, but I do admire her approach!</p>
 </div>
 </div>
 <div class="book">
@@ -321,7 +529,9 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/18600.Touching_the_Void">Touching the Void: The True Story of One Man’s Miraculous Survival</a></strong> by Simpson, Joe</p>
-<p>This is amazing. I read this assuming a particular fact about the story (I won’t spoil it by telling you), but it turned out that my mind was blown by what actually happened. I’ll probably read it again!</p>
+<p>This is amazing. I read this assuming a particular fact about the story (I
+won’t spoil it by telling you), but it turned out that my mind was blown by
+what actually happened. I’ll probably read it again!</p>
 </div>
 </div>
 <div class="book alt">
@@ -330,7 +540,9 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/1898.Into_Thin_Air">Into Thin Air: A Personal Account of the Mount Everest Disaster</a></strong> by Krakauer, Jon</p>
-<p>I bought this I think after the one above; desperate for more books about climbing. This is also an amazing story; I think if anything it made me feel certain that I’ll never attempt to climb Everest.</p>
+<p>I bought this I think after the one above; desperate for more books about
+climbing. This is also an amazing story; I think if anything it made me feel
+certain that I’ll never attempt to climb Everest.</p>
 </div>
 </div>
 <div class="book">
@@ -339,7 +551,9 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/5863774-the-case-of-the-honjin-murder">The Case of the Honjin Murder</a></strong> by Yokomizo, Seishi</p>
-<p>I just happened across this one in the bookshop and thought I’d give it a go. I can’t say it was the best; it was quite sexist. The story was probably pretty good, if you could ignore that; but I couldn’t.</p>
+<p>I just happened across this one in the bookshop and thought I’d give it a go.
+I can’t say it was the best; it was quite sexist. The story was probably
+pretty good, if you could ignore that; but I couldn’t.</p>
 </div>
 </div>
 <div class="book alt">
@@ -348,7 +562,10 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/3901371-tall-man">Tall Man: The Death of Doomadgee</a></strong> by Hooper, Chloe</p>
-<p>This was a good read but super aggravating. It’s really unsettling to learn how terrible some of the policing is; and the subsequent investigations that yielded no useful outcome. Eye-opening for me in terms of how bad racism is in Australia.</p>
+<p>This was a good read but super aggravating. It’s really unsettling to learn
+how terrible some of the policing is; and the subsequent investigations that
+yielded no useful outcome. Eye-opening for me in terms of how bad racism is in
+Australia.</p>
 </div>
 </div>
 <div class="book">
@@ -357,7 +574,9 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/839157.Mountains_of_the_Mind">Mountains of the Mind: A History of a Fascination</a></strong> by Macfarlane, Robert</p>
-<p>Pretty good. I went through a phase of reading about mountain climbing. This was a nice little overview of how people justify climbing. Good for an introduction to other things to read.</p>
+<p>Pretty good. I went through a phase of reading about mountain climbing. This
+was a nice little overview of how people justify climbing. Good for an
+introduction to other things to read.</p>
 </div>
 </div>
 <div class="book alt">
@@ -366,7 +585,10 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/42074525-the-city-we-became">The City We Became (Great Cities, #1)</a></strong> by Jemisin, N.K.</p>
-<p>For how much I loved her other books; I have to say I found this one a bit disappointing. I think by normal sci-fi standards, it’s certainly excellent, and I’ll definitely read the rest of the series; but if you’re looking for something as amazing as her other books, you might not find it here.</p>
+<p>For how much I loved her other books; I have to say I found this one a bit
+disappointing. I think by normal sci-fi standards, it’s certainly excellent,
+and I’ll definitely read the rest of the series; but if you’re looking for
+something as amazing as her other books, you might not find it here.</p>
 </div>
 </div>
 <div class="book">
@@ -375,7 +597,9 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/306659.Annapurna">Annapurna: A Woman’s Place</a></strong> by Blum, Arlene</p>
-<p>I really enjoyed this one. It was interesting to compare this to other climbing books written by men, which almost never feature much uncertainty or collaborative leadership.</p>
+<p>I really enjoyed this one. It was interesting to compare this to other
+climbing books written by men, which almost never feature much uncertainty or
+collaborative leadership.</p>
 </div>
 </div>
 <div class="book alt">
@@ -384,7 +608,8 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/41817481-underland">Underland: A Deep Time Journey</a></strong> by Macfarlane, Robert</p>
-<p>This is just super cool. We are taken on a journey through lots of different underground worlds. Certainly makes you want to do this kind of exploring.</p>
+<p>This is just super cool. We are taken on a journey through lots of different
+underground worlds. Certainly makes you want to do this kind of exploring.</p>
 </div>
 </div>
 <div class="book">
@@ -393,7 +618,10 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/41011110-the-eastern-curlew">The Eastern Curlew</a></strong> by Saddler, Harry</p>
-<p>I read this after meeting the author at a party! I felt so cool; I’d never met an author in real life before. Inspired by that meeting, I picked it up. It’s really a nice story about following the migratory path of a bird, and thinking about how their ecosystem is being impacted. Would definitely recommend!</p>
+<p>I read this after meeting the author at a party! I felt so cool; I’d never met
+an author in real life before. Inspired by that meeting, I picked it up. It’s
+really a nice story about following the migratory path of a bird, and thinking
+about how their ecosystem is being impacted. Would definitely recommend!</p>
 </div>
 </div>
 <div class="book alt">
@@ -402,7 +630,8 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/33375622-her-body-and-other-parties">Her Body and Other Parties</a></strong> by Machado, Carmen Maria</p>
-<p>Not bad. Probably not my favourite style of book, but if you like weird kind of magical fiction with a message, probably quite good.</p>
+<p>Not bad. Probably not my favourite style of book, but if you like weird kind
+of magical fiction with a message, probably quite good.</p>
 </div>
 </div>
 <div class="book">
@@ -411,7 +640,8 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/38819868-my-sister-the-serial-killer">My Sister, the Serial Killer</a></strong> by Braithwaite, Oyinkan</p>
-<p>I quite enjoyed this one; it was a very quick read; so I’m looking forward to more by this author!</p>
+<p>I quite enjoyed this one; it was a very quick read; so I’m looking forward to
+more by this author!</p>
 </div>
 </div>
 <div class="book alt">
@@ -420,7 +650,8 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/34473.In_Praise_of_Shadows">In Praise of Shadows</a></strong> by Tanizaki, Jun’ichirō</p>
-<p>Pretty good. Very very short; but a thoughtful analysis of how light impacts space. I think it’s a classic of the architecture world.</p>
+<p>Pretty good. Very very short; but a thoughtful analysis of how light impacts
+space. I think it’s a classic of the architecture world.</p>
 </div>
 </div>
 <div class="book">
@@ -429,7 +660,9 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/18693910-barbarian-days">Barbarian Days: A Surfing Life</a></strong> by Finnegan, William</p>
-<p>I really really enjoyed this one. Very nicely written, you feel like you’re living the life alongside the author. It’s nice to read about someone who follows their passion so directly.</p>
+<p>I really really enjoyed this one. Very nicely written, you feel like you’re
+living the life alongside the author. It’s nice to read about someone who
+follows their passion so directly.</p>
 </div>
 </div>
 <div class="book alt">
@@ -438,7 +671,8 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/33606119-why-i-m-no-longer-talking-to-white-people-about-race">Why I’m No Longer Talking to White People About Race</a></strong> by Eddo-Lodge, Reni</p>
-<p>I picked this up as soon as I arrived in the UK, to gain an understanding for how people here think about race issues. Pretty good reading.</p>
+<p>I picked this up as soon as I arrived in the UK, to gain an understanding for
+how people here think about race issues. Pretty good reading.</p>
 </div>
 </div>
 <div class="book">
@@ -447,7 +681,8 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/790171.Kon_Tiki">Kon-Tiki</a></strong> by Heyerdahl, Thor</p>
-<p>This was a funny one. A classic kind of adventure story, from real life, I have to say I enjoyed it.</p>
+<p>This was a funny one. A classic kind of adventure story, from real life, I
+have to say I enjoyed it.</p>
 </div>
 </div>
 <div class="book alt">
@@ -456,7 +691,12 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/2060190.Mad_Bad_Dangerous_to_Know">Mad, Bad &amp; Dangerous to Know: The Autobiography</a></strong> by Fiennes, Ranulph</p>
-<p>I found this one also kind of funny. I suppose this guy is very famous in the UK, but I’d not heard of him really. It’s funny to read about how he thinks of endurance, and his claim that “anyone” can be like him; in terms of running 7 marathons at the age of 70 across 7 countries; or something along those lines. Didn’t exactly encourage me to do the same, but did give me some food for thought about willpower and energy.</p>
+<p>I found this one also kind of funny. I suppose this guy is very famous in the
+UK, but I’d not heard of him really. It’s funny to read about how he thinks of
+endurance, and his claim that “anyone” can be like him; in terms of running 7
+marathons at the age of 70 across 7 countries; or something along those lines.
+Didn’t exactly encourage me to do the same, but did give me some food for
+thought about willpower and energy.</p>
 </div>
 </div>
 <div class="book">
@@ -465,7 +705,9 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/43800661-see-what-you-made-me-do">See What You Made Me Do: Power, Control and Domestic Violence</a></strong> by Hill, Jess</p>
-<p>This is a very hard book to read, emotionally. It contains some exceptionally difficult stories. Definitely recommended reading, but if you want a more academic treatment see the earlier book by Kate Manne.</p>
+<p>This is a very hard book to read, emotionally. It contains some exceptionally
+difficult stories. Definitely recommended reading, but if you want a more
+academic treatment see the earlier book by Kate Manne.</p>
 </div>
 </div>
 <div class="book alt">
@@ -474,7 +716,9 @@ div.alt { background: #eaeaea; }
 </div>
 <div class="text">
 <p><strong><a href="https://www.goodreads.com//book/show/40669652-becoming-bodhisattvas">Becoming Bodhisattvas</a></strong> by Chödrön, Pema</p>
-<p>Easily the best book I read last year. Of course it’s a buddhist view on how to live life; but I found it very practical and thoughtful. I’ve read it again during some difficult times, and found it very uplifting.</p>
+<p>Easily the best book I read last year. Of course it’s a buddhist view on how
+to live life; but I found it very practical and thoughtful. I’ve read it again
+during some difficult times, and found it very uplifting.</p>
 </div>
 </div>
 ]]></summary>
@@ -492,19 +736,45 @@ div.alt { background: #eaeaea; }
     
 </div>
 
-<p>So, I’m very excited to share that we’re moving overseas! We’re headed to Cambridge in the UK at the end of this month.</p>
-<p>I’m very lucky to be starting work with a very cool quantum computing company: <a href="https://www.riverlane.com/">Riverlane</a>.</p>
+<p>So, I’m very excited to share that we’re moving overseas! We’re headed to
+Cambridge in the UK at the end of this month.</p>
+<p>I’m very lucky to be starting work with a very cool quantum computing company:
+<a href="https://www.riverlane.com/">Riverlane</a>.</p>
 <h2 id="leaving-melbourne">Leaving Melbourne</h2>
-<p>It’s going to be interesting leaving Melbourne. I’ve lived here all my life basically, and I’ve found a really nice group of friends. I’m going to miss everyone.</p>
-<p>I owe a big thanks to <strong>everyone</strong> that’s helped me in my career and life over the years here. I won’t list all of you, but thanks :) I wouldn’t be where I am if I hadn’t had your help and support. ❤️ 💖</p>
-<p>In particular the meetup community has been a great place for me and somewhere I was able to forge some really strong friendships. Specifically, I’ve had a great time at the Melbourne Maths and Science Meetup, the Haskell Meetup, back in the day I loved MXUG, and of course I have to thank my friend David Kemp for being the only consistent attendee of the Quantum Lunch, started way back in the day! I’ll also miss hanging out with the cool people who’ve come to events I’ve helped organise, such as <a href="https://www.composeconference.org/2016-melbourne/">compose conference</a> and <a href="https://postpredictionconference.github.io/">post-prediction conference</a>. I love Melbourne for the really nice connection you get between different communities, and it’s been some of my favourite times meeting people from outside my standard little bubble.</p>
-<p>I also have to thank my friend Charles Hill from Melbourne University, who taught me so much about quantum computing, is an amazing researcher and very kind and generous person.</p>
-<p>Thanks also to the other people in the tech community here that have supported me and helped me first move into new jobs and learn interesting and fun things. I’ve been very lucky.</p>
-<p>Of course, thanks again to all the people that helped out with <a href="https://braneshop.com.au/">Braneshop</a> whom I’ve already mentioned over there.</p>
+<p>It’s going to be interesting leaving Melbourne. I’ve lived here all my life
+basically, and I’ve found a really nice group of friends. I’m going to miss
+everyone.</p>
+<p>I owe a big thanks to <strong>everyone</strong> that’s helped me in my career and life over the
+years here. I won’t list all of you, but thanks :) I wouldn’t be where I am if
+I hadn’t had your help and support. ❤️ 💖</p>
+<p>In particular the meetup community has been a great place for me and somewhere
+I was able to forge some really strong friendships. Specifically, I’ve had a
+great time at the Melbourne Maths and Science Meetup, the Haskell Meetup, back
+in the day I loved MXUG, and of course I have to thank my friend David Kemp
+for being the only consistent attendee of the Quantum Lunch, started way back
+in the day! I’ll also miss hanging out with the cool people who’ve come to
+events I’ve helped organise, such as <a href="https://www.composeconference.org/2016-melbourne/">compose
+conference</a> and
+<a href="https://postpredictionconference.github.io/">post-prediction conference</a>. I
+love Melbourne for the really nice connection you get between different
+communities, and it’s been some of my favourite times meeting people from
+outside my standard little bubble.</p>
+<p>I also have to thank my friend Charles Hill from Melbourne University, who
+taught me so much about quantum computing, is an amazing researcher and
+very kind and generous person.</p>
+<p>Thanks also to the other people in the tech community here that have supported
+me and helped me first move into new jobs and learn interesting and fun
+things. I’ve been very lucky.</p>
+<p>Of course, thanks again to all the people that helped out with
+<a href="https://braneshop.com.au/">Braneshop</a> whom I’ve already mentioned over there.</p>
 <h2 id="cambridge">Cambridge</h2>
-<p>We’re totally new to Cambridge, so if you’ve got suggestions/connections I’d love to hear about it! Definitely keen to meet some people and get into the community over there.</p>
+<p>We’re totally new to Cambridge, so if you’ve got suggestions/connections I’d
+love to hear about it! Definitely keen to meet some people and get into the
+community over there.</p>
 <p><strong>Reach out if you like!</strong></p>
-<p>I’ve benefited a lot from emailing random people and just asking questions, so please feel free to reach out to me if you think I can help with anything!</p>
+<p>I’ve benefited a lot from emailing random people and just asking questions,
+so please feel free to reach out to me if you think I can help with
+anything!</p>
 ]]></summary>
 </entry>
 <entry>
@@ -520,7 +790,10 @@ div.alt { background: #eaeaea; }
     
 </div>
 
-<p>Inspired by this recent paper - <a href="https://arxiv.org/pdf/2009.14258.pdf">Towards decolonising computational sciences</a> - I thought it might be a nice idea to write down a list of privileges that I can identify I have. I’ll probably update this list as I think of them.</p>
+<p>Inspired by this recent paper - <a href="https://arxiv.org/pdf/2009.14258.pdf">Towards decolonising computational
+sciences</a> - I thought it might be a nice
+idea to write down a list of privileges that I can identify I have. I’ll
+probably update this list as I think of them.</p>
 <p>My list:</p>
 <ul>
 <li>White, Male, Cisgendered: I don’t often feel out of place.</li>
@@ -534,11 +807,17 @@ div.alt { background: #eaeaea; }
 <li>Live close to the city: Access to events, convenience.</li>
 <li>Good mental health: I’m able to focus when I want; am most of the time moderately calm.</li>
 <li>Language: I speak English natively.</li>
-<li>Exposed to tech from a young age: I had a computer in the house since I was young, and was able to learn programming on my own as a result.</li>
-<li>Well-educated: I went to a private school, and was eventually able to attend good universities and get access to experts and knowledge in this way.</li>
+<li>Exposed to tech from a young age: I had a computer in the house since I was
+young, and was able to learn programming on my own as a result.</li>
+<li>Well-educated: I went to a private school, and was eventually able to attend
+good universities and get access to experts and knowledge in this way.</li>
 </ul>
-<p>These things have helped me get jobs in the past. Some of them are traits that you can improve, as well as baseline things thare are out of my control to some degree (i.e. mental health; certainly it can be improved, but certainly it’s not all my doing.)</p>
-<p>I also found this: <a href="https://sites.google.com/a/u.boisestate.edu/social-justice-training/about-us/our-training/privilege-checklist">Privilege Checklist</a> from this <a href="https://sites.google.com/a/u.boisestate.edu/social-justice-training/home">Social Justice Training</a> program, that is a very good starting point for building a comprehensive list. This feels like a great exercise for teams to get together and think about.</p>
+<p>These things have helped me get jobs in the past. Some of them are
+traits that you can improve, as well as baseline things thare are out of my
+control to some degree (i.e. mental health; certainly it can be improved, but
+certainly it’s not all my doing.)</p>
+<p>I also found this: <a href="https://sites.google.com/a/u.boisestate.edu/social-justice-training/about-us/our-training/privilege-checklist">Privilege
+Checklist</a> from this <a href="https://sites.google.com/a/u.boisestate.edu/social-justice-training/home">Social Justice Training</a> program, that is a very good starting point for building a comprehensive list. This feels like a great exercise for teams to get together and think about.</p>
 <p>What’s your list?</p>
 ]]></summary>
 </entry>
@@ -665,7 +944,7 @@ div.alt { background: #eaeaea; }
 <a href='https://github.com/silky/ideas/issues/436'>graph+weights to neuronal net rendering</a>: https://github.com/BlueBrain/NeuroMorphoVis
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/435'>Arbitrary-Task Programming</a>: given that programming is just arranging symbols, <em>and</em> we can use deep learning to interpret the real world into symbols, <em>then</em> it’s possible to do programming by performing arbitrary tasks i.e. <em>any</em> job can be programming, if we can build the deep-learning system that converts actions in that job into symbols in a programming language
+<a href='https://github.com/silky/ideas/issues/435'>Arbitrary-Task Programming</a>: given that programming is just arranging symbols, <em>and</em> we can use deep learning to interpret the real world into symbols, <em>then</em> it’s possible to do programming by performing arbitrary tasks i.e. <em>any</em> job can be programming, if we can build the deep-learning system that converts actions in that job into symbols in a programming language
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/434'>Sitcom-Lang</a>: it’s a pre-processor, or something, for an arbtrariy language whenever a symbol is defined, that symbol is embued with a soul and a “nature”. it starts to have wants and needs; and those must be satisfied in order for it to stay in it’s present form (i.e. as a “for loop”), otherwise it might change (i.e. to be a “while” loop, or maybe even a string instead). all the symbols will interact with each other, and in that way a program will be made <span class="citation" data-cites="sordina">@sordina</span>
@@ -878,7 +1157,7 @@ div.alt { background: #eaeaea; }
 <a href='https://github.com/silky/ideas/issues/365'>Collaborative Password Manager</a>: say i want to make a password for a system you will control, but we both need access to maybe i can have my program generate part of it; you’re program generate part, then combine them both on our independent computers, without the entire password leaving either of them could build this on top of the public keys on github somehow; so i just pick the github user i’m going to share a password with could clearly do this immediately by encrypting it with their public key, or something. but maybe something richer can be done
 </li>
 <li>
-<a href='https://github.com/silky/ideas/issues/364'>Video Issues</a>: <a href="https://vimeo.com/265518095" class="uri">https://vimeo.com/265518095</a>
+<a href='https://github.com/silky/ideas/issues/364'>Video Issues</a>: <a href="https://vimeo.com/265518095">https://vimeo.com/265518095</a>
 </li>
 <li>
 <a href='https://github.com/silky/ideas/issues/363'>Faux Project Management Generator Thing</a>: it’s an RNN that generates hundreds of tickets in trello or jira or whatever; with arbitrary due dates makes you feel stressed <span class="citation" data-cites="sordina">@sordina</span> could be used for project-management training scenarios
@@ -1061,7 +1340,8 @@ div.alt { background: #eaeaea; }
     
 </div>
 
-<p>So I gave my talk at the Art-and-Tech miniconf at Linux Conf AU earlier this week.</p>
+<p>So I gave my talk at the Art-and-Tech miniconf at Linux Conf AU earlier this
+week.</p>
 <p>The video of my talk is here:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UvkKf8ME564" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 </iframe>
@@ -1070,11 +1350,13 @@ div.alt { background: #eaeaea; }
 <li><a href="https://vandersilk.github.io">Van der Silk Fashion Website</a></li>
 <li><a href="https://docs.google.com/presentation/d/18olpV_GvpLbUR6z043cYIZ0yDVInJDuKN1xWnGQv-5k/edit?usp=sharing">Slides</a></li>
 <li><a href="https://www.youtube.com/watch?v=UvkKf8ME564">Video on YouTube</a>, or on <a href="https://archive.org/details/lca2019-Designing_functional_clothes_with_Haskell">archive.org</a></li>
-<li><a href="https://lobste.rs/s/ggk6oq/designing_functional_clothes_with">Discussion on Lobste.rs</a></li>
+<li><a href="https://lobste.rs/s/ggk6oq/designing_functional_clothes_with">Discussion on
+Lobste.rs</a></li>
 </ul>
 <p>Thanks to <a href="https://maetl.net">Mark</a> for having me at the miniconf!</p>
 <h4 id="errata">Errata</h4>
-<p>Note that there’s a typo on the types of the <code>somethingFun</code> function that has since been corrected in the slides.</p>
+<p>Note that there’s a typo on the types of the <code>somethingFun</code> function that has
+since been corrected in the slides.</p>
 ]]></summary>
 </entry>
 <entry>
@@ -1090,12 +1372,15 @@ div.alt { background: #eaeaea; }
     
 </div>
 
-<p>Excitingly, this year I’m going to <a href="https://linux.conf.au/">Linux Conference</a>, and giving a talk at the <a href="https://linux.conf.au/schedule/">Art+Tech MiniConf</a>!</p>
+<p>Excitingly, this year I’m going to <a href="https://linux.conf.au/">Linux Conference</a>,
+and giving a talk at the <a href="https://linux.conf.au/schedule/">Art+Tech MiniConf</a>!</p>
 <p>To celebrate, I redesigned the <a href="https://vandersilk.github.io">Van der Silk</a> website:</p>
 <center>
 <img src="/images/vandersilk-fashion.jpg" width="600" />
 </center>
-<p>Also, very coincidentally, PAOM re-designed their website for the new year, so it’s much easier to find all my designs: <a href="https://paom.com/search?type=product&amp;q=*noonvandersilk*+tag:public">noonvandersilk on PAOM</a>.</p>
+<p>Also, very coincidentally, PAOM re-designed their website for the new year, so
+it’s much easier to find all my designs: <a href="https://paom.com/search?type=product&amp;q=*noonvandersilk*+tag:public">noonvandersilk on
+PAOM</a>.</p>
 <p>Hope to see you there!</p>
 ]]></summary>
 </entry>
@@ -1123,15 +1408,23 @@ div.book img { margin-right: 10px; }
 
 div.alt { background: #eaeaea; }
 </style>
-<p>I’ve seen a few people post the books that they’ve read over the last year; so I thought I’d also get in on the action. Here are the books that I read (or partially read), in no particular order, last year:</p>
+<p>I’ve seen a few people post the books that they’ve read over the last year; so
+I thought I’d also get in on the action. Here are the books that I read (or
+partially read), in no particular order, last year:</p>
 <h3 id="non-fiction">Non-Fiction</h3>
 <div class="book">
 <div class="img">
 <img src="/images/books-2018/oregon.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/616875.The_Oregon_Experiment">The Oregon Experiment</a></strong> by Christopher W. Alexander, Murray Silverstein, Shlomo Angel, Sara Ishikawa, Denny Abrams</p>
-<p>Anyone that knows me, knows that Christopher Alexander is basically my personal Jesus. This book is amazing, to me in it’s demonstration of Alexander’s (and collaborators) standard approach to architecture; i.e building via small local activities in an endless cycle according to a specific and developing pattern language. It also contains very important insights, in my mind, in terms of project management and <a href="/posts/2018-11-09-quick-note-on-budgeting.html">budgeting</a>.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/616875.The_Oregon_Experiment">The Oregon Experiment</a></strong>
+by Christopher W. Alexander, Murray Silverstein, Shlomo Angel, Sara Ishikawa, Denny Abrams</p>
+<p>Anyone that knows me, knows that Christopher Alexander is basically my
+personal Jesus. This book is amazing, to me in it’s demonstration of
+Alexander’s (and collaborators) standard approach to architecture; i.e
+building via small local activities in an endless cycle according to a
+specific and developing pattern language. It also contains very important
+insights, in my mind, in terms of project management and <a href="/posts/2018-11-09-quick-note-on-budgeting.html">budgeting</a>.</p>
 </div>
 </div>
 <div class="book alt">
@@ -1139,8 +1432,13 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/educated.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/35133922-educated">Educated</a></strong> by Tara Westover</p>
-<p>I learned about this one from <a href="https://www.gatesnotes.com/Books/Educated">Bill Gates</a>. It’s amazing. I found it really fascinating to read about Tara’s life, and how she understood her upbringing. It makes you think quite a lot about the things you tell yourself to make sense of the situations you’re in.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/35133922-educated">Educated</a></strong>
+by Tara Westover</p>
+<p>I learned about this one from <a href="https://www.gatesnotes.com/Books/Educated">Bill
+Gates</a>. It’s amazing. I found it
+really fascinating to read about Tara’s life, and how she understood her
+upbringing. It makes you think quite a lot about the things you tell yourself
+to make sense of the situations you’re in.</p>
 </div>
 </div>
 <div class="book">
@@ -1148,8 +1446,13 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/darkemu.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/21401526-dark-emu">Dark Emu</a></strong> by Bruce Pascoe</p>
-<p>Soon to be (if not already) an Australian classic; it’s very interesting to learn an entirely different history about our country and the Aboriginal people. I found it to be reasonably hard reading because there are some solid descriptions of various items and processes that it would’ve been amazing to have pictures of. In any case, necessary reading.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/21401526-dark-emu">Dark Emu</a></strong>
+by Bruce Pascoe</p>
+<p>Soon to be (if not already) an Australian classic; it’s very interesting to
+learn an entirely different history about our country and the Aboriginal
+people. I found it to be reasonably hard reading because there are some solid
+descriptions of various items and processes that it would’ve been amazing to
+have pictures of. In any case, necessary reading.</p>
 </div>
 </div>
 <div class="book alt">
@@ -1157,8 +1460,12 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/candor.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/29939161-radical-candor">Radical Candor</a></strong> by Kim Malone Scott</p>
-<p>I basically hated this book. I think, on the one hand, it <em>does</em> have useful information in it; but for me it came across too much like standard Silicon Valley propoganda. I do think there is good stuff in here, for leaders that struggle with feedback.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/29939161-radical-candor">Radical Candor</a></strong>
+by Kim Malone Scott</p>
+<p>I basically hated this book. I think, on the one hand, it <em>does</em> have useful
+information in it; but for me it came across too much like standard Silicon
+Valley propoganda. I do think there is good stuff in here, for leaders that
+struggle with feedback.</p>
 </div>
 </div>
 <div class="book">
@@ -1166,8 +1473,14 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/citiesforpeople.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/8556291-cities-for-people">Cities for People</a></strong> by Jan Gehl</p>
-<p>Recommended to me by Ryan, who was working as a Barista at from <a href="https://www.streat.com.au/">Streat</a>, this book is, apparently, a classic of urban planning. It’s amazing. It has a incredibly readable style; with lots of pictures and summaries of each paragraph. Jan has had a lot of impact in designing Melbourne, so it’s really interesting to read this book and see and understand the impact he and his team have had.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/8556291-cities-for-people">Cities for People</a></strong>
+by Jan Gehl</p>
+<p>Recommended to me by Ryan, who was working as a Barista at from <a href="https://www.streat.com.au/">Streat</a>,
+this book is, apparently, a classic of urban planning. It’s amazing. It has a
+incredibly readable style; with lots of pictures and summaries of each
+paragraph. Jan has had a lot of impact in designing Melbourne, so it’s really
+interesting to read this book and see and understand the impact he and his
+team have had.</p>
 </div>
 </div>
 <div class="book alt">
@@ -1175,8 +1488,16 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/factfulness.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/34890015-factfulness">Factfulness</a></strong> by Hans Rosling, Ola Rosling, Anna Rosling Rönnlund</p>
-<p>Quite good. From this book I learned about the website <a href="https://www.gapminder.org/dollar-street/">Dollar Street</a>, which is incredible and well worth a visit. Hans has many questions in the book; almost all of which I answered wrong, much like most of his audience that he’s asked the questions to. I learned a lot about how to think about world-wide progress, and that there are interesting organisations out there doing interesting work. I also learned, much to my surprise, that the World Bank isn’t a bank in the sense that I would’ve assumed; it’s main goal is to end poverty!</p>
+<p><strong><a href="https://www.goodreads.com/book/show/34890015-factfulness">Factfulness</a></strong>
+by Hans Rosling, Ola Rosling, Anna Rosling Rönnlund</p>
+<p>Quite good. From this book I learned about the website <a href="https://www.gapminder.org/dollar-street/">Dollar
+Street</a>, which is incredible and
+well worth a visit. Hans has many questions in the book; almost all of which I
+answered wrong, much like most of his audience that he’s asked the questions
+to. I learned a lot about how to think about world-wide progress, and that
+there are interesting organisations out there doing interesting work. I also
+learned, much to my surprise, that the World Bank isn’t a bank in the sense
+that I would’ve assumed; it’s main goal is to end poverty!</p>
 </div>
 </div>
 <div class="book">
@@ -1184,9 +1505,17 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/enlightenment.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/35696171-enlightenment-now">Enlightenment Now</a></strong> by Steven Pinker</p>
-<p>Not bad. This is the first book of Steven Pinker I’ve read. I’m unlikely to read more, after learning about some sexist views he’s had from <a href="https://www.goodreads.com/book/show/8031168-delusions-of-gender">Delusions of Gender</a> (not a book I’ve read yet; but heard thoughts from my partner).</p>
-<p>I found this book to be reasonably good, and make some solid arguments for continuing to fight against people that don’t think progress is real. Unfortunately, to paraphrase a joke from the Simposns, Steven seems like the kind of person that can use graphs to prove anything that is even remotely true. It contains too many anecdotes and cherry-picked examples.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/35696171-enlightenment-now">Enlightenment Now</a></strong>
+by Steven Pinker</p>
+<p>Not bad. This is the first book of Steven Pinker I’ve read. I’m unlikely to
+read more, after learning about some sexist views he’s had from <a href="https://www.goodreads.com/book/show/8031168-delusions-of-gender">Delusions of
+Gender</a> (not a
+book I’ve read yet; but heard thoughts from my partner).</p>
+<p>I found this book to be reasonably good, and make some solid arguments for
+continuing to fight against people that don’t think progress is real.
+Unfortunately, to paraphrase a joke from the Simposns, Steven seems like the
+kind of person that can use graphs to prove anything that is even remotely
+true. It contains too many anecdotes and cherry-picked examples.</p>
 <p>I’d recommend Factfulness over this one.</p>
 </div>
 </div>
@@ -1195,8 +1524,15 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/trees.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/28256439-the-hidden-life-of-trees">The Hidden Life of Trees</a></strong> by Peter Wohlleben</p>
-<p>Really great. I’ve always been a bit of a hippie, and am mostly vegetarian, so when my partner found out I’d be reading this one, she started to get a bit concerned that I’d soon not even eat greens! Now, I haven’t quite gone that far, but I do really love the ideas and science in this book; and I think it’s really interesting to think of trees and their root-systems as being some giant entity. The one downside to this book is that it occasionally lacks pictures of the concepts that are being described.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/28256439-the-hidden-life-of-trees">The Hidden Life of
+Trees</a></strong>
+by Peter Wohlleben</p>
+<p>Really great. I’ve always been a bit of a hippie, and am mostly vegetarian, so when
+my partner found out I’d be reading this one, she started to get a bit concerned that
+I’d soon not even eat greens! Now, I haven’t quite gone that far, but I do really love
+the ideas and science in this book; and I think it’s really interesting to think of
+trees and their root-systems as being some giant entity. The one downside to this book
+is that it occasionally lacks pictures of the concepts that are being described.</p>
 </div>
 </div>
 <div class="book">
@@ -1204,10 +1540,16 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/surfaces.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/7711871-surfaces-and-essences">Surfaces and Essences</a></strong> by Douglas R. Hofstadter, Emmanuel Sander</p>
-<p>Amazing. Probably not for people feeling a bit impatient. The book goes into many examples of the ideas; and makes a strong argument for the idea that all thinking is based on analogies. I’ve always loved analogies, so I’m naturally a big fan.</p>
-<p>As someone presently working in AI, I found this book full of many incredibly interesting and relevant ideas; one of which we discussed <a href="/posts/2018-06-16-when-will-google-translate-be-great.html">previously</a>.</p>
-<p>If you’re at all interested in when computers might be able to get to think like humans, definitely have a read!</p>
+<p><strong><a href="https://www.goodreads.com/book/show/7711871-surfaces-and-essences">Surfaces and Essences</a></strong>
+by Douglas R. Hofstadter, Emmanuel Sander</p>
+<p>Amazing. Probably not for people feeling a bit impatient. The book goes into many
+examples of the ideas; and makes a strong argument for the idea that all thinking
+is based on analogies. I’ve always loved analogies, so I’m naturally a big fan.</p>
+<p>As someone presently working in AI, I found this book full of many incredibly
+interesting and relevant ideas; one of which we discussed
+<a href="/posts/2018-06-16-when-will-google-translate-be-great.html">previously</a>.</p>
+<p>If you’re at all interested in when computers might be able to get
+to think like humans, definitely have a read!</p>
 </div>
 </div>
 <div class="book alt">
@@ -1215,8 +1557,17 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/buddhism.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/32895535-why-buddhism-is-true">Why Buddhism is True</a></strong> by Robert Wright</p>
-<p>Amazing. Recommended to me by my friend Julia. Probably one of the best books I’ve ever read, really; right up there with Christopher Alexander’s “<a href="https://www.goodreads.com/book/show/3131171-the-nature-of-order">Nature of Order</a>” and “<a href="https://www.goodreads.com/book/show/106728.The_Timeless_Way_of_Building">The Timeless Way of Building</a>”. This book is particularly neat, of course, because it takes a scientific approach to making sense of buddhist ideas. Overall, I find lots of agreement between this book, and the ideas of Christopher Alexander, and Surfaces and Essences.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/32895535-why-buddhism-is-true">Why Buddhism is True</a></strong>
+by Robert Wright</p>
+<p>Amazing. Recommended to me by my friend Julia. Probably one of the best books
+I’ve ever read, really; right up there with Christopher Alexander’s “<a href="https://www.goodreads.com/book/show/3131171-the-nature-of-order">Nature of
+Order</a>” and
+“<a href="https://www.goodreads.com/book/show/106728.The_Timeless_Way_of_Building">The Timeless Way of
+Building</a>”.
+This book is particularly neat, of course, because it takes a scientific
+approach to making sense of buddhist ideas. Overall, I find lots of agreement
+between this book, and the ideas of Christopher Alexander, and Surfaces and
+Essences.</p>
 </div>
 </div>
 <div class="book">
@@ -1224,8 +1575,11 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/inferior.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/31869108-inferior">Inferior</a></strong> by Angela Saini</p>
-<p>Pretty interesting. In this book Angela debunks many myths about the supposed biological differences between men and women. This is the first book of this kind that I’ve read; it won’t be the last.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/31869108-inferior">Inferior</a></strong>
+by Angela Saini</p>
+<p>Pretty interesting. In this book Angela debunks many myths about the supposed
+biological differences between men and women. This is the first book of this
+kind that I’ve read; it won’t be the last.</p>
 </div>
 </div>
 <div class="book alt">
@@ -1233,8 +1587,12 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/adam-smith.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/20821053-how-adam-smith-can-change-your-life">How Adam Smith Can Change Your Life</a></strong> by Russ Roberts</p>
-<p>I read this because my partners dad had it in the house. It’s pretty good; it’s really interesting to see the thoughts from someone from so far back in history. For me, this book resonated with the ideas I read in “Why Buddhism is True”. Worth reading if you happen upon it.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/20821053-how-adam-smith-can-change-your-life">How Adam Smith Can Change Your Life</a></strong>
+by Russ Roberts</p>
+<p>I read this because my partners dad had it in the house. It’s pretty good;
+it’s really interesting to see the thoughts from someone from so far back in
+history. For me, this book resonated with the ideas I read in “Why Buddhism is
+True”. Worth reading if you happen upon it.</p>
 </div>
 </div>
 <div class="book">
@@ -1242,8 +1600,13 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/siddartha.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/11510916-siddartha">Siddartha</a></strong> by Hermann Hesse</p>
-<p>I was not a fan of this. Recommended to me by my partner; I found it to be way too “on the nose” about enlightenment. I felt like I was being dragged around to understand certain things, in an obliquely mystical way. Maybe it’s because I read it after I read Why Buddhism is True; which is much more direct and scientific.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/11510916-siddartha">Siddartha</a></strong>
+by Hermann Hesse</p>
+<p>I was not a fan of this. Recommended to me by my partner; I found it to be way
+too “on the nose” about enlightenment. I felt like I was being dragged around
+to understand certain things, in an obliquely mystical way. Maybe it’s because
+I read it after I read Why Buddhism is True; which is much more direct and
+scientific.</p>
 </div>
 </div>
 <div class="book alt">
@@ -1251,9 +1614,16 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/last-lecture.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/40611510-the-last-lecture">The Last Lecture</a></strong> by Randy Pausch</p>
-<p>Quite good; but quite “American”. If you don’t like too much american-style dreams of success and culture, you might not like this. There’s also the <a href="https://www.youtube.com/watch?v=ji5_MqicxSo">video of the talk that inspired it</a> that is well worth watching.</p>
-<p>I watched the video way back in the day; and thought I’d finally read the book. I wasn’t disappointed, but I’m not sure I got much new out of the book that I didn’t get out of the talk. Still, worth grabbing if you got something out of the talk.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/40611510-the-last-lecture">The Last Lecture</a></strong>
+by Randy Pausch</p>
+<p>Quite good; but quite “American”. If you don’t like too much american-style
+dreams of success and culture, you might not like this. There’s also the <a href="https://www.youtube.com/watch?v=ji5_MqicxSo">video
+of the talk that inspired it</a> that
+is well worth watching.</p>
+<p>I watched the video way back in the day; and thought I’d finally read the book.
+I wasn’t disappointed, but I’m not sure I got much new out of the book that I
+didn’t get out of the talk. Still, worth grabbing if you got something out of
+the talk.</p>
 </div>
 </div>
 <div class="book">
@@ -1261,8 +1631,14 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/big-picture.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/26150770-the-big-picture">The Big Picture</a></strong> by Sean Carroll</p>
-<p>Not great. Before I’d read this, I really had thought I liked Sean Carroll. But, this book comes across to me as very arrogant. As someone who’s read way too many popular physics books, it contained a fair amount that wasn’t new to me (but that’s okay), but also a fair amount of just plain arrogance about what is known, where we can expect progress and what areas are accessible to science.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/26150770-the-big-picture">The Big Picture</a></strong>
+by Sean Carroll</p>
+<p>Not great. Before I’d read this, I really had thought I liked Sean Carroll.
+But, this book comes across to me as very arrogant. As someone who’s read way
+too many popular physics books, it contained a fair amount that wasn’t new to
+me (but that’s okay), but also a fair amount of just plain arrogance about what
+is known, where we can expect progress and what areas are accessible to
+science.</p>
 </div>
 </div>
 <div class="book alt">
@@ -1270,8 +1646,11 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/lost-connections.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/34921573-lost-connections">Lost Connections</a></strong> by Johann Hari</p>
-<p>I really enjoyed this. I’ve also suffered (mild, I think) depression, and can really relate to the ideas in this book; namely making connections with people. Probably not the solution for everyone, but interesting reading.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/34921573-lost-connections">Lost Connections</a></strong>
+by Johann Hari</p>
+<p>I really enjoyed this. I’ve also suffered (mild, I think) depression, and can
+really relate to the ideas in this book; namely making connections with people. Probably
+not the solution for everyone, but interesting reading.</p>
 </div>
 </div>
 <div class="book">
@@ -1279,8 +1658,11 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/made-by-humans.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/40626257-made-by-humans">Made by Humans</a></strong> by Ellen Broad</p>
-<p>Not bad. Fairly introductory thoughts on the topic, but from someone working in policy on this area. Nice to see an Australian view on these issues. Worth reading it you want a broad overview.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/40626257-made-by-humans">Made by Humans</a></strong>
+by Ellen Broad</p>
+<p>Not bad. Fairly introductory thoughts on the topic, but from someone working in
+policy on this area. Nice to see an Australian view on these issues. Worth reading
+it you want a broad overview.</p>
 </div>
 </div>
 <div class="book alt">
@@ -1288,8 +1670,13 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/reality.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/29767627-reality-is-not-what-it-seems">Reality is Not What it Seems</a></strong> by Carlo Rovelli</p>
-<p>This is okay. I get very frustrated these days by books that are implicitly sexist; using language like “when man discovered this”, etc, and this book does that a fair bit. I think I was hoping for this to answer more questions than it did; or to be a bit more detailed. I think I probably just misjudged the intended audience.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/29767627-reality-is-not-what-it-seems">Reality is Not What it
+Seems</a></strong>
+by Carlo Rovelli</p>
+<p>This is okay. I get very frustrated these days by books that are implicitly sexist; using
+language like “when man discovered this”, etc, and this book does that a fair bit. I think
+I was hoping for this to answer more questions than it did; or to be a bit more detailed. I
+think I probably just misjudged the intended audience.</p>
 </div>
 </div>
 <div class="book">
@@ -1297,8 +1684,14 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/brain-time.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/35187183-your-brain-is-a-time-machine">Your Brain Is a Time Machine</a></strong> by Dean Buonomano</p>
-<p>Pretty good. I haven’t read much about neuroscience, and I am really mostly confused about the physics of time, and problems like the so-called “<a href="https://en.wikipedia.org/wiki/Arrow_of_time">arrow of time</a>”, and such. So I found this to be pretty interesting, and have some good ideas in it that I hadn’t thought about, such as different “clocks” in the body for different purposes.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/35187183-your-brain-is-a-time-machine">Your Brain Is a Time
+Machine</a></strong>
+by Dean Buonomano</p>
+<p>Pretty good. I haven’t read much about neuroscience, and I am really mostly
+confused about the physics of time, and problems like the so-called “<a href="https://en.wikipedia.org/wiki/Arrow_of_time">arrow of
+time</a>”, and such. So I found this
+to be pretty interesting, and have some good ideas in it that I hadn’t thought
+about, such as different “clocks” in the body for different purposes.</p>
 </div>
 </div>
 <div class="book alt">
@@ -1306,8 +1699,12 @@ div.alt { background: #eaeaea; }
 <p><img src="/images/books-2018/i-feel-you.jpg" /></p>
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/36808161-i-feel-you">I Feel You</a></strong> by Cris Beam</p>
-<p>Interesting, but odd. I found this book to be worthwhile reading; in particular because it lead me to some interesting ideas around the <a href="/posts/2018-07-25-ethics-of-AI.html">ethics of AI</a>. Cris goes into weird details of empathy in use in businesses, and life. Overall, worth taking a look at.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/36808161-i-feel-you">I Feel You</a></strong>
+by Cris Beam</p>
+<p>Interesting, but odd. I found this book to be worthwhile reading; in particular because it
+lead me to some interesting ideas around the <a href="/posts/2018-07-25-ethics-of-AI.html">ethics of AI</a>.
+Cris goes into weird details of empathy in use in businesses, and life. Overall, worth taking
+a look at.</p>
 </div>
 </div>
 <div class="book">
@@ -1315,8 +1712,13 @@ div.alt { background: #eaeaea; }
 <p><img src="/images/books-2018/psychadelics.jpg" /></p>
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/36613747-how-to-change-your-mind">How to Change Your Mind</a></strong> by Michael Pollan</p>
-<p>Great. Never having taken psychadelics myself, and basically having the view that they are a bit dangerous, this book totally changed my mind. I found it totally fascinating, alongside Why Buddhism is True, in terms of a potential path towards enlightenment. It’s certainly interesting to learn about the history of psychadelic drugs, and think about the connection to mindful meditation.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/36613747-how-to-change-your-mind">How to Change Your Mind</a></strong>
+by Michael Pollan</p>
+<p>Great. Never having taken psychadelics myself, and basically having the view that they
+are a bit dangerous, this book totally changed my mind. I found it totally fascinating,
+alongside Why Buddhism is True, in terms of a potential path towards enlightenment. It’s
+certainly interesting to learn about the history of psychadelic drugs, and think about the
+connection to mindful meditation.</p>
 </div>
 </div>
 <div class="book alt">
@@ -1324,8 +1726,15 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/nature-of-order.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/3131171-the-nature-of-order">The Nature of Order - Book 1 - The Phenomenon of Life</a></strong> by Christopher Alexander</p>
-<p>Incredible. As we learned at the start, Christopher Alexander is my personal Jesus and this set of books is essentially his bible. As a result, this is amazing reading for me. He describes what it means for something to “have life”; he goes into detail by way of examples, a mathematical model, and a practical, hands-on theory. He breaks it down into what he refers to as “centers”; things that build on each other.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/3131171-the-nature-of-order">The Nature of Order - Book
+1 - The Phenomenon of Life</a></strong>
+by Christopher Alexander</p>
+<p>Incredible. As we learned at the start, Christopher Alexander is my personal Jesus and this
+set of books is essentially his bible. As a result, this is amazing reading for
+me. He describes what it means for something to “have life”; he goes into detail
+by way of examples, a mathematical model, and a practical, hands-on theory. He
+breaks it down into what he refers to as “centers”; things that build on each
+other.</p>
 </div>
 </div>
 <div class="book">
@@ -1333,9 +1742,14 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/value.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/29502362-the-value-of-everything">The Value of Everything</a></strong> by Mariana Mazzucato</p>
-<p>Amazing. I’m only part of the way through this book, but I love it. We saw Mariana talk at some event a few weeks ago; and she’s an amazing speaker with a incredibly ability to talk with enthusiasm about complicated ideas.</p>
-<p>This book is all about “value” vs “price”; and what industries should be considered “productive” in how they contributed to the economoy. In particular it’s really opened my eyes about the finance industry. Amazing reading.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/29502362-the-value-of-everything">The Value of Everything</a></strong>
+by Mariana Mazzucato</p>
+<p>Amazing. I’m only part of the way through this book, but I love it. We saw Mariana talk
+at some event a few weeks ago; and she’s an amazing speaker with a incredibly ability
+to talk with enthusiasm about complicated ideas.</p>
+<p>This book is all about “value” vs “price”; and what industries should be considered “productive”
+in how they contributed to the economoy. In particular it’s really opened my eyes about the
+finance industry. Amazing reading.</p>
 </div>
 </div>
 <div class="book alt">
@@ -1343,8 +1757,12 @@ div.alt { background: #eaeaea; }
 <p><img src="/images/books-2018/how-to-sit.jpg" /></p>
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/18342486-how-to-sit">How To Sit</a></strong>, <strong><a href="https://www.goodreads.com/book/show/22928976-how-to-walk">How To Walk</a></strong> by Thich Nhat Hanh</p>
-<p>Amazing, and useful. I’ve found these two (small) books really good to read when I’m feeling stressed or overwhelmed. They contain many little thoughts that help ground and relax you.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/18342486-how-to-sit">How To Sit</a></strong>,
+<strong><a href="https://www.goodreads.com/book/show/22928976-how-to-walk">How To Walk</a></strong>
+by Thich Nhat Hanh</p>
+<p>Amazing, and useful. I’ve found these two (small) books really good to read when I’m
+feeling stressed or overwhelmed. They contain many little thoughts that help ground and
+relax you.</p>
 </div>
 </div>
 <h3 id="fiction">Fiction</h3>
@@ -1353,7 +1771,8 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/the-power.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/29751398-the-power">The Power</a></strong> by Naomi Alderman</p>
+<p><strong><a href="https://www.goodreads.com/book/show/29751398-the-power">The Power</a></strong>
+by Naomi Alderman</p>
 <p>Pretty good. Best read without too much knowledge of what it’s about. Worth reading.</p>
 </div>
 </div>
@@ -1362,7 +1781,8 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/the-martian.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/18007564-the-martian">The Martian</a></strong> by Andy Weir</p>
+<p><strong><a href="https://www.goodreads.com/book/show/18007564-the-martian">The Martian</a></strong>
+by Andy Weir</p>
 <p>Awesome. Instant classic. Great fun.</p>
 </div>
 </div>
@@ -1371,7 +1791,8 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/all-the-birds.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/25372801-all-the-birds-in-the-sky">All the Birds in the Sky</a></strong> by Charlie Jane Anders</p>
+<p><strong><a href="https://www.goodreads.com/book/show/25372801-all-the-birds-in-the-sky">All the Birds in the Sky</a></strong>
+by Charlie Jane Anders</p>
 <p>Pretty fun. A nice and simple read. I enjoyed it.</p>
 </div>
 </div>
@@ -1380,8 +1801,14 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/fifth-season.jpg" />
 </div>
 <div class="text">
-<p>The Broken Earth Series: <strong><a href="https://www.goodreads.com/book/show/19161852-the-fifth-season">The Fifth Season</a></strong>, <strong><a href="https://www.goodreads.com/book/show/26228034-the-obelisk-gate">The Obselisk Gate</a></strong>, <strong><a href="https://www.goodreads.com/book/show/31817749-the-stone-sky">The Stone Sky</a></strong>, by N. K. Jemisin</p>
-<p>Incredible. The first series of books I read by N. K. Jemisin. I couldn’t put these down, and as soon as I’d finished the first one I bought the remaining two and couldn’t wait to read them.</p>
+<p>The Broken Earth Series:
+<strong><a href="https://www.goodreads.com/book/show/19161852-the-fifth-season">The Fifth Season</a></strong>,
+<strong><a href="https://www.goodreads.com/book/show/26228034-the-obelisk-gate">The Obselisk Gate</a></strong>,
+<strong><a href="https://www.goodreads.com/book/show/31817749-the-stone-sky">The Stone Sky</a></strong>,
+by N. K. Jemisin</p>
+<p>Incredible. The first series of books I read by N. K. Jemisin. I couldn’t put
+these down, and as soon as I’d finished the first one I bought the remaining
+two and couldn’t wait to read them.</p>
 </div>
 </div>
 <div class="book">
@@ -1389,8 +1816,10 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/inheritance.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/21481566-the-inheritance-trilogy">The Inheritance Trilogy</a></strong> by N. K. Jemisin</p>
-<p>Really great. N. K. Jemisin is easily my favourite Sci-Fi author at the moment and I’ll probably read anything she writes. So interesting, unique, and innovative.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/21481566-the-inheritance-trilogy">The Inheritance Trilogy</a></strong>
+by N. K. Jemisin</p>
+<p>Really great. N. K. Jemisin is easily my favourite Sci-Fi author at the moment and I’ll probably
+read anything she writes. So interesting, unique, and innovative.</p>
 </div>
 </div>
 <div class="book alt">
@@ -1398,7 +1827,8 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/dreamblood.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/29775367-the-dreamblood-duology">The Dreamblood Duology</a></strong> by N. K. Jemisin</p>
+<p><strong><a href="https://www.goodreads.com/book/show/29775367-the-dreamblood-duology">The Dreamblood Duology</a></strong>
+by N. K. Jemisin</p>
 <p>Really great. Quite different, really, from The Inheritance Trilogy, but still amazing.</p>
 </div>
 </div>
@@ -1407,8 +1837,11 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/less.jpg" />
 </div>
 <div class="text">
-<p><strong><a href="https://www.goodreads.com/book/show/39927096-less">Less</a></strong> by Andrew Sean Greer</p>
-<p>Not bad. I picked it up off the table in the bookshop because it had won the Pulitzer Prize, and I figured it might be good. I found it to be pretty good; but utlimately not quite my style.</p>
+<p><strong><a href="https://www.goodreads.com/book/show/39927096-less">Less</a></strong>
+by Andrew Sean Greer</p>
+<p>Not bad. I picked it up off the table in the bookshop because it had won the
+Pulitzer Prize, and I figured it might be good. I found it to be pretty good;
+but utlimately not quite my style.</p>
 </div>
 </div>
 <div class="book alt">
@@ -1416,127 +1849,17 @@ div.alt { background: #eaeaea; }
 <img src="/images/books-2018/kings.jpg" />
 </div>
 <div class="text">
-<p>The Stormlight Archive <strong><a href="https://www.goodreads.com/book/show/7235533-the-way-of-kings">The Way of Kings</a></strong>, <strong><a href="https://www.goodreads.com/book/show/17332218-words-of-radiance">Words of Radiance</a></strong>, <strong><a href="https://www.goodreads.com/book/show/34002132-oathbringer">Oathbringer</a></strong>, by Brandon Sanderson</p>
-<p>Awesome. I discovered Brandon after looking for something new after finishing <a href="https://www.goodreads.com/series/41526-the-wheel-of-time">The Wheel of Time</a>. I’m really enjoying this series, and can’t wait for the next one!</p>
+<p>The Stormlight Archive
+<strong><a href="https://www.goodreads.com/book/show/7235533-the-way-of-kings">The Way of Kings</a></strong>,
+<strong><a href="https://www.goodreads.com/book/show/17332218-words-of-radiance">Words of Radiance</a></strong>,
+<strong><a href="https://www.goodreads.com/book/show/34002132-oathbringer">Oathbringer</a></strong>,
+by Brandon Sanderson</p>
+<p>Awesome. I discovered Brandon after looking for something new after finishing
+<a href="https://www.goodreads.com/series/41526-the-wheel-of-time">The Wheel of Time</a>.
+I’m really enjoying this series, and can’t wait for the next one!</p>
 </div>
 </div>
 <p>Hope you enjoyed this list! If you have any suggestions of books, I’d be really interested!</p>
-]]></summary>
-</entry>
-<entry>
-    <title>Reliable training hack on the Google Colaboratory</title>
-    <link href="https://silky.github.io/posts/2018-11-19-reliable-training-hack-on-google-colaboratory.html" />
-    <id>https://silky.github.io/posts/2018-11-19-reliable-training-hack-on-google-colaboratory.html</id>
-    <published>2018-11-19T00:00:00Z</published>
-    <updated>2018-11-19T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div class="info">
-    Posted on November 19, 2018
-    
-        by Noon van der Silk
-    
-</div>
-
-<p>Google’s <a href="https://colab.research.google.com/notebooks/welcome.ipynb#recent=true">Colaboratory</a> is a hosted notebook environment, with access to GPUs, and even TPUs!</p>
-<p>It’s really quite handy, but by far the biggest downside is that the sessions time out. It makes sense; I’m sure even Google can’t give out an unlimited amount of compute-resources for free to every person.</p>
-<h3 id="backgroundproblem">Background/Problem</h3>
-<p>On the weekend, I wanted to train a few <a href="https://github.com/tensorflow/magenta/tree/master/magenta/models/sketch_rnn">sketch-rnn models</a> on the <a href="https://quickdraw.withgoogle.com/data">quickdraw data</a>.</p>
-<p>Naively, I figured this would be really easy with Google colab. While it was straightforward to start training, what I noticed is that getting data on to and off of the instance was frustrating, and the timeouts blocked me from getting a good amount of training time.</p>
-<h3 id="solution">Solution</h3>
-<p>Happily, colab supports very nice integration with Google services, so my plan was:</p>
-<ol type="1">
-<li>Download data from Google Cloud Platform (GCP),</li>
-<li>Train, or continue training,</li>
-<li>Push a checkpoint to Google Drive occasionally,</li>
-<li>Repeat until happy.</li>
-</ol>
-<p>Here’s how it looks, in code:</p>
-<p><strong>Download data from GCP</strong></p>
-<p>As I’m working with the quickdraw data, it’s already on the Google Cloud Platform, so this was very easy. In a cell, I simply ran the following to get the “eye” quickdraw data:</p>
-<pre><code>!gsutil cp gs://quickdraw_dataset/sketchrnn/eye.npz .</code></pre>
-<p>(Note that the <code>gsutil</code> command is already installed on the instance.)</p>
-<p><strong>Train, or continue training, and save to Drive</strong></p>
-<p>As I’m using the <code>sketch_rnn</code> model, I first simply install <code>magenta</code> (and I have to pick a Python 2 environment.)</p>
-<pre><code>!pip install magenta</code></pre>
-<p>Now, there’s some considerations. Recalling that I’m going to be pushing my checkpoints to Google Drive, I need to authenticate with Google Drive. This is how that looks:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb3-1" title="1"><span class="im">from</span> google.colab <span class="im">import</span> auth</a>
-<a class="sourceLine" id="cb3-2" title="2">auth.authenticate_user()</a></code></pre></div>
-<p>Then you’ll be prompted to copy in a code. Once that’s done, you can connect to Google Drive like so:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb4-1" title="1"><span class="im">from</span> googleapiclient.discovery <span class="im">import</span> build</a>
-<a class="sourceLine" id="cb4-2" title="2">drive_service <span class="op">=</span> build(<span class="st">&#39;drive&#39;</span>, <span class="st">&#39;v3&#39;</span>)</a></code></pre></div>
-<p>Now, if I’m training from scratch, I’ll run something like this:</p>
-<pre><code>!sketch_rnn_train --log_root=logs --data_dir=./ --hparams=&quot;data_set=[eye.npz],num_steps=501&quot;</code></pre>
-<p>This will run for however long, and utlimately produce checkpoints in the <code>./logs</code> folder, supposing that <code>eye.npz</code> exists in the present directory.</p>
-<p>Once that’s completed, I start my main training-pushing loop. Firstly, there’s a bit of busywork to zip files, get the latest checkpoint number, and upload it to Google Drive:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb6-1" title="1"><span class="im">import</span> os</a>
-<a class="sourceLine" id="cb6-2" title="2"><span class="im">import</span> zipfile</a>
-<a class="sourceLine" id="cb6-3" title="3"><span class="im">from</span> googleapiclient.http <span class="im">import</span> MediaFileUpload</a>
-<a class="sourceLine" id="cb6-4" title="4"></a>
-<a class="sourceLine" id="cb6-5" title="5"><span class="kw">def</span> get_largest_num (<span class="bu">dir</span><span class="op">=</span><span class="st">&quot;logs&quot;</span>, prefix<span class="op">=</span><span class="st">&quot;vector&quot;</span>):</a>
-<a class="sourceLine" id="cb6-6" title="6">  </a>
-<a class="sourceLine" id="cb6-7" title="7">  files <span class="op">=</span> os.listdir(<span class="bu">dir</span>)</a>
-<a class="sourceLine" id="cb6-8" title="8">  </a>
-<a class="sourceLine" id="cb6-9" title="9">  biggest <span class="op">=</span> <span class="dv">0</span></a>
-<a class="sourceLine" id="cb6-10" title="10">  </a>
-<a class="sourceLine" id="cb6-11" title="11">  <span class="cf">for</span> f <span class="kw">in</span> files:</a>
-<a class="sourceLine" id="cb6-12" title="12">    <span class="cf">if</span> f.startswith(prefix):</a>
-<a class="sourceLine" id="cb6-13" title="13">      k <span class="op">=</span> <span class="bu">int</span>( f.split(<span class="st">&quot;.&quot;</span>)[<span class="dv">0</span>].split(<span class="st">&quot;-&quot;</span>)[<span class="dv">1</span>] ) </a>
-<a class="sourceLine" id="cb6-14" title="14">      <span class="cf">if</span> k <span class="op">&gt;</span> biggest:</a>
-<a class="sourceLine" id="cb6-15" title="15">        biggest <span class="op">=</span> k</a>
-<a class="sourceLine" id="cb6-16" title="16">  </a>
-<a class="sourceLine" id="cb6-17" title="17">  <span class="cf">return</span> biggest</a>
-<a class="sourceLine" id="cb6-18" title="18"></a>
-<a class="sourceLine" id="cb6-19" title="19"></a>
-<a class="sourceLine" id="cb6-20" title="20"><span class="kw">def</span> zip_model (name, k):</a>
-<a class="sourceLine" id="cb6-21" title="21">  sk     <span class="op">=</span> <span class="bu">str</span>(k)</a>
-<a class="sourceLine" id="cb6-22" title="22">  zipobj <span class="op">=</span> zipfile.ZipFile(name <span class="op">+</span> <span class="st">&quot;.zip&quot;</span>, <span class="st">&quot;w&quot;</span>, zipfile.ZIP_DEFLATED)</a>
-<a class="sourceLine" id="cb6-23" title="23"></a>
-<a class="sourceLine" id="cb6-24" title="24">  files <span class="op">=</span> [ <span class="st">&quot;checkpoint&quot;</span></a>
-<a class="sourceLine" id="cb6-25" title="25">          , <span class="st">&quot;model_config.json&quot;</span></a>
-<a class="sourceLine" id="cb6-26" title="26">          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.meta&quot;</span></a>
-<a class="sourceLine" id="cb6-27" title="27">          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.index&quot;</span></a>
-<a class="sourceLine" id="cb6-28" title="28">          , <span class="st">&quot;vector-&quot;</span> <span class="op">+</span> sk <span class="op">+</span> <span class="st">&quot;.data-00000-of-00001&quot;</span>]</a>
-<a class="sourceLine" id="cb6-29" title="29">  </a>
-<a class="sourceLine" id="cb6-30" title="30">  <span class="cf">for</span> f <span class="kw">in</span> files:</a>
-<a class="sourceLine" id="cb6-31" title="31">    zipobj.write(<span class="st">&quot;logs/&quot;</span> <span class="op">+</span> f, f)</a>
-<a class="sourceLine" id="cb6-32" title="32"></a>
-<a class="sourceLine" id="cb6-33" title="33"></a>
-<a class="sourceLine" id="cb6-34" title="34"></a>
-<a class="sourceLine" id="cb6-35" title="35"><span class="kw">def</span> upload_to_drive (name<span class="op">=</span><span class="st">&quot;model.zip&quot;</span>):</a>
-<a class="sourceLine" id="cb6-36" title="36">  file_metadata <span class="op">=</span> {</a>
-<a class="sourceLine" id="cb6-37" title="37">    <span class="st">&quot;name&quot;</span>:     name,</a>
-<a class="sourceLine" id="cb6-38" title="38">    <span class="st">&quot;mimeType&quot;</span>: <span class="st">&quot;binary/octet-stream&quot;</span> }</a>
-<a class="sourceLine" id="cb6-39" title="39"></a>
-<a class="sourceLine" id="cb6-40" title="40">  media <span class="op">=</span> MediaFileUpload(name, </a>
-<a class="sourceLine" id="cb6-41" title="41">                          mimetype<span class="op">=</span><span class="st">&quot;binary/octet-stream&quot;</span>,</a>
-<a class="sourceLine" id="cb6-42" title="42">                          resumable<span class="op">=</span><span class="va">True</span>)</a>
-<a class="sourceLine" id="cb6-43" title="43"></a>
-<a class="sourceLine" id="cb6-44" title="44">  created <span class="op">=</span> drive_service.files().create(body<span class="op">=</span>file_metadata,</a>
-<a class="sourceLine" id="cb6-45" title="45">                                         media_body<span class="op">=</span>media,</a>
-<a class="sourceLine" id="cb6-46" title="46">                                         fields<span class="op">=</span><span class="st">&quot;id&quot;</span>).execute()</a>
-<a class="sourceLine" id="cb6-47" title="47">  file_id <span class="op">=</span> created.get(<span class="st">&quot;id&quot;</span>)</a>
-<a class="sourceLine" id="cb6-48" title="48">  <span class="cf">return</span> file_id</a></code></pre></div>
-<p>Then, the main loop:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><a class="sourceLine" id="cb7-1" title="1">iterations <span class="op">=</span> <span class="dv">200</span></a>
-<a class="sourceLine" id="cb7-2" title="2"><span class="cf">for</span> k <span class="kw">in</span> <span class="bu">range</span>(iterations):</a>
-<a class="sourceLine" id="cb7-3" title="3">  <span class="bu">print</span>(<span class="st">&quot;Iteration &quot;</span> <span class="op">+</span> <span class="bu">str</span>(k))</a>
-<a class="sourceLine" id="cb7-4" title="4">  cmd <span class="op">=</span> <span class="st">&#39;sketch_rnn_train --log_root=logs --resume_training --data_dir=./ &#39;</span> <span class="op">+</span> <span class="op">\</span></a>
-<a class="sourceLine" id="cb7-5" title="5">        <span class="co">&#39; --hparams=&quot;data_set=[eye.npz],num_steps=1001&quot;&#39;</span></a>
-<a class="sourceLine" id="cb7-6" title="6">  x <span class="op">=</span> os.system(cmd)</a>
-<a class="sourceLine" id="cb7-7" title="7">  zip_model(<span class="st">&quot;model&quot;</span>, get_largest_num())</a>
-<a class="sourceLine" id="cb7-8" title="8">  upload_to_drive()</a></code></pre></div>
-<p>So, all that does is run the main training command, to reload the model from the latest checkpoint and continue training, then zips and uploads!</p>
-<p>Set the iterations to whatever you wish; chances are your instance will never run for that long anyway; the main point is to push up the checkpoints every-so-often (for me, every 1000 steps of the sketch_rnn model; which takes about 1 hour or so, depending on params.)</p>
-<p><strong>Brining down the most recent Drive checkpoint</strong></p>
-<p>Now, when your instance goes away, you’ll need to bring down the most recent checkpoint <em>from</em> Drive. I did this somewhat manually, but it works well enough:</p>
-<pre><code># Mount Google Drive as a folder
-from google.colab import drive
-drive.mount(&#39;/content/gdrive&#39;)</code></pre>
-<pre><code># Extract latest model zip file
-!cp /content/gdrive/My\ Drive/model\ \(3\).zip logs/model.zip &amp;&amp; cd logs &amp;&amp; unzip model.zip</code></pre>
-<p>Note that Google Drive numbers all the files as copies, like “model (4).zip”, “model (5).zip”, when you upload the same name. On the web interface, it only shows one file, but gives you history. Do as you wish here; I was a bit lazy.</p>
-<h3 id="thats-it">That’s it!</h3>
-<p>Hope this helps you do some training!</p>
-<p>You can read more about other ways to access data from Google Colaboratory <a href="https://colab.research.google.com/notebooks/io.ipynb">here</a>.</p>
 ]]></summary>
 </entry>
 

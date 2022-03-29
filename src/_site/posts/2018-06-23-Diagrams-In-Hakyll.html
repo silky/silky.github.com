@@ -47,14 +47,22 @@
     
 </div>
 
-<p>I stumbled across this blogpost of <a href="http://www.corentindupont.info/blog/posts/Programming/2015-09-14-diagrams.html">Corentin Dupont</a> where he put together a library that allows you to modify your hakyll blog so that you can have inline diagrams! As anyone knows, this was amazingly exciting to me, because I love <a href="https://archives.haskell.org/projects.haskell.org/diagrams/"><code>diagrams</code></a>.</p>
-<p>So I quickly tried to set it up; but, much to my sadness it didn’t immediately work.</p>
-<p>Luckily, however, I was able to make it worked by hacking around in the two relevant repos:</p>
+<p>I stumbled across this blogpost of <a href="http://www.corentindupont.info/blog/posts/Programming/2015-09-14-diagrams.html">Corentin
+Dupont</a>
+where he put together a library that allows you to modify your hakyll blog so
+that you can have inline diagrams! As anyone knows, this was amazingly
+exciting to me, because I love
+<a href="https://archives.haskell.org/projects.haskell.org/diagrams/"><code>diagrams</code></a>.</p>
+<p>So I quickly tried to set it up; but, much to my sadness it didn’t immediately
+work.</p>
+<p>Luckily, however, I was able to make it worked by hacking around in the two
+relevant repos:</p>
 <ul>
 <li><a href="https://github.com/silky/diagrams-pandoc">diagrams-pandoc</a></li>
 <li><a href="https://github.com/silky/hakyll-diagrams">hakyll-diagrams</a></li>
 </ul>
-<p>The main result is a function, <code>pandocCompilerDiagrams</code>, that I included into my hakyll site file like so:</p>
+<p>The main result is a function, <code>pandocCompilerDiagrams</code>, that I included into
+my hakyll site file like so:</p>
 <pre><code>match &quot;posts/*&quot; $ do
     route $ setExtension &quot;html&quot;
     compile $ 
@@ -66,44 +74,44 @@
 <p>And so now, I can have inline diagrams! Check it out:</p>
 <p>Imagine we had a circle:</p>
 <div>
-<img src="../images/diagrams/75ce74a5e4782d23.png" />
-<div class="sourceCode" id="cb2"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb2-1" title="1">example <span class="fu">=</span> circle <span class="dv">1</span></a></code></pre></div>
+<img src="../images/diagrams/d363f5a73660e0b5.png" />
+<div class="sourceCode" id="cb2"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>example <span class="ot">=</span> circle <span class="dv">1</span></span></code></pre></div>
 </div>
 <p>But now, what if the circle was repeated 5 times</p>
 <div>
-<img src="../images/diagrams/5e3c8cefe972420b.png" />
-<div class="sourceCode" id="cb3"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb3-1" title="1">example <span class="fu">=</span> hcat (<span class="fu">take</span> <span class="dv">5</span> <span class="fu">$</span> <span class="fu">repeat</span> (circle <span class="dv">1</span>))</a></code></pre></div>
+<img src="../images/diagrams/8c4cbabacd5a819d.png" />
+<div class="sourceCode" id="cb3"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>example <span class="ot">=</span> hcat (<span class="fu">take</span> <span class="dv">5</span> <span class="op">$</span> <span class="fu">repeat</span> (circle <span class="dv">1</span>))</span></code></pre></div>
 </div>
 <p>Cool!</p>
 <p>To celebrate, let’s draw the Sierpinksi triangle:</p>
 <p>The basic building block:</p>
 <div>
-<img src="../images/diagrams/c0bf3207e4771ac5.png" />
-<div class="sourceCode" id="cb4"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb4-1" title="1">sierp d <span class="fu">=</span> d <span class="fu">===</span> (d <span class="fu">|||</span> d) <span class="fu">#</span> centerXY</a>
-<a class="sourceLine" id="cb4-2" title="2">example <span class="fu">=</span> sierp (triangle <span class="dv">1</span>)</a></code></pre></div>
+<img src="../images/diagrams/b203f2f04adbfb17.png" />
+<div class="sourceCode" id="cb4"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>sierp d <span class="ot">=</span> d <span class="op">===</span> (d <span class="op">|||</span> d) <span class="op">#</span> centerXY</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>example <span class="ot">=</span> sierp (triangle <span class="dv">1</span>)</span></code></pre></div>
 </div>
 <p>Let’s go!</p>
 <div>
-<img src="../images/diagrams/b9f3d030b64b1379.png" />
-<div class="sourceCode" id="cb5"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb5-1" title="1">sierp d <span class="fu">=</span> d <span class="fu">===</span> (d <span class="fu">|||</span> d) <span class="fu">#</span> centerXY</a>
-<a class="sourceLine" id="cb5-2" title="2">example <span class="fu">=</span> <span class="fu">foldl</span> (\d _ <span class="ot">-&gt;</span> sierp d) (triangle <span class="dv">1</span>) [<span class="dv">1</span><span class="fu">..</span><span class="dv">3</span>]</a></code></pre></div>
+<img src="../images/diagrams/1986c56b0987ff4b.png" />
+<div class="sourceCode" id="cb5"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sierp d <span class="ot">=</span> d <span class="op">===</span> (d <span class="op">|||</span> d) <span class="op">#</span> centerXY</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>example <span class="ot">=</span> <span class="fu">foldl</span> (\d _ <span class="ot">-&gt;</span> sierp d) (triangle <span class="dv">1</span>) [<span class="dv">1</span><span class="op">..</span><span class="dv">3</span>]</span></code></pre></div>
 </div>
 <p>Colours!</p>
 <div>
-<img src="../images/diagrams/93b55cb41cc00da4.png" />
-<div class="sourceCode" id="cb6"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb6-1" title="1"><span class="kw">import</span> <span class="dt">Data.Colour.Palette.ColorSet</span></a>
-<a class="sourceLine" id="cb6-2" title="2"></a>
-<a class="sourceLine" id="cb6-3" title="3">color n <span class="fu">=</span> rybColor (n<span class="fu">*</span><span class="dv">2</span>)</a>
-<a class="sourceLine" id="cb6-4" title="4"> </a>
-<a class="sourceLine" id="cb6-5" title="5">sierp d n <span class="fu">=</span> d1 <span class="fu">===</span> (d2 <span class="fu">|||</span> d2) <span class="fu">#</span> centerX</a>
-<a class="sourceLine" id="cb6-6" title="6">    <span class="kw">where</span></a>
-<a class="sourceLine" id="cb6-7" title="7">        d1 <span class="fu">=</span> d <span class="fu">#</span> bg (color n)</a>
-<a class="sourceLine" id="cb6-8" title="8">        d2 <span class="fu">=</span> d <span class="fu">#</span> bg (color (n<span class="fu">+</span><span class="dv">1</span>))</a>
-<a class="sourceLine" id="cb6-9" title="9"></a>
-<a class="sourceLine" id="cb6-10" title="10">example <span class="fu">=</span> <span class="fu">foldl</span> step d0 [<span class="dv">0</span><span class="fu">..</span><span class="dv">5</span>]</a>
-<a class="sourceLine" id="cb6-11" title="11">    <span class="kw">where</span></a>
-<a class="sourceLine" id="cb6-12" title="12">        d0       <span class="fu">=</span> triangle <span class="dv">1</span> <span class="fu">#</span> lw <span class="dv">0</span></a>
-<a class="sourceLine" id="cb6-13" title="13">        step d n <span class="fu">=</span> sierp d (n<span class="fu">*</span><span class="dv">2</span>)</a></code></pre></div>
+<img src="../images/diagrams/079b9146d197fc96.png" />
+<div class="sourceCode" id="cb6"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">import</span> <span class="dt">Data.Colour.Palette.ColorSet</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>color n <span class="ot">=</span> rybColor (n<span class="op">*</span><span class="dv">2</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>sierp d n <span class="ot">=</span> d1 <span class="op">===</span> (d2 <span class="op">|||</span> d2) <span class="op">#</span> centerX</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">where</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        d1 <span class="ot">=</span> d <span class="op">#</span> bg (color n)</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        d2 <span class="ot">=</span> d <span class="op">#</span> bg (color (n<span class="op">+</span><span class="dv">1</span>))</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>example <span class="ot">=</span> <span class="fu">foldl</span> step d0 [<span class="dv">0</span><span class="op">..</span><span class="dv">5</span>]</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">where</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        d0       <span class="ot">=</span> triangle <span class="dv">1</span> <span class="op">#</span> lw <span class="dv">0</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        step d n <span class="ot">=</span> sierp d (n<span class="op">*</span><span class="dv">2</span>)</span></code></pre></div>
 </div>
 <p>Happy days!</p>
 

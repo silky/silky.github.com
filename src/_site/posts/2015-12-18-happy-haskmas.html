@@ -52,31 +52,32 @@
 <p>So of course, I love <a href="https://github.com/commercialhaskell/stack">stack</a> I created a new <code>simple</code> project with <code>stack new</code> and got started.</p>
 <p>It turns out that <code>ImplicitCAD</code> has a pretty nice and reasonably intuitive interface (similar to the code that one would write into <a href="http://www.openscad.org/">OpenSCAD</a>).</p>
 <p>I built the 3D version of the logo by moving around rectangles, and by extruding a hand-drawn shape.</p>
-<p>The cool thing about generating this image in fully-feature programming language is that I can build a tree of any size I like!</p>
+<p>The cool thing about generating this image in fully-feature programming
+language is that I can build a tree of any size I like!</p>
 <p>Here’s the (pretty verbose) code that gets me a tree of arbitrary depth:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><a class="sourceLine" id="cb1-1" title="1"><span class="ot">ntree ::</span> <span class="dt">Integer</span> <span class="ot">-&gt;</span> <span class="dt">SymbolicObj3</span></a>
-<a class="sourceLine" id="cb1-2" title="2">ntree n <span class="fu">=</span> finalObj</a>
-<a class="sourceLine" id="cb1-3" title="3">  <span class="kw">where</span></a>
-<a class="sourceLine" id="cb1-4" title="4">      dec     <span class="fu">=</span> <span class="fl">0.8</span></a>
-<a class="sourceLine" id="cb1-5" title="5">      ratios  <span class="fu">=</span> <span class="dv">0</span> <span class="fu">:</span> [dec<span class="fu">^</span>j <span class="fu">|</span> j <span class="ot">&lt;-</span> [<span class="dv">0</span><span class="fu">..</span>(n<span class="fu">-</span><span class="dv">2</span>)]]</a>
-<a class="sourceLine" id="cb1-6" title="6">      <span class="co">-- build up logo structure</span></a>
-<a class="sourceLine" id="cb1-7" title="7">      ((lx, ly, lz), objs) <span class="fu">=</span> <span class="fu">foldl</span> f ((<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>), []) (<span class="fu">zip</span> [<span class="dv">0</span><span class="fu">..</span>(n<span class="fu">-</span><span class="dv">1</span>)] ratios)</a>
-<a class="sourceLine" id="cb1-8" title="8">      <span class="co">-- position of logos</span></a>
-<a class="sourceLine" id="cb1-9" title="9">      (x,y,z) <span class="fu">=</span> (<span class="dv">40</span>, <span class="dv">4</span>, <span class="dv">0</span>)</a>
-<a class="sourceLine" id="cb1-10" title="10"><span class="ot">      f ::</span> ((ℝ, ℝ, ℝ), [<span class="dt">SymbolicObj3</span>]) <span class="ot">-&gt;</span> (<span class="dt">Integer</span>, <span class="dt">Float</span>) <span class="ot">-&gt;</span> ((ℝ, ℝ, ℝ), [<span class="dt">SymbolicObj3</span>])</a>
-<a class="sourceLine" id="cb1-11" title="11">      f ((x', y', z'), xs) (j, r) <span class="fu">=</span></a>
-<a class="sourceLine" id="cb1-12" title="12">                <span class="kw">let</span> newPos <span class="fu">=</span> (x' <span class="fu">+</span> r<span class="fu">*</span>x, y' <span class="fu">+</span> r<span class="fu">*</span>y, z' <span class="fu">+</span> r<span class="fu">*</span>z)</a>
-<a class="sourceLine" id="cb1-13" title="13">                    s      <span class="fu">=</span> dec <span class="fu">^</span> j</a>
-<a class="sourceLine" id="cb1-14" title="14">                    loc    <span class="fu">=</span> <span class="kw">if</span> (<span class="fu">even</span> j) <span class="kw">then</span> <span class="dt">R</span> <span class="kw">else</span> <span class="dt">L</span></a>
-<a class="sourceLine" id="cb1-15" title="15">                    obj3   <span class="fu">=</span> translate newPos <span class="fu">$</span> scale (s, s, s) (logoBauble loc)</a>
-<a class="sourceLine" id="cb1-16" title="16">                 <span class="kw">in</span> (newPos, obj3 <span class="fu">:</span> xs)</a>
-<a class="sourceLine" id="cb1-17" title="17">      <span class="co">-- star</span></a>
-<a class="sourceLine" id="cb1-18" title="18">      (a,b,c)   <span class="fu">=</span> (<span class="fl">40.5</span>, <span class="fl">24.5</span>, <span class="dv">0</span>)</a>
-<a class="sourceLine" id="cb1-19" title="19">      starScale <span class="fu">=</span> dec <span class="fu">**</span> (<span class="fu">fromIntegral</span> (n<span class="fu">-</span><span class="dv">3</span>))</a>
-<a class="sourceLine" id="cb1-20" title="20">      posScale  <span class="fu">=</span> dec <span class="fu">**</span> (<span class="fu">fromIntegral</span> n)</a>
-<a class="sourceLine" id="cb1-21" title="21">      starObj   <span class="fu">=</span> translate (lx <span class="fu">+</span> (posScale <span class="fu">*</span> a), ly <span class="fu">+</span> (posScale <span class="fu">*</span> b), lz <span class="fu">+</span> (posScale <span class="fu">*</span> c))</a>
-<a class="sourceLine" id="cb1-22" title="22">                    <span class="fu">$</span> scale (starScale, starScale, starScale) star</a>
-<a class="sourceLine" id="cb1-23" title="23">      finalObj <span class="fu">=</span> union (starObj <span class="fu">:</span> objs)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ot">ntree ::</span> <span class="dt">Integer</span> <span class="ot">-&gt;</span> <span class="dt">SymbolicObj3</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>ntree n <span class="ot">=</span> finalObj</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">where</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>      dec     <span class="ot">=</span> <span class="fl">0.8</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>      ratios  <span class="ot">=</span> <span class="dv">0</span> <span class="op">:</span> [dec<span class="op">^</span>j <span class="op">|</span> j <span class="ot">&lt;-</span> [<span class="dv">0</span><span class="op">..</span>(n<span class="op">-</span><span class="dv">2</span>)]]</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>      <span class="co">-- build up logo structure</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>      ((lx, ly, lz), objs) <span class="ot">=</span> <span class="fu">foldl</span> f ((<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>), []) (<span class="fu">zip</span> [<span class="dv">0</span><span class="op">..</span>(n<span class="op">-</span><span class="dv">1</span>)] ratios)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>      <span class="co">-- position of logos</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>      (x,y,z) <span class="ot">=</span> (<span class="dv">40</span>, <span class="dv">4</span>, <span class="dv">0</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="ot">      f ::</span> ((ℝ, ℝ, ℝ), [<span class="dt">SymbolicObj3</span>]) <span class="ot">-&gt;</span> (<span class="dt">Integer</span>, <span class="dt">Float</span>) <span class="ot">-&gt;</span> ((ℝ, ℝ, ℝ), [<span class="dt">SymbolicObj3</span>])</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>      f ((x', y', z'), xs) (j, r) <span class="ot">=</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>                <span class="kw">let</span> newPos <span class="ot">=</span> (x' <span class="op">+</span> r<span class="op">*</span>x, y' <span class="op">+</span> r<span class="op">*</span>y, z' <span class="op">+</span> r<span class="op">*</span>z)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>                    s      <span class="ot">=</span> dec <span class="op">^</span> j</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>                    loc    <span class="ot">=</span> <span class="kw">if</span> (<span class="fu">even</span> j) <span class="kw">then</span> <span class="dt">R</span> <span class="kw">else</span> <span class="dt">L</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>                    obj3   <span class="ot">=</span> translate newPos <span class="op">$</span> scale (s, s, s) (logoBauble loc)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>                 <span class="kw">in</span> (newPos, obj3 <span class="op">:</span> xs)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>      <span class="co">-- star</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>      (a,b,c)   <span class="ot">=</span> (<span class="fl">40.5</span>, <span class="fl">24.5</span>, <span class="dv">0</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>      starScale <span class="ot">=</span> dec <span class="op">**</span> (<span class="fu">fromIntegral</span> (n<span class="op">-</span><span class="dv">3</span>))</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>      posScale  <span class="ot">=</span> dec <span class="op">**</span> (<span class="fu">fromIntegral</span> n)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>      starObj   <span class="ot">=</span> translate (lx <span class="op">+</span> (posScale <span class="op">*</span> a), ly <span class="op">+</span> (posScale <span class="op">*</span> b), lz <span class="op">+</span> (posScale <span class="op">*</span> c))</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>                    <span class="op">$</span> scale (starScale, starScale, starScale) star</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>      finalObj <span class="ot">=</span> union (starObj <span class="op">:</span> objs)</span></code></pre></div>
 <p>Running this with <span class="math inline"><em>n</em> = 5</span> gives result in the following render in OpenSCAD:</p>
 <p><img src="../images/tree-5.png" /></p>
 <p>So there you have it! You can view the source code here: <a href="https://github.com/silky/haskmas">github.com/silky/haskmas</a> or download a ready-to-print STL from <a href="http://www.thingiverse.com/thing:1187442">Thingiverse</a>.</p>
