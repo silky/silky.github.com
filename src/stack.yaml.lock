@@ -5,30 +5,79 @@
 
 packages:
 - completed:
+    hackage: glib-0.13.8.2@sha256:f44b829e741b3c3244d523f60b058701dfc067ff64c2ba61d43be4cccfc2663d,3156
+    pantry-tree:
+      size: 1625
+      sha256: 2442a22152231a94e2f1ecfe7ddc0f4e5fb2d5ae116b371508a448bd3312ef06
+  original:
+    hackage: glib-0.13.8.2
+- completed:
     name: hakyll-diagrams
     version: 0.1.0.0
     git: https://github.com/silky/hakyll-diagrams.git
     pantry-tree:
-      size: 415
-      sha256: 0c74444b25882746bb86ea5c761de8af9d1020a0725b0a89ad88dcbfedcb08f7
-    commit: 72936d978f08e638d1d845fc113401095db12bad
+      size: 471
+      sha256: 4ad98e126f1b88894db18f2b82d18b97b5a929ee7b66b3869601fb21b0afd33a
+    commit: e9d8e1772c0b96a74114f88853aa37317908e738
   original:
     git: https://github.com/silky/hakyll-diagrams.git
-    commit: 72936d978f08e638d1d845fc113401095db12bad
+    commit: e9d8e1772c0b96a74114f88853aa37317908e738
 - completed:
     name: diagrams-pandoc
     version: 0.4.0.0
     git: https://github.com/silky/diagrams-pandoc.git
     pantry-tree:
-      size: 796
-      sha256: f085994af231ac01fd7f8b077775ffcb9049b8c226909885ee298ba20a6af809
-    commit: 8bbf3811f9353e119df64f739ccfa5a1e7edfb2a
+      size: 854
+      sha256: 09861bb386138b7d3aecdb43b7ba27ab7125ae7428a002394fb8aca07d31f741
+    commit: 8319a349667ff17187a1ace9e66ece00626aa8a0
   original:
     git: https://github.com/silky/diagrams-pandoc.git
-    commit: 8bbf3811f9353e119df64f739ccfa5a1e7edfb2a
+    commit: 8319a349667ff17187a1ace9e66ece00626aa8a0
+- completed:
+    hackage: diagrams-builder-0.8.0.5@sha256:0e7349f4aa4111a7835345f26c9368da8c06814d219bfb1fe3207fc5fe9a295a,7892
+    pantry-tree:
+      size: 993
+      sha256: e870a0e7e440aaddfc6c57bb9c87c32372a65807843b0d48d73ceec5fa912953
+  original:
+    hackage: diagrams-builder-0.8.0.5@sha256:0e7349f4aa4111a7835345f26c9368da8c06814d219bfb1fe3207fc5fe9a295a,7892
+- completed:
+    hackage: diagrams-cairo-1.4.2@sha256:a9586a56c90fca258988ad0d1eec122ed62dadbfdd8a4ef022d02c1de0268cdd,3810
+    pantry-tree:
+      size: 721
+      sha256: 88df16c82f65c6550965c1b688baee51beeba816feb0f1927365befdf65b7e0b
+  original:
+    hackage: diagrams-cairo-1.4.2@sha256:a9586a56c90fca258988ad0d1eec122ed62dadbfdd8a4ef022d02c1de0268cdd,3810
+- completed:
+    hackage: cairo-0.13.8.2@sha256:ef1709c3c4d2c6d68a9a51d9f220dccc0745f6468d2d0868c15a7ecdf8f325a1,4078
+    pantry-tree:
+      size: 2830
+      sha256: d6a9b3a15bc2e7b53fda331279cfdbc299fbf0c4be2ee8c1b6b79b924b6fdeb4
+  original:
+    hackage: cairo-0.13.8.2@sha256:ef1709c3c4d2c6d68a9a51d9f220dccc0745f6468d2d0868c15a7ecdf8f325a1,4078
+- completed:
+    hackage: haskell-src-exts-simple-1.23.0.0@sha256:39c33878a46f43f3fe98399e9ff6385587aff3a174afbd2fc0d7684fd7215d6a,1524
+    pantry-tree:
+      size: 841
+      sha256: 5a9438fa27178b9793a075e9a1364a64c797c77144bfb74ab0a4ce5c265a9c6a
+  original:
+    hackage: haskell-src-exts-simple-1.23.0.0@sha256:39c33878a46f43f3fe98399e9ff6385587aff3a174afbd2fc0d7684fd7215d6a,1524
+- completed:
+    hackage: pango-0.13.8.2@sha256:d4057ebddade4cde3e25d7755b5e030e7a7e56fe7365afd37916a7bba46d3fd9,3917
+    pantry-tree:
+      size: 1506
+      sha256: 10c335853e1d43e0b7426b33e8ddbdb90b3e318ebec4d58f0726a2f4cfb2e1c9
+  original:
+    hackage: pango-0.13.8.2@sha256:d4057ebddade4cde3e25d7755b5e030e7a7e56fe7365afd37916a7bba46d3fd9,3917
+- completed:
+    hackage: statestack-0.3.1@sha256:3ae02171e0a546efd9dcc9dae358e70f0bbd14be52297422381d00f085321682,1047
+    pantry-tree:
+      size: 273
+      sha256: ca87d3e94d894f421c8164428d48fad4a6ab0b5011e52e1287fa34051382faa3
+  original:
+    hackage: statestack-0.3.1@sha256:3ae02171e0a546efd9dcc9dae358e70f0bbd14be52297422381d00f085321682,1047
 snapshots:
 - completed:
-    size: 509471
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/12/26.yaml
-    sha256: 95f014df58d0679b1c4a2b7bf2b652b61da8d30de5f571abb0d59015ef678646
-  original: lts-12.26
+    size: 616897
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/19/0.yaml
+    sha256: bbf2be02f17940bac1f87cb462d4fb0c3355de6dcfc53d84f4f9ad3ee2164f65
+  original: lts-19.0
