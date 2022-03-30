@@ -48,9 +48,10 @@ I ended up being completely addicted, and did this for years. I read many
 papers (but not every one that I would "scite"); made several nice
 connections, and even used my personal SciRate data to teach my first deep
 learning workshops. SciRate stuck with my as my interests varied from quantum
-computing, theoretical physics, black holes, philosophy, AI, deep learning, computer vision,
-generative art, category theory, and the stranger maths papers. For a while my
-favourite thing was discovering the "best paper title" of the week.
+computing, theoretical physics, black holes, philosophy, AI, deep learning,
+computer vision, generative art, category theory, astrophysics, and the
+stranger maths papers. For a while my favourite thing was discovering the
+"best paper title" of the week.
 
 The most memorable moment was when, many years later (after the scirate3
 re-write), I met people who "knew" me from SciRate, only because they had
