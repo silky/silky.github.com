@@ -14,14 +14,14 @@ student) and starting to learn more formally. I would storing them in a
 variety of ways, print them out and hang them up in my house; send them to
 myself on a mailing list that I created just for that purpose, or a public
 subreddit where I would post the papers I wanted to read, so I wouldn't forget
-about them. Evidentally, the "bookmarking" feature in the browser wasn't one I
+about them. Evidently, the "bookmarking" feature in the browser wasn't one I
 found particularly useful.
 
 Eventually, I discovered [JabRef](https://www.jabref.org/), which I used for
 several years. I stored all the papers that I was interested in (at the time,
 quantum computing), and learned all about bibliography management. I even
 stored all the PDFs, and the metadata from the JabRef system, in git, horribly
-offending bitbuckets storage limits by having a repository ~10gb in size (I
+offending bitbuckets storage limits by having a repository ~10GB in size (I
 think it doesn't clone successfully anymore; it's been several years since
 I tried.)
 
@@ -87,7 +87,7 @@ more effort for me to maintain that it was worth, so I disabled it.
 #### Current
 
 SciRate needs a new maintainer. I've decided that, personally, my focus has to
-shift elswhere. You can read about that in the [Addendum](#addendum) below.
+shift elsewhere. You can read about that in the [Addendum](#addendum) below.
 
 Here's what you'll need to do:
 
