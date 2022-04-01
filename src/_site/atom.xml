@@ -26,7 +26,7 @@
 <p>I can’t remember when I first stumbled across <a href="https://scirate.com/">SciRate</a>.</p>
 <p>I’d had a fascination with scientific papers
 for many years, well before actually attending university (as a mature-age
-student) and starting to learn more formally. I would storing them in a
+student) and starting to learn more formally. I would store them in a
 variety of ways, print them out and hang them up in my house; send them to
 myself on a mailing list that I created just for that purpose, or a public
 subreddit where I would post the papers I wanted to read, so I wouldn’t forget
@@ -44,7 +44,7 @@ terrible) reference management program: <a href="https://github.com/silky/super-
 <p>Eventually, I discovered <a href="https://scirate.com/">SciRate</a>. I think the version
 I found was called “SciRate 2”. It was in the hands of Bill Rosgen. I got
 incredibly excited and signed up immediately. Because the code was open-source
-(I actually can’t remember, but I think it might’ve been personally hosted git
+(I actually can’t remember, but I think it might’ve been a personally-hosted git
 repository somewhere), I added possibly one of my first “impactful” changes:
 MathJax support! This was neat; now we could see rendered math while reading
 abstracts and titles! I think <a href="https://arxiv.org/">arXiv.org</a> only added this
@@ -55,19 +55,19 @@ would pop up, and track papers I was interested in. Fairly quickly, it became
 a very addictive habit for me. I began to learn the time of day that it would
 update, and made sure I would scour the website shortly after to browse the
 “freshest” papers.</p>
-<p>I ended up being completely addicted, and did this for years. I read many
-papers (but not every one that I would “scite”); made several nice
-connections, and even used my personal SciRate data to teach my first deep
-learning workshops. SciRate stuck with my as my interests varied from quantum
-computing, theoretical physics, black holes, philosophy, AI, deep learning,
-computer vision, generative art, category theory, astrophysics, and the
-stranger maths papers. For a while my favourite thing was discovering the
+<p>I did this for several years (actually, I only stopped recently, maybe a few
+months ago). I read many papers (but not every one that I would “scite”);
+made several nice connections, and even used my personal SciRate data to teach
+my first deep learning workshops. SciRate stuck with me as my interests varied
+from quantum computing, theoretical physics, black holes, philosophy, AI, deep
+learning, computer vision, generative art, category theory, astrophysics, and
+the stranger maths papers. For a while my favourite thing was discovering the
 “best paper title” of the week.</p>
 <p>The most memorable moment was when, many years later (after the scirate3
 re-write), I met people who “knew” me from SciRate, only because they had
 seen that I would “scite” a lot of papers (in fact, someone told me that they
 didn’t think I was a real person; only a scite-making bot.) To date, <a href="https://scirate.com/noonsilk">I’ve
-amassed more than 1 hundred thousand “scites”</a>.
+amassed more than one hundred thousand “scites”</a>.
 And yes, most of this was done by clicking manually; but in the last year or
 two I’ve used a custom program I wrote: <a href="https://github.com/silky/scirate-cli">the
 scirate-cli</a>.</p>
@@ -88,7 +88,7 @@ the occasional bugfixes.</p>
 <p>The only interesting thing I did, in recent times, was to <a href="https://github.com/scirate/scirate/commit/2e7ecbce9ee6db4d70d88597b61b6b2101968ba9">add a “jobs”
 feature</a>
 to SciRate. This was actually moderately successful, but in the end it was
-more effort for me to maintain that it was worth, so I disabled it.</p>
+more effort for me to maintain than it was worth, so I disabled it.</p>
 <h4 id="current">Current</h4>
 <p>SciRate needs a new maintainer. I’ve decided that, personally, my focus has to
 shift elsewhere. You can read about that in the <a href="#addendum">Addendum</a> below.</p>
