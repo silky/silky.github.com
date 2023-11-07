@@ -14,7 +14,3 @@ extra-deps:
 - haskell-src-exts-simple-1.23.0.0@sha256:39c33878a46f43f3fe98399e9ff6385587aff3a174afbd2fc0d7684fd7215d6a,1524
 - pango-0.13.8.2@sha256:d4057ebddade4cde3e25d7755b5e030e7a7e56fe7365afd37916a7bba46d3fd9,3917
 - statestack-0.3.1@sha256:3ae02171e0a546efd9dcc9dae358e70f0bbd14be52297422381d00f085321682,1047
-
-flags: {}
-allow-newer: true
-extra-package-dbs: []
