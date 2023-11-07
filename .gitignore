@@ -4,3 +4,6 @@ src/node_modules/
 *.o
 *.hi
 .stack-work
+
+# Nix
+.direnv/
