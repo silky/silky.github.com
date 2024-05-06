@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Noon van der Silk - HTMX and Servant: Seamless and powerful handling of HTTP errors in HTMX</title>
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript">
+          MathJax.Hub.Config({
+            tex2jax: {
+              inlineMath: [['$','$'], ['\\(','\\)']],
+              processEscapes: true
+            }
+          });
+        </script>
+        <script>
+        var host = "silky.github.io";
+        if ((host == window.location.host) && (window.location.protocol != "https:")) {
+          window.location.protocol = "https";
+        }
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Taviraj|PT+Mono" rel="stylesheet">
+        </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <h1><a href="../">Noon van der Silk</a></h1>
+            </div>
+            <div id="navigation">
+                <a href="../about.html">About</a>
+                <a href="../archive.html">Archive</a>
+                <a href="https://betweenbooks.com.au/">Between Books</a>
+                <a href="../talks.html">Talks</a>
+                <a href="../links.html">Links</a>
+                <small><a href="../atom.xml">Atom Feed</a></small>
+            </div>
+        </div>
+
+        <div id="content">
+            <h2>HTMX and Servant: Seamless and powerful handling of HTTP errors in HTMX</h2>
+
+            <div class="info">
+    Posted on May  6, 2024
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>As part of the interview process for a company I was recently rejected by, I
+wrote a blog post about HTMX and Haskell (and, JavaScript, but that was just a
+requirement :D).</p>
+<p>I think the post is interesting in any case, so here it is :) The Haskell
+component is in the <code>Bonus content</code>. If you want to skip straight to the code,
+you can just go direct to the repo:
+<a href="https://github.com/silky/htmx-servant-js-post">htmx-servant-js-example</a>.</p>
+<h1 id="seamless-and-powerful-handling-of-http-errors-in-htmx">Seamless and powerful handling of HTTP errors in HTMX</h1>
+<p><a href="https://htmx.org/">HTMX</a> is a popular front-end JavaScript library that can
+be used to create simple dynamic UIs. But how robust is it? Is it ready for
+production use? And what are its features, anyway? Let’s explore it
+together by building an image conversion app.</p>
+<h2 id="problem">Problem</h2>
+<p>You are building a dynamic UI and calling endpoints that will either fail or
+return some content to render. You want to handle both these cases with the
+simplest code possible.</p>
+<p>A typical workflow somewhere in your code is to query the endpoint, check the
+status of what happened, and act accordingly:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">fetch</span>(url)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">then</span>( (result) <span class="kw">=&gt;</span> {</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (result<span class="op">.</span><span class="at">ok</span>) {</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>      <span class="co">// Everything is good!</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>      <span class="co">// Something else ...</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
+<p>It’s a bit of a hassle to write this logic all over the place. Can HTMX help
+us out here? How does it look for something non-trivial, and what are the
+caveats we should be aware of?</p>
+<h2 id="solution">Solution</h2>
+<p>Let’s take the example of uploading an image and converting it from a PNG to a
+JPG.</p>
+<p>Naturally, HTMX can do the happy-path, when there are no errors, easily. We
+define the form, with the special</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- index.html --&gt;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;script</span> <span class="er">src</span><span class="ot">=</span><span class="st">&quot;https://unpkg.com/htmx.org@1.9.11&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;body&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;form</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="ot">    hx-encoding=</span><span class="st">&quot;multipart/form-data&quot;</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="ot">    hx-post=</span><span class="st">&quot;/upload&quot;</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="ot">    hx-target=</span><span class="st">&quot;#result&quot;</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="ot">    hx-swap=</span><span class="st">&quot;innerHTML&quot;</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&gt;</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;input</span> <span class="er">type</span><span class="ot">=</span><span class="st">&quot;file&quot;</span> <span class="er">name</span><span class="ot">=</span><span class="st">&quot;image&quot;</span> <span class="er">accept</span><span class="ot">=</span><span class="st">&quot;image/png&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;button&gt;</span>Upload<span class="kw">&lt;/button&gt;</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/form&gt;</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;div</span> <span class="er">id</span><span class="ot">=</span><span class="st">&quot;result&quot;</span><span class="kw">&gt;&lt;/div&gt;</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/bod&gt;</span></span></code></pre></div>
+<p>On the server, at the <code>/upload</code> route, we return an HTML element:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">// server.js endpoint definition</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>app<span class="op">.</span><span class="fu">post</span>(<span class="st">&quot;/upload&quot;</span><span class="op">,</span> <span class="kw">async</span> <span class="kw">function</span>(req<span class="op">,</span> resp) {</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">// image conversion steps; new image in `newPath`.</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="co">// ...</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="co">// send the resulting path back as an &quot;img&quot; tag</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  resp<span class="op">.</span><span class="fu">send</span>(<span class="vs">`&lt;img src=&quot;</span><span class="sc">${</span>newPath<span class="sc">}</span><span class="vs">&quot; /&gt;`</span>)<span class="op">;</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span></code></pre></div>
+<p>Here’s what it looks like:</p>
+<center>
+<img width="600" src="../images/happy-path.gif" />
+</center>
+<p>It’s interesting to note:</p>
+<ul>
+<li>It looks pretty smooth!</li>
+<li>We tell HTMX which element to update (via a CSS selector) with <code>hx-target</code>,</li>
+<li>We tell it how with <a href="https://htmx.org/attributes/hx-swap/"><code>hx-swap</code></a> (it’s
+important that we use <code>innerHTML</code> so the main target element persists if we
+upload a different image),</li>
+</ul>
+<p>These are some questions I’m asking myself at this point:</p>
+<ul>
+<li>What would happen if we didn’t return a HTML element from the response?</li>
+<li>What would happen if we didn’t return HTTP status 200?</li>
+</ul>
+<p>We can actually already answer the first question, given what we know about
+<code>innerHTML</code>: whatever text is returned from our <code>/upload</code> route is
+directly set as the <code>innerHTML</code>, so we best make sure it’s valid HTML :)</p>
+<p>For our second question, let’s just try it!</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">// update server.js to just through an error:</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>app<span class="op">.</span><span class="fu">post</span>(<span class="st">&quot;/upload&quot;</span><span class="op">,</span> <span class="kw">async</span> <span class="kw">function</span>(req<span class="op">,</span> resp) {</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> resp<span class="op">.</span><span class="fu">status</span>(<span class="dv">500</span>)<span class="op">.</span><span class="fu">send</span>(<span class="vs">`Sorry, no thanks.`</span>)<span class="op">;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>Then:</p>
+<center>
+<img width="600" src="../images/500-error.gif" />
+</center>
+<p>We can see that nothing gets rendered, and we see the errors in the console.</p>
+<p>With what we’ve seen so far, we would be justified in assuming that the text
+<code>Sorry, no thanks</code> might have come through to the <code>&lt;div id="result"&gt;</code> element,
+but in fact if the response is a HTTP error code HTMX doesn’t perform
+subsequent steps (typically a good idea when something has gone wrong!)</p>
+<p>Luckily, there is an extension:
+<a href="https://htmx.org/extensions/response-targets/">response-targets</a> that we can
+use to get the behaviour we are after. Phew! We can make the following
+modifications to our <code>index.html</code> page:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- index.html --&gt;</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;script</span> <span class="er">src</span><span class="ot">=</span><span class="st">&quot;https://unpkg.com/htmx.org@1.9.11&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;script</span> <span class="er">src</span><span class="ot">=</span><span class="st">&quot;https://unpkg.com/htmx.org@1.9.11/dist/ext/response-targets.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;body</span> <span class="er">hx-ext</span><span class="ot">=</span><span class="st">&quot;response-targets&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;form</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="ot">    hx-encoding=</span><span class="st">&quot;multipart/form-data&quot;</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="ot">    hx-post=</span><span class="st">&quot;/upload&quot;</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="ot">    hx-target=</span><span class="st">&quot;#result&quot;</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="ot">    hx-target-error=</span><span class="st">&quot;#result&quot;</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="ot">    hx-swap=</span><span class="st">&quot;innerHTML&quot;</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&gt;</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;input</span> <span class="er">type</span><span class="ot">=</span><span class="st">&quot;file&quot;</span> <span class="er">name</span><span class="ot">=</span><span class="st">&quot;image&quot;</span> <span class="er">accept</span><span class="ot">=</span><span class="st">&quot;image/png&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;button&gt;</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>      Upload</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;/button&gt;</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/form&gt;</span></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;div</span> <span class="er">id</span><span class="ot">=</span><span class="st">&quot;result&quot;</span><span class="kw">&gt;&lt;/div&gt;</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/body&gt;</span></span></code></pre></div>
+<p>What did we do?</p>
+<ul>
+<li>We added a dependency on <code>dist/ext/response-targets.js</code></li>
+<li>We added `hx-ext=“response-targets” to the <em>parent</em> of the elements we want to
+use it on (<a href="https://htmx.org/attributes/hx-ext/">read more about hx-ext</a>; I
+forgot this initially and was wondering why it didn’t work!)</li>
+<li>We used the catch-all <code>hx-target-error</code> to send all errors to the
+<code>id="result"</code> element, just for simplicity (<a href="https://htmx.org/extensions/response-targets/#wildcard-resolution">you can target specific error
+codes if you wish</a>).</li>
+</ul>
+<p>Here’s how it looks now:</p>
+<center>
+<img width="600" src="../images/render-error.gif" />
+</center>
+<p>Success! We see the error rendered in the page! And in the case that we don’t
+hit an error, we will still render the image directly as well. That’s exactly
+what we wanted! :)</p>
+<h2 id="discussion">Discussion</h2>
+<p>It’s pretty nice to use HTMX to handle HTTP errors from your API: use
+<a href="https://htmx.org/extensions/response-targets/">response-targets</a> to pick up
+specific errors, or all of them, and render the contents directly in the page!</p>
+<p>A small detail that I came across along the way is the difference between
+<code>outerHTML</code> and <code>innerHTML</code> and what you might consider <em>repeated behaviour</em>
+while preserving the most “meaningful” structure for your HTMX documents.</p>
+<p>The scenario is this: Imagine you want to repeatedly convert images; then you
+need to make sure that the HTML element of <code>hx-target</code> persists; with
+<code>innerHTML</code> it always will, but with <code>outerHTML</code> it will be replaced. The
+advantage of <code>outerHTML</code> is it’s a bit more “meaningful” to replace an <code>&lt;img&gt;</code>
+tag with another <code>&lt;img&gt;</code> tag; and likewise. But, ultimately, it’s up to you to
+pick the style you prefer.</p>
+<h2 id="bonus-content-the-server-is-now-in-haskell">Bonus content: The server is now in Haskell</h2>
+<p>HTMX is, after all, a front-end technology, so we can continue to use it if we
+have our server in a different language.</p>
+<p>It turns out Haskell will let us express one interesting requirement
+of using HTMX: our routes should return <em>HTML</em>, not, say, JSON, or plain text.</p>
+<p>In the <a href="https://www.servant.dev/">Servant</a> ecosystem, you would having
+something like the following<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> to define the <code>/upload</code> endpoint:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- Main.hs</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">data</span> <span class="dt">Routes</span> mode <span class="ot">=</span> <span class="dt">Routes</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  {<span class="ot"> upload ::</span> mode <span class="op">:-</span> <span class="st">&quot;upload&quot;</span> <span class="op">:&gt;</span> <span class="dt">MultipartForm</span> <span class="dt">Mem</span> (<span class="dt">MultipartData</span> <span class="dt">Mem</span>) <span class="op">:&gt;</span> <span class="dt">Post</span> '[<span class="dt">HTML</span>] <span class="dt">Html</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  , <span class="op">...</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  }</span></code></pre></div>
+<p>And then something like this 👇 (with a few details left out) to do what the
+JavaScript <code>server.js</code> was doing before: read exactly one image from the form,
+throw an error if not, and otherwise take the image, convert it to
+a JPG, and return the new path as an <code>&lt;img ... /&gt;</code> tag:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode haskell"><code class="sourceCode haskell"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- Main.hs</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ot">uploadAndConvert ::</span> <span class="dt">MultipartData</span> <span class="dt">Mem</span> <span class="ot">-&gt;</span> <span class="dt">Handler</span> <span class="dt">Html</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>uploadAndConvert form <span class="ot">=</span> <span class="kw">do</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  newPath <span class="ot">&lt;-</span> <span class="kw">case</span> (files form) <span class="kw">of</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    [] <span class="ot">-&gt;</span> oops <span class="st">&quot;No files uploaded!&quot;</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>    f <span class="op">:</span> [] <span class="ot">-&gt;</span> liftIO <span class="op">$</span> <span class="kw">do</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>      <span class="kw">let</span> jpg <span class="ot">=</span> <span class="op">...</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>          newPath <span class="ot">=</span> <span class="op">...</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>      BIO.writeFile newPath jpg</span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">pure</span> newPath</span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>    <span class="op">...</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pure</span> <span class="op">$</span> [shamlet| <span class="kw">&lt;img </span><span class="er">src=#{newPath}</span><span class="kw"> /&gt;</span> |]</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">where</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>      oops m <span class="ot">=</span> throwError <span class="op">$</span> err500 { errBody <span class="ot">=</span> m }</span></code></pre></div>
+<p>It is a requirement of the type system to make sure that this particular
+endpoint returns <em>HTML</em>! It’s then a small exercise to ensure that any <em>error</em>
+content comes through with the appropriate HTML wrapping :) Happy Haskelling!</p>
+<section class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Note we’ve left off important import statements, but you can find
+these in the <a href="https://github.com/silky/htmx-servant-js-post/tree/main/haskell-image-converter/src/Main.hs">full code snippet</a>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+        </div>
+        <div id="footer">
+            <small><a href="http://jaspervdj.be/hakyll">Hakyll</a> was involved here (<a href="https://github.com/silky/silky.github.com">source</a>).
+                ن
+            </small>
+        </div>
+        <div id="image_footer"> &nbsp; </div>
+    </body>
+</html>
