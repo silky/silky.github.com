@@ -51,7 +51,8 @@ Let's take the example of uploading an image and converting it from a PNG to a
 JPG.
 
 Naturally, HTMX can do the happy-path, when there are no errors, easily. We
-define the form, with the special
+define the form, with the [HTMX attributes](https://htmx.org/reference/) to
+define how the DOM changes based on the result:
 
 ```html
 <!-- index.html -->
