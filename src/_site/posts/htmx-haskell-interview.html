@@ -80,7 +80,8 @@ caveats we should be aware of?</p>
 <p>Let’s take the example of uploading an image and converting it from a PNG to a
 JPG.</p>
 <p>Naturally, HTMX can do the happy-path, when there are no errors, easily. We
-define the form, with the special</p>
+define the form, with the <a href="https://htmx.org/reference/">HTMX attributes</a> to
+define how the DOM changes based on the result:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">&lt;!-- index.html --&gt;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;script</span> <span class="er">src</span><span class="ot">=</span><span class="st">&quot;https://unpkg.com/htmx.org@1.9.11&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>...</span>
