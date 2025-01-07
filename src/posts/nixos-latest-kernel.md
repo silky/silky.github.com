@@ -147,3 +147,10 @@ the main repo already includes a [better version of this
 fix](https://github.com/NixOS/calamares-nixos-extensions/commit/381e34385106f548568ece2395806a6ab4cf6e5f),
 from a few days ago!^[Thanks again to ElvishJerricco!] This is just more validation of one of my nix mantras:
 something isn't working? Just wait a few days, probably it will be fixed!
+
+**Trivia**: I had dreams of making this an option you could opt-into in the
+installer by editing the calamares script; but in fact this is more
+complicated than one might wish; you can get a sense for how annoying this is
+by looking at [the patch
+required](https://github.com/NixOS/nixpkgs/blob/master/pkgs/tools/misc/calamares/0004-Adds-unfree-qml-to-packagechooserq.patch)
+to allow someone to select "unfree" during the installation process.
