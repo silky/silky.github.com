@@ -1,5 +1,6 @@
 body {
 	color:       #202020;
+  background:  #fcf8ed;
 	margin:      0px auto 0px auto;
 	width:       80%;
 	line-height: 2em;
@@ -12,7 +13,7 @@ pre {
 	background:  #eaeaea;
 }
 
-table th, table td { 
+table th, table td {
 	padding: 3px;
 	border:  solid 1px #eaeaea;
 }
@@ -97,7 +98,7 @@ table.talks, table.talks td, table.talks th  {
 ul.talks {
 }
 
-ul.talks li p { 
+ul.talks li p {
   font-size: 0.9em;
 }
 

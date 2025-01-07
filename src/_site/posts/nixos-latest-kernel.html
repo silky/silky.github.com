@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Noon van der Silk - Installing NixOS with the latest kernel</title>
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript">
+          MathJax.Hub.Config({
+            tex2jax: {
+              inlineMath: [['$','$'], ['\\(','\\)']],
+              processEscapes: true
+            }
+          });
+        </script>
+        <script>
+        var host = "silky.github.io";
+        if ((host == window.location.host) && (window.location.protocol != "https:")) {
+          window.location.protocol = "https";
+        }
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Taviraj|PT+Mono" rel="stylesheet">
+        </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <h1><a href="../">Noon van der Silk</a></h1>
+            </div>
+            <div id="navigation">
+                <a href="../about.html">About</a>
+                <a href="../archive.html">Archive</a>
+                <a href="https://betweenbooks.com.au/">Between Books</a>
+                <a href="../talks.html">Talks</a>
+                <a href="../links.html">Links</a>
+                <small><a href="../atom.xml">Atom Feed</a></small>
+            </div>
+        </div>
+
+        <div id="content">
+            <h2>Installing NixOS with the latest kernel</h2>
+
+            <div class="info">
+    Posted on January  7, 2025
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>You may find yourself in the following situation:</p>
+<ul>
+<li>You have a new computer,</li>
+<li>It requires the latest kernel packages to work (perhaps for WiFi or
+something else),</li>
+<li>You want to install NixOS,</li>
+<li>And the latest ISO you download doesn’t work.</li>
+</ul>
+<p>One potential reason for the failure could be that your new computer requires
+the latest linux <code>kernelPackages</code> in order to work; i.e. something like:</p>
+<pre><code>boot.kernelPackages = pkgs.linuxPackages_latest;</code></pre>
+<p>In your <code>configuration.nix</code>.</p>
+<p>But, not to worry! You can follow the
+<a href="https://nixos.org/manual/nixos/stable/#sec-booting-from-usb">documentation</a>
+to build your <em>own</em> ISO image; something like so (with flakes):</p>
+<pre class="nix"><code>{
+  description = &quot;Custom NixOS installation&quot;;
+  inputs.nixpkgs.url = &quot;github:NixOS/nixpkgs/nixos-unstable&quot;;
+  outputs = { self, nixpkgs }:
+  {
+    nixosConfigurations = {
+      iso = nixpkgs.lib.nixosSystem {
+        system = &quot;x86_64-linux&quot;;
+        modules = [
+          { nixpkgs.overlays = overlays; }
+          ({ pkgs, modulesPath, ... }:
+          {
+            imports =
+              let cd-drv = &quot;installation-cd-graphical-calamares-gnome&quot;;
+              in [ &quot;${modulesPath}/installer/cd-dvd/${cd-drv}.nix&quot; ];
+
+            # Use the latest kernel packages!
+            boot.kernelPackages = pkgs.linuxPackages_latest;
+          })
+        ];
+      };
+    };
+  };
+}</code></pre>
+<p>Run like:</p>
+<pre class="shell"><code>nix build .#nixosConfigurations.iso.config.system.build.isoImage</code></pre>
+<p>Which will produce an iso file that you can mount something like:</p>
+<pre class="shell"><code>sudo dd \
+  bs=4M \
+  conv=fsync \
+  oflag=direct \
+  status=progress \
+  if=./result/iso/the-image-name.iso \
+  of=/dev/sda</code></pre>
+<p>The most important fact here is that you select the <em>calamares</em> variant of the
+<a href="https://github.com/NixOS/nixpkgs/tree/master/nixos/modules/installer/cd-dvd">installation
+iso’s</a>.
+<a href="https://github.com/calamares/calamares/">Calamares</a> is the graphical
+installer. (Note: If you wanted the <em>minimal</em> installer, you can actually
+download that from the nixos hydra instance directly:
+<a href="https://hydra.nixos.org/job/nixos/trunk-combined/nixos.iso_minimal_new_kernel_no_zfs.x86_64-linux"><code>nixos.iso_minimal_new_kernel</code></a>,
+but actually this will only get you one step further; which I will elaborate
+on momentarily.)</p>
+<p>The trouble is that while this will be enough to get the <em>installer</em> to run,
+you will not be able to run the resulting installed NixOS! This is because
+Calamares writes the final <code>configuration.nix</code> of the new system, and it does
+not consider (wisely or otherwise) the system state of the <em>installer</em> image
+when it does so. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>So, the answer, naturally, is fork Calamares and change it the way we want! In
+fact, glancing at the <a href="https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/installer/cd-dvd/installation-cd-graphical-calamares.nix#L19">relevant
+derivation</a> we learn that it’s <a href="https://github.com/NixOS/calamares-nixos-extensions">calamares-nixos-extensions</a> that we need to fork.</p>
+<p>If we just want to hack our way through, we just make some small changes <a href="https://github.com/NixOS/calamares-nixos-extensions/compare/calamares...silky:calamares-nixos-extensions:latest-kernel">to
+that code</a>,
+and then adjust our flake file as follows:</p>
+<pre class="lang=nix"><code># flake.nix
+{
+  description = &quot;Custom NixOS installation&quot;;
+  inputs.nixpkgs.url = &quot;github:NixOS/nixpkgs/nixos-unstable&quot;;
+  outputs = { self, nixpkgs }:
+
+  # Define an overlay to update the `calamares-nixos-extensions` used.
+  let overlays = [
+        (_: final: {
+          calamares-nixos-extensions =
+            # Update to use our fork
+            final.calamares-nixos-extensions.overrideAttrs (_: _: {
+              src = final.fetchFromGitHub {
+                owner = &quot;silky&quot;;
+                repo = &quot;calamares-nixos-extensions&quot;;
+                rev = &quot;latest-kernel&quot;;
+                hash = &quot;sha256-PEWH+YpmP4qD7IZJLcD9rYl+GEuHqbS/OQsaNUZYBMg=&quot;;
+              };
+            });
+        })
+      ];
+  in
+  {
+    nixosConfigurations = {
+      iso = nixpkgs.lib.nixosSystem {
+        system = &quot;x86_64-linux&quot;;
+        modules = [
+          { nixpkgs.overlays = overlays; }
+          ({ pkgs, modulesPath, ... }:
+          {
+            imports =
+              let cd-drv = &quot;installation-cd-graphical-calamares-gnome&quot;;
+              in [ &quot;${modulesPath}/installer/cd-dvd/${cd-drv}.nix&quot; ];
+
+            # Use the latest kernel packages!
+            boot.kernelPackages = pkgs.linuxPackages_latest;
+          })
+        ];
+      };
+    };
+  };
+}</code></pre>
+<p>And success! This results in an installer that will first of all even run, and
+second of all install a NixOS that will <em>also</em> run!</p>
+<p><strong>Update</strong>: Note that, in fact, as I was writing this blog-post, I noticed that
+the main repo already includes a <a href="https://github.com/NixOS/calamares-nixos-extensions/commit/381e34385106f548568ece2395806a6ab4cf6e5f">better version of this
+fix</a>,
+from a few days ago!<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> This is just more validation of one of my nix mantras:
+something isn’t working? Just wait a few days, probably it will be fixed!</p>
+<section class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Thanks to <a href="https://github.com/ElvishJerricco">ElvishJerricco</a> for this hint.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Thanks again to ElvishJerricco!<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+        </div>
+        <div id="footer">
+            <small><a href="http://jaspervdj.be/hakyll">Hakyll</a> was involved here (<a href="https://github.com/silky/silky.github.com">source</a>).
+                ن
+            </small>
+        </div>
+        <div id="image_footer"> &nbsp; </div>
+    </body>
+</html>

@@ -8,8 +8,148 @@
         <name>Noon van der Silk</name>
         <email>noonsilk+-noonsilk@gmail.com</email>
     </author>
-    <updated>2024-05-06T00:00:00Z</updated>
+    <updated>2025-01-07T00:00:00Z</updated>
     <entry>
+    <title>Installing NixOS with the latest kernel</title>
+    <link href="https://silky.github.io/posts/nixos-latest-kernel.html" />
+    <id>https://silky.github.io/posts/nixos-latest-kernel.html</id>
+    <published>2025-01-07T00:00:00Z</published>
+    <updated>2025-01-07T00:00:00Z</updated>
+    <summary type="html"><![CDATA[<div class="info">
+    Posted on January  7, 2025
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>You may find yourself in the following situation:</p>
+<ul>
+<li>You have a new computer,</li>
+<li>It requires the latest kernel packages to work (perhaps for WiFi or
+something else),</li>
+<li>You want to install NixOS,</li>
+<li>And the latest ISO you download doesn’t work.</li>
+</ul>
+<p>One potential reason for the failure could be that your new computer requires
+the latest linux <code>kernelPackages</code> in order to work; i.e. something like:</p>
+<pre><code>boot.kernelPackages = pkgs.linuxPackages_latest;</code></pre>
+<p>In your <code>configuration.nix</code>.</p>
+<p>But, not to worry! You can follow the
+<a href="https://nixos.org/manual/nixos/stable/#sec-booting-from-usb">documentation</a>
+to build your <em>own</em> ISO image; something like so (with flakes):</p>
+<pre class="nix"><code>{
+  description = &quot;Custom NixOS installation&quot;;
+  inputs.nixpkgs.url = &quot;github:NixOS/nixpkgs/nixos-unstable&quot;;
+  outputs = { self, nixpkgs }:
+  {
+    nixosConfigurations = {
+      iso = nixpkgs.lib.nixosSystem {
+        system = &quot;x86_64-linux&quot;;
+        modules = [
+          { nixpkgs.overlays = overlays; }
+          ({ pkgs, modulesPath, ... }:
+          {
+            imports =
+              let cd-drv = &quot;installation-cd-graphical-calamares-gnome&quot;;
+              in [ &quot;${modulesPath}/installer/cd-dvd/${cd-drv}.nix&quot; ];
+
+            # Use the latest kernel packages!
+            boot.kernelPackages = pkgs.linuxPackages_latest;
+          })
+        ];
+      };
+    };
+  };
+}</code></pre>
+<p>Run like:</p>
+<pre class="shell"><code>nix build .#nixosConfigurations.iso.config.system.build.isoImage</code></pre>
+<p>Which will produce an iso file that you can mount something like:</p>
+<pre class="shell"><code>sudo dd \
+  bs=4M \
+  conv=fsync \
+  oflag=direct \
+  status=progress \
+  if=./result/iso/the-image-name.iso \
+  of=/dev/sda</code></pre>
+<p>The most important fact here is that you select the <em>calamares</em> variant of the
+<a href="https://github.com/NixOS/nixpkgs/tree/master/nixos/modules/installer/cd-dvd">installation
+iso’s</a>.
+<a href="https://github.com/calamares/calamares/">Calamares</a> is the graphical
+installer. (Note: If you wanted the <em>minimal</em> installer, you can actually
+download that from the nixos hydra instance directly:
+<a href="https://hydra.nixos.org/job/nixos/trunk-combined/nixos.iso_minimal_new_kernel_no_zfs.x86_64-linux"><code>nixos.iso_minimal_new_kernel</code></a>,
+but actually this will only get you one step further; which I will elaborate
+on momentarily.)</p>
+<p>The trouble is that while this will be enough to get the <em>installer</em> to run,
+you will not be able to run the resulting installed NixOS! This is because
+Calamares writes the final <code>configuration.nix</code> of the new system, and it does
+not consider (wisely or otherwise) the system state of the <em>installer</em> image
+when it does so. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>So, the answer, naturally, is fork Calamares and change it the way we want! In
+fact, glancing at the <a href="https://github.com/NixOS/nixpkgs/blob/master/nixos/modules/installer/cd-dvd/installation-cd-graphical-calamares.nix#L19">relevant
+derivation</a> we learn that it’s <a href="https://github.com/NixOS/calamares-nixos-extensions">calamares-nixos-extensions</a> that we need to fork.</p>
+<p>If we just want to hack our way through, we just make some small changes <a href="https://github.com/NixOS/calamares-nixos-extensions/compare/calamares...silky:calamares-nixos-extensions:latest-kernel">to
+that code</a>,
+and then adjust our flake file as follows:</p>
+<pre class="lang=nix"><code># flake.nix
+{
+  description = &quot;Custom NixOS installation&quot;;
+  inputs.nixpkgs.url = &quot;github:NixOS/nixpkgs/nixos-unstable&quot;;
+  outputs = { self, nixpkgs }:
+
+  # Define an overlay to update the `calamares-nixos-extensions` used.
+  let overlays = [
+        (_: final: {
+          calamares-nixos-extensions =
+            # Update to use our fork
+            final.calamares-nixos-extensions.overrideAttrs (_: _: {
+              src = final.fetchFromGitHub {
+                owner = &quot;silky&quot;;
+                repo = &quot;calamares-nixos-extensions&quot;;
+                rev = &quot;latest-kernel&quot;;
+                hash = &quot;sha256-PEWH+YpmP4qD7IZJLcD9rYl+GEuHqbS/OQsaNUZYBMg=&quot;;
+              };
+            });
+        })
+      ];
+  in
+  {
+    nixosConfigurations = {
+      iso = nixpkgs.lib.nixosSystem {
+        system = &quot;x86_64-linux&quot;;
+        modules = [
+          { nixpkgs.overlays = overlays; }
+          ({ pkgs, modulesPath, ... }:
+          {
+            imports =
+              let cd-drv = &quot;installation-cd-graphical-calamares-gnome&quot;;
+              in [ &quot;${modulesPath}/installer/cd-dvd/${cd-drv}.nix&quot; ];
+
+            # Use the latest kernel packages!
+            boot.kernelPackages = pkgs.linuxPackages_latest;
+          })
+        ];
+      };
+    };
+  };
+}</code></pre>
+<p>And success! This results in an installer that will first of all even run, and
+second of all install a NixOS that will <em>also</em> run!</p>
+<p><strong>Update</strong>: Note that, in fact, as I was writing this blog-post, I noticed that
+the main repo already includes a <a href="https://github.com/NixOS/calamares-nixos-extensions/commit/381e34385106f548568ece2395806a6ab4cf6e5f">better version of this
+fix</a>,
+from a few days ago!<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> This is just more validation of one of my nix mantras:
+something isn’t working? Just wait a few days, probably it will be fixed!</p>
+<section class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1" role="doc-endnote"><p>Thanks to <a href="https://github.com/ElvishJerricco">ElvishJerricco</a> for this hint.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>Thanks again to ElvishJerricco!<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+]]></summary>
+</entry>
+<entry>
     <title>HTMX and Servant: Seamless and powerful handling of HTTP errors in HTMX</title>
     <link href="https://silky.github.io/posts/htmx-haskell-interview.html" />
     <id>https://silky.github.io/posts/htmx-haskell-interview.html</id>
@@ -1561,38 +1701,6 @@ Checklist</a> from this <a href="https://sites.google.com/a/u.boisestate.edu/soc
 <a href='https://github.com/silky/ideas/issues/309'>Cap-Gun mechanical keyboard</a>: You pull back a bunch of hammers then as you type it fires the caps.
 </li>
 </ol>
-]]></summary>
-</entry>
-<entry>
-    <title>Designing Functional Clothes with Haskell!</title>
-    <link href="https://silky.github.io/posts/2019-01-27-Designing-Functional-Cloths-with-Haskell.html" />
-    <id>https://silky.github.io/posts/2019-01-27-Designing-Functional-Cloths-with-Haskell.html</id>
-    <published>2019-01-27T00:00:00Z</published>
-    <updated>2019-01-27T00:00:00Z</updated>
-    <summary type="html"><![CDATA[<div class="info">
-    Posted on January 27, 2019
-    
-        by Noon van der Silk
-    
-</div>
-
-<p>So I gave my talk at the Art-and-Tech miniconf at Linux Conf AU earlier this
-week.</p>
-<p>The video of my talk is here:</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UvkKf8ME564" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p>Other materials are here:</p>
-<ul>
-<li><a href="https://vandersilk.github.io">Van der Silk Fashion Website</a></li>
-<li><a href="https://docs.google.com/presentation/d/18olpV_GvpLbUR6z043cYIZ0yDVInJDuKN1xWnGQv-5k/edit?usp=sharing">Slides</a></li>
-<li><a href="https://www.youtube.com/watch?v=UvkKf8ME564">Video on YouTube</a>, or on <a href="https://archive.org/details/lca2019-Designing_functional_clothes_with_Haskell">archive.org</a></li>
-<li><a href="https://lobste.rs/s/ggk6oq/designing_functional_clothes_with">Discussion on
-Lobste.rs</a></li>
-</ul>
-<p>Thanks to <a href="https://maetl.net">Mark</a> for having me at the miniconf!</p>
-<h4 id="errata">Errata</h4>
-<p>Note that there’s a typo on the types of the <code>somethingFun</code> function that has
-since been corrected in the slides.</p>
 ]]></summary>
 </entry>
 
