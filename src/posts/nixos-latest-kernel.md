@@ -7,7 +7,7 @@ date: 2025-01-07
 You may find yourself in the following situation:
 
 - You have a new computer,
-- It requires the latest kernel packages to work (perhaps for WiFi or
+- It requires the some latest kernel features to work (perhaps for WiFi or
     something else),
 - You want to install NixOS,
 - And the latest ISO you download doesn't work.
