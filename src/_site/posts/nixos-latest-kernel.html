@@ -62,7 +62,8 @@ the latest linux <code>kernelPackages</code> in order to work; i.e. something l
 <p>But, not to worry! You can follow the
 <a href="https://nixos.org/manual/nixos/stable/#sec-booting-from-usb">documentation</a>
 to build your <em>own</em> ISO image; something like so (with flakes):</p>
-<pre class="nix"><code>{
+<pre class="nix"><code># flake.nix
+{
   description = &quot;Custom NixOS installation&quot;;
   inputs.nixpkgs.url = &quot;github:NixOS/nixpkgs/nixos-unstable&quot;;
   outputs = { self, nixpkgs }:

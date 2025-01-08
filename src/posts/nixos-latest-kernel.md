@@ -26,6 +26,7 @@ But, not to worry! You can follow the
 to build your _own_ ISO image; something like so (with flakes):
 
 ```nix
+# flake.nix
 {
   description = "Custom NixOS installation";
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
