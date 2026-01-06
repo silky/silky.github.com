@@ -1,16 +1,22 @@
 body {
 	color:       #202020;
-  background:  #fffcf3;
+  background:  #fffcf322;
 	margin:      0px auto 0px auto;
 	width:       80%;
 	line-height: 2em;
-	font-family: "Taviraj";
+	font-family: "iA Writer Quattro S";
 }
 
 pre {
-	line-height: 1.1em;
+	line-height: 1.5em;
 	padding:     5px;
 	background:  #eaeaea;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  padding-left: 10px;
+  border-left: solid 5px #0000ff44;
+  font-size: 1.1em;
 }
 
 table th, table td {
@@ -28,7 +34,7 @@ table tbody tr.even {
 
 a { color: blue; }
 a:visited { color: #202020; }
-a:hover { background: blue; color: white; }
+a:hover { background: #0000ff88; color: white; }
 
 div#header {
 	border-bottom: 2px solid #202020;
@@ -137,4 +143,135 @@ a.sourceLine {
 a.sourceLine:hover {
   color: black;
   background: none;
+}
+
+
+@font-face {
+  font-family: "iA Writer Quattro S";
+
+  src: url("/files/fonts/iAWriterQuattroS-Regular.ttf")
+            format("truetype");
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+
+  font-feature-settings:
+            "calt" 1,
+            "kern" 1;
+}
+
+@font-face {
+  font-family: "iA Writer Quattro S";
+
+  src: url("/files/fonts/iAWriterQuattroS-Bold.ttf") format("truetype");
+
+  font-weight: bold;
+
+  font-style: normal;
+
+  font-display: swap;
+
+  font-feature-settings:
+            "calt" 1,
+            "kern" 1;
+}
+
+@font-face {
+  font-family: "iA Writer Quattro S";
+
+  src: url("/files/fonts/iAWriterQuattroS-Italic.ttf") format("truetype");
+
+  font-weight: normal;
+
+  font-style: italic;
+
+  font-display: swap;
+
+  font-feature-settings:
+            "calt" 1,
+            "kern" 1;
+}
+
+@font-face {
+  font-family: "iA Writer Quattro S";
+
+  src: url("/files/fonts/iAWriterQuattroS-BoldItalic.ttf") format("truetype");
+
+  font-weight: bold;
+
+  font-style: italic;
+
+  font-display: swap;
+
+  font-feature-settings:
+            "calt" 1,
+            "kern" 1;
+}
+
+@font-face {
+  font-family: "iA Writer Mono S";
+
+  src: url("/files/fonts/iAWriterMonoS-Regular.ttf") format("truetype");
+
+  font-weight: normal;
+
+  font-style: normal;
+
+  font-display: swap;
+
+  font-feature-settings:
+            "calt" 1,
+            "kern" 1;
+}
+
+@font-face {
+  font-family: "iA Writer Mono S";
+
+  src: url("/files/fonts/iAWriterMonoS-Bold.ttf") format("truetype");
+
+  font-weight: bold;
+
+  font-style: normal;
+
+  font-display: swap;
+
+  font-feature-settings:
+            "calt" 1,
+            "kern" 1;
+}
+
+@font-face {
+  font-family: "iA Writer Mono S";
+
+  src: url("/files/fonts/iAWriterMonoS-Italic.ttf") format("truetype");
+
+  font-weight: normal;
+
+  font-style: italic;
+
+  font-display: swap;
+
+  font-feature-settings:
+            "calt" 1,
+            "kern" 1;
+}
+
+@font-face {
+  font-family: "iA Writer Mono S";
+
+  src: url("/files/fonts/iAWriterMonoS-BoldItalic.ttf")
+            format("truetype");
+
+  font-weight: bold;
+
+  font-style: italic;
+
+  font-display: swap;
+
+  font-feature-settings:
+            "calt" 1,
+            "kern" 1;
 }
