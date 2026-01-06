@@ -31,6 +31,10 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
+    match "files/**/*" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match "files/*" $ do
         route   idRoute
         compile copyFileCompiler
@@ -42,16 +46,6 @@ main = hakyll $ do
     match "css/*" $ do
         route   idRoute
         compile compressCssCompiler
-
-    match "luna.md" $ do
-        route $ setExtension "html"
-        compile compressCssCompiler
-
-    match (fromList ["about.rst", "contact.markdown"]) $ do
-        route   $ setExtension "html"
-        compile $ pandocMathCompiler
-            >>= loadAndApplyTemplate "templates/default.html" defaultContext
-            >>= relativizeUrls
 
     match "talks/*" $ do
         route $ setExtension "html"
@@ -112,7 +106,7 @@ main = hakyll $ do
     match "index.html" $ do
         route idRoute
         compile $ do
-            posts <- (liftM (take 10)) $ recentFirst =<< loadAll "posts/*"
+            posts <- (liftM (take 15)) $ recentFirst =<< loadAll "posts/*"
             let indexCtx =
                     listField "posts" postCtx (return posts) `mappend`
                     constField "title" "Home"                `mappend`
