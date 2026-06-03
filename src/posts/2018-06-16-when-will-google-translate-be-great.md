@@ -1,10 +1,10 @@
 ---
-title: When will Google Translate be great? 
+title: When will Google Translate be great?
 author: Noon van der Silk
 ---
 
 I've been reading "[Surfaces and
-Essences](https://www.amazon.com/Surfaces-Essences-Analogy-Fuel-Thinking/dp/0465018475/)" by Doug Hofstadter and Emmanuel Sander. 
+Essences](https://www.amazon.com/Surfaces-Essences-Analogy-Fuel-Thinking/dp/0465018475/)" by Doug Hofstadter and Emmanuel Sander.
 
 <center>
 <a href="https://www.amazon.com/Surfaces-Essences-Analogy-Fuel-Thinking/dp/0465018475/"><img src="/images/surfaces-and-essences.png" /></a>
@@ -23,7 +23,7 @@ that is capable of this analogical reasoning. One thing that's true of
 entirely before training.
 
 In any case, we're focused right now on translation. Doug recently wrote about his thoughts here:
-[The Shallowness of Google Translate](https://www.theatlantic.com/technology/archive/2018/01/the-shallowness-of-google-translate/551570/). 
+[The Shallowness of Google Translate](https://www.theatlantic.com/technology/archive/2018/01/the-shallowness-of-google-translate/551570/).
 
 I'm not going to go into a lot of detail here; I just want to track the
 progress of a specific phrase that Doug and Emmanuel hvea in the book. They
@@ -79,7 +79,7 @@ _Verdict_: Terrible.
 > be losig a little, better enjoy the gains overnight. Who did not see "recover"
 > in a few minutes lost a whole night can not understand how happy it is the
 > sort of taunt.
- 
+
 _Verdict_: Still terrible.
 
 **Google Translate, 2018**
@@ -93,6 +93,17 @@ _Verdict_: Still terrible.
 > spell.
 
 _Verdict_: _Still_ terrible, 14 years later!
+
+**Google Translate, 2026**
+
+> Sometimes, success eluded her. No matter how hard you try, the winning
+> number doesn't always come up. Sagan took the setbacks of a playwright like
+> the setbacks of a casino, with respect for the whims of the bank and fate.
+> You have to lose a little, to better savor the next day's win. Anyone who
+> hasn't seen her "recover" in a few minutes the losses of an entire night
+> cannot understand the joy of defying fate.
+
+_Verdict_: A little improved, but still not particularly good.
 
 It's very interesting to think about how to build systems that could
 conveivably translate phrases like this "properly", by using the ideas
