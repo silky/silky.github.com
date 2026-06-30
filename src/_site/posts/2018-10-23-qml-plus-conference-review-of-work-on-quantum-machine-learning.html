@@ -380,7 +380,7 @@ state!).</p>
 imagine we have a function: <span class="math inline"><em>f</em> : {0, 1}<sup><em>n</em></sup> → {0, 1}</span>.</p>
 <p>Then, we can think of it as a supervised learning problem where we have <span class="math inline"><em>n</em></span>
 binary features, producing a single binary output, and we have our examples in
-the form: <span class="math inline">(<em>x</em>,<em>f</em>(<em>x</em>))</span>.</p>
+the form: <span class="math inline">(<em>x</em>, <em>f</em>(<em>x</em>))</span>.</p>
 <p>Ronald wanted us to consider the so-called <em>sample</em> complexity, i.e. how many
 times do we have to evaluate <span class="math inline"><em>f</em></span>, instead of the more standard <span class="math inline"><em>t</em><em>i</em><em>m</em><em>e</em></span>
 complexity. In this sense here, the ideas are at least related, because fewer
@@ -402,7 +402,7 @@ the samples; so then our state becomes
 <span class="math display">$$ \frac{1}{2^n} \sum_{x \in \{0,1\}^n } |x, f(x)\rangle $$</span>
 The main idea is to hit this with the Fourier sampling tool, that is a classic
 trick in quantum algorithms.
-The essential idea is, firstly support that <span class="math inline">(<em>x</em>) =  ± 1</span>, then we can do
+The essential idea is, firstly support that <span class="math inline">(<em>x</em>) = ±1</span>, then we can do
 another standard trick, the Hadamard transformation, and obtain the state
 <span class="math display">$$ \frac{1}{2^n} \sum_{x \in \{0,1\}^n } \hat{f}(s)|s\rangle $$</span></p>
 <p>where <span class="math display">$$\hat{f}(s) = \frac{1}{2^n} \sum_{x} f(x) (-1)^{s \cdot x}$$</span>.</p>

@@ -1,58 +1,35 @@
 {
   inputs = {
-    nixpkgs.url     = "github:nixos/nixpkgs/nixos-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    import-tree.url = "github:vic/import-tree";
+    flake-parts.url = "github:hercules-ci/flake-parts";
+    treefmt-nix.url = "github:numtide/treefmt-nix";
+    # Source-only git deps, ported from src/stack.yaml's extra-deps.
+    # These forks provide the modules the site imports:
+    #   hakyll-diagrams -> Hakyll.Web.Diagrams
+    #   diagrams-pandoc -> Text.Pandoc.Diagrams
+    hakyll-diagrams-src = {
+      url = "github:silky/hakyll-diagrams/e9d8e1772c0b96a74114f88853aa37317908e738";
+      flake = false;
+    };
+    diagrams-pandoc-src = {
+      url = "github:silky/diagrams-pandoc/8319a349667ff17187a1ace9e66ece00626aa8a0";
+      flake = false;
+    };
   };
 
-  outputs = inputs: with inputs;
-  flake-utils.lib.eachDefaultSystem (system:
-  let
-        deps = [
-            pkgs.pkg-config
-            pkgs.makeWrapper
-            # External C libraries needed by some Haskell packages
-            pkgs.zlib
-            pkgs.glib
-            pkgs.cairo
-            pkgs.zlib.dev
-            pkgs.pango
-            pkgs.pango.dev
-          ];
-
-        pkgs = import nixpkgs {
-          inherit system;
-        };
-
-        hPkgs = pkgs.haskell.packages."ghc902";
-
-        stack-wrapped = pkgs.symlinkJoin {
-          name = "stack";
-          paths = [ pkgs.stack ];
-          buildInputs = deps;
-          postBuild = ''
-            wrapProgram $out/bin/stack \
-              --add-flags "\
-                --no-nix \
-                --system-ghc \
-                --no-install-ghc \
-              "
-          '';
-        };
-
-        myDevTools = ([
-          hPkgs.ghc
-          stack-wrapped
-        ] ++ deps) ;
-    in rec {
-      devShell = pkgs.mkShell {
-        buildInputs = [
-          myDevTools
+  outputs = inputs:
+    inputs.flake-parts.lib.mkFlake { inherit inputs; }
+      {
+        systems = [
+          "aarch64-darwin"
+          "aarch64-linux"
+          "x86_64-darwin"
+          "x86_64-linux"
         ];
 
-        # For zlib; see: <https://discourse.nixos.org/t/shared-libraries-error-with-cabal-repl-in-nix-shell/8921/9>
-        NIX_PATH = "nixpkgs=" + pkgs.path;
-        LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath myDevTools;
+        imports = [
+          (inputs.import-tree ./nix)
+        ];
       };
-    }
-  );
 }

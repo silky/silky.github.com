@@ -93,8 +93,8 @@ states:</p>
     |+\rangle &amp;= \frac{1}{\sqrt{2}} \left( |0\rangle + |1\rangle \right), \\
     |-\rangle &amp;= \frac{1}{\sqrt{2}} \left( |0\rangle - |1\rangle \right).
 \end{aligned} $$</span></p>
-<p>The first two states, <span class="math inline">{|0⟩,|1⟩}</span> form a <em>basis</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> – the
-<em>computational</em> basis – for a single qubit, and the second two, <span class="math inline">{|+⟩,| − ⟩}</span> form a different, orthogonal, basis – the <em>Hadamard</em> basis.</p>
+<p>The first two states, <span class="math inline">{|0⟩, |1⟩}</span> form a <em>basis</em><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> – the
+<em>computational</em> basis – for a single qubit, and the second two, <span class="math inline">{|+⟩, |−⟩}</span> form a different, orthogonal, basis – the <em>Hadamard</em> basis.</p>
 <p>The crucial idea to understanding the scheme is that in quantum mechanics,
 <em>measurement</em> can irreversibly destroy a given quantum state, changing it
 to be a completely different one.</p>
@@ -114,13 +114,15 @@ measure it in the computational basis, the <a href="https://en.wikipedia.org/wik
 rule</a> for measurement says that we
 will get the state <span class="math inline">|0⟩</span> with probabily <span class="math inline">|<em>α</em>|<sup>2</sup></span> and the state
 <span class="math inline">|1⟩</span> with probabily <span class="math inline">|<em>β</em>|<sup>2</sup></span>.</p>
-<p><strong>Hadamard basis</strong>: Note that <span class="math inline">$|0\rangle = \frac{1}{\sqrt{2}} \left( |+\rangle + |-\rangle \right)$</span> and <span class="math inline">$|1\rangle = \frac{1}{\sqrt{2}} \left(|+\rangle - |-\rangle \right)$</span> so we can re-write <span class="math inline">|<em>ψ</em>⟩</span> as
+<p><strong>Hadamard basis</strong>: Note that <span class="math inline">$|0\rangle = \frac{1}{\sqrt{2}} \left( |+\rangle +
+|-\rangle \right)$</span> and <span class="math inline">$|1\rangle = \frac{1}{\sqrt{2}} \left(|+\rangle -
+|-\rangle \right)$</span> so we can re-write <span class="math inline">|<em>ψ</em>⟩</span> as
 <span class="math display">$$ \begin{aligned}
     |\psi\rangle &amp;= \frac{\alpha + \beta}{\sqrt{2}} |+\rangle + 
                     \frac{\alpha - \beta}{\sqrt{2}} |-\rangle
 \end{aligned} $$</span>
-and so, again by the Born rule, we would achieve outcome <span class="math inline">| + ⟩</span> with
-probability <span class="math inline">$\left|\frac{\alpha + \beta}{\sqrt{2}}\right|^2$</span> and <span class="math inline">| − ⟩</span>
+and so, again by the Born rule, we would achieve outcome <span class="math inline">|+⟩</span> with
+probability <span class="math inline">$\left|\frac{\alpha + \beta}{\sqrt{2}}\right|^2$</span> and <span class="math inline">|−⟩</span>
 with probability <span class="math inline">$\left|\frac{\alpha - \beta}{\sqrt{2}}\right|^2$</span>.</p>
 <p>The point to note here is that the final state is <em>different</em> depending on
 which basis we measured it in. Wiesner used this fact to build a (hopefully)
@@ -130,7 +132,7 @@ unforgable form of money.</p>
 bank performs the following steps:</p>
 <ol type="1">
 <li>Pick a serial number, <span class="math inline"><em>s</em></span>,</li>
-<li>Pick <span class="math inline"><em>n</em></span> states at random from <span class="math inline">|0⟩,|1⟩, |+⟩,| − ⟩</span>, call this the <em>key</em> and save these choices in a database linked
+<li>Pick <span class="math inline"><em>n</em></span> states at random from <span class="math inline">|0⟩, |1⟩, |+⟩, |−⟩</span>, call this the <em>key</em> and save these choices in a database linked
 to the serial number.</li>
 <li>Build a quantum state from these basis elements, and call the combined
 state <span class="math inline">|$⟩</span>.</li>
@@ -174,7 +176,7 @@ and the state we’ve been given (but can’t see) is</p>
 in, but if we’re simply the customer we don’t know this information.</p>
 <p>Our goal is to create a state <span class="math inline">|<em>F</em>⟩</span> that the bank will <em>also</em> verify as
 valid.</p>
-<p>Noting that if we measure either <span class="math inline">| + ⟩</span> or <span class="math inline">| − ⟩</span> in the
+<p>Noting that if we measure either <span class="math inline">|+⟩</span> or <span class="math inline">|−⟩</span> in the
 computational basis, we’ll get <span class="math inline">|0⟩</span> with 50% probability or
 <span class="math inline">|1⟩</span> with 50% probability, one approach is simply to build <span class="math inline">|<em>F</em>⟩</span>
 by the following technique:</p>
@@ -186,7 +188,8 @@ some measurement outcome <span class="math inline"><em>x</em> ∈ {0, 1}</
 <p>In our example, we can see that this will work 50% of the time for the first
 qubit of <span class="math inline">|$⟩</span>, 100% of the time for the 2nd, 3rd and 4th qubits, and
 again 50% of the time for the last two qubits. So for this state, this
-approach will succeed with probability <span class="math inline">$\left( \frac{1}{2} \right)^3 = \frac{1}{8}$</span>. Pretty bad odds.</p>
+approach will succeed with probability <span class="math inline">$\left( \frac{1}{2} \right)^3 =
+\frac{1}{8}$</span>. Pretty bad odds.</p>
 <p>In an earlier paper, <a href="https://arxiv.org/pdf/1202.4010.pdf">Molina Vidick and
 Watrous</a> show that in a model where the
 attacker <em>doesn’t</em> interact with the bank after receiving the note, the best
@@ -202,10 +205,10 @@ be forgable with our first ideas. In the next post we’ll learn about a very
 cool technique in quantum mechanics, the <a href="https://en.wikipedia.org/wiki/Elitzur%E2%80%93Vaidman_bomb_tester">Elitzur-Vaidman bomb
 tester</a>,
 and then we’ll see how it can be used to beat Wiesner’s scheme!</p>
-<section class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>A one-qubit <em>basis</em> is a set of states such that any state involving one
+<li id="fn1"><p>A one-qubit <em>basis</em> is a set of states such that any state involving one
 qubit can be written as a linear combination of either of the elements in the
 basis.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>

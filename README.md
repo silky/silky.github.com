@@ -1,11 +1,11 @@
 ツ [silky 💗 ](https://silky.github.io/)
 =====
 
-build with [stack](http://docs.haskellstack.org/en/stable/README.html).
+built with nix.
 
 ````
 cd src
-stack build
-stack exec -- silky-github-site watch
+cabal build
+stack run silky-github-site -- watch
 ````
 

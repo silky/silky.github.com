@@ -1079,10 +1079,10 @@ since the beginning of time:</p>
 <a href="https://github.com/silky/ideas/issues/1">open art/programming cafe space?</a>: art gallery-themed, but a cafe where you can sit and mingle amongst the art, and maybe incorporate the programming space idea? https://github.com/hahayes/hahayes-projects/issues/9
 </li>
 </ol>
-<section class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p>It was a ‘simple’ matter of <code>jq '[.[] | select (.created_at &gt;="2016-01-01")]' all.json&gt;this-year.json</code> where I got <code>all.json</code> by combing the pages.json <code>curl  "https://api.github.com/repos/silky/ideas/issues?state=all&amp;per_page=100&amp;page=1" p1.json</code> with <code>jq -s '[.[][]]' p*.json &gt; all.json</code> (jq is just <em>so</em> easy! …)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>It was a ‘simple’ matter of <code>jq '[.[] | select (.created_at &gt;="2016-01-01")]' all.json&gt;this-year.json</code> where I got <code>all.json</code> by combing the pages.json <code>curl  "https://api.github.com/repos/silky/ideas/issues?state=all&amp;per_page=100&amp;page=1" p1.json</code> with <code>jq -s '[.[][]]' p*.json &gt; all.json</code> (jq is just <em>so</em> easy! …)<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 

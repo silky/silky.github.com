@@ -126,7 +126,7 @@ These play a key role in the surface code. We will define them as</p>
     Z|+\rangle &amp;= |-\rangle, \\
     Z|-\rangle &amp;= |+\rangle.
 \end{aligned} $$</span></p>
-<p>And furthermore, we have <span class="math inline"><em>X</em><em>Z</em> =  − <em>Z</em><em>X</em></span> (these operators anticommute).</p>
+<p>And furthermore, we have <span class="math inline"><em>X</em><em>Z</em> = −<em>Z</em><em>X</em></span> (these operators anticommute).</p>
 <p><strong>Measurement</strong>
 Quantum mechanics prescribes that for an arbitrary qubit (written in the standard
 basis),</p>
@@ -143,7 +143,7 @@ and eigenvectors (by the spectral decomposition theorem),</p>
     Z &amp;= |0\rangle\langle 0| - |1\rangle\langle 1|,
 \end{aligned} $$</span></p>
 <p>and therefore make statements such as “measure in the <span class="math inline"><em>X</em></span> basis”, where this means to project
-the qubit into the basis <span class="math inline">{|+⟩,| − ⟩}</span>.</p>
+the qubit into the basis <span class="math inline">{|+⟩, |−⟩}</span>.</p>
 <p><strong>Quantum circuits</strong></p>
 <p>An example quantum circuit:</p>
 <!--
@@ -154,7 +154,20 @@ the qubit into the basis <span class="math inline">{|+⟩,| − ⟩}</span>.
 <p>This enacts the operator <span class="math inline"><em>X</em></span> on the state <span class="math inline">|0⟩</span>, and we “measure” this state at
 the end of the circuit in the <span class="math inline"><em>Z</em></span> basis.</p>
 <p>The outcome of this circuit is the state <span class="math inline">|1⟩</span> with certainity.</p>
-<p>Let <span class="math inline">$H = \frac{1}{\sqrt{2}} \left( \begin{array}{cc}  1 &amp; 1 \\  1 &amp; -1 \end{array} \right)$</span> and <span class="math inline">$C_X = \left( \begin{array}{cccc}  1 &amp; 0 &amp; 0 &amp; 0 \\  0 &amp; 1 &amp; 0 &amp; 0 \\  0 &amp; 0 &amp; 0 &amp; 1 \\  0 &amp; 0 &amp; 1 &amp; 0  \end{array} \right) = \left(  \begin{array}{ccc}  1 &amp; &amp; \\  &amp; 1 &amp; \\  &amp; &amp; X  \end{array} \right)$</span>.</p>
+<p>Let <span class="math inline">$H = \frac{1}{\sqrt{2}} \left( \begin{array}{cc}
+    1 &amp; 1 \\
+    1 &amp; -1
+\end{array} \right)$</span> and <span class="math inline">$C_X = \left( \begin{array}{cccc}
+    1 &amp; 0 &amp; 0 &amp; 0 \\
+    0 &amp; 1 &amp; 0 &amp; 0 \\
+    0 &amp; 0 &amp; 0 &amp; 1 \\
+    0 &amp; 0 &amp; 1 &amp; 0
+    \end{array} \right) = \left(
+    \begin{array}{ccc}
+    1 &amp;   &amp; \\
+      &amp; 1 &amp; \\
+      &amp;   &amp; X
+    \end{array} \right)$</span>.</p>
 <p>A more complicated circuit:</p>
 <!--
     |0> --- H -- [ C_X ] ------ 
@@ -162,7 +175,7 @@ the end of the circuit in the <span class="math inline"><em>Z</em></span> basis.
     |0> -------- [     ] ------
 -->
 <p><img src="../images/qcirc_2.jpg" /></p>
-<p>The outcome of this circuit is the state <span class="math inline">|00⟩+|11⟩</span>. This is infact
+<p>The outcome of this circuit is the state <span class="math inline">|00⟩ + |11⟩</span>. This is infact
 an <em>entangled</em> state.</p>
 <p><strong>Universal quantum computation</strong></p>
 <p>Previously I described quantum computation as the evaluation of any circuit in
@@ -189,7 +202,7 @@ any arbitrary <span class="math inline">|<em>ψ</em>⟩</span></p>
 <p><span class="math display">$$ \begin{aligned}
     U(|\psi\rangle \otimes |0\rangle) = |\psi\rangle \otimes |\psi\rangle.
 \end{aligned} $$</span></p>
-<p><em>Proof</em>. Let <span class="math inline">|<em>ψ</em>⟩=<em>α</em>|0⟩ + <em>β</em>|1⟩</span> then apply <span class="math inline"><em>U</em></span>
+<p><em>Proof</em>. Let <span class="math inline">|<em>ψ</em>⟩ = <em>α</em>|0⟩ + <em>β</em>|1⟩</span> then apply <span class="math inline"><em>U</em></span>
 before and after enacting the tensor product, and note contradiction.</p>
 <h3 id="quantum-errors">Quantum errors</h3>
 <p>For the moment, we will consider only errors that may occur on a single qubit,
@@ -207,7 +220,7 @@ there is a better way.</p>
 <p>The first step is to think completely differently about how we would encode
 a logical qubit.</p>
 <p>Consider the operators <span class="math inline"><em>X</em><sub>1</sub>, <em>X</em><sub>2</sub></span> and <span class="math inline"><em>Z</em><sub>1</sub>, <em>Z</em><sub>2</sub></span>, acting on two qubits. These
-operators commute, as <span class="math inline"><em>X</em><em>Z</em> =  − <em>X</em><em>Z</em></span> (and operators acting on different qubits
+operators commute, as <span class="math inline"><em>X</em><em>Z</em> = −<em>X</em><em>Z</em></span> (and operators acting on different qubits
 always commute.) The (un-normalised) eigenspace is</p>
 <p><span class="math display">$$ \begin{aligned}
     \begin{array}{ccc}
@@ -227,8 +240,8 @@ always commute.) The (un-normalised) eigenspace is</p>
     X_1 X_2 |\psi\rangle = \lambda_X |\psi\rangle
 \end{aligned} $$</span></p>
 <p>then we cut out two of the possible basis states that the system could be in.
-For example, say <span class="math inline"><em>λ</em><sub><em>X</em></sub> =  + 1</span>.</p>
-<p>Then this rules out the state <span class="math inline">|00⟩−|11⟩</span> and <span class="math inline">|01⟩−|10⟩</span>,
+For example, say <span class="math inline"><em>λ</em><sub><em>X</em></sub> = +1</span>.</p>
+<p>Then this rules out the state <span class="math inline">|00⟩ − |11⟩</span> and <span class="math inline">|01⟩ − |10⟩</span>,
 leaving us with:</p>
 <p><span class="math display">$$ \begin{aligned}
     |\psi\rangle = \alpha|e_1\rangle + \gamma|e_3\rangle.
@@ -244,7 +257,7 @@ continue to obtain the same eigenvalue when there are no errors.</p></li>
 will change. So we can <em>detect</em> this error. We can also correct it,
 by applying <span class="math inline"><em>Z</em></span> again (if we wished), as <span class="math inline"><em>Z</em><sup>2</sup> = 1</span>.</p></li>
 <li><p>If either qubit undergoes a <span class="math inline"><em>X</em></span> error, this is <em>not detectable</em>. We will
-still be in the <span class="math inline"> + 1</span> eigenstate of <span class="math inline"><em>X</em><sub>1</sub><em>X</em><sub>2</sub></span>, but the coefficients will have
+still be in the <span class="math inline">+1</span> eigenstate of <span class="math inline"><em>X</em><sub>1</sub><em>X</em><sub>2</sub></span>, but the coefficients will have
 switched.</p></li>
 </ul>
 <p>This is a toy model.</p>
@@ -292,7 +305,7 @@ necessary to perform universal quantum computation, but here we’ll only look a
 stabilizers, but will be detected by the <span class="math inline"><em>Z</em></span> stabilier to the right. Consider
 then the operation <span class="math inline"><em>X</em><sub><em>L</em></sub> = <em>X</em><sub>4</sub><em>X</em><sub>5</sub></span>. This operation commutes with all the stabilizers,
 and cannot be written in terms of any of them.</p>
-<p>So by performing these operators we have obtained <span class="math inline">|<em>ψ</em><sub><em>X</em></sub>⟩=<em>X</em><sub><em>L</em></sub>|<em>ψ</em>⟩</span> - we’ve manipulated one of the degrees of freedom.</p>
+<p>So by performing these operators we have obtained <span class="math inline">|<em>ψ</em><sub><em>X</em></sub>⟩ = <em>X</em><sub><em>L</em></sub>|<em>ψ</em>⟩</span> - we’ve manipulated one of the degrees of freedom.</p>
 <p>Similarly, we can define <span class="math inline"><em>Z</em><sub><em>L</em></sub> = <em>Z</em><sub>2</sub><em>Z</em><sub>5</sub></span>. Note that this anticommutes with <span class="math inline"><em>X</em><sub><em>L</em></sub></span>.</p>
 <p>So we’ve exhibited some logical operators.</p>
 <h3 id="surface-code-facts-and-final-comments">Surface code facts and final comments</h3>

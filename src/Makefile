@@ -1,4 +1,4 @@
 .PHONY: site
 
 site:
-	stack run -- -- clean && stack run -- -- watch --port 9001
+	cabal run silky-github-site -- clean && cabal run silky-github-site -- watch --port 9001
