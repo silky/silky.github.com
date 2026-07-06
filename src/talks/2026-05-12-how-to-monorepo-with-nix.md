@@ -2,6 +2,8 @@
 title:  How to monorepo with Nix
 event:  LeavDev Meetup - Edinburgh
 link:   https://www.meetup.com/leaddev-meetup-edinburgh/events/313204714/
+slides: https://docs.google.com/presentation/d/1EadLzLdVwY2lCNFAed1B_7In5puaAo5tTg1QB36g4jI/edit?usp=sharing
+code:   https://invariant.club/articles/how-to-monorepo-with-nix.html
 summary:
  You've read all the articles. You've discussed it at length and from all
  angles. You've considered all the tradeoffs. You've created the repo and
