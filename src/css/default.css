@@ -7,7 +7,9 @@ body {
 	font-family: "iA Writer Quattro S";
 }
 
-
+img {
+  border-radius: 20px;
+}
 
 code {
   font-size: 1.1em;

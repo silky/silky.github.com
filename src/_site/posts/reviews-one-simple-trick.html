@@ -47,13 +47,18 @@
     
 </div>
 
-<p>You probably already know what it is: stacked PRs.</p>
+<figure>
+<img src="../images/branches.webp" alt="A stack of branches." />
+<figcaption aria-hidden="true">A stack of branches.</figcaption>
+</figure>
+<p>You might’ve already guessed what it is: stacked branches. But if you didn’t
+already know that, don’t worry, we’ll go over it shortly.</p>
 <p>But first, let’s discuss the problem.</p>
 <h3 id="ai-generated-code-is-hard-to-review">AI-generated code is hard to review</h3>
 <p>Pretty much everyone using AI has this problem at the moment; it’s moderately
 easy to generate code that is mostly coherent, mostly tackles the problem
 you’re solving, and in fact it’s so easy, we mostly get a little over-excited
-and do too much at once.</p>
+and do too much at once: this makes code hard to review.</p>
 <p>This is creating stress on the reviewers, on several fronts. There’s just the
 plain apathy of staring a giant diff that <em>probably</em> does what the author
 says, <em>even</em> passes your test suites, but also <em>probably</em> contains some
@@ -64,7 +69,9 @@ to read such large pieces of work and understand everything. Especially when
 you can’t totally trust that every line and comment comes from some deep
 fundamental understanding of the (human) author.</p>
 <p>There’s many other problems; not all of which will be addressed by this idea;
-but the key idea here that we will go for is: less is better.</p>
+but the key idea here that we will go for is: less is better. It’s easier to
+review something when the amount of changes are small; and when you can focus
+on just thinking about “one thing”, while performing any specific review.</p>
 <h3 id="standard-techniques">Standard techniques</h3>
 <p>There are many and ever-growing techniques to deal with this problem:</p>
 <ol type="1">
@@ -85,7 +92,28 @@ like downvote them on their performance reviews. In any case, this one is
 punitive and pressure-based. It makes authors and reviewers <em>more</em> nervous;
 and doesn’t really empower them in any meaningful way. Ultimately, it will
 just slow you down, and upset people.</p></li>
+<li><p><em>Stop caring, the market will decide for you</em>: Does you product get better?
+Do things work? Are you getting more features? Then who is really to say
+what is “correct”? Isn’t the ultimate arbitrar of truth the users anyway?
+Shouldn’t we just get more things in front of them as fast as possible?</p>
+<p>Obviously, this framing is both correct and crazy. In theory it’s true that
+only visible functionality matters; but it’s also true that something can
+be visibly accurate but wildly off in ever-so-slightly different
+circumstances. We’re not yet at the point where it’s possible to operate
+this way. Maybe we’re approaching this with better-tested ecosystems and
+the combination of theorem provers in connection with code; but ultimately
+we’ll always need to review our stated intention, even in that promised
+land.</p>
+<p>So let’s just agree that, for the short term, we’re going to need
+<em>some</em> kind of human review.</p></li>
+<li><p><em>Actually no, just let AI review it</em>: Naturally, we can just have the AI
+perform it’s own review. Pragmatically, this can be very effective,
+certainly for catching missed things, bugs, security issues, etc. But I
+feel for gaining certainity that what you asked for is actually done
+correctly, we’re still going to want some oversight.</p></li>
 </ol>
+<p>Let’s then see an old idea that can still be compatible with any of these
+approaches, if we so wished it.</p>
 <h3 id="an-old-idea-create-stacked-branches">An old idea: create stacked branches</h3>
 <p>I’m not inventing stacked branches here. Many many people love them, there’s
 <a href="https://docs.jj-vcs.dev/latest/">jj</a>, created in part to get more joy from
@@ -160,6 +188,11 @@ PRs already!</p></li>
 <li><p>Maybe learn <code>jj</code>, or maybe don’t worry. It’s probably very useful to master
 <code>jj</code> if you want to get into this more. But don’t let <em>not</em> mastering it
 stop you from benefiting now.</p></li>
+<li><p>Probably some work could be done to make AI tooling a little more capable to
+manage a set of arguably-independent branches more coherently. I.e. normally
+it’s pretty easy to isolate independent hacking with git worktrees; but
+they’re 1-1 with branches; now that we’re potentially 1:many, it requires a
+little more care and attention.</p></li>
 </ul>
 <h3 id="conclusion">Conclusion</h3>
 <p>In general, there’s a wide world to explore in this domain of AI-assisted work

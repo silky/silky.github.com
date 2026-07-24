@@ -4,7 +4,10 @@ author: Noon van der Silk
 date: 2026-07-24
 ---
 
-You probably already know what it is: stacked PRs.
+![A stack of branches.](/images/branches.webp)
+
+You might've already guessed what it is: stacked branches. But if you didn't
+already know that, don't worry, we'll go over it shortly.
 
 But first, let's discuss the problem.
 
@@ -13,7 +16,7 @@ But first, let's discuss the problem.
 Pretty much everyone using AI has this problem at the moment; it's moderately
 easy to generate code that is mostly coherent, mostly tackles the problem
 you're solving, and in fact it's so easy, we mostly get a little over-excited
-and do too much at once.
+and do too much at once: this makes code hard to review.
 
 This is creating stress on the reviewers, on several fronts. There's just the
 plain apathy of staring a giant diff that _probably_ does what the author
@@ -27,8 +30,9 @@ you can't totally trust that every line and comment comes from some deep
 fundamental understanding of the (human) author.
 
 There's many other problems; not all of which will be addressed by this idea;
-but the key idea here that we will go for is: less is better.
-
+but the key idea here that we will go for is: less is better. It's easier to
+review something when the amount of changes are small; and when you can focus
+on just thinking about "one thing", while performing any specific review.
 
 ### Standard techniques
 
@@ -55,6 +59,31 @@ There are many and ever-growing techniques to deal with this problem:
    and doesn't really empower them in any meaningful way. Ultimately, it will
    just slow you down, and upset people.
 
+5. *Stop caring, the market will decide for you*: Does you product get better?
+   Do things work? Are you getting more features? Then who is really to say
+   what is "correct"? Isn't the ultimate arbitrar of truth the users anyway?
+   Shouldn't we just get more things in front of them as fast as possible?
+
+   Obviously, this framing is both correct and crazy. In theory it's true that
+   only visible functionality matters; but it's also true that something can
+   be visibly accurate but wildly off in ever-so-slightly different
+   circumstances. We're not yet at the point where it's possible to operate
+   this way. Maybe we're approaching this with better-tested ecosystems and
+   the combination of theorem provers in connection with code; but ultimately
+   we'll always need to review our stated intention, even in that promised
+   land.
+
+   So let's just agree that, for the short term, we're going to need
+   _some_ kind of human review.
+
+6. *Actually no, just let AI review it*: Naturally, we can just have the AI
+   perform it's own review. Pragmatically, this can be very effective,
+   certainly for catching missed things, bugs, security issues, etc. But I
+   feel for gaining certainity that what you asked for is actually done
+   correctly, we're still going to want some oversight.
+
+Let's then see an old idea that can still be compatible with any of these
+approaches, if we so wished it.
 
 ### An old idea: create stacked branches
 
@@ -111,7 +140,6 @@ in my particular workflow, I wait until I've done the entire piece of work,
 and split it after the fact. Splitting it before requires a bit more `jj`
 busywork than I care to get into at the moment.
 
-
 ### Open questions and downsides
 
 Here's a dot-point list of open questions, downsides, and trivia to think
@@ -150,6 +178,12 @@ about.
 - Maybe learn `jj`, or maybe don't worry. It's probably very useful to master
   `jj` if you want to get into this more. But don't let _not_ mastering it
   stop you from benefiting now.
+
+- Probably some work could be done to make AI tooling a little more capable to
+  manage a set of arguably-independent branches more coherently. I.e. normally
+  it's pretty easy to isolate independent hacking with git worktrees; but
+  they're 1-1 with branches; now that we're potentially 1:many, it requires a
+  little more care and attention.
 
 ### Conclusion
 
