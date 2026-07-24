@@ -4,7 +4,9 @@ author: Noon van der Silk
 date: 2026-07-24
 ---
 
+<center>
 ![A stack of branches.](/images/branches.webp)
+</center>
 
 You might've already guessed what it is: stacked branches. But if you didn't
 already know that, don't worry, we'll go over it shortly.

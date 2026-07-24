@@ -25,10 +25,12 @@
     
 </div>
 
+<center>
 <figure>
 <img src="/images/branches.webp" alt="A stack of branches." />
 <figcaption aria-hidden="true">A stack of branches.</figcaption>
 </figure>
+</center>
 <p>You might’ve already guessed what it is: stacked branches. But if you didn’t
 already know that, don’t worry, we’ll go over it shortly.</p>
 <p>But first, let’s discuss the problem.</p>
