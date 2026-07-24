@@ -1,10 +1,21 @@
 body {
 	color:       #202020;
-  background:  #fffcf322;
+  background:  #fffcf399;
 	margin:      0px auto 0px auto;
 	width:       80%;
 	line-height: 2em;
 	font-family: "iA Writer Quattro S";
+}
+
+
+
+code {
+  font-size: 1.1em;
+  background: #fdebff;
+  padding: 5px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 10px;
 }
 
 pre {
@@ -17,6 +28,10 @@ pre {
   padding-left: 10px;
   border-left: solid 5px #0000ff44;
   font-size: 1.1em;
+}
+
+pre code {
+  background: none;
 }
 
 table th, table td {
@@ -85,9 +100,11 @@ div.info {
 p { text-align: justify; }
 
 blockquote {
-	border-left:  solid 2px #eaeaea;
-	padding-left: 5px;
-	background:   #fafafa;
+	border-left:   solid 5px #eaeaea;
+	padding-left:  10px;
+	padding-right: 10px;
+	background:    #fafafa;
+  font-style:    italic;
 }
 
 

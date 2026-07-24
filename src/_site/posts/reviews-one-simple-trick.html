@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Noon van der Silk - Make Reviews Possible Again With This One Simple Trick</title>
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/javascript">
+          MathJax.Hub.Config({
+            tex2jax: {
+              inlineMath: [['$','$'], ['\\(','\\)']],
+              processEscapes: true
+            }
+          });
+        </script>
+        <script>
+        var host = "silky.github.io";
+        if ((host == window.location.host) && (window.location.protocol != "https:")) {
+          window.location.protocol = "https";
+        }
+        </script>
+        <link href="https://fonts.googleapis.com/css?family=Taviraj|PT+Mono" rel="stylesheet">
+        </head>
+    <body>
+        <div id="header">
+            <div id="logo">
+                <h1><a href="../">Noon van der Silk</a></h1>
+            </div>
+            <div id="navigation">
+                <a href="../about.html">About</a>
+                <a href="../archive.html">Archive</a>
+                <a href="https://betweenbooks.github.io/">Between Books</a>
+                <a href="../talks.html">Talks</a>
+                <a href="../links.html">Links</a>
+                <small><a href="../atom.xml">Atom Feed</a></small>
+            </div>
+        </div>
+
+        <div id="content">
+            <h2>Make Reviews Possible Again With This One Simple Trick</h2>
+
+            <div class="info">
+    Posted on July 24, 2026
+    
+        by Noon van der Silk
+    
+</div>
+
+<p>You probably already know what it is: stacked PRs.</p>
+<p>But first, let’s discuss the problem.</p>
+<h3 id="ai-generated-code-is-hard-to-review">AI-generated code is hard to review</h3>
+<p>Pretty much everyone using AI has this problem at the moment; it’s moderately
+easy to generate code that is mostly coherent, mostly tackles the problem
+you’re solving, and in fact it’s so easy, we mostly get a little over-excited
+and do too much at once.</p>
+<p>This is creating stress on the reviewers, on several fronts. There’s just the
+plain apathy of staring a giant diff that <em>probably</em> does what the author
+says, <em>even</em> passes your test suites, but also <em>probably</em> contains some
+quirky/not-your-codebase’s-idiom things that you’d challenge if you were
+motivated.</p>
+<p>There’s also the loss of knowledge; it’s just straight-up extremely difficult
+to read such large pieces of work and understand everything. Especially when
+you can’t totally trust that every line and comment comes from some deep
+fundamental understanding of the (human) author.</p>
+<p>There’s many other problems; not all of which will be addressed by this idea;
+but the key idea here that we will go for is: less is better.</p>
+<h3 id="standard-techniques">Standard techniques</h3>
+<p>There are many and ever-growing techniques to deal with this problem:</p>
+<ol type="1">
+<li><p><em>Just add more tests</em>: Theory is, if it works then It Works. This can be
+risky or great, depending on your testing infrastructure. But we all know
+that tests don’t cover everything that it’s possible to express with code.</p></li>
+<li><p><em>Just do less</em>: Just have smaller PRs. This is hard, because it seems modern
+AI systems tend to be a little bit purposefully addictive/gamified: they’re
+often finding new things to do while doing a piece of work. It’s also at
+odds with most work pressures: deliver more better faster.</p></li>
+<li><p><em>Group-reviews</em>: Get everyone on a call (or in person?!), and talk through
+the code. This can be useful, but you can’t do it for everything. Also, it
+doesn’t work for some team members and thinking styles.</p></li>
+<li><p><em>Author and merger responsibility</em>: You can just make a declaration, that,
+say, if a (big) PR is found to introduce a bag big or some misunderstanding,
+you just fire the author the and merger. Or maybe something less drastic,
+like downvote them on their performance reviews. In any case, this one is
+punitive and pressure-based. It makes authors and reviewers <em>more</em> nervous;
+and doesn’t really empower them in any meaningful way. Ultimately, it will
+just slow you down, and upset people.</p></li>
+</ol>
+<h3 id="an-old-idea-create-stacked-branches">An old idea: create stacked branches</h3>
+<p>I’m not inventing stacked branches here. Many many people love them, there’s
+<a href="https://docs.jj-vcs.dev/latest/">jj</a>, created in part to get more joy from
+them, and <a href="https://www.ersc.io/">startups</a> focused around the idea.</p>
+<p>A stacked branch is conceptually simple:</p>
+<ul>
+<li>Think about the large bit of work you did,</li>
+<li>Break it into (coherent) chunks (each one perhaps passing CI alone),</li>
+<li>Create a branch per chunk,</li>
+<li>Have each branch depend on the prior one: 1 ← 2 ← 3 ← …</li>
+<li>Submit them as PRs in that order</li>
+</ul>
+<p>Now, you have each coherent change readable by itself; they can be merged in
+order, and everything will be fine.</p>
+<p>You can read more <a href="https://gist.github.com/thoughtpolice/9c45287550a56b2047c6311fbadebed2">here</a>.</p>
+<h3 id="the-new-workflow">The new workflow</h3>
+<p>Manually maintaining stacked branches is a little annoying. Yes you can use <code>jj</code>;
+but then you have to learn to use <code>jj</code>, convince everyone in your team to
+learn it, and <em>still</em> do manual busywork.</p>
+<p>Alternatively, you can try and predict all the changes you’re likely to make,
+make individual branches and just keep switching around. This is of course
+extremely inconvenient and annoying.</p>
+<p>But, happily, <em>creating</em> stacked branches from a single monolithic branch is
+fairly mechanical, boring, easy to describe, …
+What a great use-case for your AI tooling then!</p>
+<p>So the new workflow is simply this:</p>
+<ol type="1">
+<li><p>Create a branch (<code>some-performance-work</code>),</p></li>
+<li><p>Hack liberally,</p></li>
+<li><p>Ask your AI something like:</p>
+<blockquote>
+<p>Can you reframe this work into a sequence of stacked PRs. Try and
+categorise all the changes into 4-5 chunks, and then make branches based
+on that. Please number the branches like <code>some-performance-work-1</code>.</p>
+</blockquote></li>
+<li><p>Push all the branches and create the PRs.</p></li>
+<li><p>Bask in the joy of simple reviewing</p></li>
+</ol>
+<p>I’ve been experimenting with this a little, and it works quite well! Note that
+in my particular workflow, I wait until I’ve done the entire piece of work,
+and split it after the fact. Splitting it before requires a bit more <code>jj</code>
+busywork than I care to get into at the moment.</p>
+<h3 id="open-questions-and-downsides">Open questions and downsides</h3>
+<p>Here’s a dot-point list of open questions, downsides, and trivia to think
+about.</p>
+<ul>
+<li><p>GitHub’s UI is annoying for stacked PRs: They should thread them, like Gmail
+did back in the day. It would be so much nicer. There’s a world of
+improvements alternative source-control companies could make here that would
+make this all so much more pleasant.</p></li>
+<li><p>CI could be super annoying/wasteful/slow: Depending on what you do, you
+might accidentaly waste hours on rebuilds with this style. One should spend
+some time thinking about it. (Advertisement: Actually, I think this is an
+interesting open area of research, and if you’re struggling with it or
+want to talk more, reach out to me via <a href="https://invariant.club/">Invariant.Club</a>!)</p></li>
+<li><p>Atomic stacking: Perhaps you shouldn’t have the first one merge direct to
+<code>main</code>, you should instead target it to some <code>xxx-stacked</code> <em>new</em> branch,
+that’s based on <code>main</code>, but allows you to do some final re-orgs as you go.
+Otherwise, you tend to need to merge <em>every step</em> of a stacked branch set
+basically at the same time, because you want coherence and mostly these
+things are coherent only once <em>everything</em> is complete; i.e. if you merge
+steps 1-4 of a 5-step stack, do you actually <em>need</em> all those steps if you
+reject step 5? Targetting a new branch gives you some flexibility here. It
+also gives you a final clear PR history that shows before-and-after
+benefits; something you might not get depending on how you merge otherwise.</p>
+<p>Further, you might also want to protect your merged stack queue from being
+interrupted by some other unrelated merge to the <code>main</code> branch, that happens
+while you’re merging your stack.</p></li>
+<li><p>It’s easier post-fact: I personally find it hard to do this from the start.
+In fact one could argue, if I could do it from the start, I’d have separate
+PRs already!</p></li>
+<li><p>Maybe learn <code>jj</code>, or maybe don’t worry. It’s probably very useful to master
+<code>jj</code> if you want to get into this more. But don’t let <em>not</em> mastering it
+stop you from benefiting now.</p></li>
+</ul>
+<h3 id="conclusion">Conclusion</h3>
+<p>In general, there’s a wide world to explore in this domain of AI-assisted work
+partitioning for efficient review and compilation. Looking forward to seeing
+more work in this area!</p>
+
+        </div>
+        <div id="footer">
+            <small><a href="http://jaspervdj.be/hakyll">Hakyll</a> was involved here (<a href="https://github.com/silky/silky.github.com">source</a>).
+                ن
+            </small>
+        </div>
+    </body>
+</html>
