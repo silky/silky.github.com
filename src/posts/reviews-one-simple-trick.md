@@ -5,7 +5,7 @@ date: 2026-07-24
 ---
 
 <center>
-![A stack of branches.](/images/branches.webp)
+![A stack of branches.](/images/branches-2.webp)
 </center>
 
 You might've already guessed what it is: stacked branches. But if you didn't
