@@ -1,5 +1,5 @@
 ---
-title: Make Reviews Possible Again With This One Simple Trick
+title: "Make Reviews Possible Again With This One Simple Trick: Stacked Branches"
 author: Noon van der Silk
 date: 2026-07-24
 ---
