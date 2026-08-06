@@ -192,3 +192,8 @@ about.
 In general, there's a wide world to explore in this domain of AI-assisted work
 partitioning for efficient review and compilation. Looking forward to seeing
 more work in this area!
+
+
+#### Updates
+
+- August 2026 - [GitHub recently announced UI support for stacked PRs](https://github.blog/changelog/2026-07-30-stacked-pull-requests-are-now-in-public-preview/)
